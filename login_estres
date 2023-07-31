@@ -1,0 +1,35 @@
+import threading
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+
+def login(username, password):
+    driver = webdriver.Chrome(executable_path="C:\driverchrome\chromedriver.exe")  # Configura el driver de Selenium (en este caso, Chrome)
+    driver.get("https://pwa-portal-qa.silohub.ag/login")  # Abre la página de inicio de sesión
+
+    # Encuentra los campos de usuario y contraseña y envía los datos
+    driver.find_element(By.ID, "email").send_keys("admingd@silohub.ag")
+    driver.find_element(By.ID, "password").send_keys("G@viglio123")
+
+    # Envía el formulario de inicio de sesión
+    driver.find_element(By.XPATH, '/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button').click()
+    # Agrega cualquier otra acción después del inicio de sesión si es necesario
+
+    # Cierra el navegador
+    driver.quit()
+
+def prueba_estres_login(username, password, num_browsers):
+    threads = []
+
+    for _ in range(num_browsers):
+        t = threading.Thread(target=login, args=(username, password))
+        threads.append(t)
+        t.start()
+
+    # Espera a que todos los hilos (threads) hayan terminado
+    for t in threads:
+        t.join()
+
+    print("Prueba de estrés finalizada.")
+
+# Llama a la función prueba_estres_login con los parámetros deseados
+prueba_estres_login("admingd@silohub.ag", "G@viglio123", 10)  # Abre y cierra 5 navegadores al mismo tiempo
