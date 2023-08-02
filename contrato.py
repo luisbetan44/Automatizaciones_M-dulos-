@@ -1,11 +1,11 @@
-import unittest
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import time
-from selenium.webdriver.support.ui import WebDriverWait 
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support import expected_conditions as EC
+import unittest
 from pyunitreport import HTMLTestRunner
+from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.support.ui import WebDriverWait
 
 
 class incio_tenat(unittest.TestCase):
@@ -174,6 +174,8 @@ class incio_tenat(unittest.TestCase):
         self.assertEqual(number_obtained, number_expected)
         print("La cantidad  de fijadas es:", number_obtained)
 
+        # descargar archivo
+
         download_button = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/app-header-for-responsive-table/div/div/div[2]/div/div/app-download-button/div/button[2]"
         )
@@ -186,6 +188,9 @@ class incio_tenat(unittest.TestCase):
         select_files.click()
         time.sleep(5)
 
+  
+        
+        
         go_out_pag = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a"
         )
