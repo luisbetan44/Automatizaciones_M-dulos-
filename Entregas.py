@@ -63,7 +63,7 @@ class cuenta_entregas(unittest.TestCase):
             "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[2]/a"
         )
         select_deliveries.click()
-        time.sleep(5)
+        time.sleep(3)
 
 
 
@@ -107,7 +107,7 @@ class cuenta_entregas(unittest.TestCase):
 
         apply_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
         apply_filter.click()
-        time.sleep(3)
+        time.sleep(2)
 
 
 
@@ -161,9 +161,18 @@ class cuenta_entregas(unittest.TestCase):
         selet_button_download.click()
         time.sleep(2)
 
-        apply_download = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
-        apply_download.click()
+        apply_download_excel = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
+        apply_download_excel.click()
         time.sleep(2)
+
+        selet_button_download = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
+        selet_button_download.click()
+        time.sleep(2)
+
+        apply_download_pdf = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a")
+        apply_download_pdf.click()
+        time.sleep(2)
+
 
         # ingresar al detalle del tercer movimiento
 
@@ -322,6 +331,16 @@ class cuenta_entregas(unittest.TestCase):
 
         else:
               print("El número de la carta porte no es correcto ")  
+
+
+        # salir al listado 
+
+        go_into_detail = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
+        go_into_detail.click()
+
+        go_to_list = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
+        go_to_list.click()
+        time.sleep(3)
 
 
 
