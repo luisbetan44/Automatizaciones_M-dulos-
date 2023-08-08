@@ -109,6 +109,83 @@ class cuenta_entregas(unittest.TestCase):
         apply_filter.click()
         time.sleep(2)
 
+        # seleccionar dos movimientos 
+
+        select_product_list_1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/table/tbody/tr[1]/th/input")
+        select_product_list_1.click()
+        time.sleep(1)
+
+
+        select_product_list_2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/table/tbody/tr[2]/th/input")
+        select_product_list_2.click()
+        time.sleep(1)
+
+
+
+        select_product_list_3 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/table/tbody/tr[3]/th/input")
+        select_product_list_3.click()
+        time.sleep(1)
+
+        # selecionar el botón para descargar los movimientos 
+
+        button_download = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
+        button_download.click()
+        time.sleep(1)
+
+        select_format = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a")
+        select_format.click()
+        time.sleep(3)
+
+        # ingresar al detalle de una venta 
+         
+        insert_detail = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/table/tbody/tr[3]/td[3]/span/span")
+        insert_detail.click()
+        time.sleep(3)
+
+        # validar número de venta 
+
+        number_sale = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/app-header-for-detail/div[1]/div")
+        number_sale_obtained = number_sale.text
+        number_sale_expected = "Venta EP 0001 00111822"
+        self.assertEqual(number_sale_obtained, number_sale_expected)
+
+        if number_sale_obtained:
+            print("El número de venta es:", number_sale.text)
+
+
+        else:
+              print("El número de venta no es correcto ")  
+
+        # validar cantidad de kilos 
+
+        amount_kilos = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/app-header-for-detail/div[2]/div/div[2]/div[2]")
+        amount_kilos_obtained = amount_kilos.text
+        amount_kilos_expected = "337.005,00 Kg"
+        self.assertEqual(amount_kilos_obtained, amount_kilos_expected)
+
+        if amount_kilos_obtained:
+            print("La cantidad de kilos son:", amount_kilos.text)
+
+
+        else:
+              print("La cantidad de kilos no es la correcta ")  
+
+        # validar producto
+     
+        type_product = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/app-header-for-detail/div[2]/div/div[2]/div[3]")
+        type_product_obtained = type_product.text
+        type_product_expected = "De Soja"
+        self.assertEqual(type_product_obtained, type_product_expected)
+
+        if type_product_obtained:
+            print("El tipo de producto es:", type_product.text)
+
+
+        else:
+              print("El tipo de producto no es correcto ")  
+
+
+
     def tearDown(self):
         self.driver.close()
 
