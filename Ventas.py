@@ -184,6 +184,84 @@ class cuenta_entregas(unittest.TestCase):
         else:
               print("El tipo de producto no es correcto ")  
 
+       
+     # validar datos de la venta 
+
+        title_data = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/h2[1]")
+        title_data_obtained = title_data.text
+        title_data_expected = "DATOS DE LA VENTA"
+        self.assertEqual(title_data_obtained, title_data_expected)
+
+        if title_data_obtained:
+            print("El titulo de la segunda card  es:", title_data.text)
+
+
+
+        else:
+              print("El tutilo de la segunda card no es correcto ")  
+
+       
+
+      # Validar fecha, campaña, mercado, fecha de vencimiento, numero de contrato  
+
+        date_data = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/div[1]/div[1]")
+        date_data_obtained = date_data.text
+        date_data_expected = "07/03/2022"
+        self.assertEqual(date_data_obtained, date_data_expected)
+
+        if date_data_obtained:
+            print("La fecha de la venta  es:", date_data.text)
+
+
+
+        else:
+              print("La fecha de la venta no es correcta ")  
+
+
+        campaign_sale = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/div[1]/div[2]")
+        campaign_sale_obtained = campaign_sale.text
+        campaign_sale_expected = "20/21"
+        self.assertEqual(campaign_sale_obtained, campaign_sale_expected)
+
+        if campaign_sale_obtained:
+            print("La campaña de la venta  es:", campaign_sale.text)
+
+
+
+        else:
+              print("La campaña de la venta no es correcta ")
+
+        market_sale = driver.find_element_by_css_selector('#layout-wrapper > div > div > div > app-detail-sales > div:nth-child(2) > section > div > div:nth-child(3) > div:nth-child(3)')
+        market_sale_obtained = market_sale.text
+        market_sale_expected = "RENOVA - Soja  - Timbues"
+        self.assertEqual(market_sale_obtained, market_sale_expected)
+
+        if market_sale_obtained:
+            print("El mercado  es:", market_sale.text)
+
+
+
+        else:
+              print("El mercado no es correcto ")  
+
+
+        date_expiration = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/div[1]/div[4]")
+        date_expiration_obtained = date_expiration.text
+        date_expiration_expected = "PRECIOS DE FIJACIÓN"
+        self.assertEqual(date_expiration_obtained, date_expiration_expected)
+
+        if date_expiration_obtained:
+            print("La fecha de venccimiento es:", date_expiration.text)
+
+
+
+        else:
+              print("La fecha de vencimiento  no es correcta ")  
+
+  
+
+
+
 
 
     def tearDown(self):
