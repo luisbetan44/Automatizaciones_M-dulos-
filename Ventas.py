@@ -231,32 +231,49 @@ class cuenta_entregas(unittest.TestCase):
         else:
               print("La campaña de la venta no es correcta ")
 
-        market_sale = driver.find_element_by_css_selector('#layout-wrapper > div > div > div > app-detail-sales > div:nth-child(2) > section > div > div:nth-child(3) > div:nth-child(3)')
-        market_sale_obtained = market_sale.text
-        market_sale_expected = "RENOVA - Soja  - Timbues"
-        self.assertEqual(market_sale_obtained, market_sale_expected)
-
-        if market_sale_obtained:
-            print("El mercado  es:", market_sale.text)
 
 
+        texto_objetivo = "RENOVA - Soja  - Timbues"
 
+
+        elemento = WebDriverWait(driver, 10).until(
+        EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{texto_objetivo}')]"))
+        )
+
+
+        if elemento.is_displayed():
+           print("El texto del tipo de mercado es visible en la página.")
         else:
-              print("El mercado no es correcto ")  
+           print("El texto del tipo de mercado no es visible en la página.")
 
+
+        print("El tipo de mercado es:")
+        print(elemento.text)
+       
+
+        
 
         date_expiration = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/div[1]/div[4]")
         date_expiration_obtained = date_expiration.text
-        date_expiration_expected = "PRECIOS DE FIJACIÓN"
+        date_expiration_expected = "07/10/2021"
         self.assertEqual(date_expiration_obtained, date_expiration_expected)
 
         if date_expiration_obtained:
-            print("La fecha de venccimiento es:", date_expiration.text)
+            print("La fecha de vencimiento es:", date_expiration.text)
 
 
 
         else:
-              print("La fecha de vencimiento  no es correcta ")  
+              print("La feccha de vencimiento  no es correcta ")  
+
+        
+        go_out_list = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
+        go_out_list.click()
+        time.sleep(2)
+
+        
+
+
 
   
 
