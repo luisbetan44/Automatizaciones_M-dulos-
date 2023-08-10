@@ -52,4 +52,4 @@ def prueba_estres_login(username, password, num_repeticiones):
     print(f"Intentos fallidos: {fallido}")
 
 # Llama a la función prueba_estres_login con los parámetros deseados
-prueba_estres_login("admingd@silohub.ag", "G@viglio123", 4)  # Realiza 10 intentos de inicio de sesión
+prueba_estres_login("admingd@silohub.ag", "G@viglio123", 10)  # Realiza 10 intentos de inicio de sesión

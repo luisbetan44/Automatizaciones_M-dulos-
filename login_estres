@@ -32,4 +32,4 @@ def prueba_estres_login(username, password, num_browsers):
     print("Prueba de estrés finalizada.")
 
 # Llama a la función prueba_estres_login con los parámetros deseados
-prueba_estres_login("admingd@silohub.ag", "G@viglio123", 10)  # Abre y cierra 5 navegadores al mismo tiempo
+prueba_estres_login("admingd@silohub.ag", "G@viglio123", 10)  # Abre y cierra 10 navegadores al mismo tiempo
