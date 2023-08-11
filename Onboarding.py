@@ -10,7 +10,7 @@ from faker import Faker
 
 class Onboarding_test_tenant(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe"  )
+        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe")
         driver = self.driver
         driver.implicitly_wait(30)
         driver.maximize_window()
@@ -48,6 +48,7 @@ class Onboarding_test_tenant(unittest.TestCase):
             "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/div/ul/li[8]/a"
         )
         select_documento.click()
+        time.sleep(3)
 
         # validar el titulode la pantalle documentación
 
@@ -150,16 +151,17 @@ class Onboarding_test_tenant(unittest.TestCase):
             '//*[@id="flush-headingOne"]/button'
         )
         select_campo.click()
-        time.sleep(2)
+        time.sleep(3)
 
-        archivo = "C:/Users/luist/proyecto2//documant/2022-02-14 (6).png"
+        archivo = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
 
         elemento_archivo_1 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[2]/div[4]/app-acordion-for-upload/div/div/h2/button/app-upload-input/div/div[2]/input"
+            '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[2]/div[4]/app-acordion-for-upload/div/div/h2/button/app-upload-input/div/div[2]/input'
         )
         elemento_archivo_1.send_keys(archivo)
         time.sleep(3)
 
+    
         check_button = driver.find_element(
             By.XPATH,
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/app-checks/div/input",
@@ -170,23 +172,27 @@ class Onboarding_test_tenant(unittest.TestCase):
         continue_button = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/div/div/app-button/button" )
         continue_button.click()
+        time.sleep(2)
 
         insert_document = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-identity-validation/div/div[3]/app-button/button"
         )
 
         insert_document.click()
+        time.sleep(2)
 
         photo_person1 = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-identity-front/app-identification-upload-manager/div/div[3]/div/app-button[1]/button"
         ) 
 
         photo_person1.click()
+        time.sleep(2)
 
         take_photo = driver.find_element_by_id(
             "Icon:_Take_photo"
         )
         take_photo.click()
+        time.sleep(2)
 
         continue1_button = driver.find_element_by_xpath(
             "/html/body/ngb-modal-window/div/div/app-webcam/div[2]/div/app-picture-preview/div/div[2]/app-button[2]/button"
@@ -199,27 +205,32 @@ class Onboarding_test_tenant(unittest.TestCase):
         ) 
 
         photo_person2.click()
+        time.sleep(2)
 
         take_photo2 = driver.find_element_by_id(
             "Icon:_Take_photo"
         )
         take_photo2.click()
+        time.sleep(2)
 
         continue2_button = driver.find_element_by_xpath(
             "/html/body/ngb-modal-window/div/div/app-webcam/div[2]/div/app-picture-preview/div/div[2]/app-button[2]/button"
             )
         continue2_button.click()
+        time.sleep(2)
 
         photo_person3 = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-selfie/app-identification-upload-manager/div/div[3]/div/app-button[1]/button"
         ) 
 
         photo_person3.click()
+        time.sleep(2)
 
         take_photo3 = driver.find_element_by_id(
             "Icon:_Take_photo"
         )
         take_photo3.click()
+        time.sleep(2)
 
         continue3_button = driver.find_element_by_xpath(
             "/html/body/ngb-modal-window/div/div/app-webcam/div[2]/div/app-picture-preview/div/div[2]/app-button[2]/button"
@@ -231,11 +242,13 @@ class Onboarding_test_tenant(unittest.TestCase):
             "/html/body/div/div/div[6]/button[1]"
         )
         finally_button.click()
+        time.sleep(3)
 
         continue_pass3 = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/aw-wizard-navigation-bar/ul/li[3]/a/div[2]"
         )
         continue_pass3.click()
+        time.sleep(3)
 
         # Validar titulo de la pantalla 
         elemento_3 = self.driver.find_element_by_xpath(
@@ -295,7 +308,7 @@ class Onboarding_test_tenant(unittest.TestCase):
         select_campo_1.click()
         time.sleep(3)
 
-        archivo = "C:/Users/luist/proyecto2//documant/2022-02-14 (6).png"
+        archivo = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
 
         elemento_archivo_2 = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[1]/div/div/h2/button/app-upload-input/div/div[2]/input"
@@ -333,6 +346,7 @@ class Onboarding_test_tenant(unittest.TestCase):
         elemento_archivo_4.send_keys(archivo)
         time.sleep(3)
 
+
         # Formulario F1276 WEB
         select_campo_4 = driver.find_element_by_xpath(
             '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[3]/div/div/h2/button'
@@ -347,6 +361,8 @@ class Onboarding_test_tenant(unittest.TestCase):
         )
         elemento_archivo_5.send_keys(archivo)
         time.sleep(3)
+
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         
         # validar titulo Gestión de lineas de credito
 
@@ -364,6 +380,7 @@ class Onboarding_test_tenant(unittest.TestCase):
         ##Imprimir la respuesta en consola
         print("El texto obtenido es:", texto_obtenido)
 
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
         # manifestación de bienes 
         select_campo_5 = driver.find_element_by_xpath(
@@ -380,6 +397,8 @@ class Onboarding_test_tenant(unittest.TestCase):
         elemento_archivo_6.send_keys(archivo)
         time.sleep(3)
 
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
         # libro de Iva venta ultomos 12 meses 
         select_campo_6 = driver.find_element_by_xpath(
             '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[2]/div/div/h2/button'
@@ -395,6 +414,9 @@ class Onboarding_test_tenant(unittest.TestCase):
         elemento_archivo_7.send_keys(archivo)
         time.sleep(3)
 
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
+
         # Ultimo balance 
         select_campo_7 = driver.find_element_by_xpath(
             '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[3]/div/div/h2/button'
@@ -409,7 +431,9 @@ class Onboarding_test_tenant(unittest.TestCase):
         )
         elemento_archivo_8.send_keys(archivo)
         time.sleep(3)
-       
+
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
         # validación título Terceros autorizados a retirar insumos 
         elemento_6 = self.driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-authorized-third-parties/div/h1"
@@ -425,6 +449,8 @@ class Onboarding_test_tenant(unittest.TestCase):
         ##Imprimir la respuesta en consola
         print("El texto obtenido es:", texto_obtenido)
         time.sleep(3)
+
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
         # insertar nombre y DNI
         insert_razon_social_2 = driver.find_element_by_xpath(
@@ -477,5 +503,3 @@ if __name__ == "__main__":
         verbosity=2,
         testRunner=HTMLTestRunner(output="reportes", report_name="reporte_onboarding"),
     )
-
-

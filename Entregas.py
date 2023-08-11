@@ -337,10 +337,12 @@ class cuenta_entregas(unittest.TestCase):
 
         go_into_detail = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
         go_into_detail.click()
+        time.sleep(2)
 
         go_to_list = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
         go_to_list.click()
         time.sleep(3)
+
 
 
 
