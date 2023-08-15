@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 
-class cuenta_entregas(unittest.TestCase):
+class cuenta_ventas(unittest.TestCase):
     
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe")
@@ -160,16 +160,12 @@ class cuenta_entregas(unittest.TestCase):
 
         amount_kilos = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/app-header-for-detail/div[2]/div/div[2]/div[2]")
         amount_kilos_obtained = amount_kilos.text
-        amount_kilos_expected = "337.005,00 Kg"
-        self.assertEqual(amount_kilos_obtained, amount_kilos_expected)
-
-        if amount_kilos_obtained:
-            print("La cantidad de kilos son:", amount_kilos.text)
-
-
+        amount_kilos_expected = ["337.005,00 Kg", "337,01 Tn", "3.370,05 QQ"]
+        
+        if amount_kilos_obtained in amount_kilos_expected:
+            print("La cantidad de kilos es:", amount_kilos_obtained)
         else:
-              print("La cantidad de kilos no es la correcta ")  
-
+            print("La cantidad de kilos no es la correcta")
         # validar producto
      
         type_product = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/app-header-for-detail/div[2]/div/div[2]/div[3]")

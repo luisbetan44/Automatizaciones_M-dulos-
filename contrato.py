@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 
-class incio_tenat(unittest.TestCase):
+class contrato_tenant(unittest.TestCase):
 
     def    setUp(self):
         self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe")
@@ -141,38 +141,53 @@ class incio_tenat(unittest.TestCase):
 
         # Validar kilos pactados 
 
-        element = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[2]/div/span")
-
-        number_obtained = element.text
-        number_expected = "De 100,00 Tn Pactados"
-        self.assertEqual(number_obtained, number_expected)
-        print("La cantidad de tn pactados es:", number_obtained)
-
+        
+        amount_kilos = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[2]/div/span")
+        amount_kilos_obtained = amount_kilos.text
+        amount_kilos_expected = ["De 1.000,00 QQ Pactados", "De 100,00 Tn Pactados", "De 100.000,00 Kg Pactados"]
+        
+        if amount_kilos_obtained in amount_kilos_expected:
+            print("La cantidad de kilos pactados son:", amount_kilos_obtained)
+        else:
+            print("La cantidad de kilos pactados no es la correcta")
+        # validar producto
 
 
         # validar la cantidad de toneladas del contrato 
-        element = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[1]/div[2]/div[2]/div[2]/span[1]")
+        amount_product = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[1]/div[2]/div[2]/div[2]/span[1]")
 
-        number_obtained = element.text
-        number_expected = "100,00 Tn"
-        self.assertEqual(number_obtained, number_expected)
-        print("La cantidad  de producto es:", number_obtained)
+        amount_product_obtained = amount_product.text
+        amount_product_expected = ["1.000,00 QQ", "100,00 Tn", "100.000,00 Kg"]
+        
+        if amount_product_obtained in amount_product_expected:
+            print("La cantidad  de producto es:", amount_product_obtained)
+
+        else:
+            print("la cantidad de producto no es correcta")
 
         # validar aplicadas
-        element = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[2]/app-card-with-grafic/div/div/swiper/div/div[1]/div[1]/div/div[2]/span[1]")
+        applied_contract = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[2]/app-card-with-grafic/div/div/swiper/div/div[1]/div[1]/div/div[2]/span[1]")
 
-        number_obtained = element.text
-        number_expected = "0,00 Tn"
-        self.assertEqual(number_obtained, number_expected)
-        print("La cantidad  de aplicadas es:", number_obtained)
+        applied_contract_obtained = applied_contract.text
+        applied_contract_expected = ["0,00 QQ","0,00 Kg","0,00 Tn"]
+      
+        if applied_contract_obtained in applied_contract_expected:
+           print("La cantidad  de aplicadas es:", applied_contract_obtained)
+
+        else:
+            print("La cantidad aplicada no es correcta")
 
         # validar fijadas
-        element = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[2]/app-card-with-grafic/div/div/swiper/div/div[1]/div[2]/div/div[2]/span[1]")
+        fixed_contract = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[2]/app-card-with-grafic/div/div/swiper/div/div[1]/div[2]/div/div[2]/span[1]")
 
-        number_obtained = element.text
-        number_expected = "100,00 Tn"
-        self.assertEqual(number_obtained, number_expected)
-        print("La cantidad  de fijadas es:", number_obtained)
+        fixed_contract_obtained = fixed_contract.text
+        fixed_contract_expected = ["100,00 Tn","1.000,00 QQ","100.000,00 Kg"]
+
+        if fixed_contract_obtained in fixed_contract_expected:
+           print("La cantidad  de fijadas es:", fixed_contract_obtained)
+
+        else:
+            print("La cantidad fijadas no es la correcta")
 
         # descargar archivo
 

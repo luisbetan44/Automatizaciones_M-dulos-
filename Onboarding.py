@@ -186,13 +186,13 @@ class Onboarding_test_tenant(unittest.TestCase):
         ) 
 
         photo_person1.click()
-        time.sleep(2)
+        time.sleep(3)
 
         take_photo = driver.find_element_by_id(
             "Icon:_Take_photo"
         )
         take_photo.click()
-        time.sleep(2)
+        time.sleep(3)
 
         continue1_button = driver.find_element_by_xpath(
             "/html/body/ngb-modal-window/div/div/app-webcam/div[2]/div/app-picture-preview/div/div[2]/app-button[2]/button"
@@ -205,32 +205,32 @@ class Onboarding_test_tenant(unittest.TestCase):
         ) 
 
         photo_person2.click()
-        time.sleep(2)
+        time.sleep(3)
 
         take_photo2 = driver.find_element_by_id(
             "Icon:_Take_photo"
         )
         take_photo2.click()
-        time.sleep(2)
+        time.sleep(3)
 
         continue2_button = driver.find_element_by_xpath(
             "/html/body/ngb-modal-window/div/div/app-webcam/div[2]/div/app-picture-preview/div/div[2]/app-button[2]/button"
             )
         continue2_button.click()
-        time.sleep(2)
+        time.sleep(3)
 
         photo_person3 = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-selfie/app-identification-upload-manager/div/div[3]/div/app-button[1]/button"
         ) 
 
         photo_person3.click()
-        time.sleep(2)
+        time.sleep(3)
 
         take_photo3 = driver.find_element_by_id(
             "Icon:_Take_photo"
         )
         take_photo3.click()
-        time.sleep(2)
+        time.sleep(3)
 
         continue3_button = driver.find_element_by_xpath(
             "/html/body/ngb-modal-window/div/div/app-webcam/div[2]/div/app-picture-preview/div/div[2]/app-button[2]/button"
@@ -398,7 +398,7 @@ class Onboarding_test_tenant(unittest.TestCase):
         time.sleep(3)
 
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-
+        time.sleep(2)
         # libro de Iva venta ultomos 12 meses 
         select_campo_6 = driver.find_element_by_xpath(
             '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[2]/div/div/h2/button'
