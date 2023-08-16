@@ -54,16 +54,97 @@ class cuenta_entregas(unittest.TestCase):
 
         # ingresar al menú de cuentas 
 
-        select_menu_Account = driver.find_element_by_xpath(
+        select_menu_contrat = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
         )
-        select_menu_Account.click()
+        select_menu_contrat.click()
 
-        select_deliveries = driver.find_element_by_xpath(
-            ""
+        ## seleccionar cuenta corriente
+
+        select_account = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[4]/a"
         )
-        select_deliveries.click()
+        select_account.click()
         time.sleep(3)
+
+        ## selecionar botón del filtro
+
+        select_filter = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span"
+        )
+        select_filter.click()
+        time.sleep(2)
+
+          ## aplicar filtro de rubros 
+
+        apply_filter_1 = driver.find_element_by_xpath(
+            "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-agricultural-category-container/div/app-agricultural-category-button[1]/div/img"
+        )
+        apply_filter_1.click()
+        time.sleep(2)
+
+        apply_filter_2 = driver.find_element_by_xpath(
+            "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-agricultural-category-container/div/app-agricultural-category-button[2]/div/img"
+        )
+        apply_filter_2.click()
+        time.sleep(2)
+
+        apply_filter_3 = driver.find_element_by_xpath(
+            "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-agricultural-category-container/div/app-agricultural-category-button[3]/div/img"
+        )
+        apply_filter_3.click()
+        time.sleep(2)
+
+        ## seleccionar rango de fecha
+
+        select_field_date = driver.find_element_by_xpath(
+            "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
+        )
+        select_field_date.click()
+        time.sleep(2)
+
+        select_arrow_1 = driver.find_element_by_xpath(
+            "/html/body/div/div[1]/span[1]"
+        )
+        select_arrow_1.click()
+        time.sleep(2)
+
+        select_arrow_2 = driver.find_element_by_xpath(
+            "/html/body/div/div[1]/span[1]"
+        )
+        select_arrow_2.click()
+        time.sleep(2)
+
+        select_date_1 = driver.find_element_by_xpath(
+            "/html/body/div/div[2]/div/div[2]/div/span[4]"
+        )
+        select_date_1.click()
+        time.sleep(2)
+
+        select_arrow_3 = driver.find_element_by_xpath(
+            "/html/body/div/div[1]/span[2]"
+        )
+        select_arrow_3.click()
+        time.sleep(2)
+
+        select_date_2 = driver.find_element_by_xpath(
+            "/html/body/div/div[2]/div/div[2]/div/span[26]"
+        )
+        select_date_2.click()
+        time.sleep(2)
+
+        apply_button_filter = driver.find_element_by_xpath(
+            "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
+        )
+        apply_button_filter.click()
+        time.sleep(2)
+
+        ## validar titulo de pantalla cuenta corriente aplicada 
+
+
+
+
+
 
 
 
