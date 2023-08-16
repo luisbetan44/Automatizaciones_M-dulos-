@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from pyunitreport import HTMLTestRunner
 import re
 
-class incio_tenat(unittest.TestCase):
+class inicio_tenat(unittest.TestCase):
 
     def    setUp(self):
         self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe")

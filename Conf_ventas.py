@@ -21,12 +21,12 @@ class Conf_ventas_test_tenant(unittest.TestCase):
     def test_conf_venta(self):
         driver = self.driver
         username = driver.find_element_by_id("email")
-        username.send_keys("soporte.tecnico@silohub.ag")
+        username.send_keys("admingd@silohub.ag")
         username.send_keys(Keys.ENTER)
         time.sleep(3)
 
         passwordUser = driver.find_element_by_id("password")
-        passwordUser.send_keys("123456Aa+")
+        passwordUser.send_keys("G@viglio123")
         passwordUser.send_keys(Keys.ENTER)
         time.sleep(3)
 
@@ -54,19 +54,21 @@ class Conf_ventas_test_tenant(unittest.TestCase):
         time.sleep(1)
 
         # validar titulo de la pantalla
-        elemento_1 = self.driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
-        )
+        
+        texto_deseado = "CONFIRMACIÓN DE VENTA"
+        elemento = driver.find_element_by_xpath(f"//*[contains(text(), '{texto_deseado}')]")
 
-        # Obtener el texto del elemento
-        texto_obtenido_1 = elemento_1.text
+       # Realizar validación del texto 
+        texto_optenido = elemento.text
+        texto_esperado = "CONFIRMACIÓN DE VENTA"
+        assert texto_optenido == texto_esperado
 
-        # Validar el texto
-        texto_esperado_1 = "CONFIRMACIÓN DE VENTA"
-        self.assertEqual(texto_obtenido_1, texto_esperado_1)
+        if texto_optenido:
+           print("El titulo  fue validado correctamente")
 
-        ##Imprimir la respuesta en consola
-        print("El texto obtenido es:", texto_obtenido_1)
+        else:
+            print("No se pudo validar el titulo")
+
 
         # cargar opción de tipo de confirmación
         wait = WebDriverWait(driver, 10)
@@ -351,7 +353,7 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             )
         time.sleep(2)
 
-        # seleecccionar la fecha
+        # seleeccionar la fecha
 
         select_date = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[1]/div[2]/app-date-picker/div/input[2]"
