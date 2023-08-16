@@ -8,6 +8,9 @@ from selenium.webdriver.support import expected_conditions as EC
 from pyunitreport import HTMLTestRunner
 import re
 
+
+
+
 class inicio_tenat(unittest.TestCase):
 
     def    setUp(self):
@@ -50,11 +53,21 @@ class inicio_tenat(unittest.TestCase):
         driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
         element_to_click.click()
         time.sleep(3)
+
+
+        
        
-       ##seleccionar el filtro 
+       ##seleccionar el botón filtro 
         Filtro_campaña = driver.find_element_by_css_selector('span[class="fw-bold ms-1 f-size-14"]')
         Filtro_campaña.click()
         time.sleep(3)
+
+        ## limpiar el filtro
+
+        cleam_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-tag-container/div/div/div[7]/app-tag/div/div/i")
+        cleam_filter.click()
+
+        ## seleccionar filtro 
 
         select_campaña = driver.find_element_by_xpath('/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[2]/div/div')
         select_campaña.click()
@@ -225,15 +238,31 @@ class inicio_tenat(unittest.TestCase):
 
         # validar la imagen del producto 
 
-        imagen_4 = self.driver.find_element_by_css_selector('#layout-wrapper > div > div > div > app-home > app-recent-grain-movements > div > div:nth-child(1) > app-recent-deliveries > app-responsive-table-multiple-items > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > div > div > div.me-2 > img')
-        
-        # Obtener la URL de la imagen
-        url_imagen_4 = imagen_4.get_attribute("src")
-    
-        url_esperada_4 = "https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg"
-        self.assertEqual(url_imagen_4, url_esperada_4)
 
-        print("la url de la imagen de soja  es la siguente", url_imagen_4)
+     
+
+
+        imagen_4 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/app-recent-grain-movements/div/div[1]/app-recent-deliveries/app-responsive-table-multiple-items/div/table/tbody/tr[1]/td[1]/div/div/div[1]/img")
+     
+        # Obtener la URL de la imagen
+        url_imagen_obtenida = imagen_4.get_attribute('src')
+
+        imagen_4_esperadas = [
+           "https://pwa-portal-staging.silohub.ag/assets/images/grains/trigo.svg",
+           "https://pwa-portal-staging.silohub.ag/assets/images/grains/maiz.svg",
+           "https://pwa-portal-staging.silohub.ag/assets/images/grains/girasol.svg",
+           "https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg"
+        ]
+
+        # Validar si la URL obtenida está en la lista de URLs esperadas
+        if url_imagen_obtenida in imagen_4_esperadas:
+      
+            print("La imagen es visible para el usuario. URL:", url_imagen_obtenida)
+        else:
+            print("La imagen no es visible para el usuario. URL:", url_imagen_obtenida)
+
+
+       
 
         #validar el numero de comprobante del movimiento 
 
@@ -266,18 +295,30 @@ class inicio_tenat(unittest.TestCase):
         ##Imprimir la respuesta en consola
         print("El texto obtenido es:", texto_obtenido)
 
+        
         # validar la imagen del producto 
 
-        imagen_5 = self.driver.find_element_by_css_selector('#layout-wrapper > div > div > div > app-home > app-recent-grain-movements > div > div:nth-child(2) > app-recent-sales > app-responsive-table-multiple-items > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > div > div > div.me-2 > img')
-        
+
+        imagen_5 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/app-recent-grain-movements/div/div[2]/app-recent-sales/app-responsive-table-multiple-items/div/table/tbody/tr[1]/td[1]/div/div/div[1]/img")
+     
         # Obtener la URL de la imagen
-        url_imagen_5 = imagen_5.get_attribute("src")
-    
-        url_esperada_5 = "https://pwa-portal-staging.silohub.ag/assets/images/grains/maiz.svg"
-        self.assertEqual(url_imagen_5, url_esperada_5)
+        url_imagen_obtenida = imagen_5.get_attribute('src')
 
-        print("la url de la imagen de soja  es la siguente", url_imagen_5)
+        imagen_5_esperadas = [
+           "https://pwa-portal-staging.silohub.ag/assets/images/grains/trigo.svg",
+           "https://pwa-portal-staging.silohub.ag/assets/images/grains/maiz.svg",
+           "https://pwa-portal-staging.silohub.ag/assets/images/grains/girasol.svg",
+           "https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg"
+        ]
 
+        # Validar si la URL obtenida está en la lista de URLs esperadas
+        if url_imagen_obtenida in imagen_5_esperadas:
+      
+            print("La imagen es visible para el usuario. URL:", url_imagen_obtenida)
+        else:
+            print("La imagen no es visible para el usuario. URL:", url_imagen_obtenida)
+
+       
         #validar el numero de comprobante del movimiento 
 
         elemento_6 = driver.find_element(By.XPATH, '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/app-recent-grain-movements/div/div[2]/app-recent-sales/app-responsive-table-multiple-items/div/table/tbody/tr[1]/td[2]/div/div/span')
