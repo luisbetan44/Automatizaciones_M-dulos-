@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Test Result</h2>
-                <p class='attribute'><strong>Start Time: </strong>2023-08-15 19:08:07</p>
-                <p class='attribute'><strong>Duration: </strong>63.011s</p>
-                <p class='attribute'><strong>Status: </strong>Pass: 1</p>
+                <p class='attribute'><strong>Start Time: </strong>2023-08-17 20:38:17</p>
+                <p class='attribute'><strong>Duration: </strong>8.731s</p>
+                <p class='attribute'><strong>Status: </strong>Error: 2</p>
             </div>
         </div>
         <div class="row">
@@ -27,25 +27,105 @@
                     </thead>
                     <tbody>
                         
-                            <tr class='success'>
+                            <tr class='warning'>
                                 <td class="col-xs-9">test_conf_venta (__main__.Conf_ventas_test_tenant)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
                                     
                                 </td>
                             </tr>
                             
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>NoSuchWindowException</p>
+                                        <p>Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B40E52A2+57122]
+	(No symbol) [0x00007FF7B405EA92]
+	(No symbol) [0x00007FF7B3F2E3AB]
+	(No symbol) [0x00007FF7B3F0E1B9]
+	(No symbol) [0x00007FF7B3F8B417]
+	(No symbol) [0x00007FF7B3F9E24F]
+	(No symbol) [0x00007FF7B3F86DB3]
+	(No symbol) [0x00007FF7B3F5D2B1]
+	(No symbol) [0x00007FF7B3F5E494]
+	GetHandleVerifier [0x00007FF7B438EF82+2849794]
+	GetHandleVerifier [0x00007FF7B43E1D24+3189156]
+	GetHandleVerifier [0x00007FF7B43DACAF+3160367]
+	GetHandleVerifier [0x00007FF7B4176D06+653702]
+	(No symbol) [0x00007FF7B406A208]
+	(No symbol) [0x00007FF7B40662C4]
+	(No symbol) [0x00007FF7B40663F6]
+	(No symbol) [0x00007FF7B40567A3]
+	BaseThreadInitThunk [0x00007FFD316F26AD+29]
+	RtlUserThreadStart [0x00007FFD3240AA68+40]
+</p>
+                                    </td>
+                                </tr>
+                            
+                        
+                            <tr class='warning'>
+                                <td class="col-xs-9">test_conf_venta (__main__.Conf_ventas_test_tenant)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-warning">
+                                        
+                                            Error
+                                        
+                                    </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
+                                </td>
+                            </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>WebDriverException</p>
+                                        <p>Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=116.0.5845.97)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B40E52A2+57122]
+	(No symbol) [0x00007FF7B405EA92]
+	(No symbol) [0x00007FF7B3F2E3AB]
+	(No symbol) [0x00007FF7B3F1ABE6]
+	(No symbol) [0x00007FF7B3F1B31E]
+	(No symbol) [0x00007FF7B3F1B250]
+	(No symbol) [0x00007FF7B3F0CC5A]
+	(No symbol) [0x00007FF7B3F0D85D]
+	(No symbol) [0x00007FF7B3F90D24]
+	(No symbol) [0x00007FF7B3F86FA0]
+	(No symbol) [0x00007FF7B3F5D2B1]
+	(No symbol) [0x00007FF7B3F5E494]
+	GetHandleVerifier [0x00007FF7B438EF82+2849794]
+	GetHandleVerifier [0x00007FF7B43E1D24+3189156]
+	GetHandleVerifier [0x00007FF7B43DACAF+3160367]
+	GetHandleVerifier [0x00007FF7B4176D06+653702]
+	(No symbol) [0x00007FF7B406A208]
+	(No symbol) [0x00007FF7B40662C4]
+	(No symbol) [0x00007FF7B40663F6]
+	(No symbol) [0x00007FF7B40567A3]
+	BaseThreadInitThunk [0x00007FFD316F26AD+29]
+	RtlUserThreadStart [0x00007FFD3240AA68+40]
+</p>
+                                    </td>
+                                </tr>
+                            
                         
                         <tr>
                             <td>
-                               Total Test Runned: 1
+                               Total Test Runned: 2
                             </td>
                             <td>
-                                <span>Pass: 1</span>
+                                <span>Error: 2</span>
                             </td>
                         </tr>
                     </tbody>
