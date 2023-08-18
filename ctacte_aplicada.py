@@ -14,7 +14,7 @@ from selenium.webdriver.support import expected_conditions as EC
 class cuenta_entregas(unittest.TestCase):
     
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe")
+        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
         driver = self.driver
         driver.implicitly_wait(30)
         driver.maximize_window()
@@ -140,6 +140,171 @@ class cuenta_entregas(unittest.TestCase):
         time.sleep(2)
 
         ## validar titulo de pantalla cuenta corriente aplicada 
+
+        title_account = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
+        )
+
+        title_account_expected = title_account.text
+        title_account_obtained = "CUENTA CORRIENTE APLICADA"
+        self.assertEqual(title_account_obtained,title_account_expected)
+        print("El titulo de la pantalla es: ",title_account_obtained)
+
+        ## validar totalizadores 
+
+
+        total_to_pay = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]/span[1]"
+        )
+        total_to_pay_expected = total_to_pay.text
+        total_to_pay_obtained = "55.215.163,00"
+        self.assertEqual(total_to_pay_expected,total_to_pay_obtained)
+        print("El total a pagar es:",total_to_pay_obtained)
+
+        ## validar saldos
+
+        balance_ars = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+        )
+
+        balance_ars_expected = balance_ars.text
+        balance_ars_obtained = "-33.657.281,78"
+        self.assertEqual(balance_ars_expected,balance_ars_obtained)
+        print("El saldo en pesos es: ", balance_ars_obtained)
+
+
+        balance_usd = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[3]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+        )
+
+        balance_usd_expected = balance_usd.text
+        balance_usd_obtained = "2.232.184,77"
+        self.assertEqual(balance_usd_expected,balance_usd_obtained)
+        print("El saldo en dólares es: ", balance_usd_obtained)
+
+        ## seleccionar movimientos del lisatos 
+
+        movements_list_1 = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[2]/th/input"
+        )
+        movements_list_1.click()
+
+        movements_list_2 = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[3]/th/input"
+        )
+        movements_list_2.click()
+
+        movements_list_3 = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[4]/th/input"
+        )
+        movements_list_3.click()
+
+        movements_list_4 = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[5]/th/input"
+        )
+        movements_list_4.click()
+      
+       ## seleccionar botón descargar  
+
+        select_button = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+        )
+        select_button.click()
+
+        ## descargar Excel 
+
+        download_Excel = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a"
+        )
+
+        download_Excel.click()
+        time.sleep(3)
+
+        ## descargar PDF 
+
+        select_button = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+        )
+        select_button.click()
+
+        ## descargar Excel 
+
+        download_PDF = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a"
+        )
+
+        download_PDF.click()
+        time.sleep(3)
+
+
+        ## ingresar al detalle 
+
+        detail_movements = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[2]/td[2]/span/span"
+        )
+        detail_movements.click()
+        time.sleep(3)
+
+        ## validar titulo pantalla 
+        title_detail = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
+        )
+
+        title_detail_expected = title_detail.text
+        title_detail_obtained = "CUENTA CORRIENTE"
+        self.assertEqual(title_detail_expected,title_detail_obtained)
+        print("El titulo de la pantalla es: ", title_detail_obtained)
+
+        ## validar datos del detalle 
+
+        number_movements = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[1]/div"
+        )
+
+        number_movements_expected = number_movements.text
+        number_movements_obtained = "Movimiento IC 3302 00162905"
+        self.assertEqual(number_movements_expected,number_movements_obtained)
+        print("El numero del movimiento es: ", number_movements_obtained)
+
+
+        balance_movements = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]"
+        )
+
+        balance_movements_expected = balance_movements.text
+        balance_movements_obtained = "- ARS 17.002,67"
+        self.assertEqual(balance_movements_expected,balance_movements_obtained)
+        print("El saldo del movimiento es: ", balance_movements_obtained)
+
+        settlement = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[2]"
+        )
+
+        settlement_expected = settlement.text
+        settlement_obtained = "IVA CBU LIQ.1116C MAIZ 2122 6309 Kgs."
+        self.assertEqual(settlement_expected,settlement_obtained)
+        print("El numero de liquidación es: ", settlement_obtained)
+
+        ## Seleccionar salida al listado 
+
+        go_out_list = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a"
+        )
+        go_out_list.click()
+        time.sleep(3)
+
+
+
+        
+
+
+
+
+
+
+
+
+
 
 
 
