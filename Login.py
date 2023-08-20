@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 def login(username, password):
-    driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe")  # Configura el driver de Selenium (en este caso, Chrome)
+    driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")  # Configura el driver de Selenium (en este caso, Chrome)
     driver.get("https://pwa-portal-qa.silohub.ag/login")  # Abre la página de inicio de sesión
 
     # Encuentra los campos de usuario y contraseña y envía los datos
