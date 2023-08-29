@@ -6,6 +6,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 import time
+from selenium.webdriver.support.ui import Select
 
 
 class precio_granos(unittest.TestCase):
@@ -48,6 +49,75 @@ class precio_granos(unittest.TestCase):
         driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
         element_to_click.click()
         time.sleep(3)
+
+        ## seleccionar el menú de granos 
+
+        select_menu_grain = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/a/span")
+        select_menu_grain.click()
+        time.sleep(2)
+
+        # seleccionar submenú de precio de granos 
+
+        price_grain = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/div/ul/li[3]/a")
+        price_grain.click()
+        time.sleep(2)
+
+        # validar titulo de la pantalla de precio de granos 
+
+        title_international_market = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-international-market/app-market-table/app-market-header/app-market-header-info/div/div[1]/h4")
+        title_international_expected = title_international_market.text
+        title_international_obtained = "Mercado Internacional"
+
+        if title_international_expected == title_international_obtained:
+            print("El titulo de la pantalla es: ", title_international_obtained)
+
+        else:
+            print("El titulo de la pantalla no es el correcto")
+
+       # validar el tipo de cambio y el banco 
+
+        type_change = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-international-market/app-market-table/app-market-header/app-market-header-controls/div/app-market-currency/div[1]")
+        type_change_expected = type_change.text
+        type_change_obtained = "ARS 130.48"
+
+        if type_change_expected == type_change_obtained:
+            print("El tipo de cambio para el dia de hoy es :", type_change_obtained)
+
+        else:
+            print("El tipo de cambio no es correcto")
+
+        # seleccionar un tipo de mercado 
+
+ 
+        dropdown_element = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-international-market/app-market-table/app-market-header/app-market-header-controls/div/div/div/div[1]/select")
+
+        # Crear un objeto Select para interactuar con el dropdown
+        dropdown = Select(dropdown_element)
+
+       # Seleccionar una opción por su valor
+        dropdown.select_by_value("2")  
+
+       # Obtener el elemento seleccionado en el dropdown
+        option_seleccted = dropdown.first_selected_option
+
+       # Hacer clic en el elemento seleccionado (en este caso, el <option> del dropdown)
+        option_seleccted.click()
+        time.sleep(2)
+
+        # seleccionar fecha 
+
+        date_market = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-international-market/app-market-table/app-market-header/app-market-header-controls/div/div/div/div[2]/app-date-picker/div/input[2]")))
+        date_market.click()
+
+        select_date = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "/html/body/div[11]/div[2]/div/div[2]/div/span[31]")))
+        select_date.click()
+        time.sleep(2)
+
+
+
+
+
+
     
     
     def tearDown(self):
