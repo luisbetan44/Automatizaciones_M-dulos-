@@ -10,7 +10,7 @@ from faker import Faker
 
 class Onboarding_test_tenant(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe")
+        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
         driver = self.driver
         driver.implicitly_wait(30)
         driver.maximize_window()
@@ -40,17 +40,17 @@ class Onboarding_test_tenant(unittest.TestCase):
         select_tenant.click()
 
         select_config = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/a/span"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[4]/a/span"
         )
         select_config.click()
 
         select_documento = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/div/ul/li[8]/a"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[4]/div/ul/li[8]/a"
         )
         select_documento.click()
         time.sleep(3)
 
-        # validar el titulode la pantalle documentación
+        # validar el titulo de la pantalle documentación
 
         elemento_1 = self.driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"

@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Test Result</h2>
-                <p class='attribute'><strong>Start Time: </strong>2023-09-04 12:57:56</p>
-                <p class='attribute'><strong>Duration: </strong>129.635s</p>
-                <p class='attribute'><strong>Status: </strong>Pass: 1</p>
+                <p class='attribute'><strong>Start Time: </strong>2023-09-04 18:07:29</p>
+                <p class='attribute'><strong>Duration: </strong>80.240s</p>
+                <p class='attribute'><strong>Status: </strong>Error: 1</p>
             </div>
         </div>
         <div class="row">
@@ -27,17 +27,50 @@
                     </thead>
                     <tbody>
                         
-                            <tr class='success'>
-                                <td class="col-xs-9">test_login_user (__main__.Onboarding_test_tenant)</td>
+                            <tr class='warning'>
+                                <td class="col-xs-9">test_precio_granos (__main__.precio_granos)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
                                     
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
                                 </td>
                             </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>NoSuchElementException</p>
+                                        <p>Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-grain-price/div[2]/app-grain-price-table[1]/div/div/table/tbody/tr/td[1]/app-switch/div/input"}
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FE7252A2+57122]
+	(No symbol) [0x00007FF7FE69EA92]
+	(No symbol) [0x00007FF7FE56E3AB]
+	(No symbol) [0x00007FF7FE5A7D3E]
+	(No symbol) [0x00007FF7FE5A7E2C]
+	(No symbol) [0x00007FF7FE5E0B67]
+	(No symbol) [0x00007FF7FE5C701F]
+	(No symbol) [0x00007FF7FE5DEB82]
+	(No symbol) [0x00007FF7FE5C6DB3]
+	(No symbol) [0x00007FF7FE59D2B1]
+	(No symbol) [0x00007FF7FE59E494]
+	GetHandleVerifier [0x00007FF7FE9CEF82+2849794]
+	GetHandleVerifier [0x00007FF7FEA21D24+3189156]
+	GetHandleVerifier [0x00007FF7FEA1ACAF+3160367]
+	GetHandleVerifier [0x00007FF7FE7B6D06+653702]
+	(No symbol) [0x00007FF7FE6AA208]
+	(No symbol) [0x00007FF7FE6A62C4]
+	(No symbol) [0x00007FF7FE6A63F6]
+	(No symbol) [0x00007FF7FE6967A3]
+	BaseThreadInitThunk [0x00007FFA16E526AD+29]
+	RtlUserThreadStart [0x00007FFA184CAA68+40]
+</p>
+                                    </td>
+                                </tr>
                             
                         
                         <tr>
@@ -45,7 +78,7 @@
                                Total Test Runned: 1
                             </td>
                             <td>
-                                <span>Pass: 1</span>
+                                <span>Error: 1</span>
                             </td>
                         </tr>
                     </tbody>

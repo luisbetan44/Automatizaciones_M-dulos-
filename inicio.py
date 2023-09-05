@@ -14,7 +14,7 @@ import re
 class inicio_tenat(unittest.TestCase):
 
     def    setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver.exe")
+        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
         driver = self.driver
         driver.implicitly_wait(30)
         driver.maximize_window()
