@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 
-class cuenta_entregas(unittest.TestCase):
+class cuenta_ctacte_historica(unittest.TestCase):
     
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
@@ -67,10 +67,15 @@ class cuenta_entregas(unittest.TestCase):
         select_account.click()
         time.sleep(3)
 
+        ## seleccionar solapa cta cte historica 
+
+        select_account_history = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/ul/li[2]/a")
+        select_account_history.click()
+
         ## selecionar botón del filtro
 
         select_filter = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span"
         )
         select_filter.click()
         time.sleep(2)
@@ -94,6 +99,11 @@ class cuenta_entregas(unittest.TestCase):
         )
         apply_filter_3.click()
         time.sleep(2)
+
+        ## seleccionar filtro ordenado por 
+
+        older_by_expiration = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list[1]/div/app-radio[2]/div/input")
+        older_by_expiration.click()
 
         ## seleccionar rango de fecha
 
@@ -137,7 +147,7 @@ class cuenta_entregas(unittest.TestCase):
             "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
         )
         apply_button_filter.click()
-        time.sleep(2)
+        time.sleep(3)
 
         ## validar titulo de pantalla cuenta corriente aplicada 
 
@@ -146,75 +156,66 @@ class cuenta_entregas(unittest.TestCase):
         )
 
         title_account_expected = title_account.text
-        title_account_obtained = "CUENTA CORRIENTE APLICADA"
+        title_account_obtained = "CUENTA CORRIENTE"
         self.assertEqual(title_account_obtained,title_account_expected)
         print("El titulo de la pantalla es: ",title_account_obtained)
 
         ## validar totalizadores 
 
 
-        total_to_pay = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]/span[1]"
-        )
-        total_to_pay_expected = total_to_pay.text
-        total_to_pay_obtained = "19.307.285,78"
-        self.assertEqual(total_to_pay_expected,total_to_pay_obtained)
-        print("El total a pagar es:",total_to_pay_obtained)
-
-        ## validar saldos
 
         balance_ars = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"
         )
 
         balance_ars_expected = balance_ars.text
-        balance_ars_obtained = "-34.259.314,29"
+        balance_ars_obtained = "93.514.277,69"
         self.assertEqual(balance_ars_expected,balance_ars_obtained)
         print("El saldo en pesos es: ", balance_ars_obtained)
 
 
         balance_usd = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[3]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
         )
 
         balance_usd_expected = balance_usd.text
-        balance_usd_obtained = "2.232.184,77"
+        balance_usd_obtained = "-247.538,76"
         self.assertEqual(balance_usd_expected,balance_usd_obtained)
         print("El saldo en dólares es: ", balance_usd_obtained)
 
         ## seleccionar movimientos del lisatos 
 
         movements_list_1 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[2]/th/input"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-responsive-table/div/table/tbody/tr[2]/th/input"
         )
         movements_list_1.click()
 
         movements_list_2 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[3]/th/input"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-responsive-table/div/table/tbody/tr[3]/th/input"
         )
         movements_list_2.click()
 
         movements_list_3 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[4]/th/input"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-responsive-table/div/table/tbody/tr[4]/th/input"
         )
         movements_list_3.click()
 
         movements_list_4 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[5]/th/input"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-responsive-table/div/table/tbody/tr[5]/th/input"
         )
         movements_list_4.click()
       
        ## seleccionar botón descargar  
 
         select_button = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
         )
         select_button.click()
 
         ## descargar Excel 
 
         download_Excel = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a"
         )
 
         download_Excel.click()
@@ -223,14 +224,14 @@ class cuenta_entregas(unittest.TestCase):
         ## descargar PDF 
 
         select_button = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
         )
         select_button.click()
 
         ## descargar Excel 
 
         download_PDF = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a"
         )
 
         download_PDF.click()
@@ -240,7 +241,7 @@ class cuenta_entregas(unittest.TestCase):
         ## ingresar al detalle 
 
         detail_movements = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[2]/td[2]/span/span"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-responsive-table/div/table/tbody/tr[2]/td[2]/span/span"
         )
         detail_movements.click()
         time.sleep(3)
@@ -262,7 +263,7 @@ class cuenta_entregas(unittest.TestCase):
         )
 
         number_movements_expected = number_movements.text
-        number_movements_obtained = "Movimiento IC 3302 11350799"
+        number_movements_obtained = "Movimiento LC 3302 11350799"
         self.assertEqual(number_movements_expected,number_movements_obtained)
         print("El numero del movimiento es: ", number_movements_obtained)
 
@@ -272,7 +273,7 @@ class cuenta_entregas(unittest.TestCase):
         )
 
         balance_movements_expected = balance_movements.text
-        balance_movements_obtained = "- ARS 1.003.500,00"
+        balance_movements_obtained = "+ ARS 17.701.650,00"
         self.assertEqual(balance_movements_expected,balance_movements_obtained)
         print("El saldo del movimiento es: ", balance_movements_obtained)
 
@@ -281,7 +282,7 @@ class cuenta_entregas(unittest.TestCase):
         )
 
         settlement_expected = settlement.text
-        settlement_obtained = "IVA CBU Liq.1116C SOJA 2122 30000 Kgs."
+        settlement_obtained = "Liq.1116C SOJA 2122 30000 Kgs. 100,00%"
         self.assertEqual(settlement_expected,settlement_obtained)
         print("El numero de liquidación es: ", settlement_obtained)
 
@@ -321,4 +322,4 @@ class cuenta_entregas(unittest.TestCase):
 
 
 if __name__ == "__main__":
-  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'reporte_ctacte_aplicada'))
+  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'reporte_ctacte_histórica'))
