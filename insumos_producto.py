@@ -65,7 +65,7 @@ class insumos_productos(unittest.TestCase):
         ## agregar producto
 
         add_product = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[1]/input")
-        add_product.send_keys("herbicida")
+        add_product.send_keys("aceite")
         add_product.send_keys(Keys.ENTER)
 
         ## seleccionar condicion 
@@ -73,13 +73,55 @@ class insumos_productos(unittest.TestCase):
         select_condition = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[2]/app-supplies-price-list-selector/button")
         select_condition.click()
 
-        ## ingresar fecha en busqueda 
+        ## ingresar fecha en busqueda
 
-    
-        
-        insert_date = WebDriverWait(driver, 10).until(EC.visibility_of_element_located((By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[2]/app-supplies-price-list-selector/ul/input")))
-        insert_date.send_keys("2023")
+        insert_cleam = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[2]/app-supplies-price-list-selector/ul/input")
+        insert_cleam.clear()
+        time.sleep(3)
+ 
+
+        insert_date = WebDriverWait(driver, 3).until(EC.visibility_of_element_located((By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[2]/app-supplies-price-list-selector/ul/input")))
+        insert_date.send_keys("60 días")
         insert_date.send_keys(Keys.ENTER)
+
+        ## seleccionar condición 
+
+        type_condition_1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[2]/app-supplies-price-list-selector/ul/div/div[89]/input")
+        type_condition_1.click()
+
+        type_condition_2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[2]/app-supplies-price-list-selector/ul/div/div[162]/input")
+        type_condition_2.click()
+
+        
+
+        button_search = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[3]/button/div")
+        button_search.click()
+        time.sleep(3)
+
+        ## seleccionar producto del listado 
+        
+        select_price_product = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-product-price-list/div/app-supplies-product-price-list-item[1]/div/div/div/div[2]/button[2]/strong")
+        select_price_product.click()
+        time.sleep(3)
+
+        ## agregar producto al carro 
+
+        select_product_list = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-product-price-list/div/app-supplies-product-price-list-item[1]/div/div/app-supplies-product-price-list-item-price/div[2]/app-supplies-product-price-list-item-price-item/div/div[1]/input")
+        select_product_list.click()
+        time.sleep(3)
+
+        add_button = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-product-price-list/div/app-supplies-product-price-list-item[1]/div/div/app-supplies-product-price-list-item-price/app-supplies-product-price-list-item-price-add-share-buttons/div/button[2]")
+        add_button.click()
+        time.sleep(3)
+
+        ## ingresar al carrito 
+
+        select_car = driver.find_element_by_id("shipment")
+        select_car.click()
+        time.sleep(3)
+
+        ## validar titulo pantalla 
+
 
 
 
