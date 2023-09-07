@@ -67,6 +67,7 @@ class insumos_productos(unittest.TestCase):
         add_product = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/app-supplies-searcher/div/div[1]/input")
         add_product.send_keys("aceite")
         add_product.send_keys(Keys.ENTER)
+        time.sleep(2)
 
         ## seleccionar condicion 
 
@@ -122,9 +123,91 @@ class insumos_productos(unittest.TestCase):
 
         ## validar titulo pantalla 
 
+        title_page_car = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/span")
+        title_page_car_expected = title_page_car.text
+        title_page_car_obtained = "Productos Seleccionados"
+
+        if title_page_car_expected == title_page_car_obtained:
+            print("El titulo de la pagina es: ", title_page_car_obtained)
+
+        else:
+            print("El titulo de la pagina no es correcto")
+
+       ## validar descripcion del producto
+
+        description_product = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/app-supplies-selected-products-item/div/div/div/div[1]/div/div[2]/div/div[1]")
+        description_product_expected = description_product.text
+        description_product_obtained = "Aceite Metilado Siliconado SIL OIL MAX x 5 lts. INNOVAE"
+
+        if description_product_expected == description_product_obtained:
+            print("El producto seleccionado es el siguente: ", description_product_obtained)
+
+        else:
+            print("El producto no es el correcto")
+        ## seleccionar cuenta 
+
+        select_account = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[2]/app-supplies-customer-info/div/div[1]/div/div[2]/app-customer-searcher/ng-select/div/div/div[2]/input")
+        select_account.send_keys("1023")
+        select_account.send_keys(Keys.ENTER)
+
+        select_account_tenant = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[2]/app-supplies-customer-info/div/div[1]/div[1]/div[2]/app-customer-searcher/ng-select/ng-dropdown-panel/div/div[2]/div[2]/span")
+        select_account_tenant.click()
+
+        ## cambiar cantidad 
+
+        select_amount = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/app-supplies-selected-products-item/div/div/app-supplies-selected-products-item-price-item/div/div[2]/div/div[2]/input")
+        select_amount.clear()
+
+        inser_new_amount = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/app-supplies-selected-products-item/div/div/app-supplies-selected-products-item-price-item/div/div[2]/div/div[2]/input")
+        inser_new_amount.send_keys("3")
+        inser_new_amount.send_keys(Keys.ENTER)
+
+        ## insertar comentario
 
 
+        insert_comentary = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[2]/app-supplies-customer-info/div/div[2]/div/textarea")
+        insert_comentary.send_keys("Test de prueba automatizada")
+        insert_comentary.send_keys(Keys.ENTER)
 
+        ## hacer boton continuar
+
+        continue_button = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[2]/app-supplies-customer-info/div/app-supplies-customer-info-share-continuous/div/div[2]/button")
+        continue_button.click()
+
+        ## seleccionar sucursal 
+
+        select_branch = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/app-supplies-customer-info-branch-office/div/div[2]/select")
+        select_branch.click()
+
+        insert_branch = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/app-supplies-customer-info-branch-office/div/div[2]/select/option[4]")
+        insert_branch.click()
+
+        create_order = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[2]/app-supplies-customer-info/div/app-supplies-customer-info-share-continuous/div/div[2]/button")
+        create_order.click()
+
+        ## confirmar la orden
+
+        confirm_order = driver.find_element_by_xpath("/html/body/div/div/div[6]/button[3]")
+        confirm_order.click()
+        time.sleep(2)
+
+        ## validar que la orden se creo con exito
+
+
+        order_successful = driver.find_element_by_xpath("/html/body/div/div/h2")
+        order_successful_expected = order_successful.text
+        order_successful_obtained = "Tu orden fue enviada al sistema"
+
+        if order_successful_expected == order_successful_obtained:
+            print("Se realizo con exito y : ", order_successful_obtained)
+
+        else:
+            print("No fue generada con exito tu orden")
+        ## seleccionar boton aceptar 
+
+        accept_button = driver.find_element_by_xpath("/html/body/div/div/div[6]/button[3]")
+        accept_button.click()
+        time.sleep(2)
 
 
     def tearDown(self):
