@@ -8,7 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # Define tu función de prueba de Selenium
 def run_test():
-    driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+    driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver-win64\chromedriver.exe")
     driver.implicitly_wait(30)
     driver.maximize_window()
     driver.get("https://pwa-portal-staging.silohub.ag/login")
@@ -33,24 +33,16 @@ def run_test():
 
     select_tenat = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
     select_tenat.click()
+    time.sleep(35)
 
    # ingresar al menú de cuentas 
 
-    select_menu_Account = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
-        )
-    select_menu_Account.click()
-
-    select_contract = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[1]/a"
-        )
-    select_contract.click()
-    time.sleep(5)
+    
     
     driver.quit()
 
 # Define la cantidad de repeticiones
-num_repetitions = 6
+num_repetitions = 1
 
 # Ejecuta las pruebas en paralelo
 with concurrent.futures.ThreadPoolExecutor(max_workers=num_repetitions) as executor:
