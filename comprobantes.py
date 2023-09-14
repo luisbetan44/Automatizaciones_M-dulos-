@@ -78,34 +78,125 @@ class cuenta_comprobantes(unittest.TestCase):
 
        ## seleccionar filtro de contrato
 
-        select_filter_button = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span")
-        select_filter_button.click()
+        select_filter_button1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span")
+        select_filter_button1.click()
 
 
-        select_filter_contract = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list/div/app-radio[1]/div/input")
-        select_filter_contract.click()
+        wait = WebDriverWait(driver, 10)
+        select_contract_filter1 = wait.until(EC.element_to_be_clickable((By.XPATH, '//*[@id="Contratos"]')))
+        select_contract_filter1.click()
+
 
         insert_date_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]")
         insert_date_filter.click()
+        time.sleep(2)
 
         select_arrow_filter1 = driver.find_element_by_xpath("/html/body/div/div[1]/span[1]")
         select_arrow_filter1.click()
+        time.sleep(2)
 
-        select_date_filter1 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div[2]/div/span[2]")
-        select_date_filter1.click
+         ##Espera hasta que el checkbox esté visible y activo
+        wait = WebDriverWait(driver, 10)
+        select_date_filter1 = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[@class='flatpickr-day' and text()='2']")))
+        select_date_filter1.click()
 
         select_arrow_filter2 = driver.find_element_by_xpath("/html/body/div/div[1]/span[2]")
         select_arrow_filter2.click()
+        time.sleep(2)
 
-        select_date_filter2 = driver.find_element_by_xpath("/html/body/div/div[2]/div/div[2]/div/span[15]")
-        select_date_filter2.click
+        wait = WebDriverWait(driver, 10)
+        select_date_filter2 = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[@class='flatpickr-day' and text()='13']")))
+        select_date_filter2.click()
+
 
         apply_filter_button = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
         apply_filter_button.click()
         time.sleep(3)
 
 
-        ## vali
+        ## validar titulo de la pantalla 
+        title_page_vouchers = driver.find_element_by_xpath("//span[@class='fw-bold' and text()='Mis Comprobantes']")
+        title_page_vouchers_obtained = title_page_vouchers.text
+        title_page_vouchers_expected = "Mis Comprobantes"
+
+        if title_page_vouchers_expected == title_page_vouchers_obtained:
+            print("El título de la pagina es: ",title_page_vouchers_obtained)
+
+        else: 
+             print("El título de la pagina no es el correcto: ")
+
+        ## seleccionar contrato 
+
+
+        select_contract_list1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[1]/th/input")
+        select_contract_list1.click()
+
+        ## validar numero de contrato
+
+        contract_number1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[1]/td/div/div[2]/div[2]/div[3]/span")
+        contract_number1_obtained = contract_number1.text
+        contract_number1_expected = "VT 0001 00121040"
+        if contract_number1_expected == contract_number1_obtained:
+            print("El numero del contrato seleccionado es: ", contract_number1_obtained)
+
+        else:
+            print("El numero de contrato no es correcto")
+
+        select_contract_list2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[2]/th/input")
+        select_contract_list2.click()
+
+        ## validar numero de contrato
+
+        contract_number2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[2]/td/div/div[2]/div[2]/div[3]/span")
+        contract_number2_obtained = contract_number2.text
+        contract_number2_expected = "VT 0001 00121041"
+        if contract_number2_expected == contract_number2_obtained:
+            print("El numero del contrato seleccionado es: ", contract_number2_obtained)
+
+        else:
+            print("El numero de contrato no es correcto")
+
+
+        ## seleccionar boton descargar 
+
+        download_button1 = driver.find_element_by_xpath("//button[@type='button'and @class='btn dropdown-toggle dropdown-toggle-split shadow-none btn-primary']")
+        download_button1.click()
+
+        select_type_document1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
+        select_type_document1.click()
+
+        ## aceptar popup
+
+        select_popup = driver.find_element_by_xpath("/html/body/div/div/div[6]/button[1]")
+        select_popup.click()
+
+        ## cambiar filtro
+        
+        select_filter_button2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span")
+        select_filter_button2.click()
+
+
+        wait = WebDriverWait(driver, 10)
+        select_contract_filter3 = wait.until(EC.element_to_be_clickable((By.XPATH,"//input[@type='radio' and @name='undefined']")))
+        select_contract_filter3.click()
+
+
+        apply_filter_button2 = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
+        apply_filter_button2.click()
+        time.sleep(3)
+
+        ## seleccionar movimiento del listado de cta cte
+
+        select_contract_account = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr/th/input")
+        select_contract_account.click()
+
+        download_button2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
+        download_button2.click()
+
+        select_type_document2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
+        select_type_document2.click()
+
+
 
 
 

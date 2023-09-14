@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Test Result</h2>
-                <p class='attribute'><strong>Start Time: </strong>2023-09-11 17:17:53</p>
-                <p class='attribute'><strong>Duration: </strong>31.335s</p>
-                <p class='attribute'><strong>Status: </strong>Pass: 1</p>
+                <p class='attribute'><strong>Start Time: </strong>2023-09-14 18:01:45</p>
+                <p class='attribute'><strong>Duration: </strong>25.796s</p>
+                <p class='attribute'><strong>Status: </strong>Error: 1</p>
             </div>
         </div>
         <div class="row">
@@ -27,17 +27,54 @@
                     </thead>
                     <tbody>
                         
-                            <tr class='success'>
+                            <tr class='warning'>
                                 <td class="col-xs-9">test_cuenta_entregas (__main__.cuenta_comprobantes)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
                                     
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
                                 </td>
                             </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>ElementClickInterceptedException</p>
+                                        <p>Message: element click intercepted: Element <input _ngcontent-qkg-c151="" type="radio" class="form-check-input" name="undefined" id="Contratos"> is not clickable at point (1255, 173). Other element would receive the click: <div _ngcontent-qkg-c151="" class="form-check form-radio-primary">...</div>
+  (Session info: chrome=117.0.5938.63)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AA6952A2+57122]
+	(No symbol) [0x00007FF6AA60EA92]
+	(No symbol) [0x00007FF6AA4DE3AB]
+	(No symbol) [0x00007FF6AA51D783]
+	(No symbol) [0x00007FF6AA51BD5F]
+	(No symbol) [0x00007FF6AA519DC8]
+	(No symbol) [0x00007FF6AA518FD5]
+	(No symbol) [0x00007FF6AA50F25F]
+	(No symbol) [0x00007FF6AA536FDA]
+	(No symbol) [0x00007FF6AA50EB76]
+	(No symbol) [0x00007FF6AA5371F0]
+	(No symbol) [0x00007FF6AA54EB82]
+	(No symbol) [0x00007FF6AA536DB3]
+	(No symbol) [0x00007FF6AA50D2B1]
+	(No symbol) [0x00007FF6AA50E494]
+	GetHandleVerifier [0x00007FF6AA93EF82+2849794]
+	GetHandleVerifier [0x00007FF6AA991D24+3189156]
+	GetHandleVerifier [0x00007FF6AA98ACAF+3160367]
+	GetHandleVerifier [0x00007FF6AA726D06+653702]
+	(No symbol) [0x00007FF6AA61A208]
+	(No symbol) [0x00007FF6AA6162C4]
+	(No symbol) [0x00007FF6AA6163F6]
+	(No symbol) [0x00007FF6AA6067A3]
+	BaseThreadInitThunk [0x00007FF8239C257D+29]
+	RtlUserThreadStart [0x00007FF8250CAA68+40]
+</p>
+                                    </td>
+                                </tr>
                             
                         
                         <tr>
@@ -45,7 +82,7 @@
                                Total Test Runned: 1
                             </td>
                             <td>
-                                <span>Pass: 1</span>
+                                <span>Error: 1</span>
                             </td>
                         </tr>
                     </tbody>
