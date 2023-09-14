@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 
-class cuenta_entregas(unittest.TestCase):
+class cuenta_ctacte_aplicada(unittest.TestCase):
     
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
