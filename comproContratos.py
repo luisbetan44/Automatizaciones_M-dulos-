@@ -11,7 +11,7 @@ from selenium.webdriver.support import expected_conditions as EC
 
 
 
-class cuenta_comprobantes(unittest.TestCase):
+class comprobantes_contratos(unittest.TestCase):
     
     def setUp(self):
         self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
@@ -167,36 +167,28 @@ class cuenta_comprobantes(unittest.TestCase):
 
         ## aceptar popup
 
-        select_popup = driver.find_element_by_xpath("/html/body/div/div/div[6]/button[1]")
-        select_popup.click()
+        select_popup1 = driver.find_element_by_xpath("/html/body/div/div/div[6]/button[1]")
+        select_popup1.click()
 
-        ## cambiar filtro
+        ## validar respuesta del pop up 
+        messager_popup = driver.find_element_by_xpath("/html/body/div/div/h2")
+        messager_popup_obtained =  messager_popup.text
+        messager_popup_expected = "El comprobante seleccionado no se encuentra para su descarga"
+
+        if  messager_popup_expected ==  messager_popup_obtained:
+            print("El mensaje de la descarga  es: ", messager_popup_obtained)
+
+        else: 
+             print("El sistema no esta arrojando mensaje de la descarga: ")
+
+
+        ## salir de la pantalla  
         
-        select_filter_button2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span")
-        select_filter_button2.click()
+        select_header_arrow = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
+        select_header_arrow.click()
 
 
-        wait = WebDriverWait(driver, 10)
-        select_contract_filter3 = wait.until(EC.element_to_be_clickable((By.XPATH,"//input[@type='radio' and @name='undefined']")))
-        select_contract_filter3.click()
-
-
-        apply_filter_button2 = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
-        apply_filter_button2.click()
-        time.sleep(3)
-
-        ## seleccionar movimiento del listado de cta cte
-
-        select_contract_account = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr/th/input")
-        select_contract_account.click()
-
-        download_button2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
-        download_button2.click()
-
-        select_type_document2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
-        select_type_document2.click()
-
-
+        
 
 
 

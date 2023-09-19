@@ -11,9 +11,9 @@
         <div class="row">
             <div class="col-xs-12">
                 <h2 class="text-capitalize">Test Result</h2>
-                <p class='attribute'><strong>Start Time: </strong>2023-09-19 17:58:43</p>
-                <p class='attribute'><strong>Duration: </strong>42.253s</p>
-                <p class='attribute'><strong>Status: </strong>Pass: 1</p>
+                <p class='attribute'><strong>Start Time: </strong>2023-09-19 18:11:33</p>
+                <p class='attribute'><strong>Duration: </strong>55.051s</p>
+                <p class='attribute'><strong>Status: </strong>Error: 1</p>
             </div>
         </div>
         <div class="row">
@@ -27,17 +27,55 @@
                     </thead>
                     <tbody>
                         
-                            <tr class='success'>
-                                <td class="col-xs-9">test_cuenta_entregas (__main__.comprobantes_contratos)</td>
+                            <tr class='warning'>
+                                <td class="col-xs-9">test_cuenta_entregas (__main__.comprobantes_CtaCte)</td>
                                 <td class="col-xs-3">
-                                    <span class="label label-success">
+                                    <span class="label label-warning">
                                         
-                                            Pass
+                                            Error
                                         
                                     </span>
                                     
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
                                 </td>
                             </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>StaleElementReferenceException</p>
+                                        <p>Message: stale element reference: stale element not found
+  (Session info: chrome=117.0.5938.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6218E52A2+57122]
+	(No symbol) [0x00007FF62185EA92]
+	(No symbol) [0x00007FF62172E3AB]
+	(No symbol) [0x00007FF621732382]
+	(No symbol) [0x00007FF621733D2F]
+	(No symbol) [0x00007FF621733E20]
+	(No symbol) [0x00007FF6217697A4]
+	(No symbol) [0x00007FF621768DF3]
+	(No symbol) [0x00007FF62175F25F]
+	(No symbol) [0x00007FF621786FDA]
+	(No symbol) [0x00007FF62175EB76]
+	(No symbol) [0x00007FF6217871F0]
+	(No symbol) [0x00007FF62179EB82]
+	(No symbol) [0x00007FF621786DB3]
+	(No symbol) [0x00007FF62175D2B1]
+	(No symbol) [0x00007FF62175E494]
+	GetHandleVerifier [0x00007FF621B8EF82+2849794]
+	GetHandleVerifier [0x00007FF621BE1D24+3189156]
+	GetHandleVerifier [0x00007FF621BDACAF+3160367]
+	GetHandleVerifier [0x00007FF621976D06+653702]
+	(No symbol) [0x00007FF62186A208]
+	(No symbol) [0x00007FF6218662C4]
+	(No symbol) [0x00007FF6218663F6]
+	(No symbol) [0x00007FF6218567A3]
+	BaseThreadInitThunk [0x00007FF89845257D+29]
+	RtlUserThreadStart [0x00007FF89992AA68+40]
+</p>
+                                    </td>
+                                </tr>
                             
                         
                         <tr>
@@ -45,7 +83,7 @@
                                Total Test Runned: 1
                             </td>
                             <td>
-                                <span>Pass: 1</span>
+                                <span>Error: 1</span>
                             </td>
                         </tr>
                     </tbody>
