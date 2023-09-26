@@ -80,6 +80,7 @@ class comprobantes_CtaCte(unittest.TestCase):
 
         select_filter_button1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span")
         select_filter_button1.click()
+        time.sleep(3)
 
 
         insert_date_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]")
@@ -92,7 +93,7 @@ class comprobantes_CtaCte(unittest.TestCase):
 
          ##Espera hasta que el checkbox esté visible y activo
         wait = WebDriverWait(driver, 10)
-        select_date_filter1 = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[@class='flatpickr-day' and text()='1']")))
+        select_date_filter1 = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div/div[2]/div/div[2]/div/span[3]")))
         select_date_filter1.click()
 
         select_arrow_filter2 = driver.find_element_by_xpath("/html/body/div/div[1]/span[2]")
@@ -100,7 +101,7 @@ class comprobantes_CtaCte(unittest.TestCase):
         time.sleep(2)
 
         wait = WebDriverWait(driver, 10)
-        select_date_filter2 = wait.until(EC.element_to_be_clickable((By.XPATH, "//span[@class='flatpickr-day' and text()='30']")))
+        select_date_filter2 = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div/div[2]/div/div[2]/div/span[34]")))
         select_date_filter2.click()
 
 
@@ -123,64 +124,56 @@ class comprobantes_CtaCte(unittest.TestCase):
         ## seleccionar contrato 
 
 
-        select_contract_list1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[1]/th/input")
-        select_contract_list1.click()
+        select_contract_list = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[1]/th/input")
+        select_contract_list.click()
 
         ## validar numero de contrato
 
-        contract_number1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[1]/td/div/div[2]/div[2]/div[3]/span")
-        contract_number1_obtained = contract_number1.text
-        contract_number1_expected = "VT 0001 00121040"
-        if contract_number1_expected == contract_number1_obtained:
-            print("El numero del contrato seleccionado es: ", contract_number1_obtained)
+        contract_number = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr/td/div/div[2]/div[2]/div[3]/span")
+        contract_number_obtained = contract_number.text
+        contract_number_expected = "NC 1118 00002058"
+        if contract_number_expected == contract_number_obtained:
+            print("El numero del contrato seleccionado es: ", contract_number_obtained)
 
         else:
             print("El numero de contrato no es correcto")
 
-        select_contract_list2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[2]/th/input")
-        select_contract_list2.click()
+        ## descargar comprobante
 
-        ## validar numero de contrato
+        select_button_download = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
+        select_button_download.click()
+        time.sleep(2)
 
-        contract_number2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[2]/td/div/div[2]/div[2]/div[3]/span")
-        contract_number2_obtained = contract_number2.text
-        contract_number2_expected = "VT 0001 00121041"
-        if contract_number2_expected == contract_number2_obtained:
-            print("El numero del contrato seleccionado es: ", contract_number2_obtained)
+    
 
-        else:
-            print("El numero de contrato no es correcto")
+       
+        ## seleccionar formato PDF
 
-
-        ## seleccionar boton descargar 
-
-        download_button1 = driver.find_element_by_xpath("//button[@type='button'and @class='btn dropdown-toggle dropdown-toggle-split shadow-none btn-primary']")
-        download_button1.click()
+        select_format_document = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
+        select_format_document.click()
+        time.sleep(2)
 
         select_type_document1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
         select_type_document1.click()
+        time.sleep(2)
 
-        ## aceptar popup
+       
 
-        select_popup1 = driver.find_element_by_xpath("/html/body/div/div/div[6]/button[1]")
-        select_popup1.click()
+        popup_messeger = driver.find_element_by_xpath("/html/body/div/div/h2")
+        popup_messeger_obtained = popup_messeger.text
+        popup_messeger_expected = "El comprobante seleccionado no se encuentra para su descarga"
+        if popup_messeger_expected == popup_messeger_obtained:
+            print("El mensaje recibido  es: ", popup_messeger_obtained)
 
-        ## validar respuesta del pop up 
-        messager_popup = driver.find_element_by_xpath("/html/body/div/div/h2")
-        messager_popup_obtained =  messager_popup.text
-        messager_popup_expected = "El comprobante seleccionado no se encuentra para su descarga"
+        else:
+            print("El mensaje recibido no es correcto")
 
-        if  messager_popup_expected ==  messager_popup_obtained:
-            print("El mensaje de la descarga  es: ", messager_popup_obtained)
+         ## aceptar popup
 
-        else: 
-             print("El sistema no esta arrojando mensaje de la descarga: ")
-
-
-        ## salir de la pantalla  
-        
-        select_header_arrow = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
-        select_header_arrow.click()
+        wait = WebDriverWait(driver, 10)
+        select_popup = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@fdprocessedid='amhrev']")))
+        select_popup.click()
+       
 
 
     def tearDown(self):

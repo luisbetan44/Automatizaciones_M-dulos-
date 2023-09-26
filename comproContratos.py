@@ -111,7 +111,7 @@ class comprobantes_contratos(unittest.TestCase):
 
         apply_filter_button = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
         apply_filter_button.click()
-        time.sleep(3)
+        time.sleep(5)
 
 
         ## validar titulo de la pantalla 
@@ -205,4 +205,4 @@ class comprobantes_contratos(unittest.TestCase):
 
 
 if __name__ == "__main__":
-  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'comprobantes'))
+  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'comproContratos'))
