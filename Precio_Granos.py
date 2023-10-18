@@ -40,15 +40,7 @@ class precio_granos(unittest.TestCase):
         selectTenant.click()
         time.sleep(3)
 
-     # localiza el input y envia el número de la cuenta 
-        input_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "search-options")))
-        input_element.send_keys('1023')
-      
-       #selecciona el elemento oculto y crea un botón para hacer click sobre el 
-        element_to_click = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#search-dropdown > app-accounts-list > ngx-simplebar > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.dropdown-sub-item.accounts-numbers")))
-        driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
-        element_to_click.click()
-        time.sleep(3)
+    
 
         ## seleccionar el menú de granos 
 
@@ -134,32 +126,12 @@ class precio_granos(unittest.TestCase):
         insert_product.send_keys(Keys.ENTER)
         time.sleep(2)
        
-       # wait = WebDriverWait(driver, 10)
 
-        #try:
-           # insert_price = wait.until(EC.visibility_of_element_located((By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-international-market/app-market-table/div/table/tbody/tr[2]/td[4]/input")))
-            #caracter_numerico = '3000'
-            #if caracter_numerico.isdigit():
-             #  insert_price.send_keys(caracter_numerico)
-            #else:
-             #   print("El carácter no es numérico.")
-        #except Exception as e:
-            #    print(f"Error: {e}")
         
-       # insert_value = driver.find_element_by_class_name("form-control input-market ng-pristine ng-touched ng-valid")
-        #insert_value.send_keys(3.3)
-
-       # insert_value.send_keys(Keys.ENTER)
-        #time.sleep(2)
-
-        ##select_color = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-international-market/app-market-table/div/table/tbody/tr[2]/td[7]/input")
-        ##select_color.click()
-
-        ##insert_color = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-international-market/app-market-table/div/table/tbody/tr[2]/td[7]/datalist/option[5]")
-        ##insert_color.click()
-
-     
-
+        element_to_select = driver.find_element_by_css_selector('input[type="number"]')
+        element_to_select.send_keys("300")
+        element_to_select.send_keys(Keys.ENTER)
+        time.sleep(2)
 
         # validar titulo de preccio de cereales 
 
