@@ -58,14 +58,15 @@ class Granos_test_tenant(unittest.TestCase):
         else:
            print("no estamos ubicados en la solapa Fijaciones Habilitadas") 
 
-        input_cuenta = driver.find_element(By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-bindings/div/div[1]/app-bindings-enabled-list/app-header-for-responsive-table/div/div/div[1]/div/div/app-customer-searcher/ng-select/div/div/div[2]/input")  
-        input_cuenta.send_keys("484")
-
-        wait = WebDriverWait(driver, 10)  
-        account = wait.until(EC.visibility_of_element_located((By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-bindings/div/div[1]/app-bindings-enabled-list/app-header-for-responsive-table/div/div/div[1]/div/div/app-customer-searcher/ng-select/ng-dropdown-panel/div/div[2]/div[5]/span"))) 
-        account.click()
-        time.sleep(5)
-
+       ## localiza el input y envia el número de la cuenta 
+        input_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-bindings/div/div[1]/app-bindings-enabled-list/app-header-for-responsive-table/div/div/div[1]/div/div/app-customer-searcher/ng-select/div/div/div[2]/input")))
+        input_element.send_keys('1023')
+      
+       #selecciona el elemento oculto y crea un botón para hacer click sobre el 
+        element_to_click = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-bindings/div/div[1]/app-bindings-enabled-list/app-header-for-responsive-table/div/div/div[1]/div/div/app-customer-searcher/ng-select/ng-dropdown-panel/div/div[2]/div/span")))
+        driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
+        element_to_click.click()
+        time.sleep(3)
        
 
         select_rublo1 = driver.find_element_by_xpath('/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[1]/div/div')

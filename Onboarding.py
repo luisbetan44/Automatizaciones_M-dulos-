@@ -41,17 +41,17 @@ class Onboarding_test_tenant(unittest.TestCase):
         )
         select_tenant.click()
 
-        wait = WebDriverWait(driver, 10)
-        select_popup = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/div[6]/button[1]")))
-        select_popup.click()
+        ##wait = WebDriverWait(driver, 10)
+        ##select_popup = wait.until(EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/div[6]/button[1]")))
+        ##select_popup.click()
 
         select_config = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/a/span"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[4]/a/span"
         )
         select_config.click()
 
         select_documento = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/div/ul/li[8]/a"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[4]/div/ul/li[8]/a"
         )
         select_documento.click()
         time.sleep(3)

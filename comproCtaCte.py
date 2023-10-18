@@ -55,11 +55,11 @@ class comprobantes_CtaCte(unittest.TestCase):
         # ingresar al menú de cuentas 
 
         select_menu_Account = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
         )
         select_menu_Account.click()
 
-        select_menu_vouchers = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[5]/a")
+        select_menu_vouchers = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[5]/a")
         select_menu_vouchers.click()
         time.sleep(2)
 
@@ -85,6 +85,10 @@ class comprobantes_CtaCte(unittest.TestCase):
 
         insert_date_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]")
         insert_date_filter.click()
+        time.sleep(2)
+
+        select_arrow_filter1 = driver.find_element_by_xpath("/html/body/div/div[1]/span[1]")
+        select_arrow_filter1.click()
         time.sleep(2)
 
         select_arrow_filter1 = driver.find_element_by_xpath("/html/body/div/div[1]/span[1]")
@@ -162,6 +166,7 @@ class comprobantes_CtaCte(unittest.TestCase):
         popup_messeger = driver.find_element_by_xpath("/html/body/div/div/h2")
         popup_messeger_obtained = popup_messeger.text
         popup_messeger_expected = "El comprobante seleccionado no se encuentra para su descarga"
+        
         if popup_messeger_expected == popup_messeger_obtained:
             print("El mensaje recibido  es: ", popup_messeger_obtained)
 
@@ -169,11 +174,13 @@ class comprobantes_CtaCte(unittest.TestCase):
             print("El mensaje recibido no es correcto")
 
          ## aceptar popup
-
-        wait = WebDriverWait(driver, 10)
-        select_popup = wait.until(EC.element_to_be_clickable((By.XPATH, "//button[@fdprocessedid='amhrev']")))
+        wait = WebDriverWait(driver, 5)
+        select_popup = wait.until(EC.presence_of_element_located((By.XPATH, "//button[text()='Aceptar']")))
         select_popup.click()
-       
+
+        
+        
+
 
 
     def tearDown(self):
