@@ -88,7 +88,7 @@ class Granos_test_tenant(unittest.TestCase):
 
         ## ingresar cantidad a fijar 
         insert_amount_grain = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-set-price/div[1]/div[1]/section/form/div/div/div[6]/div/div/input")
-        insert_amount_grain.send_keys("300")
+        insert_amount_grain.send_keys("100")
         insert_amount_grain.send_keys(Keys.ENTER)
         time.sleep(2)
 
@@ -111,10 +111,15 @@ class Granos_test_tenant(unittest.TestCase):
 
         select_date = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-set-price/div[1]/div[1]/section/form/div/div/div[16]/app-date-picker/div/input[2]")
         select_date.click()
+        time.sleep(2)
 
         select_date_day = driver.find_element_by_xpath("/html/body/div[2]/div[2]/div/div[2]/div/span[37]")
         select_date_day.click()
+        time.sleep(2)
 
+        select_nex_button = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-set-price/div[1]/div[1]/section/form/div/div/div[18]/div/div[2]/app-button/button")
+        select_nex_button.click()
+        time.sleep(2)
 
 
 
