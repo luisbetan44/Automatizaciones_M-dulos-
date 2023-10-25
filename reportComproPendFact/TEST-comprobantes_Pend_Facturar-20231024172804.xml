@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobantes_Pend_Facturar-20231024172804" tests="1" file=".py" time="41.941" timestamp="2023-10-24T17:28:46" failures="0" errors="0" skipped="0">
+	<testcase classname="comprobantes_Pend_Facturar" name="test_comprobantes_pend_fact" time="41.941" timestamp="2023-10-24T17:28:46" file="ReportCompPenFact.py" line="23">
+		<system-out><![CDATA[El titulo de la pantalla es:  Comprobantes Pendientes de Facturar
+La primera columna es:   Comprobante
+La segunda columna es:   Artículo
+La tercera columna es:   Pendiente
+La cuarte columna es:  Precio Unit.
+La quinta columna es:  Moneda
+La sexta columna es:  Total
+El numero de comprobante es un carácter numérico.
+La descripcion del articulo es un string. 
+El titulo de la pantalla del detalle es:  DATOS DEL COMPROBANTE PENDIENTE DE FACTURAR
+La primera descripcion de los campos en el detalle es:   FECHA
+La segunda descripcion de los campos en el detalle es:   ARTÍCULO
+La tercera descripcion de los campos en el detalle es:   CANTIDAD
+La cuarta descripcion de los campos en el detalle es:   CANTIDAD PENDIENTE
+La descripcion de la fecha es un string. 
+La descripcion de la fecha es un string. 
+]]></system-out>
+		<system-err><![CDATA[c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:17: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:25: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  usermane = driver.find_element_by_id("email")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:31: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  passworUser = driver.find_element_by_id("password")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:36: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  insertButton = driver.find_element_by_xpath("/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button/button")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:41: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  selectTenant = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:57: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_menu_Account = driver.find_element_by_xpath(
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:65: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_menu_reports = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[6]/a")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:70: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_filter_reports = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-reports/div/app-header-for-responsive-table/div/div/div[2]/div/div/app-filter-button/button/div/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:74: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_receipts_pending = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list/div/app-radio[1]/div/input")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:78: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  apply_option_select = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:84: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  title_page_receipts = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/div/div/div[1]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:94: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  first_column = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/thead/tr/th[2]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:103: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  second_column = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/thead/tr/th[3]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:113: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  third_column = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/thead/tr/th[4]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:122: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  quarter_column = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/thead/tr/th[5]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:130: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  fifth_column = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/thead/tr/th[6]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:138: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  sixth_column = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/thead/tr/th[7]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:148: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  number_voucher = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/tbody/tr[1]/td[1]/span/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:155: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  article_description = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/tbody/tr[1]/td[2]/span/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:164: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  enter_detail = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/table/tbody/tr[1]/td[2]/span/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:170: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  title_detail = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/h2")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:181: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  field_date =  driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[1]/strong/div")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:189: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  field_article =  driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[2]/strong/div")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:197: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  field_amount =  driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[3]/strong/div")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:205: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  pending_amount =  driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[4]/strong/div")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:215: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  date_field = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[1]/div")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:222: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  descrition_article = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[2]/div")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:231: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  go_out_page = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py:237: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  go_out_report = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
+]]></system-err>
+	</testcase>
+</testsuite>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reporte_entregas_ventas-20231025161149" tests="1" file=".py" time="69.892" timestamp="2023-10-25T16:12:58" failures="0" errors="1" skipped="0">
+	<testcase classname="reporte_entregas_ventas" name="test_reports_entregas_ventas" time="69.892" timestamp="2023-10-25T16:12:58" file="ReportEntreVentas.py" line="23">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[contains(text(), '-19.158.398')]&quot;}
+  (Session info: chrome=118.0.5993.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6795E8EF2+54786]
+	(No symbol) [0x00007FF679555612]
+	(No symbol) [0x00007FF67940A64B]
+	(No symbol) [0x00007FF67944B79C]
+	(No symbol) [0x00007FF67944B91C]
+	(No symbol) [0x00007FF679486D87]
+	(No symbol) [0x00007FF67946BEAF]
+	(No symbol) [0x00007FF679484D02]
+	(No symbol) [0x00007FF67946BC43]
+	(No symbol) [0x00007FF679440941]
+	(No symbol) [0x00007FF679441B84]
+	GetHandleVerifier [0x00007FF679937F52+3524194]
+	GetHandleVerifier [0x00007FF67998D800+3874576]
+	GetHandleVerifier [0x00007FF679985D7F+3843215]
+	GetHandleVerifier [0x00007FF679685086+694166]
+	(No symbol) [0x00007FF679560A88]
+	(No symbol) [0x00007FF67955CA94]
+	(No symbol) [0x00007FF67955CBC2]
+	(No symbol) [0x00007FF67954CC83]
+	BaseThreadInitThunk [0x00007FFD56FC257D+29]
+	RtlUserThreadStart [0x00007FFD579AAA78+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py", line 150, in test_reports_entregas_ventas
+    elemento = driver.find_element_by_xpath(f"//*[contains(text(), '{ trade_balance}')]")
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 526, in find_element_by_xpath
+    return self.find_element(by=By.XPATH, value=xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[contains(text(), '-19.158.398')]"}
+  (Session info: chrome=118.0.5993.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6795E8EF2+54786]
+	(No symbol) [0x00007FF679555612]
+	(No symbol) [0x00007FF67940A64B]
+	(No symbol) [0x00007FF67944B79C]
+	(No symbol) [0x00007FF67944B91C]
+	(No symbol) [0x00007FF679486D87]
+	(No symbol) [0x00007FF67946BEAF]
+	(No symbol) [0x00007FF679484D02]
+	(No symbol) [0x00007FF67946BC43]
+	(No symbol) [0x00007FF679440941]
+	(No symbol) [0x00007FF679441B84]
+	GetHandleVerifier [0x00007FF679937F52+3524194]
+	GetHandleVerifier [0x00007FF67998D800+3874576]
+	GetHandleVerifier [0x00007FF679985D7F+3843215]
+	GetHandleVerifier [0x00007FF679685086+694166]
+	(No symbol) [0x00007FF679560A88]
+	(No symbol) [0x00007FF67955CA94]
+	(No symbol) [0x00007FF67955CBC2]
+	(No symbol) [0x00007FF67954CC83]
+	BaseThreadInitThunk [0x00007FFD56FC257D+29]
+	RtlUserThreadStart [0x00007FFD579AAA78+40]
+
+]]></error>
+		<system-out><![CDATA[El titulo de la pagina es:  Entregas y Ventas
+El producto seleccionado es:  Maiz
+La campaña seleccionada es:  22/23
+Los kilos entregados son:  1.975.011
+No se encontro los kilos vendidos
+No se encontraron los kilos a fijar
+No se encontro el saldo
+]]></system-out>
+		<system-err><![CDATA[c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:17: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:25: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  usermane = driver.find_element_by_id("email")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:31: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  passworUser = driver.find_element_by_id("password")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:36: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  insertButton = driver.find_element_by_xpath("/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button/button")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:41: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  selectTenant = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:57: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_menu_Account = driver.find_element_by_xpath(
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:65: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_menu_reports = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[6]/a")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:70: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_filter_reports = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-reports/div/app-header-for-responsive-table/div/div/div[2]/div/div/app-filter-button/button/div/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:74: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_deliveries_sales = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list/div/app-radio[2]/div/input")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:78: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_filter_deliveries = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[2]/div/img")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:81: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_date_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[2]/div/div")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:84: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  apply_filter_button = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:90: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  title_deliveries_sales = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:98: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  selected_grain = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div/div[1]/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:106: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  selected_campaign = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div/div[2]/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:114: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  kilos_delivered = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/table/tbody/tr[1]/td[2]/span/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:122: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  kilos_sales = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/table/tbody/tr[3]/td[2]/span/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:130: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  kilos_fixed = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/table/tbody/tr[5]/td[2]/span/span')
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:139: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  movement_balance = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/table/tbody/tr[6]/td[2]/span/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py:150: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  elemento = driver.find_element_by_xpath(f"//*[contains(text(), '{ trade_balance}')]")
+]]></system-err>
+	</testcase>
+</testsuite>

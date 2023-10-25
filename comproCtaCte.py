@@ -175,7 +175,7 @@ class comprobantes_CtaCte(unittest.TestCase):
 
          ## aceptar popup
         wait = WebDriverWait(driver, 5)
-        select_popup = wait.until(EC.presence_of_element_located((By.XPATH, "//button[text()='Aceptar']")))
+        select_popup = wait.until(EC.presence_of_element_located((By.XPATH, "/html/body/div/div/div[6]/button[1]")))
         select_popup.click()
 
         
