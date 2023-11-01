@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reporte_entregas_ventas-20231030112533" tests="2" file=".py" time="12.045" timestamp="2023-10-30T11:25:45" failures="0" errors="2" skipped="0">
+	<testcase classname="reporte_entregas_ventas" name="test_reports_entregas_ventas" time="0.000" timestamp="0001-01-01T00:00:00" file="reportEntreVentas.py" line="23">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF647788EF2+54786]
+	(No symbol) [0x00007FF6476F5612]
+	(No symbol) [0x00007FF6475AA64B]
+	(No symbol) [0x00007FF64758A9F5]
+	(No symbol) [0x00007FF647610887]
+	(No symbol) [0x00007FF6476243CF]
+	(No symbol) [0x00007FF64760BC43]
+	(No symbol) [0x00007FF6475E0941]
+	(No symbol) [0x00007FF6475E1B84]
+	GetHandleVerifier [0x00007FF647AD7F52+3524194]
+	GetHandleVerifier [0x00007FF647B2D800+3874576]
+	GetHandleVerifier [0x00007FF647B25D7F+3843215]
+	GetHandleVerifier [0x00007FF647825086+694166]
+	(No symbol) [0x00007FF647700A88]
+	(No symbol) [0x00007FF6476FCA94]
+	(No symbol) [0x00007FF6476FCBC2]
+	(No symbol) [0x00007FF6476ECC83]
+	BaseThreadInitThunk [0x00007FFFDF0F257D+29]
+	RtlUserThreadStart [0x00007FFFE0A0AA78+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportEntreVentas.py", line 31, in test_reports_entregas_ventas
+    passworUser = driver.find_element_by_id("password")
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 478, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF647788EF2+54786]
+	(No symbol) [0x00007FF6476F5612]
+	(No symbol) [0x00007FF6475AA64B]
+	(No symbol) [0x00007FF64758A9F5]
+	(No symbol) [0x00007FF647610887]
+	(No symbol) [0x00007FF6476243CF]
+	(No symbol) [0x00007FF64760BC43]
+	(No symbol) [0x00007FF6475E0941]
+	(No symbol) [0x00007FF6475E1B84]
+	GetHandleVerifier [0x00007FF647AD7F52+3524194]
+	GetHandleVerifier [0x00007FF647B2D800+3874576]
+	GetHandleVerifier [0x00007FF647B25D7F+3843215]
+	GetHandleVerifier [0x00007FF647825086+694166]
+	(No symbol) [0x00007FF647700A88]
+	(No symbol) [0x00007FF6476FCA94]
+	(No symbol) [0x00007FF6476FCBC2]
+	(No symbol) [0x00007FF6476ECC83]
+	BaseThreadInitThunk [0x00007FFFDF0F257D+29]
+	RtlUserThreadStart [0x00007FFFE0A0AA78+40]
+
+]]></error>
+		<system-err><![CDATA[c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportEntreVentas.py:17: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportEntreVentas.py:25: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  usermane = driver.find_element_by_id("email")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportEntreVentas.py:31: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  passworUser = driver.find_element_by_id("password")
+]]></system-err>
+	</testcase>
+	<testcase classname="reporte_entregas_ventas" name="test_reports_entregas_ventas" time="12.045" timestamp="2023-10-30T11:25:45" file="reportEntreVentas.py" line="23">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF647788EF2+54786]
+	(No symbol) [0x00007FF6476F5612]
+	(No symbol) [0x00007FF6475AA64B]
+	(No symbol) [0x00007FF647597646]
+	(No symbol) [0x00007FF647597E6E]
+	(No symbol) [0x00007FF6475AAB98]
+	(No symbol) [0x00007FF64758A470]
+	(No symbol) [0x00007FF647616314]
+	(No symbol) [0x00007FF64760BE30]
+	(No symbol) [0x00007FF6475E0941]
+	(No symbol) [0x00007FF6475E1B84]
+	GetHandleVerifier [0x00007FF647AD7F52+3524194]
+	GetHandleVerifier [0x00007FF647B2D800+3874576]
+	GetHandleVerifier [0x00007FF647B25D7F+3843215]
+	GetHandleVerifier [0x00007FF647825086+694166]
+	(No symbol) [0x00007FF647700A88]
+	(No symbol) [0x00007FF6476FCA94]
+	(No symbol) [0x00007FF6476FCBC2]
+	(No symbol) [0x00007FF6476ECC83]
+	BaseThreadInitThunk [0x00007FFFDF0F257D+29]
+	RtlUserThreadStart [0x00007FFFE0A0AA78+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportEntreVentas.py", line 197, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 943, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF647788EF2+54786]
+	(No symbol) [0x00007FF6476F5612]
+	(No symbol) [0x00007FF6475AA64B]
+	(No symbol) [0x00007FF647597646]
+	(No symbol) [0x00007FF647597E6E]
+	(No symbol) [0x00007FF6475AAB98]
+	(No symbol) [0x00007FF64758A470]
+	(No symbol) [0x00007FF647616314]
+	(No symbol) [0x00007FF64760BE30]
+	(No symbol) [0x00007FF6475E0941]
+	(No symbol) [0x00007FF6475E1B84]
+	GetHandleVerifier [0x00007FF647AD7F52+3524194]
+	GetHandleVerifier [0x00007FF647B2D800+3874576]
+	GetHandleVerifier [0x00007FF647B25D7F+3843215]
+	GetHandleVerifier [0x00007FF647825086+694166]
+	(No symbol) [0x00007FF647700A88]
+	(No symbol) [0x00007FF6476FCA94]
+	(No symbol) [0x00007FF6476FCBC2]
+	(No symbol) [0x00007FF6476ECC83]
+	BaseThreadInitThunk [0x00007FFFDF0F257D+29]
+	RtlUserThreadStart [0x00007FFFE0A0AA78+40]
+
+]]></error>
+		<system-err><![CDATA[c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportEntreVentas.py:17: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportEntreVentas.py:25: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  usermane = driver.find_element_by_id("email")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportEntreVentas.py:31: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  passworUser = driver.find_element_by_id("password")
+]]></system-err>
+	</testcase>
+</testsuite>

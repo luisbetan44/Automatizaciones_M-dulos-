@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reporteIsumoPendRetirar-20231031113341" tests="1" file=".py" time="62.088" timestamp="2023-10-31T11:34:43" failures="0" errors="0" skipped="0">
+	<testcase classname="reporteIsumoPendRetirar" name="test_reports_entregas_ventas" time="62.088" timestamp="2023-10-31T11:34:43" file="reportInsuRetirar.py" line="23">
+		<system-err><![CDATA[c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:17: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:25: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  username = driver.find_element_by_id("email")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:31: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  passworUser = driver.find_element_by_id("password")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:36: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  insertButton = driver.find_element_by_xpath("/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button/button")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:41: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  selectTenant = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:57: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_menu_Account = driver.find_element_by_xpath(
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:65: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_menu_reports = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[6]/a")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:71: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_filter_button = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-reports/div/app-header-for-responsive-table/div/div/div[2]/div/div/app-filter-button/button/div/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:75: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_option_supplies = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list/div/app-radio[3]/div/input")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:79: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  apply_filter_supplies = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:85: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_first_movements = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[1]/th/input")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:88: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_second_movements = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[2]/th/input")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:93: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_button_download1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:97: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  download_option_Excel = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:101: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_button_download2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py:105: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  download_option_PDF = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a")
+]]></system-err>
+	</testcase>
+</testsuite>

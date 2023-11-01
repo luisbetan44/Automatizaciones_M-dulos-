@@ -35,7 +35,7 @@ def run_test():
 
     select_tenat = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
     select_tenat.click()
-    time.sleep(3)
+    time.sleep(10)
 
     # Ejecuta la prueba de estrés llamando a la función run_test varias veces
 num_repeticiones = 10

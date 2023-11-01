@@ -1,11 +1,11 @@
 import time
 import unittest
-from pyunitreport import HTMLTestRunner
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
+import xmlrunner
 
 
 class contrato_tenant(unittest.TestCase):
@@ -52,14 +52,13 @@ class contrato_tenant(unittest.TestCase):
         time.sleep(3)
 
         # ingresar al menú de cuentas 
-
-        select_menu_Account = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
-        )
-        select_menu_Account.click()
+        
+        select_account = driver.find_element_by_css_selector("#navbar-nav > li:nth-child(5) > a > span")
+        select_account.click()
+        
 
         select_contract = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[1]/a"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[1]/a"
         )
         select_contract.click()
         time.sleep(5)
@@ -73,7 +72,7 @@ class contrato_tenant(unittest.TestCase):
         time.sleep(3)
 
         uncheck_filter = driver.find_element_by_xpath(
-            "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-tag-container/div/div/div[7]/app-tag/div/div/i"
+            "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[1]/button"
         )
         uncheck_filter.click()
         time.sleep(3)
@@ -121,7 +120,7 @@ class contrato_tenant(unittest.TestCase):
         element = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[1]/div[1]/div/span")
 
         number_obtained = element.text
-        number_expected = "Contrato 120945"
+        number_expected = "Contrato 121190"
         self.assertEqual(number_obtained, number_expected)
         print("El numero de contrato es:", number_obtained)
 
@@ -144,7 +143,7 @@ class contrato_tenant(unittest.TestCase):
         
         amount_kilos = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[2]/div/span")
         amount_kilos_obtained = amount_kilos.text
-        amount_kilos_expected = ["De 1.000,00 QQ Pactados", "De 100,00 Tn Pactados", "De 100.000,00 Kg Pactados"]
+        amount_kilos_expected = ["De 900,00 QQ Pactados", "De 90,00 Tn Pactados", "De 90.000,00 Kg Pactados"]
         
         if amount_kilos_obtained in amount_kilos_expected:
             print("La cantidad de kilos pactados son:", amount_kilos_obtained)
@@ -157,7 +156,7 @@ class contrato_tenant(unittest.TestCase):
         amount_product = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[1]/div[2]/div[2]/div[2]/span[1]")
 
         amount_product_obtained = amount_product.text
-        amount_product_expected = ["1.000,00 QQ", "100,00 Tn", "100.000,00 Kg"]
+        amount_product_expected = ["900,00 QQ", "90,00 Tn", "90.000,00 Kg"]
         
         if amount_product_obtained in amount_product_expected:
             print("La cantidad  de producto es:", amount_product_obtained)
@@ -181,7 +180,7 @@ class contrato_tenant(unittest.TestCase):
         fixed_contract = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[2]/app-card-with-grafic/div/div/swiper/div/div[1]/div[2]/div/div[2]/span[1]")
 
         fixed_contract_obtained = fixed_contract.text
-        fixed_contract_expected = ["100,00 Tn","1.000,00 QQ","100.000,00 Kg"]
+        fixed_contract_expected = ["0,10 Tn","1,00 QQ","100,00 Kg"]
 
         if fixed_contract_obtained in fixed_contract_expected:
            print("La cantidad  de fijadas es:", fixed_contract_obtained)
@@ -231,5 +230,7 @@ class contrato_tenant(unittest.TestCase):
 
 
 if __name__ == "__main__":
-  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'reporte_contrato'))
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(contrato_tenant)
+  runner = xmlrunner.XMLTestRunner(output='reportCuentaContratos')
+  runner.run(test_suite)
    

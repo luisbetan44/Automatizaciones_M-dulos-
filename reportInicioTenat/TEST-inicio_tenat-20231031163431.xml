@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="inicio_tenat-20231031163431" tests="1" file=".py" time="83.537" timestamp="2023-10-31T16:35:54" failures="0" errors="1" skipped="0">
+	<testcase classname="inicio_tenat" name="test_login_user_1" time="83.537" timestamp="2023-10-31T16:35:54" file="inicio.py" line="25">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#swiper-wrapper-49cb4d40e6858002 &gt; div.swiper-slide.border-start.border-color-gray-400.swiper-slide-next &gt; app-indicator-card &gt; div &gt; div.p-0.col-7 &gt; div:nth-child(1) &gt; div.fw-bold.t-gray-200.f-size-14&quot;}
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69E048EF2+54786]
+	(No symbol) [0x00007FF69DFB5612]
+	(No symbol) [0x00007FF69DE6A64B]
+	(No symbol) [0x00007FF69DEAB79C]
+	(No symbol) [0x00007FF69DEAB91C]
+	(No symbol) [0x00007FF69DEE6D87]
+	(No symbol) [0x00007FF69DECBEAF]
+	(No symbol) [0x00007FF69DEE4D02]
+	(No symbol) [0x00007FF69DECBC43]
+	(No symbol) [0x00007FF69DEA0941]
+	(No symbol) [0x00007FF69DEA1B84]
+	GetHandleVerifier [0x00007FF69E397F52+3524194]
+	GetHandleVerifier [0x00007FF69E3ED800+3874576]
+	GetHandleVerifier [0x00007FF69E3E5D7F+3843215]
+	GetHandleVerifier [0x00007FF69E0E5086+694166]
+	(No symbol) [0x00007FF69DFC0A88]
+	(No symbol) [0x00007FF69DFBCA94]
+	(No symbol) [0x00007FF69DFBCBC2]
+	(No symbol) [0x00007FF69DFACC83]
+	BaseThreadInitThunk [0x00007FFFDF0F257D+29]
+	RtlUserThreadStart [0x00007FFFE0A0AA78+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py", line 196, in test_login_user_1
+    elemento_1 = driver.find_element(By.CSS_SELECTOR, '#swiper-wrapper-49cb4d40e6858002 > div.swiper-slide.border-start.border-color-gray-400.swiper-slide-next > app-indicator-card > div > div.p-0.col-7 > div:nth-child(1) > div.fw-bold.t-gray-200.f-size-14')
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#swiper-wrapper-49cb4d40e6858002 > div.swiper-slide.border-start.border-color-gray-400.swiper-slide-next > app-indicator-card > div > div.p-0.col-7 > div:nth-child(1) > div.fw-bold.t-gray-200.f-size-14"}
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69E048EF2+54786]
+	(No symbol) [0x00007FF69DFB5612]
+	(No symbol) [0x00007FF69DE6A64B]
+	(No symbol) [0x00007FF69DEAB79C]
+	(No symbol) [0x00007FF69DEAB91C]
+	(No symbol) [0x00007FF69DEE6D87]
+	(No symbol) [0x00007FF69DECBEAF]
+	(No symbol) [0x00007FF69DEE4D02]
+	(No symbol) [0x00007FF69DECBC43]
+	(No symbol) [0x00007FF69DEA0941]
+	(No symbol) [0x00007FF69DEA1B84]
+	GetHandleVerifier [0x00007FF69E397F52+3524194]
+	GetHandleVerifier [0x00007FF69E3ED800+3874576]
+	GetHandleVerifier [0x00007FF69E3E5D7F+3843215]
+	GetHandleVerifier [0x00007FF69E0E5086+694166]
+	(No symbol) [0x00007FF69DFC0A88]
+	(No symbol) [0x00007FF69DFBCA94]
+	(No symbol) [0x00007FF69DFBCBC2]
+	(No symbol) [0x00007FF69DFACC83]
+	BaseThreadInitThunk [0x00007FFFDF0F257D+29]
+	RtlUserThreadStart [0x00007FFFE0A0AA78+40]
+
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto del saludo fue validado correctamente Buen día JUAN DEMO!
+El saldo vencido a hoy en ARS  es un carácter numérico. -33.123.755,71
+El saldo vencido a hoy en USD  es un carácter numérico. 2.295.898,53
+El saldo a vencer en ARS  es un carácter numérico. 00,00
+El saldo a vencer en USD  es un carácter numérico. 806,18
+El texto obtenido es: Resumen de Mis Negocios de Granos
+la url de la imagen de soja es la siguente https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg
+la url de la imagen de maiz es la siguente https://pwa-portal-staging.silohub.ag/assets/images/grains/maiz.svg
+la url de la imagen de trigo  es la siguente https://pwa-portal-staging.silohub.ag/assets/images/grains/trigo.svg
+]]></system-out>
+		<system-err><![CDATA[c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:17: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:27: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  username = driver.find_element_by_id("email")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:33: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  passwordUser = driver.find_element_by_id("password")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:38: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  insertButton = driver.find_element_by_xpath("/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button/button")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:43: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  selectTenant = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:61: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  Filtro_campaña = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[2]/app-business-indicators/div[1]/div[2]/app-filter-button/button/div/span")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:70: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  delete_campaign = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-tag-container/div/div/div[7]/app-tag/div/div/i")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:74: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  select_campaña = driver.find_element_by_xpath('/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[2]/div/div')
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:78: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  selecct_button_aplicar = driver.find_element_by_xpath('/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button')
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:94: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  elemento = driver.find_element_by_xpath(f"//*[contains(text(), '{texto_deseado}')]")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:143: DeprecationWarning: find_element_by_xpath is deprecated. Please use find_element(by=By.XPATH, value=xpath) instead
+  elemento = self.driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[2]/app-business-indicators/div[1]/div[1]/div/p")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:153: DeprecationWarning: find_element_by_css_selector is deprecated. Please use find_element(by=By.CSS_SELECTOR, value=css_selector) instead
+  imagen_1 = self.driver.find_element_by_css_selector('img[src="assets/images/grains/soja.svg"]')
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:168: DeprecationWarning: find_element_by_css_selector is deprecated. Please use find_element(by=By.CSS_SELECTOR, value=css_selector) instead
+  imagen_2 = self.driver.find_element_by_css_selector('img[src="assets/images/grains/maiz.svg"]')
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py:181: DeprecationWarning: find_element_by_css_selector is deprecated. Please use find_element(by=By.CSS_SELECTOR, value=css_selector) instead
+  imagen_3 = self.driver.find_element_by_css_selector('img[src="assets/images/grains/trigo.svg"]')
+]]></system-err>
+	</testcase>
+</testsuite>

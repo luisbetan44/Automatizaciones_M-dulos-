@@ -3,10 +3,9 @@ from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.common.by import By
-from pyunitreport import HTMLTestRunner
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-
+import xmlrunner
 
 class Conf_ventas_test_tenant(unittest.TestCase):
     def setUp(self):
@@ -55,16 +54,16 @@ class Conf_ventas_test_tenant(unittest.TestCase):
 
         # validar titulo de la pantalla
         
-        texto_deseado = "CONFIRMACIÓN DE VENTA"
+        texto_deseado = "CONTRATOS"
         elemento = driver.find_element_by_xpath(f"//*[contains(text(), '{texto_deseado}')]")
 
        # Realizar validación del texto 
         texto_optenido = elemento.text
-        texto_esperado = "CONFIRMACIÓN DE VENTA"
+        texto_esperado = "CONTRATOS"
         assert texto_optenido == texto_esperado
 
         if texto_optenido:
-           print("El titulo  fue validado correctamente")
+           print("El titulo  fue validado correctamente", texto_optenido)
 
         else:
             print("No se pudo validar el titulo")
@@ -86,14 +85,14 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[2]/div[2]/select/option[11]",
+                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[2]/div[2]/select/option[10]",
                 )
             )
         )
         opcion_deseada.click()
 
         elemento_texto_1 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[2]/div[2]/select/option[11]"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[2]/div[2]/select/option[10]"
         )
         texto_obtenido_1 = elemento_texto_1.text
         texto_esperado_1 = "Confirmación De Venta"
@@ -272,49 +271,64 @@ class Conf_ventas_test_tenant(unittest.TestCase):
         texto_obtenido_5 = elemento_texto_5.text
         texto_esperado_5 = "Rosario"
         if texto_obtenido_5 == texto_esperado_5:
-            print("La opción ingresada en el campo pizarra fue    Rosario  .")
+            print("La opción ingresada en el campo pizarra fue Rosario.")
         else:
             print(
                 "La validación falló. no se visualiza ninguna opción cargada en el campo pizarra."
             )
 
+        driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+
         # condiciones de compras
 
-        wait = WebDriverWait(driver, 10)
-        boton_desplegable = wait.until(
-            EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[8]/div[2]/select",
-                )
-            )
-        )
-        boton_desplegable.click()
+        #wait = WebDriverWait(driver, 10)
+        #boton_desplegable = wait.until(
+            #EC.presence_of_element_located(
+                #(
+                    #By.XPATH,
+                    #"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[8]/div[2]/select",
+                #)
+            #)
+        #)
+        #boton_desplegable.click()
 
-        opcion_deseada = wait.until(
-            EC.presence_of_element_located(
-                (
-                    By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[8]/div[2]/select/option[5]",
-                )
-            )
-        )
-        opcion_deseada.click()
+        #opcion_deseada = wait.until(
+            #EC.presence_of_element_located(
+               # (
+                   # By.XPATH,
+                    #"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[8]/div[2]/select/option[5]",
+               # )
+            #)
+       # )
+        #opcion_deseada.click()
 
-        elemento_texto_6 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[8]/div[2]/select/option[5]"
-        )
-        texto_obtenido_6 = elemento_texto_6.text
-        texto_esperado_6 = "A - Cuenta 10 días Hábiles"
-        if texto_obtenido_6 == texto_esperado_6:
-            print(
-                "La opción ingresada en el campo condiciones de compra fue  A - Cuenta 10 días Hábiles   ."
-            )
-        else:
-            print(
-                "La validación falló. no se visualiza ninguna opción cargada en el campo condiciones de compra."
-            )
+        #elemento_texto_6 = driver.find_element_by_xpath(
+           # "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[8]/div[2]/select/option[5]"
+        #)
+        #texto_obtenido_6 = elemento_texto_6.text
+        #texto_esperado_6 = "A - Cuenta 10 días Hábiles"
+        #if texto_obtenido_6 == texto_esperado_6:
+          #  print(
+               # "La opción ingresada en el campo condiciones de compra fue  A - Cuenta 10 días Hábiles   ."
+           # )
+        #else:
+          #  print(
+              #  "La validación falló. no se visualiza ninguna opción cargada en el campo condiciones de compra."
+            #)
 
+    
+
+        # seleccionar fecha de pago
+
+        select_date = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div/div[8]/div[2]/app-date-picker/div/input[2]")
+        select_date.click()
+
+        select_arrow = driver.find_element_by_xpath("/html/body/div[1]/div[1]/span[2]")
+        select_arrow.click()
+
+        insert_date = driver.find_element_by_xpath("/html/body/div[1]/div[2]/div/div[2]/div/span[32]")
+        insert_date.click()
+        
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
 
         # ingrear código estándar
@@ -359,16 +373,19 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[1]/div[2]/app-date-picker/div/input[2]"
         )
         select_date.click()
-        time.sleep(1)
+        time.sleep(2)
+
+        select_arrow2 = driver.find_element_by_xpath("/html/body/div[4]/div[1]/span[2]")
+        select_arrow2.click() 
 
         select_calendar = driver.find_element_by_xpath(
-            "/html/body/div[3]/div[2]/div/div[2]/div/span[25]"
+            "/html/body/div[4]/div[2]/div/div[2]/div/span[3]"
         )
         select_calendar.click()
         time.sleep(1)
 
         select_calendar = driver.find_element_by_xpath(
-            "/html/body/div[3]/div[2]/div/div[2]/div/span[36]"
+            "/html/body/div[4]/div[2]/div/div[2]/div/span[31]"
         )
         select_calendar.click()
 
@@ -378,7 +395,7 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/select",
+                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/app-search-selector/ng-select/div/span",
                 )
             )
         )
@@ -388,31 +405,31 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/select/option[3]",
+                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[2]/span",
                 )
             )
         )
         opcion_deseada.click()
 
-        elemento_texto_8 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/select/option[3]"
-        )
-        texto_obtenido_8 = elemento_texto_8.text
-        texto_esperado_8 = "Carlos Pellegrini"
-        if texto_obtenido_8 == texto_esperado_8:
-            print("La opción ingresada en el campo planta fue   Carlos Pellegrini   .")
-        else:
-            print(
-                "La validación falló. no se visualiza ninguna opción cargada en el campo planta."
-            )
+        ##elemento_texto_8 = driver.find_element_by_xpath(
+           # "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[2]/span"
+        #)
+        #texto_obtenido_8 = elemento_texto_8.text
+        #texto_esperado_8 = "Carlos Pellegrini"
+        #if texto_obtenido_8 == texto_esperado_8:
+          #  print("La opción ingresada en el campo planta fue   Carlos Pellegrini   .")
+        #else:
+           # print(
+            #    "La validación falló. no se visualiza ninguna opción cargada en el campo planta."
+            #)
 
         # insertar procedenia
-        wait = WebDriverWait(driver, 10)
+        wait = WebDriverWait(driver, 5)
         boton_desplegable = wait.until(
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/select",
+                    '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/app-search-selector/ng-select/div/div/div[2]/input',
                 )
             )
         )
@@ -422,25 +439,25 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/select/option[2]",
+                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[3]/span",
                 )
             )
         )
         opcion_deseada.click()
 
-        elemento_texto_9 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/select/option[2]"
-        )
-        texto_obtenido_9 = elemento_texto_9.text
-        texto_esperado_9 = "03 Playa S. Miguel (T6 Y M. Pampa)"
-        if texto_obtenido_9 == texto_esperado_9:
-            print(
-                "La opción ingresada en el campo procedencia fue   03 Playa S. Miguel (T6 Y M. Pampa)   ."
-            )
-        else:
-            print(
-                "La validación falló. no se visualiza ninguna opción cargada en el campo procedencia."
-            )
+       # elemento_texto_9 = driver.find_element_by_xpath(
+        #    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[3]/span"
+        #)
+        #texto_obtenido_9 = elemento_texto_9.text
+        #texto_esperado_9 = "03 Playa S. Miguel (T6 y M. Pampa)"
+        #if texto_obtenido_9 == texto_esperado_9:
+          #  print(
+           #     "La opción ingresada en el campo procedencia fue   03 Playa S. Miguel (T6 Y M. Pampa)   ."
+            #)
+        #else:
+           # print(
+            #    "La validación falló. no se visualiza ninguna opción cargada en el campo procedencia."
+            #)
 
         # insertar destino
         wait = WebDriverWait(driver, 10)
@@ -448,7 +465,7 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/select/option[2]",
+                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/div/span",
                 )
             )
         )
@@ -458,23 +475,23 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             EC.presence_of_element_located(
                 (
                     By.XPATH,
-                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/select/option[2]",
+                    "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[6]/span",
                 )
             )
         )
         opcion_deseada.click()
 
-        elemento_texto_10 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/select/option[2]"
-        )
-        texto_obtenido_10 = elemento_texto_10.text
-        texto_esperado_10 = "03 Playa S. Miguel (T6 Y M. Pampa)"
-        if texto_obtenido_10 == texto_esperado_10:
-            print("La opción ingresada en el campo código estándar fue  General  .")
-        else:
-            print(
-                "La validación falló. no se visualiza ninguna opción cargada en el campo código estándar."
-            )
+        #elemento_texto_10 = driver.find_element_by_xpath(
+         #   "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[6]/span"
+        #)
+        #texto_obtenido_10 = elemento_texto_10.text
+        #texto_esperado_10 = "06 SECADA BONIFICADA"
+        #if texto_obtenido_10 == texto_esperado_10:
+         #   print("La opción ingresada en el campo destino es: ", texto_esperado_10)
+        #else:
+          #  print(
+         #       "La validación falló. no se visualiza ninguna opción cargada en el campo código estándar."
+          #  )
      
 
         driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
@@ -486,20 +503,22 @@ class Conf_ventas_test_tenant(unittest.TestCase):
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[2]/app-button[2]/button"
         )
         select_button_continue.click()
+        time.sleep(2)
 
         select_button_confirmar = driver.find_element_by_xpath(
-            "/html/body/div[4]/div/div[6]/button[3]"
+            "/html/body/div[5]/div/div[6]/button[3]"
         )
         select_button_confirmar.click()
+        time.sleep(2)
 
         # validar el mensaje de respuesta
 
         wait = WebDriverWait(driver, 10)
-        elemento_texto_11 = driver.find_element_by_xpath("/html/body/div/div/h2")
+        elemento_texto_11 = driver.find_element_by_xpath("/html/body/div[5]/div/h2")
         texto_obtenido_11 = elemento_texto_11.text
         texto_esperado_11 = "Confirmación de venta generada con éxito."
         if texto_obtenido_11 == texto_esperado_11:
-            print("Confirmación de venta generada con éxito. .")
+            print("Confirmación de venta generada con éxito.")
         else:
             print(
                 "No se pudo generar la confirmación de venta El Código de Cosecha no existe."
@@ -517,8 +536,6 @@ class Conf_ventas_test_tenant(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    unittest.main(
-        verbosity=2,
-        testRunner=HTMLTestRunner(output="reportes", report_name="reporte_conf_ventas"),
-    )
-
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(Conf_ventas_test_tenant)
+  runner = xmlrunner.XMLTestRunner(output='reportGranosContratos')
+  runner.run(test_suite)
