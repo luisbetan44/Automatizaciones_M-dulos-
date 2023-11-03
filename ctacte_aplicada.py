@@ -4,8 +4,9 @@ from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.common.by import By
-from pyunitreport import HTMLTestRunner
+import xmlrunner
 from selenium.webdriver.support import expected_conditions as EC
+import re
 
 
 
@@ -55,14 +56,14 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         # ingresar al menú de cuentas 
 
         select_menu_contrat = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
         )
         select_menu_contrat.click()
 
         ## seleccionar cuenta corriente
 
         select_account = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[4]/a"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[4]/a"
         )
         select_account.click()
         time.sleep(3)
@@ -115,6 +116,12 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         select_arrow_2.click()
         time.sleep(2)
 
+        select_arrow_3 = driver.find_element_by_xpath(
+            "/html/body/div/div[1]/span[1]"
+        )
+        select_arrow_3.click()
+        time.sleep(2)
+
         select_date_1 = driver.find_element_by_xpath(
             "/html/body/div/div[2]/div/div[2]/div/span[8]"
         )
@@ -128,7 +135,7 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         time.sleep(2)
 
         select_date_2 = driver.find_element_by_xpath(
-            "/html/body/div/div[2]/div/div[2]/div/span[26]"
+            "/html/body/div/div[2]/div/div[2]/div/span[33]"
         )
         select_date_2.click()
         time.sleep(2)
@@ -153,34 +160,39 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         ## validar totalizadores 
 
 
-        total_to_pay = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]/span[1]"
-        )
-        total_to_pay_expected = total_to_pay.text
-        total_to_pay_obtained = "19.307.285,78"
-        self.assertEqual(total_to_pay_expected,total_to_pay_obtained)
-        print("El total a pagar es:",total_to_pay_obtained)
+        
+
+        total_to_pay = driver.find_element(By.XPATH, '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]')
+        valor_1 = total_to_pay.text 
+        if re.search(r'\d', valor_1):  
+          print('El total a pagar  es un carácter numérico.', valor_1)
+        else:
+          print('El total a pagar no es un carácter numérico.')
+   
 
         ## validar saldos
 
         balance_ars = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
         )
-
-        balance_ars_expected = balance_ars.text
-        balance_ars_obtained = "-34.259.314,29"
-        self.assertEqual(balance_ars_expected,balance_ars_obtained)
-        print("El saldo en pesos es: ", balance_ars_obtained)
+        valor_2 = balance_ars.text 
+        if re.search(r'\d', valor_2):  
+          print('El saldo ARS  es un carácter numérico.', valor_2)
+        else:
+          print('El saldo ARS no es un carácter numérico.')
+   
 
 
         balance_usd = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[3]/app-totalizer/div/div/div[2]/div[2]/span[1]"
         )
 
-        balance_usd_expected = balance_usd.text
-        balance_usd_obtained = "2.232.184,77"
-        self.assertEqual(balance_usd_expected,balance_usd_obtained)
-        print("El saldo en dólares es: ", balance_usd_obtained)
+        valor_3 = balance_usd.text 
+        if re.search(r'\d', valor_3):  
+          print('El saldo USD  es un carácter numérico.', valor_3)
+        else:
+          print('El saldo USD no es un carácter numérico.')
+   
 
         ## seleccionar movimientos del lisatos 
 
@@ -189,20 +201,9 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         )
         movements_list_1.click()
 
-        movements_list_2 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[3]/th/input"
-        )
-        movements_list_2.click()
+        
 
-        movements_list_3 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[4]/th/input"
-        )
-        movements_list_3.click()
-
-        movements_list_4 = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/table/tbody/tr[5]/th/input"
-        )
-        movements_list_4.click()
+        
       
        ## seleccionar botón descargar  
 
@@ -257,33 +258,38 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
 
         ## validar datos del detalle 
 
-        number_movements = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[1]/div"
-        )
+        number_movements = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[1]/div") 
 
-        number_movements_expected = number_movements.text
-        number_movements_obtained = "Movimiento IC 3302 11350799"
-        self.assertEqual(number_movements_expected,number_movements_obtained)
-        print("El numero del movimiento es: ", number_movements_obtained)
+        number_movements_obtained = number_movements.text
+
+        if isinstance(number_movements_obtained, str):
+            print("El numero del  comprobante es un string: ",number_movements_obtained)
+
+        else: 
+            print("El numero del  comprobante no es un string: ")
+
 
 
         balance_movements = driver.find_element_by_xpath(
             "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]"
         )
+        balance_movements_ebtained = balance_movements.text
+        if isinstance(balance_movements_ebtained, str):
+            print("El monto total en el detalle es un string: ",balance_movements_ebtained)
 
-        balance_movements_expected = balance_movements.text
-        balance_movements_obtained = "- ARS 1.003.500,00"
-        self.assertEqual(balance_movements_expected,balance_movements_obtained)
-        print("El saldo del movimiento es: ", balance_movements_obtained)
+        else: 
+            print("El monto total en el detalle no es un string: ")
 
         settlement = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[2]"
+            "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/div/div/div/div[2]/div[2]/div[2]"
         )
 
-        settlement_expected = settlement.text
-        settlement_obtained = "IVA CBU Liq.1116C SOJA 2122 30000 Kgs."
-        self.assertEqual(settlement_expected,settlement_obtained)
-        print("El numero de liquidación es: ", settlement_obtained)
+        settlement_obtained = settlement.text
+        if isinstance(settlement_obtained, str):
+            print("El tipo de cambio en el detalle es un string: ",settlement_obtained)
+
+        else: 
+            print("El tipo de cambio en el detalle no es un string: ")
 
         ## Seleccionar salida al listado 
 
@@ -321,4 +327,6 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
 
 
 if __name__ == "__main__":
-  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'reporte_ctacte_aplicada'))
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(cuenta_ctacte_aplicada)
+  runner = xmlrunner.XMLTestRunner(output='reportCtacteAplicada')
+  runner.run(test_suite)

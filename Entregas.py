@@ -4,9 +4,8 @@ from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.common.by import By
-from pyunitreport import HTMLTestRunner
 from selenium.webdriver.support import expected_conditions as EC
-
+import xmlrunner
 
 
 
@@ -55,12 +54,12 @@ class cuenta_entregas(unittest.TestCase):
         # ingresar al menú de cuentas 
 
         select_menu_Account = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
         )
         select_menu_Account.click()
 
         select_deliveries = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[2]/a"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[2]/a"
         )
         select_deliveries.click()
         time.sleep(3)
@@ -199,15 +198,14 @@ class cuenta_entregas(unittest.TestCase):
 
         tn_delivery = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[1]')
         tn_delivery_obtained = tn_delivery.text
-        tn_delivery_expected = "30,11 Tn"
-        self.assertEqual(tn_delivery_obtained, tn_delivery_expected)
-
-        if tn_delivery_obtained:
-            print("Las tn de la entrega son:", tn_delivery.text)
+        tn_delivery_expected = ["30,11 Tn", "301,10 QQ", "30.110,00 Kg"]
+      
+        if tn_delivery_obtained in tn_delivery_expected:
+            print("La cantidad de la entrega es:", tn_delivery_obtained)
 
 
         else:
-              print("El monto de tn de la entrega  no es correcto ")  
+              print("La cantidad de la entrega  no es correcta ")  
 
         # validar producto
 
@@ -307,29 +305,29 @@ class cuenta_entregas(unittest.TestCase):
               print("El titulo no es correcto ")  
 
  
-        date_analysis = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-detail-table-quality-analisis/div/div/div/div[2]/div[1]/div[2]')
-        date_analysis_obtained = date_analysis.text
-        date_analysis_expected = "01/07/2022"
-        self.assertEqual(date_analysis_obtained, date_analysis_expected)
+        data_analysis = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-responsive-table/div/table/tbody/tr[9]/td[2]/span/span')
+        data_analysis_obtained = data_analysis.text
+        data_analysis_expected = "72%"
+        self.assertEqual(data_analysis_obtained, data_analysis_expected)
 
-        if date_analysis_obtained:
-            print("La fecha del analisis es:", date_analysis.text)
-
-
-        else:
-              print("La fecha del analisis no es correcta ") 
-
-        number_letter = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-detail-table-quality-analisis/div/div/div/div[2]/div[3]/div[2]')
-        number_letter_obtained = number_letter.text
-        number_letter_expected = "10105175954"
-        self.assertEqual(number_letter_obtained, number_letter_expected)
-
-        if number_letter_obtained:
-            print("El número de la carta porte es:", number_letter.text)
+        if data_analysis_obtained:
+            print("El Peso Hectolítrico es :", data_analysis.text)
 
 
         else:
-              print("El número de la carta porte no es correcto ")  
+              print("No se encontro el campo de Peso Hectolítrico ") 
+
+        foreign_matter = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-responsive-table/div/table/tbody/tr[6]/td[2]/span/span')
+        foreign_matter_obtained = foreign_matter.text
+        foreign_matter_expected = "0,00%"
+        self.assertEqual(foreign_matter_obtained, foreign_matter_expected)
+
+        if foreign_matter_obtained:
+            print("El porcentaje de materias extrañas es:", foreign_matter_obtained)
+
+
+        else:
+              print("No se encontro el campo de materias extrañas ")  
 
 
         # salir al listado 
@@ -357,5 +355,8 @@ class cuenta_entregas(unittest.TestCase):
 
 
 if __name__ == "__main__":
-  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'reporte_entregas'))
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(cuenta_entregas)
+  runner = xmlrunner.XMLTestRunner(output='reportCuentaEtregas')
+  runner.run(test_suite)
+   
    

@@ -4,7 +4,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 from selenium.webdriver.support.ui import WebDriverWait 
 from selenium.webdriver.common.by import By
-from pyunitreport import HTMLTestRunner
+import xmlrunner
 from selenium.webdriver.support import expected_conditions as EC
 
 
@@ -55,14 +55,14 @@ class cuenta_ventas(unittest.TestCase):
         # ingresar al menú de cuentas 
 
         select_menu_Account = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
         )
         select_menu_Account.click()
 
-        select_deliveries = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[3]/a"
+        select_sales = driver.find_element_by_xpath(
+            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[3]/a"
         )
-        select_deliveries.click()
+        select_sales.click()
         time.sleep(3)
 
 
@@ -285,4 +285,7 @@ class cuenta_ventas(unittest.TestCase):
 
 
 if __name__ == "__main__":
-  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'reporte_ventas'))
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(cuenta_ventas)
+  runner = xmlrunner.XMLTestRunner(output='reportCuentaVentas')
+  runner.run(test_suite)
+   

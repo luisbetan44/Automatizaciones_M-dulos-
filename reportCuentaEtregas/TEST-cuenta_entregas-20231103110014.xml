@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_entregas-20231103110014" tests="1" file=".py" time="3.037" timestamp="2023-11-03T11:00:17" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_entregas" name="test_cuenta_entregas" time="3.037" timestamp="2023-11-03T11:00:17" file="Entregas.py" line="22">
+		<error type="WebDriverException" message="Message: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
+  (Session info: chrome=119.0.6045.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF757268EF2+54786]
+	(No symbol) [0x00007FF7571D5612]
+	(No symbol) [0x00007FF75708A64B]
+	(No symbol) [0x00007FF75708EEC1]
+	(No symbol) [0x00007FF75709115F]
+	(No symbol) [0x00007FF757091250]
+	(No symbol) [0x00007FF7570CB424]
+	(No symbol) [0x00007FF7570CB91C]
+	(No symbol) [0x00007FF757106D87]
+	(No symbol) [0x00007FF7570EBEAF]
+	(No symbol) [0x00007FF757104D02]
+	(No symbol) [0x00007FF7570EBC43]
+	(No symbol) [0x00007FF7570C0941]
+	(No symbol) [0x00007FF7570C1B84]
+	GetHandleVerifier [0x00007FF7575B7F52+3524194]
+	GetHandleVerifier [0x00007FF75760D800+3874576]
+	GetHandleVerifier [0x00007FF757605D7F+3843215]
+	GetHandleVerifier [0x00007FF757305086+694166]
+	(No symbol) [0x00007FF7571E0A88]
+	(No symbol) [0x00007FF7571DCA94]
+	(No symbol) [0x00007FF7571DCBC2]
+	(No symbol) [0x00007FF7571CCC83]
+	BaseThreadInitThunk [0x00007FFFDF0F257D+29]
+	RtlUserThreadStart [0x00007FFFE0A0AA78+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 24, in test_cuenta_entregas
+    usermane = driver.find_element_by_id("email")
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 478, in find_element_by_id
+    return self.find_element(by=By.ID, value=id_)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 1251, in find_element
+    return self.execute(Command.FIND_ELEMENT, {
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 430, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 247, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: unknown error: result.webdriverValue.value list is missing or empty in Runtime.callFunctionOn response
+  (Session info: chrome=119.0.6045.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF757268EF2+54786]
+	(No symbol) [0x00007FF7571D5612]
+	(No symbol) [0x00007FF75708A64B]
+	(No symbol) [0x00007FF75708EEC1]
+	(No symbol) [0x00007FF75709115F]
+	(No symbol) [0x00007FF757091250]
+	(No symbol) [0x00007FF7570CB424]
+	(No symbol) [0x00007FF7570CB91C]
+	(No symbol) [0x00007FF757106D87]
+	(No symbol) [0x00007FF7570EBEAF]
+	(No symbol) [0x00007FF757104D02]
+	(No symbol) [0x00007FF7570EBC43]
+	(No symbol) [0x00007FF7570C0941]
+	(No symbol) [0x00007FF7570C1B84]
+	GetHandleVerifier [0x00007FF7575B7F52+3524194]
+	GetHandleVerifier [0x00007FF75760D800+3874576]
+	GetHandleVerifier [0x00007FF757605D7F+3843215]
+	GetHandleVerifier [0x00007FF757305086+694166]
+	(No symbol) [0x00007FF7571E0A88]
+	(No symbol) [0x00007FF7571DCA94]
+	(No symbol) [0x00007FF7571DCBC2]
+	(No symbol) [0x00007FF7571CCC83]
+	BaseThreadInitThunk [0x00007FFFDF0F257D+29]
+	RtlUserThreadStart [0x00007FFFE0A0AA78+40]
+
+]]></error>
+		<system-err><![CDATA[c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py:16: DeprecationWarning: executable_path has been deprecated, please pass in a Service object
+  self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py:24: DeprecationWarning: find_element_by_* commands are deprecated. Please use find_element() instead
+  usermane = driver.find_element_by_id("email")
+]]></system-err>
+	</testcase>
+</testsuite>
