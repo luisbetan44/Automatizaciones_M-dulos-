@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InicioTenant-20231211210813" tests="1" file=".py" time="24.904" timestamp="2023-12-11T21:08:38" failures="0" errors="1" skipped="0">
+	<testcase classname="InicioTenant" name="test_inicio_tenant" time="24.904" timestamp="2023-12-11T21:08:38" file="inicio.py" line="26">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;i _ngcontent-kbj-c180=&quot;&quot; class=&quot;ri-close-line t-gray-300 f-size-14 tag-close-icon&quot;&gt;&lt;/i&gt; is not clickable at point (1413, 110). Other element would receive the click: &lt;div _ngcontent-kbj-c183=&quot;&quot; class=&quot;choices__list choices__list--multiple row tags-container&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FE214D02+56194]
+	(No symbol) [0x00007FF6FE1804B2]
+	(No symbol) [0x00007FF6FE0276AA]
+	(No symbol) [0x00007FF6FE078763]
+	(No symbol) [0x00007FF6FE07675D]
+	(No symbol) [0x00007FF6FE073F5C]
+	(No symbol) [0x00007FF6FE072D15]
+	(No symbol) [0x00007FF6FE06687F]
+	(No symbol) [0x00007FF6FE095E7A]
+	(No symbol) [0x00007FF6FE066226]
+	(No symbol) [0x00007FF6FE096320]
+	(No symbol) [0x00007FF6FE0B2786]
+	(No symbol) [0x00007FF6FE095C23]
+	(No symbol) [0x00007FF6FE064A45]
+	(No symbol) [0x00007FF6FE065AD4]
+	GetHandleVerifier [0x00007FF6FE58D5BB+3695675]
+	GetHandleVerifier [0x00007FF6FE5E6197+4059159]
+	GetHandleVerifier [0x00007FF6FE5DDF63+4025827]
+	GetHandleVerifier [0x00007FF6FE2AF029+687785]
+	(No symbol) [0x00007FF6FE18B508]
+	(No symbol) [0x00007FF6FE187564]
+	(No symbol) [0x00007FF6FE1876E9]
+	(No symbol) [0x00007FF6FE178094]
+	BaseThreadInitThunk [0x00007FFB1102257D+29]
+	RtlUserThreadStart [0x00007FFB1232AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py", line 43, in test_inicio_tenant
+    delete_campaign.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 394, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <i _ngcontent-kbj-c180="" class="ri-close-line t-gray-300 f-size-14 tag-close-icon"></i> is not clickable at point (1413, 110). Other element would receive the click: <div _ngcontent-kbj-c183="" class="choices__list choices__list--multiple row tags-container">...</div>
+  (Session info: chrome=120.0.6099.71)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FE214D02+56194]
+	(No symbol) [0x00007FF6FE1804B2]
+	(No symbol) [0x00007FF6FE0276AA]
+	(No symbol) [0x00007FF6FE078763]
+	(No symbol) [0x00007FF6FE07675D]
+	(No symbol) [0x00007FF6FE073F5C]
+	(No symbol) [0x00007FF6FE072D15]
+	(No symbol) [0x00007FF6FE06687F]
+	(No symbol) [0x00007FF6FE095E7A]
+	(No symbol) [0x00007FF6FE066226]
+	(No symbol) [0x00007FF6FE096320]
+	(No symbol) [0x00007FF6FE0B2786]
+	(No symbol) [0x00007FF6FE095C23]
+	(No symbol) [0x00007FF6FE064A45]
+	(No symbol) [0x00007FF6FE065AD4]
+	GetHandleVerifier [0x00007FF6FE58D5BB+3695675]
+	GetHandleVerifier [0x00007FF6FE5E6197+4059159]
+	GetHandleVerifier [0x00007FF6FE5DDF63+4025827]
+	GetHandleVerifier [0x00007FF6FE2AF029+687785]
+	(No symbol) [0x00007FF6FE18B508]
+	(No symbol) [0x00007FF6FE187564]
+	(No symbol) [0x00007FF6FE1876E9]
+	(No symbol) [0x00007FF6FE178094]
+	BaseThreadInitThunk [0x00007FFB1102257D+29]
+	RtlUserThreadStart [0x00007FFB1232AA58+40]
+
+]]></error>
+	</testcase>
+</testsuite>

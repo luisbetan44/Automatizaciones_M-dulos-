@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_entregas-20231212184742" tests="1" file=".py" time="70.917" timestamp="2023-12-12T18:48:53" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_entregas" name="test_cuenta_entregas" time="70.917" timestamp="2023-12-12T18:48:53" file="Entregas.py" line="36">
+		<error type="AttributeError" message="module 'lib2to3.pgen2.driver' has no attribute 'find_element'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 165, in test_cuenta_entregas
+    insert_movemenst = find_element_with_retry(driver,"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[3]/td[2]/span/span")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\findElements.py", line 21, in find_element_with_retry
+    element = driver.find_element(By.XPATH, xpath)
+AttributeError: module 'lib2to3.pgen2.driver' has no attribute 'find_element'
+]]></error>
+		<system-out><![CDATA[El titulo de la pagina es: MIS ENTREGAS
+El monto de tn brutos es: 20.973.734,00
+El monto de tn netos es: 19.737.664,00
+]]></system-out>
+	</testcase>
+</testsuite>

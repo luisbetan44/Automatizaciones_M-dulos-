@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Result</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-11-15 17:43:00</p>
+                <p class='attribute'><strong>Duration: </strong>66.356s</p>
+                <p class='attribute'><strong>Status: </strong>Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>reportes</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr class='warning'>
+                                <td class="col-xs-9">test_cuenta_entregas (__main__.comprobantes_Entregas)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-warning">
+                                        
+                                            Error
+                                        
+                                    </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
+                                </td>
+                            </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>NoSuchElementException</p>
+                                        <p>Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()="TK 0001 00102949"]"}
+  (Session info: chrome=119.0.6045.124)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6732982B2+55298]
+	(No symbol) [0x00007FF673205E02]
+	(No symbol) [0x00007FF6730C05AB]
+	(No symbol) [0x00007FF67310175C]
+	(No symbol) [0x00007FF6731018DC]
+	(No symbol) [0x00007FF67313CBC7]
+	(No symbol) [0x00007FF6731220EF]
+	(No symbol) [0x00007FF67313AAA4]
+	(No symbol) [0x00007FF673121E83]
+	(No symbol) [0x00007FF6730F670A]
+	(No symbol) [0x00007FF6730F7964]
+	GetHandleVerifier [0x00007FF673610AAB+3694587]
+	GetHandleVerifier [0x00007FF67366728E+4048862]
+	GetHandleVerifier [0x00007FF67365F173+4015811]
+	GetHandleVerifier [0x00007FF6733347D6+695590]
+	(No symbol) [0x00007FF673210CE8]
+	(No symbol) [0x00007FF67320CF34]
+	(No symbol) [0x00007FF67320D062]
+	(No symbol) [0x00007FF6731FD3A3]
+	BaseThreadInitThunk [0x00007FFA3185257D+29]
+	RtlUserThreadStart [0x00007FFA32C2AA78+40]
+</p>
+                                    </td>
+                                </tr>
+                            
+                        
+                        <tr>
+                            <td>
+                               Total Test Runned: 1
+                            </td>
+                            <td>
+                                <span>Error: 1</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -22,9 +22,9 @@ class reporte_entregas_ventas(unittest.TestCase):
 
     def test_reports_entregas_ventas(self):
         driver = self.driver
-        usermane = driver.find_element_by_id("email")
-        usermane.send_keys("admingd@silohub.ag")
-        usermane.send_keys(Keys.ENTER)
+        username = driver.find_element_by_id("email")
+        username.send_keys("admingd@silohub.ag")
+        username.send_keys(Keys.ENTER)
         time.sleep(3)
 
 

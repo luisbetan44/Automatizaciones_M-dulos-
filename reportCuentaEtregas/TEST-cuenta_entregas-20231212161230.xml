@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_entregas-20231212161230" tests="1" file=".py" time="0.010" timestamp="2023-12-12T16:12:30" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_entregas" name="test_cuenta_entregas" time="0.010" timestamp="2023-12-12T16:12:30" file="Entregas.py" line="32">
+		<error type="TypeError" message="EnumMeta.__call__() missing 1 required positional argument: 'value'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 20, in setUp
+    chrome_options = Options()
+TypeError: EnumMeta.__call__() missing 1 required positional argument: 'value'
+]]></error>
+	</testcase>
+</testsuite>

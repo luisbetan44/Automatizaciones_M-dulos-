@@ -1,11 +1,16 @@
+
+from lib2to3.pgen2 import driver
 import unittest
 from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
-import time
-from selenium.webdriver.support.ui import WebDriverWait 
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 import xmlrunner
+import time
+
+from loginhelper import LoginHelper
+from startSession import StartSession
 
 
 
@@ -13,52 +18,28 @@ import xmlrunner
 class cuenta_entregas(unittest.TestCase):
     
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
-        driver = self.driver
-        driver.implicitly_wait(30)
-        driver.maximize_window()
-        driver.get("https://pwa-portal-staging.silohub.ag/login")
-
+       
+       
+        self.start_session = StartSession()
+        self.driver = self.start_session.driver
+        # Inicializar la clase LoginHelper
+        self.login_helper = LoginHelper(self.driver)
+   
+   
     def test_cuenta_entregas(self):
-        driver = self.driver
-        usermane = driver.find_element_by_id("email")
-        usermane.send_keys("admingd@silohub.ag")
-        usermane.send_keys(Keys.ENTER)
-        time.sleep(3)
-
-
-        passworUser = driver.find_element_by_id("password")
-        passworUser.send_keys("G@viglio123")
-        passworUser.send_keys(Keys.ENTER)
-        time.sleep(3)
-
-        insertButton = driver.find_element_by_xpath("/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button/button")
-        insertButton.click()
-        time.sleep(3)
-        
-        ## seleccionar el tenant 
-        selectTenant = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
-        selectTenant.click()
-        time.sleep(3)
-
-     # localiza el input y envia el número de la cuenta 
-        input_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "search-options")))
-        input_element.send_keys('1023')
-      
-       #selecciona el elemento oculto y crea un botón para hacer click sobre el 
-        element_to_click = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#search-dropdown > app-accounts-list > ngx-simplebar > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.dropdown-sub-item.accounts-numbers")))
-        driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
-        element_to_click.click()
-        time.sleep(3)
+        # Utilizar métodos de LoginHelper para el inicio de sesión
+        self.login_helper.login("admingd@silohub.ag", "G@viglio123")
+        self.login_helper.select_tenant()
+        self.login_helper.search_and_select_account("1023")
 
         # ingresar al menú de cuentas 
 
-        select_menu_Account = driver.find_element_by_xpath(
+        select_menu_Account = self.driver.find_element(By.XPATH,
             "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
         )
         select_menu_Account.click()
 
-        select_deliveries = driver.find_element_by_xpath(
+        select_deliveries = self.driver.find_element(By.XPATH,
             "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[2]/a"
         )
         select_deliveries.click()
@@ -68,7 +49,7 @@ class cuenta_entregas(unittest.TestCase):
 
         #   Validar titulo de la pantalla 
 
-        title_menu = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span")
+        title_menu = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span")
         title_obtained = title_menu.text
         tille_expected = "MIS ENTREGAS"
         self.assertEqual(title_obtained, tille_expected)
@@ -82,7 +63,7 @@ class cuenta_entregas(unittest.TestCase):
 
 
         # selecionar botón del filtro
-        selct_filter = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/i")
+        selct_filter = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/i")
         selct_filter.click()
         time.sleep(3)
  
@@ -90,21 +71,21 @@ class cuenta_entregas(unittest.TestCase):
 
         # limpiar  filtro 
 
-        clean_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[1]/button")
+        clean_filter = self.driver.find_element(By.XPATH,"/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[1]/button")
         clean_filter.click()
         time.sleep(3)
 
         # aplicar filtro
 
-        apply_product_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[2]/div/img")
+        apply_product_filter = self.driver.find_element(By.XPATH,"/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[2]/div/img")
         apply_product_filter.click()
         time.sleep(3)
 
-        apply_Campaign_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[2]/div/div")
+        apply_Campaign_filter = self.driver.find_element(By.XPATH,"/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[2]/div/div")
         apply_Campaign_filter.click()
         time.sleep(3)
 
-        apply_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
+        apply_filter = self.driver.find_element(By.XPATH,"/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
         apply_filter.click()
         time.sleep(3)
 
@@ -115,7 +96,7 @@ class cuenta_entregas(unittest.TestCase):
         # Validar totalizadores 
 
 
-        tn_bruto = driver.find_element_by_xpath('//*[@id="layout-wrapper"]/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]')
+        tn_bruto = self.driver.find_element(By.XPATH,'//*[@id="layout-wrapper"]/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]')
         tn_bruto_obtained = tn_bruto.text
         tn_bruto_expected = ["209.737,34","20.973,73","20.973.734,00"]
         
@@ -128,7 +109,7 @@ class cuenta_entregas(unittest.TestCase):
               print("el monto de tn brutos no es correcto ")  
 
 
-        tn_netos = driver.find_element_by_xpath('//*[@id="layout-wrapper"]/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]')
+        tn_netos = self.driver.find_element(By.XPATH,'//*[@id="layout-wrapper"]/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]')
         tn_netos_obtained = tn_netos.text
         tn_netos_expected = ["19.737.664,00", "197.376,64", "19.737,66 "]
         
@@ -141,46 +122,46 @@ class cuenta_entregas(unittest.TestCase):
 
         # seleccionar varios movimientos del listado 
         
-        select_movements1 = driver.find_element_by_xpath('//*[@id="layout-wrapper"]/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/table/tbody/tr[1]/th/input')
+        select_movements1 = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[1]/th/input')
         select_movements1.click()
         time.sleep(3)
 
-        select_movements2 = driver.find_element_by_xpath('//*[@id="layout-wrapper"]/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/table/tbody/tr[2]/th/input')
+        select_movements2 = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[2]/th/input')
         select_movements2.click()
         time.sleep(3)
 
-        select_movements3 = driver.find_element_by_xpath('//*[@id="layout-wrapper"]/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/table/tbody/tr[3]/th/input')
+        select_movements3 = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[3]/th/input')
         select_movements3.click()
         time.sleep(3)
 
         # selecionar botón de descarga 
 
-        selet_button_download = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
+        selet_button_download = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
         selet_button_download.click()
         time.sleep(3)
 
-        apply_download_excel = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
+        apply_download_excel = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
         apply_download_excel.click()
         time.sleep(3)
 
-        selet_button_download = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
+        selet_button_download = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
         selet_button_download.click()
         time.sleep(3)
 
-        apply_download_pdf = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a")
+        apply_download_pdf = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a")
         apply_download_pdf.click()
         time.sleep(3)
 
 
         # ingresar al detalle del tercer movimiento
 
-        insert_movemenst = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/table/tbody/tr[3]/td[2]/span/span")
+        insert_movemenst = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[3]/td[2]/span/span")
         insert_movemenst.click()
         time.sleep(3)
 
         # validar numero de Tk 
 
-        number_TK = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[1]/div')
+        number_TK = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[1]/div')
         number_TK_obtained = number_TK.text
         number_TK_expected = "Entrega TK 0008 00096336"
         self.assertEqual(number_TK_obtained, number_TK_expected)
@@ -196,7 +177,7 @@ class cuenta_entregas(unittest.TestCase):
 
         # validar el total de toneladas de la entrega 
 
-        tn_delivery = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[1]')
+        tn_delivery = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[1]')
         tn_delivery_obtained = tn_delivery.text
         tn_delivery_expected = ["30,11 Tn", "301,10 QQ", "30.110,00 Kg"]
       
@@ -209,7 +190,7 @@ class cuenta_entregas(unittest.TestCase):
 
         # validar producto
 
-        type_product = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[2]')
+        type_product = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[2]')
         type_product_obtained = type_product.text
         type_product_expected = "De Maiz"
         self.assertEqual(type_product_obtained, type_product_expected)
@@ -224,7 +205,7 @@ class cuenta_entregas(unittest.TestCase):
 
         # Validar  fecha campaña cuenta campo 
 
-        title_delivery = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[1]/span')
+        title_delivery = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[1]/span')
         title_delivery_obtained = title_delivery.text
         title_delivery_expected = "DATOS DE LA ENTREGA"
         self.assertEqual(title_delivery_obtained, title_delivery_expected)
@@ -236,7 +217,7 @@ class cuenta_entregas(unittest.TestCase):
         else:
               print("El titulo no es correcto ")  
         
-        date_delivery = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[1]/div[2]')
+        date_delivery = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[1]/div[2]')
         date_delivery_obtained = date_delivery.text
         date_delivery_expected = "01/07/2022"
         self.assertEqual(date_delivery_obtained, date_delivery_expected)
@@ -248,7 +229,7 @@ class cuenta_entregas(unittest.TestCase):
         else:
               print("La feccha de la entrega no es correcta ") 
 
-        campaign_delivery = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[2]/div[2]')
+        campaign_delivery = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[2]/div[2]')
         campaign_delivery_obtained = campaign_delivery.text
         campaign_delivery_expected = "21/22"
         self.assertEqual(campaign_delivery_obtained, campaign_delivery_expected)
@@ -260,7 +241,7 @@ class cuenta_entregas(unittest.TestCase):
         else:
               print("La campaña de la entrega no es correcta ") 
 
-        business_name = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[3]/div[2]')
+        business_name = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[3]/div[2]')
         business_name_obtained = business_name.text
         business_name_expected = "JUAN DEMO"
         self.assertEqual(business_name_obtained, business_name_expected)
@@ -272,7 +253,7 @@ class cuenta_entregas(unittest.TestCase):
         else:
               print("La razón social del cliente no es correcta ")  
  
-        field_business = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[4]/div[2]')
+        field_business = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[4]/div[2]')
         field_business_obtained = field_business.text
         field_business_expected = "8012 La Laura"
         self.assertEqual(field_business_obtained, field_business_expected)
@@ -286,13 +267,13 @@ class cuenta_entregas(unittest.TestCase):
 
         # ingresar al analisis 
 
-        into_analysis = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[2]/div[1]/div/button[1]")
+        into_analysis = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[2]/div[1]/div/button[1]")
         into_analysis.click()
         time.sleep(5)
 
         # validar titulo del analisis
 
-        title_analysis = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-detail-table-quality-analisis/div/div/div/div[1]/span')
+        title_analysis = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-detail-table-quality-analisis/div/div/div/div[1]/span')
         title_analysis_obtained = title_analysis.text
         title_analysis_expected = "ANÁLISIS"
         self.assertEqual(title_analysis_obtained, title_analysis_expected)
@@ -305,7 +286,7 @@ class cuenta_entregas(unittest.TestCase):
               print("El titulo no es correcto ")  
 
  
-        data_analysis = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-responsive-table/div/table/tbody/tr[9]/td[2]/span/span')
+        data_analysis = self.driver.find_element(By.CSS_SELECTOR,'#layout-wrapper > div > div > div > app-quality-analisis > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(9) > td:nth-child(2) > span > span')
         data_analysis_obtained = data_analysis.text
         data_analysis_expected = "72%"
         self.assertEqual(data_analysis_obtained, data_analysis_expected)
@@ -317,7 +298,7 @@ class cuenta_entregas(unittest.TestCase):
         else:
               print("No se encontro el campo de Peso Hectolítrico ") 
 
-        foreign_matter = driver.find_element_by_xpath('/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-responsive-table/div/table/tbody/tr[6]/td[2]/span/span')
+        foreign_matter = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-responsive-table/div/div[2]/table/tbody/tr[6]/td[2]/span/span')
         foreign_matter_obtained = foreign_matter.text
         foreign_matter_expected = "0,00%"
         self.assertEqual(foreign_matter_obtained, foreign_matter_expected)
@@ -332,11 +313,11 @@ class cuenta_entregas(unittest.TestCase):
 
         # salir al listado 
 
-        go_into_detail = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
+        go_into_detail = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
         go_into_detail.click()
         time.sleep(2)
 
-        go_to_list = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
+        go_to_list = self.driver.find_element(By.XPATH,"/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a")
         go_to_list.click()
         time.sleep(3)
 

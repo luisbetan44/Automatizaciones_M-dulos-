@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="inicio_tenant-20231210181847" tests="1" file=".py" time="6.807" timestamp="2023-12-10T18:18:54" failures="0" errors="1" skipped="0">
+	<testcase classname="inicio_tenant" name="test_inicio_tenant" time="6.807" timestamp="2023-12-10T18:18:54" file="inicio.py" line="33">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'send_keys'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py", line 36, in test_inicio_tenant
+    username.send_keys("admingd@silohub.ag")
+AttributeError: 'NoneType' object has no attribute 'send_keys'
+]]></error>
+	</testcase>
+</testsuite>

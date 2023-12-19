@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20231219171227" tests="1" file=".py" time="0.008" timestamp="2023-12-19T17:12:27" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="0.008" timestamp="2023-12-19T17:12:27" file="Onboarding.py" line="28">
+		<error type="TypeError" message="StartSession.__init__() missing 1 required positional argument: 'driver'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Onboarding.py", line 21, in setUp
+    self.start_session = StartSession()
+TypeError: StartSession.__init__() missing 1 required positional argument: 'driver'
+]]></error>
+	</testcase>
+</testsuite>

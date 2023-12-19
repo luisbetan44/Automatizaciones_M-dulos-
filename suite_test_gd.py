@@ -1,5 +1,5 @@
 import unittest
-from inicio import inicio_tenat  
+from inicio import InicioTenant 
 from Conf_ventas import Conf_ventas_test_tenant
 from contrato import contrato_tenant
 from Entregas import cuenta_entregas
@@ -11,7 +11,7 @@ if __name__ == "__main__":
     test_suite = unittest.TestSuite()
 
     
-    test_suite.addTest(unittest.makeSuite(inicio_tenat))
+    test_suite.addTest(unittest.makeSuite(InicioTenant))
     test_suite.addTest(unittest.makeSuite(Conf_ventas_test_tenant))
     test_suite.addTest(unittest.makeSuite(contrato_tenant))
     test_suite.addTest(unittest.makeSuite(cuenta_entregas))

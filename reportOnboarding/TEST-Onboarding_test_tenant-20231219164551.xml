@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20231219164551" tests="1" file=".py" time="0.010" timestamp="2023-12-19T16:45:51" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="0.010" timestamp="2023-12-19T16:45:51" file="Onboarding.py" line="26">
+		<error type="TypeError" message="StartSession.__init__() takes 1 positional argument but 2 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Onboarding.py", line 19, in setUp
+    self.start_session = StartSession(self)
+TypeError: StartSession.__init__() takes 1 positional argument but 2 were given
+]]></error>
+	</testcase>
+</testsuite>

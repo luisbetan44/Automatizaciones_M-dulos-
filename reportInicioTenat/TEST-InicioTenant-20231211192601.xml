@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="InicioTenant-20231211192601" tests="1" file=".py" time="13.034" timestamp="2023-12-11T19:26:14" failures="0" errors="1" skipped="0">
+	<testcase classname="InicioTenant" name="test_inicio_tenant" time="13.034" timestamp="2023-12-11T19:26:14" file="inicio.py" line="29">
+		<error type="TypeError" message="find_element_by_id() missing 1 required positional argument: 'id'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py", line 33, in test_inicio_tenant
+    self.login_helper.search_and_select_account("1023")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\loginhelper.py", line 28, in search_and_select_account
+    input_element = find_element_by_id("search-options")
+TypeError: find_element_by_id() missing 1 required positional argument: 'id'
+]]></error>
+	</testcase>
+</testsuite>

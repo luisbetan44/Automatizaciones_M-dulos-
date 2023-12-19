@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20231219164409" tests="1" file=".py" time="4.175" timestamp="2023-12-19T16:44:13" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="4.175" timestamp="2023-12-19T16:44:13" file="Onboarding.py" line="26">
+		<error type="AttributeError" message="'Onboarding_test_tenant' object has no attribute 'driver'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Onboarding.py", line 23, in setUp
+    self.login_Sample = LoginSample(self.driver)
+AttributeError: 'Onboarding_test_tenant' object has no attribute 'driver'
+]]></error>
+	</testcase>
+</testsuite>

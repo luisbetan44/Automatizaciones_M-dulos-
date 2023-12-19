@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_entregas-20231212184657" tests="1" file=".py" time="34.728" timestamp="2023-12-12T18:47:32" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_entregas" name="test_cuenta_entregas" time="34.728" timestamp="2023-12-12T18:47:32" file="Entregas.py" line="36">
+		<error type="StaleElementReferenceException" message="Message: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6539B4D02+56194]
+	(No symbol) [0x00007FF6539204B2]
+	(No symbol) [0x00007FF6537C76AA]
+	(No symbol) [0x00007FF6537CCFC0]
+	(No symbol) [0x00007FF6537CF38F]
+	(No symbol) [0x00007FF6537CF480]
+	(No symbol) [0x00007FF6538133D9]
+	(No symbol) [0x00007FF6538067D6]
+	(No symbol) [0x00007FF653835E7A]
+	(No symbol) [0x00007FF653806226]
+	(No symbol) [0x00007FF653836320]
+	(No symbol) [0x00007FF653852786]
+	(No symbol) [0x00007FF653835C23]
+	(No symbol) [0x00007FF653804A45]
+	(No symbol) [0x00007FF653805AD4]
+	GetHandleVerifier [0x00007FF653D2D5BB+3695675]
+	GetHandleVerifier [0x00007FF653D86197+4059159]
+	GetHandleVerifier [0x00007FF653D7DF63+4025827]
+	GetHandleVerifier [0x00007FF653A4F029+687785]
+	(No symbol) [0x00007FF65392B508]
+	(No symbol) [0x00007FF653927564]
+	(No symbol) [0x00007FF6539276E9]
+	(No symbol) [0x00007FF653918094]
+	BaseThreadInitThunk [0x00007FFB1102257D+29]
+	RtlUserThreadStart [0x00007FFB1232AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 74, in test_cuenta_entregas
+    selct_filter.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 93, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 394, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 347, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=120.0.6099.71); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6539B4D02+56194]
+	(No symbol) [0x00007FF6539204B2]
+	(No symbol) [0x00007FF6537C76AA]
+	(No symbol) [0x00007FF6537CCFC0]
+	(No symbol) [0x00007FF6537CF38F]
+	(No symbol) [0x00007FF6537CF480]
+	(No symbol) [0x00007FF6538133D9]
+	(No symbol) [0x00007FF6538067D6]
+	(No symbol) [0x00007FF653835E7A]
+	(No symbol) [0x00007FF653806226]
+	(No symbol) [0x00007FF653836320]
+	(No symbol) [0x00007FF653852786]
+	(No symbol) [0x00007FF653835C23]
+	(No symbol) [0x00007FF653804A45]
+	(No symbol) [0x00007FF653805AD4]
+	GetHandleVerifier [0x00007FF653D2D5BB+3695675]
+	GetHandleVerifier [0x00007FF653D86197+4059159]
+	GetHandleVerifier [0x00007FF653D7DF63+4025827]
+	GetHandleVerifier [0x00007FF653A4F029+687785]
+	(No symbol) [0x00007FF65392B508]
+	(No symbol) [0x00007FF653927564]
+	(No symbol) [0x00007FF6539276E9]
+	(No symbol) [0x00007FF653918094]
+	BaseThreadInitThunk [0x00007FFB1102257D+29]
+	RtlUserThreadStart [0x00007FFB1232AA58+40]
+
+]]></error>
+		<system-out><![CDATA[El titulo de la pagina es: MIS ENTREGAS
+]]></system-out>
+	</testcase>
+</testsuite>

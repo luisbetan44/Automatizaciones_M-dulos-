@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Result</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Test Result</h2>
+                <p class='attribute'><strong>Start Time: </strong>2023-12-18 17:50:00</p>
+                <p class='attribute'><strong>Duration: </strong>16.505s</p>
+                <p class='attribute'><strong>Status: </strong>Error: 1</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>reportes</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                            <tr class='warning'>
+                                <td class="col-xs-9">test_cuenta_entregas (__main__.Onboarding_test_tenant)</td>
+                                <td class="col-xs-3">
+                                    <span class="label label-warning">
+                                        
+                                            Error
+                                        
+                                    </span>
+                                    
+                                        &nbsp<button class="btn btn-default btn-xs">View</button>
+                                    
+                                </td>
+                            </tr>
+                            
+                                <tr style="display:none;">
+                                    <td class="col-xs-9">
+                                        <p>InvalidSelectorException</p>
+                                        <p>Message: invalid selector: Unable to locate an element with the xpath expression By.XPATH,/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[2]/div[1]/app-input-for-long-form[1]/div[1]/div[2]/div/input because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string 'By.XPATH,/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[2]/div[1]/app-input-for-long-form[1]/div[1]/div[2]/div/input' is not a valid XPath expression.
+  (Session info: chrome=120.0.6099.72); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF753782142+3514994]
+	(No symbol) [0x00007FF7533A0CE2]
+	(No symbol) [0x00007FF7532476AA]
+	(No symbol) [0x00007FF75324CFC0]
+	(No symbol) [0x00007FF75324F38F]
+	(No symbol) [0x00007FF75324F480]
+	(No symbol) [0x00007FF753291624]
+	(No symbol) [0x00007FF75329197C]
+	(No symbol) [0x00007FF7532D4EE7]
+	(No symbol) [0x00007FF7532B602F]
+	(No symbol) [0x00007FF7532D28F6]
+	(No symbol) [0x00007FF7532B5D93]
+	(No symbol) [0x00007FF753284BDC]
+	(No symbol) [0x00007FF753285C64]
+	GetHandleVerifier [0x00007FF7537AE16B+3695259]
+	GetHandleVerifier [0x00007FF753806737+4057191]
+	GetHandleVerifier [0x00007FF7537FE4E3+4023827]
+	GetHandleVerifier [0x00007FF7534D04F9+689705]
+	(No symbol) [0x00007FF7533AC048]
+	(No symbol) [0x00007FF7533A8044]
+	(No symbol) [0x00007FF7533A81C9]
+	(No symbol) [0x00007FF7533988C4]
+	BaseThreadInitThunk [0x00007FFBA8B3257D+29]
+	RtlUserThreadStart [0x00007FFBA8E8AA58+40]
+</p>
+                                    </td>
+                                </tr>
+                            
+                        
+                        <tr>
+                            <td>
+                               Total Test Runned: 1
+                            </td>
+                            <td>
+                                <span>Error: 1</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html>

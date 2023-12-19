@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="inicio_tenat-20231205091619" tests="1" file=".py" time="0.008" timestamp="2023-12-05T09:16:19" failures="0" errors="1" skipped="0">
+	<testcase classname="inicio_tenat" name="test_login_user_1" time="0.008" timestamp="2023-12-05T09:16:19" file="inicio.py" line="25">
+		<error type="TypeError" message="WebDriver.__init__() got an unexpected keyword argument 'executable_path'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\inicio.py", line 17, in setUp
+    self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
+TypeError: WebDriver.__init__() got an unexpected keyword argument 'executable_path'
+]]></error>
+	</testcase>
+</testsuite>
