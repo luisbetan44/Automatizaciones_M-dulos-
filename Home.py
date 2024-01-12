@@ -341,7 +341,7 @@ class HomeTenant(unittest.TestCase):
 
 if __name__ == "__main__":
   test_suite = unittest.TestLoader().loadTestsFromTestCase(HomeTenant)
-  runner = xmlrunner.XMLTestRunner(output='reportInicioTenat')
+  runner = xmlrunner.XMLTestRunner(output='reportHomeTenat')
   runner.run(test_suite)
         
    

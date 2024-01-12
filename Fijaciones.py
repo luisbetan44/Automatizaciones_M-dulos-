@@ -7,7 +7,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from pyunitreport import HTMLTestRunner
 from selenium.webdriver.support.ui import Select
-from loginhelper import LoginHelper
+from Elements import find_elements
+from LoginSample import LoginSample
+
 
 from startSession import StartSession
 
@@ -19,26 +21,19 @@ class Fijaciones_precio(unittest.TestCase):
         self.start_session = StartSession()
         self.driver = self.start_session.driver
         # Inicializar la clase LoginHelper
-        self.login_helper = LoginHelper(self.driver)
+        self.login_sample = LoginSample(self.driver)
    
    
     def test_grain_pipup(self):
         # Utilizar métodos de LoginHelper para el inicio de sesión
-        self.login_helper.login("admingd@silohub.ag", "G@viglio123")
-        self.login_helper.select_tenant()
-        self.login_helper.search_and_select_account("1023")
+        self.login_sample.login("admingd@silohub.ag", "G@viglio123")
+        self.login_sample.select_tenant()
+        
 
-        insertButton = self.driver.find_element(By.XPATH,"/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button/button")
-        insertButton.send_keys(Keys.ENTER) 
-        time.sleep(3)
+       
 
-
-        select_tenant = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img')
-        select_tenant.click()
-        time.sleep(3)
-
-        select_granos = self.driver.find_element(By.XPATH,'/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/a/span')
-        select_granos.click()
+        select_grain = '/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[2]/div/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[3]/a/span'
+        find_elements(self.driver,select_grain )
         time.sleep(2)
 
 
