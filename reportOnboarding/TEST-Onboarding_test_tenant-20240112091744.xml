@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20240112091744" tests="1" file=".py" time="61.960" timestamp="2024-01-12T09:18:46" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="61.960" timestamp="2024-01-12T09:18:46" file="Onboarding.py" line="28">
+		<error type="TypeError" message="WebDriver.find_element() takes from 1 to 3 positional arguments but 4 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Onboarding.py", line 146, in test_tenat_onboarding
+    check_button = self.driver.find_element(By.XPATH,
+TypeError: WebDriver.find_element() takes from 1 to 3 positional arguments but 4 were given
+]]></error>
+		<system-out><![CDATA[El texto obtenido es: DOCUMENTACIÓN
+El texto obtenido es: Para poder continuar al siguiente paso, será obligatorio completar los campos que se muestran a continuación.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+]]></system-out>
+	</testcase>
+</testsuite>

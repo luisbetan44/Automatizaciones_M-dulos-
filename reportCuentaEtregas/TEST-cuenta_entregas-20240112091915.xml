@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_entregas-20240112091915" tests="1" file=".py" time="63.863" timestamp="2024-01-12T09:20:19" failures="1" errors="0" skipped="0">
+	<testcase classname="cuenta_entregas" name="test_cuenta_entregas" time="63.863" timestamp="2024-01-12T09:20:19" file="Entregas.py" line="29">
+		<failure type="AssertionError" message="'Entrega TK 0001 00124125' != 'Entrega TK 0008 00096336'
+- Entrega TK 0001 00124125
++ Entrega TK 0008 00096336
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 167, in test_cuenta_entregas
+    self.assertEqual(number_TK_obtained, number_TK_expected)
+AssertionError: 'Entrega TK 0001 00124125' != 'Entrega TK 0008 00096336'
+- Entrega TK 0001 00124125
++ Entrega TK 0008 00096336
+
+]]></failure>
+		<system-out><![CDATA[El titulo de la pagina es: MIS ENTREGAS
+el monto de tn brutos no es correcto 
+el monto de tn n no es correcto 
+]]></system-out>
+	</testcase>
+</testsuite>

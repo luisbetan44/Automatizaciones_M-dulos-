@@ -2,6 +2,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
+import re
 
 
 def find_elements(driver, xpath):
@@ -34,7 +35,7 @@ def find_elements_id(driver, id):
     except TimeoutException:
         print("Tiempo de espera agotado. El botón no está presente o no es clickeable.")
 
-def find_elements(driver, class_name):
+def find_elements_name(driver, class_name):
     try:
         select_nex_button = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.CLASS_NAME, class_name))
@@ -102,21 +103,21 @@ def find_and_send_element(driver, xpath, input_data=None):
 
 
 
-def validar_solapa(driver, xpath, valor_esperado):
+def validate_text(driver, xpath, valor_esperado):
     try:
         elemento = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, xpath))
         )
         valor = elemento.text
         if valor == valor_esperado:
-            print(f"Nos encontramos en la solapa {valor_esperado}")
+            print(f"El texto encontrado es  {valor_esperado}")
         else:
-            print(f"No estamos ubicados en la solapa {valor_esperado}")
+            print(f"El texto no fue encontrado {valor_esperado}")
     except TimeoutException:
         print(f"Tiempo de espera agotado. La solapa no está presente o no es clickeable.")
 
 # Otra función útil si deseas manipular la visibilidad de un elemento antes de interactuar con él
-def hacer_visible(driver, xpath):
+def make_visible(driver, xpath):
     try:
         elemento = WebDriverWait(driver, 10).until(
             EC.presence_of_element_located((By.XPATH, xpath))
@@ -153,3 +154,48 @@ def search_and_select_option(driver, xpath_search_input, xpath_search_result, va
 
     except TimeoutException:
         print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
+
+
+def validate_image_xpaht(driver, xpath, urls_esperadas):
+    imagen = driver.find_element(By.XPATH, xpath)
+    url_imagen_obtenida = imagen.get_attribute('src')
+
+    if url_imagen_obtenida in urls_esperadas:
+        print("La imagen es visible para el usuario. URL:", url_imagen_obtenida)
+    else:
+        print("La imagen no es visible para el usuario. URL:", url_imagen_obtenida)
+
+def validate_image_css_selector(driver, css_selector, urls_esperadas):
+    imagen = driver.find_element(By.CSS_SELECTOR, css_selector)
+    url_imagen_obtenida = imagen.get_attribute('src')
+
+    if url_imagen_obtenida in urls_esperadas:
+        print("La imagen es visible para el usuario. URL:", url_imagen_obtenida)
+    else:
+        print("La imagen no es visible para el usuario. URL:", url_imagen_obtenida)
+
+def validate_character_numeric_element(driver, xpath):
+    elemento = driver.find_element(By.XPATH, xpath)
+    valor = elemento.text
+
+    if re.search(r'\d', valor):
+        print(f'El valor es un carácter numérico. Valor: {valor}')
+    else:
+        print(f'El valor no es un carácter numérico. Valor: {valor}')
+
+def validate_text(driver, xpath, text_expected):
+    element = driver.find_element(By.XPATH, xpath)
+    is_visible = element.is_displayed()
+
+    if is_visible:
+        print("El texto es visible para el usuario")
+    else:
+        print("El texto no es visible para el usuario")
+
+    text_obtained = element.text
+    assert text_obtained == text_expected
+
+    if text_obtained:
+        print("El texto fue validado correctamente:", text_obtained)
+    else:
+        print("No se pudo validar el texto")
