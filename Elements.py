@@ -114,7 +114,52 @@ def validate_text(driver, xpath, valor_esperado):
         else:
             print(f"El texto no fue encontrado {valor_esperado}")
     except TimeoutException:
-        print(f"Tiempo de espera agotado. La solapa no está presente o no es clickeable.")
+        print(f"Tiempo de espera agotado. El texto por xpaht no está presente.")
+
+def validate_text_css_selector(driver, css_selector, valor_esperado):
+    try:
+        elemento = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, css_selector))
+        )
+        valor = elemento.text
+        if valor == valor_esperado:
+            print(f"El texto encontrado es  {valor_esperado}")
+        else:
+            print(f"El texto no fue encontrado {valor_esperado}")
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. el texto por selector no está presente.")
+
+def validate_text_by_text(driver, expected_text):
+    try:
+        elemento = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{expected_text}')]"))
+        )
+        valor = elemento.text
+        if valor == expected_text:
+            print(f"El texto encontrado es  {expected_text}")
+        else:
+            print(f"El texto no fue encontrado {expected_text}")
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El texto por texto no está presente.")
+
+def validate_text_by_strt(driver, expected_text):
+    try:
+        elemento = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, f"//*[contains(text(), '{expected_text}')]"))
+        )
+        valor = elemento.text
+        if isinstance(valor, str):
+            if valor == expected_text:
+                print(f"El texto encontrado es  {expected_text}")
+            else:
+                print(f"El texto encontrado '{valor}' no coincide con el esperado '{expected_text}'")
+        else:
+            print(f"El valor encontrado no es un string: {valor}")
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El texto por texto no está presente.")
+
+
+
 
 # Otra función útil si deseas manipular la visibilidad de un elemento antes de interactuar con él
 def make_visible(driver, xpath):
@@ -183,7 +228,7 @@ def validate_character_numeric_element(driver, xpath):
     else:
         print(f'El valor no es un carácter numérico. Valor: {valor}')
 
-def validate_text(driver, xpath, text_expected):
+def validate_text_visible(driver, xpath, text_expected):
     element = driver.find_element(By.XPATH, xpath)
     is_visible = element.is_displayed()
 
