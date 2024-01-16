@@ -3,6 +3,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException
 import re
+from selenium.common.exceptions import NoSuchElementException
 
 
 def find_elements(driver, xpath):
@@ -219,14 +220,29 @@ def search_and_select_option(driver, xpath_search_input, xpath_search_result, va
     except TimeoutException:
         print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
 
-def validate_chain_text_xpaht(driver, xpath, urls_esperadas):
-    text = driver.find_element(By.XPATH, xpath)
-    url_text_obtenida = text.get_attribute('src')
+def validate_chain_text_xpaht(driver, xpath, expected_texts):
+    try:
+        # Espera explícita para asegurarse de que el elemento esté presente y visible
+        text_element = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, xpath))
+        )
+        
+        actual_text = text_element.text.strip()
 
-    if url_text_obtenida in urls_esperadas:
-        print("La Cadena de texto es visible para el usuario. :", url_text_obtenida)
-    else:
-        print("La cadena de texto no es visible para el usuario. :", url_text_obtenida)
+        # Verificar si el texto obtenido es un substring de alguno de los textos esperados
+        for expected_text in expected_texts:
+            if expected_text in actual_text:
+                print(f"La cadena de texto es visible para el usuario: '{actual_text}'")
+                return  # Sale del bucle si encuentra una coincidencia
+
+        # Si no se encontró ninguna coincidencia
+        print(f"La cadena de texto no coincide con los valores esperados. Texto actual: '{actual_text}'")
+
+    except TimeoutException:
+        print("Tiempo de espera agotado. El elemento no se ha vuelto visible.")
+    except NoSuchElementException:
+        print("No se encontró el elemento con el xpath especificado.")
+
 
 
 
