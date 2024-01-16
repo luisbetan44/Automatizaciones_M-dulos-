@@ -11,9 +11,9 @@ def find_elements(driver, xpath):
             EC.element_to_be_clickable((By.XPATH, xpath))
         )
         select_nex_button.click()
-        print("¡Botón encontrado y clickeado con éxito!")
+        print("¡Elemento encontrado y clickeado con éxito!")
     except TimeoutException:
-        print("Tiempo de espera agotado. El botón no está presente o no es clickeable.")
+        print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
 
 def find_elements_css_selector(driver, css_selector):
     try:
@@ -21,9 +21,12 @@ def find_elements_css_selector(driver, css_selector):
             EC.element_to_be_clickable((By.CSS_SELECTOR, css_selector))
         )
         select_nex_button.click()
-        print("¡Botón encontrado y clickeado con éxito!")
+        print("¡Elemento encontrado y clickeado con éxito!")
     except TimeoutException:
-        print("Tiempo de espera agotado. El botón no está presente o no es clickeable.")
+        print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
+
+
+
 
 def find_elements_id(driver, id):
     try:
@@ -31,9 +34,9 @@ def find_elements_id(driver, id):
             EC.element_to_be_clickable((By.ID, id))
         )
         select_nex_button.click()
-        print("¡Botón encontrado y clickeado con éxito!")
+        print("¡Elemento encontrado y clickeado con éxito!")
     except TimeoutException:
-        print("Tiempo de espera agotado. El botón no está presente o no es clickeable.")
+        print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
 
 def find_elements_name(driver, class_name):
     try:
@@ -41,9 +44,9 @@ def find_elements_name(driver, class_name):
             EC.element_to_be_clickable((By.CLASS_NAME, class_name))
         )
         select_nex_button.click()
-        print("¡Botón encontrado y clickeado con éxito!")
+        print("¡Elemento encontrado y clickeado con éxito!")
     except TimeoutException:
-        print("Tiempo de espera agotado. El botón no está presente o no es clickeable.")
+        print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
 
 
 
@@ -100,6 +103,22 @@ def find_and_send_element(driver, xpath, input_data=None):
         print("¡Elemento encontrado y enviado con éxito!")
     except TimeoutException:
         print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
+
+def find_send_element(driver, xpath, input_data=None):
+    try:
+        # Esperar a que el elemento sea clickeable
+        input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath))
+        )
+
+        # Si hay datos para ingresar, establecer el valor
+        if input_data is not None:
+            input_element.clear()  # Limpiar el input
+            input_element.send_keys(input_data)  # Ingresar los datos
+
+        print("¡Input encontrado y enviado con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El input no está presente o no es clickeable.")
 
 
 
@@ -200,6 +219,16 @@ def search_and_select_option(driver, xpath_search_input, xpath_search_result, va
     except TimeoutException:
         print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
 
+def validate_chain_text_xpaht(driver, xpath, urls_esperadas):
+    text = driver.find_element(By.XPATH, xpath)
+    url_text_obtenida = text.get_attribute('src')
+
+    if url_text_obtenida in urls_esperadas:
+        print("La Cadena de texto es visible para el usuario. :", url_text_obtenida)
+    else:
+        print("La cadena de texto no es visible para el usuario. :", url_text_obtenida)
+
+
 
 def validate_image_xpaht(driver, xpath, urls_esperadas):
     imagen = driver.find_element(By.XPATH, xpath)
@@ -244,3 +273,35 @@ def validate_text_visible(driver, xpath, text_expected):
         print("El texto fue validado correctamente:", text_obtained)
     else:
         print("No se pudo validar el texto")
+    
+def validate_text_visible_selector(driver, css_selector, text_expected):
+    element = driver.find_element(By.CSS_SELECTOR, css_selector)
+    is_visible = element.is_displayed()
+
+    if is_visible:
+        print("El texto es visible para el usuario")
+    else:
+        print("El texto no es visible para el usuario")
+
+    text_obtained = element.text
+    assert text_obtained == text_expected
+
+    if text_obtained:
+        print("El texto fue validado correctamente:", text_obtained)
+    else:
+        print("No se pudo validar el texto")
+
+def find_and_click_element(driver, xpath, clicks=1):
+    try:
+        # Esperar a que el elemento sea clickeable
+        element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath))
+        )
+
+        # Hacer clic en el elemento la cantidad de veces especificada
+        for _ in range(clicks):
+            element.click()
+        
+        print(f"¡Elemento encontrado y clickeado {clicks} veces con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")

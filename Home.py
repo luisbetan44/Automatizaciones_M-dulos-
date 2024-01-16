@@ -167,7 +167,7 @@ class HomeTenant(unittest.TestCase):
 
         # validar la imagen del producto 
 
-        image_4 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[3]/app-recent-grain-movements/div/div[1]/app-recent-deliveries/app-responsive-table-multiple-items/div/table/tbody/tr[1]/td[1]/div/div/div[1]/img"
+        image_4 = "#layout-wrapper > div > div > div > app-home > div > div:nth-child(4) > app-recent-grain-movements > div > div:nth-child(1) > app-recent-deliveries > app-responsive-table-multiple-items > div > table > tbody > tr:nth-child(1) > td:nth-child(1) > div > div > div.me-2 > img"
         image_4_expected = [
            "https://pwa-portal-staging.silohub.ag/assets/images/grains/trigo.svg",
            "https://pwa-portal-staging.silohub.ag/assets/images/grains/maiz.svg",
