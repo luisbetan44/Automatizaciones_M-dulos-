@@ -1,15 +1,7 @@
-
-from lib2to3.pgen2 import driver
 import unittest
-from selenium import webdriver
-from selenium.webdriver.chrome.options import Options
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
 import xmlrunner
 import time
-from Elements import find_and_click_element, find_elements, find_elements_css_selector, find_send_element, validate_chain_text_xpaht, validate_text, validate_text_visible, validate_text_visible_selector
-
+from Elements import find_and_click_element, find_elements, validate_chain_text_xpaht, validate_text, validate_text_visible, validate_text_visible_selector
 from loginhelper import LoginHelper
 from startSession import StartSession
 
