@@ -1,7 +1,7 @@
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
 import re
 from selenium.common.exceptions import NoSuchElementException
 
@@ -66,6 +66,23 @@ def wait_and_click(driver, xpath):
 
 
 
+def find_and_click_element_with_style_ID(driver, id):
+    try:
+        # Esperar a que el elemento sea visible
+        element_to_click = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.ID, id))
+        )
+
+        # Hacer visible el elemento utilizando JavaScript
+        driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
+
+        # Hacer clic en el elemento
+        element_to_click.click()
+
+        print("¡Elemento encontrado, hecho visible y clickeado con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El elemento no está presente o no es visible o clickeable.")
+
 def find_and_click_element_with_style(driver, xpath):
     try:
         # Esperar a que el elemento sea visible
@@ -82,6 +99,7 @@ def find_and_click_element_with_style(driver, xpath):
         print("¡Elemento encontrado, hecho visible y clickeado con éxito!")
     except TimeoutException:
         print("Tiempo de espera agotado. El elemento no está presente o no es visible o clickeable.")
+
 
 
 def find_and_send_element(driver, xpath, input_data=None):
@@ -220,6 +238,34 @@ def search_and_select_option(driver, xpath_search_input, xpath_search_result, va
     except TimeoutException:
         print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
 
+
+
+def upload_file_after_click(driver, xpath_chevron, xpath_upload_field, file_path):
+    try:
+        # Esperar hasta que el chevron sea clickeable
+        chevron_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_chevron))
+        )
+
+        # Hacer clic en el chevron para desplegar el campo de carga de archivo
+        chevron_element.click()
+
+        # Encontrar el campo de carga de archivo después de desplegar el chevron
+        upload_input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_upload_field))
+        )
+
+        # Adjuntar el archivo al campo de carga de archivo
+        upload_input_element.send_keys(file_path)
+
+        print(f"Archivo '{file_path}' cargado con éxito después de hacer clic en el chevron!")
+
+    except TimeoutException:
+        print("Tiempo de espera agotado. El chevron o el campo de carga de archivo no están presentes o no son clickeables.")
+    except ElementClickInterceptedException:
+        print("El clic en el chevron fue interceptado por otro elemento en la página.")
+
+
 def validate_chain_text_xpaht(driver, xpath, expected_texts):
     try:
         # Espera explícita para asegurarse de que el elemento esté presente y visible
@@ -321,3 +367,33 @@ def find_and_click_element(driver, xpath, clicks=1):
         print(f"¡Elemento encontrado y clickeado {clicks} veces con éxito!")
     except TimeoutException:
         print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
+
+def click_checkbox(driver, checkbox_id):
+    try:
+        # Espera hasta que el checkbox sea clickeable
+        checkbox_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, checkbox_id))
+        )
+
+        # Hacer clic en el checkbox
+        checkbox_element.click()
+
+        print(f"Checkbox con ID '{checkbox_id}' seleccionado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El checkbox con ID '{checkbox_id}' no está presente o no es clickeable.")
+
+def click_checkbox_xpaht(driver, checkbox_xpaht):
+    try:
+        # Espera hasta que el checkbox sea clickeable
+        checkbox_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, checkbox_xpaht))
+        )
+
+        # Hacer clic en el checkbox
+        checkbox_element.click()
+
+        print(f"Checkbox con ID '{checkbox_xpaht}' seleccionado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El checkbox con ID '{checkbox_xpaht}' no está presente o no es clickeable.")

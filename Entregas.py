@@ -227,7 +227,7 @@ class cuenta_entregas(unittest.TestCase):
 
 if __name__ == "__main__":
   test_suite = unittest.TestLoader().loadTestsFromTestCase(cuenta_entregas)
-  runner = xmlrunner.XMLTestRunner(output='reportCuentaEtregas')
+  runner = xmlrunner.XMLTestRunner(output='reportCuentaEntregas')
   runner.run(test_suite)
    
    

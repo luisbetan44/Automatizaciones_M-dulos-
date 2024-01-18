@@ -1,15 +1,14 @@
-from lib2to3.pgen2 import driver
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
 class StartSession:
     def __init__(self):
-        self.driver = driver
-       
         # Crea una instancia de ChromeOptions
         chrome_options = Options()
+
         # Agrega la ruta del controlador de Chrome al PATH
         chrome_path = r"C:\driverchrome\chromedriver-win64\chromedriver.exe"
+
         # Establece la ruta del controlador en ChromeOptions
         chrome_options.add_argument(f"executable_path={chrome_path}")
 
