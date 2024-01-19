@@ -239,6 +239,108 @@ def search_and_select_option(driver, xpath_search_input, xpath_search_result, va
         print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
 
 
+def search_and_select_producer(driver, xpath_search_input, xpath_search_results, account_number):
+    try:
+        # Encontrar el campo de búsqueda por XPath
+        search_input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_search_input))
+        )
+
+        # Limpiar el campo de búsqueda antes de realizar la búsqueda
+        search_input_element.clear()
+
+        # Ingresar el número de cuenta en el campo de búsqueda
+        search_input_element.send_keys(account_number)
+
+        # Esperar a que aparezcan las opciones de búsqueda después de ingresar el valor
+        search_results = WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.XPATH, xpath_search_results))
+        )
+
+        # Seleccionar la primera opción (puedes ajustar esto según tus necesidades)
+        if search_results:
+            search_results[0].click()
+            print(f"Número de cuenta '{account_number}' ingresado y opción seleccionada con éxito!")
+        else:
+            print(f"No se encontraron opciones para el número de cuenta '{account_number}'.")
+
+    except TimeoutException:
+        print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
+
+def select_option_dropdown(driver, xpath_search_input, xpath_search_result, value_to_search):
+    try:
+        # Esperar hasta que el campo de búsqueda sea clickeable
+        search_input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_search_input))
+        )
+
+        
+        # Ingresar el valor a buscar en el campo de búsqueda
+        search_input_element.send_keys(value_to_search)
+
+        # Esperar a que aparezcan las opciones de búsqueda después de ingresar el valor
+        search_result_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_search_result))
+        )
+
+        # Hacer clic en la opción de búsqueda deseada
+        search_result_element.click()
+
+        print(f"¡Valor '{value_to_search}' ingresado y opción seleccionada con éxito!")
+
+    except TimeoutException:
+        print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
+
+def select_option_dropdown_css_selector(driver, selector_search_input, selector_search_result, value_to_search):
+    try:
+        # Esperar hasta que el campo de búsqueda sea clickeable
+        search_input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, selector_search_input))
+        )
+
+        
+        # Ingresar el valor a buscar en el campo de búsqueda
+        search_input_element.send_keys(value_to_search)
+
+        # Esperar a que aparezcan las opciones de búsqueda después de ingresar el valor
+        search_result_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, selector_search_result))
+        )
+
+        # Hacer clic en la opción de búsqueda deseada
+        search_result_element.click()
+
+        print(f"¡Valor '{value_to_search}' ingresado y opción seleccionada con éxito!")
+
+    except TimeoutException:
+        print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
+
+
+def search_and_select_account(driver, account_number):
+    try:
+        # Encontrar el elemento de entrada por ID
+        input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, "#current-account-applied > app-contract-form > div.container-form.bg-white > form > div > div:nth-child(1) > div.f-size-12 > div:nth-child(3) > div.col-8 > div > app-customer-searcher > ng-select > div > div > div.ng-input > input[type=text]"))
+        )
+        
+        # Limpiar el campo de búsqueda antes de realizar la búsqueda
+        input_element.clear()
+
+        # Ingresar el número de cuenta en el campo de búsqueda
+        input_element.send_keys(account_number)
+
+        # Encontrar el elemento para hacer clic por CSS selector
+        element_to_click = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div[1]/div[3]/div[2]/div/app-customer-searcher/ng-select/ng-dropdown-panel/div/div[2]/div[1]/span"))
+        )
+
+        # Hacer clic en el elemento deseado
+        element_to_click.click()
+
+        print(f"Número de cuenta '{account_number}' ingresado y opción seleccionada con éxito!")
+
+    except TimeoutException:
+        print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
 
 def upload_file_after_click(driver, xpath_chevron, xpath_upload_field, file_path):
     try:
@@ -397,3 +499,4 @@ def click_checkbox_xpaht(driver, checkbox_xpaht):
 
     except TimeoutException:
         print(f"Tiempo de espera agotado. El checkbox con ID '{checkbox_xpaht}' no está presente o no es clickeable.")
+

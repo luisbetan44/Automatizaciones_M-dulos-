@@ -1,7 +1,7 @@
 import unittest
 import xmlrunner
 import time
-from Elements import find_and_click_element, find_elements, validate_chain_text_xpaht, validate_text, validate_text_by_text, validate_text_visible, validate_text_visible_selector
+from Elements import find_and_click_element, find_elements, validate_chain_text_xpaht, validate_text_by_text, validate_text_visible
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -135,29 +135,15 @@ class contrato_tenant(unittest.TestCase):
         find_elements(self.driver, select_files )
         time.sleep(5)
 
-  
-        
-        
+    
         go_out_pag = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a"
         find_elements(self.driver, go_out_pag )
         time.sleep(5)
 
 
 
-
-
-
-
-
-
-
-
-
     def tearDown(self):
         self.driver.quit()
-
-
-
 
 
 if __name__ == "__main__":
