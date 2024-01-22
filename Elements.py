@@ -210,6 +210,40 @@ def make_visible(driver, xpath):
         print(f"Tiempo de espera agotado. El elemento no está presente o no es visible.")
 
 
+def displace_element(driver, xpath):
+    try:
+
+        search_input_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, xpath))
+        )
+# Desplazarse al elemento
+        driver.execute_script("arguments[0].scrollIntoView();", search_input_element)
+ 
+# Ahora puedes interactuar con el elemento
+        search_input_element.click()
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El elemento no está presente o no es visible.")
+
+def displace_validate_element(driver, xpath, valor_esperado ):
+    try:
+
+        search_input_element = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, xpath))
+        )
+# Desplazarse al elemento
+        driver.execute_script("arguments[0].scrollIntoView();", search_input_element)
+ 
+
+        valor = search_input_element.text
+        if valor == valor_esperado:
+            print(f"El texto encontrado es  {valor_esperado}")
+        else:
+            print(f"El texto no fue encontrado {valor_esperado}")
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El elemento no está presente o no es visible.")
+
+
+
 
 
 def search_and_select_option(driver, xpath_search_input, xpath_search_result, value_to_search):

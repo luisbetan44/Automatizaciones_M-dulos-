@@ -1,7 +1,7 @@
 import unittest
 import xmlrunner
 import time
-from Elements import find_and_click_element, find_elements, find_send_element, search_and_select_account, select_option_dropdown, select_option_dropdown_css_selector, validate_text, validate_text_by_text
+from Elements import displace_element, displace_validate_element, find_and_click_element, find_elements, find_send_element, search_and_select_account, select_option_dropdown, select_option_dropdown_css_selector, validate_text, validate_text_by_text
 from LoginSample import LoginSample
 from startSession import StartSession
 
@@ -183,7 +183,7 @@ class granos_contratos(unittest.TestCase):
         validate_text(self.driver, element_text_7, text_expected_7 )
         time.sleep(2)
 
-        # seleeccionar la fecha de pago
+        # seleccionar la fecha de pago
 
         select_date = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[1]/div[2]/div[2]/app-date-picker/div/input[2]"
         find_elements(self.driver, select_date)
@@ -219,38 +219,40 @@ class granos_contratos(unittest.TestCase):
         
         # insertar campo plata
        
-        button_dopdown6 = "#current-account-applied > app-contract-form > div.container-form.bg-white > form > div > div:nth-child(2) > div:nth-child(2) > div > div:nth-child(2) > div.col-8 > app-search-selector > ng-select > div > span.ng-arrow-wrapper"
-        option_desired6 = "#a29f59a7ae60-1 > span"
-        value_to_search6 = "Carlos Pellegrini"
-        select_option_dropdown_css_selector(self.driver, button_dopdown6, option_desired6, value_to_search6)
+        button_dopdown6 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/app-search-selector/ng-select/div/span"
+        displace_element(self.driver, button_dopdown6)
 
-        element_text_8 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[2]/span"
+        option_desired6 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[2]"
+        find_elements(self.driver, option_desired6)
+
+        element_text_8 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[2]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[2]"
         text_expected_8 = "Carlos Pellegrini"
-        validate_text(self.driver, element_text_8, text_expected_8 )
+        displace_validate_element(self.driver, element_text_8, text_expected_8 )
 
         # insertar procedenia
         
-        button_dopdown7 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/app-search-selector/ng-select/div/span[2]'
-        option_desired7 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[3]/span"
-        value_to_search7 = "03 Playa S. Miguel (T6 y M. Pampa)"
-        select_option_dropdown(self.driver, button_dopdown7, option_desired7, value_to_search7)
+        button_dopdown7 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/app-search-selector/ng-select/div/span'
+        displace_element(self.driver, button_dopdown7)
 
+        option_desired7 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[3]/span"
+        find_elements(self.driver, option_desired7)
 
-        element_text_9 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[3]/span"
+        element_text_9 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[3]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[3]/span"
         text_expected_9 = "03 Playa S. Miguel (T6 y M. Pampa)"
-        validate_text(self.driver, element_text_9, text_expected_9 )
+        displace_validate_element(self.driver, element_text_9, text_expected_9 )
 
         # insertar destino
       
-        button_dopdown8 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/div/span[2]"
-        option_desired8 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[5]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[6]/span"
-        value_to_search8 = "06 SECADA BONIFICADA"
-        select_option_dropdown(self.driver, button_dopdown8, option_desired8, value_to_search8)
+        button_dopdown8 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/div/span"
+        displace_element(self.driver, button_dopdown8)
+
+        option_desired8 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[6]/span"
+        find_elements(self.driver, option_desired8)
 
 
-        element_text_10 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[5]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[6]/span"
+        element_text_10 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sale-confirmation-main/div/div[1]/app-contract-form/div[1]/form/div/div[2]/div[2]/div/div[4]/div[2]/app-search-selector/ng-select/ng-dropdown-panel/div/div[2]/div[6]/span"
         text_expected_10 = "06 SECADA BONIFICADA"
-        validate_text(self.driver, element_text_10, text_expected_10 )
+        displace_validate_element(self.driver, element_text_10, text_expected_10 )
      
 
         self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
