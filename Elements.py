@@ -140,6 +140,53 @@ def find_send_element(driver, xpath, input_data=None):
         print("Tiempo de espera agotado. El input no está presente o no es clickeable.")
 
 
+def find_and_click_element(driver, xpath, clicks=1):
+    try:
+        # Esperar a que el elemento sea clickeable
+        element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath))
+        )
+
+        # Hacer clic en el elemento la cantidad de veces especificada
+        for _ in range(clicks):
+            element.click()
+        
+        print(f"¡Elemento encontrado y clickeado {clicks} veces con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
+
+def click_checkbox(driver, checkbox_id):
+    try:
+        # Espera hasta que el checkbox sea clickeable
+        checkbox_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, checkbox_id))
+        )
+
+        # Hacer clic en el checkbox
+        checkbox_element.click()
+
+        print(f"Checkbox con ID '{checkbox_id}' seleccionado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El checkbox con ID '{checkbox_id}' no está presente o no es clickeable.")
+
+
+def click_checkbox_xpaht(driver, checkbox_xpaht):
+    try:
+        # Espera hasta que el checkbox sea clickeable
+        checkbox_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, checkbox_xpaht))
+        )
+
+        # Hacer clic en el checkbox
+        checkbox_element.click()
+
+        print(f"Checkbox con ID '{checkbox_xpaht}' seleccionado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El checkbox con ID '{checkbox_xpaht}' no está presente o no es clickeable.")
+
+
 
 def validate_text(driver, xpath, valor_esperado):
     try:
@@ -195,6 +242,23 @@ def validate_text_by_strt(driver, expected_text):
             print(f"El valor encontrado no es un string: {valor}")
     except TimeoutException:
         print(f"Tiempo de espera agotado. El texto por texto no está presente.")
+
+def validate_strt(driver, expected_text, xpaht):
+    try:
+        elemento = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.XPATH, xpaht))
+        )
+        valor = elemento.text
+        if isinstance(valor, str):
+            if valor == expected_text:
+                print(f"El texto encontrado es  {expected_text}")
+            else:
+                print(f"El texto encontrado '{valor}' no coincide con el esperado '{expected_text}'")
+        else:
+            print(f"El valor encontrado no es un string: {valor}")
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El texto por texto no está presente.")
+
 
 
 
@@ -489,48 +553,5 @@ def validate_text_visible_selector(driver, css_selector, text_expected):
     else:
         print("No se pudo validar el texto")
 
-def find_and_click_element(driver, xpath, clicks=1):
-    try:
-        # Esperar a que el elemento sea clickeable
-        element = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, xpath))
-        )
 
-        # Hacer clic en el elemento la cantidad de veces especificada
-        for _ in range(clicks):
-            element.click()
-        
-        print(f"¡Elemento encontrado y clickeado {clicks} veces con éxito!")
-    except TimeoutException:
-        print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
-
-def click_checkbox(driver, checkbox_id):
-    try:
-        # Espera hasta que el checkbox sea clickeable
-        checkbox_element = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.ID, checkbox_id))
-        )
-
-        # Hacer clic en el checkbox
-        checkbox_element.click()
-
-        print(f"Checkbox con ID '{checkbox_id}' seleccionado con éxito!")
-
-    except TimeoutException:
-        print(f"Tiempo de espera agotado. El checkbox con ID '{checkbox_id}' no está presente o no es clickeable.")
-
-def click_checkbox_xpaht(driver, checkbox_xpaht):
-    try:
-        # Espera hasta que el checkbox sea clickeable
-        checkbox_element = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, checkbox_xpaht))
-        )
-
-        # Hacer clic en el checkbox
-        checkbox_element.click()
-
-        print(f"Checkbox con ID '{checkbox_xpaht}' seleccionado con éxito!")
-
-    except TimeoutException:
-        print(f"Tiempo de espera agotado. El checkbox con ID '{checkbox_xpaht}' no está presente o no es clickeable.")
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_aplicada-20240122163544" tests="1" file=".py" time="119.327" timestamp="2024-01-22T16:37:44" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="119.327" timestamp="2024-01-22T16:37:44" file="ctacte_aplicada.py" line="18">
+		<error type="TypeError" message="validate_strt() missing 1 required positional argument: 'xpaht'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_aplicada.py", line 155, in test_ctacte_aplicada
+    validate_strt(self.driver,number_movements )
+TypeError: validate_strt() missing 1 required positional argument: 'xpaht'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE APLICADA
+El valor es un carácter numérico. Valor: -171.122.569,50
+El valor es un carácter numérico. Valor: 51.213.438,74
+El valor es un carácter numérico. Valor: 2.912.909,27
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+El texto no fue encontrado CUENTA CORRIENTE
+]]></system-out>
+	</testcase>
+</testsuite>

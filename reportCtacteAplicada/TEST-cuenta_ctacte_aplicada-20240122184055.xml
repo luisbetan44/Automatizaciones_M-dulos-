@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_aplicada-20240122184055" tests="1" file=".py" time="60.520" timestamp="2024-01-22T18:41:56" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="60.520" timestamp="2024-01-22T18:41:56" file="ctacte_aplicada.py" line="18">
+		<error type="TypeError" message="validate_strt() missing 1 required positional argument: 'xpaht'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_aplicada.py", line 153, in test_ctacte_aplicada
+    validate_strt(self.driver, settlement )
+TypeError: validate_strt() missing 1 required positional argument: 'xpaht'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE APLICADA
+El valor es un carácter numérico. Valor: -2.282.677.109,62
+El valor es un carácter numérico. Valor: 1.643.348.489,60
+El valor es un carácter numérico. Valor: 3.487.611,96
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento FC 1051 00014218
+El texto encontrado es  USD 738,10
+]]></system-out>
+	</testcase>
+</testsuite>
