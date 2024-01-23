@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_historica-20240123173510" tests="1" file=".py" time="78.885" timestamp="2024-01-23T17:36:29" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_historica" name="test_ctacte_historica" time="78.885" timestamp="2024-01-23T17:36:29" file="ctacte_histórica.py" line="17">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]&quot;}
+  (Session info: chrome=120.0.6099.225); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7581D2142+3514994]
+	(No symbol) [0x00007FF757DF0CE2]
+	(No symbol) [0x00007FF757C976AA]
+	(No symbol) [0x00007FF757CE1860]
+	(No symbol) [0x00007FF757CE197C]
+	(No symbol) [0x00007FF757D24EE7]
+	(No symbol) [0x00007FF757D0602F]
+	(No symbol) [0x00007FF757D228F6]
+	(No symbol) [0x00007FF757D05D93]
+	(No symbol) [0x00007FF757CD4BDC]
+	(No symbol) [0x00007FF757CD5C64]
+	GetHandleVerifier [0x00007FF7581FE16B+3695259]
+	GetHandleVerifier [0x00007FF758256737+4057191]
+	GetHandleVerifier [0x00007FF75824E4E3+4023827]
+	GetHandleVerifier [0x00007FF757F204F9+689705]
+	(No symbol) [0x00007FF757DFC048]
+	(No symbol) [0x00007FF757DF8044]
+	(No symbol) [0x00007FF757DF81C9]
+	(No symbol) [0x00007FF757DE88C4]
+	BaseThreadInitThunk [0x00007FFE942F257D+29]
+	RtlUserThreadStart [0x00007FFE9552AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_histórica.py", line 107, in test_ctacte_historica
+    validate_character_numeric_element(self.driver, balance_ars)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 514, in validate_character_numeric_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"}
+  (Session info: chrome=120.0.6099.225); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7581D2142+3514994]
+	(No symbol) [0x00007FF757DF0CE2]
+	(No symbol) [0x00007FF757C976AA]
+	(No symbol) [0x00007FF757CE1860]
+	(No symbol) [0x00007FF757CE197C]
+	(No symbol) [0x00007FF757D24EE7]
+	(No symbol) [0x00007FF757D0602F]
+	(No symbol) [0x00007FF757D228F6]
+	(No symbol) [0x00007FF757D05D93]
+	(No symbol) [0x00007FF757CD4BDC]
+	(No symbol) [0x00007FF757CD5C64]
+	GetHandleVerifier [0x00007FF7581FE16B+3695259]
+	GetHandleVerifier [0x00007FF758256737+4057191]
+	GetHandleVerifier [0x00007FF75824E4E3+4023827]
+	GetHandleVerifier [0x00007FF757F204F9+689705]
+	(No symbol) [0x00007FF757DFC048]
+	(No symbol) [0x00007FF757DF8044]
+	(No symbol) [0x00007FF757DF81C9]
+	(No symbol) [0x00007FF757DE88C4]
+	BaseThreadInitThunk [0x00007FFE942F257D+29]
+	RtlUserThreadStart [0x00007FFE9552AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+]]></system-out>
+	</testcase>
+</testsuite>
