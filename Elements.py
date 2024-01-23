@@ -139,6 +139,22 @@ def find_send_element(driver, xpath, input_data=None):
     except TimeoutException:
         print("Tiempo de espera agotado. El input no está presente o no es clickeable.")
 
+def find_send_element_selector(driver, css_selector, input_data=None):
+    try:
+        # Esperar a que el elemento sea clickeable
+        input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.CSS_SELECTOR, css_selector))
+        )
+
+        # Si hay datos para ingresar, establecer el valor
+        if input_data is not None:
+            input_element.clear()  # Limpiar el input
+            input_element.send_keys(input_data)  # Ingresar los datos
+
+        print("¡Input encontrado y enviado con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El input no está presente o no es clickeable.")
+
 
 def find_and_click_element(driver, xpath, clicks=1):
     try:
