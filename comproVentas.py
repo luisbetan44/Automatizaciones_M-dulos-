@@ -1,147 +1,135 @@
-import unittest
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import time
-from selenium.webdriver.support.ui import WebDriverWait 
-from selenium.webdriver.common.by import By
-from pyunitreport import HTMLTestRunner
-from selenium.webdriver.support import expected_conditions as EC
+import unittest
+import xmlrunner
+from Elements import displace_element, find_and_click_element, find_elements, find_elements_css_selector, validate_text
+from loginhelper import LoginHelper
+from startSession import StartSession
 
-
-
-
-
-class comprobantes_Ventas(unittest.TestCase):
-    
+class comprobanteVentas(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
-        driver = self.driver
-        driver.implicitly_wait(30)
-        driver.maximize_window()
-        driver.get("https://pwa-portal-staging.silohub.ag/login")
+        self.start_session = StartSession()
+        self.driver = self.start_session.driver
 
-    def test_cuenta_entregas(self):
-        driver = self.driver
-        usermane = driver.find_element_by_id("email")
-        usermane.send_keys("admingd@silohub.ag")
-        usermane.send_keys(Keys.ENTER)
-        time.sleep(3)
+        # Inicializar la clase LoginHelper
+        self.login_helper = LoginHelper(self.driver)
 
+    def test_vouchers_sales(self):
+        # Utilizar métodos de LoginHelper para el inicio de sesión
+        self.login_helper.login("admingd@silohub.ag", "G@viglio123")
+        self.login_helper.select_tenant()
+        self.login_helper.search_and_select_account("484")
 
-        passworUser = driver.find_element_by_id("password")
-        passworUser.send_keys("G@viglio123")
-        passworUser.send_keys(Keys.ENTER)
-        time.sleep(3)
-
-        insertButton = driver.find_element_by_xpath("/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button/button")
-        insertButton.click()
-        time.sleep(3)
-        
-        ## seleccionar el tenant 
-        selectTenant = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
-        selectTenant.click()
-        time.sleep(3)
-
-     # localiza el input y envia el número de la cuenta 
-        input_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "search-options")))
-        input_element.send_keys('1023')
-      
-       #selecciona el elemento oculto y crea un botón para hacer click sobre el 
-        element_to_click = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#search-dropdown > app-accounts-list > ngx-simplebar > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.dropdown-sub-item.accounts-numbers")))
-        driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
-        element_to_click.click()
-        time.sleep(3)
 
         # ingresar al menú de cuentas 
 
-        select_menu_Account = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
-        )
-        select_menu_Account.click()
+        select_menu_Account = "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
+        find_elements(self.driver, select_menu_Account)
 
-        select_menu_vouchers = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[5]/a")
-        select_menu_vouchers.click()
+        select_menu_vouchers = "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[5]/a"
+        find_elements(self.driver, select_menu_vouchers)
         time.sleep(2)
 
         # validar el título de la pagina 
 
-        title_vouchers = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span")
-        title_vouchers_obtained = title_vouchers.text
+        title_vouchers = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
         title_vouchers_expected = "COMPROBANTES"
-
-        if title_vouchers_expected == title_vouchers_obtained:
-            print("El título de la pagina es: ",title_vouchers_obtained)
-
-        else: 
-             print("El título de la pagina no es el correcto: ")
-
-        ## seleccionar boton de filtro
-
-        select_button_filter = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div")
-        select_button_filter.click()
-        time.sleep(3)
-
-        ## seleccionar checkbox de entregas dentro del filtro y aplicar filtro
-
-        select_option_sales = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list/div/app-radio[4]/div/input")
-        select_option_sales.click()
-        time.sleep(3)
-
-
-        apply_filter = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
-        apply_filter.click()
+        validate_text(self.driver, title_vouchers, title_vouchers_expected)
         time.sleep(2)
 
-        ## seleccionar movimientos 
+       ## seleccionar filtro de entregas
 
-        movenments_list1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[1]/th/input")
-        movenments_list1.click()
+        select_filter_button1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div/app-filter-button/button/div/span"
+        find_elements(self.driver, select_filter_button1)
+        time.sleep(2)
 
-        movenments_list2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[2]/th/input")
-        movenments_list2.click()
+       
+        select_sales_filter1 = '/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list/div/app-radio[4]/div/input'
+        find_elements(self.driver, select_sales_filter1)
+        time.sleep(2)
 
-        movenments_list3 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[3]/th/input")
-        movenments_list3.click()
+
+        insert_date_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
+        find_elements(self.driver, insert_date_filter)
+        time.sleep(2)
+
+        select_arrow_filter1 = "/html/body/div/div[1]/span[1]"
+        amount_click1 = 1
+        find_and_click_element(self.driver, select_arrow_filter1, amount_click1)
+        time.sleep(2)
+
+         ##Espera hasta que el checkbox esté visible y activo
+      
+        select_date_filter1 = "/html/body/div/div[2]/div/div[2]/div/span[33]"
+        find_elements(self.driver, select_date_filter1)
+
+        select_arrow_filter2 = "/html/body/div/div[1]/span[2]"
+        amount_click2 = 1
+        find_and_click_element(self.driver, select_arrow_filter2, amount_click2)
+        time.sleep(2)
+
+        select_date_filter2 = "/html/body/div/div[2]/div/div[2]/div/span[26]"
+        find_elements(self.driver, select_date_filter2)
 
 
-        ## VALIDAR NÚMEROS DE COMPROBANTES A DESCARGAR 
+        apply_filter_button = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
+        find_elements(self.driver, apply_filter_button)
+        time.sleep(2)
 
-        number_movenments1 = driver.find_element_by_xpath("//span[@class='f-size-14 fw-semibold' and contains(text(), 'VC 0001 00096012')]")
-        number_movenments1_obtained = number_movenments1.text
-        number_movenments1_expected = "VC 0001 00096012"
-        if number_movenments1_expected == number_movenments1_obtained:
-            print("El numero del comprobante de la venta es: ",number_movenments1_obtained)
 
-        else:
-            print("No se encontro el comprobante de venta")
-             
+        ## validar titulo de la pantalla 
+        title_page_vouchers = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/div/span"
+        title_page_vouchers_expected = "Mis Comprobantes"
+        validate_text(self.driver, title_page_vouchers, title_page_vouchers_expected )
+
+        ## seleccionar contrato 
+
+
+        select_contract_list1 = "#layout-wrapper > div > div > div > app-receipts > app-responsive-table-multiple-items > div > table > tbody > tr:nth-child(1) > th > input"
+        find_elements_css_selector(self.driver, select_contract_list1)
+        time.sleep(2)
+        ## validar numero de contrato
+
+        contract_number1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[1]/td/div/div[2]/div[2]/div[3]/span"
+        contract_number1_expected = "F 0001 00120623"
+        validate_text(self.driver, contract_number1, contract_number1_expected )
+
+        select_contract_list3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[3]/th/input"
+        displace_element(self.driver, select_contract_list3)
+        time.sleep(2)
+        ## validar numero de contrato
+
+        contract_number2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-responsive-table-multiple-items/div/table/tbody/tr[3]/td/div/div[2]/div[2]/div[3]/span"
+        contract_number2_expected = "F 0001 00125168"
+        validate_text(self.driver, contract_number2, contract_number2_expected )
+
+
+        ## seleccionar boton descargar 
+
+        download_button1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+        find_elements(self.driver,  download_button1)
+        time.sleep(2)
+        
+        select_type_document1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a"
+        find_elements(self.driver,  select_type_document1)
+        time.sleep(2)
+
+        ## validar respuesta del pop up 
+        messager_popup = "/html/body/div/div/h2"
+        messager_popup_expected = "El comprobante seleccionado no se encuentra para su descarga"
+        validate_text(self.driver, messager_popup,  messager_popup_expected )
+        time.sleep(2)
+        ## aceptar popup
+
+        select_popup1 = "/html/body/div/div/div[6]/button[1]"
+        find_elements(self.driver,  select_popup1)
+        time.sleep(2)
+
+        
        
 
-        ## seleccionar boton de descarga 
 
-        download_movenments = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
-        download_movenments.click()
-        time.sleep(2)
 
-        select_type_download = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
-        select_type_download.click()
-        time.sleep(2)
-
-        # validar respuesta del sistema al descargar 
-
-        messeger_download = driver.find_element_by_xpath("/html/body/div/div/h2")
-        messeger_download_obtained = messeger_download.text
-        messeger_download_expected = "El comprobante seleccionado no se encuentra para su descarga"
-        if messeger_download_expected == messeger_download_obtained:
-            print("El mensaje del sistema es: ", messeger_download_obtained)
-        else:
-            print("El sistema no arrojo mensaje de notificacion")
-
-        # hacer click sobre el pop up 
-
-        accept_popup_messeger = driver.find_element_by_xpath("/html/body/div/div/div[6]/button[1]")
-        accept_popup_messeger.click()
-
+    
 
     def tearDown(self):
         self.driver.close()
@@ -151,6 +139,7 @@ class comprobantes_Ventas(unittest.TestCase):
 
 
 if __name__ == "__main__":
-  unittest.main(verbosity= 2, testRunner = HTMLTestRunner(output = 'reportes', report_name = 'comproVentas'))
-
- 
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(comprobanteVentas)
+  runner = xmlrunner.XMLTestRunner(output='reportComprobVenta')
+  runner.run(test_suite)
+        

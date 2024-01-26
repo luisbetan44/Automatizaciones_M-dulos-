@@ -1,9 +1,12 @@
+import time
+from typing import KeysView
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
 import re
 from selenium.common.exceptions import NoSuchElementException
+from selenium.webdriver.common.keys import Keys
 
 
 def find_elements(driver, xpath):
@@ -197,11 +200,25 @@ def click_checkbox_xpaht(driver, checkbox_xpaht):
         # Hacer clic en el checkbox
         checkbox_element.click()
 
-        print(f"Checkbox con ID '{checkbox_xpaht}' seleccionado con éxito!")
+        print(f"Checkbox con XPAHT '{checkbox_xpaht}' seleccionado con éxito!")
 
     except TimeoutException:
-        print(f"Tiempo de espera agotado. El checkbox con ID '{checkbox_xpaht}' no está presente o no es clickeable.")
+        print(f"Tiempo de espera agotado. El checkbox con XPAHT '{checkbox_xpaht}' no está presente o no es clickeable.")
 
+def click_radioButton_xpaht(driver, checkbox_xpaht):
+    try:
+        # Espera hasta que el checkbox sea clickeable
+        xpaht_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, checkbox_xpaht))
+        )
+
+        # Hacer clic en el checkbox
+        xpaht_element.click()
+
+        print(f"Checkbox con XPAHT '{checkbox_xpaht}' seleccionado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El elemento con XPAHT '{checkbox_xpaht}' no está presente o no es clickeable.")
 
 
 def validate_text(driver, xpath, valor_esperado):
@@ -569,5 +586,20 @@ def validate_text_visible_selector(driver, css_selector, text_expected):
     else:
         print("No se pudo validar el texto")
 
+def handle_system_dialog(driver, xpath):
+    # Hacer clic en el botón/elemento que abre el diálogo del sistema
+    driver.find_element(By.XPATH, xpath).click()
 
+    # Esperar un breve momento para asegurar que el diálogo del sistema ha aparecido
+    time.sleep(2)
+
+    # Enfocar en el diálogo del sistema (dependiendo del sistema operativo, puede variar)
+    # En este ejemplo, se usa TAB para navegar por los elementos del sistema operativo.
+    driver.switch_to.active_element.send_keys(Keys.TAB)
+    time.sleep(1)
+
+    # Presionar la tecla ENTER para seleccionar la opción (puede variar según el sistema operativo)
+    driver.switch_to.active_element.send_keys(KeysView.ENTER)
+
+    # Puedes ajustar y agregar más interacciones según sea necesario.
 

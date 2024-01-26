@@ -9,7 +9,7 @@ import random
 from faker import Faker
 import xmlrunner
 from selenium.common.exceptions import StaleElementReferenceException
-from Elements import click_checkbox_xpaht, find_elements, find_elements_id, upload_file_after_click, validate_text_visible
+from Elements import click_checkbox_xpaht, find_elements, find_elements_id, handle_system_dialog, upload_file_after_click, validate_text_visible
 from GeneradorCuit import CUITGenerator
 from LoginSample import LoginSample
 from startSession import StartSession 
@@ -110,9 +110,14 @@ class Onboarding_test_tenant(unittest.TestCase):
         find_elements(self.driver, insert_document)
         time.sleep(2)
 
+        
+
         photo_person1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-identity-front/app-identification-upload-manager/div/div[3]/div/app-button[1]/button"
         find_elements(self.driver, photo_person1)
         time.sleep(3)
+
+        ##popup_sistem_xpath = ""
+        ##handle_system_dialog(self.driver, popup_sistem_xpath)
 
         take_photo = "Icon:_Take_photo"
         find_elements_id(self.driver, take_photo)
