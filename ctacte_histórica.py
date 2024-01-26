@@ -97,8 +97,8 @@ class cuenta_ctacte_historica(unittest.TestCase):
         ## validar titulo de pantalla cuenta corriente aplicada 
 
         title_account = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
-        title_account_obtained = "CUENTA CORRIENTE"
-        validate_text(self.driver,title_account,title_account_obtained )
+        title_account_expected = "CUENTA CORRIENTE"
+        validate_text(self.driver,title_account,title_account_expected )
         ## validar totalizadores 
 
 
@@ -156,23 +156,23 @@ class cuenta_ctacte_historica(unittest.TestCase):
 
         ## validar titulo pantalla 
         title_detail = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
-        title_detail_obtained = "CUENTA CORRIENTE"
-        validate_text(self.driver,title_detail,title_detail_obtained )
+        title_detail_expected = "CUENTA CORRIENTE"
+        validate_text(self.driver,title_detail,title_detail_expected)
 
         ## validar datos del detalle 
 
         number_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[1]/div"
-        number_movements_obtained = "Movimiento RI 0011 00077998"
-        validate_text(self.driver,number_movements,number_movements_obtained )
+        number_movements_expected = "Movimiento RI 0011 00077998"
+        validate_text(self.driver,number_movements,number_movements_expected )
 
         balance_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]"
-        balance_movements_obtained = "+ ARS 1.234,20"
-        validate_text(self.driver, balance_movements, balance_movements_obtained )
+        balance_movements_expected = "+ ARS 1.234,20"
+        validate_text(self.driver, balance_movements, balance_movements_expected )
 
 
         settlement = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[2]"
-        settlement_obtained = "Comprobante Contrapartida de: OP 0001 - 00038025 0"
-        validate_text(self.driver,  settlement, settlement_obtained )
+        settlement_expected = "Comprobante Contrapartida de: OP 0001 - 00038025 0"
+        validate_text(self.driver,  settlement, settlement_expected )
 
         ## Seleccionar salida al listado 
 

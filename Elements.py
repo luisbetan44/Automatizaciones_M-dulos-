@@ -215,10 +215,10 @@ def click_radioButton_xpaht(driver, checkbox_xpaht):
         # Hacer clic en el checkbox
         xpaht_element.click()
 
-        print(f"Checkbox con XPAHT '{checkbox_xpaht}' seleccionado con éxito!")
+        print(f"El elemento con xpaht '{checkbox_xpaht}' seleccionado con éxito!")
 
     except TimeoutException:
-        print(f"Tiempo de espera agotado. El elemento con XPAHT '{checkbox_xpaht}' no está presente o no es clickeable.")
+        print(f"Tiempo de espera agotado. El elemento con xpaht '{checkbox_xpaht}' no está presente o no es clickeable.")
 
 
 def validate_text(driver, xpath, valor_esperado):

@@ -1,5 +1,6 @@
 import time
 import unittest
+from HtmlTestRunner import HTMLTestRunner
 import xmlrunner
 from Elements import displace_element, find_and_click_element, find_elements, find_elements_css_selector, validate_text
 from loginhelper import LoginHelper
@@ -137,9 +138,11 @@ class comprobanteVentas(unittest.TestCase):
 
 
 
-
 if __name__ == "__main__":
-  test_suite = unittest.TestLoader().loadTestsFromTestCase(comprobanteVentas)
-  runner = xmlrunner.XMLTestRunner(output='reportComprobVenta')
-  runner.run(test_suite)
-        
+    test_suite = unittest.TestLoader().loadTestsFromTestCase(comprobanteVentas)
+
+    # Especifica el nombre del directorio de salida para los informes XML
+    output_xml_dir = 'reportComprobVenta'
+
+    runner = xmlrunner.XMLTestRunner(output=output_xml_dir)
+    runner.run(test_suite)

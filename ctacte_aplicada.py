@@ -1,6 +1,5 @@
 import time
 import unittest
-
 import xmlrunner
 from Elements import find_and_click_element, find_elements, validate_character_numeric_element, validate_text, validate_text_by_strt
 from loginhelper import LoginHelper
@@ -82,8 +81,8 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         ## validar titulo de pantalla cuenta corriente aplicada 
 
         title_account = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
-        title_account_obtained = "CUENTA CORRIENTE APLICADA"
-        validate_text(self.driver,title_account,title_account_obtained )
+        title_account_expected = "CUENTA CORRIENTE APLICADA"
+        validate_text(self.driver,title_account,title_account_expected )
         ## validar totalizadores 
 
 
@@ -136,8 +135,8 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
 
         ## validar titulo pantalla 
         title_detail = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
-        title_detail_obtained = "CUENTA CORRIENTE"
-        validate_text(self.driver,title_detail,title_detail_obtained)
+        title_detail_expected = "CUENTA CORRIENTE"
+        validate_text(self.driver,title_detail,title_detail_expected)
 
         ## validar datos del detalle 
 
@@ -160,28 +159,9 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
 
 
 
-        
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     def tearDown(self):
         self.driver.close()
-
-
 
 
 
