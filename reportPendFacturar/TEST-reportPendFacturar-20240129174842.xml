@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportPendFacturar-20240129174842" tests="2" file=".py" time="35.257" timestamp="2024-01-29T17:49:17" failures="0" errors="2" skipped="0">
+	<testcase classname="reportPendFacturar" name="test_Report_PendFacturar" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportCompPenFact.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DF042142+3514994]
+	(No symbol) [0x00007FF7DEC60CE2]
+	(No symbol) [0x00007FF7DEB076AA]
+	(No symbol) [0x00007FF7DEAE0AFD]
+	(No symbol) [0x00007FF7DEB7CB1B]
+	(No symbol) [0x00007FF7DEB9218F]
+	(No symbol) [0x00007FF7DEB75D93]
+	(No symbol) [0x00007FF7DEB44BDC]
+	(No symbol) [0x00007FF7DEB45C64]
+	GetHandleVerifier [0x00007FF7DF06E16B+3695259]
+	GetHandleVerifier [0x00007FF7DF0C6737+4057191]
+	GetHandleVerifier [0x00007FF7DF0BE4E3+4023827]
+	GetHandleVerifier [0x00007FF7DED904F9+689705]
+	(No symbol) [0x00007FF7DEC6C048]
+	(No symbol) [0x00007FF7DEC68044]
+	(No symbol) [0x00007FF7DEC681C9]
+	(No symbol) [0x00007FF7DEC588C4]
+	BaseThreadInitThunk [0x00007FFFB3B0257D+29]
+	RtlUserThreadStart [0x00007FFFB428AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py", line 59, in test_Report_PendFacturar
+    validate_text(self.driver,first_column,first_column_expected )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 275, in validate_text
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DF042142+3514994]
+	(No symbol) [0x00007FF7DEC60CE2]
+	(No symbol) [0x00007FF7DEB076AA]
+	(No symbol) [0x00007FF7DEAE0AFD]
+	(No symbol) [0x00007FF7DEB7CB1B]
+	(No symbol) [0x00007FF7DEB9218F]
+	(No symbol) [0x00007FF7DEB75D93]
+	(No symbol) [0x00007FF7DEB44BDC]
+	(No symbol) [0x00007FF7DEB45C64]
+	GetHandleVerifier [0x00007FF7DF06E16B+3695259]
+	GetHandleVerifier [0x00007FF7DF0C6737+4057191]
+	GetHandleVerifier [0x00007FF7DF0BE4E3+4023827]
+	GetHandleVerifier [0x00007FF7DED904F9+689705]
+	(No symbol) [0x00007FF7DEC6C048]
+	(No symbol) [0x00007FF7DEC68044]
+	(No symbol) [0x00007FF7DEC681C9]
+	(No symbol) [0x00007FF7DEC588C4]
+	BaseThreadInitThunk [0x00007FFFB3B0257D+29]
+	RtlUserThreadStart [0x00007FFFB428AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Comprobantes Pendientes de Facturar
+]]></system-out>
+	</testcase>
+	<testcase classname="reportPendFacturar" name="test_Report_PendFacturar" time="35.257" timestamp="2024-01-29T17:49:17" file="ReportCompPenFact.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DF042142+3514994]
+	(No symbol) [0x00007FF7DEC60CE2]
+	(No symbol) [0x00007FF7DEB076AA]
+	(No symbol) [0x00007FF7DEAEE1E9]
+	(No symbol) [0x00007FF7DEAEF7CE]
+	(No symbol) [0x00007FF7DEB07CC3]
+	(No symbol) [0x00007FF7DEAE0580]
+	(No symbol) [0x00007FF7DEB82EA1]
+	(No symbol) [0x00007FF7DEB75FB0]
+	(No symbol) [0x00007FF7DEB44BDC]
+	(No symbol) [0x00007FF7DEB45C64]
+	GetHandleVerifier [0x00007FF7DF06E16B+3695259]
+	GetHandleVerifier [0x00007FF7DF0C6737+4057191]
+	GetHandleVerifier [0x00007FF7DF0BE4E3+4023827]
+	GetHandleVerifier [0x00007FF7DED904F9+689705]
+	(No symbol) [0x00007FF7DEC6C048]
+	(No symbol) [0x00007FF7DEC68044]
+	(No symbol) [0x00007FF7DEC681C9]
+	(No symbol) [0x00007FF7DEC588C4]
+	BaseThreadInitThunk [0x00007FFFB3B0257D+29]
+	RtlUserThreadStart [0x00007FFFB428AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py", line 175, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DF042142+3514994]
+	(No symbol) [0x00007FF7DEC60CE2]
+	(No symbol) [0x00007FF7DEB076AA]
+	(No symbol) [0x00007FF7DEAEE1E9]
+	(No symbol) [0x00007FF7DEAEF7CE]
+	(No symbol) [0x00007FF7DEB07CC3]
+	(No symbol) [0x00007FF7DEAE0580]
+	(No symbol) [0x00007FF7DEB82EA1]
+	(No symbol) [0x00007FF7DEB75FB0]
+	(No symbol) [0x00007FF7DEB44BDC]
+	(No symbol) [0x00007FF7DEB45C64]
+	GetHandleVerifier [0x00007FF7DF06E16B+3695259]
+	GetHandleVerifier [0x00007FF7DF0C6737+4057191]
+	GetHandleVerifier [0x00007FF7DF0BE4E3+4023827]
+	GetHandleVerifier [0x00007FF7DED904F9+689705]
+	(No symbol) [0x00007FF7DEC6C048]
+	(No symbol) [0x00007FF7DEC68044]
+	(No symbol) [0x00007FF7DEC681C9]
+	(No symbol) [0x00007FF7DEC588C4]
+	BaseThreadInitThunk [0x00007FFFB3B0257D+29]
+	RtlUserThreadStart [0x00007FFFB428AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Comprobantes Pendientes de Facturar
+]]></system-out>
+	</testcase>
+</testsuite>

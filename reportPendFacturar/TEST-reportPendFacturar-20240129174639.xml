@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportPendFacturar-20240129174639" tests="2" file=".py" time="108.687" timestamp="2024-01-29T17:48:27" failures="0" errors="2" skipped="0">
+	<testcase classname="reportPendFacturar" name="test_Report_PendFacturar" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportCompPenFact.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py", line 163, in test_Report_PendFacturar
+    find_elements(self.driver, dowlnload_button2)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 15, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Comprobantes Pendientes de Facturar
+El texto encontrado es  Comprobante
+El texto encontrado es  Artículo
+El texto encontrado es  Pendiente
+El texto no fue encontrado Precio Unit.
+El texto encontrado es  Moneda
+El texto no fue encontrado Total
+El valor es un carácter numérico. Valor: 0051 00016343
+Tiempo de espera agotado. El texto por texto no está presente.
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  DATOS DEL COMPROBANTE PENDIENTE DE FACTURAR
+El texto encontrado es  FECHA
+El valor es un carácter numérico. Valor: 23/08/2023
+El texto encontrado es  ARTÍCULO
+Tiempo de espera agotado. El texto por texto no está presente.
+El texto encontrado es  CANTIDAD
+El valor es un carácter numérico. Valor: 5
+El texto encontrado es  CANTIDAD PENDIENTE
+El valor es un carácter numérico. Valor: 5
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+	<testcase classname="reportPendFacturar" name="test_Report_PendFacturar" time="108.687" timestamp="2024-01-29T17:48:27" file="ReportCompPenFact.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DF042142+3514994]
+	(No symbol) [0x00007FF7DEC60CE2]
+	(No symbol) [0x00007FF7DEB076AA]
+	(No symbol) [0x00007FF7DEAE0AFD]
+	(No symbol) [0x00007FF7DEB7CB1B]
+	(No symbol) [0x00007FF7DEB82F06]
+	(No symbol) [0x00007FF7DEB75FB0]
+	(No symbol) [0x00007FF7DEB44BDC]
+	(No symbol) [0x00007FF7DEB45C64]
+	GetHandleVerifier [0x00007FF7DF06E16B+3695259]
+	GetHandleVerifier [0x00007FF7DF0C6737+4057191]
+	GetHandleVerifier [0x00007FF7DF0BE4E3+4023827]
+	GetHandleVerifier [0x00007FF7DED904F9+689705]
+	(No symbol) [0x00007FF7DEC6C048]
+	(No symbol) [0x00007FF7DEC68044]
+	(No symbol) [0x00007FF7DEC681C9]
+	(No symbol) [0x00007FF7DEC588C4]
+	BaseThreadInitThunk [0x00007FFFB3B0257D+29]
+	RtlUserThreadStart [0x00007FFFB428AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportCompPenFact.py", line 175, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=120.0.6099.225)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DF042142+3514994]
+	(No symbol) [0x00007FF7DEC60CE2]
+	(No symbol) [0x00007FF7DEB076AA]
+	(No symbol) [0x00007FF7DEAE0AFD]
+	(No symbol) [0x00007FF7DEB7CB1B]
+	(No symbol) [0x00007FF7DEB82F06]
+	(No symbol) [0x00007FF7DEB75FB0]
+	(No symbol) [0x00007FF7DEB44BDC]
+	(No symbol) [0x00007FF7DEB45C64]
+	GetHandleVerifier [0x00007FF7DF06E16B+3695259]
+	GetHandleVerifier [0x00007FF7DF0C6737+4057191]
+	GetHandleVerifier [0x00007FF7DF0BE4E3+4023827]
+	GetHandleVerifier [0x00007FF7DED904F9+689705]
+	(No symbol) [0x00007FF7DEC6C048]
+	(No symbol) [0x00007FF7DEC68044]
+	(No symbol) [0x00007FF7DEC681C9]
+	(No symbol) [0x00007FF7DEC588C4]
+	BaseThreadInitThunk [0x00007FFFB3B0257D+29]
+	RtlUserThreadStart [0x00007FFFB428AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Comprobantes Pendientes de Facturar
+El texto encontrado es  Comprobante
+El texto encontrado es  Artículo
+El texto encontrado es  Pendiente
+El texto no fue encontrado Precio Unit.
+El texto encontrado es  Moneda
+El texto no fue encontrado Total
+El valor es un carácter numérico. Valor: 0051 00016343
+Tiempo de espera agotado. El texto por texto no está presente.
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  DATOS DEL COMPROBANTE PENDIENTE DE FACTURAR
+El texto encontrado es  FECHA
+El valor es un carácter numérico. Valor: 23/08/2023
+El texto encontrado es  ARTÍCULO
+Tiempo de espera agotado. El texto por texto no está presente.
+El texto encontrado es  CANTIDAD
+El valor es un carácter numérico. Valor: 5
+El texto encontrado es  CANTIDAD PENDIENTE
+El valor es un carácter numérico. Valor: 5
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>
