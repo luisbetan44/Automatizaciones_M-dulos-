@@ -3,10 +3,11 @@ from typing import KeysView
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
-from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException
+from selenium.common.exceptions import TimeoutException, ElementClickInterceptedException,StaleElementReferenceException, InvalidSelectorException
 import re
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.keys import Keys
+
 
 
 def find_elements(driver, xpath):
@@ -52,7 +53,40 @@ def find_elements_name(driver, class_name):
     except TimeoutException:
         print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
 
+def find_elements_cleam(driver, xpath):
+    try:
+        select_nex_button = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath))
+        )
+        select_nex_button.clear
+        print("¡Elemento encontrado y limpiado con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El elemento no está presente o no es limpiar.")
 
+def click_clear_and_send_keys_xpath(driver, xpath, new_amount):
+    try:
+        # Esperar hasta que el elemento sea clickeable
+        element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath))
+        )
+
+        # Hacer clic en el campo para activarlo
+        element.click()
+
+        # Limpiar la cantidad
+        element.clear()
+
+        # Enviar la nueva cantidad
+        element.send_keys(new_amount)
+
+        print(f"Clic realizado, cantidad limpiada y nuevo valor '{new_amount}' ingresado con éxito!")
+
+    except StaleElementReferenceException:
+        print(f"Elemento obsoleto. Volviendo a buscar el elemento y reintentar...")
+        click_clear_and_send_keys_xpath(driver, xpath, new_amount)
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El elemento '{xpath}' no está presente o no es clickeable.")
 
 
 def wait_and_click(driver, xpath):
@@ -137,6 +171,21 @@ def find_send_element(driver, xpath, input_data=None):
         if input_data is not None:
             input_element.clear()  # Limpiar el input
             input_element.send_keys(input_data)  # Ingresar los datos
+
+        print("¡Input encontrado y enviado con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El input no está presente o no es clickeable.")
+
+def send_element(driver, xpath, input_data):
+    try:
+        # Esperar a que el elemento sea clickeable
+        input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath))
+        )
+
+        # Si hay datos para ingresar, establecer el valor
+        # Limpiar el input
+        input_element.send_keys(input_data)  # Ingresar los datos
 
         print("¡Input encontrado y enviado con éxito!")
     except TimeoutException:
@@ -321,6 +370,72 @@ def displace_element(driver, xpath):
     except TimeoutException:
         print(f"Tiempo de espera agotado. El elemento no está presente o no es visible.")
 
+def displace_element_clear_send_keys(driver, xpath, new_amount):
+    try:
+        # Esperar hasta que el elemento sea visible
+        element = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.XPATH, xpath))
+        )
+
+        # Desplazarse al elemento
+        driver.execute_script("arguments[0].scrollIntoView();", element)
+
+        try:
+            # Esperar hasta que el elemento esté nuevamente presente después de desplazarse
+            element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.XPATH, xpath))
+            )
+        except TimeoutException:
+            print(f"Tiempo de espera agotado. El elemento '{xpath}' no está presente después de desplazarse.")
+
+        # Limpiar la cantidad
+        element.clear()
+
+        # Enviar la nueva cantidad
+        element.send_keys(new_amount)
+
+        print(f"Elemento desplazado, cantidad limpiada y nuevo valor '{new_amount}' ingresado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El elemento '{xpath}' no está presente o no es visible.")
+    except StaleElementReferenceException:
+        print(f"Elemento obsoleto después de desplazarse. Intentando recuperarlo y reintentar...")
+        displace_element_clear_send_keys(driver, xpath, new_amount)
+
+def displace_element_clear_send_keys_selector(driver, css_selector, new_amount):
+    try:
+        # Esperar hasta que el elemento sea visible
+        element = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.CSS_SELECTOR, css_selector))
+        )
+
+        # Desplazarse al elemento
+        driver.execute_script("arguments[0].scrollIntoView();", element)
+
+        try:
+            # Esperar hasta que el elemento esté nuevamente presente después de desplazarse
+            element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.CSS_SELECTOR, css_selector))
+            )
+        except TimeoutException:
+            print(f"Tiempo de espera agotado. El elemento '{css_selector}' no está presente después de desplazarse.")
+
+        # Limpiar la cantidad
+        element.clear()
+
+        # Enviar la nueva cantidad
+        element.send_keys(new_amount)
+
+        print(f"Elemento desplazado, cantidad limpiada y nuevo valor '{new_amount}' ingresado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El elemento '{css_selector}' no está presente o no es visible.")
+    except StaleElementReferenceException:
+        print(f"Elemento obsoleto después de desplazarse. Intentando recuperarlo y reintentar...")
+        displace_element_clear_send_keys_selector(driver, css_selector, new_amount)
+    except InvalidSelectorException:
+        print(f"Selector CSS '{css_selector}' no es válido.")
+
 def displace_validate_element(driver, xpath, valor_esperado ):
     try:
 
@@ -370,6 +485,78 @@ def search_and_select_option(driver, xpath_search_input, xpath_search_result, va
         print("Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.")
 
 
+
+def clear_and_send_keys(driver, xpath_field, value_to_send):
+    try:
+        # Esperar hasta que el campo sea clickeable
+        field_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_field))
+        )
+
+        # Limpiar el campo antes de enviar las teclas
+        field_element.clear()
+
+        # Enviar las teclas al campo
+        field_element.send_keys(value_to_send)
+
+        print(f"Campo limpiado y valor '{value_to_send}' ingresado con éxito!")
+
+    except StaleElementReferenceException:
+        # Si se detecta una excepción de elemento obsoleto, intentar recuperar el elemento
+        print("Elemento obsoleto, intentando recuperarlo y reintentar...")
+        field_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_field))
+        )
+        field_element.clear()
+        field_element.send_keys(value_to_send)
+
+        print(f"Campo limpiado y valor '{value_to_send}' ingresado con éxito después de recuperación!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El campo '{xpath_field}' no está presente o no es clickeable.")
+
+
+def select_and_set_payment_condition(driver, main_field_xpath, subfield_xpath, checkbox_xpath, payment_option):
+    try:
+        # Seleccionar el campo principal
+        main_field = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, main_field_xpath))
+        )
+        main_field.click()
+
+        # Esperar a que aparezca el subcampo después de hacer clic en el campo principal
+        subfield_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, subfield_xpath))
+        )
+
+        # Limpiar el subcampo antes de ingresar las condiciones de pago
+        subfield_element.clear()
+
+        # Esperar a que el campo de búsqueda esté listo antes de ingresar las condiciones de pago
+        WebDriverWait(driver, 10).until(
+            EC.staleness_of(subfield_element)
+        )
+
+        # Ingresar las condiciones de pago en el subcampo
+        subfield_element.send_keys(payment_option)
+
+        # Esperar a que aparezcan todas las opciones después de ingresar las condiciones de pago
+        WebDriverWait(driver, 10).until(
+            EC.presence_of_all_elements_located((By.XPATH, f"{subfield_xpath}/opciones"))
+        )
+
+        # Marcar el checkbox correspondiente a la opción "30 días"
+        checkbox_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, checkbox_xpath))
+        )
+        checkbox_element.click()
+
+        print(f"Condiciones de pago '{payment_option}' ingresadas y opción '30 días' seleccionada con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. No se pudo realizar la selección para '{payment_option}'.")
+
+
 def search_and_select_producer(driver, xpath_search_input, xpath_search_results, account_number):
     try:
         # Encontrar el campo de búsqueda por XPath
@@ -387,7 +574,7 @@ def search_and_select_producer(driver, xpath_search_input, xpath_search_results,
         search_results = WebDriverWait(driver, 10).until(
             EC.presence_of_all_elements_located((By.XPATH, xpath_search_results))
         )
-
+ 
         # Seleccionar la primera opción (puedes ajustar esto según tus necesidades)
         if search_results:
             search_results[0].click()
@@ -495,6 +682,32 @@ def upload_file_after_click(driver, xpath_chevron, xpath_upload_field, file_path
 
     except TimeoutException:
         print("Tiempo de espera agotado. El chevron o el campo de carga de archivo no están presentes o no son clickeables.")
+    except ElementClickInterceptedException:
+        print("El clic en el chevron fue interceptado por otro elemento en la página.")
+
+
+def select_option_click(driver, xpath_chevron, xpath_upload_field ):
+    try:
+        # Esperar hasta que el chevron sea clickeable
+        xpath_chevron = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_chevron))
+        )
+
+        # Hacer clic en el chevron para desplegar el campo de carga de archivo
+        xpath_chevron.click()
+
+        # Encontrar el campo de carga de archivo después de desplegar el chevron
+        upload_input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpath_upload_field))
+        )
+
+        # Adjuntar el archivo al campo de carga de archivo
+        upload_input_element.click()
+
+        print( "La opcion fue seleccionada con éxito después de hacer clic en el chevron!")
+
+    except TimeoutException:
+        print("Tiempo de espera agotado. El chevron no están presentes o no son clickeables.")
     except ElementClickInterceptedException:
         print("El clic en el chevron fue interceptado por otro elemento en la página.")
 
