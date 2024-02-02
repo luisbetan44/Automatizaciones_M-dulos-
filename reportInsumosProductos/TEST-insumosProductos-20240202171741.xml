@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="insumosProductos-20240202171741" tests="1" file=".py" time="20.232" timestamp="2024-02-02T17:18:01" failures="0" errors="1" skipped="0">
+	<testcase classname="insumosProductos" name="test_supplies_products" time="20.232" timestamp="2024-02-02T17:18:01" file="insumos_producto.py" line="19">
+		<error type="StaleElementReferenceException" message="Message: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67C965E42+3538674]
+	(No symbol) [0x00007FF67C584C02]
+	(No symbol) [0x00007FF67C435AEB]
+	(No symbol) [0x00007FF67C43AD39]
+	(No symbol) [0x00007FF67C43D150]
+	(No symbol) [0x00007FF67C43D210]
+	(No symbol) [0x00007FF67C47DED5]
+	(No symbol) [0x00007FF67C4716D6]
+	(No symbol) [0x00007FF67C49F0AA]
+	(No symbol) [0x00007FF67C47124A]
+	(No symbol) [0x00007FF67C49F2C0]
+	(No symbol) [0x00007FF67C4BBDE3]
+	(No symbol) [0x00007FF67C49EE53]
+	(No symbol) [0x00007FF67C46F514]
+	(No symbol) [0x00007FF67C470631]
+	GetHandleVerifier [0x00007FF67C996CAD+3738973]
+	GetHandleVerifier [0x00007FF67C9EC506+4089270]
+	GetHandleVerifier [0x00007FF67C9E4823+4057299]
+	GetHandleVerifier [0x00007FF67C6B5C49+720121]
+	(No symbol) [0x00007FF67C59126F]
+	(No symbol) [0x00007FF67C58C304]
+	(No symbol) [0x00007FF67C58C432]
+	(No symbol) [0x00007FF67C57BD04]
+	BaseThreadInitThunk [0x00007FFEF135257D+29]
+	RtlUserThreadStart [0x00007FFEF336AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\insumos_producto.py", line 27, in test_supplies_products
+    displace_element(self.driver,select_supplies )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 447, in displace_element
+    search_input_element.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF67C965E42+3538674]
+	(No symbol) [0x00007FF67C584C02]
+	(No symbol) [0x00007FF67C435AEB]
+	(No symbol) [0x00007FF67C43AD39]
+	(No symbol) [0x00007FF67C43D150]
+	(No symbol) [0x00007FF67C43D210]
+	(No symbol) [0x00007FF67C47DED5]
+	(No symbol) [0x00007FF67C4716D6]
+	(No symbol) [0x00007FF67C49F0AA]
+	(No symbol) [0x00007FF67C47124A]
+	(No symbol) [0x00007FF67C49F2C0]
+	(No symbol) [0x00007FF67C4BBDE3]
+	(No symbol) [0x00007FF67C49EE53]
+	(No symbol) [0x00007FF67C46F514]
+	(No symbol) [0x00007FF67C470631]
+	GetHandleVerifier [0x00007FF67C996CAD+3738973]
+	GetHandleVerifier [0x00007FF67C9EC506+4089270]
+	GetHandleVerifier [0x00007FF67C9E4823+4057299]
+	GetHandleVerifier [0x00007FF67C6B5C49+720121]
+	(No symbol) [0x00007FF67C59126F]
+	(No symbol) [0x00007FF67C58C304]
+	(No symbol) [0x00007FF67C58C432]
+	(No symbol) [0x00007FF67C57BD04]
+	BaseThreadInitThunk [0x00007FFEF135257D+29]
+	RtlUserThreadStart [0x00007FFEF336AA58+40]
+
+]]></error>
+	</testcase>
+</testsuite>

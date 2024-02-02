@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="insumosProductos-20240202171806" tests="2" file=".py" time="42.865" timestamp="2024-02-02T17:18:49" failures="0" errors="2" skipped="0">
+	<testcase classname="insumosProductos" name="test_supplies_products" time="0.000" timestamp="0001-01-01T00:00:00" file="insumos_producto.py" line="19">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67C965E42+3538674]
+	(No symbol) [0x00007FF67C584C02]
+	(No symbol) [0x00007FF67C435AEB]
+	(No symbol) [0x00007FF67C41288C]
+	(No symbol) [0x00007FF67C4A5DD7]
+	(No symbol) [0x00007FF67C4BB40F]
+	(No symbol) [0x00007FF67C49EE53]
+	(No symbol) [0x00007FF67C46F514]
+	(No symbol) [0x00007FF67C470631]
+	GetHandleVerifier [0x00007FF67C996CAD+3738973]
+	GetHandleVerifier [0x00007FF67C9EC506+4089270]
+	GetHandleVerifier [0x00007FF67C9E4823+4057299]
+	GetHandleVerifier [0x00007FF67C6B5C49+720121]
+	(No symbol) [0x00007FF67C59126F]
+	(No symbol) [0x00007FF67C58C304]
+	(No symbol) [0x00007FF67C58C432]
+	(No symbol) [0x00007FF67C57BD04]
+	BaseThreadInitThunk [0x00007FFEF135257D+29]
+	RtlUserThreadStart [0x00007FFEF336AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\insumos_producto.py", line 38, in test_supplies_products
+    validate_text_by_text(self.driver, title_page_product_obtained)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 335, in validate_text_by_text
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67C965E42+3538674]
+	(No symbol) [0x00007FF67C584C02]
+	(No symbol) [0x00007FF67C435AEB]
+	(No symbol) [0x00007FF67C41288C]
+	(No symbol) [0x00007FF67C4A5DD7]
+	(No symbol) [0x00007FF67C4BB40F]
+	(No symbol) [0x00007FF67C49EE53]
+	(No symbol) [0x00007FF67C46F514]
+	(No symbol) [0x00007FF67C470631]
+	GetHandleVerifier [0x00007FF67C996CAD+3738973]
+	GetHandleVerifier [0x00007FF67C9EC506+4089270]
+	GetHandleVerifier [0x00007FF67C9E4823+4057299]
+	GetHandleVerifier [0x00007FF67C6B5C49+720121]
+	(No symbol) [0x00007FF67C59126F]
+	(No symbol) [0x00007FF67C58C304]
+	(No symbol) [0x00007FF67C58C432]
+	(No symbol) [0x00007FF67C57BD04]
+	BaseThreadInitThunk [0x00007FFEF135257D+29]
+	RtlUserThreadStart [0x00007FFEF336AA58+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="insumosProductos" name="test_supplies_products" time="42.865" timestamp="2024-02-02T17:18:49" file="insumos_producto.py" line="19">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67C965E42+3538674]
+	(No symbol) [0x00007FF67C584C02]
+	(No symbol) [0x00007FF67C435AEB]
+	(No symbol) [0x00007FF67C421594]
+	(No symbol) [0x00007FF67C421E5F]
+	(No symbol) [0x00007FF67C436075]
+	(No symbol) [0x00007FF67C41234F]
+	(No symbol) [0x00007FF67C4AC451]
+	(No symbol) [0x00007FF67C49F070]
+	(No symbol) [0x00007FF67C46F514]
+	(No symbol) [0x00007FF67C470631]
+	GetHandleVerifier [0x00007FF67C996CAD+3738973]
+	GetHandleVerifier [0x00007FF67C9EC506+4089270]
+	GetHandleVerifier [0x00007FF67C9E4823+4057299]
+	GetHandleVerifier [0x00007FF67C6B5C49+720121]
+	(No symbol) [0x00007FF67C59126F]
+	(No symbol) [0x00007FF67C58C304]
+	(No symbol) [0x00007FF67C58C432]
+	(No symbol) [0x00007FF67C57BD04]
+	BaseThreadInitThunk [0x00007FFEF135257D+29]
+	RtlUserThreadStart [0x00007FFEF336AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\insumos_producto.py", line 202, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=121.0.6167.140)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67C965E42+3538674]
+	(No symbol) [0x00007FF67C584C02]
+	(No symbol) [0x00007FF67C435AEB]
+	(No symbol) [0x00007FF67C421594]
+	(No symbol) [0x00007FF67C421E5F]
+	(No symbol) [0x00007FF67C436075]
+	(No symbol) [0x00007FF67C41234F]
+	(No symbol) [0x00007FF67C4AC451]
+	(No symbol) [0x00007FF67C49F070]
+	(No symbol) [0x00007FF67C46F514]
+	(No symbol) [0x00007FF67C470631]
+	GetHandleVerifier [0x00007FF67C996CAD+3738973]
+	GetHandleVerifier [0x00007FF67C9EC506+4089270]
+	GetHandleVerifier [0x00007FF67C9E4823+4057299]
+	GetHandleVerifier [0x00007FF67C6B5C49+720121]
+	(No symbol) [0x00007FF67C59126F]
+	(No symbol) [0x00007FF67C58C304]
+	(No symbol) [0x00007FF67C58C432]
+	(No symbol) [0x00007FF67C57BD04]
+	BaseThreadInitThunk [0x00007FFEF135257D+29]
+	RtlUserThreadStart [0x00007FFEF336AA58+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,7 +1,7 @@
 import unittest
 import time
 import xmlrunner
-from Elements import displace_element,find_elements,find_elements_id, find_send_element, search_and_select_option, select_option_click, send_element, validate_text, validate_text_by_text
+from Elements import displace_element,find_elements,find_elements_id, find_send_element, search_and_select_option, select_option_click, send_element, validate_character_numeric_element_selector, validate_strt_selector, validate_text, validate_text_by_text
 from LoginSample import LoginSample
 from startSession import StartSession
 
@@ -141,14 +141,63 @@ class insumosProductos(unittest.TestCase):
 
 
         order_successful = "/html/body/div/div/h2"
-        order_successful_obtained = "Tu orden fue enviada al sistema"
-        validate_text(self.driver,order_successful, order_successful_obtained )
+        order_successful_expected = "Tu orden fue enviada al sistema"
+        validate_text(self.driver,order_successful, order_successful_expected )
+        
 
         ## seleccionar boton aceptar 
 
         accept_button = "/html/body/div/div/div[6]/button[3]"
         find_elements(self.driver, accept_button )
         time.sleep(2)
+
+        # verificar que se genero con exito 
+
+        select_list_order = "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[4]/div/ul/li[3]/a"
+        find_elements(self.driver, select_list_order )
+        time.sleep(3)
+
+        title_order = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-orders/div/span"
+        title_order_expected = "Mis Órdenes"
+        validate_text(self.driver,title_order, title_order_expected )
+
+        number_order = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-orders/app-responsive-table/div/div/table/thead/tr/th[1]"
+        number_order_expected = "Número"
+        validate_text(self.driver,number_order, number_order_expected )
+
+        number_order_list = "#layout-wrapper > div > div > div > app-orders > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td.text-nowrap.align-middle.f-size-12.fw-bold.cursor-pointer.ellipsis-cell > span"
+        validate_character_numeric_element_selector(self.driver, number_order_list )
+
+
+        date_order = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-orders/app-responsive-table/div/div/table/thead/tr/th[2]"
+        date_order_expected = "Fecha"
+        validate_text(self.driver,date_order, date_order_expected )
+
+        date_order_list = "#layout-wrapper > div > div > div > app-orders > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td:nth-child(2) > span"
+        validate_strt_selector(self.driver, "", date_order_list)
+
+        hour_order = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-orders/app-responsive-table/div/div/table/thead/tr/th[3]"
+        hour_order_expected = "Hora"
+        validate_text(self.driver,hour_order, hour_order_expected )
+
+        hour_order_list = "#layout-wrapper > div > div > div > app-orders > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td:nth-child(3) > span"
+        validate_strt_selector(self.driver, "", hour_order_list)
+
+        producer_order = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-orders/app-responsive-table/div/div/table/thead/tr/th[4]"
+        producer_order_expected = "Productor"
+        validate_text(self.driver,producer_order, producer_order_expected )
+
+        producer_order_list = "#layout-wrapper > div > div > div > app-orders > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td:nth-child(4) > span"
+        validate_strt_selector(self.driver, "", producer_order_list)
+
+        state_order = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-orders/app-responsive-table/div/div/table/thead/tr/th[5]"
+        state_order_expected = "Estado"
+        validate_text(self.driver,state_order, state_order_expected )
+
+        state_order_list = "#layout-wrapper > div > div > div > app-orders > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td:nth-child(5) > div > div > span"
+        validate_strt_selector(self.driver, "", state_order_list)
+        time.sleep(3)
+
 
 
     def tearDown(self):
