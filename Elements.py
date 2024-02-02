@@ -375,6 +375,21 @@ def validate_strt(driver, expected_text, xpaht):
     except TimeoutException:
         print(f"Tiempo de espera agotado. El texto por texto no está presente.")
 
+def validate_strt_selector(driver, expected_text, css_selector):
+    try:
+        elemento = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.CSS_SELECTOR, css_selector))
+        )
+        valor = elemento.text.strip()  # Agrega strip() para eliminar posibles espacios en blanco al inicio y al final
+
+        if isinstance(valor, str):
+            
+            print(f"El texto encontrado es un str:  '{valor}'")
+        else:
+            print(f"El valor encontrado no es un string: {valor}")
+
+    except Exception as e:
+            print(f"Error al obtener el valor del elemento: {e}")
 
 
 

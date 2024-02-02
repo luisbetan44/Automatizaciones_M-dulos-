@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240202164437" tests="1" file=".py" time="44.252" timestamp="2024-02-02T16:45:21" failures="0" errors="0" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="44.252" timestamp="2024-02-02T16:45:21" file="reportInsuRetirar.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Insumos Pendientes de Retirar
+El texto encontrado es  Comprobante
+El texto encontrado es un str:  'PED 0051 00016343'
+El texto encontrado es  Artículo
+El texto encontrado es un str:  'Herbicida Eddus x 20 lts. (S-Metolacloro + Fomesafen) SYNGEN'
+El texto encontrado es  Pendiente
+El valor es un carácter numérico. Valor: 5,00
+segundo movimiento del listado
+El texto encontrado es un str:  'PED 0051 00016354'
+El texto encontrado es un str:  'Herbicida 2 4D Ester Etihexilico Voleris S 89% x 20 lts. SYN'
+El valor es un carácter numérico. Valor: 1,00
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

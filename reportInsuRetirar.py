@@ -1,189 +1,127 @@
-import unittest
-from selenium import webdriver
-from selenium.webdriver.common.keys import Keys
 import time
-from selenium.webdriver.support.ui import WebDriverWait 
+import unittest
 from selenium.webdriver.common.by import By
-from pyunitreport import HTMLTestRunner
-from selenium.webdriver.support import expected_conditions as EC
-import re
 import xmlrunner
+from Elements import find_elements, validate_character_numeric_element_selector, validate_strt, validate_strt_selector, validate_text
+from loginhelper import LoginHelper
+from startSession import StartSession
 
-
-
-class reporteIsumoPendRetirar(unittest.TestCase):
-    
+class ReportinsumosPendRetirar(unittest.TestCase):
     def setUp(self):
-        self.driver = webdriver.Chrome(executable_path=r"C:\driverchrome\chromedriver-win64\chromedriver.exe")
-        driver = self.driver
-        driver.implicitly_wait(30)
-        driver.maximize_window()
-        driver.get("https://pwa-portal-staging.silohub.ag/login")
+        self.start_session = StartSession()
+        self.driver = self.start_session.driver
 
-    def test_reports_entregas_ventas(self):
-        driver = self.driver
-        username = driver.find_element_by_id("email")
-        username.send_keys("admingd@silohub.ag")
-        username.send_keys(Keys.ENTER)
-        time.sleep(3)
+        # Inicializar la clase LoginHelper
+        self.login_helper = LoginHelper(self.driver)
 
+    def test_Report_suppliesWithdrawal(self):
+        # Utilizar métodos de LoginHelper para el inicio de sesión
+        self.login_helper.login("admingd@silohub.ag", "G@viglio123")
+        self.login_helper.select_tenant()
+        self.login_helper.search_and_select_account("1023")
 
-        passworUser = driver.find_element_by_id("password")
-        passworUser.send_keys("G@viglio123")
-        passworUser.send_keys(Keys.ENTER)
-        time.sleep(3)
-
-        insertButton = driver.find_element_by_xpath("/html/body/app-root/app-login-main/div/div[2]/div/app-login-form/div/div/div[1]/div/div[2]/form/div[4]/app-button/button")
-        insertButton.click()
-        time.sleep(3)
-        
-        ## seleccionar el tenant 
-        selectTenant = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
-        selectTenant.click()
-        time.sleep(3)
-
-     # localiza el input y envia el número de la cuenta 
-        input_element = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, "search-options")))
-        input_element.send_keys('1023')
-      
-       #selecciona el elemento oculto y crea un botón para hacer click sobre el 
-        element_to_click = WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, "#search-dropdown > app-accounts-list > ngx-simplebar > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.dropdown-sub-item.accounts-numbers")))
-        driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
-        element_to_click.click()
-        time.sleep(3)
 
         # ingresar al menú de cuentas 
 
-        select_menu_Account = driver.find_element_by_xpath(
-            "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
-        )
-        select_menu_Account.click()
+        select_menu_Account = "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
+        find_elements(self.driver,select_menu_Account)
 
 
         # ingresar al submenú de reportes 
 
-        select_menu_reports = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[6]/a")
-        select_menu_reports.click()
-        time.sleep(3)
+        select_menu_reports ="/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/div/ul/li[6]/a"
+        find_elements(self.driver,select_menu_reports)
 
-        ## aplicar filtro 
+        # seleccionar el filtro 
 
-        select_filter_button = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-reports/div/app-header-for-responsive-table/div/div/div[2]/div/div/app-filter-button/button/div/span")
-        select_filter_button.click()
+        select_filter_reports = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-reports/div/app-header-for-responsive-table/div/div/div[2]/div/div/app-filter-button/button/div/span"
+        find_elements(self.driver,select_filter_reports)
         time.sleep(2)
 
-        select_option_supplies = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list/div/app-radio[3]/div/input")
-        select_option_supplies.click()
         time.sleep(2)
 
-        apply_filter_supplies = driver.find_element_by_xpath("/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button")
-        apply_filter_supplies.click()
+        select_option_supplies = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list/div/app-radio[3]/div/input"
+        find_elements(self.driver,select_option_supplies)
+        time.sleep(2)
+
+        apply_filter_supplies = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
+        find_elements(self.driver,apply_filter_supplies)
         time.sleep(3)
 
         # validar titulo de la pantalla 
 
-        title_page_supplies = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/div/div/div[1]")
-        title_page_supplies_obtained = title_page_supplies.text
+        title_page_supplies = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/div/div/div[1]"
         title_page_supplies_expected = "Insumos Pendientes de Retirar"
-        if title_page_supplies_expected == title_page_supplies_obtained:
-            print("El título de la pantalla es : ", title_page_supplies_obtained)
-
-        else:
-            print("No se encontro el título se la pantalla ")
-
+        validate_text(self.driver,title_page_supplies, title_page_supplies_expected )
         # validar numero de comprobante de primer  movimiento 
 
-        list_movements1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[1]/td[1]/span/span") 
+        column_voucher = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/div/table/thead/tr/th[2]"
+        column_voucher_expected = "Comprobante"
+        validate_text(self.driver,column_voucher, column_voucher_expected )
 
-        list_movements1_obtained = list_movements1.text
-
-        if isinstance(list_movements1_obtained, str):
-            print("El numero del  primer comprobante es un string: ",list_movements1_obtained)
-
-        else: 
-            print("El numero del  primer comprobante no es un string: ",list_movements1_obtained)
+        list_movements1 = "#layout-wrapper > div > div > div > app-supplies-pending > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td.text-nowrap.align-middle.f-size-12.fw-bold.cursor-pointer.ellipsis-cell > span > span"
+        validate_strt_selector(self.driver, "", list_movements1)
 
         # validar descripcion del articulo del primer movimiento
+        column_article = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/div/table/thead/tr/th[3]"
+        column_article_expected = "Artículo"
+        validate_text(self.driver,column_article, column_article_expected )
 
-        description_article1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[1]/td[2]/span/span") 
 
-        description_article1_obtained = description_article1.text
-
-        if isinstance(description_article1_obtained, str):
-            print("La  descripción del primer  artículo  es un string: ",description_article1_obtained)
-
-        else: 
-            print("La  descripción del artículo primer  no es un string: ", description_article1_obtained)
+        description_article1 ="#layout-wrapper > div > div > div > app-supplies-pending > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td:nth-child(3) > span > span"
+        validate_strt_selector(self.driver, "", description_article1)
 
         # validar monto del primer movimiento pemdiente 
-
-        pending_amount1 = driver.find_element(By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[1]/td[3]/span/span")
-        pending_amount1_obtained = pending_amount1.text 
-        if re.search(r'\d', pending_amount1_obtained):  
-          print('El saldo pemdiente del primer movimiento  es un carácter numérico.', pending_amount1_obtained)
-        else:
-          print('El saldo pemdiente del primer movimiento no es un carácter numérico.')
+        column_pending = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/div/table/thead/tr/th[4]"
+        column_pending_expected = "Pendiente"
+        validate_text(self.driver,column_pending, column_pending_expected )
 
 
-        # validar numero de comprobante de segundo movimiento 
+        pending_amount1 = "#layout-wrapper > div > div > div > app-supplies-pending > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td:nth-child(4) > span > span"
+        validate_character_numeric_element_selector(self.driver, pending_amount1 )
 
-        list_movements2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[2]/td[1]/span/span") 
+        # validar numero de comprobante de segundo movimiento
 
-        list_movements2_obtained = list_movements2.text
+        print("segundo movimiento del listado") 
 
-        if isinstance(list_movements2_obtained, str):
-            print("El numero del segundo comprobante es un string: ",list_movements2_obtained)
+        list_movements2 = "#layout-wrapper > div > div > div > app-supplies-pending > app-responsive-table > div > div > table > tbody > tr:nth-child(2) > td.text-nowrap.align-middle.f-size-12.fw-bold.cursor-pointer.ellipsis-cell > span > span"
+        validate_strt_selector(self.driver, "", list_movements2)
 
-        else: 
-            print("El numero del segundo  comprobante no es un string: ",list_movements2_obtained)
 
         # validar descripcion del articulo del segundo  movimiento
         
-        description_article2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[2]/td[2]/span/span") 
+        description_article2 = "#layout-wrapper > div > div > div > app-supplies-pending > app-responsive-table > div > div > table > tbody > tr:nth-child(2) > td:nth-child(3) > span > span"
+        validate_strt_selector(self.driver, "", description_article2)
 
-        description_article2_obtained = description_article2.text
 
-        if isinstance(description_article2_obtained, str):
-            print("La  descripción del segundo  artículo  es un string: ",description_article2_obtained)
-
-        else: 
-            print("La  descripción del artículo primer  no es un string: ", description_article2_obtained)
-
-         # validar monto del segundo movimiento pemdiente 
-
-        pending_amount2 = driver.find_element(By.XPATH, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[2]/td[3]/span/span")
-        pending_amount2_obtained = pending_amount2.text 
-        if re.search(r'\d', pending_amount2_obtained):  
-          print('El saldo pemdiente del segundo movimiento  es un carácter numérico.', pending_amount2_obtained)
-        else:
-          print('El saldo pemdiente del segundo movimiento no es un carácter numérico.')
-
+        pending_amount2 = "#layout-wrapper > div > div > div > app-supplies-pending > app-responsive-table > div > div > table > tbody > tr:nth-child(2) > td:nth-child(4) > span > span"
+        validate_character_numeric_element_selector(self.driver, pending_amount2 )
 
 
         # seleccionar movimientos del listado y descargar 
 
-        select_first_movements = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[1]/th/input")
-        select_first_movements.click()
+        select_first_movements ="/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/th/input"
+        find_elements(self.driver,select_first_movements)
 
-        select_second_movements = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/table/tbody/tr[2]/th/input")
-        select_second_movements.click()
+        select_second_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[2]/th/input"
+        find_elements(self.driver,select_second_movements)
 
         # descargar movimientos seleccionados 
 
-        select_button_download1 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
-        select_button_download1.click()
+        select_button_download1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+        find_elements(self.driver,select_button_download1)
         time.sleep(2)
 
-        download_option_Excel = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a")
-        download_option_Excel.click()
+        download_option_Excel = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a"
+        find_elements(self.driver,download_option_Excel)
         time.sleep(3)
 
-        select_button_download2 = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]")
-        select_button_download2.click()
+        select_button_download2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+        find_elements(self.driver,select_button_download2)
         time.sleep(2)
 
-        download_option_PDF = driver.find_element_by_xpath("/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a")
-        download_option_PDF.click()
+        download_option_PDF = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-pending/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a"
+        find_elements(self.driver,download_option_PDF)
         time.sleep(3)
 
 
@@ -197,7 +135,7 @@ class reporteIsumoPendRetirar(unittest.TestCase):
 
 
 if __name__ == "__main__":
-  test_suite = unittest.TestLoader().loadTestsFromTestCase(reporteIsumoPendRetirar)
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(ReportinsumosPendRetirar)
   runner = xmlrunner.XMLTestRunner(output='reportInsuPendRetirar')
   runner.run(test_suite)
         

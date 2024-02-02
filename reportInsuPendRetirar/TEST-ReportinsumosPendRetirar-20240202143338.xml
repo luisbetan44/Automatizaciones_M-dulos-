@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240202143338" tests="1" file=".py" time="41.863" timestamp="2024-02-02T14:34:20" failures="0" errors="1" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="41.863" timestamp="2024-02-02T14:34:20" file="reportInsuRetirar.py" line="17">
+		<error type="TypeError" message="validate_strt() missing 1 required positional argument: 'xpaht'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py", line 74, in test_Report_suppliesWithdrawal
+    validate_strt(self.driver, description_article1)
+TypeError: validate_strt() missing 1 required positional argument: 'xpaht'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Insumos Pendientes de Retirar
+El texto encontrado es  Comprobante
+El valor encontrado no es un string: 'PED 0051 00016343'
+El texto encontrado es  Artículo
+]]></system-out>
+	</testcase>
+</testsuite>
