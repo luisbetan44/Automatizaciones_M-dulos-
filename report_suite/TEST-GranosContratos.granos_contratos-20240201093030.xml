@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GranosContratos.granos_contratos-20240201093030" tests="1" file="GranosContratos.py" time="199.487" timestamp="2024-02-01T09:34:22" failures="0" errors="0" skipped="0">
+	<testcase classname="GranosContratos.granos_contratos" name="test_granos_contratos" time="199.487" timestamp="2024-02-01T09:34:22" file="GranosContratos.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+¡Valor 'Confirmación De Venta' ingresado y opción seleccionada con éxito!
+El texto encontrado es  (VT) Confirmación De Venta
+Número de cuenta '1023' ingresado y opción seleccionada con éxito!
+¡Valor 'Soja' ingresado y opción seleccionada con éxito!
+El texto encontrado es  Soja
+¡Valor '22/23' ingresado y opción seleccionada con éxito!
+El texto encontrado es  22/23
+¡Input encontrado y enviado con éxito!
+¡Valor 'ARS' ingresado y opción seleccionada con éxito!
+El texto encontrado es  ARS
+¡Input encontrado y enviado con éxito!
+¡Valor 'Rosario' ingresado y opción seleccionada con éxito!
+El texto encontrado es  Rosario
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Valor 'General' ingresado y opción seleccionada con éxito!
+El texto encontrado es  General
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es visible.
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es visible.
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es visible.
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Confirmación de venta generada con éxito.
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

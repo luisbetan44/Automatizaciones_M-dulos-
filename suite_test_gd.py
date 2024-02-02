@@ -6,19 +6,35 @@ import os
 import smtplib
 import xmlrunner
 import unittest
+from GranosContratos import granos_contratos
 from Home import HomeTenant 
-from Cuentacontrato import contrato_tenant
+"""from Cuentacontrato import contrato_tenant
 from Entregas import cuenta_entregas
 from Ventas import cuenta_ventas
 from Onboarding import Onboarding_test_tenant
+from comproContratos import comprobanteContrato
+from comproCtaCte import comprobanteCtacte
+from comproEntregas import comprobanteEntregas
+from comproVentas import comprobanteVentas
+from ctacte_aplicada import cuenta_ctacte_aplicada
+from ctacte_histórica import cuenta_ctacte_historica
+from insumos_producto import insumosProductos"""
 
 def ejecutar_suite():
     test_suite = unittest.TestSuite()
     test_suite.addTest(unittest.makeSuite(HomeTenant))
-    test_suite.addTest(unittest.makeSuite(contrato_tenant))
-    test_suite.addTest(unittest.makeSuite(cuenta_entregas))
-    test_suite.addTest(unittest.makeSuite(cuenta_ventas))
-    test_suite.addTest(unittest.makeSuite(Onboarding_test_tenant))
+    test_suite.addTest(unittest.makeSuite(granos_contratos))
+   ## test_suite.addTest(unittest.makeSuite(insumosProductos))
+   ## test_suite.addTest(unittest.makeSuite(contrato_tenant))
+   ## test_suite.addTest(unittest.makeSuite(cuenta_entregas))
+    ##test_suite.addTest(unittest.makeSuite(cuenta_ventas))
+    ##test_suite.addTest(unittest.makeSuite(cuenta_ctacte_aplicada))
+    ##test_suite.addTest(unittest.makeSuite(cuenta_ctacte_historica))
+    ##test_suite.addTest(unittest.makeSuite(comprobanteContrato))
+    ##test_suite.addTest(unittest.makeSuite(comprobanteCtacte))
+    ##test_suite.addTest(unittest.makeSuite(comprobanteEntregas))
+    ##test_suite.addTest(unittest.makeSuite(comprobanteVentas))
+    ##test_suite.addTest(unittest.makeSuite(Onboarding_test_tenant))##
     
     # Configuración para generar informes XML
     output_folder = 'report_suite'  # Cambia el nombre de la carpeta según tu preferencia

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportEntregasVentas-20240202120611" tests="1" file=".py" time="39.667" timestamp="2024-02-02T12:06:51" failures="0" errors="1" skipped="0">
+	<testcase classname="reportEntregasVentas" name="test_Report_deliverySales" time="39.667" timestamp="2024-02-02T12:06:51" file="ReportEntreVentas.py" line="17">
+		<error type="TypeError" message="validate_character_numeric_element() takes 2 positional arguments but 3 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py", line 79, in test_Report_deliverySales
+    validate_character_numeric_element(self.driver,total_delivered,total_delivered_expected)
+TypeError: validate_character_numeric_element() takes 2 positional arguments but 3 were given
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Entregas y Ventas
+El texto encontrado es  Soja
+El texto encontrado es  23/24
+El texto encontrado es  Kilos Entregados
+]]></system-out>
+	</testcase>
+</testsuite>

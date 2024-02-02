@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RegistroUsuario-20240130093659" tests="1" file=".py" time="5.762" timestamp="2024-01-30T09:37:05" failures="0" errors="0" skipped="0">
+	<testcase classname="RegistroUsuario" name="test_algo" time="5.762" timestamp="2024-01-30T09:37:05" file="RegistroUsuario.py" line="24"/>
+</testsuite>

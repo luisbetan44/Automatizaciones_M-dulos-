@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportEntregasVentas-20240202121716" tests="1" file=".py" time="65.605" timestamp="2024-02-02T12:18:22" failures="0" errors="0" skipped="0">
+	<testcase classname="reportEntregasVentas" name="test_Report_deliverySales" time="65.605" timestamp="2024-02-02T12:18:22" file="ReportEntreVentas.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Entregas y Ventas
+El texto encontrado es  Soja
+El texto encontrado es  23/24
+El texto encontrado es  Kilos Entregados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Otros Movimientos
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Kilos Vendidos
+El valor es un carácter numérico. Valor: 240.198
+El texto encontrado es  Kilos Solicitados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 49.802
+El texto encontrado es  Saldo
+El valor es un carácter numérico. Valor: -240.198
+El texto encontrado es  Saldo Comercial
+El valor es un carácter numérico. Valor: -290.000
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

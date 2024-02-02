@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportEntregasVentas-20240202115336" tests="1" file=".py" time="67.112" timestamp="2024-02-02T11:54:43" failures="0" errors="1" skipped="0">
+	<testcase classname="reportEntregasVentas" name="test_Report_deliverySales" time="67.112" timestamp="2024-02-02T11:54:43" file="ReportEntreVentas.py" line="17">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/table/tbody/tr[1]/td[2]/span/span&quot;}
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6962F5E42+3538674]
+	(No symbol) [0x00007FF695F14C02]
+	(No symbol) [0x00007FF695DC5AEB]
+	(No symbol) [0x00007FF695E0BF4E]
+	(No symbol) [0x00007FF695E0C0CC]
+	(No symbol) [0x00007FF695E4E477]
+	(No symbol) [0x00007FF695E2F0EF]
+	(No symbol) [0x00007FF695E4BDE3]
+	(No symbol) [0x00007FF695E2EE53]
+	(No symbol) [0x00007FF695DFF514]
+	(No symbol) [0x00007FF695E00631]
+	GetHandleVerifier [0x00007FF696326CAD+3738973]
+	GetHandleVerifier [0x00007FF69637C506+4089270]
+	GetHandleVerifier [0x00007FF696374823+4057299]
+	GetHandleVerifier [0x00007FF696045C49+720121]
+	(No symbol) [0x00007FF695F2126F]
+	(No symbol) [0x00007FF695F1C304]
+	(No symbol) [0x00007FF695F1C432]
+	(No symbol) [0x00007FF695F0BD04]
+	BaseThreadInitThunk [0x00007FFEF135257D+29]
+	RtlUserThreadStart [0x00007FFEF336AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py", line 78, in test_Report_deliverySales
+    validate_character_numeric_element(self.driver,total_delivered)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 860, in validate_character_numeric_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/table/tbody/tr[1]/td[2]/span/span"}
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6962F5E42+3538674]
+	(No symbol) [0x00007FF695F14C02]
+	(No symbol) [0x00007FF695DC5AEB]
+	(No symbol) [0x00007FF695E0BF4E]
+	(No symbol) [0x00007FF695E0C0CC]
+	(No symbol) [0x00007FF695E4E477]
+	(No symbol) [0x00007FF695E2F0EF]
+	(No symbol) [0x00007FF695E4BDE3]
+	(No symbol) [0x00007FF695E2EE53]
+	(No symbol) [0x00007FF695DFF514]
+	(No symbol) [0x00007FF695E00631]
+	GetHandleVerifier [0x00007FF696326CAD+3738973]
+	GetHandleVerifier [0x00007FF69637C506+4089270]
+	GetHandleVerifier [0x00007FF696374823+4057299]
+	GetHandleVerifier [0x00007FF696045C49+720121]
+	(No symbol) [0x00007FF695F2126F]
+	(No symbol) [0x00007FF695F1C304]
+	(No symbol) [0x00007FF695F1C432]
+	(No symbol) [0x00007FF695F0BD04]
+	BaseThreadInitThunk [0x00007FFEF135257D+29]
+	RtlUserThreadStart [0x00007FFEF336AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Entregas y Ventas
+El texto encontrado es  Soja
+El texto encontrado es  23/24
+El texto encontrado es  Kilos Entregados
+]]></system-out>
+	</testcase>
+</testsuite>

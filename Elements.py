@@ -27,10 +27,12 @@ def find_elements_css_selector(driver, css_selector):
         )
         select_nex_button.click()
         print("¡Elemento encontrado y clickeado con éxito!")
+
+        # Devolver el elemento encontrado
+        return select_nex_button
     except TimeoutException:
         print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
-
-
+        return None
 
 
 def find_elements_id(driver, id):
@@ -160,11 +162,11 @@ def find_and_send_element(driver, xpath, input_data=None):
     except TimeoutException:
         print("Tiempo de espera agotado. El elemento no está presente o no es clickeable.")
 
-def find_send_element(driver, xpath, input_data=None):
+def find_send_element_id(driver, id, input_data=None):
     try:
         # Esperar a que el elemento sea clickeable
         input_element = WebDriverWait(driver, 10).until(
-            EC.element_to_be_clickable((By.XPATH, xpath))
+            EC.element_to_be_clickable((By.ID, id))
         )
 
         # Si hay datos para ingresar, establecer el valor
@@ -176,11 +178,43 @@ def find_send_element(driver, xpath, input_data=None):
     except TimeoutException:
         print("Tiempo de espera agotado. El input no está presente o no es clickeable.")
 
+def find_send_element(driver, xpaht, input_data=None):
+    try:
+        # Esperar a que el elemento sea clickeable
+        input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.XPATH, xpaht))
+        )
+
+        # Si hay datos para ingresar, establecer el valor
+        if input_data is not None:
+            input_element.clear()  # Limpiar el input
+            input_element.send_keys(input_data)  # Ingresar los datos
+
+        print("¡Input encontrado y enviado con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El input no está presente o no es clickeable.")
+
+
 def send_element(driver, xpath, input_data):
     try:
         # Esperar a que el elemento sea clickeable
         input_element = WebDriverWait(driver, 10).until(
             EC.element_to_be_clickable((By.XPATH, xpath))
+        )
+
+        # Si hay datos para ingresar, establecer el valor
+        # Limpiar el input
+        input_element.send_keys(input_data)  # Ingresar los datos
+
+        print("¡Input encontrado y enviado con éxito!")
+    except TimeoutException:
+        print("Tiempo de espera agotado. El input no está presente o no es clickeable.")
+
+def send_element_id(driver, id, input_data):
+    try:
+        # Esperar a que el elemento sea clickeable
+        input_element = WebDriverWait(driver, 10).until(
+            EC.element_to_be_clickable((By.ID, id))
         )
 
         # Si hay datos para ingresar, establecer el valor
@@ -356,6 +390,35 @@ def make_visible(driver, xpath):
         print(f"Tiempo de espera agotado. El elemento no está presente o no es visible.")
 
 
+def make_send_visible_id(driver, id, new_amount ):
+    try:
+        elemento = WebDriverWait(driver, 10).until(
+            EC.presence_of_element_located((By.ID, id))
+        )
+        driver.execute_script("arguments[0].style.display = 'block';", elemento)
+        try:
+            # Esperar hasta que el elemento esté nuevamente presente después de desplazarse
+            element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.ID, id))
+            )
+        except TimeoutException:
+            print(f"Tiempo de espera agotado. El elemento '{id}' no está presente después de desplazarse.")
+
+        # Limpiar la cantidad
+        element.clear()
+
+        # Enviar la nueva cantidad
+        element.send_keys(new_amount)
+
+        print(f"Elemento desplazado, cantidad limpiada y nuevo valor '{new_amount}' ingresado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El elemento '{id}' no está presente o no es visible.")
+    except StaleElementReferenceException:
+        print(f"Elemento obsoleto después de desplazarse. Intentando recuperarlo y reintentar...")
+        displace_element_clear_send_keys(driver, id, new_amount)
+
+
 def displace_element(driver, xpath):
     try:
 
@@ -402,6 +465,8 @@ def displace_element_clear_send_keys(driver, xpath, new_amount):
         print(f"Elemento obsoleto después de desplazarse. Intentando recuperarlo y reintentar...")
         displace_element_clear_send_keys(driver, xpath, new_amount)
 
+
+
 def displace_element_clear_send_keys_selector(driver, css_selector, new_amount):
     try:
         # Esperar hasta que el elemento sea visible
@@ -435,6 +500,41 @@ def displace_element_clear_send_keys_selector(driver, css_selector, new_amount):
         displace_element_clear_send_keys_selector(driver, css_selector, new_amount)
     except InvalidSelectorException:
         print(f"Selector CSS '{css_selector}' no es válido.")
+
+
+def displace_element_clear_send_keys_id(driver, id, new_amount):
+    try:
+        # Esperar hasta que el elemento sea visible
+        element = WebDriverWait(driver, 10).until(
+            EC.visibility_of_element_located((By.ID, id))
+        )
+
+        # Desplazarse al elemento
+        driver.execute_script("arguments[0].scrollIntoView();", element)
+
+        try:
+            # Esperar hasta que el elemento esté nuevamente presente después de desplazarse
+            element = WebDriverWait(driver, 10).until(
+                EC.presence_of_element_located((By.ID, id))
+            )
+        except TimeoutException:
+            print(f"Tiempo de espera agotado. El elemento '{id}' no está presente después de desplazarse.")
+
+        # Limpiar la cantidad
+        element.clear()
+
+        # Enviar la nueva cantidad
+        element.send_keys(new_amount)
+
+        print(f"Elemento desplazado, cantidad limpiada y nuevo valor '{new_amount}' ingresado con éxito!")
+
+    except TimeoutException:
+        print(f"Tiempo de espera agotado. El elemento '{id}' no está presente o no es visible.")
+    except StaleElementReferenceException:
+        print(f"Elemento obsoleto después de desplazarse. Intentando recuperarlo y reintentar...")
+        displace_element_clear_send_keys_selector(driver, id, new_amount)
+    except InvalidSelectorException:
+        print(f"Selector CSS '{id}' no es válido.")
 
 def displace_validate_element(driver, xpath, valor_esperado ):
     try:
@@ -765,6 +865,15 @@ def validate_character_numeric_element(driver, xpath):
     else:
         print(f'El valor no es un carácter numérico. Valor: {valor}')
 
+def validate_character_numeric_element_selector(driver, css_selector):
+    elemento = driver.find_element(By.CSS_SELECTOR, css_selector)
+    valor = elemento.text
+
+    if re.search(r'\d', valor):
+        print(f'El valor es un carácter numérico. Valor: {valor}')
+    else:
+        print(f'El valor no es un carácter numérico. Valor: {valor}')
+
 def validate_text_visible(driver, xpath, text_expected):
     element = driver.find_element(By.XPATH, xpath)
     is_visible = element.is_displayed()
@@ -800,19 +909,14 @@ def validate_text_visible_selector(driver, css_selector, text_expected):
         print("No se pudo validar el texto")
 
 def handle_system_dialog(driver, xpath):
-    # Hacer clic en el botón/elemento que abre el diálogo del sistema
+    
     driver.find_element(By.XPATH, xpath).click()
 
-    # Esperar un breve momento para asegurar que el diálogo del sistema ha aparecido
-    time.sleep(2)
-
-    # Enfocar en el diálogo del sistema (dependiendo del sistema operativo, puede variar)
-    # En este ejemplo, se usa TAB para navegar por los elementos del sistema operativo.
+    
     driver.switch_to.active_element.send_keys(Keys.TAB)
     time.sleep(1)
 
-    # Presionar la tecla ENTER para seleccionar la opción (puede variar según el sistema operativo)
+   
     driver.switch_to.active_element.send_keys(KeysView.ENTER)
 
-    # Puedes ajustar y agregar más interacciones según sea necesario.
-
+    
