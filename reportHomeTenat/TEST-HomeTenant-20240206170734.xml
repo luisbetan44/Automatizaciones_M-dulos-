@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeTenant-20240206170734" tests="1" file=".py" time="32.143" timestamp="2024-02-06T17:08:06" failures="0" errors="0" skipped="0">
+	<testcase classname="HomeTenant" name="test_start_tenant" time="32.143" timestamp="2024-02-06T17:08:06" file="Home.py" line="19">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Buen día JUAN DEMO!
+El texto encontrado es  VENCIDO A HOY
+El texto encontrado es  ARS
+El valor es un carácter numérico. Valor: 1.592.287.082,22
+El texto encontrado es  VENCIDO A HOY
+El texto encontrado es  USD
+El valor es un carácter numérico. Valor: 346.575,55
+El texto encontrado es  A VENCER
+El texto encontrado es  ARS
+El valor es un carácter numérico. Valor: 50.337.101,38
+El texto encontrado es  A VENCER
+El texto encontrado es  USD
+El valor es un carácter numérico. Valor: 3.141.036,41
+Validation results registered successfully. File saved as: reportClient\reportHomeClient.xml_20240206170801.xml
+Archivo XML generado en: reportClient\reportHomeClient.xml_20240206170801.xml
+El texto encontrado es  Resumen de Mis Negocios de Granos
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/maiz.svg
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/trigo.svg
+El valor es un carácter numérico. Valor: 0 Kg
+El valor es un carácter numérico. Valor: 62.498,00 Kg
+El valor es un carácter numérico. Valor: 0 Kg
+El valor es un carácter numérico. Valor: 0 Kg
+El valor es un carácter numérico. Valor: 0 Kg
+El texto encontrado es  Entregas y Ventas Recientes
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/trigo.svg
+El valor es un carácter numérico. Valor: 0010010109864292
+El valor es un carácter numérico. Valor: 31.580,00
+El texto encontrado es  Ventas Recientes
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg
+El valor es un carácter numérico. Valor: 99,00
+El valor es un carácter numérico. Valor: 10,04
+Validation results registered successfully. File saved as: reportCliente\reportHomeClient_20240206170804.xml
+]]></system-out>
+	</testcase>
+</testsuite>

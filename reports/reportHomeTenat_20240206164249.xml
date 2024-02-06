@@ -1,0 +1,6 @@
+<testsuite name="HomeTenant-20240206164249" tests="1" file=".py" time="42.128" timestamp="2024-02-06T16:42:49.626327" failures="0" errors="0" skipped="0"><testcase classname="HomeTenant" name="test_start_tenant" time="42.128" timestamp="2024-02-06T16:42:49.626327" file="Home.py" line="19"><system-out>Se velisan de forma correcta los titulos del totalizador de la pantalla del home
+Buen d&#237;a JUAN DEMO!
+VENCIDO A HOY
+ARS
+A VENCER
+USD</system-out></testcase></testsuite>

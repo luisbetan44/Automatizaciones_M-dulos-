@@ -6,6 +6,7 @@ import xmlrunner
 from Elements import find_elements, validate_character_numeric_element, validate_image_css_selector, validate_image_xpaht, validate_text
 from loginhelper import LoginHelper
 from startSession import StartSession
+from ListReport import register_validation_results
 
 class HomeTenant(unittest.TestCase):
     def setUp(self):
@@ -45,7 +46,7 @@ class HomeTenant(unittest.TestCase):
         text_expected = "Buen día JUAN DEMO!"
         validate_text(self.driver, page_hello, text_expected  )
 
-
+        
      ##validar totalizadores vencidos a hoy 
        
         titlle_value1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[1]/app-balances/div/swiper/div/div[1]/div[1]/app-number-values-card/div/div/div/div[1]/div/p"
@@ -92,6 +93,17 @@ class HomeTenant(unittest.TestCase):
 
         element4 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[1]/app-balances/div/swiper/div/div[1]/div[4]/app-number-values-card/div/div/div/div[3]/div/h4/span'
         validate_character_numeric_element(self.driver, element4  )
+
+        validations = [  "Se velisan de forma correcta los titulos del totalizador de la pantalla del home", 
+        "Buen día JUAN DEMO!","VENCIDO A HOY", "ARS", "A VENCER", "USD"  
+         
+        ]
+        folder_path = 'reportClient'
+        file_name = 'reportHomeClient.xml'
+        xml_file_path = register_validation_results(validations, folder_path, file_name)
+
+        print(f"Archivo XML generado en: {xml_file_path}")
+
          
          ## Seleccionar el elemento que contiene el texto 
 
@@ -212,6 +224,18 @@ class HomeTenant(unittest.TestCase):
        # validar precio de la venta 
         element16 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[3]/app-recent-grain-movements/div/div[2]/app-recent-sales/app-responsive-table-multiple-items/div/table/tbody/tr[1]/td[3]/div/div/span[2]'
         validate_character_numeric_element(self.driver, element16  )
+
+     
+        validations = [
+             "Se validan los siguentes campos de la pantalla",
+             "Buen día JUAN DEMO!",
+             "VENCIDO A HOY",
+             "ARS",
+             "Finalizan todas las validaciones de la pantalla de forma exitosa"
+        ]
+        folder_path = 'reportCliente'
+        file_prefix = 'reportHomeClient'
+        xml_file_path = register_validation_results(validations, folder_path, file_prefix)
 
     def tearDown(self):
         self.driver.quit()

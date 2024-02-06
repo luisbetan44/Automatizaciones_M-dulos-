@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeTenant-20240206165138" tests="1" file=".py" time="33.456" timestamp="2024-02-06T16:52:11" failures="0" errors="1" skipped="0">
+	<testcase classname="HomeTenant" name="test_start_tenant" time="33.456" timestamp="2024-02-06T16:52:11" file="Home.py" line="19">
+		<error type="TypeError" message="register_validation_results() missing 1 required positional argument: 'file_prefix'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Home.py", line 103, in test_start_tenant
+    xml_file_path = register_validation_results(validations, folder_path, file_name)
+TypeError: register_validation_results() missing 1 required positional argument: 'file_prefix'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Buen día JUAN DEMO!
+El texto encontrado es  VENCIDO A HOY
+El texto encontrado es  ARS
+El valor es un carácter numérico. Valor: 1.592.287.082,22
+El texto encontrado es  VENCIDO A HOY
+El texto encontrado es  USD
+El valor es un carácter numérico. Valor: 346.575,55
+El texto encontrado es  A VENCER
+El texto encontrado es  ARS
+El valor es un carácter numérico. Valor: 50.337.101,38
+El texto encontrado es  A VENCER
+El texto encontrado es  USD
+El valor es un carácter numérico. Valor: 3.141.036,41
+]]></system-out>
+	</testcase>
+</testsuite>

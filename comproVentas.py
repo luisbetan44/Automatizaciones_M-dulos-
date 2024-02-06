@@ -128,10 +128,6 @@ class comprobanteVentas(unittest.TestCase):
         
        
 
-
-
-    
-
     def tearDown(self):
         self.driver.close()
 
@@ -139,10 +135,7 @@ class comprobanteVentas(unittest.TestCase):
 
 
 if __name__ == "__main__":
-    test_suite = unittest.TestLoader().loadTestsFromTestCase(comprobanteVentas)
-
-    # Especifica el nombre del directorio de salida para los informes XML
-    output_xml_dir = 'reportComprobVenta'
-
-    runner = xmlrunner.XMLTestRunner(output=output_xml_dir)
-    runner.run(test_suite)
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(comprobanteVentas)
+  runner = xmlrunner.XMLTestRunner(output='reportComprobVentas')
+  runner.run(test_suite)
+        
