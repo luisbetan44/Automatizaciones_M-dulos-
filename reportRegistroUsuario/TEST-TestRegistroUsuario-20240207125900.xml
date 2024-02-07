@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRegistroUsuario-20240207125900" tests="1" file=".py" time="26.692" timestamp="2024-02-07T12:59:27" failures="0" errors="1" skipped="0">
+	<testcase classname="TestRegistroUsuario" name="test_register_user" time="26.692" timestamp="2024-02-07T12:59:27" file="RegistroUsuario.py" line="15">
+		<error type="AttributeError" message="'WebDriver' object has no attribute 'find_element_by_id'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\RegistroUsuario.py", line 46, in test_register_user
+    send_display_element_id(self.driver, insert_password_new, select_password_new)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 172, in send_display_element_id
+    input_element = driver.find_element_by_id(id)
+AttributeError: 'WebDriver' object has no attribute 'find_element_by_id'
+]]></error>
+		<system-out><![CDATA[Email generado: _v0987x11@yopmail.com
+Elemento desplazado, cantidad limpiada y nuevo valor '_v0987x11@yopmail.com' ingresado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

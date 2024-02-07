@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRegistroUsuario-20240207152740" tests="1" file=".py" time="145.396" timestamp="2024-02-07T15:30:05" failures="0" errors="0" skipped="0">
+	<testcase classname="TestRegistroUsuario" name="test_register_user" time="145.396" timestamp="2024-02-07T15:30:05" file="RegistroUsuario.py" line="18">
+		<system-out><![CDATA[Email generado: _fqoiga23@yopmail.com
+Elemento desplazado, cantidad limpiada y nuevo valor '_fqoiga23@yopmail.com' ingresado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Elemento desplazado, cantidad limpiada y nuevo valor '_fqoiga23@yopmail.com' ingresado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Elemento desplazado, cantidad limpiada y nuevo valor '_fqoiga23@yopmail.com' ingresado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

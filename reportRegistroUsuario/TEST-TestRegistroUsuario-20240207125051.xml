@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRegistroUsuario-20240207125051" tests="1" file=".py" time="22.010" timestamp="2024-02-07T12:51:13" failures="0" errors="1" skipped="0">
+	<testcase classname="TestRegistroUsuario" name="test_register_user" time="22.010" timestamp="2024-02-07T12:51:13" file="RegistroUsuario.py" line="15">
+		<error type="InvalidSelectorException" message="Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AD505E42+3538674]
+	(No symbol) [0x00007FF6AD124C02]
+	(No symbol) [0x00007FF6ACFD5AEB]
+	(No symbol) [0x00007FF6ACFDAD39]
+	(No symbol) [0x00007FF6ACFDD150]
+	(No symbol) [0x00007FF6ACFDD210]
+	(No symbol) [0x00007FF6AD01BBBC]
+	(No symbol) [0x00007FF6AD01C0CC]
+	(No symbol) [0x00007FF6AD05E477]
+	(No symbol) [0x00007FF6AD03F0EF]
+	(No symbol) [0x00007FF6AD05BDE3]
+	(No symbol) [0x00007FF6AD03EE53]
+	(No symbol) [0x00007FF6AD00F514]
+	(No symbol) [0x00007FF6AD010631]
+	GetHandleVerifier [0x00007FF6AD536CAD+3738973]
+	GetHandleVerifier [0x00007FF6AD58C506+4089270]
+	GetHandleVerifier [0x00007FF6AD584823+4057299]
+	GetHandleVerifier [0x00007FF6AD255C49+720121]
+	(No symbol) [0x00007FF6AD13126F]
+	(No symbol) [0x00007FF6AD12C304]
+	(No symbol) [0x00007FF6AD12C432]
+	(No symbol) [0x00007FF6AD11BD04]
+	BaseThreadInitThunk [0x00007FFF6D01257D+29]
+	RtlUserThreadStart [0x00007FFF6E86AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\RegistroUsuario.py", line 46, in test_register_user
+    click_clear_and_send_keys_selector(self.driver, insert_password_new, select_password_new)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 96, in click_clear_and_send_keys_selector
+    element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=121.0.6167.140); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6AD505E42+3538674]
+	(No symbol) [0x00007FF6AD124C02]
+	(No symbol) [0x00007FF6ACFD5AEB]
+	(No symbol) [0x00007FF6ACFDAD39]
+	(No symbol) [0x00007FF6ACFDD150]
+	(No symbol) [0x00007FF6ACFDD210]
+	(No symbol) [0x00007FF6AD01BBBC]
+	(No symbol) [0x00007FF6AD01C0CC]
+	(No symbol) [0x00007FF6AD05E477]
+	(No symbol) [0x00007FF6AD03F0EF]
+	(No symbol) [0x00007FF6AD05BDE3]
+	(No symbol) [0x00007FF6AD03EE53]
+	(No symbol) [0x00007FF6AD00F514]
+	(No symbol) [0x00007FF6AD010631]
+	GetHandleVerifier [0x00007FF6AD536CAD+3738973]
+	GetHandleVerifier [0x00007FF6AD58C506+4089270]
+	GetHandleVerifier [0x00007FF6AD584823+4057299]
+	GetHandleVerifier [0x00007FF6AD255C49+720121]
+	(No symbol) [0x00007FF6AD13126F]
+	(No symbol) [0x00007FF6AD12C304]
+	(No symbol) [0x00007FF6AD12C432]
+	(No symbol) [0x00007FF6AD11BD04]
+	BaseThreadInitThunk [0x00007FFF6D01257D+29]
+	RtlUserThreadStart [0x00007FFF6E86AA58+40]
+
+]]></error>
+		<system-out><![CDATA[Email generado: _eq9y9gs8@yopmail.com
+Elemento desplazado, cantidad limpiada y nuevo valor '_eq9y9gs8@yopmail.com' ingresado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

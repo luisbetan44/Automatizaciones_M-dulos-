@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRegistroUsuario-20240207132101" tests="1" file=".py" time="52.192" timestamp="2024-02-07T13:21:53" failures="0" errors="0" skipped="0">
+	<testcase classname="TestRegistroUsuario" name="test_register_user" time="52.192" timestamp="2024-02-07T13:21:53" file="RegistroUsuario.py" line="17">
+		<system-out><![CDATA[Email generado: _52rxx6md@yopmail.com
+Elemento desplazado, cantidad limpiada y nuevo valor '_52rxx6md@yopmail.com' ingresado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>
