@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_entregas-20240517161031" tests="1" file=".py" time="89.935" timestamp="2024-05-17T16:12:01" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_entregas" name="test_cuenta_entregas" time="89.935" timestamp="2024-05-17T16:12:01" file="Entregas.py" line="22">
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 4 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto es visible para el usuario: '9.922,10'
+El texto es visible para el usuario: '9.826,76'
+El texto es visible para el usuario
+El texto fue validado correctamente: Entrega TK 9999 00074351
+El texto es visible para el usuario: '303,30 QQ'
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: DATOS DE LA ENTREGA
+El texto es visible para el usuario
+El texto fue validado correctamente: 23/02/2022
+El texto es visible para el usuario
+El texto fue validado correctamente: 21/22
+El texto es visible para el usuario
+El texto fue validado correctamente: JUAN DEMO
+El texto es visible para el usuario
+El texto fue validado correctamente: 1032 El Rincon
+El texto es visible para el usuario
+El texto fue validado correctamente: ANÁLISIS
+El texto es visible para el usuario
+El texto fue validado correctamente: Peso Hectolítrico
+El texto es visible para el usuario
+El texto fue validado correctamente: 69.961%
+]]></system-out>
+	</testcase>
+</testsuite>

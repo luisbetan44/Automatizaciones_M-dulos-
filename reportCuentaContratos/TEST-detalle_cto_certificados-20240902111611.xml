@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_certificados-20240902111611" tests="1" file=".py" time="77.287" timestamp="2024-09-02T11:17:28" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_cto_certificados" name="test_detail_certificates" time="77.287" timestamp="2024-09-02T11:17:28" file="CtaCtoDtalCertificados.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (292, 779)
+  (Session info: chrome=128.0.6613.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B60EB632+29090]
+	(No symbol) [0x00007FF6B605E6E9]
+	(No symbol) [0x00007FF6B5F1B1CA]
+	(No symbol) [0x00007FF6B5F76C0E]
+	(No symbol) [0x00007FF6B5F74682]
+	(No symbol) [0x00007FF6B5F71B9B]
+	(No symbol) [0x00007FF6B5F70DB5]
+	(No symbol) [0x00007FF6B5F62D61]
+	(No symbol) [0x00007FF6B5F966EA]
+	(No symbol) [0x00007FF6B5F626A6]
+	(No symbol) [0x00007FF6B5F96900]
+	(No symbol) [0x00007FF6B5FB65D9]
+	(No symbol) [0x00007FF6B5F96493]
+	(No symbol) [0x00007FF6B5F609B1]
+	(No symbol) [0x00007FF6B5F61B11]
+	GetHandleVerifier [0x00007FF6B640883D+3294125]
+	GetHandleVerifier [0x00007FF6B6454423+3604371]
+	GetHandleVerifier [0x00007FF6B644A2E7+3563095]
+	GetHandleVerifier [0x00007FF6B61A6F16+797318]
+	(No symbol) [0x00007FF6B606986F]
+	(No symbol) [0x00007FF6B6065454]
+	(No symbol) [0x00007FF6B60655E0]
+	(No symbol) [0x00007FF6B6054A7F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalCertificados.py", line 180, in test_detail_certificates
+    click_checkbox_xpaht(self.driver, select_moviments )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 456, in click_checkbox_xpaht
+    checkbox_element.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (292, 779)
+  (Session info: chrome=128.0.6613.86)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B60EB632+29090]
+	(No symbol) [0x00007FF6B605E6E9]
+	(No symbol) [0x00007FF6B5F1B1CA]
+	(No symbol) [0x00007FF6B5F76C0E]
+	(No symbol) [0x00007FF6B5F74682]
+	(No symbol) [0x00007FF6B5F71B9B]
+	(No symbol) [0x00007FF6B5F70DB5]
+	(No symbol) [0x00007FF6B5F62D61]
+	(No symbol) [0x00007FF6B5F966EA]
+	(No symbol) [0x00007FF6B5F626A6]
+	(No symbol) [0x00007FF6B5F96900]
+	(No symbol) [0x00007FF6B5FB65D9]
+	(No symbol) [0x00007FF6B5F96493]
+	(No symbol) [0x00007FF6B5F609B1]
+	(No symbol) [0x00007FF6B5F61B11]
+	GetHandleVerifier [0x00007FF6B640883D+3294125]
+	GetHandleVerifier [0x00007FF6B6454423+3604371]
+	GetHandleVerifier [0x00007FF6B644A2E7+3563095]
+	GetHandleVerifier [0x00007FF6B61A6F16+797318]
+	(No symbol) [0x00007FF6B606986F]
+	(No symbol) [0x00007FF6B6065454]
+	(No symbol) [0x00007FF6B60655E0]
+	(No symbol) [0x00007FF6B6054A7F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108280
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto no coincide con los valores esperados. Texto actual: '500.000,00 Kg'
+El texto es visible para el usuario
+El texto fue validado correctamente: Listado de Certificados
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 21/03/2022
+El texto es visible para el usuario
+El texto fue validado correctamente: Comprobante
+El valor es un carácter numérico. Valor: LA 3320 13812071
+El texto es visible para el usuario
+El texto fue validado correctamente: Tn Totales
+El valor es un carácter numérico. Valor: 116.112
+El texto es visible para el usuario
+El texto fue validado correctamente: Tn Aplicadas
+El valor es un carácter numérico. Valor: 116.112
+El texto es visible para el usuario
+El texto fue validado correctamente: Planta
+El valor es un carácter numérico. Valor: 8
+]]></system-out>
+	</testcase>
+</testsuite>

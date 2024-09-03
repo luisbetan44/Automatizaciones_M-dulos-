@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="confi_registro_cliente-20240321164558" tests="1" file=".py" time="79.946" timestamp="2024-03-21T16:47:18" failures="0" errors="0" skipped="0">
+	<testcase classname="confi_registro_cliente" name="test_record_client" time="79.946" timestamp="2024-03-21T16:47:18" file="ConfiClientes.py" line="19">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Clientes
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  DATOS GENERALES
+El texto encontrado es  RAZON SOCIAL
+El texto encontrado es  5 B S.A.
+El texto encontrado es  CUIT
+El texto encontrado es  30-71227027-2
+El texto encontrado es  CELULAR
+El texto encontrado es  03406 - 480479 / 15645641
+El texto encontrado es  DATOS EXTRA
+El texto encontrado es  COMERCIAL
+El texto encontrado es  CORDOBA, RAMIRO
+El texto encontrado es  CUENTA
+El texto encontrado es  (2903) - 5 B S.A.
+Test finalizado con éxito
+]]></system-out>
+	</testcase>
+</testsuite>

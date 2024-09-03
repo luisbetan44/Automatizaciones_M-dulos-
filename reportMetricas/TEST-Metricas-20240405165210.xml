@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Metricas-20240405165210" tests="1" file=".py" time="29.004" timestamp="2024-04-05T16:52:39" failures="0" errors="0" skipped="0">
+	<testcase classname="Metricas" name="test_metricas" time="29.004" timestamp="2024-04-05T16:52:39" file="Metricas.py" line="18">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+El texto no fue encontrado MÉTRICAS
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El valor es un carácter numérico. Valor: 2.026
+El texto encontrado es  Total Cuentas ERP
+El valor es un carácter numérico. Valor: 1.598
+El texto encontrado es  Total Cuentas Vinculadas
+El valor es un carácter numérico. Valor: 428
+El texto encontrado es  Cuentas Pend. de Vincular
+El valor es un carácter numérico. Valor: 78,87%
+El texto encontrado es  Porc. Vinculado
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Productores Nuevos
+El valor es un carácter numérico. Valor: 20
+El texto encontrado es  Total Logins (Visitas)
+El valor es un carácter numérico. Valor: 8
+El texto encontrado es  Usuarios Logueados
+El valor es un carácter numérico. Valor: 00:08:06
+El texto encontrado es  Tiempo Prom. Sesión
+El texto encontrado es  Pantallas Más Visitadas
+El texto encontrado es  Inicio
+El valor es un carácter numérico. Valor: 23,91% - 22
+El texto no fue encontrado Otros
+El valor es un carácter numérico. Valor: 16,30% - 15
+El texto no fue encontrado Granos
+El valor es un carácter numérico. Valor: 16,30% - 15
+El texto no fue encontrado Contratos
+El valor es un carácter numérico. Valor: 10,87% - 10
+El texto no fue encontrado Configuraciones
+El valor es un carácter numérico. Valor: 8,70% - 8
+El texto encontrado es  Pantallas Menos Visitadas
+El texto no fue encontrado Ventas
+El valor es un carácter numérico. Valor: 2,17% - 2
+El texto no fue encontrado Comprobantes
+El valor es un carácter numérico. Valor: 2,17% - 2
+El texto no fue encontrado Entregas
+El valor es un carácter numérico. Valor: 5,43% - 5
+El texto no fue encontrado Cuenta Corriente
+El valor es un carácter numérico. Valor: 5,43% - 5
+El texto no fue encontrado Acceso a Terceros
+El valor es un carácter numérico. Valor: 5,43% - 5
+El valor del gráfico es 56.
+El valor del gráfico es 2.
+]]></system-out>
+	</testcase>
+</testsuite>

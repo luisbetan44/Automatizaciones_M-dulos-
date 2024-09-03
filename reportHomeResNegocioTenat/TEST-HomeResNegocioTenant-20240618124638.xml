@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeResNegocioTenant-20240618124638" tests="1" file=".py" time="28.026" timestamp="2024-06-18T12:47:06" failures="0" errors="0" skipped="0">
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="28.026" timestamp="2024-06-18T12:47:06" file="HomeResNegocio.py" line="21">
+		<system-out><![CDATA[El texto encontrado es  Resumen de Mis Negocios de Granos
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg
+El texto no coincide con los valores esperados. Texto actual: '5.850.531,00 Kg'
+]]></system-out>
+	</testcase>
+</testsuite>

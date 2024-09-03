@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Cuentacontrato.contrato_tenant-20240408154103" tests="1" file="Cuentacontrato.py" time="64.789" timestamp="2024-04-08T15:48:50" failures="0" errors="0" skipped="0">
+	<testcase classname="Cuentacontrato.contrato_tenant" name="test_contrato_tenant" time="64.789" timestamp="2024-04-08T15:48:50" file="Cuentacontrato.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 121261
+El texto es visible para el usuario
+El texto fue validado correctamente: De Soja
+El texto es visible para el usuario: 'De 50.000,00 Kg Pactados'
+El texto es visible para el usuario: '50.000,00 Kg'
+El texto es visible para el usuario: '9.365,00 Kg'
+El texto es visible para el usuario: '3.700,00 Kg'
+]]></system-out>
+	</testcase>
+</testsuite>

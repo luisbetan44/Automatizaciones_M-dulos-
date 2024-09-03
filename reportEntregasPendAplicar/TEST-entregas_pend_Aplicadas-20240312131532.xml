@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="entregas_pend_Aplicadas-20240312131532" tests="1" file=".py" time="76.465" timestamp="2024-03-12T13:16:48" failures="0" errors="1" skipped="0">
+	<testcase classname="entregas_pend_Aplicadas" name="test_delivery_earrings" time="76.465" timestamp="2024-03-12T13:16:48" file="EntregasPendApli.py" line="22">
+		<error type="InvalidSelectorException" message="Message: invalid selector: The result of the xpath expression &quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]/text()&quot; is: [object Text]. It should be an element.
+  (Session info: chrome=122.0.6261.112); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FB01AD32+56930]
+	(No symbol) [0x00007FF7FAF8F632]
+	(No symbol) [0x00007FF7FAE442E5]
+	(No symbol) [0x00007FF7FAE49261]
+	(No symbol) [0x00007FF7FAE4B6EB]
+	(No symbol) [0x00007FF7FAE4B7B0]
+	(No symbol) [0x00007FF7FAE8955C]
+	(No symbol) [0x00007FF7FAE89A2C]
+	(No symbol) [0x00007FF7FAECA967]
+	(No symbol) [0x00007FF7FAEABCDF]
+	(No symbol) [0x00007FF7FAEC81E2]
+	(No symbol) [0x00007FF7FAEABA43]
+	(No symbol) [0x00007FF7FAE7D438]
+	(No symbol) [0x00007FF7FAE7E4D1]
+	GetHandleVerifier [0x00007FF7FB396ABD+3709933]
+	GetHandleVerifier [0x00007FF7FB3EFFFD+4075821]
+	GetHandleVerifier [0x00007FF7FB3E818F+4043455]
+	GetHandleVerifier [0x00007FF7FB0B9766+706710]
+	(No symbol) [0x00007FF7FAF9B90F]
+	(No symbol) [0x00007FF7FAF96AF4]
+	(No symbol) [0x00007FF7FAF96C4C]
+	(No symbol) [0x00007FF7FAF86904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\EntregasPendApli.py", line 101, in test_delivery_earrings
+    validate_chain_text_xpaht(self.driver, tn_bruto, tn_bruto_expected )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 995, in validate_chain_text_xpaht
+    text_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 156, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: The result of the xpath expression "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]/text()" is: [object Text]. It should be an element.
+  (Session info: chrome=122.0.6261.112); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FB01AD32+56930]
+	(No symbol) [0x00007FF7FAF8F632]
+	(No symbol) [0x00007FF7FAE442E5]
+	(No symbol) [0x00007FF7FAE49261]
+	(No symbol) [0x00007FF7FAE4B6EB]
+	(No symbol) [0x00007FF7FAE4B7B0]
+	(No symbol) [0x00007FF7FAE8955C]
+	(No symbol) [0x00007FF7FAE89A2C]
+	(No symbol) [0x00007FF7FAECA967]
+	(No symbol) [0x00007FF7FAEABCDF]
+	(No symbol) [0x00007FF7FAEC81E2]
+	(No symbol) [0x00007FF7FAEABA43]
+	(No symbol) [0x00007FF7FAE7D438]
+	(No symbol) [0x00007FF7FAE7E4D1]
+	GetHandleVerifier [0x00007FF7FB396ABD+3709933]
+	GetHandleVerifier [0x00007FF7FB3EFFFD+4075821]
+	GetHandleVerifier [0x00007FF7FB3E818F+4043455]
+	GetHandleVerifier [0x00007FF7FB0B9766+706710]
+	(No symbol) [0x00007FF7FAF9B90F]
+	(No symbol) [0x00007FF7FAF96AF4]
+	(No symbol) [0x00007FF7FAF96C4C]
+	(No symbol) [0x00007FF7FAF86904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

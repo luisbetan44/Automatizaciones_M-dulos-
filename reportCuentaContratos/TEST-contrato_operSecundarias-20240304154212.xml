@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="contrato_operSecundarias-20240304154212" tests="1" file=".py" time="64.320" timestamp="2024-03-04T15:43:16" failures="0" errors="1" skipped="0">
+	<testcase classname="contrato_operSecundarias" name="test_contratc_oparSecondary" time="64.320" timestamp="2024-03-04T15:43:16" file="CtaContOperSecundaria.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D016AD22+56930]
+	(No symbol) [0x00007FF7D00DF622]
+	(No symbol) [0x00007FF7CFF942E5]
+	(No symbol) [0x00007FF7CFF71D4C]
+	(No symbol) [0x00007FF7D00023F7]
+	(No symbol) [0x00007FF7D0017891]
+	(No symbol) [0x00007FF7CFFFBA43]
+	(No symbol) [0x00007FF7CFFCD438]
+	(No symbol) [0x00007FF7CFFCE4D1]
+	GetHandleVerifier [0x00007FF7D04E6AAD+3709933]
+	GetHandleVerifier [0x00007FF7D053FFED+4075821]
+	GetHandleVerifier [0x00007FF7D053817F+4043455]
+	GetHandleVerifier [0x00007FF7D0209756+706710]
+	(No symbol) [0x00007FF7D00EB8FF]
+	(No symbol) [0x00007FF7D00E6AE4]
+	(No symbol) [0x00007FF7D00E6C3C]
+	(No symbol) [0x00007FF7D00D68F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaContOperSecundaria.py", line 93, in test_contratc_oparSecondary
+    find_elements(self.driver, selet_list_contract )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D016AD22+56930]
+	(No symbol) [0x00007FF7D00DF622]
+	(No symbol) [0x00007FF7CFF942E5]
+	(No symbol) [0x00007FF7CFF71D4C]
+	(No symbol) [0x00007FF7D00023F7]
+	(No symbol) [0x00007FF7D0017891]
+	(No symbol) [0x00007FF7CFFFBA43]
+	(No symbol) [0x00007FF7CFFCD438]
+	(No symbol) [0x00007FF7CFFCE4D1]
+	GetHandleVerifier [0x00007FF7D04E6AAD+3709933]
+	GetHandleVerifier [0x00007FF7D053FFED+4075821]
+	GetHandleVerifier [0x00007FF7D053817F+4043455]
+	GetHandleVerifier [0x00007FF7D0209756+706710]
+	(No symbol) [0x00007FF7D00EB8FF]
+	(No symbol) [0x00007FF7D00E6AE4]
+	(No symbol) [0x00007FF7D00E6C3C]
+	(No symbol) [0x00007FF7D00D68F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El texto por texto no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

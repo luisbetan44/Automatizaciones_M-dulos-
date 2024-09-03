@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240605171440" tests="1" file=".py" time="101.297" timestamp="2024-06-05T17:16:21" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="101.297" timestamp="2024-06-05T17:16:21" file="Precio_Fijacion.py" line="21">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (1436, 765)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69D851F52+60322]
+	(No symbol) [0x00007FF69D7CCEC9]
+	(No symbol) [0x00007FF69D687EBA]
+	(No symbol) [0x00007FF69D6DF32E]
+	(No symbol) [0x00007FF69D6DCCF2]
+	(No symbol) [0x00007FF69D6DA18B]
+	(No symbol) [0x00007FF69D6D9356]
+	(No symbol) [0x00007FF69D6CB491]
+	(No symbol) [0x00007FF69D6FC21A]
+	(No symbol) [0x00007FF69D6CADB6]
+	(No symbol) [0x00007FF69D6FC430]
+	(No symbol) [0x00007FF69D71BC80]
+	(No symbol) [0x00007FF69D6FBFC3]
+	(No symbol) [0x00007FF69D6C9617]
+	(No symbol) [0x00007FF69D6CA211]
+	GetHandleVerifier [0x00007FF69DB694AD+3301629]
+	GetHandleVerifier [0x00007FF69DBB36D3+3605283]
+	GetHandleVerifier [0x00007FF69DBA9450+3563680]
+	GetHandleVerifier [0x00007FF69D904326+790390]
+	(No symbol) [0x00007FF69D7D750F]
+	(No symbol) [0x00007FF69D7D3404]
+	(No symbol) [0x00007FF69D7D3592]
+	(No symbol) [0x00007FF69D7C2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 139, in test_price_fixings
+    displace_element(self.driver, select_hand)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 531, in displace_element
+    search_input_element.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1436, 765)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69D851F52+60322]
+	(No symbol) [0x00007FF69D7CCEC9]
+	(No symbol) [0x00007FF69D687EBA]
+	(No symbol) [0x00007FF69D6DF32E]
+	(No symbol) [0x00007FF69D6DCCF2]
+	(No symbol) [0x00007FF69D6DA18B]
+	(No symbol) [0x00007FF69D6D9356]
+	(No symbol) [0x00007FF69D6CB491]
+	(No symbol) [0x00007FF69D6FC21A]
+	(No symbol) [0x00007FF69D6CADB6]
+	(No symbol) [0x00007FF69D6FC430]
+	(No symbol) [0x00007FF69D71BC80]
+	(No symbol) [0x00007FF69D6FBFC3]
+	(No symbol) [0x00007FF69D6C9617]
+	(No symbol) [0x00007FF69D6CA211]
+	GetHandleVerifier [0x00007FF69DB694AD+3301629]
+	GetHandleVerifier [0x00007FF69DBB36D3+3605283]
+	GetHandleVerifier [0x00007FF69DBA9450+3563680]
+	GetHandleVerifier [0x00007FF69D904326+790390]
+	(No symbol) [0x00007FF69D7D750F]
+	(No symbol) [0x00007FF69D7D3404]
+	(No symbol) [0x00007FF69D7D3592]
+	(No symbol) [0x00007FF69D7C2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+Se hizo clic en un icono de borrar.
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

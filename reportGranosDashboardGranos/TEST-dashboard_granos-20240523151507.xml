@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dashboard_granos-20240523151507" tests="1" file=".py" time="39.772" timestamp="2024-05-23T15:15:47" failures="0" errors="0" skipped="0">
+	<testcase classname="dashboard_granos" name="test_dashboard_grain" time="39.772" timestamp="2024-05-23T15:15:47" file="Dashboar.py" line="23">
+		<system-out><![CDATA[El status Pendiente está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

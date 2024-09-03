@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20240613103201" tests="1" file=".py" time="108.971" timestamp="2024-06-13T10:33:50" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="108.971" timestamp="2024-06-13T10:33:50" file="Onboarding.py" line="28">
+		<error type="InvalidArgumentException" message="Message: invalid argument: File not found : C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F0E51F52+60322]
+	(No symbol) [0x00007FF6F0DCCEC9]
+	(No symbol) [0x00007FF6F0C87EBA]
+	(No symbol) [0x00007FF6F0CD028B]
+	(No symbol) [0x00007FF6F0CFC21A]
+	(No symbol) [0x00007FF6F0CCADB6]
+	(No symbol) [0x00007FF6F0CFC430]
+	(No symbol) [0x00007FF6F0D1BC80]
+	(No symbol) [0x00007FF6F0CFBFC3]
+	(No symbol) [0x00007FF6F0CC9617]
+	(No symbol) [0x00007FF6F0CCA211]
+	GetHandleVerifier [0x00007FF6F11694AD+3301629]
+	GetHandleVerifier [0x00007FF6F11B36D3+3605283]
+	GetHandleVerifier [0x00007FF6F11A9450+3563680]
+	GetHandleVerifier [0x00007FF6F0F04326+790390]
+	(No symbol) [0x00007FF6F0DD750F]
+	(No symbol) [0x00007FF6F0DD3404]
+	(No symbol) [0x00007FF6F0DD3592]
+	(No symbol) [0x00007FF6F0DC2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Onboarding.py", line 200, in test_tenat_onboarding
+    upload_file_after_click(self.driver, select_field3, element_archive_4, archive3)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 911, in upload_file_after_click
+    upload_input_element.send_keys(file_path)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
+    self._execute(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidArgumentException: Message: invalid argument: File not found : C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F0E51F52+60322]
+	(No symbol) [0x00007FF6F0DCCEC9]
+	(No symbol) [0x00007FF6F0C87EBA]
+	(No symbol) [0x00007FF6F0CD028B]
+	(No symbol) [0x00007FF6F0CFC21A]
+	(No symbol) [0x00007FF6F0CCADB6]
+	(No symbol) [0x00007FF6F0CFC430]
+	(No symbol) [0x00007FF6F0D1BC80]
+	(No symbol) [0x00007FF6F0CFBFC3]
+	(No symbol) [0x00007FF6F0CC9617]
+	(No symbol) [0x00007FF6F0CCA211]
+	GetHandleVerifier [0x00007FF6F11694AD+3301629]
+	GetHandleVerifier [0x00007FF6F11B36D3+3605283]
+	GetHandleVerifier [0x00007FF6F11A9450+3563680]
+	GetHandleVerifier [0x00007FF6F0F04326+790390]
+	(No symbol) [0x00007FF6F0DD750F]
+	(No symbol) [0x00007FF6F0DD3404]
+	(No symbol) [0x00007FF6F0DD3592]
+	(No symbol) [0x00007FF6F0DC2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: DOCUMENTACIÓN
+El texto es visible para el usuario
+El texto fue validado correctamente: Para poder continuar al siguiente paso, será obligatorio completar los campos que se muestran a continuación.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+CUIT válido insertado: 10-11741643-2
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.xls' cargado con éxito después de hacer clic en el chevron!
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/app-checks/div/input' seleccionado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Estado Impositivo
+El texto es visible para el usuario
+El texto fue validado correctamente: Apertura de legajo
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+]]></system-out>
+	</testcase>
+</testsuite>

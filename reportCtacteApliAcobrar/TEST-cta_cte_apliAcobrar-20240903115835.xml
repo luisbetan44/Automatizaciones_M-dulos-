@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliAcobrar-20240903115835" tests="1" file=".py" time="111.761" timestamp="2024-09-03T12:00:27" failures="0" errors="1" skipped="0">
+	<testcase classname="cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="111.761" timestamp="2024-09-03T12:00:27" file="ctacte_apliAcobrar.py" line="17">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]/span[1]&quot;}
+  (Session info: chrome=128.0.6613.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FD88B5D2+29090]
+	(No symbol) [0x00007FF6FD7FE689]
+	(No symbol) [0x00007FF6FD6BB1CA]
+	(No symbol) [0x00007FF6FD70EFD7]
+	(No symbol) [0x00007FF6FD70F22C]
+	(No symbol) [0x00007FF6FD7597F7]
+	(No symbol) [0x00007FF6FD73672F]
+	(No symbol) [0x00007FF6FD7565D9]
+	(No symbol) [0x00007FF6FD736493]
+	(No symbol) [0x00007FF6FD7009B1]
+	(No symbol) [0x00007FF6FD701B11]
+	GetHandleVerifier [0x00007FF6FDBA8C5D+3295277]
+	GetHandleVerifier [0x00007FF6FDBF4843+3605523]
+	GetHandleVerifier [0x00007FF6FDBEA707+3564247]
+	GetHandleVerifier [0x00007FF6FD946EB6+797318]
+	(No symbol) [0x00007FF6FD80980F]
+	(No symbol) [0x00007FF6FD8053F4]
+	(No symbol) [0x00007FF6FD805580]
+	(No symbol) [0x00007FF6FD7F4A1F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_apliAcobrar.py", line 81, in test_ctacte_aplicada
+    validate_character_numeric_element(self.driver, total_to_pay)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1159, in validate_character_numeric_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]/span[1]"}
+  (Session info: chrome=128.0.6613.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FD88B5D2+29090]
+	(No symbol) [0x00007FF6FD7FE689]
+	(No symbol) [0x00007FF6FD6BB1CA]
+	(No symbol) [0x00007FF6FD70EFD7]
+	(No symbol) [0x00007FF6FD70F22C]
+	(No symbol) [0x00007FF6FD7597F7]
+	(No symbol) [0x00007FF6FD73672F]
+	(No symbol) [0x00007FF6FD7565D9]
+	(No symbol) [0x00007FF6FD736493]
+	(No symbol) [0x00007FF6FD7009B1]
+	(No symbol) [0x00007FF6FD701B11]
+	GetHandleVerifier [0x00007FF6FDBA8C5D+3295277]
+	GetHandleVerifier [0x00007FF6FDBF4843+3605523]
+	GetHandleVerifier [0x00007FF6FDBEA707+3564247]
+	GetHandleVerifier [0x00007FF6FD946EB6+797318]
+	(No symbol) [0x00007FF6FD80980F]
+	(No symbol) [0x00007FF6FD8053F4]
+	(No symbol) [0x00007FF6FD805580]
+	(No symbol) [0x00007FF6FD7F4A1F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

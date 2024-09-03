@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240531131719" tests="1" file=".py" time="21.688" timestamp="2024-05-31T13:17:41" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="21.688" timestamp="2024-05-31T13:17:41" file="Precio_Disponible.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (1471, 760)
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B8251F52+60322]
+	(No symbol) [0x00007FF6B81CCEC9]
+	(No symbol) [0x00007FF6B8087EBA]
+	(No symbol) [0x00007FF6B80DF32E]
+	(No symbol) [0x00007FF6B80DCCF2]
+	(No symbol) [0x00007FF6B80DA18B]
+	(No symbol) [0x00007FF6B80D9356]
+	(No symbol) [0x00007FF6B80CB491]
+	(No symbol) [0x00007FF6B80FC21A]
+	(No symbol) [0x00007FF6B80CADB6]
+	(No symbol) [0x00007FF6B80FC430]
+	(No symbol) [0x00007FF6B811BC80]
+	(No symbol) [0x00007FF6B80FBFC3]
+	(No symbol) [0x00007FF6B80C9617]
+	(No symbol) [0x00007FF6B80CA211]
+	GetHandleVerifier [0x00007FF6B85694AD+3301629]
+	GetHandleVerifier [0x00007FF6B85B36D3+3605283]
+	GetHandleVerifier [0x00007FF6B85A9450+3563680]
+	GetHandleVerifier [0x00007FF6B8304326+790390]
+	(No symbol) [0x00007FF6B81D750F]
+	(No symbol) [0x00007FF6B81D3404]
+	(No symbol) [0x00007FF6B81D3592]
+	(No symbol) [0x00007FF6B81C2F9F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Disponible.py", line 48, in test_granos_contratos
+    click_icon_delete(self.driver, delete_price_grain)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1315, in click_icon_delete
+    icono_borrar.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1471, 760)
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B8251F52+60322]
+	(No symbol) [0x00007FF6B81CCEC9]
+	(No symbol) [0x00007FF6B8087EBA]
+	(No symbol) [0x00007FF6B80DF32E]
+	(No symbol) [0x00007FF6B80DCCF2]
+	(No symbol) [0x00007FF6B80DA18B]
+	(No symbol) [0x00007FF6B80D9356]
+	(No symbol) [0x00007FF6B80CB491]
+	(No symbol) [0x00007FF6B80FC21A]
+	(No symbol) [0x00007FF6B80CADB6]
+	(No symbol) [0x00007FF6B80FC430]
+	(No symbol) [0x00007FF6B811BC80]
+	(No symbol) [0x00007FF6B80FBFC3]
+	(No symbol) [0x00007FF6B80C9617]
+	(No symbol) [0x00007FF6B80CA211]
+	GetHandleVerifier [0x00007FF6B85694AD+3301629]
+	GetHandleVerifier [0x00007FF6B85B36D3+3605283]
+	GetHandleVerifier [0x00007FF6B85A9450+3563680]
+	GetHandleVerifier [0x00007FF6B8304326+790390]
+	(No symbol) [0x00007FF6B81D750F]
+	(No symbol) [0x00007FF6B81D3404]
+	(No symbol) [0x00007FF6B81D3592]
+	(No symbol) [0x00007FF6B81C2F9F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+</testsuite>

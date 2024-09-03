@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="finanzaspagos-20240710105700" tests="1" file=".py" time="159.738" timestamp="2024-07-10T10:59:40" failures="0" errors="1" skipped="0">
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="159.738" timestamp="2024-07-10T10:59:40" file="finanzasPagos.py" line="22">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#layout-wrapper &gt; div &gt; div &gt; div &gt; app-payment-collection-detail-main &gt; div &gt; div &gt; div:nth-child(2) &gt; app-totalizer-forecast &gt; div &gt; div &gt; div.col-9.row.totalizer-values &gt; div:nth-child(2) &gt; span&quot;}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF74EF3EEA2+31554]
+	(No symbol) [0x00007FF74EEB7ED9]
+	(No symbol) [0x00007FF74ED7872A]
+	(No symbol) [0x00007FF74EDC8434]
+	(No symbol) [0x00007FF74EDC853C]
+	(No symbol) [0x00007FF74EE0F6A7]
+	(No symbol) [0x00007FF74EDED06F]
+	(No symbol) [0x00007FF74EE0C977]
+	(No symbol) [0x00007FF74EDECDD3]
+	(No symbol) [0x00007FF74EDBA33B]
+	(No symbol) [0x00007FF74EDBAED1]
+	GetHandleVerifier [0x00007FF74F248B1D+3217341]
+	GetHandleVerifier [0x00007FF74F295AE3+3532675]
+	GetHandleVerifier [0x00007FF74F28B0E0+3489152]
+	GetHandleVerifier [0x00007FF74EFEE776+750614]
+	(No symbol) [0x00007FF74EEC375F]
+	(No symbol) [0x00007FF74EEBEB14]
+	(No symbol) [0x00007FF74EEBECA2]
+	(No symbol) [0x00007FF74EEAE16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\finanzasPagos.py", line 129, in test_finance_payment
+    verify_todate(self.driver,select_todate)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1624, in verify_todate
+    elemento_fecha = driver.find_element(By.CSS_SELECTOR, selector)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#layout-wrapper > div > div > div > app-payment-collection-detail-main > div > div > div:nth-child(2) > app-totalizer-forecast > div > div > div.col-9.row.totalizer-values > div:nth-child(2) > span"}
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF74EF3EEA2+31554]
+	(No symbol) [0x00007FF74EEB7ED9]
+	(No symbol) [0x00007FF74ED7872A]
+	(No symbol) [0x00007FF74EDC8434]
+	(No symbol) [0x00007FF74EDC853C]
+	(No symbol) [0x00007FF74EE0F6A7]
+	(No symbol) [0x00007FF74EDED06F]
+	(No symbol) [0x00007FF74EE0C977]
+	(No symbol) [0x00007FF74EDECDD3]
+	(No symbol) [0x00007FF74EDBA33B]
+	(No symbol) [0x00007FF74EDBAED1]
+	GetHandleVerifier [0x00007FF74F248B1D+3217341]
+	GetHandleVerifier [0x00007FF74F295AE3+3532675]
+	GetHandleVerifier [0x00007FF74F28B0E0+3489152]
+	GetHandleVerifier [0x00007FF74EFEE776+750614]
+	(No symbol) [0x00007FF74EEC375F]
+	(No symbol) [0x00007FF74EEBEB14]
+	(No symbol) [0x00007FF74EEBECA2]
+	(No symbol) [0x00007FF74EEAE16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Listado de Comprobantes
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

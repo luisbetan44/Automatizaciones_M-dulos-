@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="insumos_producto.insumosProductos-failed" tests="1" file="insumos_producto.py" time="559.076" timestamp="2024-08-28T11:49:14" failures="0" errors="0" skipped="0">
+	<testcase classname="insumos_producto.insumosProductos" name="test_supplies_products" time="559.076" timestamp="2024-08-28T11:49:14" file="insumos_producto.py" line="19">
+		<system-out><![CDATA[El texto encontrado es  PRODUCTOS
+¡Input encontrado y enviado con éxito!
+¡Valor '30 días' ingresado y opción seleccionada con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+No se encontraron los datos para borrar.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+El texto encontrado es  Mis Órdenes
+El texto encontrado es  Número
+El valor es un carácter numérico. Valor: 105
+El texto encontrado es  Fecha
+El texto encontrado '05/08/2024' no coincide con el esperado ''
+El texto encontrado es  Hora
+El texto encontrado '09:53 hs.' no coincide con el esperado ''
+El texto encontrado es  Productor
+El texto encontrado '(1023) JUAN DEMO' no coincide con el esperado ''
+El texto encontrado es  Estado
+El texto encontrado 'Generada' no coincide con el esperado ''
+]]></system-out>
+	</testcase>
+</testsuite>

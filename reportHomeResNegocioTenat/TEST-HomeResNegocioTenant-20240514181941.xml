@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeResNegocioTenant-20240514181941" tests="1" file=".py" time="522.450" timestamp="2024-05-14T18:28:23" failures="0" errors="0" skipped="0">
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="522.450" timestamp="2024-05-14T18:28:23" file="HomeResNegocio.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Resumen de Mis Negocios de Granos
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg
+Tiempo de espera agotado. El elemento no se ha vuelto visible.
+]]></system-out>
+	</testcase>
+</testsuite>

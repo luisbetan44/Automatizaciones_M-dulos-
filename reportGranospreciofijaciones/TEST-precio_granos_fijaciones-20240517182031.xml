@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240517182031" tests="1" file=".py" time="90.289" timestamp="2024-05-17T18:22:02" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="90.289" timestamp="2024-05-17T18:22:02" file="Precio_Fijacion.py" line="21">
+		<error type="ElementNotInteractableException" message="Message: element not interactable
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A07E22C2+60002]
+	(No symbol) [0x00007FF6A075CA59]
+	(No symbol) [0x00007FF6A0617D09]
+	(No symbol) [0x00007FF6A06610F3]
+	(No symbol) [0x00007FF6A065F26B]
+	(No symbol) [0x00007FF6A068C28A]
+	(No symbol) [0x00007FF6A065ADF6]
+	(No symbol) [0x00007FF6A068C4A0]
+	(No symbol) [0x00007FF6A06ABCC7]
+	(No symbol) [0x00007FF6A068C033]
+	(No symbol) [0x00007FF6A0659657]
+	(No symbol) [0x00007FF6A065A251]
+	GetHandleVerifier [0x00007FF6A0AF3E2D+3278285]
+	GetHandleVerifier [0x00007FF6A0B40190+3590448]
+	GetHandleVerifier [0x00007FF6A0B361D0+3549552]
+	GetHandleVerifier [0x00007FF6A0891DE6+779654]
+	(No symbol) [0x00007FF6A0767ACF]
+	(No symbol) [0x00007FF6A0762EE4]
+	(No symbol) [0x00007FF6A0763072]
+	(No symbol) [0x00007FF6A0752C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 142, in test_price_fixings
+    verify_and_click(self.driver, number_generate)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1529, in verify_and_click
+    result_element.send_keys(Keys.TAB)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
+    self._execute(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A07E22C2+60002]
+	(No symbol) [0x00007FF6A075CA59]
+	(No symbol) [0x00007FF6A0617D09]
+	(No symbol) [0x00007FF6A06610F3]
+	(No symbol) [0x00007FF6A065F26B]
+	(No symbol) [0x00007FF6A068C28A]
+	(No symbol) [0x00007FF6A065ADF6]
+	(No symbol) [0x00007FF6A068C4A0]
+	(No symbol) [0x00007FF6A06ABCC7]
+	(No symbol) [0x00007FF6A068C033]
+	(No symbol) [0x00007FF6A0659657]
+	(No symbol) [0x00007FF6A065A251]
+	GetHandleVerifier [0x00007FF6A0AF3E2D+3278285]
+	GetHandleVerifier [0x00007FF6A0B40190+3590448]
+	GetHandleVerifier [0x00007FF6A0B361D0+3549552]
+	GetHandleVerifier [0x00007FF6A0891DE6+779654]
+	(No symbol) [0x00007FF6A0767ACF]
+	(No symbol) [0x00007FF6A0762EE4]
+	(No symbol) [0x00007FF6A0763072]
+	(No symbol) [0x00007FF6A0752C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+Buscando el número: 9693
+Elemento localizado para el número: 9693
+]]></system-out>
+	</testcase>
+</testsuite>

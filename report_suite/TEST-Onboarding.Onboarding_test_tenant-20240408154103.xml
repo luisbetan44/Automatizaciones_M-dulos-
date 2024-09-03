@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding.Onboarding_test_tenant-20240408154103" tests="1" file="Onboarding.py" time="14.788" timestamp="2024-04-08T16:07:39" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding.Onboarding_test_tenant" name="test_tenat_onboarding" time="14.788" timestamp="2024-04-08T16:07:39" file="Onboarding.py" line="28">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;span _ngcontent-wrg-c141=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (98, 173). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-backdrop-hide&quot; style=&quot;overflow-y: hidden;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70AEF7072+63090]
+	(No symbol) [0x00007FF70AE62CC2]
+	(No symbol) [0x00007FF70ACFEC65]
+	(No symbol) [0x00007FF70AD4BB34]
+	(No symbol) [0x00007FF70AD49954]
+	(No symbol) [0x00007FF70AD47164]
+	(No symbol) [0x00007FF70AD45EF9]
+	(No symbol) [0x00007FF70AD3A708]
+	(No symbol) [0x00007FF70AD66FDA]
+	(No symbol) [0x00007FF70AD3A00A]
+	(No symbol) [0x00007FF70AD671F0]
+	(No symbol) [0x00007FF70AD83412]
+	(No symbol) [0x00007FF70AD66D83]
+	(No symbol) [0x00007FF70AD383A8]
+	(No symbol) [0x00007FF70AD39441]
+	GetHandleVerifier [0x00007FF70B2F25CD+4238285]
+	GetHandleVerifier [0x00007FF70B32F72D+4488493]
+	GetHandleVerifier [0x00007FF70B327A0F+4456463]
+	GetHandleVerifier [0x00007FF70AFD05B6+953270]
+	(No symbol) [0x00007FF70AE6E58F]
+	(No symbol) [0x00007FF70AE69264]
+	(No symbol) [0x00007FF70AE6939B]
+	(No symbol) [0x00007FF70AE59BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Onboarding.py", line 38, in test_tenat_onboarding
+    find_elements(self.driver,select_config)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 21, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-wrg-c141="">...</span> is not clickable at point (98, 173). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-hide" style="overflow-y: hidden;">...</div>
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF70AEF7072+63090]
+	(No symbol) [0x00007FF70AE62CC2]
+	(No symbol) [0x00007FF70ACFEC65]
+	(No symbol) [0x00007FF70AD4BB34]
+	(No symbol) [0x00007FF70AD49954]
+	(No symbol) [0x00007FF70AD47164]
+	(No symbol) [0x00007FF70AD45EF9]
+	(No symbol) [0x00007FF70AD3A708]
+	(No symbol) [0x00007FF70AD66FDA]
+	(No symbol) [0x00007FF70AD3A00A]
+	(No symbol) [0x00007FF70AD671F0]
+	(No symbol) [0x00007FF70AD83412]
+	(No symbol) [0x00007FF70AD66D83]
+	(No symbol) [0x00007FF70AD383A8]
+	(No symbol) [0x00007FF70AD39441]
+	GetHandleVerifier [0x00007FF70B2F25CD+4238285]
+	GetHandleVerifier [0x00007FF70B32F72D+4488493]
+	GetHandleVerifier [0x00007FF70B327A0F+4456463]
+	GetHandleVerifier [0x00007FF70AFD05B6+953270]
+	(No symbol) [0x00007FF70AE6E58F]
+	(No symbol) [0x00007FF70AE69264]
+	(No symbol) [0x00007FF70AE6939B]
+	(No symbol) [0x00007FF70AE59BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+
+]]></error>
+	</testcase>
+</testsuite>

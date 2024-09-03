@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeResNegocioTenant-20240514170531" tests="1" file=".py" time="27.712" timestamp="2024-05-14T17:05:59" failures="0" errors="1" skipped="0">
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="27.712" timestamp="2024-05-14T17:05:59" file="HomeResNegocio.py" line="18">
+		<error type="TypeError" message="validate_text_by_strt() takes 2 positional arguments but 3 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\HomeResNegocio.py", line 29, in test_start_tenant
+    validate_text_by_strt(self.driver, page_hello, text_expected  )
+TypeError: validate_text_by_strt() takes 2 positional arguments but 3 were given
+]]></error>
+	</testcase>
+</testsuite>

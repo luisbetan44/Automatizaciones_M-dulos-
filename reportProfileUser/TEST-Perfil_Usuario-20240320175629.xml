@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Perfil_Usuario-20240320175629" tests="1" file=".py" time="54.612" timestamp="2024-03-20T17:57:23" failures="0" errors="1" skipped="0">
+	<testcase classname="Perfil_Usuario" name="test_Profile_User" time="54.612" timestamp="2024-03-20T17:57:23" file="Profile_User.py" line="21">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;The result of the xpath expression \&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-my-profile/div/div[1]/comment()[1]\&quot; is: [object Comment]. It should be an element.&quot;}
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A52C7062+63090]
+	(No symbol) [0x00007FF6A5232CB2]
+	(No symbol) [0x00007FF6A50CEC65]
+	(No symbol) [0x00007FF6A50D3D21]
+	(No symbol) [0x00007FF6A50D6159]
+	(No symbol) [0x00007FF6A50D6200]
+	(No symbol) [0x00007FF6A511460C]
+	(No symbol) [0x00007FF6A5114ADC]
+	(No symbol) [0x00007FF6A5155B37]
+	(No symbol) [0x00007FF6A513701F]
+	(No symbol) [0x00007FF6A5153412]
+	(No symbol) [0x00007FF6A5136D83]
+	(No symbol) [0x00007FF6A51083A8]
+	(No symbol) [0x00007FF6A5109441]
+	GetHandleVerifier [0x00007FF6A56C25CD+4238301]
+	GetHandleVerifier [0x00007FF6A56FF72D+4488509]
+	GetHandleVerifier [0x00007FF6A56F7A0F+4456479]
+	GetHandleVerifier [0x00007FF6A53A05A6+953270]
+	(No symbol) [0x00007FF6A523E57F]
+	(No symbol) [0x00007FF6A5239254]
+	(No symbol) [0x00007FF6A523938B]
+	(No symbol) [0x00007FF6A5229BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Profile_User.py", line 137, in test_Profile_User
+    validate_text(self.driver, messeger_finished, value_expected  )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 435, in validate_text
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"The result of the xpath expression \"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-my-profile/div/div[1]/comment()[1]\" is: [object Comment]. It should be an element."}
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A52C7062+63090]
+	(No symbol) [0x00007FF6A5232CB2]
+	(No symbol) [0x00007FF6A50CEC65]
+	(No symbol) [0x00007FF6A50D3D21]
+	(No symbol) [0x00007FF6A50D6159]
+	(No symbol) [0x00007FF6A50D6200]
+	(No symbol) [0x00007FF6A511460C]
+	(No symbol) [0x00007FF6A5114ADC]
+	(No symbol) [0x00007FF6A5155B37]
+	(No symbol) [0x00007FF6A513701F]
+	(No symbol) [0x00007FF6A5153412]
+	(No symbol) [0x00007FF6A5136D83]
+	(No symbol) [0x00007FF6A51083A8]
+	(No symbol) [0x00007FF6A5109441]
+	GetHandleVerifier [0x00007FF6A56C25CD+4238301]
+	GetHandleVerifier [0x00007FF6A56FF72D+4488509]
+	GetHandleVerifier [0x00007FF6A56F7A0F+4456479]
+	GetHandleVerifier [0x00007FF6A53A05A6+953270]
+	(No symbol) [0x00007FF6A523E57F]
+	(No symbol) [0x00007FF6A5239254]
+	(No symbol) [0x00007FF6A523938B]
+	(No symbol) [0x00007FF6A5229BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  MIS DATOS
+El texto encontrado es  Datos personales
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CuentaContrato.contrato_tenant-20240319121317" tests="1" file="CuentaContrato.py" time="64.952" timestamp="2024-03-19T12:20:37" failures="0" errors="0" skipped="0">
+	<testcase classname="CuentaContrato.contrato_tenant" name="test_contrato_tenant" time="64.952" timestamp="2024-03-19T12:20:37" file="CuentaContrato.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Estado De Mis Contratos
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 121261
+El texto es visible para el usuario
+El texto fue validado correctamente: De Soja
+El texto es visible para el usuario: 'De 50,00 Tn Pactados'
+El texto es visible para el usuario: '50,00 Tn'
+El texto es visible para el usuario: '9,37 Tn'
+El texto es visible para el usuario: '3,70 Tn'
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

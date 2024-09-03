@@ -1,7 +1,8 @@
+
 import unittest
 import xmlrunner
 import time
-from Elements import find_and_click_element, find_elements, validate_chain_text_xpaht, validate_text, validate_text_by_text, validate_text_visible, validate_text_visible_selector
+from Elements import find_and_click_element, find_elements, validate_chain_text_xpaht, validate_character_numeric_element, validate_text, validate_text_by_text, validate_text_visible, validate_text_visible_selector
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -57,13 +58,13 @@ class cuenta_ventas(unittest.TestCase):
         find_elements(self.driver,clean_filter )
         time.sleep(2)
 
-        # aplicar filtro
+        # aplicar filtro  
 
         apply_product_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[1]/div/img"
         find_elements(self.driver,apply_product_filter )
         time.sleep(2)
 
-        apply_Campaign_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[3]/div/div"
+        apply_Campaign_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[2]/div/div"
         find_elements(self.driver,apply_Campaign_filter )
         time.sleep(2)
 
@@ -72,17 +73,17 @@ class cuenta_ventas(unittest.TestCase):
         time.sleep(2)
 
         arrow_filter1 = "/html/body/div/div[1]/span[1]"
-        amount_click1 = 10
+        amount_click1 = 8
         find_and_click_element(self.driver, arrow_filter1, amount_click1)
 
-        select_date1 = "/html/body/div/div[2]/div/div[2]/div/span[3]"
+        select_date1 = "/html/body/div/div[2]/div/div[2]/div/span[2]"
         find_elements(self.driver, select_date1 )
 
         arrow_filter2 = "/html/body/div/div[1]/span[2]"
         amount_click2 = 1
         find_and_click_element(self.driver, arrow_filter2, amount_click2)
 
-        select_date2 = "/html/body/div/div[2]/div/div[2]/div/span[35]"
+        select_date2 = "/html/body/div/div[2]/div/div[2]/div/span[31]"
         find_elements(self.driver, select_date2 )
 
         apply_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
@@ -116,61 +117,72 @@ class cuenta_ventas(unittest.TestCase):
         find_elements(self.driver, select_format )
         time.sleep(3)
 
-        # ingresar al detalle de la tercera venta 
+       
          
-        insert_detail = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[3]/td[1]"
-        find_elements(self.driver, insert_detail )
-        time.sleep(3)
-
-        # validar número de venta 
-
-        number_sale = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/app-header-for-detail/div[1]/div"
-        number_sale_expected = "Venta F 0001 00118245"
-        validate_text_visible(self.driver, number_sale, number_sale_expected ) 
-
-        # validar cantidad de kilos 
-
-        amount_kilos = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/app-header-for-detail/div[2]/div/div[2]/div[2]"
-        amount_kilos_expected = ["150.000,00 Kg", "150,00 Tn", "1.500,00 QQ"]
-        validate_chain_text_xpaht(self.driver, amount_kilos, amount_kilos_expected)
         
-        # validar producto
+   
+
+         # validar venta
+
+   
+
+        validate_product = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[2]"
+        validate_product_expected = "Producto"
+        validate_text(self.driver, validate_product, validate_product_expected)
+        
      
-        type_product = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/app-header-for-detail/div[2]/div/div[2]/div[3]"
-        type_product_expected = "De Soja"
+        type_product = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/div/span"
+        type_product_expected = "Soja"
         validate_text_visible(self.driver,type_product, type_product_expected ) 
-     # validar datos de la venta 
 
-        title_data = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/h2[1]"
-        title_data_expected = "DATOS DE LA VENTA"
-        validate_text_visible(self.driver,title_data, title_data_expected )   
+        validate_date = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[3]"
+        validate_date_expected = "Fecha"
+        validate_text(self.driver, validate_date, validate_date_expected)
 
-    # Validar fecha, campaña, mercado, fecha de vencimiento, numero de contrato  
-
-        date_data = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/div[1]/div[1]"
-        date_data_expected = "29/03/2023"
+        date_data = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[2]/span/div/span"
+        date_data_expected = "13/12/2023"
         validate_text_visible(self.driver, date_data, date_data_expected )
 
-        campaign_sale = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/div[1]/div[2]"
-        campaign_sale_expected = "21/22"
-        validate_text_visible(self.driver, campaign_sale, campaign_sale_expected )
+
+        validate_number_boucher = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[4]"
+        validate_number_boucher_expected = "Comprobante"
+        validate_text(self.driver, validate_number_boucher, validate_number_boucher_expected)
+
+        validate_number = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[3]/span/div/span"
+        validate_number_expected = "F 0001 00121262"
+        validate_text(self.driver, validate_number, validate_number_expected)
+
+        account_sales_title = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[5]"
+        account_sales_title_expected = ["Tn Fijados","QQ Fijados","Kg Fijados"]
+        validate_chain_text_xpaht(self.driver, account_sales_title ,account_sales_title_expected)
 
 
-
-        expected_text = "03 Playa S. Miguel (T6 y M. Pampa)"
-        validate_text_by_text(self.driver, expected_text)
+        account_sales = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[4]/span/div/span'
+        validate_character_numeric_element(self.driver, account_sales  )
        
+        
+        title_price = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[6]"
+        title_price_expected = "Precio"
+        validate_text_visible(self.driver,title_price, title_price_expected ) 
+
+        number_price = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[5]/span/div/span'
+        validate_character_numeric_element(self.driver, number_price  ) 
+
+        validate_title_money = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[7]"
+        validate_title_money_expected = "Moneda"
+        validate_text(self.driver, validate_title_money, validate_title_money_expected) 
+
+        validate_type_money = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[6]/span/div/span"
+        validate_type_money_expected = "ARS"
+        validate_text(self.driver, validate_type_money, validate_type_money_expected) 
+
+  
 
         
 
-        date_expiration = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-sales/div[1]/section/div/div[1]/div[4]"
-        date_expiration_expected = "24/08/2022"
-        validate_text_visible(self.driver, date_expiration, date_expiration_expected )  
-
         
-        go_out_list = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a"
-        find_elements(self.driver, go_out_list )
-        time.sleep(2)
+        
+       
 
         
 
@@ -190,6 +202,7 @@ class cuenta_ventas(unittest.TestCase):
 
 
 if __name__ == "__main__":
+  
   test_suite = unittest.TestLoader().loadTestsFromTestCase(cuenta_ventas)
   runner = xmlrunner.XMLTestRunner(output='reportCuentaVentas')
   runner.run(test_suite)

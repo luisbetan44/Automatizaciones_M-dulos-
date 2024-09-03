@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240517163541" tests="2" file=".py" time="85.509" timestamp="2024-05-17T16:37:07" failures="0" errors="2" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="0.000" timestamp="0001-01-01T00:00:00" file="GranosContratos.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 212, in test_granos_contratos
+    find_elements(self.driver, select_button_continue)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  CONTRATOS
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+]]></system-out>
+	</testcase>
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="85.509" timestamp="2024-05-17T16:37:07" file="GranosContratos.py" line="23">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF608B822C2+60002]
+	(No symbol) [0x00007FF608AFCA59]
+	(No symbol) [0x00007FF6089B7EDA]
+	(No symbol) [0x00007FF60898D5B5]
+	(No symbol) [0x00007FF608A33727]
+	(No symbol) [0x00007FF608A3A882]
+	(No symbol) [0x00007FF608A2C250]
+	(No symbol) [0x00007FF6089F9657]
+	(No symbol) [0x00007FF6089FA251]
+	GetHandleVerifier [0x00007FF608E93E2D+3278285]
+	GetHandleVerifier [0x00007FF608EE0190+3590448]
+	GetHandleVerifier [0x00007FF608ED61D0+3549552]
+	GetHandleVerifier [0x00007FF608C31DE6+779654]
+	(No symbol) [0x00007FF608B07ACF]
+	(No symbol) [0x00007FF608B02EE4]
+	(No symbol) [0x00007FF608B03072]
+	(No symbol) [0x00007FF608AF2C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 232, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF608B822C2+60002]
+	(No symbol) [0x00007FF608AFCA59]
+	(No symbol) [0x00007FF6089B7EDA]
+	(No symbol) [0x00007FF60898D5B5]
+	(No symbol) [0x00007FF608A33727]
+	(No symbol) [0x00007FF608A3A882]
+	(No symbol) [0x00007FF608A2C250]
+	(No symbol) [0x00007FF6089F9657]
+	(No symbol) [0x00007FF6089FA251]
+	GetHandleVerifier [0x00007FF608E93E2D+3278285]
+	GetHandleVerifier [0x00007FF608EE0190+3590448]
+	GetHandleVerifier [0x00007FF608ED61D0+3549552]
+	GetHandleVerifier [0x00007FF608C31DE6+779654]
+	(No symbol) [0x00007FF608B07ACF]
+	(No symbol) [0x00007FF608B02EE4]
+	(No symbol) [0x00007FF608B03072]
+	(No symbol) [0x00007FF608AF2C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  CONTRATOS
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

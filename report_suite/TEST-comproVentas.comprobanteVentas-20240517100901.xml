@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comproVentas.comprobanteVentas-20240517100901" tests="1" file="comproVentas.py" time="119.733" timestamp="2024-05-17T10:51:24" failures="0" errors="0" skipped="0">
+	<testcase classname="comproVentas.comprobanteVentas" name="test_vouchers_sales" time="119.733" timestamp="2024-05-17T10:51:24" file="comproVentas.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado 4 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Mis Comprobantes
+El texto encontrado es  F 0001 00120623
+El texto no fue encontrado F 0001 00125168
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

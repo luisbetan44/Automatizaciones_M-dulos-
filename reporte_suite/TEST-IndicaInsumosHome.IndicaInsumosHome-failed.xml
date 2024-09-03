@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="indicaInsumosHome.IndicaInsumosHome-failed" tests="1" file="indicaInsumosHome.py" time="59.067" timestamp="2024-08-28T11:38:37" failures="0" errors="0" skipped="0">
+	<testcase classname="indicaInsumosHome.IndicaInsumosHome" name="test__indicators_home" time="59.067" timestamp="2024-08-28T11:38:37" file="indicaInsumosHome.py" line="18">
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no se ha vuelto visible.
+El texto encontrado es  Insumos Pendientes de Retirar
+El texto es visible para el usuario: 'Fertilizante'
+El valor es un carácter numérico. Valor: Cant: 180.001,00
+El texto encontrado es  Mercadería Remitida
+El texto es visible para el usuario: 'Agroquimicos'
+El valor es un carácter numérico. Valor: Cant: 17.029,00
+El texto encontrado es  Mercadería Facturada
+El texto es visible para el usuario: 'Fertilizantes'
+El valor es un carácter numérico. Valor: Cant: 180.000,00
+]]></system-out>
+	</testcase>
+</testsuite>

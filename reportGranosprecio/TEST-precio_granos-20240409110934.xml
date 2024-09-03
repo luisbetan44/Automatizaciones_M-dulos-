@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240409110934" tests="1" file=".py" time="17.190" timestamp="2024-04-09T11:09:52" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="17.190" timestamp="2024-04-09T11:09:52" file="Precio_Granos.py" line="23">
+		<error type="TypeError" message="click_icon_delete() missing 1 required positional argument: 'css_selector'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Granos.py", line 46, in test_granos_contratos
+    click_icon_delete(self.driver, delete_price_grain)
+TypeError: click_icon_delete() missing 1 required positional argument: 'css_selector'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+</testsuite>

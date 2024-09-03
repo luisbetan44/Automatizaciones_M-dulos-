@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeResNegocioTenant-20240514173126" tests="1" file=".py" time="19.707" timestamp="2024-05-14T17:31:45" failures="0" errors="1" skipped="0">
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="19.707" timestamp="2024-05-14T17:31:45" file="HomeResNegocio.py" line="18">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression Resumen de Mis Negocios de Granos because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Resumen de Mis Negocios de Granos' is not a valid XPath expression.&quot;}
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF742C21522+60802]
+	(No symbol) [0x00007FF742B9AC22]
+	(No symbol) [0x00007FF742A57CE4]
+	(No symbol) [0x00007FF742A5DE26]
+	(No symbol) [0x00007FF742A601DB]
+	(No symbol) [0x00007FF742A60280]
+	(No symbol) [0x00007FF742AA6A11]
+	(No symbol) [0x00007FF742AA6E1C]
+	(No symbol) [0x00007FF742AECE37]
+	(No symbol) [0x00007FF742ACABBF]
+	(No symbol) [0x00007FF742AEA224]
+	(No symbol) [0x00007FF742ACA923]
+	(No symbol) [0x00007FF742A98FEC]
+	(No symbol) [0x00007FF742A99C21]
+	GetHandleVerifier [0x00007FF742F241BD+3217949]
+	GetHandleVerifier [0x00007FF742F66157+3488183]
+	GetHandleVerifier [0x00007FF742F5F0DF+3459391]
+	GetHandleVerifier [0x00007FF742CDB8E6+823622]
+	(No symbol) [0x00007FF742BA5FBF]
+	(No symbol) [0x00007FF742BA0EE4]
+	(No symbol) [0x00007FF742BA1072]
+	(No symbol) [0x00007FF742B918C4]
+	BaseThreadInitThunk [0x00007FFCF149257D+29]
+	RtlUserThreadStart [0x00007FFCF2C2AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\HomeResNegocio.py", line 28, in test_start_tenant
+    validate_strt(self.driver, title_expected,title_obtained)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 509, in validate_strt
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression Resumen de Mis Negocios de Granos because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string 'Resumen de Mis Negocios de Granos' is not a valid XPath expression."}
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF742C21522+60802]
+	(No symbol) [0x00007FF742B9AC22]
+	(No symbol) [0x00007FF742A57CE4]
+	(No symbol) [0x00007FF742A5DE26]
+	(No symbol) [0x00007FF742A601DB]
+	(No symbol) [0x00007FF742A60280]
+	(No symbol) [0x00007FF742AA6A11]
+	(No symbol) [0x00007FF742AA6E1C]
+	(No symbol) [0x00007FF742AECE37]
+	(No symbol) [0x00007FF742ACABBF]
+	(No symbol) [0x00007FF742AEA224]
+	(No symbol) [0x00007FF742ACA923]
+	(No symbol) [0x00007FF742A98FEC]
+	(No symbol) [0x00007FF742A99C21]
+	GetHandleVerifier [0x00007FF742F241BD+3217949]
+	GetHandleVerifier [0x00007FF742F66157+3488183]
+	GetHandleVerifier [0x00007FF742F5F0DF+3459391]
+	GetHandleVerifier [0x00007FF742CDB8E6+823622]
+	(No symbol) [0x00007FF742BA5FBF]
+	(No symbol) [0x00007FF742BA0EE4]
+	(No symbol) [0x00007FF742BA1072]
+	(No symbol) [0x00007FF742B918C4]
+	BaseThreadInitThunk [0x00007FFCF149257D+29]
+	RtlUserThreadStart [0x00007FFCF2C2AA48+40]
+
+]]></error>
+	</testcase>
+</testsuite>

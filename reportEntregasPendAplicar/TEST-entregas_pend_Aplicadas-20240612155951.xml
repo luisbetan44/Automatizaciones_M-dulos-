@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="entregas_pend_Aplicadas-20240612155951" tests="1" file=".py" time="64.694" timestamp="2024-06-12T16:00:56" failures="0" errors="1" skipped="0">
+	<testcase classname="entregas_pend_Aplicadas" name="test_delivery_earrings" time="64.694" timestamp="2024-06-12T16:00:56" file="EntregasPendApli.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;button _ngcontent-reg-c215=&quot;&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot; class=&quot;btn dropdown-toggle dropdown-toggle-split shadow-none btn-primary&quot;&gt;&lt;/button&gt; is not clickable at point (1370, 147). Other element would receive the click: &lt;span _ngcontent-reg-c156=&quot;&quot; class=&quot;fw-bold mb-2 mt-2&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E6B31F52+60322]
+	(No symbol) [0x00007FF7E6AACEC9]
+	(No symbol) [0x00007FF7E6967EBA]
+	(No symbol) [0x00007FF7E69BF32E]
+	(No symbol) [0x00007FF7E69BCCF2]
+	(No symbol) [0x00007FF7E69BA18B]
+	(No symbol) [0x00007FF7E69B9356]
+	(No symbol) [0x00007FF7E69AB491]
+	(No symbol) [0x00007FF7E69DC21A]
+	(No symbol) [0x00007FF7E69AADB6]
+	(No symbol) [0x00007FF7E69DC430]
+	(No symbol) [0x00007FF7E69FBC80]
+	(No symbol) [0x00007FF7E69DBFC3]
+	(No symbol) [0x00007FF7E69A9617]
+	(No symbol) [0x00007FF7E69AA211]
+	GetHandleVerifier [0x00007FF7E6E494AD+3301629]
+	GetHandleVerifier [0x00007FF7E6E936D3+3605283]
+	GetHandleVerifier [0x00007FF7E6E89450+3563680]
+	GetHandleVerifier [0x00007FF7E6BE4326+790390]
+	(No symbol) [0x00007FF7E6AB750F]
+	(No symbol) [0x00007FF7E6AB3404]
+	(No symbol) [0x00007FF7E6AB3592]
+	(No symbol) [0x00007FF7E6AA2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\EntregasPendApli.py", line 133, in test_delivery_earrings
+    find_elements(self.driver, selet_button_download )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button _ngcontent-reg-c215="" type="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn dropdown-toggle dropdown-toggle-split shadow-none btn-primary"></button> is not clickable at point (1370, 147). Other element would receive the click: <span _ngcontent-reg-c156="" class="fw-bold mb-2 mt-2">...</span>
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E6B31F52+60322]
+	(No symbol) [0x00007FF7E6AACEC9]
+	(No symbol) [0x00007FF7E6967EBA]
+	(No symbol) [0x00007FF7E69BF32E]
+	(No symbol) [0x00007FF7E69BCCF2]
+	(No symbol) [0x00007FF7E69BA18B]
+	(No symbol) [0x00007FF7E69B9356]
+	(No symbol) [0x00007FF7E69AB491]
+	(No symbol) [0x00007FF7E69DC21A]
+	(No symbol) [0x00007FF7E69AADB6]
+	(No symbol) [0x00007FF7E69DC430]
+	(No symbol) [0x00007FF7E69FBC80]
+	(No symbol) [0x00007FF7E69DBFC3]
+	(No symbol) [0x00007FF7E69A9617]
+	(No symbol) [0x00007FF7E69AA211]
+	GetHandleVerifier [0x00007FF7E6E494AD+3301629]
+	GetHandleVerifier [0x00007FF7E6E936D3+3605283]
+	GetHandleVerifier [0x00007FF7E6E89450+3563680]
+	GetHandleVerifier [0x00007FF7E6BE4326+790390]
+	(No symbol) [0x00007FF7E6AB750F]
+	(No symbol) [0x00007FF7E6AB3404]
+	(No symbol) [0x00007FF7E6AB3592]
+	(No symbol) [0x00007FF7E6AA2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado 11 veces con éxito!
+El texto es visible para el usuario: '431.360,00'
+El texto es visible para el usuario: '417.677,00'
+]]></system-out>
+	</testcase>
+</testsuite>

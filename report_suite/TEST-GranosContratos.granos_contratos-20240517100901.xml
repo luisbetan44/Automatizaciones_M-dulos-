@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GranosContratos.granos_contratos-20240517100901" tests="2" file="GranosContratos.py" time="211.460" timestamp="2024-05-17T10:17:52" failures="0" errors="2" skipped="0">
+	<testcase classname="GranosContratos.granos_contratos" name="test_granos_contratos" time="0.000" timestamp="0001-01-01T00:00:00" file="GranosContratos.py" line="23">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F09F22C2+60002]
+	(No symbol) [0x00007FF7F096CA59]
+	(No symbol) [0x00007FF7F0827EDA]
+	(No symbol) [0x00007FF7F07FD5B5]
+	(No symbol) [0x00007FF7F08A3727]
+	(No symbol) [0x00007FF7F08BB3A1]
+	(No symbol) [0x00007FF7F089C033]
+	(No symbol) [0x00007FF7F0869657]
+	(No symbol) [0x00007FF7F086A251]
+	GetHandleVerifier [0x00007FF7F0D03E2D+3278285]
+	GetHandleVerifier [0x00007FF7F0D50190+3590448]
+	GetHandleVerifier [0x00007FF7F0D461D0+3549552]
+	GetHandleVerifier [0x00007FF7F0AA1DE6+779654]
+	(No symbol) [0x00007FF7F0977ACF]
+	(No symbol) [0x00007FF7F0972EE4]
+	(No symbol) [0x00007FF7F0973072]
+	(No symbol) [0x00007FF7F0962C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 227, in test_granos_contratos
+    find_elements(self.driver, select_finish)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F09F22C2+60002]
+	(No symbol) [0x00007FF7F096CA59]
+	(No symbol) [0x00007FF7F0827EDA]
+	(No symbol) [0x00007FF7F07FD5B5]
+	(No symbol) [0x00007FF7F08A3727]
+	(No symbol) [0x00007FF7F08BB3A1]
+	(No symbol) [0x00007FF7F089C033]
+	(No symbol) [0x00007FF7F0869657]
+	(No symbol) [0x00007FF7F086A251]
+	GetHandleVerifier [0x00007FF7F0D03E2D+3278285]
+	GetHandleVerifier [0x00007FF7F0D50190+3590448]
+	GetHandleVerifier [0x00007FF7F0D461D0+3549552]
+	GetHandleVerifier [0x00007FF7F0AA1DE6+779654]
+	(No symbol) [0x00007FF7F0977ACF]
+	(No symbol) [0x00007FF7F0972EE4]
+	(No symbol) [0x00007FF7F0973072]
+	(No symbol) [0x00007FF7F0962C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  CONTRATOS
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
+¡Elemento encontrado y clickeado 1 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 1 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+	<testcase classname="GranosContratos.granos_contratos" name="test_granos_contratos" time="211.460" timestamp="2024-05-17T10:17:52" file="GranosContratos.py" line="23">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F09F22C2+60002]
+	(No symbol) [0x00007FF7F096CA59]
+	(No symbol) [0x00007FF7F0827EDA]
+	(No symbol) [0x00007FF7F080E05F]
+	(No symbol) [0x00007FF7F080EBCF]
+	(No symbol) [0x00007FF7F0828503]
+	(No symbol) [0x00007FF7F07FD09C]
+	(No symbol) [0x00007FF7F08AA824]
+	(No symbol) [0x00007FF7F089C250]
+	(No symbol) [0x00007FF7F0869657]
+	(No symbol) [0x00007FF7F086A251]
+	GetHandleVerifier [0x00007FF7F0D03E2D+3278285]
+	GetHandleVerifier [0x00007FF7F0D50190+3590448]
+	GetHandleVerifier [0x00007FF7F0D461D0+3549552]
+	GetHandleVerifier [0x00007FF7F0AA1DE6+779654]
+	(No symbol) [0x00007FF7F0977ACF]
+	(No symbol) [0x00007FF7F0972EE4]
+	(No symbol) [0x00007FF7F0973072]
+	(No symbol) [0x00007FF7F0962C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 231, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F09F22C2+60002]
+	(No symbol) [0x00007FF7F096CA59]
+	(No symbol) [0x00007FF7F0827EDA]
+	(No symbol) [0x00007FF7F080E05F]
+	(No symbol) [0x00007FF7F080EBCF]
+	(No symbol) [0x00007FF7F0828503]
+	(No symbol) [0x00007FF7F07FD09C]
+	(No symbol) [0x00007FF7F08AA824]
+	(No symbol) [0x00007FF7F089C250]
+	(No symbol) [0x00007FF7F0869657]
+	(No symbol) [0x00007FF7F086A251]
+	GetHandleVerifier [0x00007FF7F0D03E2D+3278285]
+	GetHandleVerifier [0x00007FF7F0D50190+3590448]
+	GetHandleVerifier [0x00007FF7F0D461D0+3549552]
+	GetHandleVerifier [0x00007FF7F0AA1DE6+779654]
+	(No symbol) [0x00007FF7F0977ACF]
+	(No symbol) [0x00007FF7F0972EE4]
+	(No symbol) [0x00007FF7F0973072]
+	(No symbol) [0x00007FF7F0962C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  CONTRATOS
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
+¡Elemento encontrado y clickeado 1 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 1 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

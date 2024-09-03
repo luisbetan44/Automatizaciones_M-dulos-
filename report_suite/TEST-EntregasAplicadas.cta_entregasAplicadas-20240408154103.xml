@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EntregasAplicadas.cta_entregasAplicadas-20240408154103" tests="1" file="EntregasAplicadas.py" time="79.288" timestamp="2024-04-08T15:58:08" failures="0" errors="0" skipped="0">
+	<testcase classname="EntregasAplicadas.cta_entregasAplicadas" name="test_delivery_applied" time="79.288" timestamp="2024-04-08T15:58:08" file="EntregasAplicadas.py" line="22">
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto no coincide con los valores esperados. Texto actual: '1.052.210,00'
+El texto es visible para el usuario: '982.676,00'
+El texto es visible para el usuario
+El texto fue validado correctamente: Entrega TK 9999 00074351
+El texto es visible para el usuario: '30.330,00 Kg'
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: DATOS DE LA ENTREGA
+El texto es visible para el usuario
+El texto fue validado correctamente: 23/02/2022
+El texto es visible para el usuario
+El texto fue validado correctamente: 21/22
+El texto es visible para el usuario
+El texto fue validado correctamente: JUAN DEMO
+El texto es visible para el usuario
+El texto fue validado correctamente: 1032 El Rincon
+El texto es visible para el usuario
+El texto fue validado correctamente: ANÁLISIS
+El texto es visible para el usuario
+El texto fue validado correctamente: Peso Hectolítrico
+El texto es visible para el usuario
+El texto fue validado correctamente: 69.961%
+]]></system-out>
+	</testcase>
+</testsuite>

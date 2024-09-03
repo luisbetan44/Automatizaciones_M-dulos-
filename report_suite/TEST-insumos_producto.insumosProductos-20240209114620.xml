@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="insumos_producto.insumosProductos-20240209114620" tests="1" file="insumos_producto.py" time="59.818" timestamp="2024-02-09T11:54:40" failures="0" errors="0" skipped="0">
+	<testcase classname="insumos_producto.insumosProductos" name="test_supplies_products" time="59.818" timestamp="2024-02-09T11:54:40" file="insumos_producto.py" line="19">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  PRODUCTOS
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Valor '30 días' ingresado y opción seleccionada con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Productos Seleccionados
+El texto no fue encontrado Herbicida 2-4 DB 96% Rainwon x 20 lts RAINWON AGRO
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Tu orden fue enviada al sistema
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Mis Órdenes
+El texto encontrado es  Número
+El valor es un carácter numérico. Valor: 78
+El texto encontrado es  Fecha
+El texto encontrado es un str:  '02/02/2024'
+El texto encontrado es  Hora
+El texto encontrado es un str:  '16:53 hs.'
+El texto encontrado es  Productor
+El texto encontrado es un str:  '(1023) JUAN DEMO'
+El texto encontrado es  Estado
+El texto encontrado es un str:  'Generada'
+]]></system-out>
+	</testcase>
+</testsuite>

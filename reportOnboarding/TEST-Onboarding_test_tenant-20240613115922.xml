@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20240613115922" tests="1" file=".py" time="143.239" timestamp="2024-06-13T12:01:45" failures="0" errors="0" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="143.239" timestamp="2024-06-13T12:01:45" file="Onboarding.py" line="28">
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: DOCUMENTACIÓN
+El texto es visible para el usuario
+El texto fue validado correctamente: Para poder continuar al siguiente paso, será obligatorio completar los campos que se muestran a continuación.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+CUIT válido insertado: 10-23645420-2
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.xls' cargado con éxito después de hacer clic en el chevron!
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/app-checks/div/input' seleccionado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Estado Impositivo
+El texto es visible para el usuario
+El texto fue validado correctamente: Apertura de legajo
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+El texto es visible para el usuario
+El texto fue validado correctamente: Gestión de Lineas de Crédito
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+El texto es visible para el usuario
+El texto fue validado correctamente: Terceros autorizados a retirar insumos
+Se generó y escribió el DNI verificado: 92318095M
+]]></system-out>
+	</testcase>
+</testsuite>

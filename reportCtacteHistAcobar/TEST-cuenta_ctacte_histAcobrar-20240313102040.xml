@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histAcobrar-20240313102040" tests="2" file=".py" time="37.337" timestamp="2024-03-13T10:21:18" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="0.000" timestamp="0001-01-01T00:00:00" file="ctacte_histoAcobrar.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF75EABAD02+56930]
+	(No symbol) [0x00007FF75EA2F602]
+	(No symbol) [0x00007FF75E8E42E5]
+	(No symbol) [0x00007FF75E8C1D4C]
+	(No symbol) [0x00007FF75E9523F7]
+	(No symbol) [0x00007FF75E967891]
+	(No symbol) [0x00007FF75E94BA43]
+	(No symbol) [0x00007FF75E91D438]
+	(No symbol) [0x00007FF75E91E4D1]
+	GetHandleVerifier [0x00007FF75EE36F8D+3711213]
+	GetHandleVerifier [0x00007FF75EE904CD+4077101]
+	GetHandleVerifier [0x00007FF75EE8865F+4044735]
+	GetHandleVerifier [0x00007FF75EB59736+706710]
+	(No symbol) [0x00007FF75EA3B8DF]
+	(No symbol) [0x00007FF75EA36AC4]
+	(No symbol) [0x00007FF75EA36C1C]
+	(No symbol) [0x00007FF75EA268D4]
+	BaseThreadInitThunk [0x00007FFEA924257D+29]
+	RtlUserThreadStart [0x00007FFEAB1EAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_histoAcobrar.py", line 84, in test_ctacte_historica
+    find_elements(self.driver, select_date_1)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF75EABAD02+56930]
+	(No symbol) [0x00007FF75EA2F602]
+	(No symbol) [0x00007FF75E8E42E5]
+	(No symbol) [0x00007FF75E8C1D4C]
+	(No symbol) [0x00007FF75E9523F7]
+	(No symbol) [0x00007FF75E967891]
+	(No symbol) [0x00007FF75E94BA43]
+	(No symbol) [0x00007FF75E91D438]
+	(No symbol) [0x00007FF75E91E4D1]
+	GetHandleVerifier [0x00007FF75EE36F8D+3711213]
+	GetHandleVerifier [0x00007FF75EE904CD+4077101]
+	GetHandleVerifier [0x00007FF75EE8865F+4044735]
+	GetHandleVerifier [0x00007FF75EB59736+706710]
+	(No symbol) [0x00007FF75EA3B8DF]
+	(No symbol) [0x00007FF75EA36AC4]
+	(No symbol) [0x00007FF75EA36C1C]
+	(No symbol) [0x00007FF75EA268D4]
+	BaseThreadInitThunk [0x00007FFEA924257D+29]
+	RtlUserThreadStart [0x00007FFEAB1EAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+]]></system-out>
+	</testcase>
+	<testcase classname="cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="37.337" timestamp="2024-03-13T10:21:18" file="ctacte_histoAcobrar.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF75EABAD02+56930]
+	(No symbol) [0x00007FF75EA2F602]
+	(No symbol) [0x00007FF75E8E42E5]
+	(No symbol) [0x00007FF75E8D0879]
+	(No symbol) [0x00007FF75E8D10AF]
+	(No symbol) [0x00007FF75E8E4845]
+	(No symbol) [0x00007FF75E8C192C]
+	(No symbol) [0x00007FF75E9588E4]
+	(No symbol) [0x00007FF75E94BC60]
+	(No symbol) [0x00007FF75E91D438]
+	(No symbol) [0x00007FF75E91E4D1]
+	GetHandleVerifier [0x00007FF75EE36F8D+3711213]
+	GetHandleVerifier [0x00007FF75EE904CD+4077101]
+	GetHandleVerifier [0x00007FF75EE8865F+4044735]
+	GetHandleVerifier [0x00007FF75EB59736+706710]
+	(No symbol) [0x00007FF75EA3B8DF]
+	(No symbol) [0x00007FF75EA36AC4]
+	(No symbol) [0x00007FF75EA36C1C]
+	(No symbol) [0x00007FF75EA268D4]
+	BaseThreadInitThunk [0x00007FFEA924257D+29]
+	RtlUserThreadStart [0x00007FFEAB1EAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_histoAcobrar.py", line 192, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF75EABAD02+56930]
+	(No symbol) [0x00007FF75EA2F602]
+	(No symbol) [0x00007FF75E8E42E5]
+	(No symbol) [0x00007FF75E8D0879]
+	(No symbol) [0x00007FF75E8D10AF]
+	(No symbol) [0x00007FF75E8E4845]
+	(No symbol) [0x00007FF75E8C192C]
+	(No symbol) [0x00007FF75E9588E4]
+	(No symbol) [0x00007FF75E94BC60]
+	(No symbol) [0x00007FF75E91D438]
+	(No symbol) [0x00007FF75E91E4D1]
+	GetHandleVerifier [0x00007FF75EE36F8D+3711213]
+	GetHandleVerifier [0x00007FF75EE904CD+4077101]
+	GetHandleVerifier [0x00007FF75EE8865F+4044735]
+	GetHandleVerifier [0x00007FF75EB59736+706710]
+	(No symbol) [0x00007FF75EA3B8DF]
+	(No symbol) [0x00007FF75EA36AC4]
+	(No symbol) [0x00007FF75EA36C1C]
+	(No symbol) [0x00007FF75EA268D4]
+	BaseThreadInitThunk [0x00007FFEA924257D+29]
+	RtlUserThreadStart [0x00007FFEAB1EAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240517191636" tests="1" file=".py" time="119.874" timestamp="2024-05-17T19:18:36" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="119.874" timestamp="2024-05-17T19:18:36" file="Precio_Fijacion.py" line="21">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;.//ancestor::tr&quot;}
+  (Session info: chrome=125.0.6422.60); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6587722C2+60002]
+	(No symbol) [0x00007FF6586ECA59]
+	(No symbol) [0x00007FF6585A7EDA]
+	(No symbol) [0x00007FF6585F76E6]
+	(No symbol) [0x00007FF6585F77AC]
+	(No symbol) [0x00007FF6585EAF2C]
+	(No symbol) [0x00007FF65861C2CF]
+	(No symbol) [0x00007FF6585EADF6]
+	(No symbol) [0x00007FF65861C4A0]
+	(No symbol) [0x00007FF65863BCC7]
+	(No symbol) [0x00007FF65861C033]
+	(No symbol) [0x00007FF6585E9657]
+	(No symbol) [0x00007FF6585EA251]
+	GetHandleVerifier [0x00007FF658A83E2D+3278285]
+	GetHandleVerifier [0x00007FF658AD0190+3590448]
+	GetHandleVerifier [0x00007FF658AC61D0+3549552]
+	GetHandleVerifier [0x00007FF658821DE6+779654]
+	(No symbol) [0x00007FF6586F7ACF]
+	(No symbol) [0x00007FF6586F2EE4]
+	(No symbol) [0x00007FF6586F3072]
+	(No symbol) [0x00007FF6586E2C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 142, in test_price_fixings
+    verify_and_click(self.driver, number_generate)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1523, in verify_and_click
+    row_element = result_element.find_element(By.XPATH, ".//ancestor::tr")
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 417, in find_element
+    return self._execute(Command.FIND_CHILD_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":".//ancestor::tr"}
+  (Session info: chrome=125.0.6422.60); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6587722C2+60002]
+	(No symbol) [0x00007FF6586ECA59]
+	(No symbol) [0x00007FF6585A7EDA]
+	(No symbol) [0x00007FF6585F76E6]
+	(No symbol) [0x00007FF6585F77AC]
+	(No symbol) [0x00007FF6585EAF2C]
+	(No symbol) [0x00007FF65861C2CF]
+	(No symbol) [0x00007FF6585EADF6]
+	(No symbol) [0x00007FF65861C4A0]
+	(No symbol) [0x00007FF65863BCC7]
+	(No symbol) [0x00007FF65861C033]
+	(No symbol) [0x00007FF6585E9657]
+	(No symbol) [0x00007FF6585EA251]
+	GetHandleVerifier [0x00007FF658A83E2D+3278285]
+	GetHandleVerifier [0x00007FF658AD0190+3590448]
+	GetHandleVerifier [0x00007FF658AC61D0+3549552]
+	GetHandleVerifier [0x00007FF658821DE6+779654]
+	(No symbol) [0x00007FF6586F7ACF]
+	(No symbol) [0x00007FF6586F2EE4]
+	(No symbol) [0x00007FF6586F3072]
+	(No symbol) [0x00007FF6586E2C4F]
+	BaseThreadInitThunk [0x00007FFAAEB4257D+29]
+	RtlUserThreadStart [0x00007FFAAFA8AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+Buscando el número: 5302
+Elemento localizado para el número: 5302
+]]></system-out>
+	</testcase>
+</testsuite>

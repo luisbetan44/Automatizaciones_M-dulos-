@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240311114907" tests="1" file=".py" time="53.782" timestamp="2024-03-11T11:50:01" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="53.782" timestamp="2024-03-11T11:50:01" file="GranosContratos.py" line="23">
+		<error type="TypeError" message="search_for_select_account() takes from 2 to 3 positional arguments but 4 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 61, in test_granos_contratos
+    search_for_select_account(self.driver, account_number, select_account,  send_element )
+TypeError: search_for_select_account() takes from 2 to 3 positional arguments but 4 were given
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

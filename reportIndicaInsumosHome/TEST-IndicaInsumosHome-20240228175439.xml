@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IndicaInsumosHome-20240228175439" tests="1" file=".py" time="23.734" timestamp="2024-02-28T17:55:03" failures="0" errors="0" skipped="0">
+	<testcase classname="IndicaInsumosHome" name="test__indicators_home" time="23.734" timestamp="2024-02-28T17:55:03" file="indicaInsumosHome.py" line="18">
+		<system-out><![CDATA[El texto no fue encontrado ['Indicadores de Insumos (correspondiente a los últimos  6 meses)', 'Indicadores de Insumos (correspondiente a los últimos  12 meses)']
+El texto encontrado es  Insumos Pendientes de Retirar
+]]></system-out>
+	</testcase>
+</testsuite>

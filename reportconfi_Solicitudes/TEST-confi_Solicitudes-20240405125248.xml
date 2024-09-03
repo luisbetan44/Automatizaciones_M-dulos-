@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="confi_Solicitudes-20240405125248" tests="1" file=".py" time="46.677" timestamp="2024-04-05T12:53:34" failures="0" errors="0" skipped="0">
+	<testcase classname="confi_Solicitudes" name="test_settings_User" time="46.677" timestamp="2024-04-05T12:53:34" file="ConfISolicitudes.py" line="19">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  SOLICITUDES
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Test finalizado con éxito
+]]></system-out>
+	</testcase>
+</testsuite>

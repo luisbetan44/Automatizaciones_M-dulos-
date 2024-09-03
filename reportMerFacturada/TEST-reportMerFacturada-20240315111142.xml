@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportMerFacturada-20240315111142" tests="2" file=".py" time="52.142" timestamp="2024-03-15T11:12:35" failures="0" errors="2" skipped="0">
+	<testcase classname="reportMerFacturada" name="test_Report_MerFacturada" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportMerFacturada.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'text'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportMerFacturada.py", line 78, in test_Report_MerFacturada
+    validate_character_numeric_element(self.driver,total_outputs)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1038, in validate_character_numeric_element
+    valor = elemento.text
+AttributeError: 'NoneType' object has no attribute 'text'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+	<testcase classname="reportMerFacturada" name="test_Report_MerFacturada" time="52.142" timestamp="2024-03-15T11:12:35" file="ReportMerFacturada.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6CBCBAD02+56930]
+	(No symbol) [0x00007FF6CBC2F602]
+	(No symbol) [0x00007FF6CBAE42E5]
+	(No symbol) [0x00007FF6CBAC1D4C]
+	(No symbol) [0x00007FF6CBB523F7]
+	(No symbol) [0x00007FF6CBB58942]
+	(No symbol) [0x00007FF6CBB4BC60]
+	(No symbol) [0x00007FF6CBB1D438]
+	(No symbol) [0x00007FF6CBB1E4D1]
+	GetHandleVerifier [0x00007FF6CC036F8D+3711213]
+	GetHandleVerifier [0x00007FF6CC0904CD+4077101]
+	GetHandleVerifier [0x00007FF6CC08865F+4044735]
+	GetHandleVerifier [0x00007FF6CBD59736+706710]
+	(No symbol) [0x00007FF6CBC3B8DF]
+	(No symbol) [0x00007FF6CBC36AC4]
+	(No symbol) [0x00007FF6CBC36C1C]
+	(No symbol) [0x00007FF6CBC268D4]
+	BaseThreadInitThunk [0x00007FFBE3FB257D+29]
+	RtlUserThreadStart [0x00007FFBE4EAAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportMerFacturada.py", line 174, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6CBCBAD02+56930]
+	(No symbol) [0x00007FF6CBC2F602]
+	(No symbol) [0x00007FF6CBAE42E5]
+	(No symbol) [0x00007FF6CBAC1D4C]
+	(No symbol) [0x00007FF6CBB523F7]
+	(No symbol) [0x00007FF6CBB58942]
+	(No symbol) [0x00007FF6CBB4BC60]
+	(No symbol) [0x00007FF6CBB1D438]
+	(No symbol) [0x00007FF6CBB1E4D1]
+	GetHandleVerifier [0x00007FF6CC036F8D+3711213]
+	GetHandleVerifier [0x00007FF6CC0904CD+4077101]
+	GetHandleVerifier [0x00007FF6CC08865F+4044735]
+	GetHandleVerifier [0x00007FF6CBD59736+706710]
+	(No symbol) [0x00007FF6CBC3B8DF]
+	(No symbol) [0x00007FF6CBC36AC4]
+	(No symbol) [0x00007FF6CBC36C1C]
+	(No symbol) [0x00007FF6CBC268D4]
+	BaseThreadInitThunk [0x00007FFBE3FB257D+29]
+	RtlUserThreadStart [0x00007FFBE4EAAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

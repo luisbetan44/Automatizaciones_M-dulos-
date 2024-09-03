@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportMerRemitida-20240315180646" tests="2" file=".py" time="4.205" timestamp="2024-03-15T18:06:51" failures="0" errors="2" skipped="0">
+	<testcase classname="reportMerRemitida" name="test_Report_MerFacturada" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportMerRemitida.py" line="18">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA6DAD02+56930]
+	(No symbol) [0x00007FF6DA64F602]
+	(No symbol) [0x00007FF6DA5042E5]
+	(No symbol) [0x00007FF6DA4E1D4C]
+	(No symbol) [0x00007FF6DA5723F7]
+	(No symbol) [0x00007FF6DA587891]
+	(No symbol) [0x00007FF6DA56BA43]
+	(No symbol) [0x00007FF6DA53D438]
+	(No symbol) [0x00007FF6DA53E4D1]
+	GetHandleVerifier [0x00007FF6DAA56F8D+3711213]
+	GetHandleVerifier [0x00007FF6DAAB04CD+4077101]
+	GetHandleVerifier [0x00007FF6DAAA865F+4044735]
+	GetHandleVerifier [0x00007FF6DA779736+706710]
+	(No symbol) [0x00007FF6DA65B8DF]
+	(No symbol) [0x00007FF6DA656AC4]
+	(No symbol) [0x00007FF6DA656C1C]
+	(No symbol) [0x00007FF6DA6468D4]
+	BaseThreadInitThunk [0x00007FFBE3FB257D+29]
+	RtlUserThreadStart [0x00007FFBE4EAAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportMerRemitida.py", line 20, in test_Report_MerFacturada
+    self.login_helper.login("admingd@silohub.ag", "G@viglio123")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\loginhelper.py", line 12, in login
+    passuser = find_element_by_id(self.driver, "password")  # también aquí
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\FindElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA6DAD02+56930]
+	(No symbol) [0x00007FF6DA64F602]
+	(No symbol) [0x00007FF6DA5042E5]
+	(No symbol) [0x00007FF6DA4E1D4C]
+	(No symbol) [0x00007FF6DA5723F7]
+	(No symbol) [0x00007FF6DA587891]
+	(No symbol) [0x00007FF6DA56BA43]
+	(No symbol) [0x00007FF6DA53D438]
+	(No symbol) [0x00007FF6DA53E4D1]
+	GetHandleVerifier [0x00007FF6DAA56F8D+3711213]
+	GetHandleVerifier [0x00007FF6DAAB04CD+4077101]
+	GetHandleVerifier [0x00007FF6DAAA865F+4044735]
+	GetHandleVerifier [0x00007FF6DA779736+706710]
+	(No symbol) [0x00007FF6DA65B8DF]
+	(No symbol) [0x00007FF6DA656AC4]
+	(No symbol) [0x00007FF6DA656C1C]
+	(No symbol) [0x00007FF6DA6468D4]
+	BaseThreadInitThunk [0x00007FFBE3FB257D+29]
+	RtlUserThreadStart [0x00007FFBE4EAAA58+40]
+
+]]></error>
+	</testcase>
+	<testcase classname="reportMerRemitida" name="test_Report_MerFacturada" time="4.205" timestamp="2024-03-15T18:06:51" file="ReportMerRemitida.py" line="18">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA6DAD02+56930]
+	(No symbol) [0x00007FF6DA64F602]
+	(No symbol) [0x00007FF6DA5042E5]
+	(No symbol) [0x00007FF6DA4E1D4C]
+	(No symbol) [0x00007FF6DA5723F7]
+	(No symbol) [0x00007FF6DA578942]
+	(No symbol) [0x00007FF6DA56BC60]
+	(No symbol) [0x00007FF6DA53D438]
+	(No symbol) [0x00007FF6DA53E4D1]
+	GetHandleVerifier [0x00007FF6DAA56F8D+3711213]
+	GetHandleVerifier [0x00007FF6DAAB04CD+4077101]
+	GetHandleVerifier [0x00007FF6DAAA865F+4044735]
+	GetHandleVerifier [0x00007FF6DA779736+706710]
+	(No symbol) [0x00007FF6DA65B8DF]
+	(No symbol) [0x00007FF6DA656AC4]
+	(No symbol) [0x00007FF6DA656C1C]
+	(No symbol) [0x00007FF6DA6468D4]
+	BaseThreadInitThunk [0x00007FFBE3FB257D+29]
+	RtlUserThreadStart [0x00007FFBE4EAAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportMerRemitida.py", line 175, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA6DAD02+56930]
+	(No symbol) [0x00007FF6DA64F602]
+	(No symbol) [0x00007FF6DA5042E5]
+	(No symbol) [0x00007FF6DA4E1D4C]
+	(No symbol) [0x00007FF6DA5723F7]
+	(No symbol) [0x00007FF6DA578942]
+	(No symbol) [0x00007FF6DA56BC60]
+	(No symbol) [0x00007FF6DA53D438]
+	(No symbol) [0x00007FF6DA53E4D1]
+	GetHandleVerifier [0x00007FF6DAA56F8D+3711213]
+	GetHandleVerifier [0x00007FF6DAAB04CD+4077101]
+	GetHandleVerifier [0x00007FF6DAAA865F+4044735]
+	GetHandleVerifier [0x00007FF6DA779736+706710]
+	(No symbol) [0x00007FF6DA65B8DF]
+	(No symbol) [0x00007FF6DA656AC4]
+	(No symbol) [0x00007FF6DA656C1C]
+	(No symbol) [0x00007FF6DA6468D4]
+	BaseThreadInitThunk [0x00007FFBE3FB257D+29]
+	RtlUserThreadStart [0x00007FFBE4EAAA58+40]
+
+]]></error>
+	</testcase>
+</testsuite>

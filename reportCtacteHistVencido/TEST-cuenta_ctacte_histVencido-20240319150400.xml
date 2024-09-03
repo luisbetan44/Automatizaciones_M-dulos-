@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histVencido-20240319150400" tests="1" file=".py" time="57.417" timestamp="2024-03-19T15:04:57" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ctacte_histVencido" name="test_ctacte_historica" time="57.417" timestamp="2024-03-19T15:04:57" file="CtaCte_HistoVencido.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Cuenta Corriente
+El valor es un carácter numérico. Valor: -20.840.113,84
+El valor es un carácter numérico. Valor: 188.212,20
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento FC 1118 00076291
+El texto encontrado es  - ARS 1.544.928,00
+El texto encontrado es  GASTOS DE COMER: S/240000 KG NETOS. Maiz Cosecha 2
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliApagar-20240618132253" tests="1" file=".py" time="67.482" timestamp="2024-06-18T13:24:01" failures="0" errors="0" skipped="0">
+	<testcase classname="cta_cte_apliApagar" name="test_ctacte_apliApagar" time="67.482" timestamp="2024-06-18T13:24:01" file="ctacte_pesiApagar.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -171.167.917,83
+El valor es un carácter numérico. Valor: -51.215.932,24
+El valor es un carácter numérico. Valor: -2.913.163,37
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento FC 1051 00014215
+El texto encontrado es  USD 738,10
+El texto encontrado es  SILO BOLSA-
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="confi_Solicitudes-20240321121353" tests="1" file=".py" time="23.188" timestamp="2024-03-21T12:14:16" failures="0" errors="1" skipped="0">
+	<testcase classname="confi_Solicitudes" name="test_Profile_User" time="23.188" timestamp="2024-03-21T12:14:16" file="ConfISolicitudes.py" line="19">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AB7B7062+63090]
+	(No symbol) [0x00007FF7AB722CB2]
+	(No symbol) [0x00007FF7AB5BEC65]
+	(No symbol) [0x00007FF7AB5C3D21]
+	(No symbol) [0x00007FF7AB5C6159]
+	(No symbol) [0x00007FF7AB5C6200]
+	(No symbol) [0x00007FF7AB60460C]
+	(No symbol) [0x00007FF7AB604ADC]
+	(No symbol) [0x00007FF7AB645B37]
+	(No symbol) [0x00007FF7AB62701F]
+	(No symbol) [0x00007FF7AB643412]
+	(No symbol) [0x00007FF7AB626D83]
+	(No symbol) [0x00007FF7AB5F83A8]
+	(No symbol) [0x00007FF7AB5F9441]
+	GetHandleVerifier [0x00007FF7ABBB25CD+4238301]
+	GetHandleVerifier [0x00007FF7ABBEF72D+4488509]
+	GetHandleVerifier [0x00007FF7ABBE7A0F+4456479]
+	GetHandleVerifier [0x00007FF7AB8905A6+953270]
+	(No symbol) [0x00007FF7AB72E57F]
+	(No symbol) [0x00007FF7AB729254]
+	(No symbol) [0x00007FF7AB72938B]
+	(No symbol) [0x00007FF7AB719BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ConfISolicitudes.py", line 47, in test_Profile_User
+    find_send_element_selector(self.driver,  insert_email1, send_name )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 339, in find_send_element_selector
+    input_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AB7B7062+63090]
+	(No symbol) [0x00007FF7AB722CB2]
+	(No symbol) [0x00007FF7AB5BEC65]
+	(No symbol) [0x00007FF7AB5C3D21]
+	(No symbol) [0x00007FF7AB5C6159]
+	(No symbol) [0x00007FF7AB5C6200]
+	(No symbol) [0x00007FF7AB60460C]
+	(No symbol) [0x00007FF7AB604ADC]
+	(No symbol) [0x00007FF7AB645B37]
+	(No symbol) [0x00007FF7AB62701F]
+	(No symbol) [0x00007FF7AB643412]
+	(No symbol) [0x00007FF7AB626D83]
+	(No symbol) [0x00007FF7AB5F83A8]
+	(No symbol) [0x00007FF7AB5F9441]
+	GetHandleVerifier [0x00007FF7ABBB25CD+4238301]
+	GetHandleVerifier [0x00007FF7ABBEF72D+4488509]
+	GetHandleVerifier [0x00007FF7ABBE7A0F+4456479]
+	GetHandleVerifier [0x00007FF7AB8905A6+953270]
+	(No symbol) [0x00007FF7AB72E57F]
+	(No symbol) [0x00007FF7AB729254]
+	(No symbol) [0x00007FF7AB72938B]
+	(No symbol) [0x00007FF7AB719BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  SOLICITUDES
+]]></system-out>
+	</testcase>
+</testsuite>

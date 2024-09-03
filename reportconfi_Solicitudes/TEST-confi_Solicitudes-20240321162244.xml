@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="confi_Solicitudes-20240321162244" tests="1" file=".py" time="118.534" timestamp="2024-03-21T16:24:42" failures="0" errors="1" skipped="0">
+	<testcase classname="confi_Solicitudes" name="test_settings_User" time="118.534" timestamp="2024-03-21T16:24:42" file="ConfISolicitudes.py" line="19">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ConfISolicitudes.py", line 57, in test_settings_User
+    find_send_element(self.driver,  insert_email2, send_name )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 294, in find_send_element
+    input_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+El texto no fue encontrado SOLICITUDES
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

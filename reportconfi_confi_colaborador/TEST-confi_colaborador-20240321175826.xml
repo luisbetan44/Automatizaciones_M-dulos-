@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="confi_colaborador-20240321175826" tests="1" file=".py" time="44.933" timestamp="2024-03-21T17:59:11" failures="0" errors="0" skipped="0">
+	<testcase classname="confi_colaborador" name="test_record_collaborator" time="44.933" timestamp="2024-03-21T17:59:11" file="ConfiColaborador.py" line="19">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+El texto no fue encontrado COLABORADORES
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  DATOS GENERALES
+El texto encontrado es  RAZON SOCIAL
+El texto encontrado es  PRODUCTOR 90116
+El texto encontrado es  DNI
+El texto encontrado es  24.779.576
+El texto encontrado es  CUIT
+El texto encontrado es  20-24779576-7
+El texto encontrado es  DATOS DEL COLABORADOR
+El texto encontrado es  NÚMERO DE LEGAJO
+El texto encontrado es  90116
+El texto encontrado es  TIPO DE COLABORADOR
+El texto encontrado es  Colaborador
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Test finalizado con éxito
+]]></system-out>
+	</testcase>
+</testsuite>

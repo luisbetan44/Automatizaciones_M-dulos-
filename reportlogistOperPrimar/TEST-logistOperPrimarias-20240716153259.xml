@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="logistOperPrimarias-20240716153259" tests="1" file=".py" time="93.342" timestamp="2024-07-16T15:34:32" failures="0" errors="0" skipped="0">
+	<testcase classname="logistOperPrimarias" name="test_Logistics_primary" time="93.342" timestamp="2024-07-16T15:34:32" file="logistOperPrimarias.py" line="21">
+		<system-out><![CDATA[¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+No se encontró el elemento con el XPath: //td[contains(text(), '{fecha}')]
+El texto encontrado es  10
+]]></system-out>
+	</testcase>
+</testsuite>

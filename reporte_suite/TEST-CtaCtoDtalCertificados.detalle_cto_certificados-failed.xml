@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CtaCtoDtalCertificados.detalle_cto_certificados-failed" tests="1" file="CtaCtoDtalCertificados.py" time="98.560" timestamp="2024-08-28T12:11:29" failures="0" errors="1" skipped="0">
+	<testcase classname="CtaCtoDtalCertificados.detalle_cto_certificados" name="test_detail_certificates" time="98.560" timestamp="2024-08-28T12:11:29" file="CtaCtoDtalCertificados.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.85)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77CDDB632+29090]
+	(No symbol) [0x00007FF77CD4E6E9]
+	(No symbol) [0x00007FF77CC0B1CA]
+	(No symbol) [0x00007FF77CBDFAF5]
+	(No symbol) [0x00007FF77CC8E2E7]
+	(No symbol) [0x00007FF77CCA5EE1]
+	(No symbol) [0x00007FF77CC86493]
+	(No symbol) [0x00007FF77CC509B1]
+	(No symbol) [0x00007FF77CC51B11]
+	GetHandleVerifier [0x00007FF77D0F881D+3294093]
+	GetHandleVerifier [0x00007FF77D144403+3604339]
+	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
+	GetHandleVerifier [0x00007FF77CE96F16+797318]
+	(No symbol) [0x00007FF77CD5986F]
+	(No symbol) [0x00007FF77CD55454]
+	(No symbol) [0x00007FF77CD555E0]
+	(No symbol) [0x00007FF77CD44A7F]
+	BaseThreadInitThunk [0x00007FFFFD25257D+29]
+	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalCertificados.py", line 52, in test_detail_certificates
+    find_elements(self.driver,select_product_filter )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.85)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77CDDB632+29090]
+	(No symbol) [0x00007FF77CD4E6E9]
+	(No symbol) [0x00007FF77CC0B1CA]
+	(No symbol) [0x00007FF77CBDFAF5]
+	(No symbol) [0x00007FF77CC8E2E7]
+	(No symbol) [0x00007FF77CCA5EE1]
+	(No symbol) [0x00007FF77CC86493]
+	(No symbol) [0x00007FF77CC509B1]
+	(No symbol) [0x00007FF77CC51B11]
+	GetHandleVerifier [0x00007FF77D0F881D+3294093]
+	GetHandleVerifier [0x00007FF77D144403+3604339]
+	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
+	GetHandleVerifier [0x00007FF77CE96F16+797318]
+	(No symbol) [0x00007FF77CD5986F]
+	(No symbol) [0x00007FF77CD55454]
+	(No symbol) [0x00007FF77CD555E0]
+	(No symbol) [0x00007FF77CD44A7F]
+	BaseThreadInitThunk [0x00007FFFFD25257D+29]
+	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

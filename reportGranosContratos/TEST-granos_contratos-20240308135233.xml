@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240308135233" tests="1" file=".py" time="48.675" timestamp="2024-03-08T13:53:22" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="48.675" timestamp="2024-03-08T13:53:22" file="GranosContratos.py" line="22">
+		<error type="AttributeError" message="'str' object has no attribute 'send_keys'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 58, in test_granos_contratos
+    search_for_selector_option(self.driver, selector_search_input, selector_search_result, value_to_search, send_input_element)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 701, in search_for_selector_option
+    send_input_element.send_keys(value_to_search)
+AttributeError: 'str' object has no attribute 'send_keys'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

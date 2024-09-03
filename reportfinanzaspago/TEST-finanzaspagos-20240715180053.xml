@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="finanzaspagos-20240715180053" tests="2" file=".py" time="85.971" timestamp="2024-07-15T18:02:19" failures="0" errors="2" skipped="0">
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="0.000" timestamp="0001-01-01T00:00:00" file="finanzasPagos.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\finanzasPagos.py", line 109, in test_finance_payment
+    find_elements(self.driver, select_button_continue)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 20, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Listado de Comprobantes
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="85.971" timestamp="2024-07-15T18:02:19" file="finanzasPagos.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A3A5EEA2+31554]
+	(No symbol) [0x00007FF7A39D7ED9]
+	(No symbol) [0x00007FF7A389872A]
+	(No symbol) [0x00007FF7A386D995]
+	(No symbol) [0x00007FF7A39144D7]
+	(No symbol) [0x00007FF7A391B672]
+	(No symbol) [0x00007FF7A390CFF0]
+	(No symbol) [0x00007FF7A38DA33B]
+	(No symbol) [0x00007FF7A38DAED1]
+	GetHandleVerifier [0x00007FF7A3D68B1D+3217341]
+	GetHandleVerifier [0x00007FF7A3DB5AE3+3532675]
+	GetHandleVerifier [0x00007FF7A3DAB0E0+3489152]
+	GetHandleVerifier [0x00007FF7A3B0E776+750614]
+	(No symbol) [0x00007FF7A39E375F]
+	(No symbol) [0x00007FF7A39DEB14]
+	(No symbol) [0x00007FF7A39DECA2]
+	(No symbol) [0x00007FF7A39CE16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\finanzasPagos.py", line 150, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A3A5EEA2+31554]
+	(No symbol) [0x00007FF7A39D7ED9]
+	(No symbol) [0x00007FF7A389872A]
+	(No symbol) [0x00007FF7A386D995]
+	(No symbol) [0x00007FF7A39144D7]
+	(No symbol) [0x00007FF7A391B672]
+	(No symbol) [0x00007FF7A390CFF0]
+	(No symbol) [0x00007FF7A38DA33B]
+	(No symbol) [0x00007FF7A38DAED1]
+	GetHandleVerifier [0x00007FF7A3D68B1D+3217341]
+	GetHandleVerifier [0x00007FF7A3DB5AE3+3532675]
+	GetHandleVerifier [0x00007FF7A3DAB0E0+3489152]
+	GetHandleVerifier [0x00007FF7A3B0E776+750614]
+	(No symbol) [0x00007FF7A39E375F]
+	(No symbol) [0x00007FF7A39DEB14]
+	(No symbol) [0x00007FF7A39DECA2]
+	(No symbol) [0x00007FF7A39CE16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Listado de Comprobantes
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

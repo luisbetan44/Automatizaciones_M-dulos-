@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_entregasAplicadas-20240618122148" tests="2" file=".py" time="69.004" timestamp="2024-06-18T12:22:57" failures="0" errors="2" skipped="0">
+	<testcase classname="cta_entregasAplicadas" name="test_delivery_applied" time="0.000" timestamp="0001-01-01T00:00:00" file="EntregasAplicadas.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\EntregasAplicadas.py", line 129, in test_delivery_applied
+    find_elements(self.driver, selet_button_download )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto es visible para el usuario: '992.210,00'
+El texto es visible para el usuario: '982.676,00'
+]]></system-out>
+	</testcase>
+	<testcase classname="cta_entregasAplicadas" name="test_delivery_applied" time="69.004" timestamp="2024-06-18T12:22:57" file="EntregasAplicadas.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.176)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664C41F52+60322]
+	(No symbol) [0x00007FF664BBCEC9]
+	(No symbol) [0x00007FF664A77EBA]
+	(No symbol) [0x00007FF664A4D5A5]
+	(No symbol) [0x00007FF664AF36B7]
+	(No symbol) [0x00007FF664AFA812]
+	(No symbol) [0x00007FF664AEC1E0]
+	(No symbol) [0x00007FF664AB9617]
+	(No symbol) [0x00007FF664ABA211]
+	GetHandleVerifier [0x00007FF664F594AD+3301629]
+	GetHandleVerifier [0x00007FF664FA36D3+3605283]
+	GetHandleVerifier [0x00007FF664F99450+3563680]
+	GetHandleVerifier [0x00007FF664CF4326+790390]
+	(No symbol) [0x00007FF664BC750F]
+	(No symbol) [0x00007FF664BC3404]
+	(No symbol) [0x00007FF664BC3592]
+	(No symbol) [0x00007FF664BB2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\EntregasAplicadas.py", line 232, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.176)
+Stacktrace:
+	GetHandleVerifier [0x00007FF664C41F52+60322]
+	(No symbol) [0x00007FF664BBCEC9]
+	(No symbol) [0x00007FF664A77EBA]
+	(No symbol) [0x00007FF664A4D5A5]
+	(No symbol) [0x00007FF664AF36B7]
+	(No symbol) [0x00007FF664AFA812]
+	(No symbol) [0x00007FF664AEC1E0]
+	(No symbol) [0x00007FF664AB9617]
+	(No symbol) [0x00007FF664ABA211]
+	GetHandleVerifier [0x00007FF664F594AD+3301629]
+	GetHandleVerifier [0x00007FF664FA36D3+3605283]
+	GetHandleVerifier [0x00007FF664F99450+3563680]
+	GetHandleVerifier [0x00007FF664CF4326+790390]
+	(No symbol) [0x00007FF664BC750F]
+	(No symbol) [0x00007FF664BC3404]
+	(No symbol) [0x00007FF664BC3592]
+	(No symbol) [0x00007FF664BB2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto es visible para el usuario: '992.210,00'
+El texto es visible para el usuario: '982.676,00'
+]]></system-out>
+	</testcase>
+</testsuite>

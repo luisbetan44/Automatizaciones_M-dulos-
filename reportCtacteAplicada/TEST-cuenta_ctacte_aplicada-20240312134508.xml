@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_aplicada-20240312134508" tests="1" file=".py" time="54.930" timestamp="2024-03-12T13:46:02" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="54.930" timestamp="2024-03-12T13:46:02" file="ctacte_aplicada.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE APLICADA
+El valor es un carácter numérico. Valor: -171.122.569,50
+El valor es un carácter numérico. Valor: 51.213.438,74
+El valor es un carácter numérico. Valor: 2.912.909,27
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento FC 1051 00014218
+El texto encontrado es  USD 738,10
+El texto encontrado es  SILO BOLSA-
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

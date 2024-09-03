@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliAvencer-20240312161634" tests="2" file=".py" time="79.302" timestamp="2024-03-12T16:17:54" failures="0" errors="2" skipped="0">
+	<testcase classname="cta_cte_apliAvencer" name="test_ctacte_apliAvencer" time="0.000" timestamp="0001-01-01T00:00:00" file="ctacte_ApliAvencer.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_ApliAvencer.py", line 160, in test_ctacte_apliAvencer
+    find_elements(self.driver, go_out_list)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -167.604.855,62
+El valor es un carácter numérico. Valor: 48.426.851,17
+El valor es un carácter numérico. Valor: 2.580.333,92
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento FC 1118 00075686
+El texto encontrado es  + ARS 207.368,71
+El texto encontrado 'GASTOS COMER. S/ 30120 KGRS. Trig Cosecha 2324-E' no coincide con el esperado 'GASTOS COMER. S/ 30120 KGRS.  Trig Cosecha 2324-E'
+]]></system-out>
+	</testcase>
+	<testcase classname="cta_cte_apliAvencer" name="test_ctacte_apliAvencer" time="79.302" timestamp="2024-03-12T16:17:54" file="ctacte_ApliAvencer.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C56DAD32+56930]
+	(No symbol) [0x00007FF7C564F632]
+	(No symbol) [0x00007FF7C55042E5]
+	(No symbol) [0x00007FF7C54E1D4C]
+	(No symbol) [0x00007FF7C55723F7]
+	(No symbol) [0x00007FF7C5578942]
+	(No symbol) [0x00007FF7C556BC60]
+	(No symbol) [0x00007FF7C553D438]
+	(No symbol) [0x00007FF7C553E4D1]
+	GetHandleVerifier [0x00007FF7C5A56ABD+3709933]
+	GetHandleVerifier [0x00007FF7C5AAFFFD+4075821]
+	GetHandleVerifier [0x00007FF7C5AA818F+4043455]
+	GetHandleVerifier [0x00007FF7C5779766+706710]
+	(No symbol) [0x00007FF7C565B90F]
+	(No symbol) [0x00007FF7C5656AF4]
+	(No symbol) [0x00007FF7C5656C4C]
+	(No symbol) [0x00007FF7C5646904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_ApliAvencer.py", line 167, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C56DAD32+56930]
+	(No symbol) [0x00007FF7C564F632]
+	(No symbol) [0x00007FF7C55042E5]
+	(No symbol) [0x00007FF7C54E1D4C]
+	(No symbol) [0x00007FF7C55723F7]
+	(No symbol) [0x00007FF7C5578942]
+	(No symbol) [0x00007FF7C556BC60]
+	(No symbol) [0x00007FF7C553D438]
+	(No symbol) [0x00007FF7C553E4D1]
+	GetHandleVerifier [0x00007FF7C5A56ABD+3709933]
+	GetHandleVerifier [0x00007FF7C5AAFFFD+4075821]
+	GetHandleVerifier [0x00007FF7C5AA818F+4043455]
+	GetHandleVerifier [0x00007FF7C5779766+706710]
+	(No symbol) [0x00007FF7C565B90F]
+	(No symbol) [0x00007FF7C5656AF4]
+	(No symbol) [0x00007FF7C5656C4C]
+	(No symbol) [0x00007FF7C5646904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -167.604.855,62
+El valor es un carácter numérico. Valor: 48.426.851,17
+El valor es un carácter numérico. Valor: 2.580.333,92
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento FC 1118 00075686
+El texto encontrado es  + ARS 207.368,71
+El texto encontrado 'GASTOS COMER. S/ 30120 KGRS. Trig Cosecha 2324-E' no coincide con el esperado 'GASTOS COMER. S/ 30120 KGRS.  Trig Cosecha 2324-E'
+]]></system-out>
+	</testcase>
+</testsuite>

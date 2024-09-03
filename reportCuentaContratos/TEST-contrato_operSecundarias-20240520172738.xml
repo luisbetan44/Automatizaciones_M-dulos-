@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="contrato_operSecundarias-20240520172738" tests="1" file=".py" time="69.315" timestamp="2024-05-20T17:28:47" failures="0" errors="0" skipped="0">
+	<testcase classname="contrato_operSecundarias" name="test_contratc_oparSecondary" time="69.315" timestamp="2024-05-20T17:28:47" file="CtaContOperSecundaria.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 2070
+El texto es visible para el usuario
+El texto fue validado correctamente: De Soja
+El texto es visible para el usuario
+El texto fue validado correctamente: 2122
+El texto es visible para el usuario: '0,01 QQ'
+]]></system-out>
+	</testcase>
+</testsuite>

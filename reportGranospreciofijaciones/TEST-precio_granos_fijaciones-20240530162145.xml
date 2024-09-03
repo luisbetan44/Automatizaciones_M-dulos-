@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240530162145" tests="1" file=".py" time="283.861" timestamp="2024-05-30T16:26:29" failures="0" errors="0" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="283.861" timestamp="2024-05-30T16:26:29" file="Precio_Fijacion.py" line="21">
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+No se pudo clicar el botón: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF739721F22+60322]
+	(No symbol) [0x00007FF73969CE99]
+	(No symbol) [0x00007FF739557EBA]
+	(No symbol) [0x00007FF7395A7676]
+	(No symbol) [0x00007FF7395A773C]
+	(No symbol) [0x00007FF7395EE967]
+	(No symbol) [0x00007FF7395CC25F]
+	(No symbol) [0x00007FF7395EBC80]
+	(No symbol) [0x00007FF7395CBFC3]
+	(No symbol) [0x00007FF739599617]
+	(No symbol) [0x00007FF73959A211]
+	GetHandleVerifier [0x00007FF739A3946D+3301613]
+	GetHandleVerifier [0x00007FF739A83693+3605267]
+	GetHandleVerifier [0x00007FF739A79410+3563664]
+	GetHandleVerifier [0x00007FF7397D42F6+790390]
+	(No symbol) [0x00007FF7396A74DF]
+	(No symbol) [0x00007FF7396A33D4]
+	(No symbol) [0x00007FF7396A3562]
+	(No symbol) [0x00007FF739692F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

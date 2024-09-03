@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Entregas.cuenta_entregas-failed" tests="2" file="Entregas.py" time="146.540" timestamp="2024-07-13T12:09:15" failures="0" errors="2" skipped="0">
+	<testcase classname="Entregas.cuenta_entregas" name="test_cuenta_entregas" time="0.000" timestamp="0001-01-01T00:00:00" file="Entregas.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 208, in test_cuenta_entregas
+    validate_text_visible_selector(self.driver, data_analysis,  data_analysis_expected  )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1183, in validate_text_visible_selector
+    is_visible = element.is_displayed()
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto es visible para el usuario: '992.210,00'
+El texto es visible para el usuario: '982.676,00'
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+El texto es visible para el usuario
+El texto fue validado correctamente: Entrega TK 9999 00074351
+El texto es visible para el usuario: '30.330,00 Kg'
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: DATOS DE LA ENTREGA
+El texto es visible para el usuario
+El texto fue validado correctamente: 23/02/2022
+El texto es visible para el usuario
+El texto fue validado correctamente: 21/22
+El texto es visible para el usuario
+El texto fue validado correctamente: JUAN DEMO
+El texto es visible para el usuario
+El texto fue validado correctamente: 1032 El Rincon
+El texto es visible para el usuario
+El texto fue validado correctamente: ANÁLISIS
+]]></system-out>
+	</testcase>
+	<testcase classname="Entregas.cuenta_entregas" name="test_cuenta_entregas" time="146.540" timestamp="2024-07-13T12:09:15" file="Entregas.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C711EEA2+31554]
+	(No symbol) [0x00007FF6C7097ED9]
+	(No symbol) [0x00007FF6C6F5872A]
+	(No symbol) [0x00007FF6C6F2D995]
+	(No symbol) [0x00007FF6C6FD44D7]
+	(No symbol) [0x00007FF6C6FDB672]
+	(No symbol) [0x00007FF6C6FCCFF0]
+	(No symbol) [0x00007FF6C6F9A33B]
+	(No symbol) [0x00007FF6C6F9AED1]
+	GetHandleVerifier [0x00007FF6C7428B1D+3217341]
+	GetHandleVerifier [0x00007FF6C7475AE3+3532675]
+	GetHandleVerifier [0x00007FF6C746B0E0+3489152]
+	GetHandleVerifier [0x00007FF6C71CE776+750614]
+	(No symbol) [0x00007FF6C70A375F]
+	(No symbol) [0x00007FF6C709EB14]
+	(No symbol) [0x00007FF6C709ECA2]
+	(No symbol) [0x00007FF6C708E16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 233, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C711EEA2+31554]
+	(No symbol) [0x00007FF6C7097ED9]
+	(No symbol) [0x00007FF6C6F5872A]
+	(No symbol) [0x00007FF6C6F2D995]
+	(No symbol) [0x00007FF6C6FD44D7]
+	(No symbol) [0x00007FF6C6FDB672]
+	(No symbol) [0x00007FF6C6FCCFF0]
+	(No symbol) [0x00007FF6C6F9A33B]
+	(No symbol) [0x00007FF6C6F9AED1]
+	GetHandleVerifier [0x00007FF6C7428B1D+3217341]
+	GetHandleVerifier [0x00007FF6C7475AE3+3532675]
+	GetHandleVerifier [0x00007FF6C746B0E0+3489152]
+	GetHandleVerifier [0x00007FF6C71CE776+750614]
+	(No symbol) [0x00007FF6C70A375F]
+	(No symbol) [0x00007FF6C709EB14]
+	(No symbol) [0x00007FF6C709ECA2]
+	(No symbol) [0x00007FF6C708E16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto es visible para el usuario: '992.210,00'
+El texto es visible para el usuario: '982.676,00'
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+El texto es visible para el usuario
+El texto fue validado correctamente: Entrega TK 9999 00074351
+El texto es visible para el usuario: '30.330,00 Kg'
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: DATOS DE LA ENTREGA
+El texto es visible para el usuario
+El texto fue validado correctamente: 23/02/2022
+El texto es visible para el usuario
+El texto fue validado correctamente: 21/22
+El texto es visible para el usuario
+El texto fue validado correctamente: JUAN DEMO
+El texto es visible para el usuario
+El texto fue validado correctamente: 1032 El Rincon
+El texto es visible para el usuario
+El texto fue validado correctamente: ANÁLISIS
+]]></system-out>
+	</testcase>
+</testsuite>

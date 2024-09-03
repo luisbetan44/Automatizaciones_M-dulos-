@@ -2,7 +2,7 @@ import time
 import unittest
 from selenium.webdriver.common.by import By
 import xmlrunner
-from Elements import find_elements, validate_character_numeric_element, validate_character_numeric_element_selector, validate_text
+from Elements import find_elements, validate_character_numeric_element_selector, validate_text
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -70,57 +70,67 @@ class reportEntregasVentas(unittest.TestCase):
         selected_campaign_expected = "23/24"
         validate_text(self.driver, selected_campaign, selected_campaign_expected )
 
-        kilos_delivered = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[1]/span/span"
+        kilos_delivered = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[1]/span/div/span"
         kilos_delivered_expected = "Kilos Entregados"
         validate_text(self.driver, kilos_delivered, kilos_delivered_expected )
 
-        total_delivered = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(2) > span > span"
+        total_delivered = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(2) > span > div > span"
         validate_character_numeric_element_selector(self.driver,total_delivered,)
+        time.sleep(2)
 
-
-        other_movenment = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[2]/td[1]/span/span'
+        other_movenment = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[2]/td[1]/span/div/span'
         other_movenment_expected = "Otros Movimientos"
         validate_text(self.driver, other_movenment, other_movenment_expected )
+        time.sleep(2)
 
-        total_other_movenment = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > span"
+        total_other_movenment = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(2) > td:nth-child(2) > span > div > span"
         validate_character_numeric_element_selector(self.driver,total_other_movenment)
+        time.sleep(2)
 
-        kilos_sales = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[3]/td[1]/span/span" 
+        kilos_sales = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[3]/td[1]/span/div/span" 
         kilos_sales_expected = "Kilos Vendidos"
         validate_text(self.driver,  kilos_sales, kilos_sales_expected )
+        time.sleep(2)
 
-        total_sales = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(3) > td:nth-child(2) > span > span"
+        total_sales = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(3) > td:nth-child(2) > span > div > span"
         validate_character_numeric_element_selector(self.driver,total_sales)
+        time.sleep(2)
 
-        kilos_requested = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[4]/td[1]/span/span"
+        kilos_requested = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[4]/td[1]/span/div/span"
         kilos_requested_expected = "Kilos Solicitados"
         validate_text(self.driver,  kilos_requested, kilos_requested_expected )
+        time.sleep(2)
 
-        total_requested = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[4]/td[2]/span/span"
-        validate_character_numeric_element(self.driver,total_requested)
+        total_requested = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(4) > td:nth-child(2) > span > div > span"
+        validate_character_numeric_element_selector(self.driver,total_requested)
+        time.sleep(2)
 
-
-        kilos_pinup = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[5]/td[1]/span/span"
+        kilos_pinup = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[5]/td[1]/span/div/span"
         kilos_pinup_expected = "Kilos a Fijar"
         validate_text(self.driver,  kilos_pinup, kilos_pinup_expected )
+        time.sleep(2)
 
-        total_pinup = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[5]/td[2]/span/span"
-        validate_character_numeric_element(self.driver,total_pinup)
+        total_pinup = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(5) > td:nth-child(2) > span > div > span"
+        validate_character_numeric_element_selector(self.driver,total_pinup)
+        time.sleep(2)
 
-        movement_balance = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[6]/td[1]/span/span"
+        movement_balance = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[6]/td[1]/span/div/span"
         movement_balance_expected = "Saldo"
         validate_text(self.driver,  movement_balance, movement_balance_expected )
+        time.sleep(2)
 
-        total_balance = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[6]/td[2]/span/span"
-        validate_character_numeric_element(self.driver,total_balance)
+        total_balance = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(6) > td:nth-child(2) > span > div > span"
+        validate_character_numeric_element_selector(self.driver,total_balance)
+        time.sleep(2)
 
-        balance_commercial = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[7]/td[1]/span/span"
+        balance_commercial = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[7]/td[1]/span/div/span"
         balance_commercial_expected = "Saldo Comercial"
         validate_text(self.driver,  balance_commercial, balance_commercial_expected )
+        time.sleep(2)
 
-        total_balance_commercial = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/sales-deliveries/app-responsive-table/div/div[2]/table/tbody/tr[7]/td[2]/span/span"
-        validate_character_numeric_element(self.driver,total_balance_commercial)
-
+        total_balance_commercial = "#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(7) > td:nth-child(2) > span > div > span"
+        validate_character_numeric_element_selector(self.driver,total_balance_commercial)
+        time.sleep(2)
 
          # descargar movimientos 
 

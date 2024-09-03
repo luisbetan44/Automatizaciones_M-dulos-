@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histAcobrar-20240701173620" tests="1" file=".py" time="91.608" timestamp="2024-07-01T17:37:51" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="91.608" timestamp="2024-07-01T17:37:51" file="ctacte_histoAcobrar.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un carácter numérico. Valor: 1.516.284.997,06
+El valor es un carácter numérico. Valor: 4.837.351,06
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento LC 3302 11350773
+El texto encontrado es  + ARS 19.640,53
+El texto encontrado es  Liq.1116C SOJA 2223 100 Kgs. 100,00%
+]]></system-out>
+	</testcase>
+</testsuite>

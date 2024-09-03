@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240308132649" tests="1" file=".py" time="50.279" timestamp="2024-03-08T13:27:40" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="50.279" timestamp="2024-03-08T13:27:40" file="GranosContratos.py" line="22">
+		<error type="InvalidSelectorException" message="Message: invalid selector: Unable to locate an element with the xpath expression 1023 because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=122.0.6261.112); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A3F7AD32+56930]
+	(No symbol) [0x00007FF6A3EEF632]
+	(No symbol) [0x00007FF6A3DA42E5]
+	(No symbol) [0x00007FF6A3DA9261]
+	(No symbol) [0x00007FF6A3DAB6EB]
+	(No symbol) [0x00007FF6A3DAB7B0]
+	(No symbol) [0x00007FF6A3DE955C]
+	(No symbol) [0x00007FF6A3DE9A2C]
+	(No symbol) [0x00007FF6A3E2A967]
+	(No symbol) [0x00007FF6A3E0BCDF]
+	(No symbol) [0x00007FF6A3E281E2]
+	(No symbol) [0x00007FF6A3E0BA43]
+	(No symbol) [0x00007FF6A3DDD438]
+	(No symbol) [0x00007FF6A3DDE4D1]
+	GetHandleVerifier [0x00007FF6A42F6ABD+3709933]
+	GetHandleVerifier [0x00007FF6A434FFFD+4075821]
+	GetHandleVerifier [0x00007FF6A434818F+4043455]
+	GetHandleVerifier [0x00007FF6A4019766+706710]
+	(No symbol) [0x00007FF6A3EFB90F]
+	(No symbol) [0x00007FF6A3EF6AF4]
+	(No symbol) [0x00007FF6A3EF6C4C]
+	(No symbol) [0x00007FF6A3EE6904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 58, in test_granos_contratos
+    search_and_select_option(self.driver, numbert_the_account, input_account, selecc_option)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 667, in search_and_select_option
+    search_input_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression 1023 because of the following error:
+TypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.
+  (Session info: chrome=122.0.6261.112); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A3F7AD32+56930]
+	(No symbol) [0x00007FF6A3EEF632]
+	(No symbol) [0x00007FF6A3DA42E5]
+	(No symbol) [0x00007FF6A3DA9261]
+	(No symbol) [0x00007FF6A3DAB6EB]
+	(No symbol) [0x00007FF6A3DAB7B0]
+	(No symbol) [0x00007FF6A3DE955C]
+	(No symbol) [0x00007FF6A3DE9A2C]
+	(No symbol) [0x00007FF6A3E2A967]
+	(No symbol) [0x00007FF6A3E0BCDF]
+	(No symbol) [0x00007FF6A3E281E2]
+	(No symbol) [0x00007FF6A3E0BA43]
+	(No symbol) [0x00007FF6A3DDD438]
+	(No symbol) [0x00007FF6A3DDE4D1]
+	GetHandleVerifier [0x00007FF6A42F6ABD+3709933]
+	GetHandleVerifier [0x00007FF6A434FFFD+4075821]
+	GetHandleVerifier [0x00007FF6A434818F+4043455]
+	GetHandleVerifier [0x00007FF6A4019766+706710]
+	(No symbol) [0x00007FF6A3EFB90F]
+	(No symbol) [0x00007FF6A3EF6AF4]
+	(No symbol) [0x00007FF6A3EF6C4C]
+	(No symbol) [0x00007FF6A3EE6904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

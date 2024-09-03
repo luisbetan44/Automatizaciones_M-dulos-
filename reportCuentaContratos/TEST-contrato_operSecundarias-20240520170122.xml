@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="contrato_operSecundarias-20240520170122" tests="1" file=".py" time="107.824" timestamp="2024-05-20T17:03:10" failures="0" errors="1" skipped="0">
+	<testcase classname="contrato_operSecundarias" name="test_contratc_oparSecondary" time="107.824" timestamp="2024-05-20T17:03:10" file="CtaContOperSecundaria.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (1355, -252)
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6687822C2+60002]
+	(No symbol) [0x00007FF6686FCA59]
+	(No symbol) [0x00007FF6685B7EDA]
+	(No symbol) [0x00007FF66860F39E]
+	(No symbol) [0x00007FF66860CD62]
+	(No symbol) [0x00007FF66860A1FB]
+	(No symbol) [0x00007FF6686093C6]
+	(No symbol) [0x00007FF6685FB4D1]
+	(No symbol) [0x00007FF66862C28A]
+	(No symbol) [0x00007FF6685FADF6]
+	(No symbol) [0x00007FF66862C4A0]
+	(No symbol) [0x00007FF66864BCC7]
+	(No symbol) [0x00007FF66862C033]
+	(No symbol) [0x00007FF6685F9657]
+	(No symbol) [0x00007FF6685FA251]
+	GetHandleVerifier [0x00007FF668A93E2D+3278285]
+	GetHandleVerifier [0x00007FF668AE0190+3590448]
+	GetHandleVerifier [0x00007FF668AD61D0+3549552]
+	GetHandleVerifier [0x00007FF668831DE6+779654]
+	(No symbol) [0x00007FF668707ACF]
+	(No symbol) [0x00007FF668702EE4]
+	(No symbol) [0x00007FF668703072]
+	(No symbol) [0x00007FF6686F2C4F]
+	BaseThreadInitThunk [0x00007FF9E1C0257D+29]
+	RtlUserThreadStart [0x00007FF9E37CAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaContOperSecundaria.py", line 130, in test_contratc_oparSecondary
+    find_elements(self.driver, download_button )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1355, -252)
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6687822C2+60002]
+	(No symbol) [0x00007FF6686FCA59]
+	(No symbol) [0x00007FF6685B7EDA]
+	(No symbol) [0x00007FF66860F39E]
+	(No symbol) [0x00007FF66860CD62]
+	(No symbol) [0x00007FF66860A1FB]
+	(No symbol) [0x00007FF6686093C6]
+	(No symbol) [0x00007FF6685FB4D1]
+	(No symbol) [0x00007FF66862C28A]
+	(No symbol) [0x00007FF6685FADF6]
+	(No symbol) [0x00007FF66862C4A0]
+	(No symbol) [0x00007FF66864BCC7]
+	(No symbol) [0x00007FF66862C033]
+	(No symbol) [0x00007FF6685F9657]
+	(No symbol) [0x00007FF6685FA251]
+	GetHandleVerifier [0x00007FF668A93E2D+3278285]
+	GetHandleVerifier [0x00007FF668AE0190+3590448]
+	GetHandleVerifier [0x00007FF668AD61D0+3549552]
+	GetHandleVerifier [0x00007FF668831DE6+779654]
+	(No symbol) [0x00007FF668707ACF]
+	(No symbol) [0x00007FF668702EE4]
+	(No symbol) [0x00007FF668703072]
+	(No symbol) [0x00007FF6686F2C4F]
+	BaseThreadInitThunk [0x00007FF9E1C0257D+29]
+	RtlUserThreadStart [0x00007FF9E37CAA48+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 4 veces con éxito!
+Tiempo de espera agotado. El texto por texto no está presente.
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 2070
+El texto es visible para el usuario
+El texto fue validado correctamente: De Soja
+El texto es visible para el usuario
+El texto fue validado correctamente: 2122
+El texto es visible para el usuario: '0,01 QQ'
+]]></system-out>
+	</testcase>
+</testsuite>

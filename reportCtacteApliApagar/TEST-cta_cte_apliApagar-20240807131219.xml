@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliApagar-20240807131219" tests="2" file=".py" time="38.763" timestamp="2024-08-07T13:12:58" failures="0" errors="2" skipped="0">
+	<testcase classname="cta_cte_apliApagar" name="test_ctacte_apliApagar" time="0.000" timestamp="0001-01-01T00:00:00" file="ctacte_ApliApagar.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_ApliApagar.py", line 42, in test_ctacte_apliApagar
+    find_elements(self.driver, apply_filter_1)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+	</testcase>
+	<testcase classname="cta_cte_apliApagar" name="test_ctacte_apliApagar" time="38.763" timestamp="2024-08-07T13:12:58" file="ctacte_ApliApagar.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C3649632+30946]
+	(No symbol) [0x00007FF6C35FE3C9]
+	(No symbol) [0x00007FF6C34F6FDA]
+	(No symbol) [0x00007FF6C34CCB85]
+	(No symbol) [0x00007FF6C35737A7]
+	(No symbol) [0x00007FF6C357A8C7]
+	(No symbol) [0x00007FF6C356CA30]
+	(No symbol) [0x00007FF6C353A6E5]
+	(No symbol) [0x00007FF6C353B021]
+	GetHandleVerifier [0x00007FF6C377F83D+1301229]
+	GetHandleVerifier [0x00007FF6C378BDB7+1351783]
+	GetHandleVerifier [0x00007FF6C3782A03+1313971]
+	GetHandleVerifier [0x00007FF6C367DD06+245686]
+	(No symbol) [0x00007FF6C360758F]
+	(No symbol) [0x00007FF6C3603804]
+	(No symbol) [0x00007FF6C3603992]
+	(No symbol) [0x00007FF6C35FA3EF]
+	BaseThreadInitThunk [0x00007FFADFA8257D+29]
+	RtlUserThreadStart [0x00007FFAE082AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_ApliApagar.py", line 167, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=127.0.6533.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C3649632+30946]
+	(No symbol) [0x00007FF6C35FE3C9]
+	(No symbol) [0x00007FF6C34F6FDA]
+	(No symbol) [0x00007FF6C34CCB85]
+	(No symbol) [0x00007FF6C35737A7]
+	(No symbol) [0x00007FF6C357A8C7]
+	(No symbol) [0x00007FF6C356CA30]
+	(No symbol) [0x00007FF6C353A6E5]
+	(No symbol) [0x00007FF6C353B021]
+	GetHandleVerifier [0x00007FF6C377F83D+1301229]
+	GetHandleVerifier [0x00007FF6C378BDB7+1351783]
+	GetHandleVerifier [0x00007FF6C3782A03+1313971]
+	GetHandleVerifier [0x00007FF6C367DD06+245686]
+	(No symbol) [0x00007FF6C360758F]
+	(No symbol) [0x00007FF6C3603804]
+	(No symbol) [0x00007FF6C3603992]
+	(No symbol) [0x00007FF6C35FA3EF]
+	BaseThreadInitThunk [0x00007FFADFA8257D+29]
+	RtlUserThreadStart [0x00007FFAE082AF28+40]
+
+]]></error>
+	</testcase>
+</testsuite>

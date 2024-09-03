@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_fijaciones-20240903131900" tests="1" file=".py" time="55.928" timestamp="2024-09-03T13:19:56" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_fijaciones" name="test_detail_fixings" time="55.928" timestamp="2024-09-03T13:19:56" file="CtaCtoDtalFijaciones.py" line="22">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF62C96B5D2+29090]
+	(No symbol) [0x00007FF62C8DE689]
+	(No symbol) [0x00007FF62C79B1CA]
+	(No symbol) [0x00007FF62C7EEFD7]
+	(No symbol) [0x00007FF62C7EF22C]
+	(No symbol) [0x00007FF62C8397F7]
+	(No symbol) [0x00007FF62C81672F]
+	(No symbol) [0x00007FF62C8365D9]
+	(No symbol) [0x00007FF62C816493]
+	(No symbol) [0x00007FF62C7E09B1]
+	(No symbol) [0x00007FF62C7E1B11]
+	GetHandleVerifier [0x00007FF62CC88C5D+3295277]
+	GetHandleVerifier [0x00007FF62CCD4843+3605523]
+	GetHandleVerifier [0x00007FF62CCCA707+3564247]
+	GetHandleVerifier [0x00007FF62CA26EB6+797318]
+	(No symbol) [0x00007FF62C8E980F]
+	(No symbol) [0x00007FF62C8E53F4]
+	(No symbol) [0x00007FF62C8E5580]
+	(No symbol) [0x00007FF62C8D4A1F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalFijaciones.py", line 26, in test_detail_fixings
+    self.login_helper.search_and_select_account("1023")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\loginhelper.py", line 24, in search_and_select_account
+    input_element = find_element_by_id(self.driver, "search-options")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF62C96B5D2+29090]
+	(No symbol) [0x00007FF62C8DE689]
+	(No symbol) [0x00007FF62C79B1CA]
+	(No symbol) [0x00007FF62C7EEFD7]
+	(No symbol) [0x00007FF62C7EF22C]
+	(No symbol) [0x00007FF62C8397F7]
+	(No symbol) [0x00007FF62C81672F]
+	(No symbol) [0x00007FF62C8365D9]
+	(No symbol) [0x00007FF62C816493]
+	(No symbol) [0x00007FF62C7E09B1]
+	(No symbol) [0x00007FF62C7E1B11]
+	GetHandleVerifier [0x00007FF62CC88C5D+3295277]
+	GetHandleVerifier [0x00007FF62CCD4843+3605523]
+	GetHandleVerifier [0x00007FF62CCCA707+3564247]
+	GetHandleVerifier [0x00007FF62CA26EB6+797318]
+	(No symbol) [0x00007FF62C8E980F]
+	(No symbol) [0x00007FF62C8E53F4]
+	(No symbol) [0x00007FF62C8E5580]
+	(No symbol) [0x00007FF62C8D4A1F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+
+]]></error>
+		<system-err><![CDATA[Error sending stats to Plausible: error sending request for url (https://plausible.io/api/event)
+]]></system-err>
+	</testcase>
+</testsuite>

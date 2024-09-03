@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeResNegocioTenant-20240514163004" tests="1" file=".py" time="120.963" timestamp="2024-05-14T16:32:05" failures="0" errors="1" skipped="0">
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="120.963" timestamp="2024-05-14T16:32:05" file="HomeResNegocio.py" line="18">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F0461522+60802]
+	(No symbol) [0x00007FF7F03DAC22]
+	(No symbol) [0x00007FF7F0297CE4]
+	(No symbol) [0x00007FF7F026DFDF]
+	(No symbol) [0x00007FF7F0311E57]
+	(No symbol) [0x00007FF7F03298D1]
+	(No symbol) [0x00007FF7F030A923]
+	(No symbol) [0x00007FF7F02D8FEC]
+	(No symbol) [0x00007FF7F02D9C21]
+	GetHandleVerifier [0x00007FF7F07641BD+3217949]
+	GetHandleVerifier [0x00007FF7F07A6157+3488183]
+	GetHandleVerifier [0x00007FF7F079F0DF+3459391]
+	GetHandleVerifier [0x00007FF7F051B8E6+823622]
+	(No symbol) [0x00007FF7F03E5FBF]
+	(No symbol) [0x00007FF7F03E0EE4]
+	(No symbol) [0x00007FF7F03E1072]
+	(No symbol) [0x00007FF7F03D18C4]
+	BaseThreadInitThunk [0x00007FFCF149257D+29]
+	RtlUserThreadStart [0x00007FFCF2C2AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\HomeResNegocio.py", line 51, in test_start_tenant
+    validate_image_css_selector(self.driver, image_1, image_1_expected)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1078, in validate_image_css_selector
+    imagen = driver.find_element(By.CSS_SELECTOR, css_selector)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F0461522+60802]
+	(No symbol) [0x00007FF7F03DAC22]
+	(No symbol) [0x00007FF7F0297CE4]
+	(No symbol) [0x00007FF7F026DFDF]
+	(No symbol) [0x00007FF7F0311E57]
+	(No symbol) [0x00007FF7F03298D1]
+	(No symbol) [0x00007FF7F030A923]
+	(No symbol) [0x00007FF7F02D8FEC]
+	(No symbol) [0x00007FF7F02D9C21]
+	GetHandleVerifier [0x00007FF7F07641BD+3217949]
+	GetHandleVerifier [0x00007FF7F07A6157+3488183]
+	GetHandleVerifier [0x00007FF7F079F0DF+3459391]
+	GetHandleVerifier [0x00007FF7F051B8E6+823622]
+	(No symbol) [0x00007FF7F03E5FBF]
+	(No symbol) [0x00007FF7F03E0EE4]
+	(No symbol) [0x00007FF7F03E1072]
+	(No symbol) [0x00007FF7F03D18C4]
+	BaseThreadInitThunk [0x00007FFCF149257D+29]
+	RtlUserThreadStart [0x00007FFCF2C2AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Buen día JUAN DEMO!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

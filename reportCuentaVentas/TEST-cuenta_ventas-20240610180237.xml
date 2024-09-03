@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ventas-20240610180237" tests="1" file=".py" time="34.165" timestamp="2024-06-10T18:03:11" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ventas" name="test_cuenta_ventas" time="34.165" timestamp="2024-06-10T18:03:11" file="Ventas.py" line="22">
+		<error type="StaleElementReferenceException" message="Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF66D8C1F52+60322]
+	(No symbol) [0x00007FF66D83CEC9]
+	(No symbol) [0x00007FF66D6F7EBA]
+	(No symbol) [0x00007FF66D6FDCEE]
+	(No symbol) [0x00007FF66D700641]
+	(No symbol) [0x00007FF66D7006E0]
+	(No symbol) [0x00007FF66D74968C]
+	(No symbol) [0x00007FF66D73B346]
+	(No symbol) [0x00007FF66D76C21A]
+	(No symbol) [0x00007FF66D73ADB6]
+	(No symbol) [0x00007FF66D76C430]
+	(No symbol) [0x00007FF66D78BC80]
+	(No symbol) [0x00007FF66D76BFC3]
+	(No symbol) [0x00007FF66D739617]
+	(No symbol) [0x00007FF66D73A211]
+	GetHandleVerifier [0x00007FF66DBD94AD+3301629]
+	GetHandleVerifier [0x00007FF66DC236D3+3605283]
+	GetHandleVerifier [0x00007FF66DC19450+3563680]
+	GetHandleVerifier [0x00007FF66D974326+790390]
+	(No symbol) [0x00007FF66D84750F]
+	(No symbol) [0x00007FF66D843404]
+	(No symbol) [0x00007FF66D843592]
+	(No symbol) [0x00007FF66D832F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Ventas.py", line 76, in test_cuenta_ventas
+    find_and_click_element(self.driver, arrow_filter1, amount_click1)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 381, in find_and_click_element
+    element.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=125.0.6422.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF66D8C1F52+60322]
+	(No symbol) [0x00007FF66D83CEC9]
+	(No symbol) [0x00007FF66D6F7EBA]
+	(No symbol) [0x00007FF66D6FDCEE]
+	(No symbol) [0x00007FF66D700641]
+	(No symbol) [0x00007FF66D7006E0]
+	(No symbol) [0x00007FF66D74968C]
+	(No symbol) [0x00007FF66D73B346]
+	(No symbol) [0x00007FF66D76C21A]
+	(No symbol) [0x00007FF66D73ADB6]
+	(No symbol) [0x00007FF66D76C430]
+	(No symbol) [0x00007FF66D78BC80]
+	(No symbol) [0x00007FF66D76BFC3]
+	(No symbol) [0x00007FF66D739617]
+	(No symbol) [0x00007FF66D73A211]
+	GetHandleVerifier [0x00007FF66DBD94AD+3301629]
+	GetHandleVerifier [0x00007FF66DC236D3+3605283]
+	GetHandleVerifier [0x00007FF66DC19450+3563680]
+	GetHandleVerifier [0x00007FF66D974326+790390]
+	(No symbol) [0x00007FF66D84750F]
+	(No symbol) [0x00007FF66D843404]
+	(No symbol) [0x00007FF66D843592]
+	(No symbol) [0x00007FF66D832F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+]]></system-out>
+	</testcase>
+</testsuite>

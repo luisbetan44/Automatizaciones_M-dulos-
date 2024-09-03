@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240613180407" tests="1" file=".py" time="49.164" timestamp="2024-06-13T18:04:57" failures="0" errors="0" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="49.164" timestamp="2024-06-13T18:04:57" file="reportInsuRetirar.py" line="17">
+		<system-out><![CDATA[El texto encontrado es  Insumos Pendientes de Retirar
+El texto encontrado es  Comprobante
+El texto encontrado 'FAC 1051 00014483' no coincide con el esperado ''
+El texto encontrado es  Artículo
+El texto encontrado '170322 - Cebo CIBUS-M x 20 kilos (Babosas y caracoles) AGRIGLOBAL' no coincide con el esperado ''
+El texto encontrado es  Cant. Pend.
+El valor es un carácter numérico. Valor: 300
+]]></system-out>
+	</testcase>
+</testsuite>

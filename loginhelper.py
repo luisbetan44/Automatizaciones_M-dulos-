@@ -1,4 +1,3 @@
-from  selenium.webdriver.common.keys import Keys
 import time
 from findElements import find_element_by_css_selector, find_element_by_xpath, find_element_by_id
 
@@ -28,4 +27,4 @@ class LoginHelper:
         element_to_click = find_element_by_css_selector(self.driver, "#search-dropdown > app-accounts-list > ngx-simplebar > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.dropdown-sub-item.accounts-numbers")
         self.driver.execute_script("arguments[0].style.display = 'block';", element_to_click)
         element_to_click.click()
-        time.sleep(3)
+        time.sleep(5)

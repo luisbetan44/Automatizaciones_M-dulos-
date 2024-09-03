@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ctacte_histórica.cuenta_ctacte_historica-failed" tests="1" file="ctacte_histórica.py" time="68.793" timestamp="2024-08-28T12:37:42" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_histórica.cuenta_ctacte_historica" name="test_ctacte_historica" time="68.793" timestamp="2024-08-28T12:37:42" file="ctacte_histórica.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 14 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un carácter numérico. Valor: 120.870.489,95
+El valor es un carácter numérico. Valor: 620.206,93
+El texto encontrado es  CUENTA CORRIENTE
+El texto no fue encontrado Movimiento ED 0011 00285494
+El texto no fue encontrado + ARS 2.487.087,83
+El texto encontrado es  IMPUTACION CANJE
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,7 +1,7 @@
 import unittest
 import time
 import xmlrunner
-from Elements import displace_element,find_elements,find_elements_id, find_send_element, search_and_select_option, select_option_click, send_element, validate_character_numeric_element_selector, validate_strt_selector, validate_text, validate_text_by_text
+from Elements import delete_element, displace_element, find_elements,find_elements_id, find_send_element, search_and_select_option, select_option_click, send_element,  validate_character_numeric_element_selector, validate_strt_selector, validate_text, validate_text_by_text
 from LoginSample import LoginSample
 from startSession import StartSession
 
@@ -20,16 +20,16 @@ class insumosProductos(unittest.TestCase):
         # Utilizar métodos de LoginHelper para el inicio de sesión
         self.login_sample.login("comercialgd@silohub.ag", "G@viglio123")
         self.login_sample.select_tenant()
-        time.sleep(2)
+        time.sleep(5)
         ## seleccionar menú de insumos 
 
         select_supplies = "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[4]/a"
         displace_element(self.driver,select_supplies )
-        time.sleep(3)
+        time.sleep(5)
 
         select_menu_product = "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[4]/div/ul/li[1]/a"
         find_elements(self.driver,select_menu_product )
-        time.sleep(2)
+        time.sleep(5)
 
         ## validar titulo de la pagina 
 
@@ -103,13 +103,21 @@ class insumosProductos(unittest.TestCase):
         select_account_tenant = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[2]/app-supplies-customer-info/div/div[1]/div/div[2]/app-customer-searcher/ng-select/ng-dropdown-panel/div/div[2]/div[2]/span"
         find_elements(self.driver,  select_account_tenant)
         time.sleep(7)
+       
         ## cambiar cantidad 
 
-        inser_new_amount = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/app-supplies-selected-products-item/div/div/app-supplies-selected-products-item-price-item/div/div[2]/div/div[2]/input"
-        send_new_amount = "3"
-        send_element(self.driver, inser_new_amount,  send_new_amount)
+        select_input_amount2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/app-supplies-selected-products-item/div/div/app-supplies-selected-products-item-price-item/div/div[2]/div/div[2]/input"
+        find_elements(self.driver, select_input_amount2)
         time.sleep(2)
-        ## insertar comentario
+        
+        cleam_account = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/app-supplies-selected-products-item/div/div/app-supplies-selected-products-item-price-item/div/div[2]/div/div[2]/input"
+        delete_element(self.driver, cleam_account)
+        time.sleep(2)
+
+        
+        select_input_amount = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/app-supplies-selected-products-item/div/div/app-supplies-selected-products-item-price-item/div/div[2]/div/div[2]/input'
+        send_account = '10'
+        send_element(self.driver, select_input_amount,send_account )
 
 
         insert_comentary = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[2]/app-supplies-customer-info/div/div[2]/div/textarea"

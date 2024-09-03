@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_entregaVentas-20240208160442" tests="1" file=".py" time="53.871" timestamp="2024-02-08T16:05:36" failures="1" errors="0" skipped="0">
+	<testcase classname="detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="53.871" timestamp="2024-02-08T16:05:36" file="CtaCtroDtlleEntVta.py" line="22">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtroDtlleEntVta.py", line 104, in test_detail_deriverySales
+    validate_text_visible(self.driver, element1, number_expected)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 977, in validate_text_visible
+    assert text_obtained == text_expected
+AssertionError
+]]></failure>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Estado De Mis Contratos
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+]]></system-out>
+	</testcase>
+</testsuite>

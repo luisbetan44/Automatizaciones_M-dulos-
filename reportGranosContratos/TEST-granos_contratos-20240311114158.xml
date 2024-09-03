@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240311114158" tests="1" file=".py" time="425.893" timestamp="2024-03-11T11:49:04" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="425.893" timestamp="2024-03-11T11:49:04" file="GranosContratos.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;span class=&quot;ng-arrow-wrapper&quot;&gt;...&lt;/span&gt; is not clickable at point (1461, 224). Other element would receive the click: &lt;div role=&quot;combobox&quot; aria-haspopup=&quot;listbox&quot; class=&quot;ng-input&quot; aria-expanded=&quot;false&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78C86AD32+56930]
+	(No symbol) [0x00007FF78C7DF632]
+	(No symbol) [0x00007FF78C6942E5]
+	(No symbol) [0x00007FF78C6E0A80]
+	(No symbol) [0x00007FF78C6DE8AB]
+	(No symbol) [0x00007FF78C6DC0B4]
+	(No symbol) [0x00007FF78C6DAE45]
+	(No symbol) [0x00007FF78C6CF798]
+	(No symbol) [0x00007FF78C6FBC9A]
+	(No symbol) [0x00007FF78C6CF09A]
+	(No symbol) [0x00007FF78C6FBEB0]
+	(No symbol) [0x00007FF78C7181E2]
+	(No symbol) [0x00007FF78C6FBA43]
+	(No symbol) [0x00007FF78C6CD438]
+	(No symbol) [0x00007FF78C6CE4D1]
+	GetHandleVerifier [0x00007FF78CBE6ABD+3709933]
+	GetHandleVerifier [0x00007FF78CC3FFFD+4075821]
+	GetHandleVerifier [0x00007FF78CC3818F+4043455]
+	GetHandleVerifier [0x00007FF78C909766+706710]
+	(No symbol) [0x00007FF78C7EB90F]
+	(No symbol) [0x00007FF78C7E6AF4]
+	(No symbol) [0x00007FF78C7E6C4C]
+	(No symbol) [0x00007FF78C7D6904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 222, in test_granos_contratos
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 536, in displace_element
+    search_input_element.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span class="ng-arrow-wrapper">...</span> is not clickable at point (1461, 224). Other element would receive the click: <div role="combobox" aria-haspopup="listbox" class="ng-input" aria-expanded="false">...</div>
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78C86AD32+56930]
+	(No symbol) [0x00007FF78C7DF632]
+	(No symbol) [0x00007FF78C6942E5]
+	(No symbol) [0x00007FF78C6E0A80]
+	(No symbol) [0x00007FF78C6DE8AB]
+	(No symbol) [0x00007FF78C6DC0B4]
+	(No symbol) [0x00007FF78C6DAE45]
+	(No symbol) [0x00007FF78C6CF798]
+	(No symbol) [0x00007FF78C6FBC9A]
+	(No symbol) [0x00007FF78C6CF09A]
+	(No symbol) [0x00007FF78C6FBEB0]
+	(No symbol) [0x00007FF78C7181E2]
+	(No symbol) [0x00007FF78C6FBA43]
+	(No symbol) [0x00007FF78C6CD438]
+	(No symbol) [0x00007FF78C6CE4D1]
+	GetHandleVerifier [0x00007FF78CBE6ABD+3709933]
+	GetHandleVerifier [0x00007FF78CC3FFFD+4075821]
+	GetHandleVerifier [0x00007FF78CC3818F+4043455]
+	GetHandleVerifier [0x00007FF78C909766+706710]
+	(No symbol) [0x00007FF78C7EB90F]
+	(No symbol) [0x00007FF78C7E6AF4]
+	(No symbol) [0x00007FF78C7E6C4C]
+	(No symbol) [0x00007FF78C7D6904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

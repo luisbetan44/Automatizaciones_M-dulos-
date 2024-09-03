@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobanteVentas-20240304094948" tests="2" file=".py" time="75.734" timestamp="2024-03-04T09:51:04" failures="0" errors="2" skipped="0">
+	<testcase classname="comprobanteVentas" name="test_vouchers_sales" time="0.000" timestamp="0001-01-01T00:00:00" file="comproVentas.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79828AD22+56930]
+	(No symbol) [0x00007FF7981FF622]
+	(No symbol) [0x00007FF7980B42E5]
+	(No symbol) [0x00007FF798091D4C]
+	(No symbol) [0x00007FF7981223F7]
+	(No symbol) [0x00007FF798137891]
+	(No symbol) [0x00007FF79811BA43]
+	(No symbol) [0x00007FF7980ED438]
+	(No symbol) [0x00007FF7980EE4D1]
+	GetHandleVerifier [0x00007FF798606AAD+3709933]
+	GetHandleVerifier [0x00007FF79865FFED+4075821]
+	GetHandleVerifier [0x00007FF79865817F+4043455]
+	GetHandleVerifier [0x00007FF798329756+706710]
+	(No symbol) [0x00007FF79820B8FF]
+	(No symbol) [0x00007FF798206AE4]
+	(No symbol) [0x00007FF798206C3C]
+	(No symbol) [0x00007FF7981F68F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\comproVentas.py", line 125, in test_vouchers_sales
+    find_elements(self.driver,  select_popup1)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79828AD22+56930]
+	(No symbol) [0x00007FF7981FF622]
+	(No symbol) [0x00007FF7980B42E5]
+	(No symbol) [0x00007FF798091D4C]
+	(No symbol) [0x00007FF7981223F7]
+	(No symbol) [0x00007FF798137891]
+	(No symbol) [0x00007FF79811BA43]
+	(No symbol) [0x00007FF7980ED438]
+	(No symbol) [0x00007FF7980EE4D1]
+	GetHandleVerifier [0x00007FF798606AAD+3709933]
+	GetHandleVerifier [0x00007FF79865FFED+4075821]
+	GetHandleVerifier [0x00007FF79865817F+4043455]
+	GetHandleVerifier [0x00007FF798329756+706710]
+	(No symbol) [0x00007FF79820B8FF]
+	(No symbol) [0x00007FF798206AE4]
+	(No symbol) [0x00007FF798206C3C]
+	(No symbol) [0x00007FF7981F68F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Mis Comprobantes
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  F 0001 00120623
+El texto encontrado es  F 0001 00125168
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+	<testcase classname="comprobanteVentas" name="test_vouchers_sales" time="75.734" timestamp="2024-03-04T09:51:04" file="comproVentas.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79828AD22+56930]
+	(No symbol) [0x00007FF7981FF622]
+	(No symbol) [0x00007FF7980B42E5]
+	(No symbol) [0x00007FF7980A0879]
+	(No symbol) [0x00007FF7980A10AF]
+	(No symbol) [0x00007FF7980B4845]
+	(No symbol) [0x00007FF79809192C]
+	(No symbol) [0x00007FF7981288E4]
+	(No symbol) [0x00007FF79811BC60]
+	(No symbol) [0x00007FF7980ED438]
+	(No symbol) [0x00007FF7980EE4D1]
+	GetHandleVerifier [0x00007FF798606AAD+3709933]
+	GetHandleVerifier [0x00007FF79865FFED+4075821]
+	GetHandleVerifier [0x00007FF79865817F+4043455]
+	GetHandleVerifier [0x00007FF798329756+706710]
+	(No symbol) [0x00007FF79820B8FF]
+	(No symbol) [0x00007FF798206AE4]
+	(No symbol) [0x00007FF798206C3C]
+	(No symbol) [0x00007FF7981F68F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\comproVentas.py", line 132, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79828AD22+56930]
+	(No symbol) [0x00007FF7981FF622]
+	(No symbol) [0x00007FF7980B42E5]
+	(No symbol) [0x00007FF7980A0879]
+	(No symbol) [0x00007FF7980A10AF]
+	(No symbol) [0x00007FF7980B4845]
+	(No symbol) [0x00007FF79809192C]
+	(No symbol) [0x00007FF7981288E4]
+	(No symbol) [0x00007FF79811BC60]
+	(No symbol) [0x00007FF7980ED438]
+	(No symbol) [0x00007FF7980EE4D1]
+	GetHandleVerifier [0x00007FF798606AAD+3709933]
+	GetHandleVerifier [0x00007FF79865FFED+4075821]
+	GetHandleVerifier [0x00007FF79865817F+4043455]
+	GetHandleVerifier [0x00007FF798329756+706710]
+	(No symbol) [0x00007FF79820B8FF]
+	(No symbol) [0x00007FF798206AE4]
+	(No symbol) [0x00007FF798206C3C]
+	(No symbol) [0x00007FF7981F68F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Mis Comprobantes
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  F 0001 00120623
+El texto encontrado es  F 0001 00125168
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

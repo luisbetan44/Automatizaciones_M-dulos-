@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240312105738" tests="1" file=".py" time="47.822" timestamp="2024-03-12T10:58:26" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="47.822" timestamp="2024-03-12T10:58:26" file="GranosContratos.py" line="23">
+		<error type="InvalidSelectorException" message="Message: invalid selector: Unable to locate an element with the xpath expression  because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.
+  (Session info: chrome=122.0.6261.112); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73011AD32+56930]
+	(No symbol) [0x00007FF73008F632]
+	(No symbol) [0x00007FF72FF442E5]
+	(No symbol) [0x00007FF72FF49261]
+	(No symbol) [0x00007FF72FF4B6EB]
+	(No symbol) [0x00007FF72FF4B7B0]
+	(No symbol) [0x00007FF72FF8955C]
+	(No symbol) [0x00007FF72FF89A2C]
+	(No symbol) [0x00007FF72FFCA967]
+	(No symbol) [0x00007FF72FFABCDF]
+	(No symbol) [0x00007FF72FFC81E2]
+	(No symbol) [0x00007FF72FFABA43]
+	(No symbol) [0x00007FF72FF7D438]
+	(No symbol) [0x00007FF72FF7E4D1]
+	GetHandleVerifier [0x00007FF730496ABD+3709933]
+	GetHandleVerifier [0x00007FF7304EFFFD+4075821]
+	GetHandleVerifier [0x00007FF7304E818F+4043455]
+	GetHandleVerifier [0x00007FF7301B9766+706710]
+	(No symbol) [0x00007FF73009B90F]
+	(No symbol) [0x00007FF730096AF4]
+	(No symbol) [0x00007FF730096C4C]
+	(No symbol) [0x00007FF730086904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 156, in test_granos_contratos
+    select_option_click(self.driver, button_dopdown6, select_option)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 952, in select_option_click
+    upload_input_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: Unable to locate an element with the xpath expression  because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '' is not a valid XPath expression.
+  (Session info: chrome=122.0.6261.112); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73011AD32+56930]
+	(No symbol) [0x00007FF73008F632]
+	(No symbol) [0x00007FF72FF442E5]
+	(No symbol) [0x00007FF72FF49261]
+	(No symbol) [0x00007FF72FF4B6EB]
+	(No symbol) [0x00007FF72FF4B7B0]
+	(No symbol) [0x00007FF72FF8955C]
+	(No symbol) [0x00007FF72FF89A2C]
+	(No symbol) [0x00007FF72FFCA967]
+	(No symbol) [0x00007FF72FFABCDF]
+	(No symbol) [0x00007FF72FFC81E2]
+	(No symbol) [0x00007FF72FFABA43]
+	(No symbol) [0x00007FF72FF7D438]
+	(No symbol) [0x00007FF72FF7E4D1]
+	GetHandleVerifier [0x00007FF730496ABD+3709933]
+	GetHandleVerifier [0x00007FF7304EFFFD+4075821]
+	GetHandleVerifier [0x00007FF7304E818F+4043455]
+	GetHandleVerifier [0x00007FF7301B9766+706710]
+	(No symbol) [0x00007FF73009B90F]
+	(No symbol) [0x00007FF730096AF4]
+	(No symbol) [0x00007FF730096C4C]
+	(No symbol) [0x00007FF730086904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada en el dropdown con exito  
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Elemento encontrado y clickeado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

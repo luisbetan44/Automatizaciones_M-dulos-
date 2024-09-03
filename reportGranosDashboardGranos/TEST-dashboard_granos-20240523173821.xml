@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dashboard_granos-20240523173821" tests="1" file=".py" time="69.248" timestamp="2024-05-23T17:39:30" failures="0" errors="0" skipped="0">
+	<testcase classname="dashboard_granos" name="test_dashboard_grain" time="69.248" timestamp="2024-05-23T17:39:30" file="Dashboar.py" line="23">
+		<system-out><![CDATA[Waiting for element_list...
+element_list clicked
+Checking status1...
+status1: Aceptado
+Checking status2...
+Timeout exception occurred: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF676E61F52+60322]
+	(No symbol) [0x00007FF676DDCEC9]
+	(No symbol) [0x00007FF676C97EBA]
+	(No symbol) [0x00007FF676CE7676]
+	(No symbol) [0x00007FF676CE773C]
+	(No symbol) [0x00007FF676D2E967]
+	(No symbol) [0x00007FF676D0C25F]
+	(No symbol) [0x00007FF676D2BC80]
+	(No symbol) [0x00007FF676D0BFC3]
+	(No symbol) [0x00007FF676CD9617]
+	(No symbol) [0x00007FF676CDA211]
+	GetHandleVerifier [0x00007FF67717949D+3301613]
+	GetHandleVerifier [0x00007FF6771C36C3+3605267]
+	GetHandleVerifier [0x00007FF6771B9440+3563664]
+	GetHandleVerifier [0x00007FF676F14326+790390]
+	(No symbol) [0x00007FF676DE750F]
+	(No symbol) [0x00007FF676DE3404]
+	(No symbol) [0x00007FF676DE3592]
+	(No symbol) [0x00007FF676DD2F9F]
+	BaseThreadInitThunk [0x00007FFF805E257D+29]
+	RtlUserThreadStart [0x00007FFF81C8AA48+40]
+
+]]></system-out>
+	</testcase>
+</testsuite>

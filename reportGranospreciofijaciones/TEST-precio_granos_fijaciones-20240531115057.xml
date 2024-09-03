@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240531115057" tests="1" file=".py" time="284.588" timestamp="2024-05-31T11:55:41" failures="0" errors="0" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="284.588" timestamp="2024-05-31T11:55:41" file="Precio_Fijacion.py" line="21">
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+Número obtenido desde la función: 7290
+Ha ocurrido un error al obtener o clicar en el elemento: Message: no such element: Unable to locate element: {"method":"xpath","selector":"./following-sibling::*[2][@id="Grupo_10473"]"}
+  (Session info: chrome=125.0.6422.113); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C1D41F52+60322]
+	(No symbol) [0x00007FF7C1CBCEC9]
+	(No symbol) [0x00007FF7C1B77EBA]
+	(No symbol) [0x00007FF7C1BC7676]
+	(No symbol) [0x00007FF7C1BC773C]
+	(No symbol) [0x00007FF7C1BBAEEC]
+	(No symbol) [0x00007FF7C1BEC25F]
+	(No symbol) [0x00007FF7C1BBADB6]
+	(No symbol) [0x00007FF7C1BEC430]
+	(No symbol) [0x00007FF7C1C0BC80]
+	(No symbol) [0x00007FF7C1BEBFC3]
+	(No symbol) [0x00007FF7C1BB9617]
+	(No symbol) [0x00007FF7C1BBA211]
+	GetHandleVerifier [0x00007FF7C20594AD+3301629]
+	GetHandleVerifier [0x00007FF7C20A36D3+3605283]
+	GetHandleVerifier [0x00007FF7C2099450+3563680]
+	GetHandleVerifier [0x00007FF7C1DF4326+790390]
+	(No symbol) [0x00007FF7C1CC750F]
+	(No symbol) [0x00007FF7C1CC3404]
+	(No symbol) [0x00007FF7C1CC3592]
+	(No symbol) [0x00007FF7C1CB2F9F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

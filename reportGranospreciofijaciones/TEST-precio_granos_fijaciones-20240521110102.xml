@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240521110102" tests="2" file=".py" time="6.133" timestamp="2024-05-21T11:01:08" failures="0" errors="2" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="0.000" timestamp="0001-01-01T00:00:00" file="Precio_Fijacion.py" line="21">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E82A22C2+60002]
+	(No symbol) [0x00007FF7E821CA59]
+	(No symbol) [0x00007FF7E80D7EDA]
+	(No symbol) [0x00007FF7E80AD5B5]
+	(No symbol) [0x00007FF7E8153727]
+	(No symbol) [0x00007FF7E816B3A1]
+	(No symbol) [0x00007FF7E814C033]
+	(No symbol) [0x00007FF7E8119657]
+	(No symbol) [0x00007FF7E811A251]
+	GetHandleVerifier [0x00007FF7E85B3E2D+3278285]
+	GetHandleVerifier [0x00007FF7E8600190+3590448]
+	GetHandleVerifier [0x00007FF7E85F61D0+3549552]
+	GetHandleVerifier [0x00007FF7E8351DE6+779654]
+	(No symbol) [0x00007FF7E8227ACF]
+	(No symbol) [0x00007FF7E8222EE4]
+	(No symbol) [0x00007FF7E8223072]
+	(No symbol) [0x00007FF7E8212C4F]
+	BaseThreadInitThunk [0x00007FF993AF257D+29]
+	RtlUserThreadStart [0x00007FF9943AAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 23, in test_price_fixings
+    self.login_sample.login("admingd@silohub.ag", "G@viglio123")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\LoginSample.py", line 10, in login
+    user = find_element_by_id(self.driver, "email")  # asegúrate de pasar self.driver
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\FindElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E82A22C2+60002]
+	(No symbol) [0x00007FF7E821CA59]
+	(No symbol) [0x00007FF7E80D7EDA]
+	(No symbol) [0x00007FF7E80AD5B5]
+	(No symbol) [0x00007FF7E8153727]
+	(No symbol) [0x00007FF7E816B3A1]
+	(No symbol) [0x00007FF7E814C033]
+	(No symbol) [0x00007FF7E8119657]
+	(No symbol) [0x00007FF7E811A251]
+	GetHandleVerifier [0x00007FF7E85B3E2D+3278285]
+	GetHandleVerifier [0x00007FF7E8600190+3590448]
+	GetHandleVerifier [0x00007FF7E85F61D0+3549552]
+	GetHandleVerifier [0x00007FF7E8351DE6+779654]
+	(No symbol) [0x00007FF7E8227ACF]
+	(No symbol) [0x00007FF7E8222EE4]
+	(No symbol) [0x00007FF7E8223072]
+	(No symbol) [0x00007FF7E8212C4F]
+	BaseThreadInitThunk [0x00007FF993AF257D+29]
+	RtlUserThreadStart [0x00007FF9943AAA48+40]
+
+]]></error>
+	</testcase>
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="6.133" timestamp="2024-05-21T11:01:08" file="Precio_Fijacion.py" line="21">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E82A22C2+60002]
+	(No symbol) [0x00007FF7E821CA59]
+	(No symbol) [0x00007FF7E80D7EDA]
+	(No symbol) [0x00007FF7E80BE05F]
+	(No symbol) [0x00007FF7E80BEBCF]
+	(No symbol) [0x00007FF7E80D8503]
+	(No symbol) [0x00007FF7E80AD09C]
+	(No symbol) [0x00007FF7E815A824]
+	(No symbol) [0x00007FF7E814C250]
+	(No symbol) [0x00007FF7E8119657]
+	(No symbol) [0x00007FF7E811A251]
+	GetHandleVerifier [0x00007FF7E85B3E2D+3278285]
+	GetHandleVerifier [0x00007FF7E8600190+3590448]
+	GetHandleVerifier [0x00007FF7E85F61D0+3549552]
+	GetHandleVerifier [0x00007FF7E8351DE6+779654]
+	(No symbol) [0x00007FF7E8227ACF]
+	(No symbol) [0x00007FF7E8222EE4]
+	(No symbol) [0x00007FF7E8223072]
+	(No symbol) [0x00007FF7E8212C4F]
+	BaseThreadInitThunk [0x00007FF993AF257D+29]
+	RtlUserThreadStart [0x00007FF9943AAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 174, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.60)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E82A22C2+60002]
+	(No symbol) [0x00007FF7E821CA59]
+	(No symbol) [0x00007FF7E80D7EDA]
+	(No symbol) [0x00007FF7E80BE05F]
+	(No symbol) [0x00007FF7E80BEBCF]
+	(No symbol) [0x00007FF7E80D8503]
+	(No symbol) [0x00007FF7E80AD09C]
+	(No symbol) [0x00007FF7E815A824]
+	(No symbol) [0x00007FF7E814C250]
+	(No symbol) [0x00007FF7E8119657]
+	(No symbol) [0x00007FF7E811A251]
+	GetHandleVerifier [0x00007FF7E85B3E2D+3278285]
+	GetHandleVerifier [0x00007FF7E8600190+3590448]
+	GetHandleVerifier [0x00007FF7E85F61D0+3549552]
+	GetHandleVerifier [0x00007FF7E8351DE6+779654]
+	(No symbol) [0x00007FF7E8227ACF]
+	(No symbol) [0x00007FF7E8222EE4]
+	(No symbol) [0x00007FF7E8223072]
+	(No symbol) [0x00007FF7E8212C4F]
+	BaseThreadInitThunk [0x00007FF993AF257D+29]
+	RtlUserThreadStart [0x00007FF9943AAA48+40]
+
+]]></error>
+	</testcase>
+</testsuite>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_entregas-20240307111856" tests="1" file=".py" time="33.177" timestamp="2024-03-07T11:19:29" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_entregas" name="test_cuenta_entregas" time="33.177" timestamp="2024-03-07T11:19:29" file="Entregas.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;div _ngcontent-tfv-c151=&quot;&quot; class=&quot;text-truncate&quot;&gt;...&lt;/div&gt; is not clickable at point (1290, 54). Other element would receive the click: &lt;div _ngcontent-tfv-c132=&quot;&quot; class=&quot;navbar-header&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=122.0.6261.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61BB6AD22+56930]
+	(No symbol) [0x00007FF61BADF622]
+	(No symbol) [0x00007FF61B9942E5]
+	(No symbol) [0x00007FF61B9E0A80]
+	(No symbol) [0x00007FF61B9DE8AB]
+	(No symbol) [0x00007FF61B9DC0B4]
+	(No symbol) [0x00007FF61B9DAE45]
+	(No symbol) [0x00007FF61B9CF798]
+	(No symbol) [0x00007FF61B9FBC9A]
+	(No symbol) [0x00007FF61B9CF09A]
+	(No symbol) [0x00007FF61B9FBEB0]
+	(No symbol) [0x00007FF61BA181E2]
+	(No symbol) [0x00007FF61B9FBA43]
+	(No symbol) [0x00007FF61B9CD438]
+	(No symbol) [0x00007FF61B9CE4D1]
+	GetHandleVerifier [0x00007FF61BEE6AAD+3709933]
+	GetHandleVerifier [0x00007FF61BF3FFED+4075821]
+	GetHandleVerifier [0x00007FF61BF3817F+4043455]
+	GetHandleVerifier [0x00007FF61BC09756+706710]
+	(No symbol) [0x00007FF61BAEB8FF]
+	(No symbol) [0x00007FF61BAE6AE4]
+	(No symbol) [0x00007FF61BAE6C3C]
+	(No symbol) [0x00007FF61BAD68F4]
+	BaseThreadInitThunk [0x00007FFEC8B8257D+29]
+	RtlUserThreadStart [0x00007FFECA20AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 58, in test_cuenta_entregas
+    find_elements(self.driver, apply_product_filter )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 21, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div _ngcontent-tfv-c151="" class="text-truncate">...</div> is not clickable at point (1290, 54). Other element would receive the click: <div _ngcontent-tfv-c132="" class="navbar-header">...</div>
+  (Session info: chrome=122.0.6261.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61BB6AD22+56930]
+	(No symbol) [0x00007FF61BADF622]
+	(No symbol) [0x00007FF61B9942E5]
+	(No symbol) [0x00007FF61B9E0A80]
+	(No symbol) [0x00007FF61B9DE8AB]
+	(No symbol) [0x00007FF61B9DC0B4]
+	(No symbol) [0x00007FF61B9DAE45]
+	(No symbol) [0x00007FF61B9CF798]
+	(No symbol) [0x00007FF61B9FBC9A]
+	(No symbol) [0x00007FF61B9CF09A]
+	(No symbol) [0x00007FF61B9FBEB0]
+	(No symbol) [0x00007FF61BA181E2]
+	(No symbol) [0x00007FF61B9FBA43]
+	(No symbol) [0x00007FF61B9CD438]
+	(No symbol) [0x00007FF61B9CE4D1]
+	GetHandleVerifier [0x00007FF61BEE6AAD+3709933]
+	GetHandleVerifier [0x00007FF61BF3FFED+4075821]
+	GetHandleVerifier [0x00007FF61BF3817F+4043455]
+	GetHandleVerifier [0x00007FF61BC09756+706710]
+	(No symbol) [0x00007FF61BAEB8FF]
+	(No symbol) [0x00007FF61BAE6AE4]
+	(No symbol) [0x00007FF61BAE6C3C]
+	(No symbol) [0x00007FF61BAD68F4]
+	BaseThreadInitThunk [0x00007FFEC8B8257D+29]
+	RtlUserThreadStart [0x00007FFECA20AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

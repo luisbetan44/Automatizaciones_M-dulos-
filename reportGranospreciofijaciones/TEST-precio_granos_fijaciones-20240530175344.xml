@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240530175344" tests="2" file=".py" time="194.423" timestamp="2024-05-30T17:56:58" failures="0" errors="2" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="0.000" timestamp="0001-01-01T00:00:00" file="Precio_Fijacion.py" line="21">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 160, in test_price_fixings
+    select_option_click(self.driver, select_number_contract, option_number_contract )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 924, in select_option_click
+    xpath_chevron = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+No se encontró el elemento hermano.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="194.423" timestamp="2024-05-30T17:56:58" file="Precio_Fijacion.py" line="21">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F3041F22+60322]
+	(No symbol) [0x00007FF7F2FBCE99]
+	(No symbol) [0x00007FF7F2E77EBA]
+	(No symbol) [0x00007FF7F2E4D5A5]
+	(No symbol) [0x00007FF7F2EF36B7]
+	(No symbol) [0x00007FF7F2EFA812]
+	(No symbol) [0x00007FF7F2EEC1E0]
+	(No symbol) [0x00007FF7F2EB9617]
+	(No symbol) [0x00007FF7F2EBA211]
+	GetHandleVerifier [0x00007FF7F335946D+3301613]
+	GetHandleVerifier [0x00007FF7F33A3693+3605267]
+	GetHandleVerifier [0x00007FF7F3399410+3563664]
+	GetHandleVerifier [0x00007FF7F30F42F6+790390]
+	(No symbol) [0x00007FF7F2FC74DF]
+	(No symbol) [0x00007FF7F2FC33D4]
+	(No symbol) [0x00007FF7F2FC3562]
+	(No symbol) [0x00007FF7F2FB2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 177, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F3041F22+60322]
+	(No symbol) [0x00007FF7F2FBCE99]
+	(No symbol) [0x00007FF7F2E77EBA]
+	(No symbol) [0x00007FF7F2E4D5A5]
+	(No symbol) [0x00007FF7F2EF36B7]
+	(No symbol) [0x00007FF7F2EFA812]
+	(No symbol) [0x00007FF7F2EEC1E0]
+	(No symbol) [0x00007FF7F2EB9617]
+	(No symbol) [0x00007FF7F2EBA211]
+	GetHandleVerifier [0x00007FF7F335946D+3301613]
+	GetHandleVerifier [0x00007FF7F33A3693+3605267]
+	GetHandleVerifier [0x00007FF7F3399410+3563664]
+	GetHandleVerifier [0x00007FF7F30F42F6+790390]
+	(No symbol) [0x00007FF7F2FC74DF]
+	(No symbol) [0x00007FF7F2FC33D4]
+	(No symbol) [0x00007FF7F2FC3562]
+	(No symbol) [0x00007FF7F2FB2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+No se encontró el elemento hermano.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

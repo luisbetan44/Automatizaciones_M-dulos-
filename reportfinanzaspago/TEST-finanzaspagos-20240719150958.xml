@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="finanzaspagos-20240719150958" tests="1" file=".py" time="85.637" timestamp="2024-07-19T15:11:23" failures="0" errors="1" skipped="0">
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="85.637" timestamp="2024-07-19T15:11:23" file="finanzasPagos.py" line="23">
+		<error type="InvalidSelectorException" message="Message: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression #layout-wrapper &gt; div &gt; div &gt; div &gt; app-payment-collection-detail-main &gt; div &gt; div &gt; div:nth-child(2) &gt; app-totalizer-forecast &gt; div &gt; div &gt; div.col-9.row.totalizer-values &gt; div:nth-child(2) &gt; span because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '#layout-wrapper &gt; div &gt; div &gt; div &gt; app-payment-collection-detail-main &gt; div &gt; div &gt; div:nth-child(2) &gt; app-totalizer-forecast &gt; div &gt; div &gt; div.col-9.row.totalizer-values &gt; div:nth-child(2) &gt; span' is not a valid XPath expression.&quot;}
+  (Session info: chrome=126.0.6478.182); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BF8BEEB2+31554]
+	(No symbol) [0x00007FF7BF837EE9]
+	(No symbol) [0x00007FF7BF6F872A]
+	(No symbol) [0x00007FF7BF6FE55E]
+	(No symbol) [0x00007FF7BF700EB1]
+	(No symbol) [0x00007FF7BF700F50]
+	(No symbol) [0x00007FF7BF747F6C]
+	(No symbol) [0x00007FF7BF74853C]
+	(No symbol) [0x00007FF7BF78F6A7]
+	(No symbol) [0x00007FF7BF76D06F]
+	(No symbol) [0x00007FF7BF78C977]
+	(No symbol) [0x00007FF7BF76CDD3]
+	(No symbol) [0x00007FF7BF73A33B]
+	(No symbol) [0x00007FF7BF73AED1]
+	GetHandleVerifier [0x00007FF7BFBC8B2D+3217341]
+	GetHandleVerifier [0x00007FF7BFC15AF3+3532675]
+	GetHandleVerifier [0x00007FF7BFC0B0F0+3489152]
+	GetHandleVerifier [0x00007FF7BF96E786+750614]
+	(No symbol) [0x00007FF7BF84376F]
+	(No symbol) [0x00007FF7BF83EB24]
+	(No symbol) [0x00007FF7BF83ECB2]
+	(No symbol) [0x00007FF7BF82E17F]
+	BaseThreadInitThunk [0x00007FFBFD87257D+29]
+	RtlUserThreadStart [0x00007FFBFF42AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\finanzasPagos.py", line 124, in test_finance_payment
+    verify_todate(self.driver,select_todate)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements2.py", line 15, in verify_todate
+    elemento_fecha = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression #layout-wrapper > div > div > div > app-payment-collection-detail-main > div > div > div:nth-child(2) > app-totalizer-forecast > div > div > div.col-9.row.totalizer-values > div:nth-child(2) > span because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '#layout-wrapper > div > div > div > app-payment-collection-detail-main > div > div > div:nth-child(2) > app-totalizer-forecast > div > div > div.col-9.row.totalizer-values > div:nth-child(2) > span' is not a valid XPath expression."}
+  (Session info: chrome=126.0.6478.182); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BF8BEEB2+31554]
+	(No symbol) [0x00007FF7BF837EE9]
+	(No symbol) [0x00007FF7BF6F872A]
+	(No symbol) [0x00007FF7BF6FE55E]
+	(No symbol) [0x00007FF7BF700EB1]
+	(No symbol) [0x00007FF7BF700F50]
+	(No symbol) [0x00007FF7BF747F6C]
+	(No symbol) [0x00007FF7BF74853C]
+	(No symbol) [0x00007FF7BF78F6A7]
+	(No symbol) [0x00007FF7BF76D06F]
+	(No symbol) [0x00007FF7BF78C977]
+	(No symbol) [0x00007FF7BF76CDD3]
+	(No symbol) [0x00007FF7BF73A33B]
+	(No symbol) [0x00007FF7BF73AED1]
+	GetHandleVerifier [0x00007FF7BFBC8B2D+3217341]
+	GetHandleVerifier [0x00007FF7BFC15AF3+3532675]
+	GetHandleVerifier [0x00007FF7BFC0B0F0+3489152]
+	GetHandleVerifier [0x00007FF7BF96E786+750614]
+	(No symbol) [0x00007FF7BF84376F]
+	(No symbol) [0x00007FF7BF83EB24]
+	(No symbol) [0x00007FF7BF83ECB2]
+	(No symbol) [0x00007FF7BF82E17F]
+	BaseThreadInitThunk [0x00007FFBFD87257D+29]
+	RtlUserThreadStart [0x00007FFBFF42AF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Listado de Comprobantes
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

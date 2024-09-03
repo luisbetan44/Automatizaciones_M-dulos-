@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240409111454" tests="1" file=".py" time="18.320" timestamp="2024-04-09T11:15:12" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="18.320" timestamp="2024-04-09T11:15:12" file="Precio_Granos.py" line="23">
+		<error type="TypeError" message="click_icon_delete() missing 1 required positional argument: 'xpaht'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Granos.py", line 46, in test_granos_contratos
+    click_icon_delete(self.driver, delete_price_grain)
+TypeError: click_icon_delete() missing 1 required positional argument: 'xpaht'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+</testsuite>

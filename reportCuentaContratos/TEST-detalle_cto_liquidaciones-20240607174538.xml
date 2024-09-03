@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_liquidaciones-20240607174538" tests="1" file=".py" time="66.822" timestamp="2024-06-07T17:46:45" failures="0" errors="0" skipped="0">
+	<testcase classname="detalle_cto_liquidaciones" name="test_detail_liquidations" time="66.822" timestamp="2024-06-07T17:46:45" file="CtaCtoDtalLiquidaciones.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 4 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 107571
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto no coincide con los valores esperados. Texto actual: 'De 1.000,00 Tn Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Listado de liquidaciones
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 29/03/2022
+El texto es visible para el usuario
+El texto fue validado correctamente: Comprobante
+El valor es un carácter numérico. Valor: LC 3302-20433356
+El texto es visible para el usuario
+El texto fue validado correctamente: Tn Totales
+El valor es un carácter numérico. Valor: 121.873
+El texto es visible para el usuario
+El texto fue validado correctamente: Precio en pesos
+El valor es un carácter numérico. Valor: 2.548.752,15
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha de pago
+El texto es visible para el usuario
+El texto fue validado correctamente: 31/03/2022
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[4]/app-contract-closeouts/app-responsive-table/div/div/table/tbody/tr[1]/th/input' seleccionado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

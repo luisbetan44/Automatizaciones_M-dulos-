@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_entregaVentas-20240209172042" tests="1" file=".py" time="53.876" timestamp="2024-02-09T17:21:36" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="53.876" timestamp="2024-02-09T17:21:36" file="CtaCtroDtlleEntVta.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (292, 1400)
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00007FF738495E42+3538674]
+	(No symbol) [0x00007FF7380B4C02]
+	(No symbol) [0x00007FF737F65AEB]
+	(No symbol) [0x00007FF737FB33E4]
+	(No symbol) [0x00007FF737FB1122]
+	(No symbol) [0x00007FF737FAE884]
+	(No symbol) [0x00007FF737FAD5A9]
+	(No symbol) [0x00007FF737FA1950]
+	(No symbol) [0x00007FF737FCF0AA]
+	(No symbol) [0x00007FF737FA124A]
+	(No symbol) [0x00007FF737FCF2C0]
+	(No symbol) [0x00007FF737FEBDE3]
+	(No symbol) [0x00007FF737FCEE53]
+	(No symbol) [0x00007FF737F9F514]
+	(No symbol) [0x00007FF737FA0631]
+	GetHandleVerifier [0x00007FF7384C6CAD+3738973]
+	GetHandleVerifier [0x00007FF73851C506+4089270]
+	GetHandleVerifier [0x00007FF738514823+4057299]
+	GetHandleVerifier [0x00007FF7381E5C49+720121]
+	(No symbol) [0x00007FF7380C126F]
+	(No symbol) [0x00007FF7380BC304]
+	(No symbol) [0x00007FF7380BC432]
+	(No symbol) [0x00007FF7380ABD04]
+	BaseThreadInitThunk [0x00007FFDE810257D+29]
+	RtlUserThreadStart [0x00007FFDE8CEAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtroDtlleEntVta.py", line 204, in test_detail_deriverySales
+    click_checkbox_xpaht(self.driver, select_moviments )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 359, in click_checkbox_xpaht
+    checkbox_element.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (292, 1400)
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00007FF738495E42+3538674]
+	(No symbol) [0x00007FF7380B4C02]
+	(No symbol) [0x00007FF737F65AEB]
+	(No symbol) [0x00007FF737FB33E4]
+	(No symbol) [0x00007FF737FB1122]
+	(No symbol) [0x00007FF737FAE884]
+	(No symbol) [0x00007FF737FAD5A9]
+	(No symbol) [0x00007FF737FA1950]
+	(No symbol) [0x00007FF737FCF0AA]
+	(No symbol) [0x00007FF737FA124A]
+	(No symbol) [0x00007FF737FCF2C0]
+	(No symbol) [0x00007FF737FEBDE3]
+	(No symbol) [0x00007FF737FCEE53]
+	(No symbol) [0x00007FF737F9F514]
+	(No symbol) [0x00007FF737FA0631]
+	GetHandleVerifier [0x00007FF7384C6CAD+3738973]
+	GetHandleVerifier [0x00007FF73851C506+4089270]
+	GetHandleVerifier [0x00007FF738514823+4057299]
+	GetHandleVerifier [0x00007FF7381E5C49+720121]
+	(No symbol) [0x00007FF7380C126F]
+	(No symbol) [0x00007FF7380BC304]
+	(No symbol) [0x00007FF7380BC432]
+	(No symbol) [0x00007FF7380ABD04]
+	BaseThreadInitThunk [0x00007FFDE810257D+29]
+	RtlUserThreadStart [0x00007FFDE8CEAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Estado De Mis Contratos
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108280
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+La cadena de texto no coincide con los valores esperados. Texto actual: '5.000,00 QQ'
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Entregas
+El texto es visible para el usuario
+El texto fue validado correctamente: Producto
+El texto es visible para el usuario
+El texto fue validado correctamente: Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 15/03/2022
+La cadena de texto es visible para el usuario: 'QQ Brutos'
+El valor es un carácter numérico. Valor: 291,80
+El texto es visible para el usuario
+El texto fue validado correctamente: Humedad
+El valor es un carácter numérico. Valor: 15,70%
+El texto es visible para el usuario
+El texto fue validado correctamente: Zaranda
+El valor es un carácter numérico. Valor: 0,00%
+El texto es visible para el usuario
+El texto fue validado correctamente: Volátil
+El valor es un carácter numérico. Valor: 0,30%
+El texto es visible para el usuario
+El texto fue validado correctamente: Factor/Grado
+El valor es un carácter numérico. Valor: 100/2
+La cadena de texto es visible para el usuario: 'QQ Netos'
+El valor es un carácter numérico. Valor: 32,82
+El texto es visible para el usuario
+El texto fue validado correctamente: CTG/CRT
+El valor es un carácter numérico. Valor: 0010010102308045
+]]></system-out>
+	</testcase>
+</testsuite>

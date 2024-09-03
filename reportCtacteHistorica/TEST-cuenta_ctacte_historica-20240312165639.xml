@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_historica-20240312165639" tests="1" file=".py" time="51.732" timestamp="2024-03-12T16:57:31" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_historica" name="test_ctacte_historica" time="51.732" timestamp="2024-03-12T16:57:31" file="ctacte_histórica.py" line="17">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;td _ngcontent-cvt-c221=&quot;&quot; class=&quot;text-nowrap align-middle f-size-12 cursor-pointer ellipsis-cell&quot;&gt;...&lt;/td&gt; is not clickable at point (621, 495). Other element would receive the click: &lt;ngb-offcanvas-backdrop class=&quot;offcanvas-backdrop fade show&quot;&gt;&lt;/ngb-offcanvas-backdrop&gt;
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C56DAD32+56930]
+	(No symbol) [0x00007FF7C564F632]
+	(No symbol) [0x00007FF7C55042E5]
+	(No symbol) [0x00007FF7C5550A80]
+	(No symbol) [0x00007FF7C554E8AB]
+	(No symbol) [0x00007FF7C554C0B4]
+	(No symbol) [0x00007FF7C554AE45]
+	(No symbol) [0x00007FF7C553F798]
+	(No symbol) [0x00007FF7C556BC9A]
+	(No symbol) [0x00007FF7C553F09A]
+	(No symbol) [0x00007FF7C556BEB0]
+	(No symbol) [0x00007FF7C55881E2]
+	(No symbol) [0x00007FF7C556BA43]
+	(No symbol) [0x00007FF7C553D438]
+	(No symbol) [0x00007FF7C553E4D1]
+	GetHandleVerifier [0x00007FF7C5A56ABD+3709933]
+	GetHandleVerifier [0x00007FF7C5AAFFFD+4075821]
+	GetHandleVerifier [0x00007FF7C5AA818F+4043455]
+	GetHandleVerifier [0x00007FF7C5779766+706710]
+	(No symbol) [0x00007FF7C565B90F]
+	(No symbol) [0x00007FF7C5656AF4]
+	(No symbol) [0x00007FF7C5656C4C]
+	(No symbol) [0x00007FF7C5646904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_histórica.py", line 155, in test_ctacte_historica
+    find_elements(self.driver, detail_movements)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 21, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <td _ngcontent-cvt-c221="" class="text-nowrap align-middle f-size-12 cursor-pointer ellipsis-cell">...</td> is not clickable at point (621, 495). Other element would receive the click: <ngb-offcanvas-backdrop class="offcanvas-backdrop fade show"></ngb-offcanvas-backdrop>
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C56DAD32+56930]
+	(No symbol) [0x00007FF7C564F632]
+	(No symbol) [0x00007FF7C55042E5]
+	(No symbol) [0x00007FF7C5550A80]
+	(No symbol) [0x00007FF7C554E8AB]
+	(No symbol) [0x00007FF7C554C0B4]
+	(No symbol) [0x00007FF7C554AE45]
+	(No symbol) [0x00007FF7C553F798]
+	(No symbol) [0x00007FF7C556BC9A]
+	(No symbol) [0x00007FF7C553F09A]
+	(No symbol) [0x00007FF7C556BEB0]
+	(No symbol) [0x00007FF7C55881E2]
+	(No symbol) [0x00007FF7C556BA43]
+	(No symbol) [0x00007FF7C553D438]
+	(No symbol) [0x00007FF7C553E4D1]
+	GetHandleVerifier [0x00007FF7C5A56ABD+3709933]
+	GetHandleVerifier [0x00007FF7C5AAFFFD+4075821]
+	GetHandleVerifier [0x00007FF7C5AA818F+4043455]
+	GetHandleVerifier [0x00007FF7C5779766+706710]
+	(No symbol) [0x00007FF7C565B90F]
+	(No symbol) [0x00007FF7C5656AF4]
+	(No symbol) [0x00007FF7C5656C4C]
+	(No symbol) [0x00007FF7C5646904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 10 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un carácter numérico. Valor: 131.172.595,19
+El valor es un carácter numérico. Valor: 897.440,38
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

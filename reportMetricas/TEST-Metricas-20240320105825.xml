@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Metricas-20240320105825" tests="1" file=".py" time="27.099" timestamp="2024-03-20T10:58:52" failures="0" errors="0" skipped="0">
+	<testcase classname="Metricas" name="test_metricas" time="27.099" timestamp="2024-03-20T10:58:52" file="Metricas.py" line="18">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+El texto no fue encontrado MÉTRICAS
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El valor es un carácter numérico. Valor: 2.043
+El texto encontrado es  Total Cuentas ERP
+El valor es un carácter numérico. Valor: 1.608
+El texto encontrado es  Total Cuentas Vinculadas
+El valor es un carácter numérico. Valor: 435
+El texto encontrado es  Cuentas Pend. de Vincular
+El valor es un carácter numérico. Valor: 78,71%
+El texto encontrado es  Porc. Vinculado
+El valor es un carácter numérico. Valor: 1
+El texto encontrado es  Productores Nuevos
+El valor es un carácter numérico. Valor: 58
+El texto encontrado es  Total Logins (Visitas)
+El valor es un carácter numérico. Valor: 24
+El texto encontrado es  Usuarios Logueados
+El valor es un carácter numérico. Valor: 00:05:33
+El texto encontrado es  Tiempo Prom. Sesión
+]]></system-out>
+	</testcase>
+</testsuite>

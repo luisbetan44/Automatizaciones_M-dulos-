@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="logistOperPrimarias-20240710122740" tests="1" file=".py" time="72.180" timestamp="2024-07-10T12:28:52" failures="0" errors="0" skipped="0">
+	<testcase classname="logistOperPrimarias" name="test_Logistics_primary" time="72.180" timestamp="2024-07-10T12:28:52" file="logistOperPrimarias.py" line="20">
+		<system-out><![CDATA[¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240530124119" tests="1" file=".py" time="195.840" timestamp="2024-05-30T12:44:35" failures="0" errors="0" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="195.840" timestamp="2024-05-30T12:44:35" file="Precio_Fijacion.py" line="21">
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Cuenta encontrada y seleccionada 484  con éxito!
+Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

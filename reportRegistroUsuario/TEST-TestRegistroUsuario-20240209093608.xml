@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TestRegistroUsuario-20240209093608" tests="1" file=".py" time="173.932" timestamp="2024-02-09T09:39:02" failures="0" errors="1" skipped="0">
+	<testcase classname="TestRegistroUsuario" name="test_register_user" time="173.932" timestamp="2024-02-09T09:39:02" file="RegistroUsuario.py" line="18">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71B195E42+3538674]
+	(No symbol) [0x00007FF71ADB4C02]
+	(No symbol) [0x00007FF71AC65AEB]
+	(No symbol) [0x00007FF71AC4288C]
+	(No symbol) [0x00007FF71ACD5DD7]
+	(No symbol) [0x00007FF71ACEB40F]
+	(No symbol) [0x00007FF71ACCEE53]
+	(No symbol) [0x00007FF71AC9F514]
+	(No symbol) [0x00007FF71ACA0631]
+	GetHandleVerifier [0x00007FF71B1C6CAD+3738973]
+	GetHandleVerifier [0x00007FF71B21C506+4089270]
+	GetHandleVerifier [0x00007FF71B214823+4057299]
+	GetHandleVerifier [0x00007FF71AEE5C49+720121]
+	(No symbol) [0x00007FF71ADC126F]
+	(No symbol) [0x00007FF71ADBC304]
+	(No symbol) [0x00007FF71ADBC432]
+	(No symbol) [0x00007FF71ADABD04]
+	BaseThreadInitThunk [0x00007FF95784257D+29]
+	RtlUserThreadStart [0x00007FF95830AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\RegistroUsuario.py", line 147, in test_register_user
+    self.login_sample.login(test_email, "Bet$123456")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\LoginSample.py", line 10, in login
+    user = find_element_by_id(self.driver, "email")  # asegúrate de pasar self.driver
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00007FF71B195E42+3538674]
+	(No symbol) [0x00007FF71ADB4C02]
+	(No symbol) [0x00007FF71AC65AEB]
+	(No symbol) [0x00007FF71AC4288C]
+	(No symbol) [0x00007FF71ACD5DD7]
+	(No symbol) [0x00007FF71ACEB40F]
+	(No symbol) [0x00007FF71ACCEE53]
+	(No symbol) [0x00007FF71AC9F514]
+	(No symbol) [0x00007FF71ACA0631]
+	GetHandleVerifier [0x00007FF71B1C6CAD+3738973]
+	GetHandleVerifier [0x00007FF71B21C506+4089270]
+	GetHandleVerifier [0x00007FF71B214823+4057299]
+	GetHandleVerifier [0x00007FF71AEE5C49+720121]
+	(No symbol) [0x00007FF71ADC126F]
+	(No symbol) [0x00007FF71ADBC304]
+	(No symbol) [0x00007FF71ADBC432]
+	(No symbol) [0x00007FF71ADABD04]
+	BaseThreadInitThunk [0x00007FF95784257D+29]
+	RtlUserThreadStart [0x00007FF95830AA58+40]
+
+]]></error>
+		<system-out><![CDATA[Email generado: _irnfen2a@yopmail.com
+El texto encontrado es  Crear usuario
+Elemento desplazado, cantidad limpiada y nuevo valor '_irnfen2a@yopmail.com' ingresado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El texto por texto no está presente.
+Elemento desplazado, cantidad limpiada y nuevo valor '_irnfen2a@yopmail.com' ingresado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Elemento desplazado, cantidad limpiada y nuevo valor '_irnfen2a@yopmail.com' ingresado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Email del usuario validado correctamente.
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

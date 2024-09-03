@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliAcobrar-20240405132201" tests="2" file=".py" time="79.804" timestamp="2024-04-05T13:23:20" failures="0" errors="2" skipped="0">
+	<testcase classname="cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="0.000" timestamp="0001-01-01T00:00:00" file="CtaCte_ApliAcobrar.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF707A47072+63090]
+	(No symbol) [0x00007FF7079B2CC2]
+	(No symbol) [0x00007FF70784EC65]
+	(No symbol) [0x00007FF70782CA7C]
+	(No symbol) [0x00007FF7078BD687]
+	(No symbol) [0x00007FF7078D2AC1]
+	(No symbol) [0x00007FF7078B6D83]
+	(No symbol) [0x00007FF7078883A8]
+	(No symbol) [0x00007FF707889441]
+	GetHandleVerifier [0x00007FF707E425CD+4238285]
+	GetHandleVerifier [0x00007FF707E7F72D+4488493]
+	GetHandleVerifier [0x00007FF707E77A0F+4456463]
+	GetHandleVerifier [0x00007FF707B205B6+953270]
+	(No symbol) [0x00007FF7079BE58F]
+	(No symbol) [0x00007FF7079B9264]
+	(No symbol) [0x00007FF7079B939B]
+	(No symbol) [0x00007FF7079A9BD4]
+	BaseThreadInitThunk [0x00007FF89FEF257D+29]
+	RtlUserThreadStart [0x00007FF8A17AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_ApliAcobrar.py", line 152, in test_ctacte_aplicada
+    validate_text_by_strt(self.driver, balance_movements )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 491, in validate_text_by_strt
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=123.0.6312.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF707A47072+63090]
+	(No symbol) [0x00007FF7079B2CC2]
+	(No symbol) [0x00007FF70784EC65]
+	(No symbol) [0x00007FF70782CA7C]
+	(No symbol) [0x00007FF7078BD687]
+	(No symbol) [0x00007FF7078D2AC1]
+	(No symbol) [0x00007FF7078B6D83]
+	(No symbol) [0x00007FF7078883A8]
+	(No symbol) [0x00007FF707889441]
+	GetHandleVerifier [0x00007FF707E425CD+4238285]
+	GetHandleVerifier [0x00007FF707E7F72D+4488493]
+	GetHandleVerifier [0x00007FF707E77A0F+4456463]
+	GetHandleVerifier [0x00007FF707B205B6+953270]
+	(No symbol) [0x00007FF7079BE58F]
+	(No symbol) [0x00007FF7079B9264]
+	(No symbol) [0x00007FF7079B939B]
+	(No symbol) [0x00007FF7079A9BD4]
+	BaseThreadInitThunk [0x00007FF89FEF257D+29]
+	RtlUserThreadStart [0x00007FF8A17AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: 88.418.490,00
+El valor es un carácter numérico. Valor: -87.470.653,33
+El valor es un carácter numérico. Valor: -5.703,75
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+Tiempo de espera agotado. El texto por texto no está presente.
+]]></system-out>
+	</testcase>
+	<testcase classname="cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="79.804" timestamp="2024-04-05T13:23:20" file="CtaCte_ApliAcobrar.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=123.0.6312.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF707A47072+63090]
+	(No symbol) [0x00007FF7079B2CC2]
+	(No symbol) [0x00007FF70784EC65]
+	(No symbol) [0x00007FF70783B1A5]
+	(No symbol) [0x00007FF70783BA8F]
+	(No symbol) [0x00007FF70784F1C5]
+	(No symbol) [0x00007FF70782C65C]
+	(No symbol) [0x00007FF7078C3C74]
+	(No symbol) [0x00007FF7078B6FA0]
+	(No symbol) [0x00007FF7078883A8]
+	(No symbol) [0x00007FF707889441]
+	GetHandleVerifier [0x00007FF707E425CD+4238285]
+	GetHandleVerifier [0x00007FF707E7F72D+4488493]
+	GetHandleVerifier [0x00007FF707E77A0F+4456463]
+	GetHandleVerifier [0x00007FF707B205B6+953270]
+	(No symbol) [0x00007FF7079BE58F]
+	(No symbol) [0x00007FF7079B9264]
+	(No symbol) [0x00007FF7079B939B]
+	(No symbol) [0x00007FF7079A9BD4]
+	BaseThreadInitThunk [0x00007FF89FEF257D+29]
+	RtlUserThreadStart [0x00007FF8A17AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_ApliAcobrar.py", line 167, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=123.0.6312.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF707A47072+63090]
+	(No symbol) [0x00007FF7079B2CC2]
+	(No symbol) [0x00007FF70784EC65]
+	(No symbol) [0x00007FF70783B1A5]
+	(No symbol) [0x00007FF70783BA8F]
+	(No symbol) [0x00007FF70784F1C5]
+	(No symbol) [0x00007FF70782C65C]
+	(No symbol) [0x00007FF7078C3C74]
+	(No symbol) [0x00007FF7078B6FA0]
+	(No symbol) [0x00007FF7078883A8]
+	(No symbol) [0x00007FF707889441]
+	GetHandleVerifier [0x00007FF707E425CD+4238285]
+	GetHandleVerifier [0x00007FF707E7F72D+4488493]
+	GetHandleVerifier [0x00007FF707E77A0F+4456463]
+	GetHandleVerifier [0x00007FF707B205B6+953270]
+	(No symbol) [0x00007FF7079BE58F]
+	(No symbol) [0x00007FF7079B9264]
+	(No symbol) [0x00007FF7079B939B]
+	(No symbol) [0x00007FF7079A9BD4]
+	BaseThreadInitThunk [0x00007FF89FEF257D+29]
+	RtlUserThreadStart [0x00007FF8A17AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: 88.418.490,00
+El valor es un carácter numérico. Valor: -87.470.653,33
+El valor es un carácter numérico. Valor: -5.703,75
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+Tiempo de espera agotado. El texto por texto no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

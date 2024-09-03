@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="config_Sucursales-20240408152616" tests="1" file=".py" time="57.095" timestamp="2024-04-08T15:27:13" failures="0" errors="0" skipped="0">
+	<testcase classname="config_Sucursales" name="test_settings_branch_offices" time="57.095" timestamp="2024-04-08T15:27:13" file="ConfigSucursales.py" line="19">
+		<system-out><![CDATA[El texto encontrado es  SUCURSALES
+El texto encontrado es  Nombre Sucursal
+El texto encontrado es  Angellica - Casa Central
+El texto encontrado es  Depositos
+El texto encontrado es  Centro de Distribución
+El texto encontrado es  Depósito
+El texto encontrado es  Deposito Angelica - Bancchio
+Test finalizado con éxito
+]]></system-out>
+	</testcase>
+</testsuite>

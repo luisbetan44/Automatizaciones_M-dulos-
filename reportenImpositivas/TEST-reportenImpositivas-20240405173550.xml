@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportenImpositivas-20240405173550" tests="1" file=".py" time="50.263" timestamp="2024-04-05T17:36:41" failures="0" errors="0" skipped="0">
+	<testcase classname="reportenImpositivas" name="test_Report_tenImpositivas" time="50.263" timestamp="2024-04-05T17:36:41" file="ReportTenImpo.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Tenencias Impositivas
+El texto encontrado es  STOCK DE GRANOS NO LIQUIDADOS
+El texto encontrado es  Producto
+El texto encontrado es  MAIZ
+El texto encontrado es  Kg. Netos
+El valor es un carácter numérico. Valor: 575.194
+El texto encontrado es  Campaña
+El texto encontrado es  2223
+El texto encontrado es  Kg. Pendientes Cert.
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  SALDOS DE CUENTA CORRIENTE
+El valor es un carácter numérico. Valor: 1.643.350.183,60
+El valor es un carácter numérico. Valor: 3.487.611,96
+El valor es un carácter numérico. Valor: 2.784.756.289,32
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

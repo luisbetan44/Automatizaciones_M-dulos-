@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="config_Sucursales-20240408121209" tests="1" file=".py" time="14.778" timestamp="2024-04-08T12:12:24" failures="0" errors="1" skipped="0">
+	<testcase classname="config_Sucursales" name="test_settings_branch_offices" time="14.778" timestamp="2024-04-08T12:12:24" file="ConfigSucursales.py" line="19">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;a _ngcontent-rts-c141=&quot;&quot; class=&quot;nav-link&quot; data-parent=&quot;10&quot; href=&quot;/tenant/configuraciones/sucursales&quot;&gt;...&lt;/a&gt; is not clickable at point (138, 659). Other element would receive the click: &lt;div _ngcontent-rts-c141=&quot;&quot; class=&quot;version text-body t-gray-300 f-size-12&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF66F857072+63090]
+	(No symbol) [0x00007FF66F7C2CC2]
+	(No symbol) [0x00007FF66F65EC65]
+	(No symbol) [0x00007FF66F6ABB34]
+	(No symbol) [0x00007FF66F6A9954]
+	(No symbol) [0x00007FF66F6A7164]
+	(No symbol) [0x00007FF66F6A5EF9]
+	(No symbol) [0x00007FF66F69A708]
+	(No symbol) [0x00007FF66F6C6FDA]
+	(No symbol) [0x00007FF66F69A00A]
+	(No symbol) [0x00007FF66F6C71F0]
+	(No symbol) [0x00007FF66F6E3412]
+	(No symbol) [0x00007FF66F6C6D83]
+	(No symbol) [0x00007FF66F6983A8]
+	(No symbol) [0x00007FF66F699441]
+	GetHandleVerifier [0x00007FF66FC525CD+4238285]
+	GetHandleVerifier [0x00007FF66FC8F72D+4488493]
+	GetHandleVerifier [0x00007FF66FC87A0F+4456463]
+	GetHandleVerifier [0x00007FF66F9305B6+953270]
+	(No symbol) [0x00007FF66F7CE58F]
+	(No symbol) [0x00007FF66F7C9264]
+	(No symbol) [0x00007FF66F7C939B]
+	(No symbol) [0x00007FF66F7B9BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ConfigSucursales.py", line 33, in test_settings_branch_offices
+    find_elements_css_selector(self.driver,select_branch_offices )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 31, in find_elements_css_selector
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a _ngcontent-rts-c141="" class="nav-link" data-parent="10" href="/tenant/configuraciones/sucursales">...</a> is not clickable at point (138, 659). Other element would receive the click: <div _ngcontent-rts-c141="" class="version text-body t-gray-300 f-size-12">...</div>
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF66F857072+63090]
+	(No symbol) [0x00007FF66F7C2CC2]
+	(No symbol) [0x00007FF66F65EC65]
+	(No symbol) [0x00007FF66F6ABB34]
+	(No symbol) [0x00007FF66F6A9954]
+	(No symbol) [0x00007FF66F6A7164]
+	(No symbol) [0x00007FF66F6A5EF9]
+	(No symbol) [0x00007FF66F69A708]
+	(No symbol) [0x00007FF66F6C6FDA]
+	(No symbol) [0x00007FF66F69A00A]
+	(No symbol) [0x00007FF66F6C71F0]
+	(No symbol) [0x00007FF66F6E3412]
+	(No symbol) [0x00007FF66F6C6D83]
+	(No symbol) [0x00007FF66F6983A8]
+	(No symbol) [0x00007FF66F699441]
+	GetHandleVerifier [0x00007FF66FC525CD+4238285]
+	GetHandleVerifier [0x00007FF66FC8F72D+4488493]
+	GetHandleVerifier [0x00007FF66FC87A0F+4456463]
+	GetHandleVerifier [0x00007FF66F9305B6+953270]
+	(No symbol) [0x00007FF66F7CE58F]
+	(No symbol) [0x00007FF66F7C9264]
+	(No symbol) [0x00007FF66F7C939B]
+	(No symbol) [0x00007FF66F7B9BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

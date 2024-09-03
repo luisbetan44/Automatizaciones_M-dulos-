@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240515125429" tests="1" file=".py" time="21.212" timestamp="2024-05-15T12:54:50" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="21.212" timestamp="2024-05-15T12:54:50" file="Precio_Fijacion.py" line="21">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;path id=&quot;Trazado_4494&quot; data-name=&quot;Trazado 4494&quot; d=&quot;M20.75,10.466l-.322,9.75a3.212,3.212,0,0,1-3.221,3.106h-6.12a3.212,3.212,0,0,1-3.221-3.1l-.322-9.753a.806.806,0,0,1,1.611-.053l.322,9.752a1.611,1.611,0,0,0,1.611,1.549h6.12a1.611,1.611,0,0,0,1.611-1.552l.322-9.749a.806.806,0,1,1,1.611.053Zm1.065-3.245a.805.805,0,0,1-.805.805H7.283a.805.805,0,1,1,0-1.611h2.5A1.028,1.028,0,0,0,10.8,5.492a2.409,2.409,0,0,1,2.4-2.17h1.876a2.409,2.409,0,0,1,2.4,2.17,1.028,1.028,0,0,0,1.025.925h2.5a.805.805,0,0,1,.805.805ZM12.2,6.416h3.888a2.658,2.658,0,0,1-.205-.76.805.805,0,0,0-.8-.725H13.209a.805.805,0,0,0-.8.725,2.658,2.658,0,0,1-.206.76Zm.811,12.2V11.76a.805.805,0,0,0-1.611,0v6.86a.805.805,0,0,0,1.611,0Zm3.877,0V11.76a.805.805,0,0,0-1.611,0v6.86a.805.805,0,0,0,1.611,0Z&quot; transform=&quot;translate(-6.478 -3.322)&quot; fill=&quot;#f06548&quot; _ngcontent-oyq-c222=&quot;&quot; style=&quot;display: block;&quot;&gt;&lt;/path&gt; is not clickable at point (1469, 331). Other element would receive the click: &lt;svg xmlns=&quot;http://www.w3.org/2000/svg&quot; width=&quot;15.337&quot; height=&quot;20&quot; viewBox=&quot;0 0 15.337 20&quot; _ngcontent-oyq-c222=&quot;&quot; aria-hidden=&quot;true&quot;&gt;...&lt;/svg&gt;
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF799B91522+60802]
+	(No symbol) [0x00007FF799B0AC22]
+	(No symbol) [0x00007FF7999C7CE4]
+	(No symbol) [0x00007FF799A1E877]
+	(No symbol) [0x00007FF799A1C344]
+	(No symbol) [0x00007FF799A1980A]
+	(No symbol) [0x00007FF799A189E2]
+	(No symbol) [0x00007FF799A0AE8B]
+	(No symbol) [0x00007FF799A3AB7A]
+	(No symbol) [0x00007FF799A0A7C6]
+	(No symbol) [0x00007FF799A3AD90]
+	(No symbol) [0x00007FF799A5A224]
+	(No symbol) [0x00007FF799A3A923]
+	(No symbol) [0x00007FF799A08FEC]
+	(No symbol) [0x00007FF799A09C21]
+	GetHandleVerifier [0x00007FF799E941BD+3217949]
+	GetHandleVerifier [0x00007FF799ED6157+3488183]
+	GetHandleVerifier [0x00007FF799ECF0DF+3459391]
+	GetHandleVerifier [0x00007FF799C4B8E6+823622]
+	(No symbol) [0x00007FF799B15FBF]
+	(No symbol) [0x00007FF799B10EE4]
+	(No symbol) [0x00007FF799B11072]
+	(No symbol) [0x00007FF799B018C4]
+	BaseThreadInitThunk [0x00007FFA24B4257D+29]
+	RtlUserThreadStart [0x00007FFA2654AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 46, in test_price_fixings
+    click_icon_delete_xpaht(self.driver, delete_price_grain)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1303, in click_icon_delete_xpaht
+    icono_borrar.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <path id="Trazado_4494" data-name="Trazado 4494" d="M20.75,10.466l-.322,9.75a3.212,3.212,0,0,1-3.221,3.106h-6.12a3.212,3.212,0,0,1-3.221-3.1l-.322-9.753a.806.806,0,0,1,1.611-.053l.322,9.752a1.611,1.611,0,0,0,1.611,1.549h6.12a1.611,1.611,0,0,0,1.611-1.552l.322-9.749a.806.806,0,1,1,1.611.053Zm1.065-3.245a.805.805,0,0,1-.805.805H7.283a.805.805,0,1,1,0-1.611h2.5A1.028,1.028,0,0,0,10.8,5.492a2.409,2.409,0,0,1,2.4-2.17h1.876a2.409,2.409,0,0,1,2.4,2.17,1.028,1.028,0,0,0,1.025.925h2.5a.805.805,0,0,1,.805.805ZM12.2,6.416h3.888a2.658,2.658,0,0,1-.205-.76.805.805,0,0,0-.8-.725H13.209a.805.805,0,0,0-.8.725,2.658,2.658,0,0,1-.206.76Zm.811,12.2V11.76a.805.805,0,0,0-1.611,0v6.86a.805.805,0,0,0,1.611,0Zm3.877,0V11.76a.805.805,0,0,0-1.611,0v6.86a.805.805,0,0,0,1.611,0Z" transform="translate(-6.478 -3.322)" fill="#f06548" _ngcontent-oyq-c222="" style="display: block;"></path> is not clickable at point (1469, 331). Other element would receive the click: <svg xmlns="http://www.w3.org/2000/svg" width="15.337" height="20" viewBox="0 0 15.337 20" _ngcontent-oyq-c222="" aria-hidden="true">...</svg>
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF799B91522+60802]
+	(No symbol) [0x00007FF799B0AC22]
+	(No symbol) [0x00007FF7999C7CE4]
+	(No symbol) [0x00007FF799A1E877]
+	(No symbol) [0x00007FF799A1C344]
+	(No symbol) [0x00007FF799A1980A]
+	(No symbol) [0x00007FF799A189E2]
+	(No symbol) [0x00007FF799A0AE8B]
+	(No symbol) [0x00007FF799A3AB7A]
+	(No symbol) [0x00007FF799A0A7C6]
+	(No symbol) [0x00007FF799A3AD90]
+	(No symbol) [0x00007FF799A5A224]
+	(No symbol) [0x00007FF799A3A923]
+	(No symbol) [0x00007FF799A08FEC]
+	(No symbol) [0x00007FF799A09C21]
+	GetHandleVerifier [0x00007FF799E941BD+3217949]
+	GetHandleVerifier [0x00007FF799ED6157+3488183]
+	GetHandleVerifier [0x00007FF799ECF0DF+3459391]
+	GetHandleVerifier [0x00007FF799C4B8E6+823622]
+	(No symbol) [0x00007FF799B15FBF]
+	(No symbol) [0x00007FF799B10EE4]
+	(No symbol) [0x00007FF799B11072]
+	(No symbol) [0x00007FF799B018C4]
+	BaseThreadInitThunk [0x00007FFA24B4257D+29]
+	RtlUserThreadStart [0x00007FFA2654AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+</testsuite>

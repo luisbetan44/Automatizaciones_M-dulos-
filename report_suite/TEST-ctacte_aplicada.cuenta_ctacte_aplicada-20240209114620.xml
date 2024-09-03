@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ctacte_aplicada.cuenta_ctacte_aplicada-20240209114620" tests="1" file="ctacte_aplicada.py" time="145.787" timestamp="2024-02-09T12:00:09" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_aplicada.cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="145.787" timestamp="2024-02-09T12:00:09" file="ctacte_aplicada.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE APLICADA
+El valor es un carácter numérico. Valor: -808.286.425,53
+El valor es un carácter numérico. Valor: 633.911.771,95
+El valor es un carácter numérico. Valor: 3.427.518,80
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

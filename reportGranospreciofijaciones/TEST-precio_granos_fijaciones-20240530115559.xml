@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240530115559" tests="1" file=".py" time="126.192" timestamp="2024-05-30T11:58:06" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="126.192" timestamp="2024-05-30T11:58:06" file="Precio_Fijacion.py" line="21">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67DA81F22+60322]
+	(No symbol) [0x00007FF67D9FCE99]
+	(No symbol) [0x00007FF67D8B7EBA]
+	(No symbol) [0x00007FF67D8BDCEE]
+	(No symbol) [0x00007FF67D8C0641]
+	(No symbol) [0x00007FF67D8C06E0]
+	(No symbol) [0x00007FF67D90733B]
+	(No symbol) [0x00007FF67D90773C]
+	(No symbol) [0x00007FF67D94E967]
+	(No symbol) [0x00007FF67D92C25F]
+	(No symbol) [0x00007FF67D94BC80]
+	(No symbol) [0x00007FF67D92BFC3]
+	(No symbol) [0x00007FF67D8F9617]
+	(No symbol) [0x00007FF67D8FA211]
+	GetHandleVerifier [0x00007FF67DD9946D+3301613]
+	GetHandleVerifier [0x00007FF67DDE3693+3605267]
+	GetHandleVerifier [0x00007FF67DDD9410+3563664]
+	GetHandleVerifier [0x00007FF67DB342F6+790390]
+	(No symbol) [0x00007FF67DA074DF]
+	(No symbol) [0x00007FF67DA033D4]
+	(No symbol) [0x00007FF67DA03562]
+	(No symbol) [0x00007FF67D9F2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 142, in test_price_fixings
+    find_elements_css_selector(self.driver,button_hand)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 29, in find_elements_css_selector
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67DA81F22+60322]
+	(No symbol) [0x00007FF67D9FCE99]
+	(No symbol) [0x00007FF67D8B7EBA]
+	(No symbol) [0x00007FF67D8BDCEE]
+	(No symbol) [0x00007FF67D8C0641]
+	(No symbol) [0x00007FF67D8C06E0]
+	(No symbol) [0x00007FF67D90733B]
+	(No symbol) [0x00007FF67D90773C]
+	(No symbol) [0x00007FF67D94E967]
+	(No symbol) [0x00007FF67D92C25F]
+	(No symbol) [0x00007FF67D94BC80]
+	(No symbol) [0x00007FF67D92BFC3]
+	(No symbol) [0x00007FF67D8F9617]
+	(No symbol) [0x00007FF67D8FA211]
+	GetHandleVerifier [0x00007FF67DD9946D+3301613]
+	GetHandleVerifier [0x00007FF67DDE3693+3605267]
+	GetHandleVerifier [0x00007FF67DDD9410+3563664]
+	GetHandleVerifier [0x00007FF67DB342F6+790390]
+	(No symbol) [0x00007FF67DA074DF]
+	(No symbol) [0x00007FF67DA033D4]
+	(No symbol) [0x00007FF67DA03562]
+	(No symbol) [0x00007FF67D9F2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+Se produjo un error: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF67DA81F22+60322]
+	(No symbol) [0x00007FF67D9FCE99]
+	(No symbol) [0x00007FF67D8B7EBA]
+	(No symbol) [0x00007FF67D907676]
+	(No symbol) [0x00007FF67D90773C]
+	(No symbol) [0x00007FF67D94E967]
+	(No symbol) [0x00007FF67D92C25F]
+	(No symbol) [0x00007FF67D94BC80]
+	(No symbol) [0x00007FF67D92BFC3]
+	(No symbol) [0x00007FF67D8F9617]
+	(No symbol) [0x00007FF67D8FA211]
+	GetHandleVerifier [0x00007FF67DD9946D+3301613]
+	GetHandleVerifier [0x00007FF67DDE3693+3605267]
+	GetHandleVerifier [0x00007FF67DDD9410+3563664]
+	GetHandleVerifier [0x00007FF67DB342F6+790390]
+	(No symbol) [0x00007FF67DA074DF]
+	(No symbol) [0x00007FF67DA033D4]
+	(No symbol) [0x00007FF67DA03562]
+	(No symbol) [0x00007FF67D9F2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+]]></system-out>
+	</testcase>
+</testsuite>

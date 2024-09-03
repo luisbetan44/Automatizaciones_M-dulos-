@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240409105701" tests="1" file=".py" time="17.084" timestamp="2024-04-09T10:57:18" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="17.084" timestamp="2024-04-09T10:57:18" file="Precio_Granos.py" line="23">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression #layout-wrapper &gt; div &gt; div &gt; div &gt; app-market-main &gt; app-grain-price &gt; div:nth-child(2) &gt; app-grain-price-table:nth-child(1) &gt; div &gt; div &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td.pt-3.padding-last-column &gt; svg-icon &gt; svg because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '#layout-wrapper &gt; div &gt; div &gt; div &gt; app-market-main &gt; app-grain-price &gt; div:nth-child(2) &gt; app-grain-price-table:nth-child(1) &gt; div &gt; div &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td.pt-3.padding-last-column &gt; svg-icon &gt; svg' is not a valid XPath expression.&quot;}
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF763BF7072+63090]
+	(No symbol) [0x00007FF763B62CC2]
+	(No symbol) [0x00007FF7639FEC65]
+	(No symbol) [0x00007FF763A03D21]
+	(No symbol) [0x00007FF763A06159]
+	(No symbol) [0x00007FF763A06200]
+	(No symbol) [0x00007FF763A4460C]
+	(No symbol) [0x00007FF763A44ADC]
+	(No symbol) [0x00007FF763A85B37]
+	(No symbol) [0x00007FF763A6701F]
+	(No symbol) [0x00007FF763A83412]
+	(No symbol) [0x00007FF763A66D83]
+	(No symbol) [0x00007FF763A383A8]
+	(No symbol) [0x00007FF763A39441]
+	GetHandleVerifier [0x00007FF763FF25CD+4238285]
+	GetHandleVerifier [0x00007FF76402F72D+4488493]
+	GetHandleVerifier [0x00007FF764027A0F+4456463]
+	GetHandleVerifier [0x00007FF763CD05B6+953270]
+	(No symbol) [0x00007FF763B6E58F]
+	(No symbol) [0x00007FF763B69264]
+	(No symbol) [0x00007FF763B6939B]
+	(No symbol) [0x00007FF763B59BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Granos.py", line 46, in test_granos_contratos
+    click_icon_delete(self.driver,delete_price_grain)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1279, in click_icon_delete
+    icono_borrar = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression #layout-wrapper > div > div > div > app-market-main > app-grain-price > div:nth-child(2) > app-grain-price-table:nth-child(1) > div > div > table > tbody > tr:nth-child(1) > td.pt-3.padding-last-column > svg-icon > svg because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '#layout-wrapper > div > div > div > app-market-main > app-grain-price > div:nth-child(2) > app-grain-price-table:nth-child(1) > div > div > table > tbody > tr:nth-child(1) > td.pt-3.padding-last-column > svg-icon > svg' is not a valid XPath expression."}
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF763BF7072+63090]
+	(No symbol) [0x00007FF763B62CC2]
+	(No symbol) [0x00007FF7639FEC65]
+	(No symbol) [0x00007FF763A03D21]
+	(No symbol) [0x00007FF763A06159]
+	(No symbol) [0x00007FF763A06200]
+	(No symbol) [0x00007FF763A4460C]
+	(No symbol) [0x00007FF763A44ADC]
+	(No symbol) [0x00007FF763A85B37]
+	(No symbol) [0x00007FF763A6701F]
+	(No symbol) [0x00007FF763A83412]
+	(No symbol) [0x00007FF763A66D83]
+	(No symbol) [0x00007FF763A383A8]
+	(No symbol) [0x00007FF763A39441]
+	GetHandleVerifier [0x00007FF763FF25CD+4238285]
+	GetHandleVerifier [0x00007FF76402F72D+4488493]
+	GetHandleVerifier [0x00007FF764027A0F+4456463]
+	GetHandleVerifier [0x00007FF763CD05B6+953270]
+	(No symbol) [0x00007FF763B6E58F]
+	(No symbol) [0x00007FF763B69264]
+	(No symbol) [0x00007FF763B6939B]
+	(No symbol) [0x00007FF763B59BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+</testsuite>

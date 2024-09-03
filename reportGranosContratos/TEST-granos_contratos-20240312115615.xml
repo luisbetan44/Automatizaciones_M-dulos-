@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240312115615" tests="1" file=".py" time="45.700" timestamp="2024-03-12T11:57:01" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="45.700" timestamp="2024-03-12T11:57:01" file="GranosContratos.py" line="23">
+		<error type="UnboundLocalError" message="local variable 'select_option' referenced before assignment"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 152, in test_granos_contratos
+    find_elements(self.driver, button_dopdown6, select_option)
+UnboundLocalError: local variable 'select_option' referenced before assignment
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada en el dropdown con exito  
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Elemento encontrado y clickeado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

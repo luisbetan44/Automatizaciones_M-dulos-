@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="config_Sucursales-20240408120644" tests="1" file=".py" time="14.117" timestamp="2024-04-08T12:06:59" failures="0" errors="1" skipped="0">
+	<testcase classname="config_Sucursales" name="test_settings_branch_offices" time="14.117" timestamp="2024-04-08T12:06:59" file="ConfigSucursales.py" line="19">
+		<error type="JavascriptException" message="Message: javascript error: Cannot read properties of undefined (reading 'scrollIntoView')
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF66F857072+63090]
+	(No symbol) [0x00007FF66F7C2CC2]
+	(No symbol) [0x00007FF66F65EC65]
+	(No symbol) [0x00007FF66F663D21]
+	(No symbol) [0x00007FF66F666462]
+	(No symbol) [0x00007FF66F6E4062]
+	(No symbol) [0x00007FF66F6C6FDA]
+	(No symbol) [0x00007FF66F6E3412]
+	(No symbol) [0x00007FF66F6C6D83]
+	(No symbol) [0x00007FF66F6983A8]
+	(No symbol) [0x00007FF66F699441]
+	GetHandleVerifier [0x00007FF66FC525CD+4238285]
+	GetHandleVerifier [0x00007FF66FC8F72D+4488493]
+	GetHandleVerifier [0x00007FF66FC87A0F+4456463]
+	GetHandleVerifier [0x00007FF66F9305B6+953270]
+	(No symbol) [0x00007FF66F7CE58F]
+	(No symbol) [0x00007FF66F7C9264]
+	(No symbol) [0x00007FF66F7C939B]
+	(No symbol) [0x00007FF66F7B9BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ConfigSucursales.py", line 31, in test_settings_branch_offices
+    self.driver.execute_script("arguments[0].scrollIntoView(true);")
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 408, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: Cannot read properties of undefined (reading 'scrollIntoView')
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF66F857072+63090]
+	(No symbol) [0x00007FF66F7C2CC2]
+	(No symbol) [0x00007FF66F65EC65]
+	(No symbol) [0x00007FF66F663D21]
+	(No symbol) [0x00007FF66F666462]
+	(No symbol) [0x00007FF66F6E4062]
+	(No symbol) [0x00007FF66F6C6FDA]
+	(No symbol) [0x00007FF66F6E3412]
+	(No symbol) [0x00007FF66F6C6D83]
+	(No symbol) [0x00007FF66F6983A8]
+	(No symbol) [0x00007FF66F699441]
+	GetHandleVerifier [0x00007FF66FC525CD+4238285]
+	GetHandleVerifier [0x00007FF66FC8F72D+4488493]
+	GetHandleVerifier [0x00007FF66FC87A0F+4456463]
+	GetHandleVerifier [0x00007FF66F9305B6+953270]
+	(No symbol) [0x00007FF66F7CE58F]
+	(No symbol) [0x00007FF66F7C9264]
+	(No symbol) [0x00007FF66F7C939B]
+	(No symbol) [0x00007FF66F7B9BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

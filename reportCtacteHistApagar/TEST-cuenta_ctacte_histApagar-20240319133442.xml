@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histApagar-20240319133442" tests="2" file=".py" time="86.101" timestamp="2024-03-19T13:36:08" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_ctacte_histApagar" name="test_ctacte_historica" time="0.000" timestamp="0001-01-01T00:00:00" file="CtaCte_HistoApagar.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_HistoApagar.py", line 56, in test_ctacte_historica
+    find_elements(self.driver, apply_filter_2)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="cuenta_ctacte_histApagar" name="test_ctacte_historica" time="86.101" timestamp="2024-03-19T13:36:08" file="CtaCte_HistoApagar.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF62657AD02+56930]
+	(No symbol) [0x00007FF6264EF602]
+	(No symbol) [0x00007FF6263A42E5]
+	(No symbol) [0x00007FF626381D4C]
+	(No symbol) [0x00007FF6264123F7]
+	(No symbol) [0x00007FF626418942]
+	(No symbol) [0x00007FF62640BC60]
+	(No symbol) [0x00007FF6263DD438]
+	(No symbol) [0x00007FF6263DE4D1]
+	GetHandleVerifier [0x00007FF6268F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6269504CD+4077101]
+	GetHandleVerifier [0x00007FF62694865F+4044735]
+	GetHandleVerifier [0x00007FF626619736+706710]
+	(No symbol) [0x00007FF6264FB8DF]
+	(No symbol) [0x00007FF6264F6AC4]
+	(No symbol) [0x00007FF6264F6C1C]
+	(No symbol) [0x00007FF6264E68D4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_HistoApagar.py", line 196, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.129)
+Stacktrace:
+	GetHandleVerifier [0x00007FF62657AD02+56930]
+	(No symbol) [0x00007FF6264EF602]
+	(No symbol) [0x00007FF6263A42E5]
+	(No symbol) [0x00007FF626381D4C]
+	(No symbol) [0x00007FF6264123F7]
+	(No symbol) [0x00007FF626418942]
+	(No symbol) [0x00007FF62640BC60]
+	(No symbol) [0x00007FF6263DD438]
+	(No symbol) [0x00007FF6263DE4D1]
+	GetHandleVerifier [0x00007FF6268F6F8D+3711213]
+	GetHandleVerifier [0x00007FF6269504CD+4077101]
+	GetHandleVerifier [0x00007FF62694865F+4044735]
+	GetHandleVerifier [0x00007FF626619736+706710]
+	(No symbol) [0x00007FF6264FB8DF]
+	(No symbol) [0x00007FF6264F6AC4]
+	(No symbol) [0x00007FF6264F6C1C]
+	(No symbol) [0x00007FF6264E68D4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

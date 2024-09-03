@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240531133420" tests="1" file=".py" time="134.512" timestamp="2024-05-31T13:36:35" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="134.512" timestamp="2024-05-31T13:36:35" file="Precio_Disponible.py" line="23">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF686C31F52+60322]
+	(No symbol) [0x00007FF686BACEC9]
+	(No symbol) [0x00007FF686A67EBA]
+	(No symbol) [0x00007FF686AB7676]
+	(No symbol) [0x00007FF686AB773C]
+	(No symbol) [0x00007FF686AFE967]
+	(No symbol) [0x00007FF686ADC25F]
+	(No symbol) [0x00007FF686AFBC80]
+	(No symbol) [0x00007FF686ADBFC3]
+	(No symbol) [0x00007FF686AA9617]
+	(No symbol) [0x00007FF686AAA211]
+	GetHandleVerifier [0x00007FF686F494AD+3301629]
+	GetHandleVerifier [0x00007FF686F936D3+3605283]
+	GetHandleVerifier [0x00007FF686F89450+3563680]
+	GetHandleVerifier [0x00007FF686CE4326+790390]
+	(No symbol) [0x00007FF686BB750F]
+	(No symbol) [0x00007FF686BB3404]
+	(No symbol) [0x00007FF686BB3592]
+	(No symbol) [0x00007FF686BA2F9F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Disponible.py", line 25, in test_granos_contratos
+    self.login_sample.login("admingd@silohub.ag", "G@viglio123")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\LoginSample.py", line 10, in login
+    user = find_element_by_id(self.driver, "email")  # asegúrate de pasar self.driver
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\FindElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF686C31F52+60322]
+	(No symbol) [0x00007FF686BACEC9]
+	(No symbol) [0x00007FF686A67EBA]
+	(No symbol) [0x00007FF686AB7676]
+	(No symbol) [0x00007FF686AB773C]
+	(No symbol) [0x00007FF686AFE967]
+	(No symbol) [0x00007FF686ADC25F]
+	(No symbol) [0x00007FF686AFBC80]
+	(No symbol) [0x00007FF686ADBFC3]
+	(No symbol) [0x00007FF686AA9617]
+	(No symbol) [0x00007FF686AAA211]
+	GetHandleVerifier [0x00007FF686F494AD+3301629]
+	GetHandleVerifier [0x00007FF686F936D3+3605283]
+	GetHandleVerifier [0x00007FF686F89450+3563680]
+	GetHandleVerifier [0x00007FF686CE4326+790390]
+	(No symbol) [0x00007FF686BB750F]
+	(No symbol) [0x00007FF686BB3404]
+	(No symbol) [0x00007FF686BB3592]
+	(No symbol) [0x00007FF686BA2F9F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+]]></error>
+	</testcase>
+</testsuite>

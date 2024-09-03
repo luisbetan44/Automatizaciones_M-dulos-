@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histAcobrar-20240605174849" tests="1" file=".py" time="22.575" timestamp="2024-06-05T17:49:12" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="22.575" timestamp="2024-06-05T17:49:12" file="Ctacte_histoAcobrar.py" line="17">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69D851F52+60322]
+	(No symbol) [0x00007FF69D7CCEC9]
+	(No symbol) [0x00007FF69D687EBA]
+	(No symbol) [0x00007FF69D68DCEE]
+	(No symbol) [0x00007FF69D690641]
+	(No symbol) [0x00007FF69D6906E0]
+	(No symbol) [0x00007FF69D6D733B]
+	(No symbol) [0x00007FF69D6D773C]
+	(No symbol) [0x00007FF69D71E967]
+	(No symbol) [0x00007FF69D6FC25F]
+	(No symbol) [0x00007FF69D71BC80]
+	(No symbol) [0x00007FF69D6FBFC3]
+	(No symbol) [0x00007FF69D6C9617]
+	(No symbol) [0x00007FF69D6CA211]
+	GetHandleVerifier [0x00007FF69DB694AD+3301629]
+	GetHandleVerifier [0x00007FF69DBB36D3+3605283]
+	GetHandleVerifier [0x00007FF69DBA9450+3563680]
+	GetHandleVerifier [0x00007FF69D904326+790390]
+	(No symbol) [0x00007FF69D7D750F]
+	(No symbol) [0x00007FF69D7D3404]
+	(No symbol) [0x00007FF69D7D3592]
+	(No symbol) [0x00007FF69D7C2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Ctacte_histoAcobrar.py", line 41, in test_ctacte_historica
+    find_elements_css_selector(self.driver, select_account_history)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 29, in find_elements_css_selector
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF69D851F52+60322]
+	(No symbol) [0x00007FF69D7CCEC9]
+	(No symbol) [0x00007FF69D687EBA]
+	(No symbol) [0x00007FF69D68DCEE]
+	(No symbol) [0x00007FF69D690641]
+	(No symbol) [0x00007FF69D6906E0]
+	(No symbol) [0x00007FF69D6D733B]
+	(No symbol) [0x00007FF69D6D773C]
+	(No symbol) [0x00007FF69D71E967]
+	(No symbol) [0x00007FF69D6FC25F]
+	(No symbol) [0x00007FF69D71BC80]
+	(No symbol) [0x00007FF69D6FBFC3]
+	(No symbol) [0x00007FF69D6C9617]
+	(No symbol) [0x00007FF69D6CA211]
+	GetHandleVerifier [0x00007FF69DB694AD+3301629]
+	GetHandleVerifier [0x00007FF69DBB36D3+3605283]
+	GetHandleVerifier [0x00007FF69DBA9450+3563680]
+	GetHandleVerifier [0x00007FF69D904326+790390]
+	(No symbol) [0x00007FF69D7D750F]
+	(No symbol) [0x00007FF69D7D3404]
+	(No symbol) [0x00007FF69D7D3592]
+	(No symbol) [0x00007FF69D7C2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+	</testcase>
+</testsuite>

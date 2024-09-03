@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dashboard_granos-20240521190835" tests="1" file=".py" time="38.729" timestamp="2024-05-21T19:09:13" failures="0" errors="1" skipped="0">
+	<testcase classname="dashboard_granos" name="test_dashboard_grain" time="38.729" timestamp="2024-05-21T19:09:13" file="Dashboar.py" line="23">
+		<error type="TypeError" message="verify_text_and_click() takes 9 positional arguments but 12 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Dashboar.py", line 72, in test_dashboard_grain
+    verify_text_and_click(self.driver, select_movements_list, validate_status1, select_dropdown_option1, select_option1, validate_status2, select_dropdown_option2, select_option2, validate_status3,select_dropdown_option3,select_option3, select_go_to)
+TypeError: verify_text_and_click() takes 9 positional arguments but 12 were given
+]]></error>
+	</testcase>
+</testsuite>

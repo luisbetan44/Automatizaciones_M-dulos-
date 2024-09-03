@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportEntregasVentas-20240613120937" tests="1" file=".py" time="97.003" timestamp="2024-06-13T12:11:14" failures="0" errors="1" skipped="0">
+	<testcase classname="reportEntregasVentas" name="test_Report_deliverySales" time="97.003" timestamp="2024-06-13T12:11:14" file="ReportEntreVentas.py" line="17">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#layout-wrapper &gt; div &gt; div &gt; div &gt; sales-deliveries &gt; app-responsive-table &gt; div &gt; div.table-responsive &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(2) &gt; span &gt; span&quot;}
+  (Session info: chrome=125.0.6422.144); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF690A11F52+60322]
+	(No symbol) [0x00007FF69098CEC9]
+	(No symbol) [0x00007FF690847EBA]
+	(No symbol) [0x00007FF690897676]
+	(No symbol) [0x00007FF69089773C]
+	(No symbol) [0x00007FF6908DE967]
+	(No symbol) [0x00007FF6908BC25F]
+	(No symbol) [0x00007FF6908DBC80]
+	(No symbol) [0x00007FF6908BBFC3]
+	(No symbol) [0x00007FF690889617]
+	(No symbol) [0x00007FF69088A211]
+	GetHandleVerifier [0x00007FF690D294AD+3301629]
+	GetHandleVerifier [0x00007FF690D736D3+3605283]
+	GetHandleVerifier [0x00007FF690D69450+3563680]
+	GetHandleVerifier [0x00007FF690AC4326+790390]
+	(No symbol) [0x00007FF69099750F]
+	(No symbol) [0x00007FF690993404]
+	(No symbol) [0x00007FF690993592]
+	(No symbol) [0x00007FF690982F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py", line 78, in test_Report_deliverySales
+    validate_character_numeric_element_selector(self.driver,total_delivered,)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1155, in validate_character_numeric_element_selector
+    elemento = driver.find_element(By.CSS_SELECTOR, css_selector)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(2) > span > span"}
+  (Session info: chrome=125.0.6422.144); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF690A11F52+60322]
+	(No symbol) [0x00007FF69098CEC9]
+	(No symbol) [0x00007FF690847EBA]
+	(No symbol) [0x00007FF690897676]
+	(No symbol) [0x00007FF69089773C]
+	(No symbol) [0x00007FF6908DE967]
+	(No symbol) [0x00007FF6908BC25F]
+	(No symbol) [0x00007FF6908DBC80]
+	(No symbol) [0x00007FF6908BBFC3]
+	(No symbol) [0x00007FF690889617]
+	(No symbol) [0x00007FF69088A211]
+	GetHandleVerifier [0x00007FF690D294AD+3301629]
+	GetHandleVerifier [0x00007FF690D736D3+3605283]
+	GetHandleVerifier [0x00007FF690D69450+3563680]
+	GetHandleVerifier [0x00007FF690AC4326+790390]
+	(No symbol) [0x00007FF69099750F]
+	(No symbol) [0x00007FF690993404]
+	(No symbol) [0x00007FF690993592]
+	(No symbol) [0x00007FF690982F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Entregas y Ventas
+El texto encontrado es  Soja
+El texto encontrado es  23/24
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Metricas-20240320122238" tests="1" file=".py" time="30.690" timestamp="2024-03-20T12:23:09" failures="0" errors="1" skipped="0">
+	<testcase classname="Metricas" name="test_metricas" time="30.690" timestamp="2024-03-20T12:23:09" file="Metricas.py" line="18">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF703F67062+63090]
+	(No symbol) [0x00007FF703ED2CB2]
+	(No symbol) [0x00007FF703D6EC65]
+	(No symbol) [0x00007FF703D73D21]
+	(No symbol) [0x00007FF703D76159]
+	(No symbol) [0x00007FF703D76200]
+	(No symbol) [0x00007FF703DB460C]
+	(No symbol) [0x00007FF703DB4ADC]
+	(No symbol) [0x00007FF703DF5B37]
+	(No symbol) [0x00007FF703DD701F]
+	(No symbol) [0x00007FF703DF3412]
+	(No symbol) [0x00007FF703DD6D83]
+	(No symbol) [0x00007FF703DA83A8]
+	(No symbol) [0x00007FF703DA9441]
+	GetHandleVerifier [0x00007FF7043625CD+4238301]
+	GetHandleVerifier [0x00007FF70439F72D+4488509]
+	GetHandleVerifier [0x00007FF704397A0F+4456479]
+	GetHandleVerifier [0x00007FF7040405A6+953270]
+	(No symbol) [0x00007FF703EDE57F]
+	(No symbol) [0x00007FF703ED9254]
+	(No symbol) [0x00007FF703ED938B]
+	(No symbol) [0x00007FF703EC9BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Metricas.py", line 214, in test_metricas
+    validate_chart_value(self.driver, graphic_desktop, text_expected)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 502, in validate_chart_value
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF703F67062+63090]
+	(No symbol) [0x00007FF703ED2CB2]
+	(No symbol) [0x00007FF703D6EC65]
+	(No symbol) [0x00007FF703D73D21]
+	(No symbol) [0x00007FF703D76159]
+	(No symbol) [0x00007FF703D76200]
+	(No symbol) [0x00007FF703DB460C]
+	(No symbol) [0x00007FF703DB4ADC]
+	(No symbol) [0x00007FF703DF5B37]
+	(No symbol) [0x00007FF703DD701F]
+	(No symbol) [0x00007FF703DF3412]
+	(No symbol) [0x00007FF703DD6D83]
+	(No symbol) [0x00007FF703DA83A8]
+	(No symbol) [0x00007FF703DA9441]
+	GetHandleVerifier [0x00007FF7043625CD+4238301]
+	GetHandleVerifier [0x00007FF70439F72D+4488509]
+	GetHandleVerifier [0x00007FF704397A0F+4456479]
+	GetHandleVerifier [0x00007FF7040405A6+953270]
+	(No symbol) [0x00007FF703EDE57F]
+	(No symbol) [0x00007FF703ED9254]
+	(No symbol) [0x00007FF703ED938B]
+	(No symbol) [0x00007FF703EC9BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+El texto no fue encontrado MÉTRICAS
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El valor es un carácter numérico. Valor: 2.043
+El texto encontrado es  Total Cuentas ERP
+El valor es un carácter numérico. Valor: 1.608
+El texto encontrado es  Total Cuentas Vinculadas
+El valor es un carácter numérico. Valor: 435
+El texto encontrado es  Cuentas Pend. de Vincular
+El valor es un carácter numérico. Valor: 78,71%
+El texto encontrado es  Porc. Vinculado
+El valor es un carácter numérico. Valor: 1
+El texto encontrado es  Productores Nuevos
+El valor es un carácter numérico. Valor: 58
+El texto encontrado es  Total Logins (Visitas)
+El valor es un carácter numérico. Valor: 24
+El texto encontrado es  Usuarios Logueados
+El valor es un carácter numérico. Valor: 00:05:33
+El texto encontrado es  Tiempo Prom. Sesión
+El texto encontrado es  Pantallas Más Visitadas
+El texto encontrado es  Inicio
+El valor es un carácter numérico. Valor: 34,10% - 59
+El texto encontrado es  Otros
+El valor es un carácter numérico. Valor: 25,43% - 44
+El texto encontrado es  Granos
+El valor es un carácter numérico. Valor: 8,09% - 14
+El texto encontrado es  Contratos
+El valor es un carácter numérico. Valor: 6,94% - 12
+El texto encontrado es  Configuraciones
+El valor es un carácter numérico. Valor: 6,36% - 11
+El texto encontrado es  Pantallas Menos Visitadas
+El texto encontrado es  Ventas
+El valor es un carácter numérico. Valor: 1,16% - 2
+El texto encontrado es  Comprobantes
+El valor es un carácter numérico. Valor: 1,16% - 2
+El texto encontrado es  Entregas
+El valor es un carácter numérico. Valor: 1,73% - 3
+El texto encontrado es  Cuenta Corriente
+El valor es un carácter numérico. Valor: 1,73% - 3
+El texto encontrado es  Acceso a Terceros
+El valor es un carácter numérico. Valor: 1,73% - 3
+]]></system-out>
+	</testcase>
+</testsuite>

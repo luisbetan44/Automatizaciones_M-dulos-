@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240605095631" tests="2" file=".py" time="42.949" timestamp="2024-06-05T09:57:14" failures="0" errors="2" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="0.000" timestamp="0001-01-01T00:00:00" file="Precio_Disponible.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Disponible.py", line 48, in test_granos_contratos
+    click_icon_delete(self.driver, delete_price_grain)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1311, in click_icon_delete
+    icono_borrar = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 156, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+	<testcase classname="precio_granos" name="test_granos_contratos" time="42.949" timestamp="2024-06-05T09:57:14" file="Precio_Disponible.py" line="23">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF760D21F52+60322]
+	(No symbol) [0x00007FF760C9CEC9]
+	(No symbol) [0x00007FF760B57EBA]
+	(No symbol) [0x00007FF760B4070D]
+	(No symbol) [0x00007FF760B3E39D]
+	(No symbol) [0x00007FF760B3EBAF]
+	(No symbol) [0x00007FF760B584E3]
+	(No symbol) [0x00007FF760B2D08C]
+	(No symbol) [0x00007FF760BDA7B4]
+	(No symbol) [0x00007FF760BCC1E0]
+	(No symbol) [0x00007FF760B99617]
+	(No symbol) [0x00007FF760B9A211]
+	GetHandleVerifier [0x00007FF7610394AD+3301629]
+	GetHandleVerifier [0x00007FF7610836D3+3605283]
+	GetHandleVerifier [0x00007FF761079450+3563680]
+	GetHandleVerifier [0x00007FF760DD4326+790390]
+	(No symbol) [0x00007FF760CA750F]
+	(No symbol) [0x00007FF760CA3404]
+	(No symbol) [0x00007FF760CA3592]
+	(No symbol) [0x00007FF760C92F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Disponible.py", line 161, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF760D21F52+60322]
+	(No symbol) [0x00007FF760C9CEC9]
+	(No symbol) [0x00007FF760B57EBA]
+	(No symbol) [0x00007FF760B4070D]
+	(No symbol) [0x00007FF760B3E39D]
+	(No symbol) [0x00007FF760B3EBAF]
+	(No symbol) [0x00007FF760B584E3]
+	(No symbol) [0x00007FF760B2D08C]
+	(No symbol) [0x00007FF760BDA7B4]
+	(No symbol) [0x00007FF760BCC1E0]
+	(No symbol) [0x00007FF760B99617]
+	(No symbol) [0x00007FF760B9A211]
+	GetHandleVerifier [0x00007FF7610394AD+3301629]
+	GetHandleVerifier [0x00007FF7610836D3+3605283]
+	GetHandleVerifier [0x00007FF761079450+3563680]
+	GetHandleVerifier [0x00007FF760DD4326+790390]
+	(No symbol) [0x00007FF760CA750F]
+	(No symbol) [0x00007FF760CA3404]
+	(No symbol) [0x00007FF760CA3592]
+	(No symbol) [0x00007FF760C92F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+</testsuite>

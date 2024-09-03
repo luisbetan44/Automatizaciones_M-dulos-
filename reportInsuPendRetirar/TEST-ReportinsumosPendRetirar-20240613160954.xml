@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240613160954" tests="1" file=".py" time="29.101" timestamp="2024-06-13T16:10:24" failures="0" errors="1" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="29.101" timestamp="2024-06-13T16:10:24" file="reportInsuRetirar.py" line="17">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression body &gt; div &gt; div.flatpickr-months &gt; span.flatpickr-prev-month because of the following error:\nTypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type.&quot;}
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF691071F52+60322]
+	(No symbol) [0x00007FF690FECEC9]
+	(No symbol) [0x00007FF690EA7EBA]
+	(No symbol) [0x00007FF690EADCEE]
+	(No symbol) [0x00007FF690EB0641]
+	(No symbol) [0x00007FF690EB06E0]
+	(No symbol) [0x00007FF690EF733B]
+	(No symbol) [0x00007FF690EF773C]
+	(No symbol) [0x00007FF690F3E967]
+	(No symbol) [0x00007FF690F1C25F]
+	(No symbol) [0x00007FF690F3BC80]
+	(No symbol) [0x00007FF690F1BFC3]
+	(No symbol) [0x00007FF690EE9617]
+	(No symbol) [0x00007FF690EEA211]
+	GetHandleVerifier [0x00007FF6913894AD+3301629]
+	GetHandleVerifier [0x00007FF6913D36D3+3605283]
+	GetHandleVerifier [0x00007FF6913C9450+3563680]
+	GetHandleVerifier [0x00007FF691124326+790390]
+	(No symbol) [0x00007FF690FF750F]
+	(No symbol) [0x00007FF690FF3404]
+	(No symbol) [0x00007FF690FF3592]
+	(No symbol) [0x00007FF690FE2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py", line 51, in test_Report_suppliesWithdrawal
+    calendar_todate_retro(self.driver,select_calendar,select_chevron,  popup_xpath, current_date_xpath)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1482, in calendar_todate_retro
+    popup_calendario = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 156, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression body > div > div.flatpickr-months > span.flatpickr-prev-month because of the following error:\nTypeError: Failed to execute 'evaluate' on 'Document': The result is not a node set, and therefore cannot be converted to the desired type."}
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF691071F52+60322]
+	(No symbol) [0x00007FF690FECEC9]
+	(No symbol) [0x00007FF690EA7EBA]
+	(No symbol) [0x00007FF690EADCEE]
+	(No symbol) [0x00007FF690EB0641]
+	(No symbol) [0x00007FF690EB06E0]
+	(No symbol) [0x00007FF690EF733B]
+	(No symbol) [0x00007FF690EF773C]
+	(No symbol) [0x00007FF690F3E967]
+	(No symbol) [0x00007FF690F1C25F]
+	(No symbol) [0x00007FF690F3BC80]
+	(No symbol) [0x00007FF690F1BFC3]
+	(No symbol) [0x00007FF690EE9617]
+	(No symbol) [0x00007FF690EEA211]
+	GetHandleVerifier [0x00007FF6913894AD+3301629]
+	GetHandleVerifier [0x00007FF6913D36D3+3605283]
+	GetHandleVerifier [0x00007FF6913C9450+3563680]
+	GetHandleVerifier [0x00007FF691124326+790390]
+	(No symbol) [0x00007FF690FF750F]
+	(No symbol) [0x00007FF690FF3404]
+	(No symbol) [0x00007FF690FF3592]
+	(No symbol) [0x00007FF690FE2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+	</testcase>
+</testsuite>

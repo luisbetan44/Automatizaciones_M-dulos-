@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Perfil_Usuario-20240701175223" tests="1" file=".py" time="58.363" timestamp="2024-07-01T17:53:22" failures="0" errors="0" skipped="0">
+	<testcase classname="Perfil_Usuario" name="test_Profile_User" time="58.363" timestamp="2024-07-01T17:53:22" file="Profile_User.py" line="21">
+		<system-out><![CDATA[El texto encontrado es  MIS DATOS
+El texto encontrado es  Datos personales
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Perfil guardado con éxito
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240530185800" tests="1" file=".py" time="90.124" timestamp="2024-05-30T18:59:30" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="90.124" timestamp="2024-05-30T18:59:30" file="Precio_Fijacion.py" line="21">
+		<error type="TypeError" message="verify_and_click() takes 1 positional argument but 2 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 141, in test_price_fixings
+    verify_and_click(self.driver, number_generate)
+TypeError: verify_and_click() takes 1 positional argument but 2 were given
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

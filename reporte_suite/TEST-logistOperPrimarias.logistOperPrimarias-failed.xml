@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="logistOperPrimarias.logistOperPrimarias-failed" tests="1" file="logistOperPrimarias.py" time="67.207" timestamp="2024-08-28T13:13:32" failures="0" errors="1" skipped="0">
+	<testcase classname="logistOperPrimarias.logistOperPrimarias" name="test_Logistics_primary" time="67.207" timestamp="2024-08-28T13:13:32" file="logistOperPrimarias.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;a _ngcontent-jgj-c230=&quot;&quot; id=&quot;current-account-file-tab&quot; data-bs-toggle=&quot;tab&quot; data-bs-target=&quot;#current-account-file&quot; type=&quot;button&quot; role=&quot;tab&quot; aria-controls=&quot;current-account-file&quot; aria-selected=&quot;false&quot; class=&quot;nav-link&quot;&gt;...&lt;/a&gt; is not clickable at point (519, 146). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-backdrop-show&quot; style=&quot;overflow-y: auto;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.85)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77CDDB632+29090]
+	(No symbol) [0x00007FF77CD4E6E9]
+	(No symbol) [0x00007FF77CC0B1CA]
+	(No symbol) [0x00007FF77CC66C0E]
+	(No symbol) [0x00007FF77CC64682]
+	(No symbol) [0x00007FF77CC61B9B]
+	(No symbol) [0x00007FF77CC60DB5]
+	(No symbol) [0x00007FF77CC52D61]
+	(No symbol) [0x00007FF77CC866EA]
+	(No symbol) [0x00007FF77CC526A6]
+	(No symbol) [0x00007FF77CC86900]
+	(No symbol) [0x00007FF77CCA65D9]
+	(No symbol) [0x00007FF77CC86493]
+	(No symbol) [0x00007FF77CC509B1]
+	(No symbol) [0x00007FF77CC51B11]
+	GetHandleVerifier [0x00007FF77D0F881D+3294093]
+	GetHandleVerifier [0x00007FF77D144403+3604339]
+	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
+	GetHandleVerifier [0x00007FF77CE96F16+797318]
+	(No symbol) [0x00007FF77CD5986F]
+	(No symbol) [0x00007FF77CD55454]
+	(No symbol) [0x00007FF77CD555E0]
+	(No symbol) [0x00007FF77CD44A7F]
+	BaseThreadInitThunk [0x00007FFFFD25257D+29]
+	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\logistOperPrimarias.py", line 94, in test_Logistics_primary
+    find_elements(self.driver, select_menu_myrequest)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a _ngcontent-jgj-c230="" id="current-account-file-tab" data-bs-toggle="tab" data-bs-target="#current-account-file" type="button" role="tab" aria-controls="current-account-file" aria-selected="false" class="nav-link">...</a> is not clickable at point (519, 146). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
+  (Session info: chrome=128.0.6613.85)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77CDDB632+29090]
+	(No symbol) [0x00007FF77CD4E6E9]
+	(No symbol) [0x00007FF77CC0B1CA]
+	(No symbol) [0x00007FF77CC66C0E]
+	(No symbol) [0x00007FF77CC64682]
+	(No symbol) [0x00007FF77CC61B9B]
+	(No symbol) [0x00007FF77CC60DB5]
+	(No symbol) [0x00007FF77CC52D61]
+	(No symbol) [0x00007FF77CC866EA]
+	(No symbol) [0x00007FF77CC526A6]
+	(No symbol) [0x00007FF77CC86900]
+	(No symbol) [0x00007FF77CCA65D9]
+	(No symbol) [0x00007FF77CC86493]
+	(No symbol) [0x00007FF77CC509B1]
+	(No symbol) [0x00007FF77CC51B11]
+	GetHandleVerifier [0x00007FF77D0F881D+3294093]
+	GetHandleVerifier [0x00007FF77D144403+3604339]
+	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
+	GetHandleVerifier [0x00007FF77CE96F16+797318]
+	(No symbol) [0x00007FF77CD5986F]
+	(No symbol) [0x00007FF77CD55454]
+	(No symbol) [0x00007FF77CD555E0]
+	(No symbol) [0x00007FF77CD44A7F]
+	BaseThreadInitThunk [0x00007FFFFD25257D+29]
+	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+
+]]></error>
+		<system-out><![CDATA[¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

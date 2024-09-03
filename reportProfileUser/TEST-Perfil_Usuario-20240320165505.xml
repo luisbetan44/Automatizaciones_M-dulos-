@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Perfil_Usuario-20240320165505" tests="1" file=".py" time="29.926" timestamp="2024-03-20T16:55:35" failures="0" errors="1" skipped="0">
+	<testcase classname="Perfil_Usuario" name="test_Profile_User" time="29.926" timestamp="2024-03-20T16:55:35" file="Profile_User.py" line="21">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF630577062+63090]
+	(No symbol) [0x00007FF6304E2CB2]
+	(No symbol) [0x00007FF63037EC65]
+	(No symbol) [0x00007FF630383D21]
+	(No symbol) [0x00007FF630386159]
+	(No symbol) [0x00007FF630386200]
+	(No symbol) [0x00007FF6303C460C]
+	(No symbol) [0x00007FF6303C4ADC]
+	(No symbol) [0x00007FF630405B37]
+	(No symbol) [0x00007FF6303E701F]
+	(No symbol) [0x00007FF630403412]
+	(No symbol) [0x00007FF6303E6D83]
+	(No symbol) [0x00007FF6303B83A8]
+	(No symbol) [0x00007FF6303B9441]
+	GetHandleVerifier [0x00007FF6309725CD+4238301]
+	GetHandleVerifier [0x00007FF6309AF72D+4488509]
+	GetHandleVerifier [0x00007FF6309A7A0F+4456479]
+	GetHandleVerifier [0x00007FF6306505A6+953270]
+	(No symbol) [0x00007FF6304EE57F]
+	(No symbol) [0x00007FF6304E9254]
+	(No symbol) [0x00007FF6304E938B]
+	(No symbol) [0x00007FF6304D9BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Profile_User.py", line 87, in test_Profile_User
+    find_send_element_selector(self.driver,  insert_number_cuit, send_number_cuit )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 339, in find_send_element_selector
+    input_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF630577062+63090]
+	(No symbol) [0x00007FF6304E2CB2]
+	(No symbol) [0x00007FF63037EC65]
+	(No symbol) [0x00007FF630383D21]
+	(No symbol) [0x00007FF630386159]
+	(No symbol) [0x00007FF630386200]
+	(No symbol) [0x00007FF6303C460C]
+	(No symbol) [0x00007FF6303C4ADC]
+	(No symbol) [0x00007FF630405B37]
+	(No symbol) [0x00007FF6303E701F]
+	(No symbol) [0x00007FF630403412]
+	(No symbol) [0x00007FF6303E6D83]
+	(No symbol) [0x00007FF6303B83A8]
+	(No symbol) [0x00007FF6303B9441]
+	GetHandleVerifier [0x00007FF6309725CD+4238301]
+	GetHandleVerifier [0x00007FF6309AF72D+4488509]
+	GetHandleVerifier [0x00007FF6309A7A0F+4456479]
+	GetHandleVerifier [0x00007FF6306505A6+953270]
+	(No symbol) [0x00007FF6304EE57F]
+	(No symbol) [0x00007FF6304E9254]
+	(No symbol) [0x00007FF6304E938B]
+	(No symbol) [0x00007FF6304D9BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  MIS DATOS
+El texto encontrado es  Datos personales
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

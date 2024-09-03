@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportInsuRetirar.ReportinsumosPendRetirar-failed" tests="1" file="reportInsuRetirar.py" time="63.210" timestamp="2024-08-28T13:03:21" failures="0" errors="0" skipped="0">
+	<testcase classname="reportInsuRetirar.ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="63.210" timestamp="2024-08-28T13:03:21" file="reportInsuRetirar.py" line="17">
+		<system-out><![CDATA[El texto encontrado es  Insumos Pendientes de Retirar
+El texto encontrado es  Comprobante
+El texto encontrado 'PED 0051 00017108' no coincide con el esperado ''
+El texto encontrado es  Artículo
+El texto encontrado '110002 - Aceite mineral Novaoil x 20 lts NOVA SA.' no coincide con el esperado ''
+El texto encontrado es  Cant. Pend.
+El valor es un carácter numérico. Valor: 1
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="finanzaspagos-20240710101937" tests="1" file=".py" time="47.685" timestamp="2024-07-10T10:20:24" failures="0" errors="1" skipped="0">
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="47.685" timestamp="2024-07-10T10:20:24" file="finanzasPagos.py" line="22">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF680DEEEA2+31554]
+	(No symbol) [0x00007FF680D67ED9]
+	(No symbol) [0x00007FF680C2872A]
+	(No symbol) [0x00007FF680C78434]
+	(No symbol) [0x00007FF680C7853C]
+	(No symbol) [0x00007FF680CBF6A7]
+	(No symbol) [0x00007FF680C9D06F]
+	(No symbol) [0x00007FF680CBC977]
+	(No symbol) [0x00007FF680C9CDD3]
+	(No symbol) [0x00007FF680C6A33B]
+	(No symbol) [0x00007FF680C6AED1]
+	GetHandleVerifier [0x00007FF6810F8B1D+3217341]
+	GetHandleVerifier [0x00007FF681145AE3+3532675]
+	GetHandleVerifier [0x00007FF68113B0E0+3489152]
+	GetHandleVerifier [0x00007FF680E9E776+750614]
+	(No symbol) [0x00007FF680D7375F]
+	(No symbol) [0x00007FF680D6EB14]
+	(No symbol) [0x00007FF680D6ECA2]
+	(No symbol) [0x00007FF680D5E16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\finanzasPagos.py", line 26, in test_finance_payment
+    self.login_helper.search_and_select_account("1023")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\loginhelper.py", line 24, in search_and_select_account
+    input_element = find_element_by_id(self.driver, "search-options")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF680DEEEA2+31554]
+	(No symbol) [0x00007FF680D67ED9]
+	(No symbol) [0x00007FF680C2872A]
+	(No symbol) [0x00007FF680C78434]
+	(No symbol) [0x00007FF680C7853C]
+	(No symbol) [0x00007FF680CBF6A7]
+	(No symbol) [0x00007FF680C9D06F]
+	(No symbol) [0x00007FF680CBC977]
+	(No symbol) [0x00007FF680C9CDD3]
+	(No symbol) [0x00007FF680C6A33B]
+	(No symbol) [0x00007FF680C6AED1]
+	GetHandleVerifier [0x00007FF6810F8B1D+3217341]
+	GetHandleVerifier [0x00007FF681145AE3+3532675]
+	GetHandleVerifier [0x00007FF68113B0E0+3489152]
+	GetHandleVerifier [0x00007FF680E9E776+750614]
+	(No symbol) [0x00007FF680D7375F]
+	(No symbol) [0x00007FF680D6EB14]
+	(No symbol) [0x00007FF680D6ECA2]
+	(No symbol) [0x00007FF680D5E16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+
+]]></error>
+	</testcase>
+</testsuite>

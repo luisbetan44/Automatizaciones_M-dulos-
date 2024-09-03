@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Entregas.cuenta_entregas-20240517100901" tests="1" file="Entregas.py" time="80.165" timestamp="2024-05-17T10:29:43" failures="1" errors="0" skipped="0">
+	<testcase classname="Entregas.cuenta_entregas" name="test_cuenta_entregas" time="80.165" timestamp="2024-05-17T10:29:43" file="Entregas.py" line="22">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 156, in test_cuenta_entregas
+    validate_text_visible(self.driver, number_TK, number_TK_expected )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1145, in validate_text_visible
+    assert text_obtained == text_expected
+AssertionError
+]]></failure>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto no coincide con los valores esperados. Texto actual: '192.500,60'
+El texto no coincide con los valores esperados. Texto actual: '187.237,45'
+El texto es visible para el usuario
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_pesiFechaCompro-20240712154519" tests="1" file=".py" time="10.509" timestamp="2024-07-12T15:45:30" failures="0" errors="1" skipped="0">
+	<testcase classname="cta_cte_pesiFechaCompro" name="test_ctacte_date_voucher" time="10.509" timestamp="2024-07-12T15:45:30" file="ctacte_pesifechacompro.py" line="17">
+		<error type="WebDriverException" message="Message: Process unexpectedly closed with status 0
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_pesifechacompro.py", line 11, in setUp
+    self.start_session = StartSessionFirefox()
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\StartSessionFirefox.py", line 18, in __init__
+    self.driver = webdriver.Firefox(options=firefox_options)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\firefox\webdriver.py", line 69, in __init__
+    super().__init__(command_executor=executor, options=options)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 209, in __init__
+    self.start_session(capabilities)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 293, in start_session
+    response = self.execute(Command.NEW_SESSION, caps)["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: Process unexpectedly closed with status 0
+
+]]></error>
+	</testcase>
+</testsuite>

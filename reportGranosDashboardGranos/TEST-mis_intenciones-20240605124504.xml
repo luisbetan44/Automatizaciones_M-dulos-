@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mis_intenciones-20240605124504" tests="1" file=".py" time="45.994" timestamp="2024-06-05T12:45:50" failures="0" errors="1" skipped="0">
+	<testcase classname="mis_intenciones" name="test_my_intentions" time="45.994" timestamp="2024-06-05T12:45:50" file="MisIntenciones.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (501, 802)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C2911F52+60322]
+	(No symbol) [0x00007FF7C288CEC9]
+	(No symbol) [0x00007FF7C2747EBA]
+	(No symbol) [0x00007FF7C279F32E]
+	(No symbol) [0x00007FF7C279CCF2]
+	(No symbol) [0x00007FF7C279A18B]
+	(No symbol) [0x00007FF7C2799356]
+	(No symbol) [0x00007FF7C278B491]
+	(No symbol) [0x00007FF7C27BC21A]
+	(No symbol) [0x00007FF7C278ADB6]
+	(No symbol) [0x00007FF7C27BC430]
+	(No symbol) [0x00007FF7C27DBC80]
+	(No symbol) [0x00007FF7C27BBFC3]
+	(No symbol) [0x00007FF7C2789617]
+	(No symbol) [0x00007FF7C278A211]
+	GetHandleVerifier [0x00007FF7C2C294AD+3301629]
+	GetHandleVerifier [0x00007FF7C2C736D3+3605283]
+	GetHandleVerifier [0x00007FF7C2C69450+3563680]
+	GetHandleVerifier [0x00007FF7C29C4326+790390]
+	(No symbol) [0x00007FF7C289750F]
+	(No symbol) [0x00007FF7C2893404]
+	(No symbol) [0x00007FF7C2893592]
+	(No symbol) [0x00007FF7C2882F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\MisIntenciones.py", line 71, in test_my_intentions
+    find_elements(self.driver, select_button_next)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (501, 802)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C2911F52+60322]
+	(No symbol) [0x00007FF7C288CEC9]
+	(No symbol) [0x00007FF7C2747EBA]
+	(No symbol) [0x00007FF7C279F32E]
+	(No symbol) [0x00007FF7C279CCF2]
+	(No symbol) [0x00007FF7C279A18B]
+	(No symbol) [0x00007FF7C2799356]
+	(No symbol) [0x00007FF7C278B491]
+	(No symbol) [0x00007FF7C27BC21A]
+	(No symbol) [0x00007FF7C278ADB6]
+	(No symbol) [0x00007FF7C27BC430]
+	(No symbol) [0x00007FF7C27DBC80]
+	(No symbol) [0x00007FF7C27BBFC3]
+	(No symbol) [0x00007FF7C2789617]
+	(No symbol) [0x00007FF7C278A211]
+	GetHandleVerifier [0x00007FF7C2C294AD+3301629]
+	GetHandleVerifier [0x00007FF7C2C736D3+3605283]
+	GetHandleVerifier [0x00007FF7C2C69450+3563680]
+	GetHandleVerifier [0x00007FF7C29C4326+790390]
+	(No symbol) [0x00007FF7C289750F]
+	(No symbol) [0x00007FF7C2893404]
+	(No symbol) [0x00007FF7C2893592]
+	(No symbol) [0x00007FF7C2882F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+	</testcase>
+</testsuite>

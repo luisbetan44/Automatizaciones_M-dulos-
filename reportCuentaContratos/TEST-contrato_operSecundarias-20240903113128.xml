@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="contrato_operSecundarias-20240903113128" tests="1" file=".py" time="154.393" timestamp="2024-09-03T11:34:02" failures="0" errors="1" skipped="0">
+	<testcase classname="contrato_operSecundarias" name="test_contratc_oparSecondary" time="154.393" timestamp="2024-09-03T11:34:02" file="CtaContOperSecundaria.py" line="22">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div/div[1]/div/span&quot;}
+  (Session info: chrome=128.0.6613.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FAC9B5D2+29090]
+	(No symbol) [0x00007FF7FAC0E689]
+	(No symbol) [0x00007FF7FAACB1CA]
+	(No symbol) [0x00007FF7FAB1EFD7]
+	(No symbol) [0x00007FF7FAB1F22C]
+	(No symbol) [0x00007FF7FAB697F7]
+	(No symbol) [0x00007FF7FAB4672F]
+	(No symbol) [0x00007FF7FAB665D9]
+	(No symbol) [0x00007FF7FAB46493]
+	(No symbol) [0x00007FF7FAB109B1]
+	(No symbol) [0x00007FF7FAB11B11]
+	GetHandleVerifier [0x00007FF7FAFB8C5D+3295277]
+	GetHandleVerifier [0x00007FF7FB004843+3605523]
+	GetHandleVerifier [0x00007FF7FAFFA707+3564247]
+	GetHandleVerifier [0x00007FF7FAD56EB6+797318]
+	(No symbol) [0x00007FF7FAC1980F]
+	(No symbol) [0x00007FF7FAC153F4]
+	(No symbol) [0x00007FF7FAC15580]
+	(No symbol) [0x00007FF7FAC04A1F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaContOperSecundaria.py", line 100, in test_contratc_oparSecondary
+    validate_text_visible(self.driver, element1, number_expected)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1177, in validate_text_visible
+    element = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div/div[1]/div/span"}
+  (Session info: chrome=128.0.6613.114); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7FAC9B5D2+29090]
+	(No symbol) [0x00007FF7FAC0E689]
+	(No symbol) [0x00007FF7FAACB1CA]
+	(No symbol) [0x00007FF7FAB1EFD7]
+	(No symbol) [0x00007FF7FAB1F22C]
+	(No symbol) [0x00007FF7FAB697F7]
+	(No symbol) [0x00007FF7FAB4672F]
+	(No symbol) [0x00007FF7FAB665D9]
+	(No symbol) [0x00007FF7FAB46493]
+	(No symbol) [0x00007FF7FAB109B1]
+	(No symbol) [0x00007FF7FAB11B11]
+	GetHandleVerifier [0x00007FF7FAFB8C5D+3295277]
+	GetHandleVerifier [0x00007FF7FB004843+3605523]
+	GetHandleVerifier [0x00007FF7FAFFA707+3564247]
+	GetHandleVerifier [0x00007FF7FAD56EB6+797318]
+	(No symbol) [0x00007FF7FAC1980F]
+	(No symbol) [0x00007FF7FAC153F4]
+	(No symbol) [0x00007FF7FAC15580]
+	(No symbol) [0x00007FF7FAC04A1F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 8 veces con éxito!
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

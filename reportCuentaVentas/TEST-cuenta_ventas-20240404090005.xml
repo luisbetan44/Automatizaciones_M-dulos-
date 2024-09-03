@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ventas-20240404090005" tests="1" file=".py" time="47.432" timestamp="2024-04-04T09:00:53" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ventas" name="test_cuenta_ventas" time="47.432" timestamp="2024-04-04T09:00:53" file="Ventas.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 12 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Venta F 0001 00118245
+El texto es visible para el usuario: '1.500,00 QQ'
+El texto es visible para el usuario
+El texto fue validado correctamente: De Soja
+El texto es visible para el usuario
+El texto fue validado correctamente: DATOS DE LA VENTA
+El texto es visible para el usuario
+El texto fue validado correctamente: 29/03/2023
+El texto es visible para el usuario
+El texto fue validado correctamente: 21/22
+El texto encontrado es  03 Playa S. Miguel (T6 y M. Pampa)
+El texto es visible para el usuario
+El texto fue validado correctamente: 24/08/2022
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240409093857" tests="1" file=".py" time="15.407" timestamp="2024-04-09T09:39:12" failures="0" errors="0" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="15.407" timestamp="2024-04-09T09:39:12" file="Precio_Granos.py" line="23"/>
+</testsuite>

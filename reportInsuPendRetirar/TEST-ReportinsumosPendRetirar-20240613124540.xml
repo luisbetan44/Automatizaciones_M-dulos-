@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240613124540" tests="1" file=".py" time="24.619" timestamp="2024-06-13T12:46:05" failures="0" errors="1" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="24.619" timestamp="2024-06-13T12:46:05" file="reportInsuRetirar.py" line="17">
+		<error type="TypeError" message="calendar_todate_retro() missing 1 required positional argument: 'back_button_xpath'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py", line 49, in test_Report_suppliesWithdrawal
+    calendar_todate_retro(self.driver,select_calendar,select_chevron)
+TypeError: calendar_todate_retro() missing 1 required positional argument: 'back_button_xpath'
+]]></error>
+	</testcase>
+</testsuite>

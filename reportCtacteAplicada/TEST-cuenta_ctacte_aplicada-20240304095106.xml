@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_aplicada-20240304095106" tests="1" file=".py" time="144.573" timestamp="2024-03-04T09:53:31" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="144.573" timestamp="2024-03-04T09:53:31" file="ctacte_aplicada.py" line="17">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;a _ngcontent-vct-c117=&quot;&quot; class=&quot;fw-bold text-muted f-size-12 cursor-pointer&quot;&gt;...&lt;/a&gt; is not clickable at point (1318, 87). Other element would receive the click: &lt;span _ngcontent-vct-c183=&quot;&quot; class=&quot;fw-bold mb-2 mt-2&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79828AD22+56930]
+	(No symbol) [0x00007FF7981FF622]
+	(No symbol) [0x00007FF7980B42E5]
+	(No symbol) [0x00007FF798100A80]
+	(No symbol) [0x00007FF7980FE8AB]
+	(No symbol) [0x00007FF7980FC0B4]
+	(No symbol) [0x00007FF7980FAE45]
+	(No symbol) [0x00007FF7980EF798]
+	(No symbol) [0x00007FF79811BC9A]
+	(No symbol) [0x00007FF7980EF09A]
+	(No symbol) [0x00007FF79811BEB0]
+	(No symbol) [0x00007FF7981381E2]
+	(No symbol) [0x00007FF79811BA43]
+	(No symbol) [0x00007FF7980ED438]
+	(No symbol) [0x00007FF7980EE4D1]
+	GetHandleVerifier [0x00007FF798606AAD+3709933]
+	GetHandleVerifier [0x00007FF79865FFED+4075821]
+	GetHandleVerifier [0x00007FF79865817F+4043455]
+	GetHandleVerifier [0x00007FF798329756+706710]
+	(No symbol) [0x00007FF79820B8FF]
+	(No symbol) [0x00007FF798206AE4]
+	(No symbol) [0x00007FF798206C3C]
+	(No symbol) [0x00007FF7981F68F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_aplicada.py", line 157, in test_ctacte_aplicada
+    find_elements(self.driver, go_out_list)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 21, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a _ngcontent-vct-c117="" class="fw-bold text-muted f-size-12 cursor-pointer">...</a> is not clickable at point (1318, 87). Other element would receive the click: <span _ngcontent-vct-c183="" class="fw-bold mb-2 mt-2">...</span>
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79828AD22+56930]
+	(No symbol) [0x00007FF7981FF622]
+	(No symbol) [0x00007FF7980B42E5]
+	(No symbol) [0x00007FF798100A80]
+	(No symbol) [0x00007FF7980FE8AB]
+	(No symbol) [0x00007FF7980FC0B4]
+	(No symbol) [0x00007FF7980FAE45]
+	(No symbol) [0x00007FF7980EF798]
+	(No symbol) [0x00007FF79811BC9A]
+	(No symbol) [0x00007FF7980EF09A]
+	(No symbol) [0x00007FF79811BEB0]
+	(No symbol) [0x00007FF7981381E2]
+	(No symbol) [0x00007FF79811BA43]
+	(No symbol) [0x00007FF7980ED438]
+	(No symbol) [0x00007FF7980EE4D1]
+	GetHandleVerifier [0x00007FF798606AAD+3709933]
+	GetHandleVerifier [0x00007FF79865FFED+4075821]
+	GetHandleVerifier [0x00007FF79865817F+4043455]
+	GetHandleVerifier [0x00007FF798329756+706710]
+	(No symbol) [0x00007FF79820B8FF]
+	(No symbol) [0x00007FF798206AE4]
+	(No symbol) [0x00007FF798206C3C]
+	(No symbol) [0x00007FF7981F68F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 4 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE APLICADA
+El valor es un carácter numérico. Valor: -808.286.425,53
+El valor es un carácter numérico. Valor: 633.911.771,95
+El valor es un carácter numérico. Valor: 3.427.518,80
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histApagar-20240606113150" tests="1" file=".py" time="93.986" timestamp="2024-06-06T11:33:24" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_histApagar" name="test_ctacte_historica" time="93.986" timestamp="2024-06-06T11:33:24" file="CtaCte_HistoApagar.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E6771F52+60322]
+	(No symbol) [0x00007FF7E66ECEC9]
+	(No symbol) [0x00007FF7E65A7EBA]
+	(No symbol) [0x00007FF7E659070D]
+	(No symbol) [0x00007FF7E658E39D]
+	(No symbol) [0x00007FF7E658EBAF]
+	(No symbol) [0x00007FF7E65A84E3]
+	(No symbol) [0x00007FF7E657D08C]
+	(No symbol) [0x00007FF7E662B697]
+	(No symbol) [0x00007FF7E662B099]
+	(No symbol) [0x00007FF7E661C1E0]
+	(No symbol) [0x00007FF7E65E9617]
+	(No symbol) [0x00007FF7E65EA211]
+	GetHandleVerifier [0x00007FF7E6A894AD+3301629]
+	GetHandleVerifier [0x00007FF7E6AD36D3+3605283]
+	GetHandleVerifier [0x00007FF7E6AC9450+3563680]
+	GetHandleVerifier [0x00007FF7E6824326+790390]
+	(No symbol) [0x00007FF7E66F750F]
+	(No symbol) [0x00007FF7E66F3404]
+	(No symbol) [0x00007FF7E66F3592]
+	(No symbol) [0x00007FF7E66E2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_HistoApagar.py", line 196, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E6771F52+60322]
+	(No symbol) [0x00007FF7E66ECEC9]
+	(No symbol) [0x00007FF7E65A7EBA]
+	(No symbol) [0x00007FF7E659070D]
+	(No symbol) [0x00007FF7E658E39D]
+	(No symbol) [0x00007FF7E658EBAF]
+	(No symbol) [0x00007FF7E65A84E3]
+	(No symbol) [0x00007FF7E657D08C]
+	(No symbol) [0x00007FF7E662B697]
+	(No symbol) [0x00007FF7E662B099]
+	(No symbol) [0x00007FF7E661C1E0]
+	(No symbol) [0x00007FF7E65E9617]
+	(No symbol) [0x00007FF7E65EA211]
+	GetHandleVerifier [0x00007FF7E6A894AD+3301629]
+	GetHandleVerifier [0x00007FF7E6AD36D3+3605283]
+	GetHandleVerifier [0x00007FF7E6AC9450+3563680]
+	GetHandleVerifier [0x00007FF7E6824326+790390]
+	(No symbol) [0x00007FF7E66F750F]
+	(No symbol) [0x00007FF7E66F3404]
+	(No symbol) [0x00007FF7E66F3592]
+	(No symbol) [0x00007FF7E66E2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un carácter numérico. Valor: -20.850.079,09
+El valor es un carácter numérico. Valor: 188.212,20
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento AT 0011 00500764
+El texto encontrado es  - ARS 100,25
+El texto encontrado es  Comprobante registrado desde la APP SoftCereal
+]]></system-out>
+	</testcase>
+</testsuite>

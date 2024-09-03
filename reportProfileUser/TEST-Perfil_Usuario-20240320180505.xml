@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Perfil_Usuario-20240320180505" tests="1" file=".py" time="59.271" timestamp="2024-03-20T18:06:04" failures="0" errors="1" skipped="0">
+	<testcase classname="Perfil_Usuario" name="test_Profile_User" time="59.271" timestamp="2024-03-20T18:06:04" file="Profile_User.py" line="21">
+		<error type="TypeError" message="validate_text_by_text() takes 2 positional arguments but 3 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Profile_User.py", line 137, in test_Profile_User
+    validate_text_by_text(self.driver, messeger_finished, value_expected  )
+TypeError: validate_text_by_text() takes 2 positional arguments but 3 were given
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  MIS DATOS
+El texto encontrado es  Datos personales
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

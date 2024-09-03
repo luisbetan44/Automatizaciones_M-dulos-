@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240530175829" tests="2" file=".py" time="157.857" timestamp="2024-05-30T18:01:07" failures="0" errors="2" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="0.000" timestamp="0001-01-01T00:00:00" file="Precio_Fijacion.py" line="21">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF608261F22+60322]
+	(No symbol) [0x00007FF6081DCE99]
+	(No symbol) [0x00007FF608097EBA]
+	(No symbol) [0x00007FF60806D5A5]
+	(No symbol) [0x00007FF6081136B7]
+	(No symbol) [0x00007FF60812B331]
+	(No symbol) [0x00007FF60810BFC3]
+	(No symbol) [0x00007FF6080D9617]
+	(No symbol) [0x00007FF6080DA211]
+	GetHandleVerifier [0x00007FF60857946D+3301613]
+	GetHandleVerifier [0x00007FF6085C3693+3605267]
+	GetHandleVerifier [0x00007FF6085B9410+3563664]
+	GetHandleVerifier [0x00007FF6083142F6+790390]
+	(No symbol) [0x00007FF6081E74DF]
+	(No symbol) [0x00007FF6081E33D4]
+	(No symbol) [0x00007FF6081E3562]
+	(No symbol) [0x00007FF6081D2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 155, in test_price_fixings
+    find_elements(self.driver, select_account)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF608261F22+60322]
+	(No symbol) [0x00007FF6081DCE99]
+	(No symbol) [0x00007FF608097EBA]
+	(No symbol) [0x00007FF60806D5A5]
+	(No symbol) [0x00007FF6081136B7]
+	(No symbol) [0x00007FF60812B331]
+	(No symbol) [0x00007FF60810BFC3]
+	(No symbol) [0x00007FF6080D9617]
+	(No symbol) [0x00007FF6080DA211]
+	GetHandleVerifier [0x00007FF60857946D+3301613]
+	GetHandleVerifier [0x00007FF6085C3693+3605267]
+	GetHandleVerifier [0x00007FF6085B9410+3563664]
+	GetHandleVerifier [0x00007FF6083142F6+790390]
+	(No symbol) [0x00007FF6081E74DF]
+	(No symbol) [0x00007FF6081E33D4]
+	(No symbol) [0x00007FF6081E3562]
+	(No symbol) [0x00007FF6081D2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+el numero localizado es: <selenium.webdriver.remote.webelement.WebElement (session="1ccea531552412afae8553630b812358", element="f.F5D111AC9E3A0BB559BD12A648C205AD.d.2CEDD812C7A51791B5C97F45C0EBA214.e.12240")>
+No se encontró el elemento hermano.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="157.857" timestamp="2024-05-30T18:01:07" file="Precio_Fijacion.py" line="21">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF608261F22+60322]
+	(No symbol) [0x00007FF6081DCE99]
+	(No symbol) [0x00007FF608097EBA]
+	(No symbol) [0x00007FF60807E03F]
+	(No symbol) [0x00007FF60807EBAF]
+	(No symbol) [0x00007FF6080984E3]
+	(No symbol) [0x00007FF60806D08C]
+	(No symbol) [0x00007FF60811A7B4]
+	(No symbol) [0x00007FF60810C1E0]
+	(No symbol) [0x00007FF6080D9617]
+	(No symbol) [0x00007FF6080DA211]
+	GetHandleVerifier [0x00007FF60857946D+3301613]
+	GetHandleVerifier [0x00007FF6085C3693+3605267]
+	GetHandleVerifier [0x00007FF6085B9410+3563664]
+	GetHandleVerifier [0x00007FF6083142F6+790390]
+	(No symbol) [0x00007FF6081E74DF]
+	(No symbol) [0x00007FF6081E33D4]
+	(No symbol) [0x00007FF6081E3562]
+	(No symbol) [0x00007FF6081D2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 177, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF608261F22+60322]
+	(No symbol) [0x00007FF6081DCE99]
+	(No symbol) [0x00007FF608097EBA]
+	(No symbol) [0x00007FF60807E03F]
+	(No symbol) [0x00007FF60807EBAF]
+	(No symbol) [0x00007FF6080984E3]
+	(No symbol) [0x00007FF60806D08C]
+	(No symbol) [0x00007FF60811A7B4]
+	(No symbol) [0x00007FF60810C1E0]
+	(No symbol) [0x00007FF6080D9617]
+	(No symbol) [0x00007FF6080DA211]
+	GetHandleVerifier [0x00007FF60857946D+3301613]
+	GetHandleVerifier [0x00007FF6085C3693+3605267]
+	GetHandleVerifier [0x00007FF6085B9410+3563664]
+	GetHandleVerifier [0x00007FF6083142F6+790390]
+	(No symbol) [0x00007FF6081E74DF]
+	(No symbol) [0x00007FF6081E33D4]
+	(No symbol) [0x00007FF6081E3562]
+	(No symbol) [0x00007FF6081D2F6F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+el numero localizado es: <selenium.webdriver.remote.webelement.WebElement (session="1ccea531552412afae8553630b812358", element="f.F5D111AC9E3A0BB559BD12A648C205AD.d.2CEDD812C7A51791B5C97F45C0EBA214.e.12240")>
+No se encontró el elemento hermano.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

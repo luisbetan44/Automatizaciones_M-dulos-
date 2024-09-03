@@ -89,8 +89,6 @@ class TestRegistroUsuario(unittest.TestCase):
         value_expected2 = "Bienvenido a Gaviglio Digital"
         validate_text(self.driver, element2, value_expected2  )
 
-
-        
         self.start_session.close_session()
 
         self.register_user = StartSession("https://pwa-portal-staging.silohub.ag/login")

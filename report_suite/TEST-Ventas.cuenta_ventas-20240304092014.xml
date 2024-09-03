@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Ventas.cuenta_ventas-20240304092014" tests="2" file="Ventas.py" time="48.473" timestamp="2024-03-04T09:27:58" failures="0" errors="2" skipped="0">
+	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="0.000" timestamp="0001-01-01T00:00:00" file="Ventas.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Ventas.py", line 95, in test_cuenta_ventas
+    find_elements(self.driver, select_product_list_1 )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 10 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="48.473" timestamp="2024-03-04T09:27:58" file="Ventas.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78F91AD22+56930]
+	(No symbol) [0x00007FF78F88F622]
+	(No symbol) [0x00007FF78F7442E5]
+	(No symbol) [0x00007FF78F721D4C]
+	(No symbol) [0x00007FF78F7B23F7]
+	(No symbol) [0x00007FF78F7B8942]
+	(No symbol) [0x00007FF78F7ABC60]
+	(No symbol) [0x00007FF78F77D438]
+	(No symbol) [0x00007FF78F77E4D1]
+	GetHandleVerifier [0x00007FF78FC96AAD+3709933]
+	GetHandleVerifier [0x00007FF78FCEFFED+4075821]
+	GetHandleVerifier [0x00007FF78FCE817F+4043455]
+	GetHandleVerifier [0x00007FF78F9B9756+706710]
+	(No symbol) [0x00007FF78F89B8FF]
+	(No symbol) [0x00007FF78F896AE4]
+	(No symbol) [0x00007FF78F896C3C]
+	(No symbol) [0x00007FF78F8868F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Ventas.py", line 186, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF78F91AD22+56930]
+	(No symbol) [0x00007FF78F88F622]
+	(No symbol) [0x00007FF78F7442E5]
+	(No symbol) [0x00007FF78F721D4C]
+	(No symbol) [0x00007FF78F7B23F7]
+	(No symbol) [0x00007FF78F7B8942]
+	(No symbol) [0x00007FF78F7ABC60]
+	(No symbol) [0x00007FF78F77D438]
+	(No symbol) [0x00007FF78F77E4D1]
+	GetHandleVerifier [0x00007FF78FC96AAD+3709933]
+	GetHandleVerifier [0x00007FF78FCEFFED+4075821]
+	GetHandleVerifier [0x00007FF78FCE817F+4043455]
+	GetHandleVerifier [0x00007FF78F9B9756+706710]
+	(No symbol) [0x00007FF78F89B8FF]
+	(No symbol) [0x00007FF78F896AE4]
+	(No symbol) [0x00007FF78F896C3C]
+	(No symbol) [0x00007FF78F8868F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 10 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

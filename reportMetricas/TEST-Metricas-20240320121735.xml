@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Metricas-20240320121735" tests="1" file=".py" time="92.212" timestamp="2024-03-20T12:19:07" failures="0" errors="0" skipped="0">
+	<testcase classname="Metricas" name="test_metricas" time="92.212" timestamp="2024-03-20T12:19:07" file="Metricas.py" line="18">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+El texto no fue encontrado MÉTRICAS
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El valor es un carácter numérico. Valor: 2.043
+El texto encontrado es  Total Cuentas ERP
+El valor es un carácter numérico. Valor: 1.608
+El texto encontrado es  Total Cuentas Vinculadas
+El valor es un carácter numérico. Valor: 435
+El texto encontrado es  Cuentas Pend. de Vincular
+El valor es un carácter numérico. Valor: 78,71%
+El texto encontrado es  Porc. Vinculado
+El valor es un carácter numérico. Valor: 1
+El texto encontrado es  Productores Nuevos
+El valor es un carácter numérico. Valor: 58
+El texto encontrado es  Total Logins (Visitas)
+El valor es un carácter numérico. Valor: 24
+El texto encontrado es  Usuarios Logueados
+El valor es un carácter numérico. Valor: 00:05:33
+El texto encontrado es  Tiempo Prom. Sesión
+El texto encontrado es  Pantallas Más Visitadas
+El texto encontrado es  Inicio
+El valor es un carácter numérico. Valor: 34,10% - 59
+El texto encontrado es  Otros
+El valor es un carácter numérico. Valor: 25,43% - 44
+El texto encontrado es  Granos
+El valor es un carácter numérico. Valor: 8,09% - 14
+El texto encontrado es  Contratos
+El valor es un carácter numérico. Valor: 6,94% - 12
+El texto encontrado es  Configuraciones
+El valor es un carácter numérico. Valor: 6,36% - 11
+El texto encontrado es  Pantallas Menos Visitadas
+El texto encontrado es  Ventas
+El valor es un carácter numérico. Valor: 1,16% - 2
+El texto encontrado es  Comprobantes
+El valor es un carácter numérico. Valor: 1,16% - 2
+El texto encontrado es  Entregas
+El valor es un carácter numérico. Valor: 1,73% - 3
+El texto encontrado es  Cuenta Corriente
+El valor es un carácter numérico. Valor: 1,73% - 3
+El texto encontrado es  Acceso a Terceros
+El valor es un carácter numérico. Valor: 1,73% - 3
+Tiempo de espera agotado. No se pudo encontrar el elemento por XPath /html/body/app-root/app-layout/app-vertical/div/div/div/div/app-metric/app-metric-ranking/div/div[3]/app-metric-porc-graph/div/div[3]/div/apx-chart/div/div/svg/g[1]/g/g/g/g[1]/path.
+Tiempo de espera agotado. No se pudo encontrar el elemento por XPath /html/body/app-root/app-layout/app-vertical/div/div/div/div/app-metric/app-metric-ranking/div/div[3]/app-metric-porc-graph/div/div[3]/div/apx-chart/div/div/svg/g[1]/g/g/g/g[2]/path.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240409103122" tests="2" file=".py" time="45.625" timestamp="2024-04-09T10:32:07" failures="0" errors="2" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="0.000" timestamp="0001-01-01T00:00:00" file="Precio_Granos.py" line="23">
+		<error type="TimeoutException" message="Message: 
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Granos.py", line 43, in test_granos_contratos
+    click_icon_delete(self.driver,delete_price_grain)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1279, in click_icon_delete
+    icono_borrar = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+	<testcase classname="precio_granos" name="test_granos_contratos" time="45.625" timestamp="2024-04-09T10:32:07" file="Precio_Granos.py" line="23">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF763BF7072+63090]
+	(No symbol) [0x00007FF763B62CC2]
+	(No symbol) [0x00007FF7639FEC65]
+	(No symbol) [0x00007FF7639EB1A5]
+	(No symbol) [0x00007FF7639EBA8F]
+	(No symbol) [0x00007FF7639FF1C5]
+	(No symbol) [0x00007FF7639DC65C]
+	(No symbol) [0x00007FF763A73C74]
+	(No symbol) [0x00007FF763A66FA0]
+	(No symbol) [0x00007FF763A383A8]
+	(No symbol) [0x00007FF763A39441]
+	GetHandleVerifier [0x00007FF763FF25CD+4238285]
+	GetHandleVerifier [0x00007FF76402F72D+4488493]
+	GetHandleVerifier [0x00007FF764027A0F+4456463]
+	GetHandleVerifier [0x00007FF763CD05B6+953270]
+	(No symbol) [0x00007FF763B6E58F]
+	(No symbol) [0x00007FF763B69264]
+	(No symbol) [0x00007FF763B6939B]
+	(No symbol) [0x00007FF763B59BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Granos.py", line 67, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=123.0.6312.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF763BF7072+63090]
+	(No symbol) [0x00007FF763B62CC2]
+	(No symbol) [0x00007FF7639FEC65]
+	(No symbol) [0x00007FF7639EB1A5]
+	(No symbol) [0x00007FF7639EBA8F]
+	(No symbol) [0x00007FF7639FF1C5]
+	(No symbol) [0x00007FF7639DC65C]
+	(No symbol) [0x00007FF763A73C74]
+	(No symbol) [0x00007FF763A66FA0]
+	(No symbol) [0x00007FF763A383A8]
+	(No symbol) [0x00007FF763A39441]
+	GetHandleVerifier [0x00007FF763FF25CD+4238285]
+	GetHandleVerifier [0x00007FF76402F72D+4488493]
+	GetHandleVerifier [0x00007FF764027A0F+4456463]
+	GetHandleVerifier [0x00007FF763CD05B6+953270]
+	(No symbol) [0x00007FF763B6E58F]
+	(No symbol) [0x00007FF763B69264]
+	(No symbol) [0x00007FF763B6939B]
+	(No symbol) [0x00007FF763B59BD4]
+	BaseThreadInitThunk [0x00007FFF9727257D+29]
+	RtlUserThreadStart [0x00007FFF9922AA58+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+</testsuite>

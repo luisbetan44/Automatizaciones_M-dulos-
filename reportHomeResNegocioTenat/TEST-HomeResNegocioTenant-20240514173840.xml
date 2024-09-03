@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeResNegocioTenant-20240514173840" tests="1" file=".py" time="23.436" timestamp="2024-05-14T17:39:04" failures="0" errors="0" skipped="0">
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="23.436" timestamp="2024-05-14T17:39:04" file="HomeResNegocio.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Resumen de Mis Negocios de Granos
+]]></system-out>
+	</testcase>
+</testsuite>

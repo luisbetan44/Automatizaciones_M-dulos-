@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliApagar-20240618163432" tests="1" file=".py" time="105.334" timestamp="2024-06-18T16:36:17" failures="0" errors="0" skipped="0">
+	<testcase classname="cta_cte_apliApagar" name="test_ctacte_apliApagar" time="105.334" timestamp="2024-06-18T16:36:17" file="ctacte_pesiApagar.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto encontrado es  Cuenta Pesificada
+El valor es un carácter numérico. Valor: -2.745.238.791,29
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento FR 0055 00005555
+El texto encontrado es  + ARS 726.000,00
+El texto encontrado es  ventas de productos -
+]]></system-out>
+	</testcase>
+</testsuite>

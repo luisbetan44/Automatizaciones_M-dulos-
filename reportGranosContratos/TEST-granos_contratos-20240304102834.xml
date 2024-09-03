@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240304102834" tests="1" file=".py" time="16.136" timestamp="2024-03-04T10:28:50" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="16.136" timestamp="2024-03-04T10:28:50" file="GranosContratos.py" line="22">
+		<error type="ElementNotInteractableException" message="Message: element not interactable
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7013EAD22+56930]
+	(No symbol) [0x00007FF70135F622]
+	(No symbol) [0x00007FF70121419D]
+	(No symbol) [0x00007FF7012549E7]
+	(No symbol) [0x00007FF701253662]
+	(No symbol) [0x00007FF70127BC9A]
+	(No symbol) [0x00007FF70124F09A]
+	(No symbol) [0x00007FF70127BEB0]
+	(No symbol) [0x00007FF7012981E2]
+	(No symbol) [0x00007FF70127BA43]
+	(No symbol) [0x00007FF70124D438]
+	(No symbol) [0x00007FF70124E4D1]
+	GetHandleVerifier [0x00007FF701766AAD+3709933]
+	GetHandleVerifier [0x00007FF7017BFFED+4075821]
+	GetHandleVerifier [0x00007FF7017B817F+4043455]
+	GetHandleVerifier [0x00007FF701489756+706710]
+	(No symbol) [0x00007FF70136B8FF]
+	(No symbol) [0x00007FF701366AE4]
+	(No symbol) [0x00007FF701366C3C]
+	(No symbol) [0x00007FF7013568F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 47, in test_granos_contratos
+    select_option_dropdown(self.driver, button_dopdown, option_desired,value_to_search )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 789, in select_option_dropdown
+    search_input_element.send_keys(value_to_search)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
+    self._execute(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7013EAD22+56930]
+	(No symbol) [0x00007FF70135F622]
+	(No symbol) [0x00007FF70121419D]
+	(No symbol) [0x00007FF7012549E7]
+	(No symbol) [0x00007FF701253662]
+	(No symbol) [0x00007FF70127BC9A]
+	(No symbol) [0x00007FF70124F09A]
+	(No symbol) [0x00007FF70127BEB0]
+	(No symbol) [0x00007FF7012981E2]
+	(No symbol) [0x00007FF70127BA43]
+	(No symbol) [0x00007FF70124D438]
+	(No symbol) [0x00007FF70124E4D1]
+	GetHandleVerifier [0x00007FF701766AAD+3709933]
+	GetHandleVerifier [0x00007FF7017BFFED+4075821]
+	GetHandleVerifier [0x00007FF7017B817F+4043455]
+	GetHandleVerifier [0x00007FF701489756+706710]
+	(No symbol) [0x00007FF70136B8FF]
+	(No symbol) [0x00007FF701366AE4]
+	(No symbol) [0x00007FF701366C3C]
+	(No symbol) [0x00007FF7013568F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="finanzaspagos-20240710094653" tests="1" file=".py" time="218.756" timestamp="2024-07-10T09:50:31" failures="0" errors="0" skipped="0">
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="218.756" timestamp="2024-07-10T09:50:31" file="finanzasPagos.py" line="22">
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

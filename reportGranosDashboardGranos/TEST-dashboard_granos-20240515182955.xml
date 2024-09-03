@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dashboard_granos-20240515182955" tests="1" file=".py" time="37.275" timestamp="2024-05-15T18:30:33" failures="0" errors="1" skipped="0">
+	<testcase classname="dashboard_granos" name="test_dashboard_grain" time="37.275" timestamp="2024-05-15T18:30:33" file="Dashboar.py" line="23">
+		<error type="TypeError" message="verify_text_and_click() missing 1 required positional argument: 'xpath5'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Dashboar.py", line 65, in test_dashboard_grain
+    verify_text_and_click(self.driver,select_movements_list,validate_status,select_dropdown_option,select_option)
+TypeError: verify_text_and_click() missing 1 required positional argument: 'xpath5'
+]]></error>
+	</testcase>
+</testsuite>

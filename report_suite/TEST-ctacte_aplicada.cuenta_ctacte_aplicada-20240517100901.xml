@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ctacte_aplicada.cuenta_ctacte_aplicada-20240517100901" tests="1" file="ctacte_aplicada.py" time="148.464" timestamp="2024-05-17T10:36:26" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_aplicada.cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="148.464" timestamp="2024-05-17T10:36:26" file="ctacte_aplicada.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto encontrado es  CUENTA CORRIENTE APLICADA
+El valor es un carácter numérico. Valor: -808.286.425,54
+El valor es un carácter numérico. Valor: 633.911.771,95
+El valor es un carácter numérico. Valor: 3.427.518,80
+El texto encontrado es  CUENTA CORRIENTE
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_fijaciones-20240715155438" tests="1" file=".py" time="61.432" timestamp="2024-07-15T15:55:39" failures="1" errors="0" skipped="0">
+	<testcase classname="detalle_ctro_fijaciones" name="test_detail_fixings" time="61.432" timestamp="2024-07-15T15:55:39" file="CtaCtoDtalFijaciones.py" line="22">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalFijaciones.py", line 150, in test_detail_fixings
+    validate_text_visible(self.driver,date_delivery, strt_expected)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1174, in validate_text_visible
+    assert text_obtained == text_expected
+AssertionError
+]]></failure>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario: 'De 500,00 Tn Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+El texto es visible para el usuario
+El texto fue validado correctamente: Producto
+El texto es visible para el usuario
+El texto fue validado correctamente: Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+]]></system-out>
+	</testcase>
+</testsuite>

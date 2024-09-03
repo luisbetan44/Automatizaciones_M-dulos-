@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240712135101" tests="1" file=".py" time="28.059" timestamp="2024-07-12T13:51:29" failures="0" errors="1" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="28.059" timestamp="2024-07-12T13:51:29" file="reportInsuRetirar.py" line="17">
+		<error type="AttributeError" message="type object 'datetime.datetime' has no attribute 'datetime'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py", line 54, in test_Report_suppliesWithdrawal
+    calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1483, in calendar_todate_retro
+    dia_actual = datetime.datetime.now().day
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+]]></error>
+	</testcase>
+</testsuite>

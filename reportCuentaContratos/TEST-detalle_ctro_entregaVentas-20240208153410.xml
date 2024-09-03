@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_entregaVentas-20240208153410" tests="1" file=".py" time="57.915" timestamp="2024-02-08T15:35:08" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="57.915" timestamp="2024-02-08T15:35:08" file="CtaCtroDtlleEntVta.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;button _ngcontent-jwx-c213=&quot;&quot; type=&quot;button&quot; data-bs-toggle=&quot;dropdown&quot; aria-expanded=&quot;false&quot; class=&quot;btn dropdown-toggle dropdown-toggle-split shadow-none btn-primary&quot;&gt;&lt;/button&gt; is not clickable at point (1452, 58). Other element would receive the click: &lt;button _ngcontent-jwx-c122=&quot;&quot; type=&quot;button&quot; id=&quot;page-header-user-dropdown&quot; data-bs-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; ngbdropdowntoggle=&quot;&quot; class=&quot;dropdown-toggle btn shadow-none&quot;&gt;...&lt;/button&gt;
+  (Session info: chrome=121.0.6167.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C3A85E42+3538674]
+	(No symbol) [0x00007FF6C36A4C02]
+	(No symbol) [0x00007FF6C3555AEB]
+	(No symbol) [0x00007FF6C35A33E4]
+	(No symbol) [0x00007FF6C35A1122]
+	(No symbol) [0x00007FF6C359E884]
+	(No symbol) [0x00007FF6C359D5A9]
+	(No symbol) [0x00007FF6C3591950]
+	(No symbol) [0x00007FF6C35BF0AA]
+	(No symbol) [0x00007FF6C359124A]
+	(No symbol) [0x00007FF6C35BF2C0]
+	(No symbol) [0x00007FF6C35DBDE3]
+	(No symbol) [0x00007FF6C35BEE53]
+	(No symbol) [0x00007FF6C358F514]
+	(No symbol) [0x00007FF6C3590631]
+	GetHandleVerifier [0x00007FF6C3AB6CAD+3738973]
+	GetHandleVerifier [0x00007FF6C3B0C506+4089270]
+	GetHandleVerifier [0x00007FF6C3B04823+4057299]
+	GetHandleVerifier [0x00007FF6C37D5C49+720121]
+	(No symbol) [0x00007FF6C36B126F]
+	(No symbol) [0x00007FF6C36AC304]
+	(No symbol) [0x00007FF6C36AC432]
+	(No symbol) [0x00007FF6C369BD04]
+	BaseThreadInitThunk [0x00007FFF6D01257D+29]
+	RtlUserThreadStart [0x00007FFF6E86AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtroDtlleEntVta.py", line 131, in test_detail_deriverySales
+    find_elements(self.driver, download_button )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button _ngcontent-jwx-c213="" type="button" data-bs-toggle="dropdown" aria-expanded="false" class="btn dropdown-toggle dropdown-toggle-split shadow-none btn-primary"></button> is not clickable at point (1452, 58). Other element would receive the click: <button _ngcontent-jwx-c122="" type="button" id="page-header-user-dropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" ngbdropdowntoggle="" class="dropdown-toggle btn shadow-none">...</button>
+  (Session info: chrome=121.0.6167.141)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C3A85E42+3538674]
+	(No symbol) [0x00007FF6C36A4C02]
+	(No symbol) [0x00007FF6C3555AEB]
+	(No symbol) [0x00007FF6C35A33E4]
+	(No symbol) [0x00007FF6C35A1122]
+	(No symbol) [0x00007FF6C359E884]
+	(No symbol) [0x00007FF6C359D5A9]
+	(No symbol) [0x00007FF6C3591950]
+	(No symbol) [0x00007FF6C35BF0AA]
+	(No symbol) [0x00007FF6C359124A]
+	(No symbol) [0x00007FF6C35BF2C0]
+	(No symbol) [0x00007FF6C35DBDE3]
+	(No symbol) [0x00007FF6C35BEE53]
+	(No symbol) [0x00007FF6C358F514]
+	(No symbol) [0x00007FF6C3590631]
+	GetHandleVerifier [0x00007FF6C3AB6CAD+3738973]
+	GetHandleVerifier [0x00007FF6C3B0C506+4089270]
+	GetHandleVerifier [0x00007FF6C3B04823+4057299]
+	GetHandleVerifier [0x00007FF6C37D5C49+720121]
+	(No symbol) [0x00007FF6C36B126F]
+	(No symbol) [0x00007FF6C36AC304]
+	(No symbol) [0x00007FF6C36AC432]
+	(No symbol) [0x00007FF6C369BD04]
+	BaseThreadInitThunk [0x00007FFF6D01257D+29]
+	RtlUserThreadStart [0x00007FFF6E86AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 4 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Estado De Mis Contratos
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 121261
+El texto es visible para el usuario
+El texto fue validado correctamente: De Soja
+La cadena de texto es visible para el usuario: 'De 50.000,00 Kg Pactados'
+La cadena de texto es visible para el usuario: '50.000,00 Kg'
+La cadena de texto es visible para el usuario: '9.365,00 Kg'
+La cadena de texto es visible para el usuario: '3.700,00 Kg'
+]]></system-out>
+	</testcase>
+</testsuite>

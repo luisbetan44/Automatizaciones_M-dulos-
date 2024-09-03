@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Ventas.cuenta_ventas-20240408154103" tests="1" file="Ventas.py" time="46.457" timestamp="2024-04-08T16:00:13" failures="0" errors="0" skipped="0">
+	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="46.457" timestamp="2024-04-08T16:00:13" file="Ventas.py" line="22">
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+¡Elemento encontrado y clickeado 12 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Venta F 0001 00118245
+El texto es visible para el usuario: '150.000,00 Kg'
+El texto es visible para el usuario
+El texto fue validado correctamente: De Soja
+El texto es visible para el usuario
+El texto fue validado correctamente: DATOS DE LA VENTA
+El texto es visible para el usuario
+El texto fue validado correctamente: 29/03/2023
+El texto es visible para el usuario
+El texto fue validado correctamente: 21/22
+El texto encontrado es  03 Playa S. Miguel (T6 y M. Pampa)
+El texto es visible para el usuario
+El texto fue validado correctamente: 24/08/2022
+]]></system-out>
+	</testcase>
+</testsuite>

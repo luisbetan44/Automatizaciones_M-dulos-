@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_entregas-20240307105349" tests="1" file=".py" time="32.463" timestamp="2024-03-07T10:54:22" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_entregas" name="test_cuenta_entregas" time="32.463" timestamp="2024-03-07T10:54:22" file="Entregas.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;img _ngcontent-qjy-c151=&quot;&quot; src=&quot;assets/images/grains/maiz.svg&quot;&gt; is not clickable at point (1290, 24). Other element would receive the click: &lt;div _ngcontent-qjy-c132=&quot;&quot; class=&quot;navbar-header&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=122.0.6261.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF65304AD22+56930]
+	(No symbol) [0x00007FF652FBF622]
+	(No symbol) [0x00007FF652E742E5]
+	(No symbol) [0x00007FF652EC0A80]
+	(No symbol) [0x00007FF652EBE8AB]
+	(No symbol) [0x00007FF652EBC0B4]
+	(No symbol) [0x00007FF652EBAE45]
+	(No symbol) [0x00007FF652EAF798]
+	(No symbol) [0x00007FF652EDBC9A]
+	(No symbol) [0x00007FF652EAF09A]
+	(No symbol) [0x00007FF652EDBEB0]
+	(No symbol) [0x00007FF652EF81E2]
+	(No symbol) [0x00007FF652EDBA43]
+	(No symbol) [0x00007FF652EAD438]
+	(No symbol) [0x00007FF652EAE4D1]
+	GetHandleVerifier [0x00007FF6533C6AAD+3709933]
+	GetHandleVerifier [0x00007FF65341FFED+4075821]
+	GetHandleVerifier [0x00007FF65341817F+4043455]
+	GetHandleVerifier [0x00007FF6530E9756+706710]
+	(No symbol) [0x00007FF652FCB8FF]
+	(No symbol) [0x00007FF652FC6AE4]
+	(No symbol) [0x00007FF652FC6C3C]
+	(No symbol) [0x00007FF652FB68F4]
+	BaseThreadInitThunk [0x00007FFEC8B8257D+29]
+	RtlUserThreadStart [0x00007FFECA20AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Entregas.py", line 58, in test_cuenta_entregas
+    find_elements(self.driver, apply_product_filter )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 21, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <img _ngcontent-qjy-c151="" src="assets/images/grains/maiz.svg"> is not clickable at point (1290, 24). Other element would receive the click: <div _ngcontent-qjy-c132="" class="navbar-header">...</div>
+  (Session info: chrome=122.0.6261.111)
+Stacktrace:
+	GetHandleVerifier [0x00007FF65304AD22+56930]
+	(No symbol) [0x00007FF652FBF622]
+	(No symbol) [0x00007FF652E742E5]
+	(No symbol) [0x00007FF652EC0A80]
+	(No symbol) [0x00007FF652EBE8AB]
+	(No symbol) [0x00007FF652EBC0B4]
+	(No symbol) [0x00007FF652EBAE45]
+	(No symbol) [0x00007FF652EAF798]
+	(No symbol) [0x00007FF652EDBC9A]
+	(No symbol) [0x00007FF652EAF09A]
+	(No symbol) [0x00007FF652EDBEB0]
+	(No symbol) [0x00007FF652EF81E2]
+	(No symbol) [0x00007FF652EDBA43]
+	(No symbol) [0x00007FF652EAD438]
+	(No symbol) [0x00007FF652EAE4D1]
+	GetHandleVerifier [0x00007FF6533C6AAD+3709933]
+	GetHandleVerifier [0x00007FF65341FFED+4075821]
+	GetHandleVerifier [0x00007FF65341817F+4043455]
+	GetHandleVerifier [0x00007FF6530E9756+706710]
+	(No symbol) [0x00007FF652FCB8FF]
+	(No symbol) [0x00007FF652FC6AE4]
+	(No symbol) [0x00007FF652FC6C3C]
+	(No symbol) [0x00007FF652FB68F4]
+	BaseThreadInitThunk [0x00007FFEC8B8257D+29]
+	RtlUserThreadStart [0x00007FFECA20AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

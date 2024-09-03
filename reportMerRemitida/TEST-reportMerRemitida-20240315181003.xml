@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportMerRemitida-20240315181003" tests="1" file=".py" time="50.489" timestamp="2024-03-15T18:10:54" failures="0" errors="0" skipped="0">
+	<testcase classname="reportMerRemitida" name="test_Report_MerFacturada" time="50.489" timestamp="2024-03-15T18:10:54" file="ReportMerRemitida.py" line="18">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El valor es un carácter numérico. Valor: 649.165,00
+El valor es un carácter numérico. Valor: 2.740.102,55
+El texto encontrado es  Mercadería Remitida
+El texto encontrado es  Fecha
+El texto encontrado es  30/09/2021
+El texto encontrado es  Comprobante
+El texto encontrado es  REMBAL 0063 00031634
+El texto encontrado es  Artículo
+El texto encontrado es  Premezcla Final Feed Embolsado x 25 kgs Nutricion Superior
+El texto encontrado es  Salidas
+El valor no es un carácter numérico. Valor: Salidas
+El texto encontrado es  Precio
+El valor es un carácter numérico. Valor: 53,95
+El texto encontrado es  Total ARS
+El valor es un carácter numérico. Valor: 107.896,40
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_entregasAplicadas-20240612154823" tests="1" file=".py" time="105.585" timestamp="2024-06-12T15:50:09" failures="0" errors="1" skipped="0">
+	<testcase classname="cta_entregasAplicadas" name="test_delivery_applied" time="105.585" timestamp="2024-06-12T15:50:09" file="EntregasAplicadas.py" line="22">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#layout-wrapper &gt; div &gt; div &gt; div &gt; app-quality-analisis &gt; app-responsive-table &gt; div &gt; div.table-responsive &gt; table &gt; tbody &gt; tr:nth-child(9) &gt; td.text-nowrap.align-middle.f-size-12.fw-bold.ellipsis-cell &gt; span &gt; span&quot;}
+  (Session info: chrome=125.0.6422.144); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF732961F52+60322]
+	(No symbol) [0x00007FF7328DCEC9]
+	(No symbol) [0x00007FF732797EBA]
+	(No symbol) [0x00007FF7327E7676]
+	(No symbol) [0x00007FF7327E773C]
+	(No symbol) [0x00007FF73282E967]
+	(No symbol) [0x00007FF73280C25F]
+	(No symbol) [0x00007FF73282BC80]
+	(No symbol) [0x00007FF73280BFC3]
+	(No symbol) [0x00007FF7327D9617]
+	(No symbol) [0x00007FF7327DA211]
+	GetHandleVerifier [0x00007FF732C794AD+3301629]
+	GetHandleVerifier [0x00007FF732CC36D3+3605283]
+	GetHandleVerifier [0x00007FF732CB9450+3563680]
+	GetHandleVerifier [0x00007FF732A14326+790390]
+	(No symbol) [0x00007FF7328E750F]
+	(No symbol) [0x00007FF7328E3404]
+	(No symbol) [0x00007FF7328E3592]
+	(No symbol) [0x00007FF7328D2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\EntregasAplicadas.py", line 207, in test_delivery_applied
+    validate_text_visible_selector(self.driver, data_analysis,  data_analysis_expected  )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1153, in validate_text_visible_selector
+    element = driver.find_element(By.CSS_SELECTOR, css_selector)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#layout-wrapper > div > div > div > app-quality-analisis > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(9) > td.text-nowrap.align-middle.f-size-12.fw-bold.ellipsis-cell > span > span"}
+  (Session info: chrome=125.0.6422.144); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF732961F52+60322]
+	(No symbol) [0x00007FF7328DCEC9]
+	(No symbol) [0x00007FF732797EBA]
+	(No symbol) [0x00007FF7327E7676]
+	(No symbol) [0x00007FF7327E773C]
+	(No symbol) [0x00007FF73282E967]
+	(No symbol) [0x00007FF73280C25F]
+	(No symbol) [0x00007FF73282BC80]
+	(No symbol) [0x00007FF73280BFC3]
+	(No symbol) [0x00007FF7327D9617]
+	(No symbol) [0x00007FF7327DA211]
+	GetHandleVerifier [0x00007FF732C794AD+3301629]
+	GetHandleVerifier [0x00007FF732CC36D3+3605283]
+	GetHandleVerifier [0x00007FF732CB9450+3563680]
+	GetHandleVerifier [0x00007FF732A14326+790390]
+	(No symbol) [0x00007FF7328E750F]
+	(No symbol) [0x00007FF7328E3404]
+	(No symbol) [0x00007FF7328E3592]
+	(No symbol) [0x00007FF7328D2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto es visible para el usuario: '992.210,00'
+El texto es visible para el usuario: '982.676,00'
+El texto es visible para el usuario
+El texto fue validado correctamente: Entrega TK 9999 00074351
+El texto es visible para el usuario: '30.330,00 Kg'
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: DATOS DE LA ENTREGA
+El texto es visible para el usuario
+El texto fue validado correctamente: 23/02/2022
+El texto es visible para el usuario
+El texto fue validado correctamente: 21/22
+El texto es visible para el usuario
+El texto fue validado correctamente: JUAN DEMO
+El texto es visible para el usuario
+El texto fue validado correctamente: 1032 El Rincon
+El texto es visible para el usuario
+El texto fue validado correctamente: ANÁLISIS
+]]></system-out>
+	</testcase>
+</testsuite>

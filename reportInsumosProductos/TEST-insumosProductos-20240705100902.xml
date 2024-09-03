@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="insumosProductos-20240705100902" tests="1" file=".py" time="60.295" timestamp="2024-07-05T10:10:02" failures="0" errors="1" skipped="0">
+	<testcase classname="insumosProductos" name="test_supplies_products" time="60.295" timestamp="2024-07-05T10:10:02" file="insumos_producto.py" line="19">
+		<error type="StaleElementReferenceException" message="Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6367AEEA2+31554]
+	(No symbol) [0x00007FF636727ED9]
+	(No symbol) [0x00007FF6365E872A]
+	(No symbol) [0x00007FF6365EE55E]
+	(No symbol) [0x00007FF6365F0EB1]
+	(No symbol) [0x00007FF6365F0F50]
+	(No symbol) [0x00007FF636639192]
+	(No symbol) [0x00007FF636639272]
+	(No symbol) [0x00007FF63662F119]
+	(No symbol) [0x00007FF63665D02A]
+	(No symbol) [0x00007FF63662BA76]
+	(No symbol) [0x00007FF63665D240]
+	(No symbol) [0x00007FF63667C977]
+	(No symbol) [0x00007FF63665CDD3]
+	(No symbol) [0x00007FF63662A33B]
+	(No symbol) [0x00007FF63662AED1]
+	GetHandleVerifier [0x00007FF636AB8B1D+3217341]
+	GetHandleVerifier [0x00007FF636B05AE3+3532675]
+	GetHandleVerifier [0x00007FF636AFB0E0+3489152]
+	GetHandleVerifier [0x00007FF63685E776+750614]
+	(No symbol) [0x00007FF63673375F]
+	(No symbol) [0x00007FF63672EB14]
+	(No symbol) [0x00007FF63672ECA2]
+	(No symbol) [0x00007FF63671E16F]
+	BaseThreadInitThunk [0x00007FF99BFF257D+29]
+	RtlUserThreadStart [0x00007FF99CAAAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\insumos_producto.py", line 110, in test_supplies_products
+    find_and_send_element(self.driver, inser_new_amount,  send_new_amount)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 268, in find_and_send_element
+    input_element.send_keys(input_data)  # Ingresar los datos
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
+    self._execute(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.StaleElementReferenceException: Message: stale element reference: stale element not found in the current frame
+  (Session info: chrome=126.0.6478.127); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6367AEEA2+31554]
+	(No symbol) [0x00007FF636727ED9]
+	(No symbol) [0x00007FF6365E872A]
+	(No symbol) [0x00007FF6365EE55E]
+	(No symbol) [0x00007FF6365F0EB1]
+	(No symbol) [0x00007FF6365F0F50]
+	(No symbol) [0x00007FF636639192]
+	(No symbol) [0x00007FF636639272]
+	(No symbol) [0x00007FF63662F119]
+	(No symbol) [0x00007FF63665D02A]
+	(No symbol) [0x00007FF63662BA76]
+	(No symbol) [0x00007FF63665D240]
+	(No symbol) [0x00007FF63667C977]
+	(No symbol) [0x00007FF63665CDD3]
+	(No symbol) [0x00007FF63662A33B]
+	(No symbol) [0x00007FF63662AED1]
+	GetHandleVerifier [0x00007FF636AB8B1D+3217341]
+	GetHandleVerifier [0x00007FF636B05AE3+3532675]
+	GetHandleVerifier [0x00007FF636AFB0E0+3489152]
+	GetHandleVerifier [0x00007FF63685E776+750614]
+	(No symbol) [0x00007FF63673375F]
+	(No symbol) [0x00007FF63672EB14]
+	(No symbol) [0x00007FF63672ECA2]
+	(No symbol) [0x00007FF63671E16F]
+	BaseThreadInitThunk [0x00007FF99BFF257D+29]
+	RtlUserThreadStart [0x00007FF99CAAAF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  PRODUCTOS
+¡Input encontrado y enviado con éxito!
+¡Valor '30 días' ingresado y opción seleccionada con éxito!
+El texto encontrado es  Productos Seleccionados
+El texto no fue encontrado Herbicida 2-4 DB 96% Rainwon x 20 lts RAINWON AGRO
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240515185235" tests="1" file=".py" time="88.813" timestamp="2024-05-15T18:54:04" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="88.813" timestamp="2024-05-15T18:54:04" file="Precio_Fijacion.py" line="21">
+		<error type="TypeError" message="'in &lt;string&gt;' requires string as left operand, not int"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 142, in test_price_fixings
+    verify_and_click(self.driver, number_generate, select_icon_hand)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1506, in verify_and_click
+    if numero in elemento.text:
+TypeError: 'in <string>' requires string as left operand, not int
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

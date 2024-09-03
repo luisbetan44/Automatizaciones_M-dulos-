@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240312121618" tests="1" file=".py" time="28.070" timestamp="2024-03-12T12:16:46" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="28.070" timestamp="2024-03-12T12:16:46" file="GranosContratos.py" line="23">
+		<error type="TypeError" message="search_and_displace_element() missing 2 required positional arguments: 'located_element' and 'xpaht'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 121, in test_granos_contratos
+    search_and_displace_element(self.driver, select_date)
+TypeError: search_and_displace_element() missing 2 required positional arguments: 'located_element' and 'xpaht'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada en el dropdown con exito  
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Elemento encontrado y clickeado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+El clic en el chevron fue interceptado por otro elemento en la página.
+]]></system-out>
+	</testcase>
+</testsuite>

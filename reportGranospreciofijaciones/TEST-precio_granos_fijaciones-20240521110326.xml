@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240521110326" tests="1" file=".py" time="42.414" timestamp="2024-05-21T11:04:08" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="42.414" timestamp="2024-05-21T11:04:08" file="Precio_Fijacion.py" line="21">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E82A22C2+60002]
+	(No symbol) [0x00007FF7E821CA59]
+	(No symbol) [0x00007FF7E80D7EDA]
+	(No symbol) [0x00007FF7E81276E6]
+	(No symbol) [0x00007FF7E81277AC]
+	(No symbol) [0x00007FF7E816E9D7]
+	(No symbol) [0x00007FF7E814C2CF]
+	(No symbol) [0x00007FF7E816BCC7]
+	(No symbol) [0x00007FF7E814C033]
+	(No symbol) [0x00007FF7E8119657]
+	(No symbol) [0x00007FF7E811A251]
+	GetHandleVerifier [0x00007FF7E85B3E2D+3278285]
+	GetHandleVerifier [0x00007FF7E8600190+3590448]
+	GetHandleVerifier [0x00007FF7E85F61D0+3549552]
+	GetHandleVerifier [0x00007FF7E8351DE6+779654]
+	(No symbol) [0x00007FF7E8227ACF]
+	(No symbol) [0x00007FF7E8222EE4]
+	(No symbol) [0x00007FF7E8223072]
+	(No symbol) [0x00007FF7E8212C4F]
+	BaseThreadInitThunk [0x00007FF993AF257D+29]
+	RtlUserThreadStart [0x00007FF9943AAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 24, in test_price_fixings
+    self.login_sample.select_tenant()
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\LoginSample.py", line 19, in select_tenant
+    select_tenant = find_element_by_xpath(self.driver, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\FindElements.py", line 14, in find_element_by_xpath
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, xpath)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E82A22C2+60002]
+	(No symbol) [0x00007FF7E821CA59]
+	(No symbol) [0x00007FF7E80D7EDA]
+	(No symbol) [0x00007FF7E81276E6]
+	(No symbol) [0x00007FF7E81277AC]
+	(No symbol) [0x00007FF7E816E9D7]
+	(No symbol) [0x00007FF7E814C2CF]
+	(No symbol) [0x00007FF7E816BCC7]
+	(No symbol) [0x00007FF7E814C033]
+	(No symbol) [0x00007FF7E8119657]
+	(No symbol) [0x00007FF7E811A251]
+	GetHandleVerifier [0x00007FF7E85B3E2D+3278285]
+	GetHandleVerifier [0x00007FF7E8600190+3590448]
+	GetHandleVerifier [0x00007FF7E85F61D0+3549552]
+	GetHandleVerifier [0x00007FF7E8351DE6+779654]
+	(No symbol) [0x00007FF7E8227ACF]
+	(No symbol) [0x00007FF7E8222EE4]
+	(No symbol) [0x00007FF7E8223072]
+	(No symbol) [0x00007FF7E8212C4F]
+	BaseThreadInitThunk [0x00007FF993AF257D+29]
+	RtlUserThreadStart [0x00007FF9943AAA48+40]
+
+]]></error>
+	</testcase>
+</testsuite>

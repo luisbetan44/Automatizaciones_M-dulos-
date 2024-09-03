@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240311181117" tests="1" file=".py" time="84.208" timestamp="2024-03-11T18:12:41" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="84.208" timestamp="2024-03-11T18:12:41" file="GranosContratos.py" line="23">
+		<error type="ElementNotInteractableException" message="Message: element not interactable
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60132AD32+56930]
+	(No symbol) [0x00007FF60129F632]
+	(No symbol) [0x00007FF60115419D]
+	(No symbol) [0x00007FF6011949E7]
+	(No symbol) [0x00007FF601193662]
+	(No symbol) [0x00007FF6011BBC9A]
+	(No symbol) [0x00007FF60118F09A]
+	(No symbol) [0x00007FF6011BBEB0]
+	(No symbol) [0x00007FF6011D81E2]
+	(No symbol) [0x00007FF6011BBA43]
+	(No symbol) [0x00007FF60118D438]
+	(No symbol) [0x00007FF60118E4D1]
+	GetHandleVerifier [0x00007FF6016A6ABD+3709933]
+	GetHandleVerifier [0x00007FF6016FFFFD+4075821]
+	GetHandleVerifier [0x00007FF6016F818F+4043455]
+	GetHandleVerifier [0x00007FF6013C9766+706710]
+	(No symbol) [0x00007FF6012AB90F]
+	(No symbol) [0x00007FF6012A6AF4]
+	(No symbol) [0x00007FF6012A6C4C]
+	(No symbol) [0x00007FF601296904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 60, in test_granos_contratos
+    search_and_displace_account(self.driver, account_number, select_input )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1164, in search_and_displace_account
+    input_element.send_keys(account_number)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 231, in send_keys
+    self._execute(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60132AD32+56930]
+	(No symbol) [0x00007FF60129F632]
+	(No symbol) [0x00007FF60115419D]
+	(No symbol) [0x00007FF6011949E7]
+	(No symbol) [0x00007FF601193662]
+	(No symbol) [0x00007FF6011BBC9A]
+	(No symbol) [0x00007FF60118F09A]
+	(No symbol) [0x00007FF6011BBEB0]
+	(No symbol) [0x00007FF6011D81E2]
+	(No symbol) [0x00007FF6011BBA43]
+	(No symbol) [0x00007FF60118D438]
+	(No symbol) [0x00007FF60118E4D1]
+	GetHandleVerifier [0x00007FF6016A6ABD+3709933]
+	GetHandleVerifier [0x00007FF6016FFFFD+4075821]
+	GetHandleVerifier [0x00007FF6016F818F+4043455]
+	GetHandleVerifier [0x00007FF6013C9766+706710]
+	(No symbol) [0x00007FF6012AB90F]
+	(No symbol) [0x00007FF6012A6AF4]
+	(No symbol) [0x00007FF6012A6C4C]
+	(No symbol) [0x00007FF601296904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

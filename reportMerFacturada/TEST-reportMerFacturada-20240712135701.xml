@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportMerFacturada-20240712135701" tests="1" file=".py" time="40.854" timestamp="2024-07-12T13:57:42" failures="0" errors="0" skipped="0">
+	<testcase classname="reportMerFacturada" name="test_Report_MerFacturada" time="40.854" timestamp="2024-07-12T13:57:42" file="ReportMerFacturada.py" line="17">
+		<system-out><![CDATA[El valor es un carácter numérico. Valor: 24,00
+El valor es un carácter numérico. Valor: 10.000,00
+El texto encontrado es  Mercadería Facturada
+El texto encontrado es  Fecha
+El texto encontrado '23/05/2024' no coincide con el esperado ''
+El texto encontrado es  Comprobante
+El texto encontrado 'NCRDEV 1058 00005064' no coincide con el esperado ''
+El texto encontrado es  Artículo
+El texto encontrado 'Maiz 7818 VIPTERA 3 C-2CE FORTENZA B-2 x 80000 NIDERA' no coincide con el esperado ''
+El texto encontrado es  Cantidad
+El valor es un carácter numérico. Valor: -100,00
+El texto encontrado es  Moneda
+El texto encontrado 'USD' no coincide con el esperado ''
+El texto encontrado es  Precio
+El valor es un carácter numérico. Valor: 175,00
+]]></system-out>
+	</testcase>
+</testsuite>

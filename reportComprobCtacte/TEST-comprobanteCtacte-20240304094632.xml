@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobanteCtacte-20240304094632" tests="1" file=".py" time="109.447" timestamp="2024-03-04T09:48:21" failures="0" errors="0" skipped="0">
+	<testcase classname="comprobanteCtacte" name="test_vouchers_ctacte" time="109.447" timestamp="2024-03-04T09:48:21" file="comproCtaCte.py" line="16">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Mis Comprobantes
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  NC 1053 00000779
+El texto encontrado es  FC 1051 00014531
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

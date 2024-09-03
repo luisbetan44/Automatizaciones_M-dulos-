@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeResNegocioTenant-20240514191501" tests="1" file=".py" time="20.215" timestamp="2024-05-14T19:15:21" failures="0" errors="1" skipped="0">
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="20.215" timestamp="2024-05-14T19:15:21" file="HomeResNegocio.py" line="19">
+		<error type="AttributeError" message="'function' object has no attribute 'until'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\HomeResNegocio.py", line 25, in test_start_tenant
+    wait.until(lambda driver: driver.execute_script("return document.readyState") == "complete")
+AttributeError: 'function' object has no attribute 'until'
+]]></error>
+	</testcase>
+</testsuite>

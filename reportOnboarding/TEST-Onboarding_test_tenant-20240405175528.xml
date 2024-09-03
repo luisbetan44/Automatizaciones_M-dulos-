@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20240405175528" tests="1" file=".py" time="140.343" timestamp="2024-04-05T17:57:49" failures="0" errors="0" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="140.343" timestamp="2024-04-05T17:57:49" file="Onboarding.py" line="28">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: DOCUMENTACIÓN
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Para poder continuar al siguiente paso, será obligatorio completar los campos que se muestran a continuación.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+CUIT válido insertado: 13-16777849-0
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.xls' cargado con éxito después de hacer clic en el chevron!
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/app-checks/div/input' seleccionado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Estado Impositivo
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Apertura de legajo
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png' cargado con éxito después de hacer clic en el chevron!
+El texto es visible para el usuario
+El texto fue validado correctamente: Gestión de Lineas de Crédito
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.pdf' cargado con éxito después de hacer clic en el chevron!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.pdf' cargado con éxito después de hacer clic en el chevron!
+El texto es visible para el usuario
+El texto fue validado correctamente: Terceros autorizados a retirar insumos
+Se generó y escribió el DNI verificado: 11115691K
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240605100446" tests="1" file=".py" time="19.195" timestamp="2024-06-05T10:05:06" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="19.195" timestamp="2024-06-05T10:05:06" file="Precio_Disponible.py" line="23">
+		<error type="UnboundLocalError" message="local variable 'delete_price_grain' referenced before assignment"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Disponible.py", line 42, in test_granos_contratos
+    self.driver.execute_script("arguments[0].scrollIntoView(true);", delete_price_grain)
+UnboundLocalError: local variable 'delete_price_grain' referenced before assignment
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+]]></system-out>
+	</testcase>
+</testsuite>

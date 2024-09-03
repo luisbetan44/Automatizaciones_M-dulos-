@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comproContratos.comprobanteContrato-20240209114620" tests="2" file="comproContratos.py" time="297.316" timestamp="2024-02-09T12:06:07" failures="0" errors="2" skipped="0">
+	<testcase classname="comproContratos.comprobanteContrato" name="test_vouchers_contract" time="0.000" timestamp="0001-01-01T00:00:00" file="comproContratos.py" line="16">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\comproContratos.py", line 124, in test_vouchers_contract
+    find_elements(self.driver,  select_popup1)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 15, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es visible.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+	<testcase classname="comproContratos.comprobanteContrato" name="test_vouchers_contract" time="297.316" timestamp="2024-02-09T12:06:07" file="comproContratos.py" line="16">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EB2C5E42+3538674]
+	(No symbol) [0x00007FF6EAEE4C02]
+	(No symbol) [0x00007FF6EAD95AEB]
+	(No symbol) [0x00007FF6EAD7288C]
+	(No symbol) [0x00007FF6EAE05DD7]
+	(No symbol) [0x00007FF6EAE0C4B6]
+	(No symbol) [0x00007FF6EADFF070]
+	(No symbol) [0x00007FF6EADCF514]
+	(No symbol) [0x00007FF6EADD0631]
+	GetHandleVerifier [0x00007FF6EB2F6CAD+3738973]
+	GetHandleVerifier [0x00007FF6EB34C506+4089270]
+	GetHandleVerifier [0x00007FF6EB344823+4057299]
+	GetHandleVerifier [0x00007FF6EB015C49+720121]
+	(No symbol) [0x00007FF6EAEF126F]
+	(No symbol) [0x00007FF6EAEEC304]
+	(No symbol) [0x00007FF6EAEEC432]
+	(No symbol) [0x00007FF6EAEDBD04]
+	BaseThreadInitThunk [0x00007FF95784257D+29]
+	RtlUserThreadStart [0x00007FF95830AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\comproContratos.py", line 135, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EB2C5E42+3538674]
+	(No symbol) [0x00007FF6EAEE4C02]
+	(No symbol) [0x00007FF6EAD95AEB]
+	(No symbol) [0x00007FF6EAD7288C]
+	(No symbol) [0x00007FF6EAE05DD7]
+	(No symbol) [0x00007FF6EAE0C4B6]
+	(No symbol) [0x00007FF6EADFF070]
+	(No symbol) [0x00007FF6EADCF514]
+	(No symbol) [0x00007FF6EADD0631]
+	GetHandleVerifier [0x00007FF6EB2F6CAD+3738973]
+	GetHandleVerifier [0x00007FF6EB34C506+4089270]
+	GetHandleVerifier [0x00007FF6EB344823+4057299]
+	GetHandleVerifier [0x00007FF6EB015C49+720121]
+	(No symbol) [0x00007FF6EAEF126F]
+	(No symbol) [0x00007FF6EAEEC304]
+	(No symbol) [0x00007FF6EAEEC432]
+	(No symbol) [0x00007FF6EAEDBD04]
+	BaseThreadInitThunk [0x00007FF95784257D+29]
+	RtlUserThreadStart [0x00007FF95830AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es visible.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

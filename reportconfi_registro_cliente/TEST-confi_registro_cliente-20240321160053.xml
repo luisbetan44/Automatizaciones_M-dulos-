@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="confi_registro_cliente-20240321160053" tests="1" file=".py" time="18.481" timestamp="2024-03-21T16:01:11" failures="0" errors="1" skipped="0">
+	<testcase classname="confi_registro_cliente" name="test_record_client" time="18.481" timestamp="2024-03-21T16:01:11" file="ConfiClientes.py" line="19">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;a _ngcontent-rdw-c141=&quot;&quot; class=&quot;nav-link&quot; data-parent=&quot;10&quot; href=&quot;/tenant/configuraciones/clientes&quot;&gt;...&lt;/a&gt; is not clickable at point (138, 659). Other element would receive the click: &lt;div _ngcontent-rdw-c141=&quot;&quot; class=&quot;version text-body t-gray-300 f-size-12&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C37B7062+63090]
+	(No symbol) [0x00007FF6C3722CB2]
+	(No symbol) [0x00007FF6C35BEC65]
+	(No symbol) [0x00007FF6C360BB34]
+	(No symbol) [0x00007FF6C3609954]
+	(No symbol) [0x00007FF6C3607164]
+	(No symbol) [0x00007FF6C3605EF9]
+	(No symbol) [0x00007FF6C35FA708]
+	(No symbol) [0x00007FF6C3626FDA]
+	(No symbol) [0x00007FF6C35FA00A]
+	(No symbol) [0x00007FF6C36271F0]
+	(No symbol) [0x00007FF6C3643412]
+	(No symbol) [0x00007FF6C3626D83]
+	(No symbol) [0x00007FF6C35F83A8]
+	(No symbol) [0x00007FF6C35F9441]
+	GetHandleVerifier [0x00007FF6C3BB25CD+4238301]
+	GetHandleVerifier [0x00007FF6C3BEF72D+4488509]
+	GetHandleVerifier [0x00007FF6C3BE7A0F+4456479]
+	GetHandleVerifier [0x00007FF6C38905A6+953270]
+	(No symbol) [0x00007FF6C372E57F]
+	(No symbol) [0x00007FF6C3729254]
+	(No symbol) [0x00007FF6C372938B]
+	(No symbol) [0x00007FF6C3719BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ConfiClientes.py", line 36, in test_record_client
+    find_elements_css_selector(self.driver,select_record_client )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 31, in find_elements_css_selector
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a _ngcontent-rdw-c141="" class="nav-link" data-parent="10" href="/tenant/configuraciones/clientes">...</a> is not clickable at point (138, 659). Other element would receive the click: <div _ngcontent-rdw-c141="" class="version text-body t-gray-300 f-size-12">...</div>
+  (Session info: chrome=123.0.6312.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C37B7062+63090]
+	(No symbol) [0x00007FF6C3722CB2]
+	(No symbol) [0x00007FF6C35BEC65]
+	(No symbol) [0x00007FF6C360BB34]
+	(No symbol) [0x00007FF6C3609954]
+	(No symbol) [0x00007FF6C3607164]
+	(No symbol) [0x00007FF6C3605EF9]
+	(No symbol) [0x00007FF6C35FA708]
+	(No symbol) [0x00007FF6C3626FDA]
+	(No symbol) [0x00007FF6C35FA00A]
+	(No symbol) [0x00007FF6C36271F0]
+	(No symbol) [0x00007FF6C3643412]
+	(No symbol) [0x00007FF6C3626D83]
+	(No symbol) [0x00007FF6C35F83A8]
+	(No symbol) [0x00007FF6C35F9441]
+	GetHandleVerifier [0x00007FF6C3BB25CD+4238301]
+	GetHandleVerifier [0x00007FF6C3BEF72D+4488509]
+	GetHandleVerifier [0x00007FF6C3BE7A0F+4456479]
+	GetHandleVerifier [0x00007FF6C38905A6+953270]
+	(No symbol) [0x00007FF6C372E57F]
+	(No symbol) [0x00007FF6C3729254]
+	(No symbol) [0x00007FF6C372938B]
+	(No symbol) [0x00007FF6C3719BC4]
+	BaseThreadInitThunk [0x00007FFFC94E257D+29]
+	RtlUserThreadStart [0x00007FFFCA1AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

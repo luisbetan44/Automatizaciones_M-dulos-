@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_fijaciones-20240903124825" tests="1" file=".py" time="62.773" timestamp="2024-09-03T12:49:28" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_fijaciones" name="test_detail_fixings" time="62.773" timestamp="2024-09-03T12:49:28" file="CtaCtoDtalFijaciones.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (470, 1089)
+  (Session info: chrome=128.0.6613.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79ECAB5D2+29090]
+	(No symbol) [0x00007FF79EC1E689]
+	(No symbol) [0x00007FF79EADB1CA]
+	(No symbol) [0x00007FF79EB36C0E]
+	(No symbol) [0x00007FF79EB34682]
+	(No symbol) [0x00007FF79EB31B9B]
+	(No symbol) [0x00007FF79EB30DB5]
+	(No symbol) [0x00007FF79EB22D61]
+	(No symbol) [0x00007FF79EB566EA]
+	(No symbol) [0x00007FF79EB226A6]
+	(No symbol) [0x00007FF79EB56900]
+	(No symbol) [0x00007FF79EB765D9]
+	(No symbol) [0x00007FF79EB56493]
+	(No symbol) [0x00007FF79EB209B1]
+	(No symbol) [0x00007FF79EB21B11]
+	GetHandleVerifier [0x00007FF79EFC8C5D+3295277]
+	GetHandleVerifier [0x00007FF79F014843+3605523]
+	GetHandleVerifier [0x00007FF79F00A707+3564247]
+	GetHandleVerifier [0x00007FF79ED66EB6+797318]
+	(No symbol) [0x00007FF79EC2980F]
+	(No symbol) [0x00007FF79EC253F4]
+	(No symbol) [0x00007FF79EC25580]
+	(No symbol) [0x00007FF79EC14A1F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalFijaciones.py", line 127, in test_detail_fixings
+    find_elements_id(self.driver, select_fixings )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 47, in find_elements_id
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (470, 1089)
+  (Session info: chrome=128.0.6613.114)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79ECAB5D2+29090]
+	(No symbol) [0x00007FF79EC1E689]
+	(No symbol) [0x00007FF79EADB1CA]
+	(No symbol) [0x00007FF79EB36C0E]
+	(No symbol) [0x00007FF79EB34682]
+	(No symbol) [0x00007FF79EB31B9B]
+	(No symbol) [0x00007FF79EB30DB5]
+	(No symbol) [0x00007FF79EB22D61]
+	(No symbol) [0x00007FF79EB566EA]
+	(No symbol) [0x00007FF79EB226A6]
+	(No symbol) [0x00007FF79EB56900]
+	(No symbol) [0x00007FF79EB765D9]
+	(No symbol) [0x00007FF79EB56493]
+	(No symbol) [0x00007FF79EB209B1]
+	(No symbol) [0x00007FF79EB21B11]
+	GetHandleVerifier [0x00007FF79EFC8C5D+3295277]
+	GetHandleVerifier [0x00007FF79F014843+3605523]
+	GetHandleVerifier [0x00007FF79F00A707+3564247]
+	GetHandleVerifier [0x00007FF79ED66EB6+797318]
+	(No symbol) [0x00007FF79EC2980F]
+	(No symbol) [0x00007FF79EC253F4]
+	(No symbol) [0x00007FF79EC25580]
+	(No symbol) [0x00007FF79EC14A1F]
+	BaseThreadInitThunk [0x00007FF8F8C3257D+29]
+	RtlUserThreadStart [0x00007FF8FAB2AF28+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario: 'De 500.000,00 Kg Pactados'
+]]></system-out>
+	</testcase>
+</testsuite>

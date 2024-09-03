@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_certificados-20240607163550" tests="1" file=".py" time="103.838" timestamp="2024-06-07T16:37:34" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_cto_certificados" name="test_detail_certificates" time="103.838" timestamp="2024-06-07T16:37:34" file="CtaCtoDtalCertificados.py" line="22">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[3]/app-contract-certificates/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/span&quot;}
+  (Session info: chrome=125.0.6422.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AABC1F52+60322]
+	(No symbol) [0x00007FF7AAB3CEC9]
+	(No symbol) [0x00007FF7AA9F7EBA]
+	(No symbol) [0x00007FF7AAA47676]
+	(No symbol) [0x00007FF7AAA4773C]
+	(No symbol) [0x00007FF7AAA8E967]
+	(No symbol) [0x00007FF7AAA6C25F]
+	(No symbol) [0x00007FF7AAA8BC80]
+	(No symbol) [0x00007FF7AAA6BFC3]
+	(No symbol) [0x00007FF7AAA39617]
+	(No symbol) [0x00007FF7AAA3A211]
+	GetHandleVerifier [0x00007FF7AAED94AD+3301629]
+	GetHandleVerifier [0x00007FF7AAF236D3+3605283]
+	GetHandleVerifier [0x00007FF7AAF19450+3563680]
+	GetHandleVerifier [0x00007FF7AAC74326+790390]
+	(No symbol) [0x00007FF7AAB4750F]
+	(No symbol) [0x00007FF7AAB43404]
+	(No symbol) [0x00007FF7AAB43592]
+	(No symbol) [0x00007FF7AAB32F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalCertificados.py", line 145, in test_detail_certificates
+    validate_text_visible(self.driver,date_delivery, strt_expected)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1136, in validate_text_visible
+    element = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[3]/app-contract-certificates/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/span"}
+  (Session info: chrome=125.0.6422.142); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AABC1F52+60322]
+	(No symbol) [0x00007FF7AAB3CEC9]
+	(No symbol) [0x00007FF7AA9F7EBA]
+	(No symbol) [0x00007FF7AAA47676]
+	(No symbol) [0x00007FF7AAA4773C]
+	(No symbol) [0x00007FF7AAA8E967]
+	(No symbol) [0x00007FF7AAA6C25F]
+	(No symbol) [0x00007FF7AAA8BC80]
+	(No symbol) [0x00007FF7AAA6BFC3]
+	(No symbol) [0x00007FF7AAA39617]
+	(No symbol) [0x00007FF7AAA3A211]
+	GetHandleVerifier [0x00007FF7AAED94AD+3301629]
+	GetHandleVerifier [0x00007FF7AAF236D3+3605283]
+	GetHandleVerifier [0x00007FF7AAF19450+3563680]
+	GetHandleVerifier [0x00007FF7AAC74326+790390]
+	(No symbol) [0x00007FF7AAB4750F]
+	(No symbol) [0x00007FF7AAB43404]
+	(No symbol) [0x00007FF7AAB43592]
+	(No symbol) [0x00007FF7AAB32F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 4 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 107474
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto no coincide con los valores esperados. Texto actual: '1.000.000,00 Kg'
+El texto es visible para el usuario
+El texto fue validado correctamente: Listado de Certificados
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+]]></system-out>
+	</testcase>
+</testsuite>

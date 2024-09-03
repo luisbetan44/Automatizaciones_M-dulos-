@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240613165424" tests="1" file=".py" time="29.362" timestamp="2024-06-13T16:54:53" failures="0" errors="1" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="29.362" timestamp="2024-06-13T16:54:53" file="reportInsuRetirar.py" line="17">
+		<error type="TypeError" message="'str' object cannot be interpreted as an integer"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py", line 52, in test_Report_suppliesWithdrawal
+    calendar_todate_retro(self.driver,select_calendar,select_chevron, click_chevron, popup_xpath, current_date_xpath)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1505, in calendar_todate_retro
+    for i in range(clicks):
+TypeError: 'str' object cannot be interpreted as an integer
+]]></error>
+	</testcase>
+</testsuite>

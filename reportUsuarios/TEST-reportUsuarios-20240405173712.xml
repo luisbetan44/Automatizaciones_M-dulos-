@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportUsuarios-20240405173712" tests="1" file=".py" time="44.137" timestamp="2024-04-05T17:37:56" failures="0" errors="0" skipped="0">
+	<testcase classname="reportUsuarios" name="test_Report_user" time="44.137" timestamp="2024-04-05T17:37:56" file="ReportUsuario.py" line="16">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Reporte de usuarios
+El texto encontrado es  Correo Electrónico
+El texto no fue encontrado fernando@silohub.ag
+El texto encontrado es  Rol
+El texto no fue encontrado Admin
+El texto encontrado es  Fecha de Registro
+El texto no fue encontrado 03/01/2023 10:52:46
+El texto encontrado es  Ult.Login
+El valor es un carácter numérico. Valor: 26/07/2022 11:07:44
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histAvencer-20240606113831" tests="2" file=".py" time="293.989" timestamp="2024-06-06T11:43:25" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_ctacte_histAvencer" name="test_ctacte_historica" time="0.000" timestamp="0001-01-01T00:00:00" file="CtaCte_HistoAvenver.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_HistoAvenver.py", line 150, in test_ctacte_historica
+    find_elements(self.driver,  select_button)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un carácter numérico. Valor: -21.165.499,41
+El valor es un carácter numérico. Valor: -7.945,60
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="cuenta_ctacte_histAvencer" name="test_ctacte_historica" time="293.989" timestamp="2024-06-06T11:43:25" file="CtaCte_HistoAvenver.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E6771F52+60322]
+	(No symbol) [0x00007FF7E66ECEC9]
+	(No symbol) [0x00007FF7E65A7EBA]
+	(No symbol) [0x00007FF7E657D5A5]
+	(No symbol) [0x00007FF7E66236B7]
+	(No symbol) [0x00007FF7E662A812]
+	(No symbol) [0x00007FF7E661C1E0]
+	(No symbol) [0x00007FF7E65E9617]
+	(No symbol) [0x00007FF7E65EA211]
+	GetHandleVerifier [0x00007FF7E6A894AD+3301629]
+	GetHandleVerifier [0x00007FF7E6AD36D3+3605283]
+	GetHandleVerifier [0x00007FF7E6AC9450+3563680]
+	GetHandleVerifier [0x00007FF7E6824326+790390]
+	(No symbol) [0x00007FF7E66F750F]
+	(No symbol) [0x00007FF7E66F3404]
+	(No symbol) [0x00007FF7E66F3592]
+	(No symbol) [0x00007FF7E66E2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_HistoAvenver.py", line 196, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7E6771F52+60322]
+	(No symbol) [0x00007FF7E66ECEC9]
+	(No symbol) [0x00007FF7E65A7EBA]
+	(No symbol) [0x00007FF7E657D5A5]
+	(No symbol) [0x00007FF7E66236B7]
+	(No symbol) [0x00007FF7E662A812]
+	(No symbol) [0x00007FF7E661C1E0]
+	(No symbol) [0x00007FF7E65E9617]
+	(No symbol) [0x00007FF7E65EA211]
+	GetHandleVerifier [0x00007FF7E6A894AD+3301629]
+	GetHandleVerifier [0x00007FF7E6AD36D3+3605283]
+	GetHandleVerifier [0x00007FF7E6AC9450+3563680]
+	GetHandleVerifier [0x00007FF7E6824326+790390]
+	(No symbol) [0x00007FF7E66F750F]
+	(No symbol) [0x00007FF7E66F3404]
+	(No symbol) [0x00007FF7E66F3592]
+	(No symbol) [0x00007FF7E66E2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un carácter numérico. Valor: -21.165.499,41
+El valor es un carácter numérico. Valor: -7.945,60
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

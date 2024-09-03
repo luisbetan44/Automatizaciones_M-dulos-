@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240311184720" tests="2" file=".py" time="227.617" timestamp="2024-03-11T18:51:08" failures="0" errors="2" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="0.000" timestamp="0001-01-01T00:00:00" file="GranosContratos.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 121, in test_granos_contratos
+    select_option_dropdown(self.driver, button_dopdown4, option_desired4, value_to_search4 )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 842, in select_option_dropdown
+    search_input_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="227.617" timestamp="2024-03-11T18:51:08" file="GranosContratos.py" line="23">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F8D7AD32+56930]
+	(No symbol) [0x00007FF7F8CEF632]
+	(No symbol) [0x00007FF7F8BA42E5]
+	(No symbol) [0x00007FF7F8B91FDF]
+	(No symbol) [0x00007FF7F8B90625]
+	(No symbol) [0x00007FF7F8B910AF]
+	(No symbol) [0x00007FF7F8BA4845]
+	(No symbol) [0x00007FF7F8B8192C]
+	(No symbol) [0x00007FF7F8C188E4]
+	(No symbol) [0x00007FF7F8C0BC60]
+	(No symbol) [0x00007FF7F8BDD438]
+	(No symbol) [0x00007FF7F8BDE4D1]
+	GetHandleVerifier [0x00007FF7F90F6ABD+3709933]
+	GetHandleVerifier [0x00007FF7F914FFFD+4075821]
+	GetHandleVerifier [0x00007FF7F914818F+4043455]
+	GetHandleVerifier [0x00007FF7F8E19766+706710]
+	(No symbol) [0x00007FF7F8CFB90F]
+	(No symbol) [0x00007FF7F8CF6AF4]
+	(No symbol) [0x00007FF7F8CF6C4C]
+	(No symbol) [0x00007FF7F8CE6904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 294, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F8D7AD32+56930]
+	(No symbol) [0x00007FF7F8CEF632]
+	(No symbol) [0x00007FF7F8BA42E5]
+	(No symbol) [0x00007FF7F8B91FDF]
+	(No symbol) [0x00007FF7F8B90625]
+	(No symbol) [0x00007FF7F8B910AF]
+	(No symbol) [0x00007FF7F8BA4845]
+	(No symbol) [0x00007FF7F8B8192C]
+	(No symbol) [0x00007FF7F8C188E4]
+	(No symbol) [0x00007FF7F8C0BC60]
+	(No symbol) [0x00007FF7F8BDD438]
+	(No symbol) [0x00007FF7F8BDE4D1]
+	GetHandleVerifier [0x00007FF7F90F6ABD+3709933]
+	GetHandleVerifier [0x00007FF7F914FFFD+4075821]
+	GetHandleVerifier [0x00007FF7F914818F+4043455]
+	GetHandleVerifier [0x00007FF7F8E19766+706710]
+	(No symbol) [0x00007FF7F8CFB90F]
+	(No symbol) [0x00007FF7F8CF6AF4]
+	(No symbol) [0x00007FF7F8CF6C4C]
+	(No symbol) [0x00007FF7F8CE6904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El campo de búsqueda, las opciones de búsqueda, o ambos, no están presentes o no son clickeables.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

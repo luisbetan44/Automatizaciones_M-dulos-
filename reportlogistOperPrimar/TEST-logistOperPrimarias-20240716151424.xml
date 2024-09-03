@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="logistOperPrimarias-20240716151424" tests="1" file=".py" time="60.816" timestamp="2024-07-16T15:15:25" failures="0" errors="1" skipped="0">
+	<testcase classname="logistOperPrimarias" name="test_Logistics_primary" time="60.816" timestamp="2024-07-16T15:15:25" file="logistOperPrimarias.py" line="20">
+		<error type="AttributeError" message="module 'datetime' has no attribute 'now'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\logistOperPrimarias.py", line 104, in test_Logistics_primary
+    verify_todate(self.driver,select_todate)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1622, in verify_todate
+    fecha_actual = datetime.now().strftime('%Y-%m-%d')
+AttributeError: module 'datetime' has no attribute 'now'
+]]></error>
+		<system-out><![CDATA[¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

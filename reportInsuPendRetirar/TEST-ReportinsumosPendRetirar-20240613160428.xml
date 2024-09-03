@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240613160428" tests="2" file=".py" time="59.322" timestamp="2024-06-13T16:05:27" failures="0" errors="2" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="0.000" timestamp="0001-01-01T00:00:00" file="reportInsuRetirar.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF602851F52+60322]
+	(No symbol) [0x00007FF6027CCEC9]
+	(No symbol) [0x00007FF602687EBA]
+	(No symbol) [0x00007FF60265D5A5]
+	(No symbol) [0x00007FF6027036B7]
+	(No symbol) [0x00007FF60271B331]
+	(No symbol) [0x00007FF6026FBFC3]
+	(No symbol) [0x00007FF6026C9617]
+	(No symbol) [0x00007FF6026CA211]
+	GetHandleVerifier [0x00007FF602B694AD+3301629]
+	GetHandleVerifier [0x00007FF602BB36D3+3605283]
+	GetHandleVerifier [0x00007FF602BA9450+3563680]
+	GetHandleVerifier [0x00007FF602904326+790390]
+	(No symbol) [0x00007FF6027D750F]
+	(No symbol) [0x00007FF6027D3404]
+	(No symbol) [0x00007FF6027D3592]
+	(No symbol) [0x00007FF6027C2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py", line 67, in test_Report_suppliesWithdrawal
+    validate_text(self.driver,column_voucher, column_voucher_expected )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1000, in validate_text
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF602851F52+60322]
+	(No symbol) [0x00007FF6027CCEC9]
+	(No symbol) [0x00007FF602687EBA]
+	(No symbol) [0x00007FF60265D5A5]
+	(No symbol) [0x00007FF6027036B7]
+	(No symbol) [0x00007FF60271B331]
+	(No symbol) [0x00007FF6026FBFC3]
+	(No symbol) [0x00007FF6026C9617]
+	(No symbol) [0x00007FF6026CA211]
+	GetHandleVerifier [0x00007FF602B694AD+3301629]
+	GetHandleVerifier [0x00007FF602BB36D3+3605283]
+	GetHandleVerifier [0x00007FF602BA9450+3563680]
+	GetHandleVerifier [0x00007FF602904326+790390]
+	(No symbol) [0x00007FF6027D750F]
+	(No symbol) [0x00007FF6027D3404]
+	(No symbol) [0x00007FF6027D3592]
+	(No symbol) [0x00007FF6027C2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Insumos Pendientes de Retirar
+]]></system-out>
+	</testcase>
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="59.322" timestamp="2024-06-13T16:05:27" file="reportInsuRetirar.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF602851F52+60322]
+	(No symbol) [0x00007FF6027CCEC9]
+	(No symbol) [0x00007FF602687EBA]
+	(No symbol) [0x00007FF60266E03F]
+	(No symbol) [0x00007FF60266EBAF]
+	(No symbol) [0x00007FF6026884E3]
+	(No symbol) [0x00007FF60265D08C]
+	(No symbol) [0x00007FF60270A7B4]
+	(No symbol) [0x00007FF6026FC1E0]
+	(No symbol) [0x00007FF6026C9617]
+	(No symbol) [0x00007FF6026CA211]
+	GetHandleVerifier [0x00007FF602B694AD+3301629]
+	GetHandleVerifier [0x00007FF602BB36D3+3605283]
+	GetHandleVerifier [0x00007FF602BA9450+3563680]
+	GetHandleVerifier [0x00007FF602904326+790390]
+	(No symbol) [0x00007FF6027D750F]
+	(No symbol) [0x00007FF6027D3404]
+	(No symbol) [0x00007FF6027D3592]
+	(No symbol) [0x00007FF6027C2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py", line 138, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.144)
+Stacktrace:
+	GetHandleVerifier [0x00007FF602851F52+60322]
+	(No symbol) [0x00007FF6027CCEC9]
+	(No symbol) [0x00007FF602687EBA]
+	(No symbol) [0x00007FF60266E03F]
+	(No symbol) [0x00007FF60266EBAF]
+	(No symbol) [0x00007FF6026884E3]
+	(No symbol) [0x00007FF60265D08C]
+	(No symbol) [0x00007FF60270A7B4]
+	(No symbol) [0x00007FF6026FC1E0]
+	(No symbol) [0x00007FF6026C9617]
+	(No symbol) [0x00007FF6026CA211]
+	GetHandleVerifier [0x00007FF602B694AD+3301629]
+	GetHandleVerifier [0x00007FF602BB36D3+3605283]
+	GetHandleVerifier [0x00007FF602BA9450+3563680]
+	GetHandleVerifier [0x00007FF602904326+790390]
+	(No symbol) [0x00007FF6027D750F]
+	(No symbol) [0x00007FF6027D3404]
+	(No symbol) [0x00007FF6027D3592]
+	(No symbol) [0x00007FF6027C2F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Insumos Pendientes de Retirar
+]]></system-out>
+	</testcase>
+</testsuite>

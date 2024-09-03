@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ctacte_apliAcobrar.cta_cte_apliAcobrar-failed" tests="1" file="ctacte_apliAcobrar.py" time="149.515" timestamp="2024-08-28T12:30:58" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_apliAcobrar.cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="149.515" timestamp="2024-08-28T12:30:58" file="ctacte_apliAcobrar.py" line="17">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: 1.416.865,80
+El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: 21.748,26
+El texto encontrado es  CUENTA CORRIENTE
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

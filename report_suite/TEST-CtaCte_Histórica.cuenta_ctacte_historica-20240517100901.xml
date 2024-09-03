@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CtaCte_Histórica.cuenta_ctacte_historica-20240517100901" tests="1" file="CtaCte_Histórica.py" time="59.881" timestamp="2024-05-17T10:37:28" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCte_Histórica.cuenta_ctacte_historica" name="test_ctacte_historica" time="59.881" timestamp="2024-05-17T10:37:28" file="CtaCte_Histórica.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 11 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un carácter numérico. Valor: 145.869.433,96
+El valor es un carácter numérico. Valor: 897.440,38
+El texto encontrado es  CUENTA CORRIENTE
+El texto no fue encontrado Movimiento RI 0011 00077998
+El texto no fue encontrado + ARS 1.234,20
+El texto no fue encontrado Comprobante Contrapartida de: OP 0001 - 00038025 0
+]]></system-out>
+	</testcase>
+</testsuite>

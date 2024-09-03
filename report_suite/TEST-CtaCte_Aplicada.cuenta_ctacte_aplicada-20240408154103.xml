@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CtaCte_Aplicada.cuenta_ctacte_aplicada-20240408154103" tests="1" file="CtaCte_Aplicada.py" time="55.420" timestamp="2024-04-08T16:01:11" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCte_Aplicada.cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="55.420" timestamp="2024-04-08T16:01:11" file="CtaCte_Aplicada.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto encontrado es  CUENTA CORRIENTE APLICADA
+El valor es un carácter numérico. Valor: -2.281.998.378,80
+El valor es un carácter numérico. Valor: 1.642.624.183,60
+El valor es un carácter numérico. Valor: 3.488.164,46
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento FC 1051 00014218
+El texto encontrado es  USD 738,10
+El texto encontrado es  SILO BOLSA-
+]]></system-out>
+	</testcase>
+</testsuite>

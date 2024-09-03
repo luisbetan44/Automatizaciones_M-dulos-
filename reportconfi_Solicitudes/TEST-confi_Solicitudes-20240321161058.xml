@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="confi_Solicitudes-20240321161058" tests="1" file=".py" time="27.374" timestamp="2024-03-21T16:11:26" failures="0" errors="1" skipped="0">
+	<testcase classname="confi_Solicitudes" name="test_settings_User" time="27.374" timestamp="2024-03-21T16:11:26" file="ConfISolicitudes.py" line="19">
+		<error type="AttributeError" message="'WebDriver' object has no attribute 'find_element_by_id'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ConfISolicitudes.py", line 34, in test_settings_User
+    display_and_clikc_element_xpaht2(self.driver,select_requests )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 237, in display_and_clikc_element_xpaht2
+    input_element = driver.find_element_by_id(xpaht)
+AttributeError: 'WebDriver' object has no attribute 'find_element_by_id'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

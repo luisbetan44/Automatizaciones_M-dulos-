@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240528135630" tests="1" file=".py" time="93.840" timestamp="2024-05-28T13:58:03" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="93.840" timestamp="2024-05-28T13:58:03" file="Precio_Fijacion.py" line="21">
+		<error type="JavascriptException" message="Message: javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7882B1F22+60322]
+	(No symbol) [0x00007FF78822CE99]
+	(No symbol) [0x00007FF7880E7EBA]
+	(No symbol) [0x00007FF7880EDCEE]
+	(No symbol) [0x00007FF7880F0641]
+	(No symbol) [0x00007FF7880F06E0]
+	(No symbol) [0x00007FF78813733B]
+	(No symbol) [0x00007FF78813773C]
+	(No symbol) [0x00007FF78817E967]
+	(No symbol) [0x00007FF78815C25F]
+	(No symbol) [0x00007FF78817BC80]
+	(No symbol) [0x00007FF78815BFC3]
+	(No symbol) [0x00007FF788129617]
+	(No symbol) [0x00007FF78812A211]
+	GetHandleVerifier [0x00007FF7885C946D+3301613]
+	GetHandleVerifier [0x00007FF788613693+3605267]
+	GetHandleVerifier [0x00007FF788609410+3563664]
+	GetHandleVerifier [0x00007FF7883642F6+790390]
+	(No symbol) [0x00007FF7882374DF]
+	(No symbol) [0x00007FF7882333D4]
+	(No symbol) [0x00007FF788233562]
+	(No symbol) [0x00007FF788222F6F]
+	BaseThreadInitThunk [0x00007FFFE64E257D+29]
+	RtlUserThreadStart [0x00007FFFE792AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 142, in test_price_fixings
+    find_elements_css_selector(self.driver,button_hand)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 29, in find_elements_css_selector
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=125.0.6422.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7882B1F22+60322]
+	(No symbol) [0x00007FF78822CE99]
+	(No symbol) [0x00007FF7880E7EBA]
+	(No symbol) [0x00007FF7880EDCEE]
+	(No symbol) [0x00007FF7880F0641]
+	(No symbol) [0x00007FF7880F06E0]
+	(No symbol) [0x00007FF78813733B]
+	(No symbol) [0x00007FF78813773C]
+	(No symbol) [0x00007FF78817E967]
+	(No symbol) [0x00007FF78815C25F]
+	(No symbol) [0x00007FF78817BC80]
+	(No symbol) [0x00007FF78815BFC3]
+	(No symbol) [0x00007FF788129617]
+	(No symbol) [0x00007FF78812A211]
+	GetHandleVerifier [0x00007FF7885C946D+3301613]
+	GetHandleVerifier [0x00007FF788613693+3605267]
+	GetHandleVerifier [0x00007FF788609410+3563664]
+	GetHandleVerifier [0x00007FF7883642F6+790390]
+	(No symbol) [0x00007FF7882374DF]
+	(No symbol) [0x00007FF7882333D4]
+	(No symbol) [0x00007FF788233562]
+	(No symbol) [0x00007FF788222F6F]
+	BaseThreadInitThunk [0x00007FFFE64E257D+29]
+	RtlUserThreadStart [0x00007FFFE792AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

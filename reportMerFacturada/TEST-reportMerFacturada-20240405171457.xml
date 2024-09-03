@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportMerFacturada-20240405171457" tests="1" file=".py" time="45.649" timestamp="2024-04-05T17:15:43" failures="0" errors="0" skipped="0">
+	<testcase classname="reportMerFacturada" name="test_Report_MerFacturada" time="45.649" timestamp="2024-04-05T17:15:43" file="ReportMerFacturada.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El valor es un carácter numérico. Valor: 311.374,50
+El valor es un carácter numérico. Valor: 2.463.061,51
+El texto encontrado es  Mercadería Facturada
+El texto encontrado es  Fecha
+El texto no fue encontrado 30/09/2021
+El texto encontrado es  Comprobante
+El texto no fue encontrado FACBAL 1063 00029204
+El texto encontrado es  Artículo
+El texto no fue encontrado Premezcla Creci Feed Nutricion Superior x 25 kgs
+El texto encontrado es  Salidas
+El valor es un carácter numérico. Valor: 50,00
+El texto encontrado es  Precio
+El valor es un carácter numérico. Valor: 102,75
+El texto encontrado es  Total ARS
+El valor es un carácter numérico. Valor: 5.137,46
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="insumosProductos-20240719153825" tests="1" file=".py" time="54.745" timestamp="2024-07-19T15:39:20" failures="0" errors="1" skipped="0">
+	<testcase classname="insumosProductos" name="test_supplies_products" time="54.745" timestamp="2024-07-19T15:39:20" file="insumos_producto.py" line="19">
+		<error type="InvalidSelectorException" message="Message: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;The result of the xpath expression \&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/comment()\&quot; is: [object Comment]. It should be an element.&quot;}
+  (Session info: chrome=126.0.6478.182); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F8D8EEB2+31554]
+	(No symbol) [0x00007FF7F8D07EE9]
+	(No symbol) [0x00007FF7F8BC872A]
+	(No symbol) [0x00007FF7F8BCE55E]
+	(No symbol) [0x00007FF7F8BD0EB1]
+	(No symbol) [0x00007FF7F8BD0F50]
+	(No symbol) [0x00007FF7F8C17F6C]
+	(No symbol) [0x00007FF7F8C1853C]
+	(No symbol) [0x00007FF7F8C5F6A7]
+	(No symbol) [0x00007FF7F8C3D06F]
+	(No symbol) [0x00007FF7F8C5C977]
+	(No symbol) [0x00007FF7F8C3CDD3]
+	(No symbol) [0x00007FF7F8C0A33B]
+	(No symbol) [0x00007FF7F8C0AED1]
+	GetHandleVerifier [0x00007FF7F9098B2D+3217341]
+	GetHandleVerifier [0x00007FF7F90E5AF3+3532675]
+	GetHandleVerifier [0x00007FF7F90DB0F0+3489152]
+	GetHandleVerifier [0x00007FF7F8E3E786+750614]
+	(No symbol) [0x00007FF7F8D1376F]
+	(No symbol) [0x00007FF7F8D0EB24]
+	(No symbol) [0x00007FF7F8D0ECB2]
+	(No symbol) [0x00007FF7F8CFE17F]
+	BaseThreadInitThunk [0x00007FFBFD87257D+29]
+	RtlUserThreadStart [0x00007FFBFF42AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\insumos_producto.py", line 110, in test_supplies_products
+    find_elements(self.driver, select_input_amount2)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"The result of the xpath expression \"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies-cart/div/div[1]/div/app-supplies-selected-products/comment()\" is: [object Comment]. It should be an element."}
+  (Session info: chrome=126.0.6478.182); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F8D8EEB2+31554]
+	(No symbol) [0x00007FF7F8D07EE9]
+	(No symbol) [0x00007FF7F8BC872A]
+	(No symbol) [0x00007FF7F8BCE55E]
+	(No symbol) [0x00007FF7F8BD0EB1]
+	(No symbol) [0x00007FF7F8BD0F50]
+	(No symbol) [0x00007FF7F8C17F6C]
+	(No symbol) [0x00007FF7F8C1853C]
+	(No symbol) [0x00007FF7F8C5F6A7]
+	(No symbol) [0x00007FF7F8C3D06F]
+	(No symbol) [0x00007FF7F8C5C977]
+	(No symbol) [0x00007FF7F8C3CDD3]
+	(No symbol) [0x00007FF7F8C0A33B]
+	(No symbol) [0x00007FF7F8C0AED1]
+	GetHandleVerifier [0x00007FF7F9098B2D+3217341]
+	GetHandleVerifier [0x00007FF7F90E5AF3+3532675]
+	GetHandleVerifier [0x00007FF7F90DB0F0+3489152]
+	GetHandleVerifier [0x00007FF7F8E3E786+750614]
+	(No symbol) [0x00007FF7F8D1376F]
+	(No symbol) [0x00007FF7F8D0EB24]
+	(No symbol) [0x00007FF7F8D0ECB2]
+	(No symbol) [0x00007FF7F8CFE17F]
+	BaseThreadInitThunk [0x00007FFBFD87257D+29]
+	RtlUserThreadStart [0x00007FFBFF42AF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  PRODUCTOS
+¡Input encontrado y enviado con éxito!
+¡Valor '30 días' ingresado y opción seleccionada con éxito!
+El texto encontrado es  Productos Seleccionados
+El texto no fue encontrado Herbicida 2-4 DB 96% Rainwon x 20 lts RAINWON AGRO
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240515114420" tests="1" file=".py" time="102.135" timestamp="2024-05-15T11:46:02" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="102.135" timestamp="2024-05-15T11:46:02" file="Precio_Disponible.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (1436, 766)
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CC321522+60802]
+	(No symbol) [0x00007FF7CC29AC22]
+	(No symbol) [0x00007FF7CC157CE4]
+	(No symbol) [0x00007FF7CC1AE877]
+	(No symbol) [0x00007FF7CC1AC344]
+	(No symbol) [0x00007FF7CC1A980A]
+	(No symbol) [0x00007FF7CC1A89E2]
+	(No symbol) [0x00007FF7CC19AE8B]
+	(No symbol) [0x00007FF7CC1CAB7A]
+	(No symbol) [0x00007FF7CC19A7C6]
+	(No symbol) [0x00007FF7CC1CAD90]
+	(No symbol) [0x00007FF7CC1EA224]
+	(No symbol) [0x00007FF7CC1CA923]
+	(No symbol) [0x00007FF7CC198FEC]
+	(No symbol) [0x00007FF7CC199C21]
+	GetHandleVerifier [0x00007FF7CC6241BD+3217949]
+	GetHandleVerifier [0x00007FF7CC666157+3488183]
+	GetHandleVerifier [0x00007FF7CC65F0DF+3459391]
+	GetHandleVerifier [0x00007FF7CC3DB8E6+823622]
+	(No symbol) [0x00007FF7CC2A5FBF]
+	(No symbol) [0x00007FF7CC2A0EE4]
+	(No symbol) [0x00007FF7CC2A1072]
+	(No symbol) [0x00007FF7CC2918C4]
+	BaseThreadInitThunk [0x00007FFA24B4257D+29]
+	RtlUserThreadStart [0x00007FFA2654AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Disponible.py", line 135, in test_granos_contratos
+    seleccionar_ultimo_icono(self.driver, selector_iconos)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1300, in seleccionar_ultimo_icono
+    ultimo_icono.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1436, 766)
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CC321522+60802]
+	(No symbol) [0x00007FF7CC29AC22]
+	(No symbol) [0x00007FF7CC157CE4]
+	(No symbol) [0x00007FF7CC1AE877]
+	(No symbol) [0x00007FF7CC1AC344]
+	(No symbol) [0x00007FF7CC1A980A]
+	(No symbol) [0x00007FF7CC1A89E2]
+	(No symbol) [0x00007FF7CC19AE8B]
+	(No symbol) [0x00007FF7CC1CAB7A]
+	(No symbol) [0x00007FF7CC19A7C6]
+	(No symbol) [0x00007FF7CC1CAD90]
+	(No symbol) [0x00007FF7CC1EA224]
+	(No symbol) [0x00007FF7CC1CA923]
+	(No symbol) [0x00007FF7CC198FEC]
+	(No symbol) [0x00007FF7CC199C21]
+	GetHandleVerifier [0x00007FF7CC6241BD+3217949]
+	GetHandleVerifier [0x00007FF7CC666157+3488183]
+	GetHandleVerifier [0x00007FF7CC65F0DF+3459391]
+	GetHandleVerifier [0x00007FF7CC3DB8E6+823622]
+	(No symbol) [0x00007FF7CC2A5FBF]
+	(No symbol) [0x00007FF7CC2A0EE4]
+	(No symbol) [0x00007FF7CC2A1072]
+	(No symbol) [0x00007FF7CC2918C4]
+	BaseThreadInitThunk [0x00007FFA24B4257D+29]
+	RtlUserThreadStart [0x00007FFA2654AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

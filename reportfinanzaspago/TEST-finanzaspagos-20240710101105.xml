@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="finanzaspagos-20240710101105" tests="1" file=".py" time="55.806" timestamp="2024-07-10T10:12:01" failures="0" errors="0" skipped="0">
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="55.806" timestamp="2024-07-10T10:12:01" file="finanzasPagos.py" line="22">
+		<system-out><![CDATA[El texto encontrado es  Listado de Comprobantes
+]]></system-out>
+	</testcase>
+</testsuite>

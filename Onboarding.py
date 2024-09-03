@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from faker import Faker
 import xmlrunner
 from selenium.common.exceptions import StaleElementReferenceException
-from Elements import click_checkbox_xpaht, find_elements, find_elements_id,  upload_file_after_click, validate_text_visible
+from Elements import click_checkbox_xpaht, find_elements, find_elements_id,  upload_file_after_click, upload_file_after_click_selector, validate_text_visible
 from GeneradorCuit import CUITGenerator
 from LoginSample import LoginSample
 from startSession import StartSession 
@@ -101,9 +101,13 @@ class Onboarding_test_tenant(unittest.TestCase):
         click_checkbox_xpaht(self.driver, check_button)
         time.sleep(2)
 
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
+        time.sleep(2)
+
+
         continue_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/div/div/app-button/button" 
         find_elements(self.driver, continue_button)
-        time.sleep(2)
+        time.sleep(5)
 
         insert_document = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-identity-validation/div/div[3]/app-button/button"
         find_elements(self.driver, insert_document)
@@ -183,22 +187,22 @@ class Onboarding_test_tenant(unittest.TestCase):
          #contancia de CBU
 
         select_field2 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[1]/div/div/h2/button'
-        element_archive_3 =  "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[1]/div/div/h2/button/app-upload-input/div/div[2]/input"
+        element_archive_3 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[1]/div/div/h2/button/app-upload-input/div/div[2]/input'
         archive2 = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
         upload_file_after_click(self.driver, select_field2, element_archive_3, archive2)
-        time.sleep(3)
+        time.sleep(5)
 
         # Exenión de IIBB
 
         select_field3 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[2]/div/div/h2/button'
         element_archive_4 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[2]/div/div/h2/button/app-upload-input/div/div[2]/input'
-        archive3 = "C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png"
+        archive3 = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
         upload_file_after_click(self.driver, select_field3, element_archive_4, archive3)
-        time.sleep(3)
+        time.sleep(5)
 
-        select_field4 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[2]/div/div/h2/button'
-        element_archive_5 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[2]/div/div/h2/button/app-upload-input/div/div[2]/input'
-        archive4 = "C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png"
+        select_field4 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[3]/div/div/h2/button'
+        element_archive_5 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[3]/div/div/h2/button/app-upload-input/div/div[2]/input'
+        archive4 = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
         upload_file_after_click(self.driver, select_field4, element_archive_5, archive4)
         time.sleep(3)
 
@@ -206,7 +210,7 @@ class Onboarding_test_tenant(unittest.TestCase):
         # Formulario F1276 WEB
         select_field5 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[3]/div/div/h2/button'
         element_archive_6 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-legacy-opening/div/div/app-acordion-for-upload[3]/div/div/h2/button/app-upload-input/div/div[2]/input'
-        archive5 = "C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png"
+        archive5 = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
         upload_file_after_click(self.driver, select_field5, element_archive_6, archive5)
         time.sleep(3)
 
@@ -223,7 +227,7 @@ class Onboarding_test_tenant(unittest.TestCase):
         # manifestación de bienes 
         select_field6 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[1]/div/div/h2/button'
         element_archive_7 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[1]/div/div/h2/button/app-upload-input/div/div[2]/input'
-        archive6 = "C:/Users/luist/OneDrive/Escritorio/Capturas de pantalla/2022-02-14 (5).png"
+        archive6 = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
         upload_file_after_click(self.driver, select_field6, element_archive_7, archive6)
         time.sleep(3)
 
@@ -233,14 +237,14 @@ class Onboarding_test_tenant(unittest.TestCase):
         # libro de Iva venta ultomos 12 meses 
         select_field7 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[2]/div/div/h2/button'
         element_archive_8 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[2]/div/div/h2/button/app-upload-input/div/div[2]/input'
-        archive7 = "C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.pdf"
+        archive7 = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
         upload_file_after_click(self.driver, select_field7, element_archive_8, archive7)
         time.sleep(3)
 
         # Ultimo balance 
         select_field8 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[3]/div/div/h2/button'
         element_archive_9 = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-legacy-documentation/div/div/app-management-credit-lines/div/div/app-acordion-for-upload[3]/div/div/h2/button/app-upload-input/div/div[2]/input'
-        archive8 = "C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.pdf"
+        archive8 = "C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf"
         upload_file_after_click(self.driver, select_field8, element_archive_9, archive8)
         time.sleep(3)
 

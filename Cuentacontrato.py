@@ -46,7 +46,7 @@ class contrato_tenant(unittest.TestCase):
         find_elements(self.driver,cleam_filter )
         time.sleep(3)
 
-        # aplicar un nuevo filtro
+        # aplicar un nuevo filtro soja 2223 rango 01/10/2023 al 30/11/2023
 
         select_product_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[1]/div/img"
         find_elements(self.driver,select_product_filter )
@@ -61,7 +61,7 @@ class contrato_tenant(unittest.TestCase):
         time.sleep(2)
 
         arrow_filter1 = "/html/body/div/div[1]/span[1]"
-        amount_click1 = 3
+        amount_click1 = 10
         find_and_click_element(self.driver, arrow_filter1, amount_click1)
 
         select_date1 = "/html/body/div/div[2]/div/div[2]/div/span[7]"

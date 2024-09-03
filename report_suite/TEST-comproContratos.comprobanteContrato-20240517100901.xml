@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comproContratos.comprobanteContrato-20240517100901" tests="1" file="comproContratos.py" time="52.123" timestamp="2024-05-17T10:43:47" failures="0" errors="0" skipped="0">
+	<testcase classname="comproContratos.comprobanteContrato" name="test_comprobante_contrato" time="52.123" timestamp="2024-05-17T10:43:47" file="comproContratos.py" line="22">
+		<system-out><![CDATA[El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado 4 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Mis Comprobantes
+El texto no fue encontrado VC 0001 00125165
+El texto no fue encontrado VT 0001 00125179
+El texto encontrado es  El comprobante seleccionado no se encuentra para su descarga
+]]></system-out>
+	</testcase>
+</testsuite>

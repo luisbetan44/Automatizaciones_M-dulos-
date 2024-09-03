@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_entregaVentas-20240304181131" tests="1" file=".py" time="75.982" timestamp="2024-03-04T18:12:47" failures="0" errors="0" skipped="0">
+	<testcase classname="detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="75.982" timestamp="2024-03-04T18:12:47" file="CtaCtroDtlleEntVta.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Estado De Mis Contratos
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+La cadena de texto es visible para el usuario: '500,00 Tn'
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Entregas
+El texto es visible para el usuario
+El texto fue validado correctamente: Producto
+El texto es visible para el usuario
+El texto fue validado correctamente: Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 14/03/2022
+La cadena de texto es visible para el usuario: 'Tn Brutos'
+El valor es un carácter numérico. Valor: 30,04
+El texto es visible para el usuario
+El texto fue validado correctamente: Humedad
+El valor es un carácter numérico. Valor: 16,70%
+El texto es visible para el usuario
+El texto fue validado correctamente: Zaranda
+El valor es un carácter numérico. Valor: 0,00%
+El texto es visible para el usuario
+El texto fue validado correctamente: Volátil
+El valor es un carácter numérico. Valor: 0,30%
+El texto es visible para el usuario
+El texto fue validado correctamente: Factor/Grado
+El valor es un carácter numérico. Valor: 100/2
+La cadena de texto es visible para el usuario: 'Tn Netos'
+El valor es un carácter numérico. Valor: 19,07
+El texto es visible para el usuario
+El texto fue validado correctamente: CTG/CRT
+El valor es un carácter numérico. Valor: 0010010102265019
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[1]/app-deliveries-applied/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[1]/th/input' seleccionado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

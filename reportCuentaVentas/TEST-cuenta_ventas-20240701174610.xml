@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ventas-20240701174610" tests="1" file=".py" time="39.646" timestamp="2024-07-01T17:46:50" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ventas" name="test_cuenta_ventas" time="39.646" timestamp="2024-07-01T17:46:50" file="Ventas.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;input _ngcontent-xdk-c224=&quot;&quot; type=&quot;checkbox&quot; class=&quot;form-check-input&quot;&gt; is not clickable at point (292, 356). Other element would receive the click: &lt;ngb-offcanvas-backdrop class=&quot;offcanvas-backdrop fade show&quot;&gt;&lt;/ngb-offcanvas-backdrop&gt;
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B3F3EEA2+31554]
+	(No symbol) [0x00007FF7B3EB7ED9]
+	(No symbol) [0x00007FF7B3D7872A]
+	(No symbol) [0x00007FF7B3DD012E]
+	(No symbol) [0x00007FF7B3DCDAF2]
+	(No symbol) [0x00007FF7B3DCAF8B]
+	(No symbol) [0x00007FF7B3DCA156]
+	(No symbol) [0x00007FF7B3DBC151]
+	(No symbol) [0x00007FF7B3DED02A]
+	(No symbol) [0x00007FF7B3DBBA76]
+	(No symbol) [0x00007FF7B3DED240]
+	(No symbol) [0x00007FF7B3E0C977]
+	(No symbol) [0x00007FF7B3DECDD3]
+	(No symbol) [0x00007FF7B3DBA33B]
+	(No symbol) [0x00007FF7B3DBAED1]
+	GetHandleVerifier [0x00007FF7B4248B1D+3217341]
+	GetHandleVerifier [0x00007FF7B4295AE3+3532675]
+	GetHandleVerifier [0x00007FF7B428B0E0+3489152]
+	GetHandleVerifier [0x00007FF7B3FEE776+750614]
+	(No symbol) [0x00007FF7B3EC375F]
+	(No symbol) [0x00007FF7B3EBEB14]
+	(No symbol) [0x00007FF7B3EBECA2]
+	(No symbol) [0x00007FF7B3EAE16F]
+	BaseThreadInitThunk [0x00007FF99BFF257D+29]
+	RtlUserThreadStart [0x00007FF99CAAAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Ventas.py", line 96, in test_cuenta_ventas
+    find_elements(self.driver, select_product_list_1 )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input _ngcontent-xdk-c224="" type="checkbox" class="form-check-input"> is not clickable at point (292, 356). Other element would receive the click: <ngb-offcanvas-backdrop class="offcanvas-backdrop fade show"></ngb-offcanvas-backdrop>
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B3F3EEA2+31554]
+	(No symbol) [0x00007FF7B3EB7ED9]
+	(No symbol) [0x00007FF7B3D7872A]
+	(No symbol) [0x00007FF7B3DD012E]
+	(No symbol) [0x00007FF7B3DCDAF2]
+	(No symbol) [0x00007FF7B3DCAF8B]
+	(No symbol) [0x00007FF7B3DCA156]
+	(No symbol) [0x00007FF7B3DBC151]
+	(No symbol) [0x00007FF7B3DED02A]
+	(No symbol) [0x00007FF7B3DBBA76]
+	(No symbol) [0x00007FF7B3DED240]
+	(No symbol) [0x00007FF7B3E0C977]
+	(No symbol) [0x00007FF7B3DECDD3]
+	(No symbol) [0x00007FF7B3DBA33B]
+	(No symbol) [0x00007FF7B3DBAED1]
+	GetHandleVerifier [0x00007FF7B4248B1D+3217341]
+	GetHandleVerifier [0x00007FF7B4295AE3+3532675]
+	GetHandleVerifier [0x00007FF7B428B0E0+3489152]
+	GetHandleVerifier [0x00007FF7B3FEE776+750614]
+	(No symbol) [0x00007FF7B3EC375F]
+	(No symbol) [0x00007FF7B3EBEB14]
+	(No symbol) [0x00007FF7B3EBECA2]
+	(No symbol) [0x00007FF7B3EAE16F]
+	BaseThreadInitThunk [0x00007FF99BFF257D+29]
+	RtlUserThreadStart [0x00007FF99CAAAF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

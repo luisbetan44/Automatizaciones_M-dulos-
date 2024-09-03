@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliAcobrar-20240719113318" tests="2" file=".py" time="47.384" timestamp="2024-07-19T11:34:05" failures="0" errors="2" skipped="0">
+	<testcase classname="cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="0.000" timestamp="0001-01-01T00:00:00" file="ctacte_apliAcobrar.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_apliAcobrar.py", line 42, in test_ctacte_aplicada
+    find_elements(self.driver, apply_filter_1)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+	</testcase>
+	<testcase classname="cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="47.384" timestamp="2024-07-19T11:34:05" file="ctacte_apliAcobrar.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=126.0.6478.182)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D7FCEEB2+31554]
+	(No symbol) [0x00007FF7D7F47EE9]
+	(No symbol) [0x00007FF7D7E0872A]
+	(No symbol) [0x00007FF7D7DF0FDD]
+	(No symbol) [0x00007FF7D7DEEC6D]
+	(No symbol) [0x00007FF7D7DEF47F]
+	(No symbol) [0x00007FF7D7E08D53]
+	(No symbol) [0x00007FF7D7DDD47C]
+	(No symbol) [0x00007FF7D7E8B614]
+	(No symbol) [0x00007FF7D7E7CFF0]
+	(No symbol) [0x00007FF7D7E4A33B]
+	(No symbol) [0x00007FF7D7E4AED1]
+	GetHandleVerifier [0x00007FF7D82D8B2D+3217341]
+	GetHandleVerifier [0x00007FF7D8325AF3+3532675]
+	GetHandleVerifier [0x00007FF7D831B0F0+3489152]
+	GetHandleVerifier [0x00007FF7D807E786+750614]
+	(No symbol) [0x00007FF7D7F5376F]
+	(No symbol) [0x00007FF7D7F4EB24]
+	(No symbol) [0x00007FF7D7F4ECB2]
+	(No symbol) [0x00007FF7D7F3E17F]
+	BaseThreadInitThunk [0x00007FFBFD87257D+29]
+	RtlUserThreadStart [0x00007FFBFF42AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ctacte_apliAcobrar.py", line 155, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=126.0.6478.182)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D7FCEEB2+31554]
+	(No symbol) [0x00007FF7D7F47EE9]
+	(No symbol) [0x00007FF7D7E0872A]
+	(No symbol) [0x00007FF7D7DF0FDD]
+	(No symbol) [0x00007FF7D7DEEC6D]
+	(No symbol) [0x00007FF7D7DEF47F]
+	(No symbol) [0x00007FF7D7E08D53]
+	(No symbol) [0x00007FF7D7DDD47C]
+	(No symbol) [0x00007FF7D7E8B614]
+	(No symbol) [0x00007FF7D7E7CFF0]
+	(No symbol) [0x00007FF7D7E4A33B]
+	(No symbol) [0x00007FF7D7E4AED1]
+	GetHandleVerifier [0x00007FF7D82D8B2D+3217341]
+	GetHandleVerifier [0x00007FF7D8325AF3+3532675]
+	GetHandleVerifier [0x00007FF7D831B0F0+3489152]
+	GetHandleVerifier [0x00007FF7D807E786+750614]
+	(No symbol) [0x00007FF7D7F5376F]
+	(No symbol) [0x00007FF7D7F4EB24]
+	(No symbol) [0x00007FF7D7F4ECB2]
+	(No symbol) [0x00007FF7D7F3E17F]
+	BaseThreadInitThunk [0x00007FFBFD87257D+29]
+	RtlUserThreadStart [0x00007FFBFF42AF28+40]
+
+]]></error>
+	</testcase>
+</testsuite>

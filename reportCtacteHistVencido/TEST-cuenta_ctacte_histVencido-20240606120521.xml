@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histVencido-20240606120521" tests="2" file=".py" time="74.718" timestamp="2024-06-06T12:06:36" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_ctacte_histVencido" name="test_ctacte_historica" time="0.000" timestamp="0001-01-01T00:00:00" file="CtaCte_HistoVencido.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77F011F52+60322]
+	(No symbol) [0x00007FF77EF8CEC9]
+	(No symbol) [0x00007FF77EE47EBA]
+	(No symbol) [0x00007FF77EE1D5A5]
+	(No symbol) [0x00007FF77EEC36B7]
+	(No symbol) [0x00007FF77EEDB331]
+	(No symbol) [0x00007FF77EEBBFC3]
+	(No symbol) [0x00007FF77EE89617]
+	(No symbol) [0x00007FF77EE8A211]
+	GetHandleVerifier [0x00007FF77F3294AD+3301629]
+	GetHandleVerifier [0x00007FF77F3736D3+3605283]
+	GetHandleVerifier [0x00007FF77F369450+3563680]
+	GetHandleVerifier [0x00007FF77F0C4326+790390]
+	(No symbol) [0x00007FF77EF9750F]
+	(No symbol) [0x00007FF77EF93404]
+	(No symbol) [0x00007FF77EF93592]
+	(No symbol) [0x00007FF77EF82F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_HistoVencido.py", line 115, in test_ctacte_historica
+    validate_character_numeric_element(self.driver, balance_ars)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1118, in validate_character_numeric_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77F011F52+60322]
+	(No symbol) [0x00007FF77EF8CEC9]
+	(No symbol) [0x00007FF77EE47EBA]
+	(No symbol) [0x00007FF77EE1D5A5]
+	(No symbol) [0x00007FF77EEC36B7]
+	(No symbol) [0x00007FF77EEDB331]
+	(No symbol) [0x00007FF77EEBBFC3]
+	(No symbol) [0x00007FF77EE89617]
+	(No symbol) [0x00007FF77EE8A211]
+	GetHandleVerifier [0x00007FF77F3294AD+3301629]
+	GetHandleVerifier [0x00007FF77F3736D3+3605283]
+	GetHandleVerifier [0x00007FF77F369450+3563680]
+	GetHandleVerifier [0x00007FF77F0C4326+790390]
+	(No symbol) [0x00007FF77EF9750F]
+	(No symbol) [0x00007FF77EF93404]
+	(No symbol) [0x00007FF77EF93592]
+	(No symbol) [0x00007FF77EF82F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+	<testcase classname="cuenta_ctacte_histVencido" name="test_ctacte_historica" time="74.718" timestamp="2024-06-06T12:06:36" file="CtaCte_HistoVencido.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77F011F52+60322]
+	(No symbol) [0x00007FF77EF8CEC9]
+	(No symbol) [0x00007FF77EE47EBA]
+	(No symbol) [0x00007FF77EE2E03F]
+	(No symbol) [0x00007FF77EE2EBAF]
+	(No symbol) [0x00007FF77EE484E3]
+	(No symbol) [0x00007FF77EE1D08C]
+	(No symbol) [0x00007FF77EECA7B4]
+	(No symbol) [0x00007FF77EEBC1E0]
+	(No symbol) [0x00007FF77EE89617]
+	(No symbol) [0x00007FF77EE8A211]
+	GetHandleVerifier [0x00007FF77F3294AD+3301629]
+	GetHandleVerifier [0x00007FF77F3736D3+3605283]
+	GetHandleVerifier [0x00007FF77F369450+3563680]
+	GetHandleVerifier [0x00007FF77F0C4326+790390]
+	(No symbol) [0x00007FF77EF9750F]
+	(No symbol) [0x00007FF77EF93404]
+	(No symbol) [0x00007FF77EF93592]
+	(No symbol) [0x00007FF77EF82F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_HistoVencido.py", line 194, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77F011F52+60322]
+	(No symbol) [0x00007FF77EF8CEC9]
+	(No symbol) [0x00007FF77EE47EBA]
+	(No symbol) [0x00007FF77EE2E03F]
+	(No symbol) [0x00007FF77EE2EBAF]
+	(No symbol) [0x00007FF77EE484E3]
+	(No symbol) [0x00007FF77EE1D08C]
+	(No symbol) [0x00007FF77EECA7B4]
+	(No symbol) [0x00007FF77EEBC1E0]
+	(No symbol) [0x00007FF77EE89617]
+	(No symbol) [0x00007FF77EE8A211]
+	GetHandleVerifier [0x00007FF77F3294AD+3301629]
+	GetHandleVerifier [0x00007FF77F3736D3+3605283]
+	GetHandleVerifier [0x00007FF77F369450+3563680]
+	GetHandleVerifier [0x00007FF77F0C4326+790390]
+	(No symbol) [0x00007FF77EF9750F]
+	(No symbol) [0x00007FF77EF93404]
+	(No symbol) [0x00007FF77EF93592]
+	(No symbol) [0x00007FF77EF82F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

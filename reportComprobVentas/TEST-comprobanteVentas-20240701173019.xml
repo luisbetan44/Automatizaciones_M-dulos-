@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobanteVentas-20240701173019" tests="1" file=".py" time="112.773" timestamp="2024-07-01T17:32:12" failures="0" errors="1" skipped="0">
+	<testcase classname="comprobanteVentas" name="test_vouchers_sales" time="112.773" timestamp="2024-07-01T17:32:12" file="comproVentas.py" line="18">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B3F3EEA2+31554]
+	(No symbol) [0x00007FF7B3EB7ED9]
+	(No symbol) [0x00007FF7B3D7872A]
+	(No symbol) [0x00007FF7B3D5E90F]
+	(No symbol) [0x00007FF7B3D5F47F]
+	(No symbol) [0x00007FF7B3D78D53]
+	(No symbol) [0x00007FF7B3D4D47C]
+	(No symbol) [0x00007FF7B3DFB614]
+	(No symbol) [0x00007FF7B3DECFF0]
+	(No symbol) [0x00007FF7B3DBA33B]
+	(No symbol) [0x00007FF7B3DBAED1]
+	GetHandleVerifier [0x00007FF7B4248B1D+3217341]
+	GetHandleVerifier [0x00007FF7B4295AE3+3532675]
+	GetHandleVerifier [0x00007FF7B428B0E0+3489152]
+	GetHandleVerifier [0x00007FF7B3FEE776+750614]
+	(No symbol) [0x00007FF7B3EC375F]
+	(No symbol) [0x00007FF7B3EBEB14]
+	(No symbol) [0x00007FF7B3EBECA2]
+	(No symbol) [0x00007FF7B3EAE16F]
+	BaseThreadInitThunk [0x00007FF99BFF257D+29]
+	RtlUserThreadStart [0x00007FF99CAAAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\comproVentas.py", line 133, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7B3F3EEA2+31554]
+	(No symbol) [0x00007FF7B3EB7ED9]
+	(No symbol) [0x00007FF7B3D7872A]
+	(No symbol) [0x00007FF7B3D5E90F]
+	(No symbol) [0x00007FF7B3D5F47F]
+	(No symbol) [0x00007FF7B3D78D53]
+	(No symbol) [0x00007FF7B3D4D47C]
+	(No symbol) [0x00007FF7B3DFB614]
+	(No symbol) [0x00007FF7B3DECFF0]
+	(No symbol) [0x00007FF7B3DBA33B]
+	(No symbol) [0x00007FF7B3DBAED1]
+	GetHandleVerifier [0x00007FF7B4248B1D+3217341]
+	GetHandleVerifier [0x00007FF7B4295AE3+3532675]
+	GetHandleVerifier [0x00007FF7B428B0E0+3489152]
+	GetHandleVerifier [0x00007FF7B3FEE776+750614]
+	(No symbol) [0x00007FF7B3EC375F]
+	(No symbol) [0x00007FF7B3EBEB14]
+	(No symbol) [0x00007FF7B3EBECA2]
+	(No symbol) [0x00007FF7B3EAE16F]
+	BaseThreadInitThunk [0x00007FF99BFF257D+29]
+	RtlUserThreadStart [0x00007FF99CAAAF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Mis Comprobantes
+El texto encontrado es  F 0001 00120623
+El texto encontrado es  F 0001 00125168
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

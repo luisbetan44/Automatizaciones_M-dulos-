@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240531113604" tests="2" file=".py" time="103.516" timestamp="2024-05-31T11:37:47" failures="0" errors="2" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="0.000" timestamp="0001-01-01T00:00:00" file="Precio_Fijacion.py" line="21">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 160, in test_price_fixings
+    select_option_click(self.driver, select_number_contract, option_number_contract )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 924, in select_option_click
+    xpath_chevron = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+Número obtenido desde la funcion: 6478
+Número verificado en la pantalla: 6478
+El elemento en la posición siguiente ha sido clickeado.
+¡Cuenta encontrada y seleccionada 484  con éxito!
+]]></system-out>
+	</testcase>
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="103.516" timestamp="2024-05-31T11:37:47" file="Precio_Fijacion.py" line="21">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BABE1F52+60322]
+	(No symbol) [0x00007FF7BAB5CEC9]
+	(No symbol) [0x00007FF7BAA17EBA]
+	(No symbol) [0x00007FF7BA9ED5A5]
+	(No symbol) [0x00007FF7BAA936B7]
+	(No symbol) [0x00007FF7BAA9A812]
+	(No symbol) [0x00007FF7BAA8C1E0]
+	(No symbol) [0x00007FF7BAA59617]
+	(No symbol) [0x00007FF7BAA5A211]
+	GetHandleVerifier [0x00007FF7BAEF94AD+3301629]
+	GetHandleVerifier [0x00007FF7BAF436D3+3605283]
+	GetHandleVerifier [0x00007FF7BAF39450+3563680]
+	GetHandleVerifier [0x00007FF7BAC94326+790390]
+	(No symbol) [0x00007FF7BAB6750F]
+	(No symbol) [0x00007FF7BAB63404]
+	(No symbol) [0x00007FF7BAB63592]
+	(No symbol) [0x00007FF7BAB52F9F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Fijacion.py", line 177, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=125.0.6422.113)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7BABE1F52+60322]
+	(No symbol) [0x00007FF7BAB5CEC9]
+	(No symbol) [0x00007FF7BAA17EBA]
+	(No symbol) [0x00007FF7BA9ED5A5]
+	(No symbol) [0x00007FF7BAA936B7]
+	(No symbol) [0x00007FF7BAA9A812]
+	(No symbol) [0x00007FF7BAA8C1E0]
+	(No symbol) [0x00007FF7BAA59617]
+	(No symbol) [0x00007FF7BAA5A211]
+	GetHandleVerifier [0x00007FF7BAEF94AD+3301629]
+	GetHandleVerifier [0x00007FF7BAF436D3+3605283]
+	GetHandleVerifier [0x00007FF7BAF39450+3563680]
+	GetHandleVerifier [0x00007FF7BAC94326+790390]
+	(No symbol) [0x00007FF7BAB6750F]
+	(No symbol) [0x00007FF7BAB63404]
+	(No symbol) [0x00007FF7BAB63592]
+	(No symbol) [0x00007FF7BAB52F9F]
+	BaseThreadInitThunk [0x00007FF89C91257D+29]
+	RtlUserThreadStart [0x00007FF89EBCAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Input encontrado y enviado con éxito!
+Número obtenido desde la funcion: 6478
+Número verificado en la pantalla: 6478
+El elemento en la posición siguiente ha sido clickeado.
+¡Cuenta encontrada y seleccionada 484  con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

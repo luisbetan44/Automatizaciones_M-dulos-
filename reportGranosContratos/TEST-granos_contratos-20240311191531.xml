@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240311191531" tests="2" file=".py" time="49.981" timestamp="2024-03-11T19:16:21" failures="0" errors="2" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="0.000" timestamp="0001-01-01T00:00:00" file="GranosContratos.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 155, in test_granos_contratos
+    find_elements(self.driver,select_date)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada en el dropdown con exito  
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Elemento encontrado y clickeado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+El clic en el chevron fue interceptado por otro elemento en la página.
+]]></system-out>
+	</testcase>
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="49.981" timestamp="2024-03-11T19:16:21" file="GranosContratos.py" line="23">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DD8CAD32+56930]
+	(No symbol) [0x00007FF7DD83F632]
+	(No symbol) [0x00007FF7DD6F42E5]
+	(No symbol) [0x00007FF7DD6D1D4C]
+	(No symbol) [0x00007FF7DD7623F7]
+	(No symbol) [0x00007FF7DD768942]
+	(No symbol) [0x00007FF7DD75BC60]
+	(No symbol) [0x00007FF7DD72D438]
+	(No symbol) [0x00007FF7DD72E4D1]
+	GetHandleVerifier [0x00007FF7DDC46ABD+3709933]
+	GetHandleVerifier [0x00007FF7DDC9FFFD+4075821]
+	GetHandleVerifier [0x00007FF7DDC9818F+4043455]
+	GetHandleVerifier [0x00007FF7DD969766+706710]
+	(No symbol) [0x00007FF7DD84B90F]
+	(No symbol) [0x00007FF7DD846AF4]
+	(No symbol) [0x00007FF7DD846C4C]
+	(No symbol) [0x00007FF7DD836904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 278, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DD8CAD32+56930]
+	(No symbol) [0x00007FF7DD83F632]
+	(No symbol) [0x00007FF7DD6F42E5]
+	(No symbol) [0x00007FF7DD6D1D4C]
+	(No symbol) [0x00007FF7DD7623F7]
+	(No symbol) [0x00007FF7DD768942]
+	(No symbol) [0x00007FF7DD75BC60]
+	(No symbol) [0x00007FF7DD72D438]
+	(No symbol) [0x00007FF7DD72E4D1]
+	GetHandleVerifier [0x00007FF7DDC46ABD+3709933]
+	GetHandleVerifier [0x00007FF7DDC9FFFD+4075821]
+	GetHandleVerifier [0x00007FF7DDC9818F+4043455]
+	GetHandleVerifier [0x00007FF7DD969766+706710]
+	(No symbol) [0x00007FF7DD84B90F]
+	(No symbol) [0x00007FF7DD846AF4]
+	(No symbol) [0x00007FF7DD846C4C]
+	(No symbol) [0x00007FF7DD836904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada en el dropdown con exito  
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Elemento encontrado y clickeado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+El clic en el chevron fue interceptado por otro elemento en la página.
+]]></system-out>
+	</testcase>
+</testsuite>

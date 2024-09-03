@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportEntregasVentas-20240716155718" tests="1" file=".py" time="90.073" timestamp="2024-07-16T15:58:48" failures="0" errors="0" skipped="0">
+	<testcase classname="reportEntregasVentas" name="test_Report_deliverySales" time="90.073" timestamp="2024-07-16T15:58:48" file="ReportEntreVentas.py" line="17">
+		<system-out><![CDATA[El texto encontrado es  Entregas y Ventas
+El texto encontrado es  Soja
+El texto encontrado es  23/24
+El texto encontrado es  Kilos Entregados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Otros Movimientos
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Kilos Vendidos
+El valor es un carácter numérico. Valor: 94.539.100
+El texto encontrado es  Kilos Solicitados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 307.902
+El texto encontrado es  Saldo
+El valor es un carácter numérico. Valor: -94.539.100
+El texto encontrado es  Saldo Comercial
+El valor es un carácter numérico. Valor: -94.847.002
+]]></system-out>
+	</testcase>
+</testsuite>

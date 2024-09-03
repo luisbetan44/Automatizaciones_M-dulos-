@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="GranosContratos.granos_contratos-20240408154103" tests="1" file="GranosContratos.py" time="72.482" timestamp="2024-04-08T15:46:41" failures="0" errors="0" skipped="0">
+	<testcase classname="GranosContratos.granos_contratos" name="test_granos_contratos" time="72.482" timestamp="2024-04-08T15:46:41" file="GranosContratos.py" line="23">
+		<system-out><![CDATA[El texto encontrado es  CONTRATOS
+La opcion fue seleccionada en el dropdown con exito  
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Confirmación de venta generada con éxito.
+]]></system-out>
+	</testcase>
+</testsuite>

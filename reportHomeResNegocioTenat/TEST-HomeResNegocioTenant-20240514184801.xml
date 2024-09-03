@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeResNegocioTenant-20240514184801" tests="2" file=".py" time="71.678" timestamp="2024-05-14T18:49:13" failures="0" errors="2" skipped="0">
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="0.000" timestamp="0001-01-01T00:00:00" file="HomeResNegocio.py" line="18">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\HomeResNegocio.py", line 46, in test_start_tenant
+    find_elements(self.driver,apply_filter)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Resumen de Mis Negocios de Granos
+]]></system-out>
+	</testcase>
+	<testcase classname="HomeResNegocioTenant" name="test_start_tenant" time="71.678" timestamp="2024-05-14T18:49:13" file="HomeResNegocio.py" line="18">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67C721522+60802]
+	(No symbol) [0x00007FF67C69AC22]
+	(No symbol) [0x00007FF67C557CE4]
+	(No symbol) [0x00007FF67C52DFDF]
+	(No symbol) [0x00007FF67C5D1E57]
+	(No symbol) [0x00007FF67C5D8FD2]
+	(No symbol) [0x00007FF67C5CAB40]
+	(No symbol) [0x00007FF67C598FEC]
+	(No symbol) [0x00007FF67C599C21]
+	GetHandleVerifier [0x00007FF67CA241BD+3217949]
+	GetHandleVerifier [0x00007FF67CA66157+3488183]
+	GetHandleVerifier [0x00007FF67CA5F0DF+3459391]
+	GetHandleVerifier [0x00007FF67C7DB8E6+823622]
+	(No symbol) [0x00007FF67C6A5FBF]
+	(No symbol) [0x00007FF67C6A0EE4]
+	(No symbol) [0x00007FF67C6A1072]
+	(No symbol) [0x00007FF67C6918C4]
+	BaseThreadInitThunk [0x00007FFCF149257D+29]
+	RtlUserThreadStart [0x00007FFCF2C2AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\HomeResNegocio.py", line 77, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF67C721522+60802]
+	(No symbol) [0x00007FF67C69AC22]
+	(No symbol) [0x00007FF67C557CE4]
+	(No symbol) [0x00007FF67C52DFDF]
+	(No symbol) [0x00007FF67C5D1E57]
+	(No symbol) [0x00007FF67C5D8FD2]
+	(No symbol) [0x00007FF67C5CAB40]
+	(No symbol) [0x00007FF67C598FEC]
+	(No symbol) [0x00007FF67C599C21]
+	GetHandleVerifier [0x00007FF67CA241BD+3217949]
+	GetHandleVerifier [0x00007FF67CA66157+3488183]
+	GetHandleVerifier [0x00007FF67CA5F0DF+3459391]
+	GetHandleVerifier [0x00007FF67C7DB8E6+823622]
+	(No symbol) [0x00007FF67C6A5FBF]
+	(No symbol) [0x00007FF67C6A0EE4]
+	(No symbol) [0x00007FF67C6A1072]
+	(No symbol) [0x00007FF67C6918C4]
+	BaseThreadInitThunk [0x00007FFCF149257D+29]
+	RtlUserThreadStart [0x00007FFCF2C2AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Resumen de Mis Negocios de Granos
+]]></system-out>
+	</testcase>
+</testsuite>

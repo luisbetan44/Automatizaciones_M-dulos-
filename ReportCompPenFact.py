@@ -2,7 +2,7 @@ import time
 import unittest
 from selenium.webdriver.common.by import By
 import xmlrunner
-from Elements import find_elements, validate_character_numeric_element, validate_text, validate_text_by_strt
+from Elements import  calendar_todate_retro, find_and_click_element, find_elements, validate_character_numeric_element, validate_text
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -42,6 +42,16 @@ class reportPendFacturar(unittest.TestCase):
         find_elements(self.driver,select_receipts_pending)
         time.sleep(2)
 
+        ## seleccionar filtro de los ultimos seis meses 
+
+        select_calendar = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-reports-options/app-date-filter/div/app-date-picker/div/input[2]"
+        popup_xpath = "//div[contains(@class, 'flatpickr-calendar')]"
+        select_chevron = "//span[@class='flatpickr-prev-month']"
+        popup_xpath2 = "//div[contains(@class, 'flatpickr-calendar')]"
+        click_chevron = 6
+        calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
+        time.sleep(2)
+
         apply_option_select = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
         find_elements(self.driver,apply_option_select)
         time.sleep(2)
@@ -57,37 +67,66 @@ class reportPendFacturar(unittest.TestCase):
         first_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[2]"
         first_column_expected = "Comprobante"
         validate_text(self.driver,first_column,first_column_expected )
+
+        value_column1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/div/span"
+        value_column_expected1 = "PED 0051 00017084"
+        validate_text(self.driver,value_column1,value_column_expected1 )
       
 
         second_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[3]"
         second_column_expected = "Artículo"
         validate_text(self.driver,second_column,second_column_expected )
+
+        value_column2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[2]/span/div/span"
+        value_column_expected2 = "110002 - Aceite mineral Novaoil x 20 lts NOVA SA."
+        validate_text(self.driver,value_column2,value_column_expected2 )
       
 
         third_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[4]"
-        third_column_column_expected = "Pendiente"
+        third_column_column_expected = "Cantidad"
         validate_text(self.driver,third_column,third_column_column_expected )
 
+        value_column3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[3]/span/div/span"
+        validate_character_numeric_element(self.driver,value_column3)
+
         quarter_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[5]"
-        quarter_column_expected = "Precio Unit."
+        quarter_column_expected = "Cant. Pend."
         validate_text(self.driver,quarter_column,quarter_column_expected )
+
+        value_column4 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[4]/span/div/span"
+        validate_character_numeric_element(self.driver,value_column4)
 
         fifth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[6]"
         fifth_column_expected = "Moneda"
         validate_text(self.driver,fifth_column,fifth_column_expected )
 
-        sixth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[6]"
-        sixth_column_expected = "Total"
+        value_column5 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[5]/span/div/span"
+        value_column_expected5 = "USD"
+        validate_text(self.driver,value_column5,value_column_expected5 )
+
+        sixth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[7]"
+        sixth_column_expected = "Precio"
         validate_text(self.driver,sixth_column,sixth_column_expected )
-   
 
-       # validar tipos de caracteres en la descripción de los productos 
+        value_column6 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[6]/span/div/span"
+        validate_character_numeric_element(self.driver,value_column6)
 
-        number_voucher = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/span"
-        validate_character_numeric_element(self.driver,number_voucher)
+        seventh_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[8]"
+        sixth_column_expected = "Total USD"
+        validate_text(self.driver, seventh_column,sixth_column_expected )
+
+        value_column7 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[7]/span/div/span"
+        validate_character_numeric_element(self.driver,value_column7)
+
+        eighth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[9]"
+        sixth_column_expected = "Total ARS"
+        validate_text(self.driver, eighth_column,sixth_column_expected )
+
+    
+        value_column8 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[8]/span/div/span"
+        validate_character_numeric_element(self.driver,value_column8)
         
-        article_description = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[2]/span/span"
-        validate_text_by_strt(self.driver,article_description)
+        
 
         # ingresar al detalle 
              
@@ -116,27 +155,13 @@ class reportPendFacturar(unittest.TestCase):
         field_article_expected = "ARTÍCULO"
         validate_text(self.driver,field_article, field_article_expected)
 
+        
+
         descrition_article = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[2]/div"
-        validate_text_by_strt(self.driver,descrition_article)
-
-        field_amount = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[3]/strong/div"
-        field_amount_expected = "CANTIDAD"
-        validate_text(self.driver,field_amount, field_amount_expected)
+        descrition_article_expected = "110002 - Aceite mineral Novaoil x 20 lts NOVA SA."
+        validate_text(self.driver,descrition_article, descrition_article_expected)
        
-        amount_field = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[3]/div"
-        validate_character_numeric_element(self.driver,amount_field)
-
-        pending_amount = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[4]/strong/div"
-        pending_amount_expected = "CANTIDAD PENDIENTE"
-        validate_text(self.driver,pending_amount, pending_amount_expected)
-    
-        amount_earring = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[4]/div"
-        validate_character_numeric_element(self.driver,amount_earring)
-      
-
        
-
-
 
         # salir del detalle 
 

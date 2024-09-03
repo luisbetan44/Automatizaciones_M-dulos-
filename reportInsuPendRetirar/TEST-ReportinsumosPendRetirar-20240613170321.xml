@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportinsumosPendRetirar-20240613170321" tests="1" file=".py" time="131.607" timestamp="2024-06-13T17:05:33" failures="0" errors="1" skipped="0">
+	<testcase classname="ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="131.607" timestamp="2024-06-13T17:05:33" file="reportInsuRetirar.py" line="17">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#layout-wrapper &gt; div &gt; div &gt; div &gt; app-supplies-pending &gt; app-responsive-table &gt; div &gt; div &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(4) &gt; span &gt; span&quot;}
+  (Session info: chrome=125.0.6422.144); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF614121F52+60322]
+	(No symbol) [0x00007FF61409CEC9]
+	(No symbol) [0x00007FF613F57EBA]
+	(No symbol) [0x00007FF613FA7676]
+	(No symbol) [0x00007FF613FA773C]
+	(No symbol) [0x00007FF613FEE967]
+	(No symbol) [0x00007FF613FCC25F]
+	(No symbol) [0x00007FF613FEBC80]
+	(No symbol) [0x00007FF613FCBFC3]
+	(No symbol) [0x00007FF613F99617]
+	(No symbol) [0x00007FF613F9A211]
+	GetHandleVerifier [0x00007FF6144394AD+3301629]
+	GetHandleVerifier [0x00007FF6144836D3+3605283]
+	GetHandleVerifier [0x00007FF614479450+3563680]
+	GetHandleVerifier [0x00007FF6141D4326+790390]
+	(No symbol) [0x00007FF6140A750F]
+	(No symbol) [0x00007FF6140A3404]
+	(No symbol) [0x00007FF6140A3592]
+	(No symbol) [0x00007FF614092F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\reportInsuRetirar.py", line 95, in test_Report_suppliesWithdrawal
+    validate_character_numeric_element_selector(self.driver, pending_amount1 )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1155, in validate_character_numeric_element_selector
+    elemento = driver.find_element(By.CSS_SELECTOR, css_selector)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#layout-wrapper > div > div > div > app-supplies-pending > app-responsive-table > div > div > table > tbody > tr:nth-child(1) > td:nth-child(4) > span > span"}
+  (Session info: chrome=125.0.6422.144); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF614121F52+60322]
+	(No symbol) [0x00007FF61409CEC9]
+	(No symbol) [0x00007FF613F57EBA]
+	(No symbol) [0x00007FF613FA7676]
+	(No symbol) [0x00007FF613FA773C]
+	(No symbol) [0x00007FF613FEE967]
+	(No symbol) [0x00007FF613FCC25F]
+	(No symbol) [0x00007FF613FEBC80]
+	(No symbol) [0x00007FF613FCBFC3]
+	(No symbol) [0x00007FF613F99617]
+	(No symbol) [0x00007FF613F9A211]
+	GetHandleVerifier [0x00007FF6144394AD+3301629]
+	GetHandleVerifier [0x00007FF6144836D3+3605283]
+	GetHandleVerifier [0x00007FF614479450+3563680]
+	GetHandleVerifier [0x00007FF6141D4326+790390]
+	(No symbol) [0x00007FF6140A750F]
+	(No symbol) [0x00007FF6140A3404]
+	(No symbol) [0x00007FF6140A3592]
+	(No symbol) [0x00007FF614092F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Insumos Pendientes de Retirar
+El texto encontrado es  Comprobante
+Tiempo de espera agotado. El texto por texto no está presente.
+El texto encontrado es  Artículo
+Tiempo de espera agotado. El texto por texto no está presente.
+El texto no fue encontrado Pendiente
+]]></system-out>
+	</testcase>
+</testsuite>

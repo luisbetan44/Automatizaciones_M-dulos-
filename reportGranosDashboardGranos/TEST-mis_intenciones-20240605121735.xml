@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mis_intenciones-20240605121735" tests="1" file=".py" time="42.555" timestamp="2024-06-05T12:18:18" failures="0" errors="0" skipped="0">
+	<testcase classname="mis_intenciones" name="test_my_intentions" time="42.555" timestamp="2024-06-05T12:18:18" file="MisIntenciones.py" line="22"/>
+</testsuite>

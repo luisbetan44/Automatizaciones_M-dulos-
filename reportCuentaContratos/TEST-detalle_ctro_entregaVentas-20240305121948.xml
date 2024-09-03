@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_entregaVentas-20240305121948" tests="1" file=".py" time="97.013" timestamp="2024-03-05T12:21:25" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="97.013" timestamp="2024-03-05T12:21:25" file="CtaCtroDtlleEntVta.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (1337, -813)
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79E42AD22+56930]
+	(No symbol) [0x00007FF79E39F622]
+	(No symbol) [0x00007FF79E2542E5]
+	(No symbol) [0x00007FF79E2A0A80]
+	(No symbol) [0x00007FF79E29E8AB]
+	(No symbol) [0x00007FF79E29C0B4]
+	(No symbol) [0x00007FF79E29AE45]
+	(No symbol) [0x00007FF79E28F798]
+	(No symbol) [0x00007FF79E2BBC9A]
+	(No symbol) [0x00007FF79E28F09A]
+	(No symbol) [0x00007FF79E2BBEB0]
+	(No symbol) [0x00007FF79E2D81E2]
+	(No symbol) [0x00007FF79E2BBA43]
+	(No symbol) [0x00007FF79E28D438]
+	(No symbol) [0x00007FF79E28E4D1]
+	GetHandleVerifier [0x00007FF79E7A6AAD+3709933]
+	GetHandleVerifier [0x00007FF79E7FFFED+4075821]
+	GetHandleVerifier [0x00007FF79E7F817F+4043455]
+	GetHandleVerifier [0x00007FF79E4C9756+706710]
+	(No symbol) [0x00007FF79E3AB8FF]
+	(No symbol) [0x00007FF79E3A6AE4]
+	(No symbol) [0x00007FF79E3A6C3C]
+	(No symbol) [0x00007FF79E3968F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtroDtlleEntVta.py", line 221, in test_detail_deriverySales
+    find_and_click_element_with_style(self.driver, go_out_pag )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 177, in find_and_click_element_with_style
+    element_to_click.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (1337, -813)
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF79E42AD22+56930]
+	(No symbol) [0x00007FF79E39F622]
+	(No symbol) [0x00007FF79E2542E5]
+	(No symbol) [0x00007FF79E2A0A80]
+	(No symbol) [0x00007FF79E29E8AB]
+	(No symbol) [0x00007FF79E29C0B4]
+	(No symbol) [0x00007FF79E29AE45]
+	(No symbol) [0x00007FF79E28F798]
+	(No symbol) [0x00007FF79E2BBC9A]
+	(No symbol) [0x00007FF79E28F09A]
+	(No symbol) [0x00007FF79E2BBEB0]
+	(No symbol) [0x00007FF79E2D81E2]
+	(No symbol) [0x00007FF79E2BBA43]
+	(No symbol) [0x00007FF79E28D438]
+	(No symbol) [0x00007FF79E28E4D1]
+	GetHandleVerifier [0x00007FF79E7A6AAD+3709933]
+	GetHandleVerifier [0x00007FF79E7FFFED+4075821]
+	GetHandleVerifier [0x00007FF79E7F817F+4043455]
+	GetHandleVerifier [0x00007FF79E4C9756+706710]
+	(No symbol) [0x00007FF79E3AB8FF]
+	(No symbol) [0x00007FF79E3A6AE4]
+	(No symbol) [0x00007FF79E3A6C3C]
+	(No symbol) [0x00007FF79E3968F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Estado De Mis Contratos
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+La cadena de texto es visible para el usuario: '500,00 Tn'
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Entregas
+El texto es visible para el usuario
+El texto fue validado correctamente: Producto
+El texto es visible para el usuario
+El texto fue validado correctamente: Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 14/03/2022
+La cadena de texto es visible para el usuario: 'Tn Brutos'
+El valor es un carácter numérico. Valor: 30,04
+El texto es visible para el usuario
+El texto fue validado correctamente: Humedad
+El valor es un carácter numérico. Valor: 16,70%
+El texto es visible para el usuario
+El texto fue validado correctamente: Zaranda
+El valor es un carácter numérico. Valor: 0,00%
+El texto es visible para el usuario
+El texto fue validado correctamente: Volátil
+El valor es un carácter numérico. Valor: 0,30%
+El texto es visible para el usuario
+El texto fue validado correctamente: Factor/Grado
+El valor es un carácter numérico. Valor: 100/2
+La cadena de texto es visible para el usuario: 'Tn Netos'
+El valor es un carácter numérico. Valor: 19,07
+El texto es visible para el usuario
+El texto fue validado correctamente: CTG/CRT
+El valor es un carácter numérico. Valor: 0010010102265019
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[1]/app-deliveries-applied/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[1]/th/input' seleccionado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es visible o clickeable.
+¡Elemento encontrado y clickeado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es visible o clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

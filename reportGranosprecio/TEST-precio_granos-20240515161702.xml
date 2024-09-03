@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240515161702" tests="1" file=".py" time="91.365" timestamp="2024-05-15T16:18:33" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="91.365" timestamp="2024-05-15T16:18:33" file="Precio_Disponible.py" line="23">
+		<error type="TypeError" message="seleccionar_ultimo_icono() takes 2 positional arguments but 4 were given"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Disponible.py", line 138, in test_granos_contratos
+    seleccionar_ultimo_icono(self.driver, number_generate, verify_number,select_icon_hand)
+TypeError: seleccionar_ultimo_icono() takes 2 positional arguments but 4 were given
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

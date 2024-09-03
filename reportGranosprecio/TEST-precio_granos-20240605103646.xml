@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240605103646" tests="1" file=".py" time="137.401" timestamp="2024-06-05T10:39:04" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="137.401" timestamp="2024-06-05T10:39:04" file="Precio_Disponible.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;span _ngcontent-avb-c117=&quot;&quot; class=&quot;fw-bold f-size-12 col-12 col-sm-8 text-muted text-primary cursor-pointer&quot;&gt;...&lt;/span&gt; is not clickable at point (370, 8). Other element would receive the click: &lt;form _ngcontent-avb-c121=&quot;&quot; novalidate=&quot;&quot; class=&quot;app-search d-none d-md-block ng-untouched ng-pristine ng-valid&quot;&gt;...&lt;/form&gt;
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61AFC1F52+60322]
+	(No symbol) [0x00007FF61AF3CEC9]
+	(No symbol) [0x00007FF61ADF7EBA]
+	(No symbol) [0x00007FF61AE4F32E]
+	(No symbol) [0x00007FF61AE4CCF2]
+	(No symbol) [0x00007FF61AE4A18B]
+	(No symbol) [0x00007FF61AE49356]
+	(No symbol) [0x00007FF61AE3B491]
+	(No symbol) [0x00007FF61AE6C21A]
+	(No symbol) [0x00007FF61AE3ADB6]
+	(No symbol) [0x00007FF61AE6C430]
+	(No symbol) [0x00007FF61AE8BC80]
+	(No symbol) [0x00007FF61AE6BFC3]
+	(No symbol) [0x00007FF61AE39617]
+	(No symbol) [0x00007FF61AE3A211]
+	GetHandleVerifier [0x00007FF61B2D94AD+3301629]
+	GetHandleVerifier [0x00007FF61B3236D3+3605283]
+	GetHandleVerifier [0x00007FF61B319450+3563680]
+	GetHandleVerifier [0x00007FF61B074326+790390]
+	(No symbol) [0x00007FF61AF4750F]
+	(No symbol) [0x00007FF61AF43404]
+	(No symbol) [0x00007FF61AF43592]
+	(No symbol) [0x00007FF61AF32F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Precio_Disponible.py", line 129, in test_granos_contratos
+    find_elements(self.driver, select_menu)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-avb-c117="" class="fw-bold f-size-12 col-12 col-sm-8 text-muted text-primary cursor-pointer">...</span> is not clickable at point (370, 8). Other element would receive the click: <form _ngcontent-avb-c121="" novalidate="" class="app-search d-none d-md-block ng-untouched ng-pristine ng-valid">...</form>
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF61AFC1F52+60322]
+	(No symbol) [0x00007FF61AF3CEC9]
+	(No symbol) [0x00007FF61ADF7EBA]
+	(No symbol) [0x00007FF61AE4F32E]
+	(No symbol) [0x00007FF61AE4CCF2]
+	(No symbol) [0x00007FF61AE4A18B]
+	(No symbol) [0x00007FF61AE49356]
+	(No symbol) [0x00007FF61AE3B491]
+	(No symbol) [0x00007FF61AE6C21A]
+	(No symbol) [0x00007FF61AE3ADB6]
+	(No symbol) [0x00007FF61AE6C430]
+	(No symbol) [0x00007FF61AE8BC80]
+	(No symbol) [0x00007FF61AE6BFC3]
+	(No symbol) [0x00007FF61AE39617]
+	(No symbol) [0x00007FF61AE3A211]
+	GetHandleVerifier [0x00007FF61B2D94AD+3301629]
+	GetHandleVerifier [0x00007FF61B3236D3+3605283]
+	GetHandleVerifier [0x00007FF61B319450+3563680]
+	GetHandleVerifier [0x00007FF61B074326+790390]
+	(No symbol) [0x00007FF61AF4750F]
+	(No symbol) [0x00007FF61AF43404]
+	(No symbol) [0x00007FF61AF43592]
+	(No symbol) [0x00007FF61AF32F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

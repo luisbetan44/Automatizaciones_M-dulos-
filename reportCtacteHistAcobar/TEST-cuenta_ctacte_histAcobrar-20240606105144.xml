@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histAcobrar-20240606105144" tests="1" file=".py" time="178.842" timestamp="2024-06-06T10:54:42" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="178.842" timestamp="2024-06-06T10:54:42" file="Ctacte_histoAcobrar.py" line="17">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (770, -11)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF709521F52+60322]
+	(No symbol) [0x00007FF70949CEC9]
+	(No symbol) [0x00007FF709357EBA]
+	(No symbol) [0x00007FF7093AF32E]
+	(No symbol) [0x00007FF7093ACCF2]
+	(No symbol) [0x00007FF7093AA18B]
+	(No symbol) [0x00007FF7093A9356]
+	(No symbol) [0x00007FF70939B491]
+	(No symbol) [0x00007FF7093CC21A]
+	(No symbol) [0x00007FF70939ADB6]
+	(No symbol) [0x00007FF7093CC430]
+	(No symbol) [0x00007FF7093EBC80]
+	(No symbol) [0x00007FF7093CBFC3]
+	(No symbol) [0x00007FF709399617]
+	(No symbol) [0x00007FF70939A211]
+	GetHandleVerifier [0x00007FF7098394AD+3301629]
+	GetHandleVerifier [0x00007FF7098836D3+3605283]
+	GetHandleVerifier [0x00007FF709879450+3563680]
+	GetHandleVerifier [0x00007FF7095D4326+790390]
+	(No symbol) [0x00007FF7094A750F]
+	(No symbol) [0x00007FF7094A3404]
+	(No symbol) [0x00007FF7094A3592]
+	(No symbol) [0x00007FF709492F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Ctacte_histoAcobrar.py", line 182, in test_ctacte_historica
+    find_elements(self.driver, go_out_list)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (770, -11)
+  (Session info: chrome=125.0.6422.142)
+Stacktrace:
+	GetHandleVerifier [0x00007FF709521F52+60322]
+	(No symbol) [0x00007FF70949CEC9]
+	(No symbol) [0x00007FF709357EBA]
+	(No symbol) [0x00007FF7093AF32E]
+	(No symbol) [0x00007FF7093ACCF2]
+	(No symbol) [0x00007FF7093AA18B]
+	(No symbol) [0x00007FF7093A9356]
+	(No symbol) [0x00007FF70939B491]
+	(No symbol) [0x00007FF7093CC21A]
+	(No symbol) [0x00007FF70939ADB6]
+	(No symbol) [0x00007FF7093CC430]
+	(No symbol) [0x00007FF7093EBC80]
+	(No symbol) [0x00007FF7093CBFC3]
+	(No symbol) [0x00007FF709399617]
+	(No symbol) [0x00007FF70939A211]
+	GetHandleVerifier [0x00007FF7098394AD+3301629]
+	GetHandleVerifier [0x00007FF7098836D3+3605283]
+	GetHandleVerifier [0x00007FF709879450+3563680]
+	GetHandleVerifier [0x00007FF7095D4326+790390]
+	(No symbol) [0x00007FF7094A750F]
+	(No symbol) [0x00007FF7094A3404]
+	(No symbol) [0x00007FF7094A3592]
+	(No symbol) [0x00007FF709492F9F]
+	BaseThreadInitThunk [0x00007FFBED37257D+29]
+	RtlUserThreadStart [0x00007FFBEECEAA48+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 5 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un carácter numérico. Valor: 1.516.284.997,06
+El valor es un carácter numérico. Valor: 4.837.351,06
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento LC 3302 11350773
+El texto encontrado es  + ARS 19.640,53
+El texto encontrado es  Liq.1116C SOJA 2223 100 Kgs. 100,00%
+]]></system-out>
+	</testcase>
+</testsuite>

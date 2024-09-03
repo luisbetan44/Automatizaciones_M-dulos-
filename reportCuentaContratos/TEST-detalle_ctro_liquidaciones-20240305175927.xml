@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_liquidaciones-20240305175927" tests="1" file=".py" time="57.651" timestamp="2024-03-05T18:00:24" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_liquidaciones" name="test_detail_liquidations" time="57.651" timestamp="2024-03-05T18:00:24" file="CatCtroDtlleFijaciones.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (470, 1130)
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6810AAD22+56930]
+	(No symbol) [0x00007FF68101F622]
+	(No symbol) [0x00007FF680ED42E5]
+	(No symbol) [0x00007FF680F20A80]
+	(No symbol) [0x00007FF680F1E8AB]
+	(No symbol) [0x00007FF680F1C0B4]
+	(No symbol) [0x00007FF680F1AE45]
+	(No symbol) [0x00007FF680F0F798]
+	(No symbol) [0x00007FF680F3BC9A]
+	(No symbol) [0x00007FF680F0F09A]
+	(No symbol) [0x00007FF680F3BEB0]
+	(No symbol) [0x00007FF680F581E2]
+	(No symbol) [0x00007FF680F3BA43]
+	(No symbol) [0x00007FF680F0D438]
+	(No symbol) [0x00007FF680F0E4D1]
+	GetHandleVerifier [0x00007FF681426AAD+3709933]
+	GetHandleVerifier [0x00007FF68147FFED+4075821]
+	GetHandleVerifier [0x00007FF68147817F+4043455]
+	GetHandleVerifier [0x00007FF681149756+706710]
+	(No symbol) [0x00007FF68102B8FF]
+	(No symbol) [0x00007FF681026AE4]
+	(No symbol) [0x00007FF681026C3C]
+	(No symbol) [0x00007FF6810168F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CatCtroDtlleFijaciones.py", line 123, in test_detail_liquidations
+    find_elements(self.driver, select_liquidations )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 21, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (470, 1130)
+  (Session info: chrome=122.0.6261.95)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6810AAD22+56930]
+	(No symbol) [0x00007FF68101F622]
+	(No symbol) [0x00007FF680ED42E5]
+	(No symbol) [0x00007FF680F20A80]
+	(No symbol) [0x00007FF680F1E8AB]
+	(No symbol) [0x00007FF680F1C0B4]
+	(No symbol) [0x00007FF680F1AE45]
+	(No symbol) [0x00007FF680F0F798]
+	(No symbol) [0x00007FF680F3BC9A]
+	(No symbol) [0x00007FF680F0F09A]
+	(No symbol) [0x00007FF680F3BEB0]
+	(No symbol) [0x00007FF680F581E2]
+	(No symbol) [0x00007FF680F3BA43]
+	(No symbol) [0x00007FF680F0D438]
+	(No symbol) [0x00007FF680F0E4D1]
+	GetHandleVerifier [0x00007FF681426AAD+3709933]
+	GetHandleVerifier [0x00007FF68147FFED+4075821]
+	GetHandleVerifier [0x00007FF68147817F+4043455]
+	GetHandleVerifier [0x00007FF681149756+706710]
+	(No symbol) [0x00007FF68102B8FF]
+	(No symbol) [0x00007FF681026AE4]
+	(No symbol) [0x00007FF681026C3C]
+	(No symbol) [0x00007FF6810168F4]
+	BaseThreadInitThunk [0x00007FFB7892257D+29]
+	RtlUserThreadStart [0x00007FFB7A18AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  Estado De Mis Contratos
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto no coincide con los valores esperados. Texto actual: '500.000,00 Kg'
+]]></system-out>
+	</testcase>
+</testsuite>

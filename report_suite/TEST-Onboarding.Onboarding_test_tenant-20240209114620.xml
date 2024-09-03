@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding.Onboarding_test_tenant-20240209114620" tests="1" file="Onboarding.py" time="117.240" timestamp="2024-02-09T12:13:41" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding.Onboarding_test_tenant" name="test_tenat_onboarding" time="117.240" timestamp="2024-02-09T12:13:41" file="Onboarding.py" line="28">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;div class=&quot;step-indicator&quot;&gt;...&lt;/div&gt; is not clickable at point (997, 153). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-backdrop-hide&quot; style=&quot;overflow-y: hidden;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EB2C5E42+3538674]
+	(No symbol) [0x00007FF6EAEE4C02]
+	(No symbol) [0x00007FF6EAD95AEB]
+	(No symbol) [0x00007FF6EADE33E4]
+	(No symbol) [0x00007FF6EADE1122]
+	(No symbol) [0x00007FF6EADDE884]
+	(No symbol) [0x00007FF6EADDD5A9]
+	(No symbol) [0x00007FF6EADD1950]
+	(No symbol) [0x00007FF6EADFF0AA]
+	(No symbol) [0x00007FF6EADD124A]
+	(No symbol) [0x00007FF6EADFF2C0]
+	(No symbol) [0x00007FF6EAE1BDE3]
+	(No symbol) [0x00007FF6EADFEE53]
+	(No symbol) [0x00007FF6EADCF514]
+	(No symbol) [0x00007FF6EADD0631]
+	GetHandleVerifier [0x00007FF6EB2F6CAD+3738973]
+	GetHandleVerifier [0x00007FF6EB34C506+4089270]
+	GetHandleVerifier [0x00007FF6EB344823+4057299]
+	GetHandleVerifier [0x00007FF6EB015C49+720121]
+	(No symbol) [0x00007FF6EAEF126F]
+	(No symbol) [0x00007FF6EAEEC304]
+	(No symbol) [0x00007FF6EAEEC432]
+	(No symbol) [0x00007FF6EAEDBD04]
+	BaseThreadInitThunk [0x00007FF95784257D+29]
+	RtlUserThreadStart [0x00007FF95830AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Onboarding.py", line 157, in test_tenat_onboarding
+    find_elements(self.driver, continue_pass3)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 18, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div class="step-indicator">...</div> is not clickable at point (997, 153). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-hide" style="overflow-y: hidden;">...</div>
+  (Session info: chrome=121.0.6167.161)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6EB2C5E42+3538674]
+	(No symbol) [0x00007FF6EAEE4C02]
+	(No symbol) [0x00007FF6EAD95AEB]
+	(No symbol) [0x00007FF6EADE33E4]
+	(No symbol) [0x00007FF6EADE1122]
+	(No symbol) [0x00007FF6EADDE884]
+	(No symbol) [0x00007FF6EADDD5A9]
+	(No symbol) [0x00007FF6EADD1950]
+	(No symbol) [0x00007FF6EADFF0AA]
+	(No symbol) [0x00007FF6EADD124A]
+	(No symbol) [0x00007FF6EADFF2C0]
+	(No symbol) [0x00007FF6EAE1BDE3]
+	(No symbol) [0x00007FF6EADFEE53]
+	(No symbol) [0x00007FF6EADCF514]
+	(No symbol) [0x00007FF6EADD0631]
+	GetHandleVerifier [0x00007FF6EB2F6CAD+3738973]
+	GetHandleVerifier [0x00007FF6EB34C506+4089270]
+	GetHandleVerifier [0x00007FF6EB344823+4057299]
+	GetHandleVerifier [0x00007FF6EB015C49+720121]
+	(No symbol) [0x00007FF6EAEF126F]
+	(No symbol) [0x00007FF6EAEEC304]
+	(No symbol) [0x00007FF6EAEEC432]
+	(No symbol) [0x00007FF6EAEDBD04]
+	BaseThreadInitThunk [0x00007FF95784257D+29]
+	RtlUserThreadStart [0x00007FF95830AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: DOCUMENTACIÓN
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Para poder continuar al siguiente paso, será obligatorio completar los campos que se muestran a continuación.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+CUIT válido insertado: 21-17437871-9
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.xls' cargado con éxito después de hacer clic en el chevron!
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/app-checks/div/input' seleccionado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

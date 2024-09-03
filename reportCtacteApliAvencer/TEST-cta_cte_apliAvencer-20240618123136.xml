@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliAvencer-20240618123136" tests="1" file=".py" time="118.143" timestamp="2024-06-18T12:33:34" failures="0" errors="0" skipped="0">
+	<testcase classname="cta_cte_apliAvencer" name="test_ctacte_apliAvencer" time="118.143" timestamp="2024-06-18T12:33:34" file="ctacte_ApliAvencer.py" line="17">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -29.219.949,78
+El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: -371.873,06
+El texto encontrado es  CUENTA CORRIENTE
+El texto encontrado es  Movimiento NC 1051 00007141
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El texto por texto no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

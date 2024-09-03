@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20240405165844" tests="1" file=".py" time="64.221" timestamp="2024-04-05T16:59:48" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="64.221" timestamp="2024-04-05T16:59:48" file="Onboarding.py" line="28">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (573, 702)
+  (Session info: chrome=123.0.6312.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640717072+63090]
+	(No symbol) [0x00007FF640682CC2]
+	(No symbol) [0x00007FF64051EC65]
+	(No symbol) [0x00007FF64056BB34]
+	(No symbol) [0x00007FF640569954]
+	(No symbol) [0x00007FF640567164]
+	(No symbol) [0x00007FF640565EF9]
+	(No symbol) [0x00007FF64055A708]
+	(No symbol) [0x00007FF640586FDA]
+	(No symbol) [0x00007FF64055A00A]
+	(No symbol) [0x00007FF6405871F0]
+	(No symbol) [0x00007FF6405A3412]
+	(No symbol) [0x00007FF640586D83]
+	(No symbol) [0x00007FF6405583A8]
+	(No symbol) [0x00007FF640559441]
+	GetHandleVerifier [0x00007FF640B125CD+4238285]
+	GetHandleVerifier [0x00007FF640B4F72D+4488493]
+	GetHandleVerifier [0x00007FF640B47A0F+4456463]
+	GetHandleVerifier [0x00007FF6407F05B6+953270]
+	(No symbol) [0x00007FF64068E58F]
+	(No symbol) [0x00007FF640689264]
+	(No symbol) [0x00007FF64068939B]
+	(No symbol) [0x00007FF640679BD4]
+	BaseThreadInitThunk [0x00007FF89FEF257D+29]
+	RtlUserThreadStart [0x00007FF8A17AAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Onboarding.py", line 105, in test_tenat_onboarding
+    find_elements(self.driver, continue_button)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 21, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (573, 702)
+  (Session info: chrome=123.0.6312.105)
+Stacktrace:
+	GetHandleVerifier [0x00007FF640717072+63090]
+	(No symbol) [0x00007FF640682CC2]
+	(No symbol) [0x00007FF64051EC65]
+	(No symbol) [0x00007FF64056BB34]
+	(No symbol) [0x00007FF640569954]
+	(No symbol) [0x00007FF640567164]
+	(No symbol) [0x00007FF640565EF9]
+	(No symbol) [0x00007FF64055A708]
+	(No symbol) [0x00007FF640586FDA]
+	(No symbol) [0x00007FF64055A00A]
+	(No symbol) [0x00007FF6405871F0]
+	(No symbol) [0x00007FF6405A3412]
+	(No symbol) [0x00007FF640586D83]
+	(No symbol) [0x00007FF6405583A8]
+	(No symbol) [0x00007FF640559441]
+	GetHandleVerifier [0x00007FF640B125CD+4238285]
+	GetHandleVerifier [0x00007FF640B4F72D+4488493]
+	GetHandleVerifier [0x00007FF640B47A0F+4456463]
+	GetHandleVerifier [0x00007FF6407F05B6+953270]
+	(No symbol) [0x00007FF64068E58F]
+	(No symbol) [0x00007FF640689264]
+	(No symbol) [0x00007FF64068939B]
+	(No symbol) [0x00007FF640679BD4]
+	BaseThreadInitThunk [0x00007FF89FEF257D+29]
+	RtlUserThreadStart [0x00007FF8A17AAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: DOCUMENTACIÓN
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto es visible para el usuario
+El texto fue validado correctamente: Para poder continuar al siguiente paso, será obligatorio completar los campos que se muestran a continuación.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+CUIT válido insertado: 14-34878545-2
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.xls' cargado con éxito después de hacer clic en el chevron!
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/app-checks/div/input' seleccionado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

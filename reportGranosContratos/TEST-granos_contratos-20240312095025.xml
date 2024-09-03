@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240312095025" tests="1" file=".py" time="26.996" timestamp="2024-03-12T09:50:52" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="26.996" timestamp="2024-03-12T09:50:52" file="GranosContratos.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (649, 718)
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF604E5AD32+56930]
+	(No symbol) [0x00007FF604DCF632]
+	(No symbol) [0x00007FF604C842E5]
+	(No symbol) [0x00007FF604CD0A80]
+	(No symbol) [0x00007FF604CCE8AB]
+	(No symbol) [0x00007FF604CCC0B4]
+	(No symbol) [0x00007FF604CCAE45]
+	(No symbol) [0x00007FF604CBF798]
+	(No symbol) [0x00007FF604CEBC9A]
+	(No symbol) [0x00007FF604CBF09A]
+	(No symbol) [0x00007FF604CEBEB0]
+	(No symbol) [0x00007FF604D081E2]
+	(No symbol) [0x00007FF604CEBA43]
+	(No symbol) [0x00007FF604CBD438]
+	(No symbol) [0x00007FF604CBE4D1]
+	GetHandleVerifier [0x00007FF6051D6ABD+3709933]
+	GetHandleVerifier [0x00007FF60522FFFD+4075821]
+	GetHandleVerifier [0x00007FF60522818F+4043455]
+	GetHandleVerifier [0x00007FF604EF9766+706710]
+	(No symbol) [0x00007FF604DDB90F]
+	(No symbol) [0x00007FF604DD6AF4]
+	(No symbol) [0x00007FF604DD6C4C]
+	(No symbol) [0x00007FF604DC6904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 115, in test_granos_contratos
+    find_elements(self.driver,select_date)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 21, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (649, 718)
+  (Session info: chrome=122.0.6261.112)
+Stacktrace:
+	GetHandleVerifier [0x00007FF604E5AD32+56930]
+	(No symbol) [0x00007FF604DCF632]
+	(No symbol) [0x00007FF604C842E5]
+	(No symbol) [0x00007FF604CD0A80]
+	(No symbol) [0x00007FF604CCE8AB]
+	(No symbol) [0x00007FF604CCC0B4]
+	(No symbol) [0x00007FF604CCAE45]
+	(No symbol) [0x00007FF604CBF798]
+	(No symbol) [0x00007FF604CEBC9A]
+	(No symbol) [0x00007FF604CBF09A]
+	(No symbol) [0x00007FF604CEBEB0]
+	(No symbol) [0x00007FF604D081E2]
+	(No symbol) [0x00007FF604CEBA43]
+	(No symbol) [0x00007FF604CBD438]
+	(No symbol) [0x00007FF604CBE4D1]
+	GetHandleVerifier [0x00007FF6051D6ABD+3709933]
+	GetHandleVerifier [0x00007FF60522FFFD+4075821]
+	GetHandleVerifier [0x00007FF60522818F+4043455]
+	GetHandleVerifier [0x00007FF604EF9766+706710]
+	(No symbol) [0x00007FF604DDB90F]
+	(No symbol) [0x00007FF604DD6AF4]
+	(No symbol) [0x00007FF604DD6C4C]
+	(No symbol) [0x00007FF604DC6904]
+	BaseThreadInitThunk [0x00007FFCB5B4257D+29]
+	RtlUserThreadStart [0x00007FFCB61EAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada en el dropdown con exito  
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Elemento encontrado y clickeado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+¡Input encontrado y enviado con éxito!
+La opcion fue seleccionada en el dropdown con exito  
+El clic en el chevron fue interceptado por otro elemento en la página.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -9,10 +9,9 @@ class comprobanteEntregas(unittest.TestCase):
     def setUp(self):
         self.start_session = StartSession()
         self.driver = self.start_session.driver
-
         # Inicializar la clase LoginHelper
         self.login_helper = LoginHelper(self.driver)
-
+   
     def test_vouchers_delivery(self):
         # Utilizar métodos de LoginHelper para el inicio de sesión
         self.login_helper.login("admingd@silohub.ag", "G@viglio123")
@@ -36,7 +35,7 @@ class comprobanteEntregas(unittest.TestCase):
         validate_text(self.driver, title_vouchers, title_vouchers_expected)
         time.sleep(2)
 
-       ## seleccionar filtro de entregas
+       ## seleccionar filtro de entregas con rango de fecha 29/12/2023 al 26/01/2024
 
         select_filter_button1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-receipts/app-header-for-responsive-table/div/div/div[2]/div/div/app-filter-button/button/div/span"
         find_elements(self.driver, select_filter_button1)
@@ -53,7 +52,7 @@ class comprobanteEntregas(unittest.TestCase):
         time.sleep(2)
 
         select_arrow_filter1 = "/html/body/div/div[1]/span[1]"
-        amount_click1 = 1
+        amount_click1 = 8
         find_and_click_element(self.driver, select_arrow_filter1, amount_click1)
         time.sleep(2)
 

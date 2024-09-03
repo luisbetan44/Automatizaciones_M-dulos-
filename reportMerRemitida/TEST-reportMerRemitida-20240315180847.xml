@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportMerRemitida-20240315180847" tests="1" file=".py" time="67.410" timestamp="2024-03-15T18:09:54" failures="0" errors="1" skipped="0">
+	<testcase classname="reportMerRemitida" name="test_Report_MerFacturada" time="67.410" timestamp="2024-03-15T18:09:54" file="ReportMerRemitida.py" line="18">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]&quot;}
+  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA6DAD02+56930]
+	(No symbol) [0x00007FF6DA64F602]
+	(No symbol) [0x00007FF6DA5042E5]
+	(No symbol) [0x00007FF6DA5498ED]
+	(No symbol) [0x00007FF6DA549A2C]
+	(No symbol) [0x00007FF6DA58A967]
+	(No symbol) [0x00007FF6DA56BCDF]
+	(No symbol) [0x00007FF6DA5881E2]
+	(No symbol) [0x00007FF6DA56BA43]
+	(No symbol) [0x00007FF6DA53D438]
+	(No symbol) [0x00007FF6DA53E4D1]
+	GetHandleVerifier [0x00007FF6DAA56F8D+3711213]
+	GetHandleVerifier [0x00007FF6DAAB04CD+4077101]
+	GetHandleVerifier [0x00007FF6DAAA865F+4044735]
+	GetHandleVerifier [0x00007FF6DA779736+706710]
+	(No symbol) [0x00007FF6DA65B8DF]
+	(No symbol) [0x00007FF6DA656AC4]
+	(No symbol) [0x00007FF6DA656C1C]
+	(No symbol) [0x00007FF6DA6468D4]
+	BaseThreadInitThunk [0x00007FFBE3FB257D+29]
+	RtlUserThreadStart [0x00007FFBE4EAAA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportMerRemitida.py", line 79, in test_Report_MerFacturada
+    validate_character_numeric_element(self.driver,total_outputs)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1037, in validate_character_numeric_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"}
+  (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6DA6DAD02+56930]
+	(No symbol) [0x00007FF6DA64F602]
+	(No symbol) [0x00007FF6DA5042E5]
+	(No symbol) [0x00007FF6DA5498ED]
+	(No symbol) [0x00007FF6DA549A2C]
+	(No symbol) [0x00007FF6DA58A967]
+	(No symbol) [0x00007FF6DA56BCDF]
+	(No symbol) [0x00007FF6DA5881E2]
+	(No symbol) [0x00007FF6DA56BA43]
+	(No symbol) [0x00007FF6DA53D438]
+	(No symbol) [0x00007FF6DA53E4D1]
+	GetHandleVerifier [0x00007FF6DAA56F8D+3711213]
+	GetHandleVerifier [0x00007FF6DAAB04CD+4077101]
+	GetHandleVerifier [0x00007FF6DAAA865F+4044735]
+	GetHandleVerifier [0x00007FF6DA779736+706710]
+	(No symbol) [0x00007FF6DA65B8DF]
+	(No symbol) [0x00007FF6DA656AC4]
+	(No symbol) [0x00007FF6DA656C1C]
+	(No symbol) [0x00007FF6DA6468D4]
+	BaseThreadInitThunk [0x00007FFBE3FB257D+29]
+	RtlUserThreadStart [0x00007FFBE4EAAA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="granos_contratos-20240308140836" tests="1" file=".py" time="50.172" timestamp="2024-03-08T14:09:27" failures="0" errors="1" skipped="0">
+	<testcase classname="granos_contratos" name="test_granos_contratos" time="50.172" timestamp="2024-03-08T14:09:27" file="GranosContratos.py" line="22">
+		<error type="InvalidSelectorException" message="Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=122.0.6261.112); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF74B61AD32+56930]
+	(No symbol) [0x00007FF74B58F632]
+	(No symbol) [0x00007FF74B4442E5]
+	(No symbol) [0x00007FF74B449261]
+	(No symbol) [0x00007FF74B44B6EB]
+	(No symbol) [0x00007FF74B44B7B0]
+	(No symbol) [0x00007FF74B48955C]
+	(No symbol) [0x00007FF74B489A2C]
+	(No symbol) [0x00007FF74B4CA967]
+	(No symbol) [0x00007FF74B4ABCDF]
+	(No symbol) [0x00007FF74B4C81E2]
+	(No symbol) [0x00007FF74B4ABA43]
+	(No symbol) [0x00007FF74B47D438]
+	(No symbol) [0x00007FF74B47E4D1]
+	GetHandleVerifier [0x00007FF74B996ABD+3709933]
+	GetHandleVerifier [0x00007FF74B9EFFFD+4075821]
+	GetHandleVerifier [0x00007FF74B9E818F+4043455]
+	GetHandleVerifier [0x00007FF74B6B9766+706710]
+	(No symbol) [0x00007FF74B59B90F]
+	(No symbol) [0x00007FF74B596AF4]
+	(No symbol) [0x00007FF74B596C4C]
+	(No symbol) [0x00007FF74B586904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\GranosContratos.py", line 61, in test_granos_contratos
+    select_option_dropdown_css_selector(self.driver, input_account, send_account, select_account)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 859, in select_option_dropdown_css_selector
+    search_result_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 742, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector: An invalid or illegal selector was specified
+  (Session info: chrome=122.0.6261.112); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF74B61AD32+56930]
+	(No symbol) [0x00007FF74B58F632]
+	(No symbol) [0x00007FF74B4442E5]
+	(No symbol) [0x00007FF74B449261]
+	(No symbol) [0x00007FF74B44B6EB]
+	(No symbol) [0x00007FF74B44B7B0]
+	(No symbol) [0x00007FF74B48955C]
+	(No symbol) [0x00007FF74B489A2C]
+	(No symbol) [0x00007FF74B4CA967]
+	(No symbol) [0x00007FF74B4ABCDF]
+	(No symbol) [0x00007FF74B4C81E2]
+	(No symbol) [0x00007FF74B4ABA43]
+	(No symbol) [0x00007FF74B47D438]
+	(No symbol) [0x00007FF74B47E4D1]
+	GetHandleVerifier [0x00007FF74B996ABD+3709933]
+	GetHandleVerifier [0x00007FF74B9EFFFD+4075821]
+	GetHandleVerifier [0x00007FF74B9E818F+4043455]
+	GetHandleVerifier [0x00007FF74B6B9766+706710]
+	(No symbol) [0x00007FF74B59B90F]
+	(No symbol) [0x00007FF74B596AF4]
+	(No symbol) [0x00007FF74B596C4C]
+	(No symbol) [0x00007FF74B586904]
+	BaseThreadInitThunk [0x00007FFAF18A257D+29]
+	RtlUserThreadStart [0x00007FFAF310AA58+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado con éxito!
+¡Elemento encontrado y clickeado con éxito!
+El texto encontrado es  CONTRATOS
+La opcion fue seleccionada con éxito después de hacer clic en el chevron!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Elemento encontrado y clickeado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

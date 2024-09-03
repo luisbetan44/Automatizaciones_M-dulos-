@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeTenant-20240514130948" tests="1" file=".py" time="530.488" timestamp="2024-05-14T13:18:38" failures="0" errors="1" skipped="0">
+	<testcase classname="HomeTenant" name="test_start_tenant" time="530.488" timestamp="2024-05-14T13:18:38" file="Home.py" line="19">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6996D1522+60802]
+	(No symbol) [0x00007FF69964AC22]
+	(No symbol) [0x00007FF699507CE4]
+	(No symbol) [0x00007FF6994F0FE1]
+	(No symbol) [0x00007FF6994F0D42]
+	(No symbol) [0x00007FF6994EEBE4]
+	(No symbol) [0x00007FF6994EF3FF]
+	(No symbol) [0x00007FF69950B7B9]
+	(No symbol) [0x00007FF69950C897]
+	(No symbol) [0x00007FF6995101DB]
+	(No symbol) [0x00007FF699510280]
+	(No symbol) [0x00007FF699550E0B]
+	(No symbol) [0x00007FF69957AB7A]
+	(No symbol) [0x00007FF69954A7C6]
+	(No symbol) [0x00007FF69957AD90]
+	(No symbol) [0x00007FF69959A224]
+	(No symbol) [0x00007FF69957A923]
+	(No symbol) [0x00007FF699548FEC]
+	(No symbol) [0x00007FF699549C21]
+	GetHandleVerifier [0x00007FF6999D41BD+3217949]
+	GetHandleVerifier [0x00007FF699A16157+3488183]
+	GetHandleVerifier [0x00007FF699A0F0DF+3459391]
+	GetHandleVerifier [0x00007FF69978B8E6+823622]
+	(No symbol) [0x00007FF699655FBF]
+	(No symbol) [0x00007FF699650EE4]
+	(No symbol) [0x00007FF699651072]
+	(No symbol) [0x00007FF6996418C4]
+	BaseThreadInitThunk [0x00007FFCF149257D+29]
+	RtlUserThreadStart [0x00007FFCF2C2AA48+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Home.py", line 158, in test_start_tenant
+    validate_character_numeric_element(self.driver, element6  )
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1086, in validate_character_numeric_element
+    valor = elemento.text
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 90, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=124.0.6367.202)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6996D1522+60802]
+	(No symbol) [0x00007FF69964AC22]
+	(No symbol) [0x00007FF699507CE4]
+	(No symbol) [0x00007FF6994F0FE1]
+	(No symbol) [0x00007FF6994F0D42]
+	(No symbol) [0x00007FF6994EEBE4]
+	(No symbol) [0x00007FF6994EF3FF]
+	(No symbol) [0x00007FF69950B7B9]
+	(No symbol) [0x00007FF69950C897]
+	(No symbol) [0x00007FF6995101DB]
+	(No symbol) [0x00007FF699510280]
+	(No symbol) [0x00007FF699550E0B]
+	(No symbol) [0x00007FF69957AB7A]
+	(No symbol) [0x00007FF69954A7C6]
+	(No symbol) [0x00007FF69957AD90]
+	(No symbol) [0x00007FF69959A224]
+	(No symbol) [0x00007FF69957A923]
+	(No symbol) [0x00007FF699548FEC]
+	(No symbol) [0x00007FF699549C21]
+	GetHandleVerifier [0x00007FF6999D41BD+3217949]
+	GetHandleVerifier [0x00007FF699A16157+3488183]
+	GetHandleVerifier [0x00007FF699A0F0DF+3459391]
+	GetHandleVerifier [0x00007FF69978B8E6+823622]
+	(No symbol) [0x00007FF699655FBF]
+	(No symbol) [0x00007FF699650EE4]
+	(No symbol) [0x00007FF699651072]
+	(No symbol) [0x00007FF6996418C4]
+	BaseThreadInitThunk [0x00007FFCF149257D+29]
+	RtlUserThreadStart [0x00007FFCF2C2AA48+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Buen día JUAN DEMO!
+El texto encontrado es  VENCIDO A HOY
+El texto encontrado es  ARS
+El valor es un carácter numérico. Valor: 1.642.624.183,60
+El texto encontrado es  VENCIDO A HOY
+El texto encontrado es  USD
+El valor es un carácter numérico. Valor: 1.774.425,48
+El texto encontrado es  A VENCER
+El texto encontrado es  ARS
+El valor es un carácter numérico. Valor: 00,00
+El texto encontrado es  A VENCER
+El texto encontrado es  USD
+El valor es un carácter numérico. Valor: 1.717.005,16
+El texto encontrado es  Resumen de Mis Negocios de Granos
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/maiz.svg
+La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/trigo.svg
+]]></system-out>
+	</testcase>
+</testsuite>

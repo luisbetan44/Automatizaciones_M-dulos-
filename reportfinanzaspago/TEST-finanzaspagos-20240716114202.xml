@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="finanzaspagos-20240716114202" tests="2" file=".py" time="152.388" timestamp="2024-07-16T11:44:34" failures="0" errors="2" skipped="0">
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="0.000" timestamp="0001-01-01T00:00:00" file="finanzasPagos.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\finanzasPagos.py", line 113, in test_finance_payment
+    find_elements(self.driver, select_menu_requests)
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 20, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="finanzaspagos" name="test_finance_payment" time="152.388" timestamp="2024-07-16T11:44:34" file="finanzasPagos.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A10CEEA2+31554]
+	(No symbol) [0x00007FF7A1047ED9]
+	(No symbol) [0x00007FF7A0F0872A]
+	(No symbol) [0x00007FF7A0EDD995]
+	(No symbol) [0x00007FF7A0F844D7]
+	(No symbol) [0x00007FF7A0F8B672]
+	(No symbol) [0x00007FF7A0F7CFF0]
+	(No symbol) [0x00007FF7A0F4A33B]
+	(No symbol) [0x00007FF7A0F4AED1]
+	GetHandleVerifier [0x00007FF7A13D8B1D+3217341]
+	GetHandleVerifier [0x00007FF7A1425AE3+3532675]
+	GetHandleVerifier [0x00007FF7A141B0E0+3489152]
+	GetHandleVerifier [0x00007FF7A117E776+750614]
+	(No symbol) [0x00007FF7A105375F]
+	(No symbol) [0x00007FF7A104EB14]
+	(No symbol) [0x00007FF7A104ECA2]
+	(No symbol) [0x00007FF7A103E16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\finanzasPagos.py", line 150, in tearDown
+    if __name__ == "__main__":
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 459, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 348, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=126.0.6478.127)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7A10CEEA2+31554]
+	(No symbol) [0x00007FF7A1047ED9]
+	(No symbol) [0x00007FF7A0F0872A]
+	(No symbol) [0x00007FF7A0EDD995]
+	(No symbol) [0x00007FF7A0F844D7]
+	(No symbol) [0x00007FF7A0F8B672]
+	(No symbol) [0x00007FF7A0F7CFF0]
+	(No symbol) [0x00007FF7A0F4A33B]
+	(No symbol) [0x00007FF7A0F4AED1]
+	GetHandleVerifier [0x00007FF7A13D8B1D+3217341]
+	GetHandleVerifier [0x00007FF7A1425AE3+3532675]
+	GetHandleVerifier [0x00007FF7A141B0E0+3489152]
+	GetHandleVerifier [0x00007FF7A117E776+750614]
+	(No symbol) [0x00007FF7A105375F]
+	(No symbol) [0x00007FF7A104EB14]
+	(No symbol) [0x00007FF7A104ECA2]
+	(No symbol) [0x00007FF7A103E16F]
+	BaseThreadInitThunk [0x00007FFBD5F8257D+29]
+	RtlUserThreadStart [0x00007FFBD704AF28+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El texto por xpaht no está presente.
+¡Input encontrado y enviado con éxito!
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>
