@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="contrato_tenant-20240917161058" tests="1" file=".py" time="48.570" timestamp="2024-09-17T16:11:47" failures="0" errors="1" skipped="0">
+	<testcase classname="contrato_tenant" name="test_contrato_tenant" time="48.570" timestamp="2024-09-17T16:11:47" file="Cuentacontrato.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;div _ngcontent-qah-c225=&quot;&quot; class=&quot;truncate-text&quot;&gt;...&lt;/div&gt; is not clickable at point (524, 457). Other element would receive the click: &lt;ngb-offcanvas-backdrop class=&quot;offcanvas-backdrop fade show&quot;&gt;&lt;/ngb-offcanvas-backdrop&gt;
+  (Session info: chrome=128.0.6613.138)
+Stacktrace:
+	GetHandleVerifier [0x00007FF759E89412+29090]
+	(No symbol) [0x00007FF759DFE239]
+	(No symbol) [0x00007FF759CBB1DA]
+	(No symbol) [0x00007FF759D16C1E]
+	(No symbol) [0x00007FF759D14692]
+	(No symbol) [0x00007FF759D11BAB]
+	(No symbol) [0x00007FF759D10DC5]
+	(No symbol) [0x00007FF759D02D81]
+	(No symbol) [0x00007FF759D366EA]
+	(No symbol) [0x00007FF759D026C6]
+	(No symbol) [0x00007FF759D36900]
+	(No symbol) [0x00007FF759D565A2]
+	(No symbol) [0x00007FF759D36493]
+	(No symbol) [0x00007FF759D009D1]
+	(No symbol) [0x00007FF759D01B31]
+	GetHandleVerifier [0x00007FF75A1A871D+3302573]
+	GetHandleVerifier [0x00007FF75A1F4243+3612627]
+	GetHandleVerifier [0x00007FF75A1EA417+3572135]
+	GetHandleVerifier [0x00007FF759F45EB6+801862]
+	(No symbol) [0x00007FF759E0945F]
+	(No symbol) [0x00007FF759E04FB4]
+	(No symbol) [0x00007FF759E05140]
+	(No symbol) [0x00007FF759DF461F]
+	BaseThreadInitThunk [0x00007FFBBDF4257D+29]
+	RtlUserThreadStart [0x00007FFBBFE2AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Cuentacontrato.py", line 89, in test_contrato_tenant
+    find_elements(self.driver, selet_list_contract )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <div _ngcontent-qah-c225="" class="truncate-text">...</div> is not clickable at point (524, 457). Other element would receive the click: <ngb-offcanvas-backdrop class="offcanvas-backdrop fade show"></ngb-offcanvas-backdrop>
+  (Session info: chrome=128.0.6613.138)
+Stacktrace:
+	GetHandleVerifier [0x00007FF759E89412+29090]
+	(No symbol) [0x00007FF759DFE239]
+	(No symbol) [0x00007FF759CBB1DA]
+	(No symbol) [0x00007FF759D16C1E]
+	(No symbol) [0x00007FF759D14692]
+	(No symbol) [0x00007FF759D11BAB]
+	(No symbol) [0x00007FF759D10DC5]
+	(No symbol) [0x00007FF759D02D81]
+	(No symbol) [0x00007FF759D366EA]
+	(No symbol) [0x00007FF759D026C6]
+	(No symbol) [0x00007FF759D36900]
+	(No symbol) [0x00007FF759D565A2]
+	(No symbol) [0x00007FF759D36493]
+	(No symbol) [0x00007FF759D009D1]
+	(No symbol) [0x00007FF759D01B31]
+	GetHandleVerifier [0x00007FF75A1A871D+3302573]
+	GetHandleVerifier [0x00007FF75A1F4243+3612627]
+	GetHandleVerifier [0x00007FF75A1EA417+3572135]
+	GetHandleVerifier [0x00007FF759F45EB6+801862]
+	(No symbol) [0x00007FF759E0945F]
+	(No symbol) [0x00007FF759E04FB4]
+	(No symbol) [0x00007FF759E05140]
+	(No symbol) [0x00007FF759DF461F]
+	BaseThreadInitThunk [0x00007FFBBDF4257D+29]
+	RtlUserThreadStart [0x00007FFBBFE2AF28+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+]]></system-out>
+	</testcase>
+</testsuite>

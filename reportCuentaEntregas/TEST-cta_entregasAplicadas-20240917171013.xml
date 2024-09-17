@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_entregasAplicadas-20240917171013" tests="1" file=".py" time="73.305" timestamp="2024-09-17T17:11:27" failures="1" errors="0" skipped="0">
+	<testcase classname="cta_entregasAplicadas" name="test_delivery_applied" time="73.305" timestamp="2024-09-17T17:11:27" file="EntregasAplicadas.py" line="22">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasAplicadas.py", line 155, in test_delivery_applied
+    validate_text_visible(self.driver, number_TK, number_TK_expected )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1186, in validate_text_visible
+    assert text_obtained == text_expected
+AssertionError
+]]></failure>
+		<system-out><![CDATA[El texto no fue encontrado MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+El texto no coincide con los valores esperados. Texto actual: '19.250.060,00'
+El texto no coincide con los valores esperados. Texto actual: '18.723.745,00'
+El texto es visible para el usuario
+]]></system-out>
+	</testcase>
+</testsuite>

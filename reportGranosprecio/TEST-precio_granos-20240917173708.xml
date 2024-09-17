@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240917173708" tests="1" file=".py" time="215.034" timestamp="2024-09-17T17:40:43" failures="0" errors="0" skipped="0">
+	<testcase classname="precio_granos" name="test_granos_contratos" time="215.034" timestamp="2024-09-17T17:40:43" file="Precio_Disponible.py" line="23">
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+No se encontraron más movimientos para borrar.
+Se hizo clic en un icono de borrar.
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Input encontrado y enviado con éxito!
+¡Cuenta encontrada y seleccionada 1023  con éxito!
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

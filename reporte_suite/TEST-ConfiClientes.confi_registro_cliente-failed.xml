@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ConfiClientes.confi_registro_cliente-failed" tests="1" file="ConfiClientes.py" time="39.826" timestamp="2024-08-28T13:14:16" failures="0" errors="0" skipped="0">
-	<testcase classname="ConfiClientes.confi_registro_cliente" name="test_record_client" time="39.826" timestamp="2024-08-28T13:14:16" file="ConfiClientes.py" line="19">
+<testsuite name="ConfiClientes.confi_registro_cliente-failed" tests="1" file="ConfiClientes.py" time="36.919" timestamp="2024-09-11T16:54:52" failures="0" errors="0" skipped="0">
+	<testcase classname="ConfiClientes.confi_registro_cliente" name="test_record_client" time="36.919" timestamp="2024-09-11T16:54:52" file="ConfiClientes.py" line="19">
 		<system-out><![CDATA[El texto encontrado es  Clientes
 ¡Input encontrado y enviado con éxito!
 ¡Input encontrado y enviado con éxito!

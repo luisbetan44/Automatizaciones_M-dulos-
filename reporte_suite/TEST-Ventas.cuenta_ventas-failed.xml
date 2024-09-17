@@ -1,25 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Ventas.cuenta_ventas-failed" tests="1" file="Ventas.py" time="48.469" timestamp="2024-08-28T12:27:24" failures="0" errors="0" skipped="0">
-	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="48.469" timestamp="2024-08-28T12:27:24" file="Ventas.py" line="23">
+<testsuite name="Ventas.cuenta_ventas-failed" tests="2" file="Ventas.py" time="105.603" timestamp="2024-09-11T16:21:16" failures="0" errors="2" skipped="0">
+	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="0.000" timestamp="0001-01-01T00:00:00" file="Ventas.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Ventas.py", line 107, in test_cuenta_ventas
+    find_elements(self.driver, select_product_list_3 )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
 		<system-out><![CDATA[El texto es visible para el usuario
 El texto fue validado correctamente: Mis Ventas
 ¡Elemento encontrado y clickeado 8 veces con éxito!
 ¡Elemento encontrado y clickeado 1 veces con éxito!
-El texto encontrado es  Producto
-El texto es visible para el usuario
-El texto fue validado correctamente: Soja
-El texto encontrado es  Fecha
-El texto es visible para el usuario
-El texto fue validado correctamente: 13/12/2023
-El texto encontrado es  Comprobante
-El texto no fue encontrado F 0001 00121262
-El texto es visible para el usuario: 'Kg Fijados'
-El valor es un carácter numérico. Valor: 300.000,00
-El texto es visible para el usuario
-El texto fue validado correctamente: Precio
-El valor es un carácter numérico. Valor: 500
-El texto encontrado es  Moneda
-El texto encontrado es  ARS
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="105.603" timestamp="2024-09-11T16:21:16" file="Ventas.py" line="23">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B43F0D]
+	(No symbol) [0x00007FF710B41ACF]
+	(No symbol) [0x00007FF710B4231F]
+	(No symbol) [0x00007FF710B5B7F3]
+	(No symbol) [0x00007FF710B2F5ED]
+	(No symbol) [0x00007FF710BE5349]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Ventas.py", line 198, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B43F0D]
+	(No symbol) [0x00007FF710B41ACF]
+	(No symbol) [0x00007FF710B4231F]
+	(No symbol) [0x00007FF710B5B7F3]
+	(No symbol) [0x00007FF710B2F5ED]
+	(No symbol) [0x00007FF710BE5349]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
 </testsuite>

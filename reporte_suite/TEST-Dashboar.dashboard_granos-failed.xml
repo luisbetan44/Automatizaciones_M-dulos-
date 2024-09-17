@@ -1,7 +1,79 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Dashboar.dashboard_granos-failed" tests="1" file="Dashboar.py" time="151.079" timestamp="2024-08-28T11:55:16" failures="0" errors="0" skipped="0">
-	<testcase classname="Dashboar.dashboard_granos" name="test_dashboard_grain" time="151.079" timestamp="2024-08-28T11:55:16" file="Dashboar.py" line="23">
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-]]></system-out>
+<testsuite name="Dashboar.dashboard_granos-failed" tests="2" file="Dashboar.py" time="102.890" timestamp="2024-09-11T16:02:14" failures="0" errors="2" skipped="0">
+	<testcase classname="Dashboar.dashboard_granos" name="test_dashboard_grain" time="0.000" timestamp="0001-01-01T00:00:00" file="Dashboar.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Dashboar.py", line 89, in test_dashboard_grain
+    find_elements(self.driver,select_button_accept)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+	</testcase>
+	<testcase classname="Dashboar.dashboard_granos" name="test_dashboard_grain" time="102.890" timestamp="2024-09-11T16:02:14" file="Dashboar.py" line="23">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BE53A8]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Dashboar.py", line 95, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BE53A8]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+
+]]></error>
 	</testcase>
 </testsuite>

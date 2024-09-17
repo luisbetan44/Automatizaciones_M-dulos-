@@ -1,14 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_apliAcobrar.cta_cte_apliAcobrar-failed" tests="1" file="ctacte_apliAcobrar.py" time="149.515" timestamp="2024-08-28T12:30:58" failures="0" errors="0" skipped="0">
-	<testcase classname="ctacte_apliAcobrar.cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="149.515" timestamp="2024-08-28T12:30:58" file="ctacte_apliAcobrar.py" line="17">
-		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
-El valor es un carácter numérico. Valor: 1.416.865,80
-El valor es un carácter numérico. Valor: 0,00
-El valor es un carácter numérico. Valor: 21.748,26
-El texto encontrado es  CUENTA CORRIENTE
-Tiempo de espera agotado. El texto por texto no está presente.
-Tiempo de espera agotado. El texto por texto no está presente.
-Tiempo de espera agotado. El texto por texto no está presente.
-]]></system-out>
+<testsuite name="ctacte_apliAcobrar.cta_cte_apliAcobrar-failed" tests="2" file="ctacte_apliAcobrar.py" time="48.770" timestamp="2024-09-11T16:23:23" failures="0" errors="2" skipped="0">
+	<testcase classname="ctacte_apliAcobrar.cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="0.000" timestamp="0001-01-01T00:00:00" file="ctacte_apliAcobrar.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BF5EB1]
+	(No symbol) [0x00007FF710BD6493]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_apliAcobrar.py", line 76, in test_ctacte_aplicada
+    validate_text(self.driver,title_account,title_account_expected )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1000, in validate_text
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BF5EB1]
+	(No symbol) [0x00007FF710BD6493]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+
+]]></error>
+	</testcase>
+	<testcase classname="ctacte_apliAcobrar.cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="48.770" timestamp="2024-09-11T16:23:23" file="ctacte_apliAcobrar.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B41292]
+	(No symbol) [0x00007FF710B4231F]
+	(No symbol) [0x00007FF710B5B7F3]
+	(No symbol) [0x00007FF710B2F5ED]
+	(No symbol) [0x00007FF710BE5349]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_apliAcobrar.py", line 155, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B41292]
+	(No symbol) [0x00007FF710B4231F]
+	(No symbol) [0x00007FF710B5B7F3]
+	(No symbol) [0x00007FF710B2F5ED]
+	(No symbol) [0x00007FF710BE5349]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+
+]]></error>
 	</testcase>
 </testsuite>

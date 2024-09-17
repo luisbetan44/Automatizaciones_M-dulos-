@@ -1,81 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCtoDtalFijaciones.detalle_ctro_fijaciones-failed" tests="1" file="CtaCtoDtalFijaciones.py" time="511.808" timestamp="2024-08-28T12:09:46" failures="0" errors="1" skipped="0">
-	<testcase classname="CtaCtoDtalFijaciones.detalle_ctro_fijaciones" name="test_detail_fixings" time="511.808" timestamp="2024-08-28T12:09:46" file="CtaCtoDtalFijaciones.py" line="22">
-		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[1]/div[1]/div/span&quot;}
-  (Session info: chrome=128.0.6613.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<testsuite name="CtaCtoDtalFijaciones.detalle_ctro_fijaciones-failed" tests="1" file="CtaCtoDtalFijaciones.py" time="58.211" timestamp="2024-09-11T16:09:54" failures="0" errors="1" skipped="0">
+	<testcase classname="CtaCtoDtalFijaciones.detalle_ctro_fijaciones" name="test_detail_fixings" time="58.211" timestamp="2024-09-11T16:09:54" file="CtaCtoDtalFijaciones.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (470, -890)
+  (Session info: chrome=128.0.6613.120)
 Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CC5EFD7]
-	(No symbol) [0x00007FF77CC5F22C]
-	(No symbol) [0x00007FF77CCA97F7]
-	(No symbol) [0x00007FF77CC8672F]
-	(No symbol) [0x00007FF77CCA65D9]
-	(No symbol) [0x00007FF77CC86493]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710BB6C1E]
+	(No symbol) [0x00007FF710BB4692]
+	(No symbol) [0x00007FF710BB1BAB]
+	(No symbol) [0x00007FF710BB0DC5]
+	(No symbol) [0x00007FF710BA2D81]
+	(No symbol) [0x00007FF710BD66EA]
+	(No symbol) [0x00007FF710BA26C6]
+	(No symbol) [0x00007FF710BD6900]
+	(No symbol) [0x00007FF710BF65A2]
+	(No symbol) [0x00007FF710BD6493]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
 "><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalFijaciones.py", line 105, in test_detail_fixings
-    validate_text_visible(self.driver, element1, number_expected)
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1177, in validate_text_visible
-    element = driver.find_element(By.XPATH, xpath)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalFijaciones.py", line 128, in test_detail_fixings
+    find_elements_id(self.driver, select_fixings )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 47, in find_elements_id
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
     self.error_handler.check_response(response)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[1]/div[1]/div/span"}
-  (Session info: chrome=128.0.6613.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (470, -890)
+  (Session info: chrome=128.0.6613.120)
 Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CC5EFD7]
-	(No symbol) [0x00007FF77CC5F22C]
-	(No symbol) [0x00007FF77CCA97F7]
-	(No symbol) [0x00007FF77CC8672F]
-	(No symbol) [0x00007FF77CCA65D9]
-	(No symbol) [0x00007FF77CC86493]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710BB6C1E]
+	(No symbol) [0x00007FF710BB4692]
+	(No symbol) [0x00007FF710BB1BAB]
+	(No symbol) [0x00007FF710BB0DC5]
+	(No symbol) [0x00007FF710BA2D81]
+	(No symbol) [0x00007FF710BD66EA]
+	(No symbol) [0x00007FF710BA26C6]
+	(No symbol) [0x00007FF710BD6900]
+	(No symbol) [0x00007FF710BF65A2]
+	(No symbol) [0x00007FF710BD6493]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
 
 ]]></error>
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El texto por texto no está presente.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario: 'De 500.000,00 Kg Pactados'
 ]]></system-out>
 	</testcase>
 </testsuite>

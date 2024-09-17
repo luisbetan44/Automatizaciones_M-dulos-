@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReportMerFacturada.reportMerFacturada-failed" tests="1" file="ReportMerFacturada.py" time="50.855" timestamp="2024-08-28T13:04:14" failures="0" errors="0" skipped="0">
-	<testcase classname="ReportMerFacturada.reportMerFacturada" name="test_Report_MerFacturada" time="50.855" timestamp="2024-08-28T13:04:14" file="ReportMerFacturada.py" line="17">
-		<system-out><![CDATA[El valor es un carácter numérico. Valor: 20,00
-El valor es un carácter numérico. Valor: 0,00
+<testsuite name="ReportMerFacturada.reportMerFacturada-failed" tests="1" file="ReportMerFacturada.py" time="47.075" timestamp="2024-09-11T16:49:27" failures="0" errors="0" skipped="0">
+	<testcase classname="ReportMerFacturada.reportMerFacturada" name="test_Report_MerFacturada" time="47.075" timestamp="2024-09-11T16:49:27" file="ReportMerFacturada.py" line="17">
+		<system-out><![CDATA[El valor es un carácter numérico. Valor: 1.072.833,80
+El valor es un carácter numérico. Valor: 137.050.473,36
 El texto encontrado es  Mercadería Facturada
 El texto encontrado es  Fecha
-El texto encontrado '23/05/2024' no coincide con el esperado ''
+El texto encontrado '22/08/2024' no coincide con el esperado ''
 El texto encontrado es  Comprobante
-El texto encontrado 'NCRDEV 1058 00005064' no coincide con el esperado ''
+El texto encontrado 'FACBAL 1063 00041033' no coincide con el esperado ''
 El texto encontrado es  Artículo
-El texto encontrado 'Maiz 7818 VIPTERA 3 C-2CE FORTENZA B-2 x 80000 NIDERA' no coincide con el esperado ''
+El texto encontrado 'Premezcla Creci Feed Nutricion Superior x 25 kgs' no coincide con el esperado ''
 El texto encontrado es  Cantidad
-El valor es un carácter numérico. Valor: -100,00
+El valor es un carácter numérico. Valor: 2.175,00
 El texto encontrado es  Moneda
 El texto encontrado 'USD' no coincide con el esperado ''
 El texto encontrado es  Precio
-El valor es un carácter numérico. Valor: 175,00
+El valor es un carácter numérico. Valor: 0,43
 ]]></system-out>
 	</testcase>
 </testsuite>

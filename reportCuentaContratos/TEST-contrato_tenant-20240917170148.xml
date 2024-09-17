@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="contrato_tenant-20240917170148" tests="1" file=".py" time="51.642" timestamp="2024-09-17T17:02:40" failures="1" errors="0" skipped="0">
+	<testcase classname="contrato_tenant" name="test_contrato_tenant" time="51.642" timestamp="2024-09-17T17:02:40" file="Cuentacontrato.py" line="22">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Cuentacontrato.py", line 97, in test_contrato_tenant
+    validate_text_visible(self.driver, element1, number_expected)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1186, in validate_text_visible
+    assert text_obtained == text_expected
+AssertionError
+]]></failure>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,9 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="insumos_producto.insumosProductos-failed" tests="1" file="insumos_producto.py" time="559.076" timestamp="2024-08-28T11:49:14" failures="0" errors="0" skipped="0">
-	<testcase classname="insumos_producto.insumosProductos" name="test_supplies_products" time="559.076" timestamp="2024-08-28T11:49:14" file="insumos_producto.py" line="19">
+<testsuite name="insumos_producto.insumosProductos-failed" tests="2" file="insumos_producto.py" time="444.502" timestamp="2024-09-11T15:58:16" failures="0" errors="2" skipped="0">
+	<testcase classname="insumos_producto.insumosProductos" name="test_supplies_products" time="0.000" timestamp="0001-01-01T00:00:00" file="insumos_producto.py" line="19">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\insumos_producto.py", line 136, in test_supplies_products
+    select_option_click(self.driver, select_branch, select_option )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 952, in select_option_click
+    xpath_chevron = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
 		<system-out><![CDATA[El texto encontrado es  PRODUCTOS
 ¡Input encontrado y enviado con éxito!
 ¡Valor '30 días' ingresado y opción seleccionada con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 Tiempo de espera agotado. El texto por xpaht no está presente.
@@ -15,22 +31,81 @@ No se encontraron los datos para borrar.
 Tiempo de espera agotado. El input no está presente o no es clickeable.
 Tiempo de espera agotado. El input no está presente o no es clickeable.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
+]]></system-out>
+	</testcase>
+	<testcase classname="insumos_producto.insumosProductos" name="test_supplies_products" time="444.502" timestamp="2024-09-11T15:58:16" file="insumos_producto.py" line="19">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BE53A8]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\insumos_producto.py", line 212, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BE53A8]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  PRODUCTOS
+¡Input encontrado y enviado con éxito!
+¡Valor '30 días' ingresado y opción seleccionada con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-El texto encontrado es  Mis Órdenes
-El texto encontrado es  Número
-El valor es un carácter numérico. Valor: 105
-El texto encontrado es  Fecha
-El texto encontrado '05/08/2024' no coincide con el esperado ''
-El texto encontrado es  Hora
-El texto encontrado '09:53 hs.' no coincide con el esperado ''
-El texto encontrado es  Productor
-El texto encontrado '(1023) JUAN DEMO' no coincide con el esperado ''
-El texto encontrado es  Estado
-El texto encontrado 'Generada' no coincide con el esperado ''
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+No se encontraron los datos para borrar.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El input no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
 </testsuite>

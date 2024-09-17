@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos-20240909102805" tests="1" file=".py" time="3.556" timestamp="2024-09-09T10:28:08" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos" name="test_precio_granos" time="3.556" timestamp="2024-09-09T10:28:08" file="Precio_Granos.py" line="23">
+		<error type="AttributeError" message="'WebDriver' object has no attribute 'find_element_by_id'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Precio_Granos.py", line 25, in test_precio_granos
+    username = driver.find_element_by_id("email")
+AttributeError: 'WebDriver' object has no attribute 'find_element_by_id'
+]]></error>
+	</testcase>
+</testsuite>

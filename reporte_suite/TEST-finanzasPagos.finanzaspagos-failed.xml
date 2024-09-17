@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="finanzasPagos.finanzaspagos-failed" tests="1" file="finanzasPagos.py" time="486.839" timestamp="2024-08-28T13:12:23" failures="0" errors="1" skipped="0">
-	<testcase classname="finanzasPagos.finanzaspagos" name="test_finance_payment" time="486.839" timestamp="2024-08-28T13:12:23" file="finanzasPagos.py" line="23">
+<testsuite name="finanzasPagos.finanzaspagos-failed" tests="1" file="finanzasPagos.py" time="129.981" timestamp="2024-09-11T16:51:39" failures="0" errors="1" skipped="0">
+	<testcase classname="finanzasPagos.finanzaspagos" name="test_finance_payment" time="129.981" timestamp="2024-09-11T16:51:39" file="finanzasPagos.py" line="23">
 		<error type="InvalidSelectorException" message="Message: invalid selector
 from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression #layout-wrapper &gt; div &gt; div &gt; div &gt; app-payment-collection-detail-main &gt; div &gt; div &gt; div:nth-child(2) &gt; app-totalizer-forecast &gt; div &gt; div &gt; div.col-9.row.totalizer-values &gt; div:nth-child(2) &gt; span because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '#layout-wrapper &gt; div &gt; div &gt; div &gt; app-payment-collection-detail-main &gt; div &gt; div &gt; div:nth-child(2) &gt; app-totalizer-forecast &gt; div &gt; div &gt; div.col-9.row.totalizer-values &gt; div:nth-child(2) &gt; span' is not a valid XPath expression.&quot;}
-  (Session info: chrome=128.0.6613.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CC11CD3]
-	(No symbol) [0x00007FF77CC14071]
-	(No symbol) [0x00007FF77CC14110]
-	(No symbol) [0x00007FF77CC5EB4C]
-	(No symbol) [0x00007FF77CC5F22C]
-	(No symbol) [0x00007FF77CCA97F7]
-	(No symbol) [0x00007FF77CC8672F]
-	(No symbol) [0x00007FF77CCA65D9]
-	(No symbol) [0x00007FF77CC86493]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B61CE3]
+	(No symbol) [0x00007FF710B64081]
+	(No symbol) [0x00007FF710B64120]
+	(No symbol) [0x00007FF710BAEB5C]
+	(No symbol) [0x00007FF710BAF23C]
+	(No symbol) [0x00007FF710BF97C7]
+	(No symbol) [0x00007FF710BD672F]
+	(No symbol) [0x00007FF710BF65A2]
+	(No symbol) [0x00007FF710BD6493]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
 "><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\finanzasPagos.py", line 124, in test_finance_payment
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\finanzasPagos.py", line 124, in test_finance_payment
     verify_todate(self.driver,select_todate)
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements2.py", line 15, in verify_todate
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 15, in verify_todate
     elemento_fecha = driver.find_element(By.XPATH, xpath)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
     return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
@@ -42,47 +42,36 @@ Stacktrace:
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
 from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression #layout-wrapper > div > div > div > app-payment-collection-detail-main > div > div > div:nth-child(2) > app-totalizer-forecast > div > div > div.col-9.row.totalizer-values > div:nth-child(2) > span because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '#layout-wrapper > div > div > div > app-payment-collection-detail-main > div > div > div:nth-child(2) > app-totalizer-forecast > div > div > div.col-9.row.totalizer-values > div:nth-child(2) > span' is not a valid XPath expression."}
-  (Session info: chrome=128.0.6613.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
 Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CC11CD3]
-	(No symbol) [0x00007FF77CC14071]
-	(No symbol) [0x00007FF77CC14110]
-	(No symbol) [0x00007FF77CC5EB4C]
-	(No symbol) [0x00007FF77CC5F22C]
-	(No symbol) [0x00007FF77CCA97F7]
-	(No symbol) [0x00007FF77CC8672F]
-	(No symbol) [0x00007FF77CCA65D9]
-	(No symbol) [0x00007FF77CC86493]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B61CE3]
+	(No symbol) [0x00007FF710B64081]
+	(No symbol) [0x00007FF710B64120]
+	(No symbol) [0x00007FF710BAEB5C]
+	(No symbol) [0x00007FF710BAF23C]
+	(No symbol) [0x00007FF710BF97C7]
+	(No symbol) [0x00007FF710BD672F]
+	(No symbol) [0x00007FF710BF65A2]
+	(No symbol) [0x00007FF710BD6493]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
 
 ]]></error>
 		<system-out><![CDATA[Tiempo de espera agotado. El texto por xpaht no está presente.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-No se encontraron los datos para borrar.
-Tiempo de espera agotado. El input no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
-Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Input encontrado y enviado con éxito!
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>

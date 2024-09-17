@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240917172012" tests="1" file=".py" time="131.602" timestamp="2024-09-17T17:22:24" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="131.602" timestamp="2024-09-17T17:22:24" file="Precio_Fijacion.py" line="21">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F29F9412+29090]
+	(No symbol) [0x00007FF6F296E239]
+	(No symbol) [0x00007FF6F282B1DA]
+	(No symbol) [0x00007FF6F287EFE7]
+	(No symbol) [0x00007FF6F287F23C]
+	(No symbol) [0x00007FF6F28C97C7]
+	(No symbol) [0x00007FF6F28A672F]
+	(No symbol) [0x00007FF6F28C65A2]
+	(No symbol) [0x00007FF6F28A6493]
+	(No symbol) [0x00007FF6F28709D1]
+	(No symbol) [0x00007FF6F2871B31]
+	GetHandleVerifier [0x00007FF6F2D1871D+3302573]
+	GetHandleVerifier [0x00007FF6F2D64243+3612627]
+	GetHandleVerifier [0x00007FF6F2D5A417+3572135]
+	GetHandleVerifier [0x00007FF6F2AB5EB6+801862]
+	(No symbol) [0x00007FF6F297945F]
+	(No symbol) [0x00007FF6F2974FB4]
+	(No symbol) [0x00007FF6F2975140]
+	(No symbol) [0x00007FF6F296461F]
+	BaseThreadInitThunk [0x00007FFBBDF4257D+29]
+	RtlUserThreadStart [0x00007FFBBFE2AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Precio_Fijacion.py", line 98, in test_price_fixings
+    calendar_todate(self.driver, select_data_day, popup_calendar1)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1469, in calendar_todate
+    popup_calendario = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF6F29F9412+29090]
+	(No symbol) [0x00007FF6F296E239]
+	(No symbol) [0x00007FF6F282B1DA]
+	(No symbol) [0x00007FF6F287EFE7]
+	(No symbol) [0x00007FF6F287F23C]
+	(No symbol) [0x00007FF6F28C97C7]
+	(No symbol) [0x00007FF6F28A672F]
+	(No symbol) [0x00007FF6F28C65A2]
+	(No symbol) [0x00007FF6F28A6493]
+	(No symbol) [0x00007FF6F28709D1]
+	(No symbol) [0x00007FF6F2871B31]
+	GetHandleVerifier [0x00007FF6F2D1871D+3302573]
+	GetHandleVerifier [0x00007FF6F2D64243+3612627]
+	GetHandleVerifier [0x00007FF6F2D5A417+3572135]
+	GetHandleVerifier [0x00007FF6F2AB5EB6+801862]
+	(No symbol) [0x00007FF6F297945F]
+	(No symbol) [0x00007FF6F2974FB4]
+	(No symbol) [0x00007FF6F2975140]
+	(No symbol) [0x00007FF6F296461F]
+	BaseThreadInitThunk [0x00007FFBBDF4257D+29]
+	RtlUserThreadStart [0x00007FFBBFE2AF28+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

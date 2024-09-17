@@ -1,82 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer-failed" tests="1" file="CtaCte_HistoAvenver.py" time="543.526" timestamp="2024-08-28T12:50:08" failures="0" errors="1" skipped="0">
-	<testcase classname="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer" name="test_ctacte_historica" time="543.526" timestamp="2024-08-28T12:50:08" file="CtaCte_HistoAvenver.py" line="17">
-		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]&quot;}
-  (Session info: chrome=128.0.6613.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CC5EFD7]
-	(No symbol) [0x00007FF77CC5F22C]
-	(No symbol) [0x00007FF77CCA97F7]
-	(No symbol) [0x00007FF77CC8672F]
-	(No symbol) [0x00007FF77CCA65D9]
-	(No symbol) [0x00007FF77CC86493]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCte_HistoAvenver.py", line 115, in test_ctacte_historica
+<testsuite name="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer-failed" tests="2" file="CtaCte_HistoAvenver.py" time="87.736" timestamp="2024-09-11T16:34:16" failures="0" errors="2" skipped="0">
+	<testcase classname="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer" name="test_ctacte_historica" time="0.000" timestamp="0001-01-01T00:00:00" file="CtaCte_HistoAvenver.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'text'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCte_HistoAvenver.py", line 115, in test_ctacte_historica
     validate_character_numeric_element(self.driver, balance_ars)
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1159, in validate_character_numeric_element
-    elemento = driver.find_element(By.XPATH, xpath)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1160, in validate_character_numeric_element
+    valor = elemento.text
+AttributeError: 'NoneType' object has no attribute 'text'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 4 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+	<testcase classname="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer" name="test_ctacte_historica" time="87.736" timestamp="2024-09-11T16:34:16" file="CtaCte_HistoAvenver.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BE53A8]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCte_HistoAvenver.py", line 196, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
     self.error_handler.check_response(response)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"}
-  (Session info: chrome=128.0.6613.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=128.0.6613.120)
 Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CC5EFD7]
-	(No symbol) [0x00007FF77CC5F22C]
-	(No symbol) [0x00007FF77CCA97F7]
-	(No symbol) [0x00007FF77CC8672F]
-	(No symbol) [0x00007FF77CCA65D9]
-	(No symbol) [0x00007FF77CC86493]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BE53A8]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
 
 ]]></error>
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 4 veces con éxito!
 Tiempo de espera agotado. El texto por xpaht no está presente.
 ]]></system-out>
 	</testcase>

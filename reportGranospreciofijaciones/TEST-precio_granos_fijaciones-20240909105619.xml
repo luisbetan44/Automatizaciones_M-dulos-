@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="precio_granos_fijaciones-20240909105619" tests="1" file=".py" time="110.486" timestamp="2024-09-09T10:58:09" failures="0" errors="1" skipped="0">
+	<testcase classname="precio_granos_fijaciones" name="test_price_fixings" time="110.486" timestamp="2024-09-09T10:58:09" file="Precio_Fijacion.py" line="21">
+		<error type="TimeoutException" message="Message: 
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Precio_Fijacion.py", line 98, in test_price_fixings
+    calendar_todate(self.driver, select_data_day, popup_calendar1)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1469, in calendar_todate
+    popup_calendario = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MERCADOS
+No se encontraron más movimientos para borrar.
+Se hizo clic en un icono de borrar.
+No se encontraron más movimientos para borrar.
+¡Input encontrado y enviado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

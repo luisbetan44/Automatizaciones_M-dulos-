@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MisIntenciones.mis_intenciones-failed" tests="2" file="MisIntenciones.py" time="127.729" timestamp="2024-08-28T11:57:26" failures="0" errors="2" skipped="0">
+<testsuite name="MisIntenciones.mis_intenciones-failed" tests="2" file="MisIntenciones.py" time="254.659" timestamp="2024-09-11T16:06:31" failures="0" errors="2" skipped="0">
 	<testcase classname="MisIntenciones.mis_intenciones" name="test_my_intentions" time="0.000" timestamp="0001-01-01T00:00:00" file="MisIntenciones.py" line="22">
 		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\MisIntenciones.py", line 71, in test_my_intentions
-    find_elements(self.driver, select_button_next)
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\MisIntenciones.py", line 87, in test_my_intentions
+    find_elements(self.driver, select_button_accept)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
     select_nex_button = WebDriverWait(driver, 10).until(
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
     value = method(self._driver)
@@ -18,34 +18,38 @@ AttributeError: 'NoneType' object has no attribute 'is_displayed'
 ]]></error>
 		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
-	<testcase classname="MisIntenciones.mis_intenciones" name="test_my_intentions" time="127.729" timestamp="2024-08-28T11:57:26" file="MisIntenciones.py" line="22">
+	<testcase classname="MisIntenciones.mis_intenciones" name="test_my_intentions" time="254.659" timestamp="2024-09-11T16:06:31" file="MisIntenciones.py" line="22">
 		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=128.0.6613.85)
+  (Session info: chrome=128.0.6613.120)
 Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CBDFAF5]
-	(No symbol) [0x00007FF77CC8E2E7]
-	(No symbol) [0x00007FF77CC953D8]
-	(No symbol) [0x00007FF77CC866B0]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BE53A8]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
 "><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\MisIntenciones.py", line 95, in tearDown
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\MisIntenciones.py", line 95, in tearDown
     self.driver.close()
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
     self.execute(Command.CLOSE)
@@ -55,30 +59,34 @@ Stacktrace:
     raise exception_class(message, screen, stacktrace)
 selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
 from unknown error: web view not found
-  (Session info: chrome=128.0.6613.85)
+  (Session info: chrome=128.0.6613.120)
 Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CBDFAF5]
-	(No symbol) [0x00007FF77CC8E2E7]
-	(No symbol) [0x00007FF77CC953D8]
-	(No symbol) [0x00007FF77CC866B0]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710B2FAF5]
+	(No symbol) [0x00007FF710BDE2C7]
+	(No symbol) [0x00007FF710BE53A8]
+	(No symbol) [0x00007FF710BD66B0]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
 
 ]]></error>
 		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>

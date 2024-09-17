@@ -1,75 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReportEntreVentas.reportEntregasVentas-failed" tests="1" file="ReportEntreVentas.py" time="268.419" timestamp="2024-08-28T13:02:13" failures="0" errors="1" skipped="0">
-	<testcase classname="ReportEntreVentas.reportEntregasVentas" name="test_Report_deliverySales" time="268.419" timestamp="2024-08-28T13:02:13" file="ReportEntreVentas.py" line="17">
-		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#layout-wrapper &gt; div &gt; div &gt; div &gt; sales-deliveries &gt; app-responsive-table &gt; div &gt; div.table-responsive &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(2) &gt; span &gt; div &gt; span&quot;}
-  (Session info: chrome=128.0.6613.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CC5EFD7]
-	(No symbol) [0x00007FF77CC5F22C]
-	(No symbol) [0x00007FF77CCA97F7]
-	(No symbol) [0x00007FF77CC8672F]
-	(No symbol) [0x00007FF77CCA65D9]
-	(No symbol) [0x00007FF77CC86493]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\ReportEntreVentas.py", line 78, in test_Report_deliverySales
-    validate_character_numeric_element_selector(self.driver,total_delivered,)
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 1168, in validate_character_numeric_element_selector
-    elemento = driver.find_element(By.CSS_SELECTOR, css_selector)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#layout-wrapper > div > div > div > sales-deliveries > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(2) > span > div > span"}
-  (Session info: chrome=128.0.6613.85); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF77CDDB632+29090]
-	(No symbol) [0x00007FF77CD4E6E9]
-	(No symbol) [0x00007FF77CC0B1CA]
-	(No symbol) [0x00007FF77CC5EFD7]
-	(No symbol) [0x00007FF77CC5F22C]
-	(No symbol) [0x00007FF77CCA97F7]
-	(No symbol) [0x00007FF77CC8672F]
-	(No symbol) [0x00007FF77CCA65D9]
-	(No symbol) [0x00007FF77CC86493]
-	(No symbol) [0x00007FF77CC509B1]
-	(No symbol) [0x00007FF77CC51B11]
-	GetHandleVerifier [0x00007FF77D0F881D+3294093]
-	GetHandleVerifier [0x00007FF77D144403+3604339]
-	GetHandleVerifier [0x00007FF77D13A2C7+3563063]
-	GetHandleVerifier [0x00007FF77CE96F16+797318]
-	(No symbol) [0x00007FF77CD5986F]
-	(No symbol) [0x00007FF77CD55454]
-	(No symbol) [0x00007FF77CD555E0]
-	(No symbol) [0x00007FF77CD44A7F]
-	BaseThreadInitThunk [0x00007FFFFD25257D+29]
-	RtlUserThreadStart [0x00007FFFFDBAAF28+40]
-
-]]></error>
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El texto por xpaht no está presente.
-Tiempo de espera agotado. El texto por xpaht no está presente.
-Tiempo de espera agotado. El texto por xpaht no está presente.
-Tiempo de espera agotado. El texto por xpaht no está presente.
+<testsuite name="ReportEntreVentas.reportEntregasVentas-failed" tests="1" file="ReportEntreVentas.py" time="93.307" timestamp="2024-09-11T16:47:41" failures="0" errors="0" skipped="0">
+	<testcase classname="ReportEntreVentas.reportEntregasVentas" name="test_Report_deliverySales" time="93.307" timestamp="2024-09-11T16:47:41" file="ReportEntreVentas.py" line="17">
+		<system-out><![CDATA[El texto encontrado es  Entregas y Ventas
+El texto encontrado es  Soja
+El texto encontrado es  23/24
+El texto encontrado es  Kilos Entregados
+El valor es un carácter numérico. Valor: 11.947.550
+El texto encontrado es  Otros Movimientos
+El valor es un carácter numérico. Valor: -34.258
+El texto encontrado es  Kilos Vendidos
+El valor es un carácter numérico. Valor: 6.415.000
+El texto encontrado es  Kilos Solicitados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 5.078.380
+El texto encontrado es  Saldo
+El valor es un carácter numérico. Valor: 5.498.292
+El texto encontrado es  Saldo Comercial
+El valor es un carácter numérico. Valor: 419.912
 ]]></system-out>
 	</testcase>
 </testsuite>

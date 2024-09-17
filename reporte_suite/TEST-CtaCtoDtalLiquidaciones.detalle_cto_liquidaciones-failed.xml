@@ -1,32 +1,86 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCtoDtalLiquidaciones.detalle_cto_liquidaciones-failed" tests="1" file="CtaCtoDtalLiquidaciones.py" time="385.427" timestamp="2024-08-28T12:17:58" failures="0" errors="1" skipped="0">
-	<testcase classname="CtaCtoDtalLiquidaciones.detalle_cto_liquidaciones" name="test_detail_liquidations" time="385.427" timestamp="2024-08-28T12:17:58" file="CtaCtoDtalLiquidaciones.py" line="22">
-		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalLiquidaciones.py", line 86, in test_detail_liquidations
-    find_elements(self.driver, apply_filter )
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
-    select_nex_button = WebDriverWait(driver, 10).until(
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
-    value = method(self._driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
-    element = visibility_of(target)(driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
-    return _element_if_visible(element)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
-    return element if element.is_displayed() == visibility else False
-AttributeError: 'NoneType' object has no attribute 'is_displayed'
+<testsuite name="CtaCtoDtalLiquidaciones.detalle_cto_liquidaciones-failed" tests="1" file="CtaCtoDtalLiquidaciones.py" time="60.404" timestamp="2024-09-11T16:13:07" failures="0" errors="1" skipped="0">
+	<testcase classname="CtaCtoDtalLiquidaciones.detalle_cto_liquidaciones" name="test_detail_liquidations" time="60.404" timestamp="2024-09-11T16:13:07" file="CtaCtoDtalLiquidaciones.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (680, 1104)
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710BB6C1E]
+	(No symbol) [0x00007FF710BB4692]
+	(No symbol) [0x00007FF710BB1BAB]
+	(No symbol) [0x00007FF710BB0DC5]
+	(No symbol) [0x00007FF710BA2D81]
+	(No symbol) [0x00007FF710BD66EA]
+	(No symbol) [0x00007FF710BA26C6]
+	(No symbol) [0x00007FF710BD6900]
+	(No symbol) [0x00007FF710BF65A2]
+	(No symbol) [0x00007FF710BD6493]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalLiquidaciones.py", line 126, in test_detail_liquidations
+    find_elements_id(self.driver, select_liquidations )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 47, in find_elements_id
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (680, 1104)
+  (Session info: chrome=128.0.6613.120)
+Stacktrace:
+	GetHandleVerifier [0x00007FF710D29412+29090]
+	(No symbol) [0x00007FF710C9E239]
+	(No symbol) [0x00007FF710B5B1DA]
+	(No symbol) [0x00007FF710BB6C1E]
+	(No symbol) [0x00007FF710BB4692]
+	(No symbol) [0x00007FF710BB1BAB]
+	(No symbol) [0x00007FF710BB0DC5]
+	(No symbol) [0x00007FF710BA2D81]
+	(No symbol) [0x00007FF710BD66EA]
+	(No symbol) [0x00007FF710BA26C6]
+	(No symbol) [0x00007FF710BD6900]
+	(No symbol) [0x00007FF710BF65A2]
+	(No symbol) [0x00007FF710BD6493]
+	(No symbol) [0x00007FF710BA09D1]
+	(No symbol) [0x00007FF710BA1B31]
+	GetHandleVerifier [0x00007FF71104871D+3302573]
+	GetHandleVerifier [0x00007FF711094243+3612627]
+	GetHandleVerifier [0x00007FF71108A417+3572135]
+	GetHandleVerifier [0x00007FF710DE5EB6+801862]
+	(No symbol) [0x00007FF710CA945F]
+	(No symbol) [0x00007FF710CA4FB4]
+	(No symbol) [0x00007FF710CA5140]
+	(No symbol) [0x00007FF710C9461F]
+	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
+	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+
 ]]></error>
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario: 'De 500.000,00 Kg Pactados'
 ]]></system-out>
 	</testcase>
 </testsuite>

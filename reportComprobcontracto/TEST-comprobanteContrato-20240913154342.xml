@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobanteContrato-20240913154342" tests="1" file=".py" time="604.804" timestamp="2024-09-13T15:53:47" failures="0" errors="0" skipped="0">
+	<testcase classname="comprobanteContrato" name="test_comprobante_contrato" time="604.804" timestamp="2024-09-13T15:53:47" file="comproContratos.py" line="22">
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+El texto no fue encontrado COMPROBANTES
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es visible.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

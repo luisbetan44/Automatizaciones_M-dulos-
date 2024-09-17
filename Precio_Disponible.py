@@ -2,7 +2,7 @@ from telnetlib import EC
 import unittest
 import xmlrunner
 import time
-from Elements import  click_icon_delete,displace_element, find_and_click_element_selector, find_elements, find_send_element, generate_and_send_number, search_and_displace_account,select_option_click, validate_text
+from Elements import  calendar_todate, click_icon_delete,displace_element, find_and_click_element_selector, find_elements, find_send_element, generate_and_send_number, search_and_displace_account,select_option_click, validate_text
 from LoginSample import LoginSample
 from startSession import StartSession
 
@@ -45,9 +45,14 @@ class precio_granos(unittest.TestCase):
 
         # borrar listado de disponible
 
-        delete_price_grain = "#layout-wrapper > div > div > div > app-market-main > app-grain-price > div:nth-child(2) > app-grain-price-table:nth-child(1) > div > div > table > tbody > tr > td.pt-3.padding-last-column > svg-icon > svg"
-        click_icon_delete(self.driver, delete_price_grain)
+        delete_price_grain1 = "#layout-wrapper > div > div > div > app-market-main > app-grain-price > div:nth-child(2) > app-grain-price-table:nth-child(1) > div > div > table > tbody > tr > td.pt-3.padding-last-column > svg-icon > svg"
+        click_icon_delete(self.driver, delete_price_grain1)
         time.sleep(2)
+
+        delete_price_grain2 = "#layout-wrapper > div > div > div > app-market-main > app-grain-price > div:nth-child(2) > app-grain-price-table:nth-child(3) > div > div > table > tbody > tr > td.pt-3.padding-last-column > svg-icon > svg"
+        click_icon_delete(self.driver, delete_price_grain2)
+        time.sleep(2)
+
 
         
         # agrgar productos 
@@ -87,21 +92,11 @@ class precio_granos(unittest.TestCase):
 
        # seleccionar rango de fecha 02/12/2024 al 27/12/2024
 
-        select_date = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-grain-price/div[2]/app-grain-price-table[1]/div/div/table/tbody/tr/td[7]/app-date-picker/div/input[2]"
-        displace_element(self.driver, select_date)
-
-        select_arrow = "body > div.flatpickr-calendar.rangeMode.animate.open.arrowBottom.arrowLeft > div.flatpickr-months > span.flatpickr-next-month"
-        clicks = 6
-        find_and_click_element_selector(self.driver, select_arrow, clicks)
-
-        insert_date1 = "/html/body/div[3]/div[2]/div/div[2]/div/span[8]"
-        find_elements(self.driver, insert_date1)
+        select_data_day = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-grain-price/div[2]/app-grain-price-table[1]/div/div/table/tbody/tr/td[7]/app-date-picker/div/input[2]"
+        popup_calendar1 = "//span[@class='flatpickr-day today' and @aria-current='date']"
+        calendar_todate(self.driver, select_data_day, popup_calendar1)
         time.sleep(2)
-
-        insert_date2 = "/html/body/div[3]/div[2]/div/div[2]/div/span[37]"
-        find_elements(self.driver, insert_date2)
-        time.sleep(2)
-
+        
         insert_amount1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-market-main/app-grain-price/div[2]/app-grain-price-table[1]/div/div/table/tbody/tr/td[8]/input"
         send_amount1 = "8000"
         find_send_element(self.driver, insert_amount1, send_amount1 )

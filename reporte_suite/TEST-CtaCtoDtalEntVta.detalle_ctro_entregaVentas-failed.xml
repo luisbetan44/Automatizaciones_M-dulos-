@@ -1,22 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCtoDtalEntVta.detalle_ctro_entregaVentas-failed" tests="1" file="CtaCtoDtalEntVta.py" time="73.682" timestamp="2024-08-28T12:01:10" failures="0" errors="1" skipped="0">
-	<testcase classname="CtaCtoDtalEntVta.detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="73.682" timestamp="2024-08-28T12:01:10" file="CtaCtoDtalEntVta.py" line="22">
-		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\CtaCtoDtalEntVta.py", line 46, in test_detail_deriverySales
-    find_elements(self.driver,cleam_filter )
-  File "c:\Users\luist\repos\Automatizaciones-SILOHUB-\Elements.py", line 19, in find_elements
-    select_nex_button = WebDriverWait(driver, 10).until(
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
-    value = method(self._driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
-    element = visibility_of(target)(driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
-    return _element_if_visible(element)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
-    return element if element.is_displayed() == visibility else False
-AttributeError: 'NoneType' object has no attribute 'is_displayed'
-]]></error>
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+<testsuite name="CtaCtoDtalEntVta.detalle_ctro_entregaVentas-failed" tests="1" file="CtaCtoDtalEntVta.py" time="83.222" timestamp="2024-09-11T16:08:52" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCtoDtalEntVta.detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="83.222" timestamp="2024-09-11T16:08:52" file="CtaCtoDtalEntVta.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 7 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario: 'De 500.000,00 Kg Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Entregas
+El texto es visible para el usuario
+El texto fue validado correctamente: Producto
+El texto es visible para el usuario
+El texto fue validado correctamente: Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 14/03/2022
+El texto es visible para el usuario: 'Kg Brutos'
+El valor es un carácter numérico. Valor: 30.040,00
+El texto es visible para el usuario
+El texto fue validado correctamente: Humedad
+El valor es un carácter numérico. Valor: 16,70%
+El texto es visible para el usuario
+El texto fue validado correctamente: Zaranda
+El valor es un carácter numérico. Valor: 0,00%
+El texto es visible para el usuario
+El texto fue validado correctamente: Volátil
+El valor es un carácter numérico. Valor: 0,30%
+El texto es visible para el usuario
+El texto fue validado correctamente: Factor/Grado
+El valor es un carácter numérico. Valor: 100/2
+El texto es visible para el usuario: 'Kg Netos'
+El valor es un carácter numérico. Valor: 19.066,00
+El texto es visible para el usuario
+El texto fue validado correctamente: CTG/CRT
+El valor es un carácter numérico. Valor: 10102265019
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[1]/app-deliveries-applied/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[1]/th/input' seleccionado con éxito!
 ]]></system-out>
 	</testcase>
 </testsuite>
