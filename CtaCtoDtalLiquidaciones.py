@@ -56,8 +56,8 @@ class detalle_cto_liquidaciones(unittest.TestCase):
         find_elements(self.driver, select_campaign )
         time.sleep(3)
 
-        select_compliments = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-checklist/div/app-checks[1]/div/input"
-        find_elements(self.driver, select_compliments )
+        select_compliments = "Cumplidos"
+        find_elements_id(self.driver, select_compliments )
         time.sleep(3)
 
         select_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"

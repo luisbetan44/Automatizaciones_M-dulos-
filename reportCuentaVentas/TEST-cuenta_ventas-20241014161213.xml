@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ventas-20241014161213" tests="1" file=".py" time="49.087" timestamp="2024-10-14T16:13:02" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ventas" name="test_cuenta_ventas" time="49.087" timestamp="2024-10-14T16:13:02" file="Ventas.py" line="24">
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+El valor es un carácter alfabético. Valor: Producto
+El valor es un carácter alfabético. Valor: Soja
+El valor es un carácter alfabético. Valor: Fecha
+El valor es un string. Valor: 20/08/2024
+El valor es un carácter alfabético. Valor: Comprobante
+El valor es un string. Valor: F 0001 00127012
+El valor es un string. Valor: Kg Fijados
+El valor es un carácter numérico. Valor: 1.700.000,00
+El texto es visible para el usuario
+El texto fue validado correctamente: Precio
+El valor es un carácter numérico. Valor: 290
+El texto encontrado es  Moneda
+El texto encontrado es  ARS
+]]></system-out>
+	</testcase>
+</testsuite>

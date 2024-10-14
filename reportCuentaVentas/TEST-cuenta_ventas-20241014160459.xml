@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ventas-20241014160459" tests="2" file=".py" time="87.139" timestamp="2024-10-14T16:06:26" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_ventas" name="test_cuenta_ventas" time="0.000" timestamp="0001-01-01T00:00:00" file="Ventas.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Ventas.py", line 101, in test_cuenta_ventas
+    find_elements(self.driver, select_product_list_2 )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+¡Elemento encontrado y clickeado 9 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="cuenta_ventas" name="test_cuenta_ventas" time="87.139" timestamp="2024-10-14T16:06:26" file="Ventas.py" line="23">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=129.0.6668.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D896B095+29557]
+	(No symbol) [0x00007FF7D88DFA50]
+	(No symbol) [0x00007FF7D879B56A]
+	(No symbol) [0x00007FF7D87841E7]
+	(No symbol) [0x00007FF7D8781D65]
+	(No symbol) [0x00007FF7D87825BF]
+	(No symbol) [0x00007FF7D879BB83]
+	(No symbol) [0x00007FF7D876F7AD]
+	(No symbol) [0x00007FF7D8826339]
+	(No symbol) [0x00007FF7D8817150]
+	(No symbol) [0x00007FF7D87E116F]
+	(No symbol) [0x00007FF7D87E22D1]
+	GetHandleVerifier [0x00007FF7D8C9C96D+3378253]
+	GetHandleVerifier [0x00007FF7D8CE8497+3688311]
+	GetHandleVerifier [0x00007FF7D8CDD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D8A2A6B6+813462]
+	(No symbol) [0x00007FF7D88EAB5F]
+	(No symbol) [0x00007FF7D88E6B74]
+	(No symbol) [0x00007FF7D88E6D10]
+	(No symbol) [0x00007FF7D88D5C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Ventas.py", line 198, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=129.0.6668.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7D896B095+29557]
+	(No symbol) [0x00007FF7D88DFA50]
+	(No symbol) [0x00007FF7D879B56A]
+	(No symbol) [0x00007FF7D87841E7]
+	(No symbol) [0x00007FF7D8781D65]
+	(No symbol) [0x00007FF7D87825BF]
+	(No symbol) [0x00007FF7D879BB83]
+	(No symbol) [0x00007FF7D876F7AD]
+	(No symbol) [0x00007FF7D8826339]
+	(No symbol) [0x00007FF7D8817150]
+	(No symbol) [0x00007FF7D87E116F]
+	(No symbol) [0x00007FF7D87E22D1]
+	GetHandleVerifier [0x00007FF7D8C9C96D+3378253]
+	GetHandleVerifier [0x00007FF7D8CE8497+3688311]
+	GetHandleVerifier [0x00007FF7D8CDD1CB+3642539]
+	GetHandleVerifier [0x00007FF7D8A2A6B6+813462]
+	(No symbol) [0x00007FF7D88EAB5F]
+	(No symbol) [0x00007FF7D88E6B74]
+	(No symbol) [0x00007FF7D88E6D10]
+	(No symbol) [0x00007FF7D88D5C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+¡Elemento encontrado y clickeado 9 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

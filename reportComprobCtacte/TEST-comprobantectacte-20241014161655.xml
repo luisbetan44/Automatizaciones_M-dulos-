@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobantectacte-20241014161655" tests="1" file=".py" time="82.220" timestamp="2024-10-14T16:18:17" failures="0" errors="1" skipped="0">
+	<testcase classname="comprobantectacte" name="test_vouchers_ctacte" time="82.220" timestamp="2024-10-14T16:18:17" file="comproCtaCte.py" line="15">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF78236B095+29557]
+	(No symbol) [0x00007FF7822DFA50]
+	(No symbol) [0x00007FF78219B56A]
+	(No symbol) [0x00007FF7821EF695]
+	(No symbol) [0x00007FF7821EF8EC]
+	(No symbol) [0x00007FF78223B777]
+	(No symbol) [0x00007FF7822171CF]
+	(No symbol) [0x00007FF78223851C]
+	(No symbol) [0x00007FF782216F33]
+	(No symbol) [0x00007FF7821E116F]
+	(No symbol) [0x00007FF7821E22D1]
+	GetHandleVerifier [0x00007FF78269C96D+3378253]
+	GetHandleVerifier [0x00007FF7826E8497+3688311]
+	GetHandleVerifier [0x00007FF7826DD1CB+3642539]
+	GetHandleVerifier [0x00007FF78242A6B6+813462]
+	(No symbol) [0x00007FF7822EAB5F]
+	(No symbol) [0x00007FF7822E6B74]
+	(No symbol) [0x00007FF7822E6D10]
+	(No symbol) [0x00007FF7822D5C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\comproCtaCte.py", line 17, in test_vouchers_ctacte
+    self.login_helper.login("admingd@silohub.ag", "G@viglio123")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\loginhelper.py", line 9, in login
+    user = find_element_by_id(self.driver, "email")  # asegúrate de pasar self.driver
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF78236B095+29557]
+	(No symbol) [0x00007FF7822DFA50]
+	(No symbol) [0x00007FF78219B56A]
+	(No symbol) [0x00007FF7821EF695]
+	(No symbol) [0x00007FF7821EF8EC]
+	(No symbol) [0x00007FF78223B777]
+	(No symbol) [0x00007FF7822171CF]
+	(No symbol) [0x00007FF78223851C]
+	(No symbol) [0x00007FF782216F33]
+	(No symbol) [0x00007FF7821E116F]
+	(No symbol) [0x00007FF7821E22D1]
+	GetHandleVerifier [0x00007FF78269C96D+3378253]
+	GetHandleVerifier [0x00007FF7826E8497+3688311]
+	GetHandleVerifier [0x00007FF7826DD1CB+3642539]
+	GetHandleVerifier [0x00007FF78242A6B6+813462]
+	(No symbol) [0x00007FF7822EAB5F]
+	(No symbol) [0x00007FF7822E6B74]
+	(No symbol) [0x00007FF7822E6D10]
+	(No symbol) [0x00007FF7822D5C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>

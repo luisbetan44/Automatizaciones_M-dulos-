@@ -66,7 +66,7 @@ class contrato_operSecundarias(unittest.TestCase):
         time.sleep(2)
 
         arrow_filter2 = "/html/body/div/div[1]/span[1]"
-        amount_click2 = 9
+        amount_click2 = 10
         find_and_click_element(self.driver, arrow_filter2, amount_click2)
         time.sleep(2)
 

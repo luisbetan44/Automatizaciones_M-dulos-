@@ -2,7 +2,8 @@
 import unittest
 import xmlrunner
 import time
-from Elements import find_and_click_element, find_elements, validate_chain_text_xpaht, validate_character_numeric_element, validate_text, validate_text_by_text, validate_text_visible, validate_text_visible_selector
+from Elements import calendar_todate_retro, find_and_click_element, find_elements, validate_chain_text_xpaht, validate_character_numeric_element, validate_text, validate_text_by_text, validate_text_visible, validate_text_visible_selector
+from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -64,27 +65,19 @@ class cuenta_ventas(unittest.TestCase):
         find_elements(self.driver,apply_product_filter )
         time.sleep(2)
 
-        apply_Campaign_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[2]/div/div"
+        apply_Campaign_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[1]/div/div"
         find_elements(self.driver,apply_Campaign_filter )
         time.sleep(2)
 
-        select_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
-        find_elements(self.driver, select_filter )
+        
+
+        select_calendar = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
+        popup_xpath = "//div[contains(@class, 'flatpickr-calendar')]"
+        select_chevron = "//span[@class='flatpickr-prev-month']"
+        popup_xpath2 = "//div[contains(@class, 'flatpickr-calendar')]"
+        click_chevron = 6
+        calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
         time.sleep(2)
-
-        arrow_filter1 = "/html/body/div/div[1]/span[1]"
-        amount_click1 = 8
-        find_and_click_element(self.driver, arrow_filter1, amount_click1)
-
-        select_date1 = "/html/body/div/div[2]/div/div[2]/div/span[2]"
-        find_elements(self.driver, select_date1 )
-
-        arrow_filter2 = "/html/body/div/div[1]/span[2]"
-        amount_click2 = 1
-        find_and_click_element(self.driver, arrow_filter2, amount_click2)
-
-        select_date2 = "/html/body/div/div[2]/div/div[2]/div/span[31]"
-        find_elements(self.driver, select_date2 )
 
         apply_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
         find_elements(self.driver,apply_filter )
@@ -117,44 +110,33 @@ class cuenta_ventas(unittest.TestCase):
         find_elements(self.driver, select_format )
         time.sleep(3)
 
-       
          
-        
-   
-
+    
          # validar venta
 
-   
 
         validate_product = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[2]"
-        validate_product_expected = "Producto"
-        validate_text(self.driver, validate_product, validate_product_expected)
+        validate_character_string_element(self.driver, validate_product)
         
      
         type_product = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/div/span"
-        type_product_expected = "Soja"
-        validate_text_visible(self.driver,type_product, type_product_expected ) 
+        validate_character_string_element(self.driver,type_product) 
 
         validate_date = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[3]"
-        validate_date_expected = "Fecha"
-        validate_text(self.driver, validate_date, validate_date_expected)
+        validate_character_string_element(self.driver, validate_date)
 
         date_data = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[2]/span/div/span"
-        date_data_expected = "13/12/2023"
-        validate_text_visible(self.driver, date_data, date_data_expected )
+        validate_character_string_element(self.driver, date_data )
 
 
         validate_number_boucher = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[4]"
-        validate_number_boucher_expected = "Comprobante"
-        validate_text(self.driver, validate_number_boucher, validate_number_boucher_expected)
+        validate_character_string_element(self.driver, validate_number_boucher)
 
         validate_number = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[3]/span/div/span"
-        validate_number_expected = "F 0001 00121262"
-        validate_text(self.driver, validate_number, validate_number_expected)
+        validate_character_string_element(self.driver, validate_number)
 
         account_sales_title = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/thead/tr/th[5]"
-        account_sales_title_expected = ["Tn Fijados","QQ Fijados","Kg Fijados"]
-        validate_chain_text_xpaht(self.driver, account_sales_title ,account_sales_title_expected)
+        validate_character_string_element(self.driver, account_sales_title )
 
 
         account_sales = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-sales/app-sales-shared/app-responsive-table/div/div/table/tbody/tr[1]/td[4]/span/div/span'

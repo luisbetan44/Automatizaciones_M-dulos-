@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobantectacte-20241014162011" tests="1" file=".py" time="48.862" timestamp="2024-10-14T16:21:00" failures="0" errors="0" skipped="0">
+	<testcase classname="comprobantectacte" name="test_vouchers_ctacte" time="48.862" timestamp="2024-10-14T16:21:00" file="comproCtaCte.py" line="15">
+		<system-out><![CDATA[El texto encontrado es  COMPROBANTES
+¡Elemento encontrado y clickeado 10 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Mis Comprobantes
+El texto no fue encontrado NC 1053 00000779
+El texto no fue encontrado FC 1051 00014531
+El texto encontrado es  El comprobante seleccionado no se encuentra para su descarga
+]]></system-out>
+	</testcase>
+</testsuite>

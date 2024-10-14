@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="HomeTenant-20241014163552" tests="1" file=".py" time="21.843" timestamp="2024-10-14T16:36:14" failures="0" errors="0" skipped="0">
+	<testcase classname="HomeTenant" name="test_start_tenant" time="21.843" timestamp="2024-10-14T16:36:14" file="Home.py" line="19">
+		<system-out><![CDATA[El texto encontrado es  Buen día JUAN DEMO!
+El texto no fue encontrado Vencido a hoy
+El texto no fue encontrado ars
+El valor es un carácter numérico. Valor: -222.077.246,57
+El texto no fue encontrado Vencido a hoy
+El texto no fue encontrado usd
+El valor es un carácter numérico. Valor: -25.945,58
+El texto no fue encontrado A Vencer
+El texto no fue encontrado ars
+El valor es un carácter numérico. Valor: -286.131.590,64
+El texto no fue encontrado A Vencer
+El texto no fue encontrado usd
+El valor es un carácter numérico. Valor: -857.807,28
+]]></system-out>
+	</testcase>
+</testsuite>
