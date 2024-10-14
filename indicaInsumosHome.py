@@ -19,7 +19,7 @@ class IndicaInsumosHome(unittest.TestCase):
         # Utilizar métodos de LoginHelper para el inicio de sesión
         self.login_helper.login("admingd@silohub.ag", "G@viglio123")
         self.login_helper.select_tenant()
-        self.login_helper.search_and_select_account("484")
+        self.login_helper.search_and_select_account("1023")
 
        
       
@@ -29,11 +29,11 @@ class IndicaInsumosHome(unittest.TestCase):
         
      ##validar titulos de los indicadores 
        
-        titlle_value1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/p"
+        titlle_value1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[1]/p"
         value_expected1 = ["Indicadores de Insumos (correspondiente a los últimos  6 meses)","Indicadores de Insumos (correspondiente a los últimos  12 meses)"]
         validate_chain_text_xpaht(self.driver, titlle_value1, value_expected1)
      
-        titlle_value2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[1]/app-supplies-indicator/div/div[1]/div"
+        titlle_value2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[1]/app-supplies-indicator/div/div[1]/div"
         value_expected2 = "Insumos Pendientes de Retirar"
         validate_text(self.driver, titlle_value2, value_expected2)
         time.sleep(2)
@@ -41,37 +41,37 @@ class IndicaInsumosHome(unittest.TestCase):
 
         # validaciones de los indicadores del grafico 
 
-        produtc_value_primary1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[1]/app-supplies-indicator/div/div[3]/div[1]/div[2]"
+        produtc_value_primary1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[1]/app-supplies-indicator/div/div[3]/div[1]/div[2]"
         produtc_expected1 = ["Semillas Hibrida","Agroquimico","Varios"," Balanceado ", "Fertilizante"]
         validate_chain_text_xpaht(self.driver, produtc_value_primary1,  produtc_expected1)
 
-        product_quantity1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[1]/app-supplies-indicator/div/div[3]/div[1]/div[3]"
+        product_quantity1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[1]/app-supplies-indicator/div/div[3]/div[1]/div[3]"
         validate_character_numeric_element(self.driver,product_quantity1)
 
 
-        titlle_value3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[2]/app-supplies-indicator/div/div[1]/div"
+        titlle_value3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[2]/app-supplies-indicator/div/div[1]/div"
         value_expected3 = "Mercadería Remitida"
         validate_text(self.driver, titlle_value3, value_expected3)
 
-        produtc_value_primary2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[2]/app-supplies-indicator/div/div[3]/div[1]/div[2]"
+        produtc_value_primary2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[2]/app-supplies-indicator/div/div[3]/div[1]/div[2]"
         produtc_expected2 = ["Semillas Hibrida","Agroquimico","Varios"," Balanceado ", "Fertilizante"]
         validate_chain_text_xpaht(self.driver, produtc_value_primary2,  produtc_expected2)
 
-        product_quantity2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[2]/app-supplies-indicator/div/div[3]/div[1]/div[3]"
+        product_quantity2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[2]/app-supplies-indicator/div/div[3]/div[1]/div[3]"
         validate_character_numeric_element(self.driver,product_quantity2)
         
         
-        titlle_value4 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[3]/app-supplies-indicator/div/div[1]/div"
+        titlle_value4 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[3]/app-supplies-indicator/div/div[1]/div"
         value_expected4 = "Mercadería Facturada"
         validate_text(self.driver, titlle_value4, value_expected4)
 
 
 
-        produtc_value_primary2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[3]/app-supplies-indicator/div/div[3]/div[1]/div[2]"
+        produtc_value_primary2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[3]/app-supplies-indicator/div/div[3]/div[1]/div[2]"
         produtc_expected2 = ["Semillas Hibrida","Agroquimico","Varios"," Balanceado ", "Fertilizante", "Diferencia De Cambio"]
         validate_chain_text_xpaht(self.driver, produtc_value_primary2,  produtc_expected2)
 
-        product_quantity3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home/div/div[4]/app-supplies-goods-indicators/div/swiper/div/div[1]/div[3]/app-supplies-indicator/div/div[3]/div[1]/div[3]"
+        product_quantity3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[3]/app-supplies-indicator/div/div[3]/div[1]/div[3]"
         validate_character_numeric_element(self.driver,product_quantity3)
         
 

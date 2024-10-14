@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="IndicaInsumosHome-20241014172050" tests="1" file=".py" time="25.160" timestamp="2024-10-14T17:21:16" failures="0" errors="0" skipped="0">
+	<testcase classname="IndicaInsumosHome" name="test__indicators_home" time="25.160" timestamp="2024-10-14T17:21:16" file="indicaInsumosHome.py" line="18">
+		<system-out><![CDATA[El texto no coincide con los valores esperados. Texto actual: 'Indicadores de Insumos (correspondiente a los últimos 12 meses)'
+El texto encontrado es  Insumos Pendientes de Retirar
+El texto es visible para el usuario: 'Fertilizante'
+El valor es un carácter numérico. Valor: Cant: 220.473,00
+El texto encontrado es  Mercadería Remitida
+El texto es visible para el usuario: 'Fertilizantes'
+El valor es un carácter numérico. Valor: Cant: 1.738.730,00
+El texto encontrado es  Mercadería Facturada
+El texto es visible para el usuario: 'Fertilizantes'
+El valor es un carácter numérico. Valor: Cant: 1.579.190,00
+]]></system-out>
+	</testcase>
+</testsuite>
