@@ -1,19 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="logistOperPrimarias.logistOperPrimarias-failed" tests="1" file="logistOperPrimarias.py" time="149.830" timestamp="2024-09-11T16:54:11" failures="0" errors="1" skipped="0">
-	<testcase classname="logistOperPrimarias.logistOperPrimarias" name="test_Logistics_primary" time="149.830" timestamp="2024-09-11T16:54:11" file="logistOperPrimarias.py" line="22">
-		<error type="AttributeError" message="'NoneType' object has no attribute 'text'"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\logistOperPrimarias.py", line 106, in test_Logistics_primary
-    verify_todate(self.driver,select_todate)
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 16, in verify_todate
-    fecha_elemento = elemento_fecha.text.strip()
-AttributeError: 'NoneType' object has no attribute 'text'
+<testsuite name="logistOperPrimarias.logistOperPrimarias-failed" tests="1" file="logistOperPrimarias.py" time="36.808" timestamp="2024-10-09T16:05:46" failures="0" errors="1" skipped="0">
+	<testcase classname="logistOperPrimarias.logistOperPrimarias" name="test_Logistics_primary" time="36.808" timestamp="2024-10-09T16:05:46" file="logistOperPrimarias.py" line="22">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C9F815]
+	(No symbol) [0x00007FF642C9FA6C]
+	(No symbol) [0x00007FF642CEB917]
+	(No symbol) [0x00007FF642CC733F]
+	(No symbol) [0x00007FF642CE86BC]
+	(No symbol) [0x00007FF642CC70A3]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\logistOperPrimarias.py", line 24, in test_Logistics_primary
+    self.login_sample.login("admingd@silohub.ag", "G@viglio123")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\LoginSample.py", line 10, in login
+    user = find_element_by_id(self.driver, "email")  # asegúrate de pasar self.driver
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C9F815]
+	(No symbol) [0x00007FF642C9FA6C]
+	(No symbol) [0x00007FF642CEB917]
+	(No symbol) [0x00007FF642CC733F]
+	(No symbol) [0x00007FF642CE86BC]
+	(No symbol) [0x00007FF642CC70A3]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+
 ]]></error>
-		<system-out><![CDATA[¡Input encontrado y enviado con éxito!
-Tiempo de espera agotado. El chevron no están presentes o no son clickeables.
-¡Input encontrado y enviado con éxito!
-¡Input encontrado y enviado con éxito!
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-¡Input encontrado y enviado con éxito!
-]]></system-out>
 	</testcase>
 </testsuite>

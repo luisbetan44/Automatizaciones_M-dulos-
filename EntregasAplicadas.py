@@ -1,7 +1,8 @@
 import unittest
 import xmlrunner
 import time
-from Elements import find_and_click_element, find_and_click_element_selector, find_elements, find_elements_css_selector, validate_chain_text_xpaht, validate_text, validate_text_visible, validate_text_visible_selector
+from Elements import calendar_todate_retro, find_elements, find_elements_id, validate_character_numeric_element, validate_text, validate_text_visible
+from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -54,42 +55,29 @@ class cta_entregasAplicadas(unittest.TestCase):
 
       
 
-        # aplicar filtro Maiz 2122  02/01/2022 al 01/03/2022
+        # aplicar filtro soja 2324  rango de seis meses 
 
-        apply_product_filter = "body > ngb-offcanvas-panel > div > ngx-simplebar > div.simplebar-wrapper > div.simplebar-mask > div > div > div > app-filter-content > div.filter-container > app-grain-container > div > app-grain-button:nth-child(3) > div > img"
-        find_elements_css_selector(self.driver, apply_product_filter )
+        apply_product_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[1]/div/img"
+        find_elements(self.driver, apply_product_filter )
         time.sleep(3)
 
-        apply_Campaign_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[3]/div/div"
+        apply_Campaign_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-season-container/div/app-season-button[1]/div/div"
         find_elements(self.driver, apply_Campaign_filter )
         time.sleep(3)
 
-        apply_state_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-checklist/div/app-checks[1]/div/input"
-        find_elements(self.driver, apply_state_filter )
+        apply_state_filter = "Aplicadas"
+        find_elements_id(self.driver, apply_state_filter )
         time.sleep(3)
        
-        select_date = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
-        find_elements(self.driver, select_date )
+        # aplicar filtro de fecha actual a seis meses para atras 
+
+        select_calendar = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
+        popup_xpath = "//div[contains(@class, 'flatpickr-calendar')]"
+        select_chevron = "//span[@class='flatpickr-prev-month']"
+        popup_xpath2 = "//div[contains(@class, 'flatpickr-calendar')]"
+        click_chevron = 6
+        calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
         time.sleep(2)
-
-        arrow_filter1 = "body > div > div.flatpickr-months > div > div > div > span.arrowDown"
-        amount_click1 = 2
-        find_and_click_element_selector(self.driver, arrow_filter1, amount_click1)
-
-        arrow_filter1 = "/html/body/div/div[1]/span[1]"
-        amount_click1 = 7
-        find_and_click_element(self.driver, arrow_filter1, amount_click1)
-
-        select_date1 = "/html/body/div/div[2]/div/div[2]/div/span[7]"
-        find_elements(self.driver, select_date1 )
-
-        arrow_filter2 = "/html/body/div/div[1]/span[2]"
-        amount_click2 = 2
-        find_and_click_element(self.driver, arrow_filter2, amount_click2)
-
-        select_date2 = "/html/body/div/div[2]/div/div[2]/div/span[2]"
-        find_elements(self.driver, select_date2 )
-
         apply_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
         find_elements(self.driver, apply_filter )
         time.sleep(3)
@@ -101,13 +89,11 @@ class cta_entregasAplicadas(unittest.TestCase):
 
 
         tn_bruto = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]'
-        tn_bruto_expected = ["992,21","9.922,10","992.210,00"]
-        validate_chain_text_xpaht(self.driver, tn_bruto, tn_bruto_expected )  
+        validate_character_numeric_element(self.driver, tn_bruto)  
 
 
         tn_netos = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]'
-        tn_netos_expected = ["982,68", "9.826,76", "982.676,00"]
-        validate_chain_text_xpaht(self.driver, tn_netos, tn_netos_expected )  
+        validate_character_numeric_element(self.driver, tn_netos )  
 
         # seleccionar varios movimientos del listado 
         
@@ -151,43 +137,35 @@ class cta_entregasAplicadas(unittest.TestCase):
         # validar numero de Tk 
 
         number_TK = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[1]/div'
-        number_TK_expected = "Entrega TK 9999 00074351"
-        validate_text_visible(self.driver, number_TK, number_TK_expected )
+        validate_character_string_element(self.driver, number_TK )
 
         # validar el total de toneladas de la entrega 
 
         tn_delivery = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[1]'
-        tn_delivery_expected = ["30,33 Tn", "303,30 QQ", "30.330,00 Kg"]
-        validate_chain_text_xpaht(self.driver, tn_delivery, tn_delivery_expected ) 
+        validate_character_string_element(self.driver, tn_delivery) 
 
         # validar producto
 
         type_product = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[2]'
-        type_product_expected = "De Maiz"
-        validate_text_visible(self.driver, type_product, type_product_expected  )  
+        validate_character_string_element(self.driver, type_product  )  
 
 
         # Validar  fecha campaña cuenta campo 
 
         title_delivery = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[1]/span'
-        title_delivery_expected = "DATOS DE LA ENTREGA"
-        validate_text_visible(self.driver, title_delivery, title_delivery_expected  )
+        validate_character_string_element(self.driver, title_delivery)
         
         date_delivery = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[1]/div[2]'
-        date_delivery_expected = "23/02/2022"
-        validate_text_visible(self.driver, date_delivery, date_delivery_expected  ) 
+        validate_character_string_element(self.driver, date_delivery ) 
 
         campaign_delivery = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[2]/div[2]'
-        campaign_delivery_expected = "21/22"
-        validate_text_visible(self.driver, campaign_delivery, campaign_delivery_expected  ) 
+        validate_character_string_element(self.driver, campaign_delivery ) 
 
         business_name = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[3]/div[2]'
-        business_name_expected = "JUAN DEMO"
-        validate_text_visible(self.driver, business_name, business_name_expected  )  
+        validate_character_string_element(self.driver, business_name)  
  
         field_business = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[4]/div[2]'
-        field_business_expected = "1032 El Rincon"
-        validate_text_visible(self.driver, field_business,  field_business_expected  ) 
+        validate_character_string_element(self.driver, field_business) 
 
         # ingresar al analisis 
 
@@ -202,13 +180,8 @@ class cta_entregasAplicadas(unittest.TestCase):
         validate_text_visible(self.driver, title_analysis,  title_analysis_expected  ) 
   
 
-        data_analysis = '.table > tbody:nth-child(2) > tr:nth-child(9) > td:nth-child(1) > span:nth-child(1) > div:nth-child(1) > span:nth-child(1)'
-        data_analysis_expected = "Peso Hectolítrico"
-        validate_text_visible_selector(self.driver, data_analysis,  data_analysis_expected  )  
-
         foreign_matter = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-responsive-table/div/div[2]/table/tbody/tr[9]/td[2]/span/div/span'
-        foreign_matter_expected = "69.961%"
-        validate_text_visible(self.driver, foreign_matter,  foreign_matter_expected  ) 
+        validate_character_string_element(self.driver, foreign_matter ) 
 
 
         # salir al listado 

@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCtoDtalEntVta.detalle_ctro_entregaVentas-failed" tests="1" file="CtaCtoDtalEntVta.py" time="83.222" timestamp="2024-09-11T16:08:52" failures="0" errors="0" skipped="0">
-	<testcase classname="CtaCtoDtalEntVta.detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="83.222" timestamp="2024-09-11T16:08:52" file="CtaCtoDtalEntVta.py" line="22">
-		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+<testsuite name="CtaCtoDtalEntVta.detalle_ctro_entregaVentas-failed" tests="1" file="CtaCtoDtalEntVta.py" time="112.227" timestamp="2024-10-09T15:30:34" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCtoDtalEntVta.detalle_ctro_entregaVentas" name="test_detail_deriverySales" time="112.227" timestamp="2024-10-09T15:30:34" file="CtaCtoDtalEntVta.py" line="22">
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 3 veces con éxito!
 ¡Elemento encontrado y clickeado 7 veces con éxito!
 ¡Elemento encontrado y clickeado 3 veces con éxito!
 El texto encontrado es  Estado De Mis Contratos

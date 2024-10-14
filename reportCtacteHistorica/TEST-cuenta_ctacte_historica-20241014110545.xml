@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_historica-20241014110545" tests="1" file=".py" time="57.963" timestamp="2024-10-14T11:06:43" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ctacte_historica" name="test_ctacte_historica" time="57.963" timestamp="2024-10-14T11:06:43" file="ctacte_histórica.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
+El valor es un carácter numérico. Valor: 37.929.046,55
+El valor es un carácter numérico. Valor: 391.090,75
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento ND 1052 00127588
+El valor es un string. Valor: - ARS 46.478,70
+El valor es un string. Valor: DIFERENCIA-
+]]></system-out>
+	</testcase>
+</testsuite>

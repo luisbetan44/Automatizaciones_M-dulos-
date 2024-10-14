@@ -1,78 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCtoDtalLiquidaciones.detalle_cto_liquidaciones-failed" tests="1" file="CtaCtoDtalLiquidaciones.py" time="60.404" timestamp="2024-09-11T16:13:07" failures="0" errors="1" skipped="0">
-	<testcase classname="CtaCtoDtalLiquidaciones.detalle_cto_liquidaciones" name="test_detail_liquidations" time="60.404" timestamp="2024-09-11T16:13:07" file="CtaCtoDtalLiquidaciones.py" line="22">
-		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (680, 1104)
-  (Session info: chrome=128.0.6613.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710BB6C1E]
-	(No symbol) [0x00007FF710BB4692]
-	(No symbol) [0x00007FF710BB1BAB]
-	(No symbol) [0x00007FF710BB0DC5]
-	(No symbol) [0x00007FF710BA2D81]
-	(No symbol) [0x00007FF710BD66EA]
-	(No symbol) [0x00007FF710BA26C6]
-	(No symbol) [0x00007FF710BD6900]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalLiquidaciones.py", line 126, in test_detail_liquidations
-    find_elements_id(self.driver, select_liquidations )
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 47, in find_elements_id
-    select_nex_button.click()
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
-    self._execute(Command.CLICK_ELEMENT)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
-    return self._parent.execute(command, params)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (680, 1104)
-  (Session info: chrome=128.0.6613.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710BB6C1E]
-	(No symbol) [0x00007FF710BB4692]
-	(No symbol) [0x00007FF710BB1BAB]
-	(No symbol) [0x00007FF710BB0DC5]
-	(No symbol) [0x00007FF710BA2D81]
-	(No symbol) [0x00007FF710BD66EA]
-	(No symbol) [0x00007FF710BA26C6]
-	(No symbol) [0x00007FF710BD6900]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
-
-]]></error>
-		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+<testsuite name="CtaCtoDtalLiquidaciones.detalle_cto_liquidaciones-failed" tests="1" file="CtaCtoDtalLiquidaciones.py" time="96.687" timestamp="2024-10-09T15:35:39" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCtoDtalLiquidaciones.detalle_cto_liquidaciones" name="test_detail_liquidations" time="96.687" timestamp="2024-10-09T15:35:39" file="CtaCtoDtalLiquidaciones.py" line="22">
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 3 veces con éxito!
 ¡Elemento encontrado y clickeado 7 veces con éxito!
 ¡Elemento encontrado y clickeado 3 veces con éxito!
 El texto encontrado es  Estado De Mis Contratos
@@ -81,6 +11,26 @@ El texto fue validado correctamente: Contrato 108169
 El texto es visible para el usuario
 El texto fue validado correctamente: De Maiz
 El texto es visible para el usuario: 'De 500.000,00 Kg Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Listado de liquidaciones
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 29/03/2022
+El texto es visible para el usuario
+El texto fue validado correctamente: Comprobante
+El valor es un carácter numérico. Valor: LC 3302-20433715
+El texto es visible para el usuario
+El texto fue validado correctamente: Tn Totales
+El valor es un carácter numérico. Valor: 30.203
+El texto es visible para el usuario
+El texto fue validado correctamente: Precio en pesos
+El valor es un carácter numérico. Valor: 656.324,65
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha de pago
+El texto es visible para el usuario
+El texto fue validado correctamente: 31/03/2022
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[4]/app-contract-closeouts/app-responsive-table/div/div/table/tbody/tr[1]/th/input' seleccionado con éxito!
 ]]></system-out>
 	</testcase>
 </testsuite>

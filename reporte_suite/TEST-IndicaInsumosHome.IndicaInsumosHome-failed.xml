@@ -1,16 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="indicaInsumosHome.IndicaInsumosHome-failed" tests="1" file="indicaInsumosHome.py" time="55.729" timestamp="2024-09-11T15:47:53" failures="0" errors="0" skipped="0">
-	<testcase classname="indicaInsumosHome.IndicaInsumosHome" name="test__indicators_home" time="55.729" timestamp="2024-09-11T15:47:53" file="indicaInsumosHome.py" line="18">
+<testsuite name="indicaInsumosHome.IndicaInsumosHome-failed" tests="1" file="indicaInsumosHome.py" time="102.091" timestamp="2024-10-09T15:17:29" failures="0" errors="1" skipped="0">
+	<testcase classname="indicaInsumosHome.IndicaInsumosHome" name="test__indicators_home" time="102.091" timestamp="2024-10-09T15:17:29" file="indicaInsumosHome.py" line="18">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\indicaInsumosHome.py", line 46, in test__indicators_home
+    validate_chain_text_xpaht(self.driver, produtc_value_primary1,  produtc_expected1)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1117, in validate_chain_text_xpaht
+    text_element = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 156, in _predicate
+    return _element_if_visible(driver.find_element(*locator))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
 		<system-out><![CDATA[Tiempo de espera agotado. El elemento no se ha vuelto visible.
-El texto encontrado es  Insumos Pendientes de Retirar
-El texto es visible para el usuario: 'Fertilizante'
-El valor es un carácter numérico. Valor: Cant: 56.768,00
-El texto encontrado es  Mercadería Remitida
-El texto es visible para el usuario: 'Fertilizantes'
-El valor es un carácter numérico. Valor: Cant: 242.399,00
-El texto encontrado es  Mercadería Facturada
-El texto es visible para el usuario: 'Fertilizantes'
-El valor es un carácter numérico. Valor: Cant: 148.599,00
+Tiempo de espera agotado. El texto por xpaht no está presente.
 ]]></system-out>
 	</testcase>
 </testsuite>

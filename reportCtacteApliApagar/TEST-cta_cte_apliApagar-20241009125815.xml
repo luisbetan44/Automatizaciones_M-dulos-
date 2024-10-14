@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliApagar-20241009125815" tests="1" file=".py" time="26.596" timestamp="2024-10-09T12:58:42" failures="0" errors="1" skipped="0">
+	<testcase classname="cta_cte_apliApagar" name="test_ctacte_apliApagar" time="26.596" timestamp="2024-10-09T12:58:42" file="ctacte_ApliApagar.py" line="18">
+		<error type="ElementNotInteractableException" message="Message: element not interactable: element has zero size
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B8A8B675+29573]
+	(No symbol) [0x00007FF6B8A004A0]
+	(No symbol) [0x00007FF6B88BB6EA]
+	(No symbol) [0x00007FF6B8910FD4]
+	(No symbol) [0x00007FF6B89036BE]
+	(No symbol) [0x00007FF6B89372FA]
+	(No symbol) [0x00007FF6B8902FF6]
+	(No symbol) [0x00007FF6B8937510]
+	(No symbol) [0x00007FF6B89586BC]
+	(No symbol) [0x00007FF6B89370A3]
+	(No symbol) [0x00007FF6B89012DF]
+	(No symbol) [0x00007FF6B8902441]
+	GetHandleVerifier [0x00007FF6B8DBC5BD+3375821]
+	GetHandleVerifier [0x00007FF6B8E079B7+3684039]
+	GetHandleVerifier [0x00007FF6B8DFCDDB+3640043]
+	GetHandleVerifier [0x00007FF6B8B4B7F6+816390]
+	(No symbol) [0x00007FF6B8A0B7AF]
+	(No symbol) [0x00007FF6B8A075D4]
+	(No symbol) [0x00007FF6B8A07770]
+	(No symbol) [0x00007FF6B89F65CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_ApliApagar.py", line 27, in test_ctacte_apliApagar
+    find_elements(self.driver, select_menu_contrat)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementNotInteractableException: Message: element not interactable: element has zero size
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B8A8B675+29573]
+	(No symbol) [0x00007FF6B8A004A0]
+	(No symbol) [0x00007FF6B88BB6EA]
+	(No symbol) [0x00007FF6B8910FD4]
+	(No symbol) [0x00007FF6B89036BE]
+	(No symbol) [0x00007FF6B89372FA]
+	(No symbol) [0x00007FF6B8902FF6]
+	(No symbol) [0x00007FF6B8937510]
+	(No symbol) [0x00007FF6B89586BC]
+	(No symbol) [0x00007FF6B89370A3]
+	(No symbol) [0x00007FF6B89012DF]
+	(No symbol) [0x00007FF6B8902441]
+	GetHandleVerifier [0x00007FF6B8DBC5BD+3375821]
+	GetHandleVerifier [0x00007FF6B8E079B7+3684039]
+	GetHandleVerifier [0x00007FF6B8DFCDDB+3640043]
+	GetHandleVerifier [0x00007FF6B8B4B7F6+816390]
+	(No symbol) [0x00007FF6B8A0B7AF]
+	(No symbol) [0x00007FF6B8A075D4]
+	(No symbol) [0x00007FF6B8A07770]
+	(No symbol) [0x00007FF6B89F65CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>

@@ -1,78 +1,62 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="finanzasPagos.finanzaspagos-failed" tests="1" file="finanzasPagos.py" time="129.981" timestamp="2024-09-11T16:51:39" failures="0" errors="1" skipped="0">
-	<testcase classname="finanzasPagos.finanzaspagos" name="test_finance_payment" time="129.981" timestamp="2024-09-11T16:51:39" file="finanzasPagos.py" line="23">
-		<error type="InvalidSelectorException" message="Message: invalid selector
-from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression #layout-wrapper &gt; div &gt; div &gt; div &gt; app-payment-collection-detail-main &gt; div &gt; div &gt; div:nth-child(2) &gt; app-totalizer-forecast &gt; div &gt; div &gt; div.col-9.row.totalizer-values &gt; div:nth-child(2) &gt; span because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '#layout-wrapper &gt; div &gt; div &gt; div &gt; app-payment-collection-detail-main &gt; div &gt; div &gt; div:nth-child(2) &gt; app-totalizer-forecast &gt; div &gt; div &gt; div.col-9.row.totalizer-values &gt; div:nth-child(2) &gt; span' is not a valid XPath expression.&quot;}
-  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+<testsuite name="finanzasPagos.finanzaspagos-failed" tests="1" file="finanzasPagos.py" time="45.518" timestamp="2024-10-09T16:05:07" failures="0" errors="1" skipped="0">
+	<testcase classname="finanzasPagos.finanzaspagos" name="test_finance_payment" time="45.518" timestamp="2024-10-09T16:05:07" file="finanzasPagos.py" line="23">
+		<error type="TimeoutException" message="Message: 
 Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710B61CE3]
-	(No symbol) [0x00007FF710B64081]
-	(No symbol) [0x00007FF710B64120]
-	(No symbol) [0x00007FF710BAEB5C]
-	(No symbol) [0x00007FF710BAF23C]
-	(No symbol) [0x00007FF710BF97C7]
-	(No symbol) [0x00007FF710BD672F]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C9F815]
+	(No symbol) [0x00007FF642C9FA6C]
+	(No symbol) [0x00007FF642CEB917]
+	(No symbol) [0x00007FF642CC733F]
+	(No symbol) [0x00007FF642CE86BC]
+	(No symbol) [0x00007FF642CC70A3]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
 "><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\finanzasPagos.py", line 124, in test_finance_payment
-    verify_todate(self.driver,select_todate)
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 15, in verify_todate
-    elemento_fecha = driver.find_element(By.XPATH, xpath)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
-from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression #layout-wrapper > div > div > div > app-payment-collection-detail-main > div > div > div:nth-child(2) > app-totalizer-forecast > div > div > div.col-9.row.totalizer-values > div:nth-child(2) > span because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '#layout-wrapper > div > div > div > app-payment-collection-detail-main > div > div > div:nth-child(2) > app-totalizer-forecast > div > div > div.col-9.row.totalizer-values > div:nth-child(2) > span' is not a valid XPath expression."}
-  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\finanzasPagos.py", line 27, in test_finance_payment
+    self.login_helper.search_and_select_account("1023")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\loginhelper.py", line 24, in search_and_select_account
+    input_element = find_element_by_id(self.driver, "search-options")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
 Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710B61CE3]
-	(No symbol) [0x00007FF710B64081]
-	(No symbol) [0x00007FF710B64120]
-	(No symbol) [0x00007FF710BAEB5C]
-	(No symbol) [0x00007FF710BAF23C]
-	(No symbol) [0x00007FF710BF97C7]
-	(No symbol) [0x00007FF710BD672F]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C9F815]
+	(No symbol) [0x00007FF642C9FA6C]
+	(No symbol) [0x00007FF642CEB917]
+	(No symbol) [0x00007FF642CC733F]
+	(No symbol) [0x00007FF642CE86BC]
+	(No symbol) [0x00007FF642CC70A3]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
 
 ]]></error>
-		<system-out><![CDATA[Tiempo de espera agotado. El texto por xpaht no está presente.
-¡Input encontrado y enviado con éxito!
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-]]></system-out>
 	</testcase>
 </testsuite>

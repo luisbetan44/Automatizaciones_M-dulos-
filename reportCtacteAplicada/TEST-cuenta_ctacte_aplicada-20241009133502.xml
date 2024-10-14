@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_aplicada-20241009133502" tests="1" file=".py" time="66.663" timestamp="2024-10-09T13:36:09" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="66.663" timestamp="2024-10-09T13:36:09" file="ctacte_aplicada15 diasV.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -85.738.427,28
+El valor es un carácter numérico. Valor: -85.738.427,28
+El valor es un carácter numérico. Valor: 0,00
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento FC 1118 00082264
+El valor es un string. Valor: - ARS 12.082.809,70
+El valor es un string. Valor: GASTOS COMER. S/ 373030 KGRS. Soja Cosecha 2324-
+]]></system-out>
+	</testcase>
+</testsuite>

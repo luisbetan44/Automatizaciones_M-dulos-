@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliApagar-20241009113756" tests="2" file=".py" time="123.052" timestamp="2024-10-09T11:39:59" failures="0" errors="2" skipped="0">
+	<testcase classname="cta_cte_apliApagar" name="test_ctacte_apliApagar" time="0.000" timestamp="0001-01-01T00:00:00" file="ctacte_ApliApagar.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'text'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_ApliApagar.py", line 93, in test_ctacte_apliApagar
+    validate_character_numeric_element(self.driver, total_to_pay)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1160, in validate_character_numeric_element
+    valor = elemento.text
+AttributeError: 'NoneType' object has no attribute 'text'
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 10 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+	<testcase classname="cta_cte_apliApagar" name="test_ctacte_apliApagar" time="123.052" timestamp="2024-10-09T11:39:59" file="ctacte_ApliApagar.py" line="17">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF702F3B675+29573]
+	(No symbol) [0x00007FF702EB04A0]
+	(No symbol) [0x00007FF702D6B6EA]
+	(No symbol) [0x00007FF702D541E7]
+	(No symbol) [0x00007FF702D51D65]
+	(No symbol) [0x00007FF702D525BF]
+	(No symbol) [0x00007FF702D6BD03]
+	(No symbol) [0x00007FF702D3F7BD]
+	(No symbol) [0x00007FF702DF6499]
+	(No symbol) [0x00007FF702DE72C0]
+	(No symbol) [0x00007FF702DB12DF]
+	(No symbol) [0x00007FF702DB2441]
+	GetHandleVerifier [0x00007FF70326C5BD+3375821]
+	GetHandleVerifier [0x00007FF7032B79B7+3684039]
+	GetHandleVerifier [0x00007FF7032ACDDB+3640043]
+	GetHandleVerifier [0x00007FF702FFB7F6+816390]
+	(No symbol) [0x00007FF702EBB7AF]
+	(No symbol) [0x00007FF702EB75D4]
+	(No symbol) [0x00007FF702EB7770]
+	(No symbol) [0x00007FF702EA65CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_ApliApagar.py", line 167, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF702F3B675+29573]
+	(No symbol) [0x00007FF702EB04A0]
+	(No symbol) [0x00007FF702D6B6EA]
+	(No symbol) [0x00007FF702D541E7]
+	(No symbol) [0x00007FF702D51D65]
+	(No symbol) [0x00007FF702D525BF]
+	(No symbol) [0x00007FF702D6BD03]
+	(No symbol) [0x00007FF702D3F7BD]
+	(No symbol) [0x00007FF702DF6499]
+	(No symbol) [0x00007FF702DE72C0]
+	(No symbol) [0x00007FF702DB12DF]
+	(No symbol) [0x00007FF702DB2441]
+	GetHandleVerifier [0x00007FF70326C5BD+3375821]
+	GetHandleVerifier [0x00007FF7032B79B7+3684039]
+	GetHandleVerifier [0x00007FF7032ACDDB+3640043]
+	GetHandleVerifier [0x00007FF702FFB7F6+816390]
+	(No symbol) [0x00007FF702EBB7AF]
+	(No symbol) [0x00007FF702EB75D4]
+	(No symbol) [0x00007FF702EB7770]
+	(No symbol) [0x00007FF702EA65CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 10 veces con éxito!
+¡Elemento encontrado y clickeado 2 veces con éxito!
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

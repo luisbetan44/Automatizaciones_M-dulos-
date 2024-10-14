@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_entregasAplicadas-20241014122206" tests="2" file=".py" time="57.463" timestamp="2024-10-14T12:23:03" failures="0" errors="2" skipped="0">
+	<testcase classname="cta_entregasAplicadas" name="test_delivery_applied" time="0.000" timestamp="0001-01-01T00:00:00" file="EntregasAplicadas.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasAplicadas.py", line 101, in test_delivery_applied
+    find_elements(self.driver, select_movements1 )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: 0,00
+]]></system-out>
+	</testcase>
+	<testcase classname="cta_entregasAplicadas" name="test_delivery_applied" time="57.463" timestamp="2024-10-14T12:23:03" file="EntregasAplicadas.py" line="23">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF64AFEB095+29557]
+	(No symbol) [0x00007FF64AF5FA50]
+	(No symbol) [0x00007FF64AE1B56A]
+	(No symbol) [0x00007FF64ADEFCC5]
+	(No symbol) [0x00007FF64AE9EE07]
+	(No symbol) [0x00007FF64AEA6398]
+	(No symbol) [0x00007FF64AE97150]
+	(No symbol) [0x00007FF64AE6116F]
+	(No symbol) [0x00007FF64AE622D1]
+	GetHandleVerifier [0x00007FF64B31C96D+3378253]
+	GetHandleVerifier [0x00007FF64B368497+3688311]
+	GetHandleVerifier [0x00007FF64B35D1CB+3642539]
+	GetHandleVerifier [0x00007FF64B0AA6B6+813462]
+	(No symbol) [0x00007FF64AF6AB5F]
+	(No symbol) [0x00007FF64AF66B74]
+	(No symbol) [0x00007FF64AF66D10]
+	(No symbol) [0x00007FF64AF55C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasAplicadas.py", line 205, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF64AFEB095+29557]
+	(No symbol) [0x00007FF64AF5FA50]
+	(No symbol) [0x00007FF64AE1B56A]
+	(No symbol) [0x00007FF64ADEFCC5]
+	(No symbol) [0x00007FF64AE9EE07]
+	(No symbol) [0x00007FF64AEA6398]
+	(No symbol) [0x00007FF64AE97150]
+	(No symbol) [0x00007FF64AE6116F]
+	(No symbol) [0x00007FF64AE622D1]
+	GetHandleVerifier [0x00007FF64B31C96D+3378253]
+	GetHandleVerifier [0x00007FF64B368497+3688311]
+	GetHandleVerifier [0x00007FF64B35D1CB+3642539]
+	GetHandleVerifier [0x00007FF64B0AA6B6+813462]
+	(No symbol) [0x00007FF64AF6AB5F]
+	(No symbol) [0x00007FF64AF66B74]
+	(No symbol) [0x00007FF64AF66D10]
+	(No symbol) [0x00007FF64AF55C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: 0,00
+]]></system-out>
+	</testcase>
+</testsuite>

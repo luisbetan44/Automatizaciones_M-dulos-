@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_apliAcobrar-20241009124659" tests="1" file=".py" time="51.687" timestamp="2024-10-09T12:47:51" failures="0" errors="1" skipped="0">
+	<testcase classname="cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="51.687" timestamp="2024-10-09T12:47:51" file="ctacte_apliAcobrar.py" line="18">
+		<error type="InvalidSelectorException" message="Message: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression /html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]0 because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]0' is not a valid XPath expression.&quot;}
+  (Session info: chrome=129.0.6668.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B8A8B675+29573]
+	(No symbol) [0x00007FF6B8A004A0]
+	(No symbol) [0x00007FF6B88BB6EA]
+	(No symbol) [0x00007FF6B88C22BE]
+	(No symbol) [0x00007FF6B88C4637]
+	(No symbol) [0x00007FF6B88C46F0]
+	(No symbol) [0x00007FF6B890F38F]
+	(No symbol) [0x00007FF6B890FA6C]
+	(No symbol) [0x00007FF6B895B917]
+	(No symbol) [0x00007FF6B893733F]
+	(No symbol) [0x00007FF6B89586BC]
+	(No symbol) [0x00007FF6B89370A3]
+	(No symbol) [0x00007FF6B89012DF]
+	(No symbol) [0x00007FF6B8902441]
+	GetHandleVerifier [0x00007FF6B8DBC5BD+3375821]
+	GetHandleVerifier [0x00007FF6B8E079B7+3684039]
+	GetHandleVerifier [0x00007FF6B8DFCDDB+3640043]
+	GetHandleVerifier [0x00007FF6B8B4B7F6+816390]
+	(No symbol) [0x00007FF6B8A0B7AF]
+	(No symbol) [0x00007FF6B8A075D4]
+	(No symbol) [0x00007FF6B8A07770]
+	(No symbol) [0x00007FF6B89F65CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_apliAcobrar.py", line 141, in test_ctacte_aplicada
+    validate_character_string_element(self.driver, balance_movements )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 28, in validate_character_string_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression /html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]0 because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]0' is not a valid XPath expression."}
+  (Session info: chrome=129.0.6668.90); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6B8A8B675+29573]
+	(No symbol) [0x00007FF6B8A004A0]
+	(No symbol) [0x00007FF6B88BB6EA]
+	(No symbol) [0x00007FF6B88C22BE]
+	(No symbol) [0x00007FF6B88C4637]
+	(No symbol) [0x00007FF6B88C46F0]
+	(No symbol) [0x00007FF6B890F38F]
+	(No symbol) [0x00007FF6B890FA6C]
+	(No symbol) [0x00007FF6B895B917]
+	(No symbol) [0x00007FF6B893733F]
+	(No symbol) [0x00007FF6B89586BC]
+	(No symbol) [0x00007FF6B89370A3]
+	(No symbol) [0x00007FF6B89012DF]
+	(No symbol) [0x00007FF6B8902441]
+	GetHandleVerifier [0x00007FF6B8DBC5BD+3375821]
+	GetHandleVerifier [0x00007FF6B8E079B7+3684039]
+	GetHandleVerifier [0x00007FF6B8DFCDDB+3640043]
+	GetHandleVerifier [0x00007FF6B8B4B7F6+816390]
+	(No symbol) [0x00007FF6B8A0B7AF]
+	(No symbol) [0x00007FF6B8A075D4]
+	(No symbol) [0x00007FF6B8A07770]
+	(No symbol) [0x00007FF6B89F65CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: 683.907.064,57
+El valor es un carácter numérico. Valor: 683.175.535,80
+El valor es un carácter numérico. Valor: 3.511,90
+El texto encontrado es  CUENTA CORRIENTE
+El valor no es un carácter alfabético. Valor: Movimiento RR 0011 00087914
+]]></system-out>
+	</testcase>
+</testsuite>

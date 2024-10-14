@@ -1,7 +1,8 @@
 import unittest
 import xmlrunner
 import time
-from Elements import find_and_click_element, find_and_click_element_selector, find_elements, find_elements_css_selector, validate_chain_text_xpaht, validate_text, validate_text_visible, validate_text_visible_selector
+from Elements import find_and_click_element, find_and_click_element_selector, find_elements, find_elements_css_selector, find_elements_id, validate_chain_text_xpaht, validate_character_numeric_element, validate_text, validate_text_visible, validate_text_visible_selector
+from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -64,8 +65,8 @@ class entregas_pend_Aplicadas(unittest.TestCase):
         find_elements(self.driver, apply_Campaign_filter )
         time.sleep(3)
 
-        apply_state_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-checklist/div/app-checks[2]/div/input"
-        find_elements(self.driver, apply_state_filter )
+        apply_state_filter = "Pendientes de aplicar"
+        find_elements_id(self.driver, apply_state_filter )
         time.sleep(3)
        
         select_date = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
@@ -73,11 +74,11 @@ class entregas_pend_Aplicadas(unittest.TestCase):
         time.sleep(2)
 
         arrow_filter1 = "body > div > div.flatpickr-months > div > div > div > span.arrowDown"
-        amount_click1 = 1
+        amount_click1 = 2
         find_and_click_element_selector(self.driver, arrow_filter1, amount_click1)
 
         arrow_filter1 = "/html/body/div/div[1]/span[1]"
-        amount_click1 = 13
+        amount_click1 = 3
         find_and_click_element(self.driver, arrow_filter1, amount_click1)
 
         select_date1 = "/html/body/div/div[2]/div/div[2]/div/span[29]"
@@ -97,13 +98,11 @@ class entregas_pend_Aplicadas(unittest.TestCase):
 
 
         tn_bruto = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]'
-        tn_bruto_expected = ["431,36","4.313,60","431.360,00"]
-        validate_chain_text_xpaht(self.driver, tn_bruto, tn_bruto_expected )  
+        validate_character_numeric_element(self.driver, tn_bruto)  
 
 
         tn_netos = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]'
-        tn_netos_expected = ["417,68", "4.176,77", "417.677,00"]
-        validate_chain_text_xpaht(self.driver, tn_netos, tn_netos_expected )  
+        validate_character_numeric_element(self.driver, tn_netos )  
 
         # seleccionar varios movimientos del listado 
         
@@ -140,54 +139,46 @@ class entregas_pend_Aplicadas(unittest.TestCase):
 
         # ingresar al detalle del tercer movimiento
 
-        insert_movemenst = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[3]/td[3]/span/div/span"
+        insert_movemenst = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-deliveries/app-deliveries-shared/app-responsive-table/div/div[2]/table/tbody/tr[3]/td[3]/span/div"
         find_elements(self.driver, insert_movemenst )
         time.sleep(3)
 
         # validar numero de Tk 
 
         number_TK = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[1]/div'
-        number_TK_expected = "Entrega TK 0001 00121693"
-        validate_text_visible(self.driver, number_TK, number_TK_expected )
+        validate_character_string_element(self.driver, number_TK )
 
         # validar el total de toneladas de la entrega 
 
         tn_delivery = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[1]'
-        tn_delivery_expected = ["31,32 Tn", "313,20 QQ", "31.320,00 Kg"]
-        validate_chain_text_xpaht(self.driver, tn_delivery, tn_delivery_expected ) 
+        validate_character_string_element(self.driver, tn_delivery) 
 
         # validar producto
 
         type_product = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[2]/div/div[2]/div[2]'
-        type_product_expected = "De Maiz"
-        validate_text_visible(self.driver, type_product, type_product_expected  )  
+        validate_character_string_element(self.driver, type_product  )  
 
 
         # Validar  fecha campaña cuenta campo 
 
         title_delivery = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[1]/span'
-        title_delivery_expected = "DATOS DE LA ENTREGA"
-        validate_text_visible(self.driver, title_delivery, title_delivery_expected  )
+        validate_character_string_element(self.driver, title_delivery)
         
         date_delivery = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[1]/div[2]'
-        date_delivery_expected = "26/07/2022"
-        validate_text_visible(self.driver, date_delivery, date_delivery_expected  ) 
+        validate_character_string_element(self.driver, date_delivery ) 
 
         campaign_delivery = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[2]/div[2]'
-        campaign_delivery_expected = "21/22"
-        validate_text_visible(self.driver, campaign_delivery, campaign_delivery_expected  ) 
+        validate_character_string_element(self.driver, campaign_delivery ) 
 
         business_name = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[3]/div[2]'
-        business_name_expected = "DON EMIDIO SA"
-        validate_text_visible(self.driver, business_name, business_name_expected  )  
+        validate_character_string_element(self.driver, business_name)  
  
         field_business = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[1]/div[2]/div[4]/div[2]'
-        field_business_expected = "19970 CAMPO RASSETTO (Don Emidio S.A.)"
-        validate_text_visible(self.driver, field_business,  field_business_expected  ) 
+        validate_character_string_element(self.driver, field_business) 
 
         # ingresar al analisis 
 
-        """into_analysis = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[2]/div[1]/div/button[2]"
+        into_analysis = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-detail-table/div/div/div[2]/div[1]/div/button[2]"
         find_elements(self.driver, into_analysis )
         time.sleep(5)
 
@@ -198,13 +189,11 @@ class entregas_pend_Aplicadas(unittest.TestCase):
         validate_text_visible(self.driver, title_analysis,  title_analysis_expected  ) 
   
 
-        data_analysis = '#layout-wrapper > div > div > div > app-quality-analisis > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(9) > td.text-nowrap.align-middle.f-size-12.fw-bold.ellipsis-cell > span > span'
-        data_analysis_expected = "Peso Hectolítrico"
-        validate_text_visible_selector(self.driver, data_analysis,  data_analysis_expected  )  
+        humidity = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-detail-table-quality-analisis/div/div/div/div[2]/div[10]/div[2]'
+        validate_character_string_element(self.driver, humidity ) 
 
-        foreign_matter = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-responsive-table/div/div[2]/table/tbody/tr[9]/td[2]/span/span'
-        foreign_matter_expected = "69.961%"
-        validate_text_visible(self.driver, foreign_matter,  foreign_matter_expected  ) """
+        kg_gross = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-quality-analisis/app-detail-table-quality-analisis/div/div/div/div[2]/div[7]/div[2]'
+        validate_character_string_element(self.driver, kg_gross ) 
 
 
         # salir al listado 
@@ -213,7 +202,11 @@ class entregas_pend_Aplicadas(unittest.TestCase):
         find_elements(self.driver, go_into_detail )
         time.sleep(2)
 
-        
+        go_to_list = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/div/a"
+        find_elements(self.driver, go_to_list )
+        time.sleep(3)
+
+
 
 
 

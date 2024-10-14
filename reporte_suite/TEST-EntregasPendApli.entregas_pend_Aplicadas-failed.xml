@@ -1,76 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EntregasPendApli.entregas_pend_Aplicadas-failed" tests="1" file="EntregasPendApli.py" time="225.064" timestamp="2024-09-11T16:19:28" failures="0" errors="1" skipped="0">
-	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="225.064" timestamp="2024-09-11T16:19:28" file="EntregasPendApli.py" line="22">
-		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[1]/div&quot;}
-  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<testsuite name="EntregasPendApli.entregas_pend_Aplicadas-failed" tests="2" file="EntregasPendApli.py" time="50.989" timestamp="2024-10-09T15:40:29" failures="0" errors="2" skipped="0">
+	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="0.000" timestamp="0001-01-01T00:00:00" file="EntregasPendApli.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasPendApli.py", line 46, in test_delivery_earrings
+    find_elements(self.driver, selct_filter )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto no fue encontrado MIS ENTREGAS
+]]></system-out>
+	</testcase>
+	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="50.989" timestamp="2024-10-09T15:40:29" file="EntregasPendApli.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
 Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710BAEFE7]
-	(No symbol) [0x00007FF710BAF23C]
-	(No symbol) [0x00007FF710BF97C7]
-	(No symbol) [0x00007FF710BD672F]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C1FCD5]
+	(No symbol) [0x00007FF642CCEF67]
+	(No symbol) [0x00007FF642CD64F8]
+	(No symbol) [0x00007FF642CC72C0]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
 "><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasPendApli.py", line 151, in test_delivery_earrings
-    validate_text_visible(self.driver, number_TK, number_TK_expected )
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1177, in validate_text_visible
-    element = driver.find_element(By.XPATH, xpath)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasPendApli.py", line 226, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
     self.error_handler.check_response(response)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-deliveries/div/app-header-for-detail/div[1]/div"}
-  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
 Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710BAEFE7]
-	(No symbol) [0x00007FF710BAF23C]
-	(No symbol) [0x00007FF710BF97C7]
-	(No symbol) [0x00007FF710BD672F]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C1FCD5]
+	(No symbol) [0x00007FF642CCEF67]
+	(No symbol) [0x00007FF642CD64F8]
+	(No symbol) [0x00007FF642CC72C0]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
 
 ]]></error>
 		<system-out><![CDATA[El texto no fue encontrado MIS ENTREGAS
-¡Elemento encontrado y clickeado 1 veces con éxito!
-¡Elemento encontrado y clickeado 13 veces con éxito!
-El texto no coincide con los valores esperados. Texto actual: '0,00'
-El texto no coincide con los valores esperados. Texto actual: '0,00'
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
 </testsuite>

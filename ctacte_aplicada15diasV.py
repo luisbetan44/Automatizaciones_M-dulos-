@@ -1,12 +1,13 @@
 import time
 import unittest
 import xmlrunner
-from Elements import find_and_click_element, find_elements, validate_character_numeric_element, validate_text, validate_text_by_strt
+from Elements import calendar_todate_retro, find_elements, find_elements_id, validate_character_numeric_element, validate_text, validate_text_by_strt
+from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
 
-class cuenta_ctacte_aplicada(unittest.TestCase):
+class cta_cte_aplicada_15_Vencer(unittest.TestCase):
     def setUp(self):
         self.start_session = StartSession()
         self.driver = self.start_session.driver
@@ -36,7 +37,9 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         find_elements(self.driver, select_filter)
         time.sleep(2)
 
-          ## aplicar filtro de rubros 
+        ## aplicar filtro de los ultimos seis meses 
+
+         ## aplicar filtro de rubros 
 
         apply_filter_1 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-agricultural-category-container/div/app-agricultural-category-button[1]/div/img"
         find_elements(self.driver, apply_filter_1)
@@ -50,29 +53,20 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         find_elements(self.driver, apply_filter_3)
         time.sleep(2)
 
-        ## seleccionar rango de fecha 02-10-2023 a 01/12/2023
+        apply_state = "A Vencer prox. 15 días" 
+        find_elements_id(self.driver, apply_state)
 
-        select_field_date = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
-        find_elements(self.driver, select_field_date)
+        
+        # aplicar filtro de fecha actual a seis meses para atras 
+
+        select_calendar = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
+        popup_xpath = "//div[contains(@class, 'flatpickr-calendar')]"
+        select_chevron = "//span[@class='flatpickr-prev-month']"
+        popup_xpath2 = "//div[contains(@class, 'flatpickr-calendar')]"
+        click_chevron = 6
+        calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
         time.sleep(2)
 
-        select_arrow_1 = "/html/body/div/div[1]/span[1]"
-        clicks = 10
-        find_and_click_element(self.driver, select_arrow_1, clicks)
-        time.sleep(2)
-
-        select_date_1 = "/html/body/div/div[2]/div/div[2]/div/span[8]"
-        find_elements(self.driver, select_date_1)
-        time.sleep(2)
-
-        select_arrow_2 = "/html/body/div/div[1]/span[2]"
-        clicks = 2
-        find_and_click_element(self.driver, select_arrow_2, clicks)
-        time.sleep(2)
-
-        select_date_2 = "/html/body/div/div[2]/div/div[2]/div/span[5]"
-        find_elements(self.driver, select_date_2)
-        time.sleep(2)
 
         apply_button_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
         find_elements(self.driver,  apply_button_filter)
@@ -80,28 +74,28 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
 
         ## validar titulo de pantalla cuenta corriente aplicada 
 
-        title_account = "/html/body/app-root/app-layout/app-vertical/div/div/div/app-header-for-screen/div/div/span"
-        title_account_expected = "CUENTA CORRIENTE APLICADA"
+        title_account = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/div/div/div[1]"
+        title_account_expected = "Cuenta Corriente Aplicada"
         validate_text(self.driver,title_account,title_account_expected )
         ## validar totalizadores 
 
 
-        total_to_pay = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]'
+        total_to_pay = '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]/span[1]'
         validate_character_numeric_element(self.driver, total_to_pay)
 
         ## validar saldos
 
-        balance_ars = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+        balance_ars = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]"
         validate_character_numeric_element(self.driver, balance_ars)
 
 
-        balance_usd = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[3]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+        balance_usd = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[3]/app-totalizer/div/div/div[2]/div[2]"
         validate_character_numeric_element(self.driver, balance_usd)
 
 
-        ## seleccionar movimientos del lisatos 
+        ## seleccionar el segundo movimientos del lisatos 
 
-        movements_list_1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/div/table/tbody/tr[4]/th/input"
+        movements_list_1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/div/table/tbody/tr[3]/th/input"
         find_elements(self.driver, movements_list_1)
         
 
@@ -129,7 +123,7 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
 
         ## ingresar al detalle 
 
-        detail_movements4 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/div/table/tbody/tr[5]/td[2]"
+        detail_movements4 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-responsive-table/div/div/table/tbody/tr[3]/td[2]"
         find_elements(self.driver, detail_movements4)
         time.sleep(3)
 
@@ -140,16 +134,16 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
 
         ## validar datos del detalle 
 
-        number_movements = "Movimiento FC 1051 00014218"
-        validate_text_by_strt(self.driver, number_movements )
+        number_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[1]/div"
+        validate_character_string_element(self.driver, number_movements )
 
 
  
-        balance_movements = "USD 738,10"
-        validate_text_by_strt(self.driver, balance_movements )
+        balance_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]"
+        validate_character_string_element(self.driver, balance_movements )
 
-        settlement = "SILO BOLSA-"
-        validate_text_by_strt(self.driver, settlement )
+        settlement = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[2]"
+        validate_character_string_element(self.driver, settlement )
 
         ## Seleccionar salida al listado 
 
@@ -157,15 +151,12 @@ class cuenta_ctacte_aplicada(unittest.TestCase):
         find_elements(self.driver, go_out_list)
         time.sleep(3)
 
-
-
-
     def tearDown(self):
         self.driver.close()
 
 
 
 if __name__ == "__main__":
-  test_suite = unittest.TestLoader().loadTestsFromTestCase(cuenta_ctacte_aplicada)
-  runner = xmlrunner.XMLTestRunner(output='reportCtacteAplicada')
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(cta_cte_aplicada_15_Vencer)
+  runner = xmlrunner.XMLTestRunner(output='reportcta_cte_aplicada_15_Vencer')
   runner.run(test_suite)

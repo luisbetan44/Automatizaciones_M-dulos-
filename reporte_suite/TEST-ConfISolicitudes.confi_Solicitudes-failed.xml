@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ConfISolicitudes.confi_Solicitudes-failed" tests="1" file="ConfISolicitudes.py" time="46.211" timestamp="2024-09-11T16:56:49" failures="0" errors="0" skipped="0">
-	<testcase classname="ConfISolicitudes.confi_Solicitudes" name="test_settings_User" time="46.211" timestamp="2024-09-11T16:56:49" file="ConfISolicitudes.py" line="19">
-		<system-out><![CDATA[El texto encontrado es  SOLICITUDES
+<testsuite name="ConfISolicitudes.confi_Solicitudes-failed" tests="1" file="ConfISolicitudes.py" time="71.872" timestamp="2024-10-09T16:09:50" failures="0" errors="0" skipped="0">
+	<testcase classname="ConfISolicitudes.confi_Solicitudes" name="test_settings_User" time="71.872" timestamp="2024-10-09T16:09:50" file="ConfISolicitudes.py" line="19">
+		<system-out><![CDATA[El texto no fue encontrado SOLICITUDES
 ¡Input encontrado y enviado con éxito!
 ¡Input encontrado y enviado con éxito!
 Test finalizado con éxito

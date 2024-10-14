@@ -33,18 +33,10 @@ class mis_intenciones(unittest.TestCase):
         find_elements(self.driver,select_my_intentions)
         time.sleep(2)
 
-        # aplicar el filtro solo con los productos maiz y soja 
+        # aplicar el filtro solo con fecha del dia 
 
         select_button_filter = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-intentions-list/app-header-for-responsive-table/div/div/div[2]/div/div/app-filter-button/button/div/span"
         find_elements(self.driver,select_button_filter)
-        time.sleep(2)
-
-        select_product1 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[4]/div/img"
-        find_elements(self.driver,select_product1)
-        time.sleep(2)
-
-        select_product2 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[3]/div/img"
-        find_elements(self.driver,select_product2)
         time.sleep(2)
 
         select_data_day = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"

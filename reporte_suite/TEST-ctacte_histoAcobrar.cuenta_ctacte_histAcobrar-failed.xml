@@ -1,70 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar-failed" tests="1" file="ctacte_histoAcobrar.py" time="111.982" timestamp="2024-09-11T16:32:46" failures="0" errors="1" skipped="0">
-	<testcase classname="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="111.982" timestamp="2024-09-11T16:32:46" file="ctacte_histoAcobrar.py" line="17">
-		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]&quot;}
-  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710BAEFE7]
-	(No symbol) [0x00007FF710BAF23C]
-	(No symbol) [0x00007FF710BF97C7]
-	(No symbol) [0x00007FF710BD672F]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_histoAcobrar.py", line 111, in test_ctacte_historica
-    validate_character_numeric_element(self.driver, balance_ars)
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1159, in validate_character_numeric_element
-    elemento = driver.find_element(By.XPATH, xpath)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"}
-  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710BAEFE7]
-	(No symbol) [0x00007FF710BAF23C]
-	(No symbol) [0x00007FF710BF97C7]
-	(No symbol) [0x00007FF710BD672F]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
-
-]]></error>
-		<system-out><![CDATA[¡Elemento encontrado y clickeado 7 veces con éxito!
+<testsuite name="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar-failed" tests="1" file="ctacte_histoAcobrar.py" time="126.834" timestamp="2024-10-09T15:51:47" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="126.834" timestamp="2024-10-09T15:51:47" file="ctacte_histoAcobrar.py" line="17">
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 7 veces con éxito!
 ¡Elemento encontrado y clickeado 3 veces con éxito!
 Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un carácter numérico. Valor: -300,75
+El valor es un carácter numérico. Valor: 0,00
+El texto encontrado es  CUENTA CORRIENTE
+El texto no fue encontrado Movimiento LC 3302 11350773
+El texto no fue encontrado + ARS 19.640,53
+El texto no fue encontrado Liq.1116C SOJA 2223 100 Kgs. 100,00%
 ]]></system-out>
 	</testcase>
 </testsuite>

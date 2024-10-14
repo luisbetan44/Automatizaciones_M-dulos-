@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCte_HistoApagar.cuenta_ctacte_histApagar-failed" tests="1" file="CtaCte_HistoApagar.py" time="95.746" timestamp="2024-09-11T16:30:52" failures="0" errors="0" skipped="0">
-	<testcase classname="CtaCte_HistoApagar.cuenta_ctacte_histApagar" name="test_ctacte_historica" time="95.746" timestamp="2024-09-11T16:30:52" file="CtaCte_HistoApagar.py" line="17">
-		<system-out><![CDATA[¡Elemento encontrado y clickeado 7 veces con éxito!
+<testsuite name="CtaCte_HistoApagar.cuenta_ctacte_histApagar-failed" tests="1" file="CtaCte_HistoApagar.py" time="120.740" timestamp="2024-10-09T15:49:38" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCte_HistoApagar.cuenta_ctacte_histApagar" name="test_ctacte_historica" time="120.740" timestamp="2024-10-09T15:49:38" file="CtaCte_HistoApagar.py" line="17">
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 7 veces con éxito!
 ¡Elemento encontrado y clickeado 3 veces con éxito!
 Tiempo de espera agotado. El texto por xpaht no está presente.
-El valor es un carácter numérico. Valor: -16.817,25
-El valor es un carácter numérico. Valor: -87.831,48
+El valor es un carácter numérico. Valor: -300,75
+El valor es un carácter numérico. Valor: 0,00
 El texto encontrado es  CUENTA CORRIENTE
 El texto no fue encontrado Movimiento AT 0011 00500764
 El texto encontrado es  - ARS 100,25

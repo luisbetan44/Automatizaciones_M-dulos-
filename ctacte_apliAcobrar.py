@@ -1,7 +1,8 @@
 import time
 import unittest
 import xmlrunner
-from Elements import calendar_todate_retro, find_elements, validate_character_numeric_element, validate_text, validate_text_by_strt
+from Elements import calendar_todate_retro, find_elements, find_elements_id, validate_character_numeric_element, validate_text, validate_text_by_strt
+from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -36,7 +37,7 @@ class cta_cte_apliAcobrar(unittest.TestCase):
         find_elements(self.driver, select_filter)
         time.sleep(2)
 
-          ## aplicar filtro de rubros 
+        ## aplicar filtro de rubros 
 
         apply_filter_1 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-agricultural-category-container/div/app-agricultural-category-button[1]/div/img"
         find_elements(self.driver, apply_filter_1)
@@ -50,8 +51,8 @@ class cta_cte_apliAcobrar(unittest.TestCase):
         find_elements(self.driver, apply_filter_3)
         time.sleep(2)
 
-        apply_state = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-checklist/div/app-checks[1]/div/input" 
-        find_elements(self.driver, apply_state)
+        apply_state = "A Cobrar" 
+        find_elements_id(self.driver, apply_state)
 
         
         # aplicar filtro de fecha actual a seis meses para atras 
@@ -131,16 +132,16 @@ class cta_cte_apliAcobrar(unittest.TestCase):
 
         ## validar datos del detalle 
 
-        number_movements = "Movimiento NC 1051 00007140"
-        validate_text_by_strt(self.driver, number_movements )
+        number_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[1]/div"
+        validate_character_string_element(self.driver, number_movements )
 
 
  
-        balance_movements = "USD 236,68"
-        validate_text_by_strt(self.driver, balance_movements )
+        balance_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]"
+        validate_character_string_element(self.driver, balance_movements )
 
-        settlement = "NC Bonificacion afecta a fra. 1051-14310-(3 bidon"
-        validate_text_by_strt(self.driver, settlement )
+        settlement = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[2]"
+        validate_character_string_element(self.driver, settlement )
 
         ## Seleccionar salida al listado 
 

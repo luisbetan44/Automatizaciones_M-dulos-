@@ -1,32 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Onboarding.Onboarding_test_tenant-failed" tests="1" file="Onboarding.py" time="149.881" timestamp="2024-09-11T16:59:23" failures="0" errors="0" skipped="0">
-	<testcase classname="Onboarding.Onboarding_test_tenant" name="test_tenat_onboarding" time="149.881" timestamp="2024-09-11T16:59:23" file="Onboarding.py" line="28">
-		<system-out><![CDATA[El texto es visible para el usuario
-El texto fue validado correctamente: DOCUMENTACIÓN
-El texto es visible para el usuario
-El texto fue validado correctamente: Para poder continuar al siguiente paso, será obligatorio completar los campos que se muestran a continuación.
-Error presente. Intentando con otro CUIT.
-Error presente. Intentando con otro CUIT.
-Error presente. Intentando con otro CUIT.
-CUIT válido insertado: 24-36421132-1
-Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.xls' cargado con éxito después de hacer clic en el chevron!
-Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/app-checks/div/input' seleccionado con éxito!
-El texto es visible para el usuario
-El texto fue validado correctamente: Estado Impositivo
-El texto es visible para el usuario
-El texto fue validado correctamente: Apertura de legajo
-Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
-Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
-Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
-Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
-El texto es visible para el usuario
-El texto fue validado correctamente: Gestión de Lineas de Crédito
-Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
-Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
-Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/fractura Bezatbeth_files/factura Bezatbeth.pdf' cargado con éxito después de hacer clic en el chevron!
-El texto es visible para el usuario
-El texto fue validado correctamente: Terceros autorizados a retirar insumos
-Se generó y escribió el DNI verificado: 15225187S
+<testsuite name="Onboarding.Onboarding_test_tenant-failed" tests="1" file="Onboarding.py" time="38.987" timestamp="2024-10-09T16:10:33" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding.Onboarding_test_tenant" name="test_tenat_onboarding" time="38.987" timestamp="2024-10-09T16:10:33" file="Onboarding.py" line="28">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;span _ngcontent-req-c142=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (69, 173). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-backdrop-show&quot; style=&quot;overflow-y: hidden;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642CA74EE]
+	(No symbol) [0x00007FF642CA4F3C]
+	(No symbol) [0x00007FF642CA2408]
+	(No symbol) [0x00007FF642CA161A]
+	(No symbol) [0x00007FF642C936BE]
+	(No symbol) [0x00007FF642CC72FA]
+	(No symbol) [0x00007FF642C92FF6]
+	(No symbol) [0x00007FF642CC7510]
+	(No symbol) [0x00007FF642CE86BC]
+	(No symbol) [0x00007FF642CC70A3]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Onboarding.py", line 38, in test_tenat_onboarding
+    find_elements(self.driver,select_config)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-req-c142="">...</span> is not clickable at point (69, 173). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: hidden;">...</div>
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642CA74EE]
+	(No symbol) [0x00007FF642CA4F3C]
+	(No symbol) [0x00007FF642CA2408]
+	(No symbol) [0x00007FF642CA161A]
+	(No symbol) [0x00007FF642C936BE]
+	(No symbol) [0x00007FF642CC72FA]
+	(No symbol) [0x00007FF642C92FF6]
+	(No symbol) [0x00007FF642CC7510]
+	(No symbol) [0x00007FF642CE86BC]
+	(No symbol) [0x00007FF642CC70A3]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
 </testsuite>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="comproCtaCte.comprobantectacte-failed" tests="1" file="comproCtaCte.py" time="64.761" timestamp="2024-09-11T16:36:57" failures="0" errors="0" skipped="0">
-	<testcase classname="comproCtaCte.comprobantectacte" name="test_vouchers_ctacte" time="64.761" timestamp="2024-09-11T16:36:57" file="comproCtaCte.py" line="15">
-		<system-out><![CDATA[El texto no fue encontrado COMPROBANTES
+<testsuite name="comproCtaCte.comprobantectacte-failed" tests="1" file="comproCtaCte.py" time="52.423" timestamp="2024-10-09T15:56:12" failures="0" errors="0" skipped="0">
+	<testcase classname="comproCtaCte.comprobantectacte" name="test_vouchers_ctacte" time="52.423" timestamp="2024-10-09T15:56:12" file="comproCtaCte.py" line="15">
+		<system-out><![CDATA[El texto encontrado es  COMPROBANTES
 ¡Elemento encontrado y clickeado 8 veces con éxito!
 ¡Elemento encontrado y clickeado 1 veces con éxito!
 El texto encontrado es  Mis Comprobantes

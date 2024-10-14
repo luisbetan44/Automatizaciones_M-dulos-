@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="reportInsuRetirar.ReportinsumosPendRetirar-failed" tests="1" file="reportInsuRetirar.py" time="52.289" timestamp="2024-09-11T16:48:38" failures="0" errors="0" skipped="0">
-	<testcase classname="reportInsuRetirar.ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="52.289" timestamp="2024-09-11T16:48:38" file="reportInsuRetirar.py" line="17">
+<testsuite name="reportInsuRetirar.ReportinsumosPendRetirar-failed" tests="1" file="reportInsuRetirar.py" time="52.688" timestamp="2024-10-09T16:03:19" failures="0" errors="0" skipped="0">
+	<testcase classname="reportInsuRetirar.ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="52.688" timestamp="2024-10-09T16:03:19" file="reportInsuRetirar.py" line="17">
 		<system-out><![CDATA[El texto encontrado es  Insumos Pendientes de Retirar
-El texto encontrado es  Comprobante
+El texto no fue encontrado Comprobante
+El texto encontrado '02/07/2024' no coincide con el esperado ''
+El texto no fue encontrado Artículo
 El texto encontrado 'FAC 1051 00015145' no coincide con el esperado ''
-El texto encontrado es  Artículo
-El texto encontrado '311302 - Sorgo Forrajero Tob Talero G-193 x 20 kgs TOBIN SRL' no coincide con el esperado ''
-El texto encontrado es  Cant. Pend.
+El texto no fue encontrado Cant. Pend.
 El valor es un carácter numérico. Valor: 100
 ]]></system-out>
 	</testcase>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_pesiFechaVevcimiento-20241014120324" tests="1" file=".py" time="68.369" timestamp="2024-10-14T12:04:32" failures="0" errors="0" skipped="0">
+	<testcase classname="cta_cte_pesiFechaVevcimiento" name="test_ctacte_Date_expiration" time="68.369" timestamp="2024-10-14T12:04:32" file="ctacte_pesifechavenci.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  CUENTA PESIFICADA
+El valor es un carácter numérico. Valor: -1.314.931.346,55
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento FC 1051 00015292
+El valor es un string. Valor: + USD 31,16
+El valor es un string. Valor: BALANCEADO (C.Peralta)-
+]]></system-out>
+	</testcase>
+</testsuite>

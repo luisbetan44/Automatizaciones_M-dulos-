@@ -40,7 +40,7 @@ class dashboard_granos(unittest.TestCase):
         find_elements(self.driver,select_button_filter)
         time.sleep(2)
 
-        select_product1 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[4]/div/img"
+        select_product1 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-grain-container/div/app-grain-button[2]/div/img"
         find_elements(self.driver,select_product1)
         time.sleep(2)
 
@@ -88,6 +88,8 @@ class dashboard_granos(unittest.TestCase):
         select_button_accept = "/html/body/div[1]/div/div[6]/button[1]"
         find_elements(self.driver,select_button_accept)
         time.sleep(2)
+
+       
 
 
 

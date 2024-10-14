@@ -1,15 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCte_HistoVencido.cuenta_ctacte_histVencido-failed" tests="1" file="CtaCte_HistoVencido.py" time="92.045" timestamp="2024-09-11T16:35:50" failures="0" errors="0" skipped="0">
-	<testcase classname="CtaCte_HistoVencido.cuenta_ctacte_histVencido" name="test_ctacte_historica" time="92.045" timestamp="2024-09-11T16:35:50" file="CtaCte_HistoVencido.py" line="17">
-		<system-out><![CDATA[¡Elemento encontrado y clickeado 7 veces con éxito!
-¡Elemento encontrado y clickeado 3 veces con éxito!
-Tiempo de espera agotado. El texto por xpaht no está presente.
-El valor es un carácter numérico. Valor: -300,75
-El valor es un carácter numérico. Valor: 0,00
-El texto encontrado es  CUENTA CORRIENTE
-El texto no fue encontrado Movimiento FC 1118 00076291
-El texto no fue encontrado - ARS 1.544.928,00
-El texto no fue encontrado GASTOS DE COMER: S/240000 KG NETOS. Maiz Cosecha 2
-]]></system-out>
+<testsuite name="CtaCte_HistoVencido.cuenta_ctacte_histVencido-failed" tests="2" file="CtaCte_HistoVencido.py" time="156.827" timestamp="2024-10-09T15:55:18" failures="0" errors="2" skipped="0">
+	<testcase classname="CtaCte_HistoVencido.cuenta_ctacte_histVencido" name="test_ctacte_historica" time="0.000" timestamp="0001-01-01T00:00:00" file="CtaCte_HistoVencido.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C1FCD5]
+	(No symbol) [0x00007FF642CCEF67]
+	(No symbol) [0x00007FF642CE7FC1]
+	(No symbol) [0x00007FF642CC70A3]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCte_HistoVencido.py", line 19, in test_ctacte_historica
+    self.login_helper.login("admingd@silohub.ag", "G@viglio123")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\loginhelper.py", line 9, in login
+    user = find_element_by_id(self.driver, "email")  # asegúrate de pasar self.driver
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C1FCD5]
+	(No symbol) [0x00007FF642CCEF67]
+	(No symbol) [0x00007FF642CE7FC1]
+	(No symbol) [0x00007FF642CC70A3]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+
+]]></error>
+	</testcase>
+	<testcase classname="CtaCte_HistoVencido.cuenta_ctacte_histVencido" name="test_ctacte_historica" time="156.827" timestamp="2024-10-09T15:55:18" file="CtaCte_HistoVencido.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C1FCD5]
+	(No symbol) [0x00007FF642CCEF67]
+	(No symbol) [0x00007FF642CD64F8]
+	(No symbol) [0x00007FF642CC72C0]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCte_HistoVencido.py", line 194, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
+Stacktrace:
+	GetHandleVerifier [0x00007FF642E1B675+29573]
+	(No symbol) [0x00007FF642D904A0]
+	(No symbol) [0x00007FF642C4B6EA]
+	(No symbol) [0x00007FF642C1FCD5]
+	(No symbol) [0x00007FF642CCEF67]
+	(No symbol) [0x00007FF642CD64F8]
+	(No symbol) [0x00007FF642CC72C0]
+	(No symbol) [0x00007FF642C912DF]
+	(No symbol) [0x00007FF642C92441]
+	GetHandleVerifier [0x00007FF64314C5BD+3375821]
+	GetHandleVerifier [0x00007FF6431979B7+3684039]
+	GetHandleVerifier [0x00007FF64318CDDB+3640043]
+	GetHandleVerifier [0x00007FF642EDB7F6+816390]
+	(No symbol) [0x00007FF642D9B7AF]
+	(No symbol) [0x00007FF642D975D4]
+	(No symbol) [0x00007FF642D97770]
+	(No symbol) [0x00007FF642D865CF]
+	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
+	RtlUserThreadStart [0x00007FFFD420AF08+40]
+
+]]></error>
 	</testcase>
 </testsuite>

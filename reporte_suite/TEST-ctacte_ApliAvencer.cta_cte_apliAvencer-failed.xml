@@ -1,135 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_ApliAvencer.cta_cte_apliAvencer-failed" tests="2" file="ctacte_ApliAvencer.py" time="67.181" timestamp="2024-09-11T16:26:19" failures="0" errors="2" skipped="0">
-	<testcase classname="ctacte_ApliAvencer.cta_cte_apliAvencer" name="test_ctacte_apliAvencer" time="0.000" timestamp="0001-01-01T00:00:00" file="ctacte_ApliAvencer.py" line="17">
-		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710B2FAF5]
-	(No symbol) [0x00007FF710BDE2C7]
-	(No symbol) [0x00007FF710BF5EB1]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_ApliAvencer.py", line 93, in test_ctacte_apliAvencer
-    validate_character_numeric_element(self.driver, total_to_pay)
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1159, in validate_character_numeric_element
-    elemento = driver.find_element(By.XPATH, xpath)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=128.0.6613.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710B2FAF5]
-	(No symbol) [0x00007FF710BDE2C7]
-	(No symbol) [0x00007FF710BF5EB1]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
-
-]]></error>
-		<system-out><![CDATA[¡Elemento encontrado y clickeado 10 veces con éxito!
-¡Elemento encontrado y clickeado 2 veces con éxito!
-Tiempo de espera agotado. El texto por xpaht no está presente.
-]]></system-out>
-	</testcase>
-	<testcase classname="ctacte_ApliAvencer.cta_cte_apliAvencer" name="test_ctacte_apliAvencer" time="67.181" timestamp="2024-09-11T16:26:19" file="ctacte_ApliAvencer.py" line="17">
-		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=128.0.6613.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710B41292]
-	(No symbol) [0x00007FF710B4231F]
-	(No symbol) [0x00007FF710B5B7F3]
-	(No symbol) [0x00007FF710B2F5ED]
-	(No symbol) [0x00007FF710BE5349]
-	(No symbol) [0x00007FF710BD66B0]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_ApliAvencer.py", line 167, in tearDown
-    self.driver.close()
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
-    self.execute(Command.CLOSE)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=128.0.6613.120)
-Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710B41292]
-	(No symbol) [0x00007FF710B4231F]
-	(No symbol) [0x00007FF710B5B7F3]
-	(No symbol) [0x00007FF710B2F5ED]
-	(No symbol) [0x00007FF710BE5349]
-	(No symbol) [0x00007FF710BD66B0]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
-
-]]></error>
-		<system-out><![CDATA[¡Elemento encontrado y clickeado 10 veces con éxito!
-¡Elemento encontrado y clickeado 2 veces con éxito!
-Tiempo de espera agotado. El texto por xpaht no está presente.
+<testsuite name="ctacte_ApliAvencer.cta_cte_apliAvencer-failed" tests="1" file="ctacte_ApliAvencer.py" time="56.102" timestamp="2024-10-09T15:45:22" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_ApliAvencer.cta_cte_apliAvencer" name="test_ctacte_apliAvencer" time="56.102" timestamp="2024-10-09T15:45:22" file="ctacte_ApliAvencer.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -457.168.003,77
+El valor es un carácter numérico. Valor: -286.131.590,64
+El valor es un carácter numérico. Valor: -821.106,16
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento FC 1118 00082264
+El valor es un string. Valor: - ARS 12.082.809,70
+El valor es un string. Valor: GASTOS COMER. S/ 373030 KGRS. Soja Cosecha 2324-
 ]]></system-out>
 	</testcase>
 </testsuite>

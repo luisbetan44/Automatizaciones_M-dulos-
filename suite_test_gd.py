@@ -44,7 +44,7 @@ from ctacte_ApliApagar import cta_cte_apliApagar
 from ctacte_ApliAvencer import cta_cte_apliAvencer
 from ctacte_ApliVencido import cta_cte_apliVencido
 from ctacte_apliAcobrar import cta_cte_apliAcobrar
-from ctacte_aplicada import cuenta_ctacte_aplicada
+from ctacte_aplicada15diasV import cta_cte_aplicada_15_Vencer
 from ctacte_histórica import cuenta_ctacte_historica
 from insumos_producto import insumosProductos
 from logistOperPrimarias import logistOperPrimarias
@@ -72,7 +72,7 @@ def ejecutar_suite():
     test_suite.addTest(unittest.makeSuite(cta_entregasAplicadas))
     test_suite.addTest(unittest.makeSuite(entregas_pend_Aplicadas))
     test_suite.addTest(unittest.makeSuite(cuenta_ventas))
-    test_suite.addTest(unittest.makeSuite(cuenta_ctacte_aplicada))
+    test_suite.addTest(unittest.makeSuite(cta_cte_aplicada_15_Vencer))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliAcobrar))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliApagar))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliAvencer))

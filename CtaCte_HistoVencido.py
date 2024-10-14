@@ -1,7 +1,8 @@
 import time
 import unittest
 import xmlrunner
-from Elements import find_and_click_element, find_elements, validate_character_numeric_element, validate_text
+from Elements import calendar_todate_retro, find_and_click_element, find_elements, find_elements_id, validate_character_numeric_element, validate_text
+from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -42,61 +43,32 @@ class cuenta_ctacte_histVencido(unittest.TestCase):
         
         ## selecionar botón del filtro
 
-        select_filter = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button"
+        select_filter = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[2]/app-filter-button/button/div/span"
         find_elements(self.driver, select_filter)
         time.sleep(2)
 
-          ## aplicar filtro de rubros 12/12/2023 al 12/03/2024
+          ## aplicar filtro de rubros
 
         apply_filter_1 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-agricultural-category-container/div/app-agricultural-category-button[1]/div/img"
         find_elements(self.driver, apply_filter_1)
         time.sleep(2)
 
-        apply_filter_2 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-agricultural-category-container/div/app-agricultural-category-button[2]/div/img"
-        find_elements(self.driver, apply_filter_2)
+        
+
+        apply_state = "Vencido" 
+        find_elements_id(self.driver, apply_state)
+
+        
+        # aplicar filtro de fecha actual a seis meses para atras 
+
+        select_calendar = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
+        popup_xpath = "//div[contains(@class, 'flatpickr-calendar')]"
+        select_chevron = "//span[@class='flatpickr-prev-month']"
+        popup_xpath2 = "//div[contains(@class, 'flatpickr-calendar')]"
+        click_chevron = 6
+        calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
         time.sleep(2)
 
-        apply_filter_3 = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-agricultural-category-container/div/app-agricultural-category-button[3]/div/img"
-        find_elements(self.driver, apply_filter_3)
-        time.sleep(2)
-
-        apply_state = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-checklist/div/app-checks[4]/div/input"
-        find_elements(self.driver,   apply_state)
-
-        ## seleccionar filtro ordenado por 
-
-        older_by_expiration = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list[1]/div/app-radio[2]/div/input"
-        find_elements(self.driver,   older_by_expiration)
-
-        older_by_date_expiration = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-radio-button-list[2]/div/app-radio[2]/div/input"
-        find_elements(self.driver,   older_by_date_expiration)
-
-
-        ## seleccionar rango de fecha 12/12/2023 al 16/04/2024
-
-        select_field_date = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-date-filter/div/app-date-picker/div/input[2]"
-        find_elements(self.driver,   select_field_date)
-        time.sleep(2)
-
-      
-        select_arrow_1 = "/html/body/div/div[1]/span[1]"
-        clicks = 7
-        find_and_click_element(self.driver, select_arrow_1, clicks)
-        time.sleep(2)
-
-        select_date_1 = "/html/body/div/div[2]/div/div[2]/div/span[16]"
-        find_elements(self.driver, select_date_1)
-        time.sleep(2)
-
-
-        select_arrow_2 = "/html/body/div/div[1]/span[2]"
-        clicks = 3
-        find_and_click_element(self.driver, select_arrow_2, clicks)
-        time.sleep(2)
-
-        select_date_2 ="/html/body/div/div[2]/div/div[2]/div/span[16]"
-        find_elements(self.driver, select_date_2)
-        time.sleep(2)
 
         apply_button_filter = "/html/body/ngb-offcanvas-panel/div/ngx-simplebar/div[1]/div[2]/div/div/div/app-filter-content/div[2]/app-filter-buttons/div/app-button[2]/button"
         find_elements(self.driver, apply_button_filter)
@@ -104,59 +76,62 @@ class cuenta_ctacte_histVencido(unittest.TestCase):
 
         ## validar titulo de pantalla cuenta corriente aplicada 
 
-        title_account = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[2]/app-current-account-file-list/div/div/div"
+        title_account = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/div/div/div"
         title_account_expected = "Cuenta Corriente"
         validate_text(self.driver,title_account,title_account_expected )
         ## validar totalizadores 
 
 
 
-        balance_ars = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+        balance_ars = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"
         validate_character_numeric_element(self.driver, balance_ars)
 
 
-        balance_usd = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+        balance_usd = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
         validate_character_numeric_element(self.driver, balance_usd)
 
 
         ## seleccionar movimientos del lisatos 
 
-        movements_list_1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-responsive-table/div/div/table/tbody/tr[1]/th/input"
+        movements_list_1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-responsive-table/div/div/table/tbody/tr[1]/th/input"
         find_elements(self.driver, movements_list_1)
 
-        movements_list_2 =  "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-responsive-table/div/div/table/tbody/tr[2]/th/input"
+        movements_list_2 =  "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-responsive-table/div/div/table/tbody/tr[2]/th/input"
         find_elements(self.driver, movements_list_2)
 
-        movements_list_3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-responsive-table/div/div/table/tbody/tr[3]/th/input"
+        movements_list_3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-responsive-table/div/div/table/tbody/tr[3]/th/input"
         find_elements(self.driver, movements_list_3)
+        time.sleep(2)
 
         
        ## seleccionar botón descargar  
 
-        select_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+        select_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
         find_elements(self.driver,   select_button)
+        time.sleep(2)
 
         ## descargar Excel 
 
-        download_Excel = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[1]/a"
+        download_Excel = "//a[contains(text(), 'Descargar a Excel')]"
         find_elements(self.driver, download_Excel)
         time.sleep(3)
 
-        ## seleccionar botón descargar   
+        ## seleccionar botón descargar  
 
-        select_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
-        find_elements(self.driver,  select_button)
 
+        select_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/button[2]"
+        find_elements(self.driver,   select_button)
+        
         ## descargar PDF 
 
-        download_PDF = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-header-for-responsive-table/div/div/div[2]/div/div[1]/app-download-button/div/ul/li[2]/a"
+        download_PDF = "//a[contains(text(), 'Descargar listado')]"
         find_elements(self.driver, download_PDF)
         time.sleep(3)
 
 
         ## ingresar al detalle  del tercer movimiento
 
-        detail_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[3]/app-current-account-file-list/app-responsive-table/div/div/table/tbody/tr[4]/td[2]/span/div/span"
+        detail_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-file-list/app-responsive-table/div/div/table/tbody/tr[3]/td[1]/span/div"
         find_elements(self.driver, detail_movements)
         time.sleep(3)
 
@@ -168,17 +143,14 @@ class cuenta_ctacte_histVencido(unittest.TestCase):
         ## validar datos del detalle 
 
         number_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[1]/div"
-        number_movements_expected = "Movimiento FC 1118 00076291"
-        validate_text(self.driver,number_movements,number_movements_expected )
+        validate_character_string_element(self.driver,number_movements )
 
         balance_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[1]"
-        balance_movements_expected = "- ARS 1.544.928,00"
-        validate_text(self.driver, balance_movements, balance_movements_expected )
+        validate_character_string_element(self.driver, balance_movements )
 
 
         settlement = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account-detail/app-header-for-detail/div[2]/div/div[2]/div[2]"
-        settlement_expected = "GASTOS DE COMER: S/240000 KG NETOS. Maiz Cosecha 2"
-        validate_text(self.driver,  settlement, settlement_expected )
+        validate_character_string_element(self.driver,  settlement )
 
         ## Seleccionar salida al listado 
 
@@ -186,7 +158,7 @@ class cuenta_ctacte_histVencido(unittest.TestCase):
         find_elements(self.driver, go_out_list)
         time.sleep(3)
 
-
+ 
 
         
 

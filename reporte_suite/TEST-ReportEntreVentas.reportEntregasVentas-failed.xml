@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReportEntreVentas.reportEntregasVentas-failed" tests="1" file="ReportEntreVentas.py" time="93.307" timestamp="2024-09-11T16:47:41" failures="0" errors="0" skipped="0">
-	<testcase classname="ReportEntreVentas.reportEntregasVentas" name="test_Report_deliverySales" time="93.307" timestamp="2024-09-11T16:47:41" file="ReportEntreVentas.py" line="17">
+<testsuite name="ReportEntreVentas.reportEntregasVentas-failed" tests="1" file="ReportEntreVentas.py" time="101.175" timestamp="2024-10-09T16:02:22" failures="0" errors="0" skipped="0">
+	<testcase classname="ReportEntreVentas.reportEntregasVentas" name="test_Report_deliverySales" time="101.175" timestamp="2024-10-09T16:02:22" file="ReportEntreVentas.py" line="17">
 		<system-out><![CDATA[El texto encontrado es  Entregas y Ventas
 El texto encontrado es  Soja
 El texto encontrado es  23/24
@@ -9,15 +9,16 @@ El valor es un carácter numérico. Valor: 11.947.550
 El texto encontrado es  Otros Movimientos
 El valor es un carácter numérico. Valor: -34.258
 El texto encontrado es  Kilos Vendidos
-El valor es un carácter numérico. Valor: 6.415.000
+El valor es un carácter numérico. Valor: 6.518.000
 El texto encontrado es  Kilos Solicitados
 El valor es un carácter numérico. Valor: 0
 El texto encontrado es  Kilos a Fijar
 El valor es un carácter numérico. Valor: 5.078.380
 El texto encontrado es  Saldo
-El valor es un carácter numérico. Valor: 5.498.292
+El valor es un carácter numérico. Valor: 5.395.292
 El texto encontrado es  Saldo Comercial
-El valor es un carácter numérico. Valor: 419.912
+El valor es un carácter numérico. Valor: 316.912
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
 </testsuite>

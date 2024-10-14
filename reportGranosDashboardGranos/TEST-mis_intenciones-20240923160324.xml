@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="mis_intenciones-20240923160324" tests="2" file=".py" time="156.373" timestamp="2024-09-23T16:06:00" failures="0" errors="2" skipped="0">
+	<testcase classname="mis_intenciones" name="test_my_intentions" time="0.000" timestamp="0001-01-01T00:00:00" file="MisIntenciones.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\MisIntenciones.py", line 75, in test_my_intentions
+    find_elements(self.driver, select_button_accept)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="mis_intenciones" name="test_my_intentions" time="156.373" timestamp="2024-09-23T16:06:00" file="MisIntenciones.py" line="22">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=129.0.6668.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60CBFFDA5+29557]
+	(No symbol) [0x00007FF60CB72240]
+	(No symbol) [0x00007FF60CA2B6EA]
+	(No symbol) [0x00007FF60CA141C7]
+	(No symbol) [0x00007FF60CA11D52]
+	(No symbol) [0x00007FF60CA125AF]
+	(No symbol) [0x00007FF60CA2BD03]
+	(No symbol) [0x00007FF60C9FF7BD]
+	(No symbol) [0x00007FF60CAB6699]
+	(No symbol) [0x00007FF60CAA74C0]
+	(No symbol) [0x00007FF60CA712DF]
+	(No symbol) [0x00007FF60CA72451]
+	GetHandleVerifier [0x00007FF60CF2DCBD+3363469]
+	GetHandleVerifier [0x00007FF60CF79B47+3674391]
+	GetHandleVerifier [0x00007FF60CF6EAEB+3629243]
+	GetHandleVerifier [0x00007FF60CCBFC66+815670]
+	(No symbol) [0x00007FF60CB7D6EF]
+	(No symbol) [0x00007FF60CB792B4]
+	(No symbol) [0x00007FF60CB79450]
+	(No symbol) [0x00007FF60CB681FF]
+	BaseThreadInitThunk [0x00007FF8AF7F257D+29]
+	RtlUserThreadStart [0x00007FF8B118AF28+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\MisIntenciones.py", line 87, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=129.0.6668.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60CBFFDA5+29557]
+	(No symbol) [0x00007FF60CB72240]
+	(No symbol) [0x00007FF60CA2B6EA]
+	(No symbol) [0x00007FF60CA141C7]
+	(No symbol) [0x00007FF60CA11D52]
+	(No symbol) [0x00007FF60CA125AF]
+	(No symbol) [0x00007FF60CA2BD03]
+	(No symbol) [0x00007FF60C9FF7BD]
+	(No symbol) [0x00007FF60CAB6699]
+	(No symbol) [0x00007FF60CAA74C0]
+	(No symbol) [0x00007FF60CA712DF]
+	(No symbol) [0x00007FF60CA72451]
+	GetHandleVerifier [0x00007FF60CF2DCBD+3363469]
+	GetHandleVerifier [0x00007FF60CF79B47+3674391]
+	GetHandleVerifier [0x00007FF60CF6EAEB+3629243]
+	GetHandleVerifier [0x00007FF60CCBFC66+815670]
+	(No symbol) [0x00007FF60CB7D6EF]
+	(No symbol) [0x00007FF60CB792B4]
+	(No symbol) [0x00007FF60CB79450]
+	(No symbol) [0x00007FF60CB681FF]
+	BaseThreadInitThunk [0x00007FF8AF7F257D+29]
+	RtlUserThreadStart [0x00007FF8B118AF28+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

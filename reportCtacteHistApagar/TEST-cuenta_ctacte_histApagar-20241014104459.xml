@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histApagar-20241014104459" tests="1" file=".py" time="60.009" timestamp="2024-10-14T10:45:59" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ctacte_histApagar" name="test_ctacte_historica" time="60.009" timestamp="2024-10-14T10:45:59" file="CtaCte_HistoApagar.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
+El valor es un carácter numérico. Valor: -2.201.588.892,50
+El valor es un carácter numérico. Valor: -87.831,48
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento EO 0011 00311769
+El valor es un string. Valor: - ARS 62.622.942,03
+El valor es un string. Valor: IMPUTACION CANJE
+]]></system-out>
+	</testcase>
+</testsuite>

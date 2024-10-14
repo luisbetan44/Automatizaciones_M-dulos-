@@ -1,70 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_aplicada.cuenta_ctacte_aplicada-failed" tests="1" file="ctacte_aplicada.py" time="73.882" timestamp="2024-09-11T16:22:32" failures="0" errors="1" skipped="0">
-	<testcase classname="ctacte_aplicada.cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="73.882" timestamp="2024-09-11T16:22:32" file="ctacte_aplicada.py" line="17">
-		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]&quot;}
-  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+<testsuite name="ctacte_aplicada.cuenta_ctacte_aplicada-failed" tests="2" file="ctacte_aplicada.py" time="75.386" timestamp="2024-10-07T11:57:02" failures="0" errors="2" skipped="0">
+	<testcase classname="ctacte_aplicada.cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="0.000" timestamp="0001-01-01T00:00:00" file="ctacte_aplicada.py" line="17">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_aplicada.py", line 42, in test_ctacte_aplicada
+    find_elements(self.driver, apply_filter_1)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="ctacte_aplicada.cuenta_ctacte_aplicada" name="test_ctacte_aplicada" time="75.386" timestamp="2024-10-07T11:57:02" file="ctacte_aplicada.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
 Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710BAEFE7]
-	(No symbol) [0x00007FF710BAF23C]
-	(No symbol) [0x00007FF710BF97C7]
-	(No symbol) [0x00007FF710BD672F]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+	GetHandleVerifier [0x00007FF62F9EB645+29573]
+	(No symbol) [0x00007FF62F960470]
+	(No symbol) [0x00007FF62F81B6EA]
+	(No symbol) [0x00007FF62F7EFCD5]
+	(No symbol) [0x00007FF62F89EF67]
+	(No symbol) [0x00007FF62F8A64F8]
+	(No symbol) [0x00007FF62F8972C0]
+	(No symbol) [0x00007FF62F8612DF]
+	(No symbol) [0x00007FF62F862441]
+	GetHandleVerifier [0x00007FF62FD1C58D+3375821]
+	GetHandleVerifier [0x00007FF62FD67987+3684039]
+	GetHandleVerifier [0x00007FF62FD5CDAB+3640043]
+	GetHandleVerifier [0x00007FF62FAAB7C6+816390]
+	(No symbol) [0x00007FF62F96B77F]
+	(No symbol) [0x00007FF62F9675A4]
+	(No symbol) [0x00007FF62F967740]
+	(No symbol) [0x00007FF62F95659F]
+	BaseThreadInitThunk [0x00007FFA55AA257D+29]
+	RtlUserThreadStart [0x00007FFA5662AF08+40]
 "><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_aplicada.py", line 90, in test_ctacte_aplicada
-    validate_character_numeric_element(self.driver, total_to_pay)
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1159, in validate_character_numeric_element
-    elemento = driver.find_element(By.XPATH, xpath)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_aplicada.py", line 164, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
     self.error_handler.check_response(response)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div[1]/app-current-account-applied-list/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div[1]/div[2]/div[2]"}
-  (Session info: chrome=128.0.6613.120); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.90)
 Stacktrace:
-	GetHandleVerifier [0x00007FF710D29412+29090]
-	(No symbol) [0x00007FF710C9E239]
-	(No symbol) [0x00007FF710B5B1DA]
-	(No symbol) [0x00007FF710BAEFE7]
-	(No symbol) [0x00007FF710BAF23C]
-	(No symbol) [0x00007FF710BF97C7]
-	(No symbol) [0x00007FF710BD672F]
-	(No symbol) [0x00007FF710BF65A2]
-	(No symbol) [0x00007FF710BD6493]
-	(No symbol) [0x00007FF710BA09D1]
-	(No symbol) [0x00007FF710BA1B31]
-	GetHandleVerifier [0x00007FF71104871D+3302573]
-	GetHandleVerifier [0x00007FF711094243+3612627]
-	GetHandleVerifier [0x00007FF71108A417+3572135]
-	GetHandleVerifier [0x00007FF710DE5EB6+801862]
-	(No symbol) [0x00007FF710CA945F]
-	(No symbol) [0x00007FF710CA4FB4]
-	(No symbol) [0x00007FF710CA5140]
-	(No symbol) [0x00007FF710C9461F]
-	BaseThreadInitThunk [0x00007FF8EEFD257D+29]
-	RtlUserThreadStart [0x00007FF8F08EAF28+40]
+	GetHandleVerifier [0x00007FF62F9EB645+29573]
+	(No symbol) [0x00007FF62F960470]
+	(No symbol) [0x00007FF62F81B6EA]
+	(No symbol) [0x00007FF62F7EFCD5]
+	(No symbol) [0x00007FF62F89EF67]
+	(No symbol) [0x00007FF62F8A64F8]
+	(No symbol) [0x00007FF62F8972C0]
+	(No symbol) [0x00007FF62F8612DF]
+	(No symbol) [0x00007FF62F862441]
+	GetHandleVerifier [0x00007FF62FD1C58D+3375821]
+	GetHandleVerifier [0x00007FF62FD67987+3684039]
+	GetHandleVerifier [0x00007FF62FD5CDAB+3640043]
+	GetHandleVerifier [0x00007FF62FAAB7C6+816390]
+	(No symbol) [0x00007FF62F96B77F]
+	(No symbol) [0x00007FF62F9675A4]
+	(No symbol) [0x00007FF62F967740]
+	(No symbol) [0x00007FF62F95659F]
+	BaseThreadInitThunk [0x00007FFA55AA257D+29]
+	RtlUserThreadStart [0x00007FFA5662AF08+40]
 
 ]]></error>
-		<system-out><![CDATA[¡Elemento encontrado y clickeado 10 veces con éxito!
-¡Elemento encontrado y clickeado 2 veces con éxito!
-El texto encontrado es  CUENTA CORRIENTE APLICADA
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
 </testsuite>

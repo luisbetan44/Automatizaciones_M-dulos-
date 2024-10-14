@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_pesiFechaCompro-20241014113906" tests="1" file=".py" time="58.687" timestamp="2024-10-14T11:40:04" failures="0" errors="1" skipped="0">
+	<testcase classname="cta_cte_pesiFechaCompro" name="test_ctacte_date_voucher" time="58.687" timestamp="2024-10-14T11:40:04" file="ctacte_pesifechacompro.py" line="18">
+		<error type="JavascriptException" message="Message: TypeError: arguments[0] is null
+Stacktrace:
+@https://pwa-portal-staging.silohub.ag/login:2:7
+@https://pwa-portal-staging.silohub.ag/login:3:8
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_pesifechacompro.py", line 111, in test_ctacte_date_voucher
+    self.driver.execute_script("arguments[0].click();", pdf_element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 414, in execute_script
+    return self.execute(command, {"script": script, "args": converted_args})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.JavascriptException: Message: TypeError: arguments[0] is null
+Stacktrace:
+@https://pwa-portal-staging.silohub.ag/login:2:7
+@https://pwa-portal-staging.silohub.ag/login:3:8
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  CUENTA PESIFICADA
+El valor es un carácter numérico. Valor: -1.314.931.346,55
+]]></system-out>
+	</testcase>
+</testsuite>
