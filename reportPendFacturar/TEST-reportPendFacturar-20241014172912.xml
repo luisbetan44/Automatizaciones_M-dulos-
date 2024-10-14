@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportPendFacturar-20241014172912" tests="1" file=".py" time="42.806" timestamp="2024-10-14T17:29:54" failures="0" errors="0" skipped="0">
+	<testcase classname="reportPendFacturar" name="test_Report_PendFacturar" time="42.806" timestamp="2024-10-14T17:29:54" file="ReportCompPenFact.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Comprobantes Pendientes de Facturar
+El texto no fue encontrado Comprobante
+El valor es un string. Valor: 30/08/2024
+El texto no fue encontrado Artículo
+El valor es un string. Valor: PED 0051 00017659
+El texto no fue encontrado Cantidad
+El valor es un carácter numérico. Valor: 110002 - Aceite mineral Novaoil x 20 lts NOVA SA.
+El texto no fue encontrado Cant. Pend.
+El valor es un carácter numérico. Valor: 300
+El texto no fue encontrado Moneda
+El texto no fue encontrado USD
+El texto no fue encontrado Precio
+El valor no es un carácter numérico. Valor: USD
+El texto no fue encontrado Total USD
+El valor es un carácter numérico. Valor: 2.000,00
+El texto no fue encontrado Total ARS
+El valor es un carácter numérico. Valor: 600.000,00
+El texto encontrado es  DATOS DEL COMPROBANTE PENDIENTE DE FACTURAR
+El texto encontrado es  FECHA
+El valor es un carácter numérico. Valor: 30/08/2024
+El texto encontrado es  ARTÍCULO
+El valor es un string. Valor: 110002 - Aceite mineral Novaoil x 20 lts NOVA SA.
+]]></system-out>
+	</testcase>
+</testsuite>

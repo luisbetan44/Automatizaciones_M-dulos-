@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportEntregasVentas-20241014173102" tests="1" file=".py" time="71.563" timestamp="2024-10-14T17:32:13" failures="0" errors="1" skipped="0">
+	<testcase classname="reportEntregasVentas" name="test_Report_deliverySales" time="71.563" timestamp="2024-10-14T17:32:13" file="ReportEntreVentas.py" line="17">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C0A3B095+29557]
+	(No symbol) [0x00007FF7C09AFA50]
+	(No symbol) [0x00007FF7C086B56A]
+	(No symbol) [0x00007FF7C083FCC5]
+	(No symbol) [0x00007FF7C08EEE07]
+	(No symbol) [0x00007FF7C0907E21]
+	(No symbol) [0x00007FF7C08E6F33]
+	(No symbol) [0x00007FF7C08B116F]
+	(No symbol) [0x00007FF7C08B22D1]
+	GetHandleVerifier [0x00007FF7C0D6C96D+3378253]
+	GetHandleVerifier [0x00007FF7C0DB8497+3688311]
+	GetHandleVerifier [0x00007FF7C0DAD1CB+3642539]
+	GetHandleVerifier [0x00007FF7C0AFA6B6+813462]
+	(No symbol) [0x00007FF7C09BAB5F]
+	(No symbol) [0x00007FF7C09B6B74]
+	(No symbol) [0x00007FF7C09B6D10]
+	(No symbol) [0x00007FF7C09A5C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportEntreVentas.py", line 146, in test_Report_deliverySales
+    find_elements(self.driver, select_button_downloads2)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=129.0.6668.100)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7C0A3B095+29557]
+	(No symbol) [0x00007FF7C09AFA50]
+	(No symbol) [0x00007FF7C086B56A]
+	(No symbol) [0x00007FF7C083FCC5]
+	(No symbol) [0x00007FF7C08EEE07]
+	(No symbol) [0x00007FF7C0907E21]
+	(No symbol) [0x00007FF7C08E6F33]
+	(No symbol) [0x00007FF7C08B116F]
+	(No symbol) [0x00007FF7C08B22D1]
+	GetHandleVerifier [0x00007FF7C0D6C96D+3378253]
+	GetHandleVerifier [0x00007FF7C0DB8497+3688311]
+	GetHandleVerifier [0x00007FF7C0DAD1CB+3642539]
+	GetHandleVerifier [0x00007FF7C0AFA6B6+813462]
+	(No symbol) [0x00007FF7C09BAB5F]
+	(No symbol) [0x00007FF7C09B6B74]
+	(No symbol) [0x00007FF7C09B6D10]
+	(No symbol) [0x00007FF7C09A5C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Entregas y Ventas
+El texto encontrado es  Soja
+El texto encontrado es  23/24
+El texto encontrado es  Kilos Entregados
+El valor es un carácter numérico. Valor: 11.947.550
+El texto encontrado es  Otros Movimientos
+El valor es un carácter numérico. Valor: -34.258
+El texto encontrado es  Kilos Vendidos
+El valor es un carácter numérico. Valor: 6.518.000
+El texto encontrado es  Kilos Solicitados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 5.078.380
+El texto encontrado es  Saldo
+El valor es un carácter numérico. Valor: 5.395.292
+El texto encontrado es  Saldo Comercial
+El valor es un carácter numérico. Valor: 316.912
+]]></system-out>
+	</testcase>
+</testsuite>

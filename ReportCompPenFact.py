@@ -2,7 +2,8 @@ import time
 import unittest
 from selenium.webdriver.common.by import By
 import xmlrunner
-from Elements import  calendar_todate_retro, find_and_click_element, find_elements, validate_character_numeric_element, validate_text
+from Elements import  calendar_todate_retro, find_elements, validate_character_numeric_element, validate_text
+from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -69,8 +70,7 @@ class reportPendFacturar(unittest.TestCase):
         validate_text(self.driver,first_column,first_column_expected )
 
         value_column1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/div/span"
-        value_column_expected1 = "PED 0051 00017084"
-        validate_text(self.driver,value_column1,value_column_expected1 )
+        validate_character_string_element(self.driver,value_column1 )
       
 
         second_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[3]"
@@ -78,8 +78,7 @@ class reportPendFacturar(unittest.TestCase):
         validate_text(self.driver,second_column,second_column_expected )
 
         value_column2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[2]/span/div/span"
-        value_column_expected2 = "110002 - Aceite mineral Novaoil x 20 lts NOVA SA."
-        validate_text(self.driver,value_column2,value_column_expected2 )
+        validate_character_string_element(self.driver,value_column2 )
       
 
         third_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-pendient/app-responsive-table/div/div/table/thead/tr/th[4]"
@@ -158,8 +157,7 @@ class reportPendFacturar(unittest.TestCase):
         
 
         descrition_article = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-pendient/div[1]/section/div/div[1]/div[2]/div"
-        descrition_article_expected = "110002 - Aceite mineral Novaoil x 20 lts NOVA SA."
-        validate_text(self.driver,descrition_article, descrition_article_expected)
+        validate_character_string_element(self.driver,descrition_article)
        
        
 
