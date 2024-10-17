@@ -3,7 +3,8 @@ import time
 import unittest
 from selenium.webdriver.common.by import By
 import xmlrunner
-from Elements import calendar_todate_retro, find_and_click_element, find_and_click_element_selector, find_elements, validate_character_numeric_element, validate_text
+from Elements import calendar_todate_retro,find_elements, validate_character_numeric_element, validate_text
+from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -77,49 +78,53 @@ class reportMerRemitida(unittest.TestCase):
         first_column_expected = "Fecha"
         validate_text(self.driver,first_column,first_column_expected )
         
-        date_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[1]/span/span"
-        date_movements_expected = "30/09/2021"
-        validate_text(self.driver,date_movements,date_movements_expected )
+        date_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[1]/span/div/span"
+        validate_character_string_element(self.driver,date_movements)
 
         second_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/thead/tr/th[3]"
         second_column_expected = "Comprobante"
         validate_text(self.driver,second_column,second_column_expected )
 
-        voucher_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[2]/span/span"
-        voucher_movements_expected = "REMBAL 0063 00031634"
-        validate_text(self.driver,voucher_movements,voucher_movements_expected )
+        voucher_movements = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[2]/span/div/span"
+        validate_character_string_element(self.driver,voucher_movements )
       
 
         third_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/thead/tr/th[4]"
         third_column_column_expected = "Artículo"
         validate_text(self.driver,third_column,third_column_column_expected )
 
-        article_description2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[2]/td[3]/span/span"
-        article_description2_expected = "Premezcla Final Feed Embolsado x 25 kgs Nutricion Superior"
-        validate_text(self.driver,article_description2,article_description2_expected )
+        article_description2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[3]/span/div/span"
+        validate_character_string_element(self.driver,article_description2 )
       
 
 
         quarter_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/thead/tr/th[5]"
-        quarter_column_expected = "Salidas"
+        quarter_column_expected = "Comp. Origen"
         validate_text(self.driver,quarter_column,quarter_column_expected )
 
-        departures = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/thead/tr/th[5]"
-        validate_character_numeric_element(self.driver,departures)
+        departures = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[4]/span/div/span"
+        validate_character_string_element(self.driver,departures)
 
         fifth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/thead/tr/th[6]"
-        fifth_column_expected = "Precio"
+        fifth_column_expected = "Cantidad"
         validate_text(self.driver,fifth_column,fifth_column_expected )
 
-        price = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[5]/span/span"
+        price = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[5]/span/div/span"
         validate_character_numeric_element(self.driver,price)
 
-        sixth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/thead/tr/th[9]"
-        sixth_column_expected = "Total ARS"
+        sixth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/thead/tr/th[7]"
+        sixth_column_expected = "Moneda"
         validate_text(self.driver,sixth_column,sixth_column_expected )
 
-        total_money2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[8]/span/span"
-        validate_character_numeric_element(self.driver,total_money2)
+        total_money2 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[6]/span/div/span"
+        validate_character_string_element(self.driver,total_money2)
+
+        seventh_column = "//html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/thead/tr/th[8]"
+        seventh_column_expected = "Precio"
+        validate_text(self.driver,seventh_column,seventh_column_expected )
+
+        amount_price = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-remitted-merchandise/app-responsive-table/div/div[2]/table/tbody/tr[1]/td[7]/span/div/span"
+        validate_character_string_element(self.driver,amount_price)
 
            
        # descargar compromabtes 

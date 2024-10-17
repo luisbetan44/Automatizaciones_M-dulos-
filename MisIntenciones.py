@@ -59,11 +59,11 @@ class mis_intenciones(unittest.TestCase):
         self.driver.execute_script("window.scrollTo(0,400);")
         time.sleep(2)
 
-        select_button_next = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-set-price/div/div[1]/section/form/div/div/div[16]/div/div[2]/app-button/button"
+        select_button_next = "//span[text()='Siguiente']"
         find_elements(self.driver, select_button_next)
         time.sleep(3)
 
-        select_button_continue = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-set-price/div/div[1]/section/form/div/div/div[16]/div/div[2]/app-button/button"
+        select_button_continue = "//span[text()='Continuar']"
         find_elements(self.driver, select_button_continue)
         time.sleep(2)
 

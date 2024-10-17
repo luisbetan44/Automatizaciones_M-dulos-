@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Cuentacontrato.contrato_tenant-failed" tests="1" file="Cuentacontrato.py" time="132.916" timestamp="2024-10-09T15:28:38" failures="0" errors="1" skipped="0">
-	<testcase classname="Cuentacontrato.contrato_tenant" name="test_contrato_tenant" time="132.916" timestamp="2024-10-09T15:28:38" file="Cuentacontrato.py" line="22">
+<testsuite name="Cuentacontrato.contrato_tenant-failed" tests="1" file="Cuentacontrato.py" time="83.861" timestamp="2024-10-17T16:22:16" failures="0" errors="1" skipped="0">
+	<testcase classname="Cuentacontrato.contrato_tenant" name="test_contrato_tenant" time="83.861" timestamp="2024-10-17T16:22:16" file="Cuentacontrato.py" line="22">
 		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Cuentacontrato.py", line 56, in test_contrato_tenant
-    find_elements(self.driver, select_campaign )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Cuentacontrato.py", line 46, in test_contrato_tenant
+    find_elements(self.driver,cleam_filter )
   File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
     select_nex_button = WebDriverWait(driver, 10).until(
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
@@ -17,8 +17,6 @@
 AttributeError: 'NoneType' object has no attribute 'is_displayed'
 ]]></error>
 		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
 </testsuite>

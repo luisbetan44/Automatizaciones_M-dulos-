@@ -1,89 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Ventas.cuenta_ventas-failed" tests="2" file="Ventas.py" time="59.206" timestamp="2024-10-09T15:41:30" failures="0" errors="2" skipped="0">
-	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="0.000" timestamp="0001-01-01T00:00:00" file="Ventas.py" line="23">
-		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Ventas.py", line 96, in test_cuenta_ventas
-    find_elements(self.driver, select_product_list_1 )
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
-    select_nex_button = WebDriverWait(driver, 10).until(
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
-    value = method(self._driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
-    element = visibility_of(target)(driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
-    return _element_if_visible(element)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
-    return element if element.is_displayed() == visibility else False
-AttributeError: 'NoneType' object has no attribute 'is_displayed'
-]]></error>
+<testsuite name="Ventas.cuenta_ventas-failed" tests="1" file="Ventas.py" time="51.478" timestamp="2024-10-17T16:34:03" failures="0" errors="0" skipped="0">
+	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="51.478" timestamp="2024-10-17T16:34:03" file="Ventas.py" line="24">
 		<system-out><![CDATA[El texto es visible para el usuario
 El texto fue validado correctamente: Mis Ventas
-¡Elemento encontrado y clickeado 8 veces con éxito!
-¡Elemento encontrado y clickeado 1 veces con éxito!
-]]></system-out>
-	</testcase>
-	<testcase classname="Ventas.cuenta_ventas" name="test_cuenta_ventas" time="59.206" timestamp="2024-10-09T15:41:30" file="Ventas.py" line="23">
-		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Stacktrace:
-	GetHandleVerifier [0x00007FF642E1B675+29573]
-	(No symbol) [0x00007FF642D904A0]
-	(No symbol) [0x00007FF642C4B6EA]
-	(No symbol) [0x00007FF642C1FCD5]
-	(No symbol) [0x00007FF642CCEF67]
-	(No symbol) [0x00007FF642CD64F8]
-	(No symbol) [0x00007FF642CC72C0]
-	(No symbol) [0x00007FF642C912DF]
-	(No symbol) [0x00007FF642C92441]
-	GetHandleVerifier [0x00007FF64314C5BD+3375821]
-	GetHandleVerifier [0x00007FF6431979B7+3684039]
-	GetHandleVerifier [0x00007FF64318CDDB+3640043]
-	GetHandleVerifier [0x00007FF642EDB7F6+816390]
-	(No symbol) [0x00007FF642D9B7AF]
-	(No symbol) [0x00007FF642D975D4]
-	(No symbol) [0x00007FF642D97770]
-	(No symbol) [0x00007FF642D865CF]
-	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
-	RtlUserThreadStart [0x00007FFFD420AF08+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Ventas.py", line 198, in tearDown
-    self.driver.close()
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
-    self.execute(Command.CLOSE)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Stacktrace:
-	GetHandleVerifier [0x00007FF642E1B675+29573]
-	(No symbol) [0x00007FF642D904A0]
-	(No symbol) [0x00007FF642C4B6EA]
-	(No symbol) [0x00007FF642C1FCD5]
-	(No symbol) [0x00007FF642CCEF67]
-	(No symbol) [0x00007FF642CD64F8]
-	(No symbol) [0x00007FF642CC72C0]
-	(No symbol) [0x00007FF642C912DF]
-	(No symbol) [0x00007FF642C92441]
-	GetHandleVerifier [0x00007FF64314C5BD+3375821]
-	GetHandleVerifier [0x00007FF6431979B7+3684039]
-	GetHandleVerifier [0x00007FF64318CDDB+3640043]
-	GetHandleVerifier [0x00007FF642EDB7F6+816390]
-	(No symbol) [0x00007FF642D9B7AF]
-	(No symbol) [0x00007FF642D975D4]
-	(No symbol) [0x00007FF642D97770]
-	(No symbol) [0x00007FF642D865CF]
-	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
-	RtlUserThreadStart [0x00007FFFD420AF08+40]
-
-]]></error>
-		<system-out><![CDATA[El texto es visible para el usuario
-El texto fue validado correctamente: Mis Ventas
-¡Elemento encontrado y clickeado 8 veces con éxito!
-¡Elemento encontrado y clickeado 1 veces con éxito!
+El valor es un carácter alfabético. Valor: Producto
+El valor es un carácter alfabético. Valor: Soja
+El valor es un carácter alfabético. Valor: Fecha
+El valor es un string. Valor: 16/10/2024
+El valor es un carácter alfabético. Valor: Comprobante
+El valor es un string. Valor: F 0001 00129963
+El valor es un string. Valor: Tn Fijados
+El valor es un carácter numérico. Valor: 0,10
+El texto es visible para el usuario
+El texto fue validado correctamente: Precio
+El valor es un carácter numérico. Valor: 100.000,00
+El texto encontrado es  Moneda
+El texto no fue encontrado ARS
 ]]></system-out>
 	</testcase>
 </testsuite>

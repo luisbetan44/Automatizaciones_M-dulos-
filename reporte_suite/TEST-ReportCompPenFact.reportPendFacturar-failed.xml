@@ -1,62 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReportCompPenFact.reportPendFacturar-failed" tests="1" file="ReportCompPenFact.py" time="45.714" timestamp="2024-10-09T16:00:39" failures="0" errors="1" skipped="0">
-	<testcase classname="ReportCompPenFact.reportPendFacturar" name="test_Report_PendFacturar" time="45.714" timestamp="2024-10-09T16:00:39" file="ReportCompPenFact.py" line="17">
-		<error type="TimeoutException" message="Message: 
-Stacktrace:
-	GetHandleVerifier [0x00007FF642E1B675+29573]
-	(No symbol) [0x00007FF642D904A0]
-	(No symbol) [0x00007FF642C4B6EA]
-	(No symbol) [0x00007FF642C9F815]
-	(No symbol) [0x00007FF642C9FA6C]
-	(No symbol) [0x00007FF642CEB917]
-	(No symbol) [0x00007FF642CC733F]
-	(No symbol) [0x00007FF642CE86BC]
-	(No symbol) [0x00007FF642CC70A3]
-	(No symbol) [0x00007FF642C912DF]
-	(No symbol) [0x00007FF642C92441]
-	GetHandleVerifier [0x00007FF64314C5BD+3375821]
-	GetHandleVerifier [0x00007FF6431979B7+3684039]
-	GetHandleVerifier [0x00007FF64318CDDB+3640043]
-	GetHandleVerifier [0x00007FF642EDB7F6+816390]
-	(No symbol) [0x00007FF642D9B7AF]
-	(No symbol) [0x00007FF642D975D4]
-	(No symbol) [0x00007FF642D97770]
-	(No symbol) [0x00007FF642D865CF]
-	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
-	RtlUserThreadStart [0x00007FFFD420AF08+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportCompPenFact.py", line 20, in test_Report_PendFacturar
-    self.login_helper.select_tenant()
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\loginhelper.py", line 18, in select_tenant
-    select_tenant = find_element_by_xpath(self.driver, "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-main/div/div[1]/app-tenant-main/app-tenant[8]/div/div/img")
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\findElements.py", line 14, in find_element_by_xpath
-    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.XPATH, xpath)))
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
-    raise TimeoutException(message, screen, stacktrace)
-selenium.common.exceptions.TimeoutException: Message: 
-Stacktrace:
-	GetHandleVerifier [0x00007FF642E1B675+29573]
-	(No symbol) [0x00007FF642D904A0]
-	(No symbol) [0x00007FF642C4B6EA]
-	(No symbol) [0x00007FF642C9F815]
-	(No symbol) [0x00007FF642C9FA6C]
-	(No symbol) [0x00007FF642CEB917]
-	(No symbol) [0x00007FF642CC733F]
-	(No symbol) [0x00007FF642CE86BC]
-	(No symbol) [0x00007FF642CC70A3]
-	(No symbol) [0x00007FF642C912DF]
-	(No symbol) [0x00007FF642C92441]
-	GetHandleVerifier [0x00007FF64314C5BD+3375821]
-	GetHandleVerifier [0x00007FF6431979B7+3684039]
-	GetHandleVerifier [0x00007FF64318CDDB+3640043]
-	GetHandleVerifier [0x00007FF642EDB7F6+816390]
-	(No symbol) [0x00007FF642D9B7AF]
-	(No symbol) [0x00007FF642D975D4]
-	(No symbol) [0x00007FF642D97770]
-	(No symbol) [0x00007FF642D865CF]
-	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
-	RtlUserThreadStart [0x00007FFFD420AF08+40]
-
-]]></error>
+<testsuite name="ReportCompPenFact.reportPendFacturar-failed" tests="1" file="ReportCompPenFact.py" time="58.759" timestamp="2024-10-17T16:51:03" failures="0" errors="0" skipped="0">
+	<testcase classname="ReportCompPenFact.reportPendFacturar" name="test_Report_PendFacturar" time="58.759" timestamp="2024-10-17T16:51:03" file="ReportCompPenFact.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Comprobantes Pendientes de Facturar
+El texto no fue encontrado Comprobante
+El valor es un string. Valor: 30/08/2024
+El texto no fue encontrado Artículo
+El valor es un string. Valor: PED 0051 00017659
+El texto no fue encontrado Cantidad
+El valor es un carácter numérico. Valor: 110002 - Aceite mineral Novaoil x 20 lts NOVA SA.
+El texto no fue encontrado Cant. Pend.
+El valor es un carácter numérico. Valor: 300
+El texto no fue encontrado Moneda
+El texto no fue encontrado USD
+El texto no fue encontrado Precio
+El valor no es un carácter numérico. Valor: USD
+El texto no fue encontrado Total USD
+El valor es un carácter numérico. Valor: 2.000,00
+El texto no fue encontrado Total ARS
+El valor es un carácter numérico. Valor: 600.000,00
+El texto encontrado es  DATOS DEL COMPROBANTE PENDIENTE DE FACTURAR
+El texto encontrado es  FECHA
+El valor es un carácter numérico. Valor: 30/08/2024
+El texto encontrado es  ARTÍCULO
+El valor es un string. Valor: 110002 - Aceite mineral Novaoil x 20 lts NOVA SA.
+]]></system-out>
 	</testcase>
 </testsuite>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_aplicada15diasV.cta_cte_aplicada_15_Vencer-failed" tests="1" file="ctacte_aplicada15diasV.py" time="55.465" timestamp="2024-10-09T15:42:28" failures="0" errors="0" skipped="0">
-	<testcase classname="ctacte_aplicada15diasV.cta_cte_aplicada_15_Vencer" name="test_ctacte_aplicada" time="55.465" timestamp="2024-10-09T15:42:28" file="ctacte_aplicada15diasV.py" line="18">
+<testsuite name="ctacte_aplicada15diasV.cta_cte_aplicada_15_Vencer-failed" tests="1" file="ctacte_aplicada15diasV.py" time="56.093" timestamp="2024-10-17T16:35:01" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_aplicada15diasV.cta_cte_aplicada_15_Vencer" name="test_ctacte_aplicada" time="56.093" timestamp="2024-10-17T16:35:01" file="ctacte_aplicada15diasV.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
-El valor es un carácter numérico. Valor: -85.738.427,28
-El valor es un carácter numérico. Valor: -85.738.427,28
+El valor es un carácter numérico. Valor: -141.745.708,60
+El valor es un carácter numérico. Valor: -141.745.708,60
 El valor es un carácter numérico. Valor: 0,00
 El texto encontrado es  CUENTA CORRIENTE
 El valor es un string. Valor: Movimiento FC 1118 00082264

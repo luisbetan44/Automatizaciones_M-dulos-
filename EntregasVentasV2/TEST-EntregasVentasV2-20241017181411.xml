@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EntregasVentasV2-20241017181411" tests="1" file=".py" time="153.328" timestamp="2024-10-17T18:16:45" failures="0" errors="1" skipped="0">
+	<testcase classname="EntregasVentasV2" name="test_Report_deliverySales" time="153.328" timestamp="2024-10-17T18:16:45" file="EntVentaV2.py" line="18">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-grains/div/div[2]/app-tab-deliveries-and-sales/app-deliveries-and-sales/div[2]/div[1]/swiper/div/div[1]/div[1]/app-number-without-currency-card/div/div/div/div[2]/div/h4/span&quot;}
+  (Session info: chrome=130.0.6723.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF76AACE1F5+2972373]
+	(No symbol) [0x00007FF76A7655F0]
+	(No symbol) [0x00007FF76A6057FA]
+	(No symbol) [0x00007FF76A655A3E]
+	(No symbol) [0x00007FF76A655D2C]
+	(No symbol) [0x00007FF76A69EAB7]
+	(No symbol) [0x00007FF76A67BABF]
+	(No symbol) [0x00007FF76A69B8CC]
+	(No symbol) [0x00007FF76A67B823]
+	(No symbol) [0x00007FF76A6475E8]
+	(No symbol) [0x00007FF76A648751]
+	GetHandleVerifier [0x00007FF76AAF47BD+3129501]
+	GetHandleVerifier [0x00007FF76AB44D00+3458528]
+	GetHandleVerifier [0x00007FF76AB3B05D+3418429]
+	GetHandleVerifier [0x00007FF76A8C687B+844123]
+	(No symbol) [0x00007FF76A770AFF]
+	(No symbol) [0x00007FF76A76C6D4]
+	(No symbol) [0x00007FF76A76C86D]
+	(No symbol) [0x00007FF76A75BD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntVentaV2.py", line 71, in test_Report_deliverySales
+    validate_character_string_element(self.driver, value_first_tote)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 30, in validate_character_string_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-grains/div/div[2]/app-tab-deliveries-and-sales/app-deliveries-and-sales/div[2]/div[1]/swiper/div/div[1]/div[1]/app-number-without-currency-card/div/div/div/div[2]/div/h4/span"}
+  (Session info: chrome=130.0.6723.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF76AACE1F5+2972373]
+	(No symbol) [0x00007FF76A7655F0]
+	(No symbol) [0x00007FF76A6057FA]
+	(No symbol) [0x00007FF76A655A3E]
+	(No symbol) [0x00007FF76A655D2C]
+	(No symbol) [0x00007FF76A69EAB7]
+	(No symbol) [0x00007FF76A67BABF]
+	(No symbol) [0x00007FF76A69B8CC]
+	(No symbol) [0x00007FF76A67B823]
+	(No symbol) [0x00007FF76A6475E8]
+	(No symbol) [0x00007FF76A648751]
+	GetHandleVerifier [0x00007FF76AAF47BD+3129501]
+	GetHandleVerifier [0x00007FF76AB44D00+3458528]
+	GetHandleVerifier [0x00007FF76AB3B05D+3418429]
+	GetHandleVerifier [0x00007FF76A8C687B+844123]
+	(No symbol) [0x00007FF76A770AFF]
+	(No symbol) [0x00007FF76A76C6D4]
+	(No symbol) [0x00007FF76A76C86D]
+	(No symbol) [0x00007FF76A75BD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

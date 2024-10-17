@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_ApliApagar.cta_cte_apliApagar-failed" tests="1" file="ctacte_ApliApagar.py" time="56.853" timestamp="2024-10-09T15:44:24" failures="0" errors="0" skipped="0">
-	<testcase classname="ctacte_ApliApagar.cta_cte_apliApagar" name="test_ctacte_apliApagar" time="56.853" timestamp="2024-10-09T15:44:24" file="ctacte_ApliApagar.py" line="18">
+<testsuite name="ctacte_ApliApagar.cta_cte_apliApagar-failed" tests="1" file="ctacte_ApliApagar.py" time="55.346" timestamp="2024-10-17T16:36:57" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_ApliApagar.cta_cte_apliApagar" name="test_ctacte_apliApagar" time="55.346" timestamp="2024-10-17T16:36:57" file="ctacte_ApliApagar.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
 El valor es un carácter numérico. Valor: -1.287.608.362,51
 El valor es un carácter numérico. Valor: -1.110.435.956,30

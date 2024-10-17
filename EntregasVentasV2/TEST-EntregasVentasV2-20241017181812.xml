@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EntregasVentasV2-20241017181812" tests="1" file=".py" time="63.847" timestamp="2024-10-17T18:19:16" failures="0" errors="0" skipped="0">
+	<testcase classname="EntregasVentasV2" name="test_Report_deliverySales" time="63.847" timestamp="2024-10-17T18:19:16" file="EntVentaV2.py" line="18">
+		<system-out><![CDATA[El texto no fue encontrado  Entregas 
+El texto encontrado es  Kilos Vendidos
+El valor es un string. Valor: 6.518.600,00
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 5.078.380,00
+El texto encontrado es  Kilos Entregados
+El valor es un carácter numérico. Valor: 11.947.550,00
+El texto encontrado es  Otros Movimientos
+El valor es un carácter numérico. Valor: -34.258,00
+El texto encontrado es  Saldo
+El valor es un carácter numérico. Valor: 5.394.692,00
+El texto encontrado es  Fecha
+El valor es un string. Valor: 02/05/2024
+El texto encontrado es  Comprobante
+El valor es un carácter numérico. Valor: TK 0029 00007376
+El texto encontrado es  Brutos
+El valor es un carácter numérico. Valor: 30.440
+El texto encontrado es  Humedad
+El valor es un carácter numérico. Valor: 13,5
+El valor es un carácter numérico. Valor: 0
+]]></system-out>
+	</testcase>
+</testsuite>

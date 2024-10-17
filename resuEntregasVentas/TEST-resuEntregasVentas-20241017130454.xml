@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="resuEntregasVentas-20241017130454" tests="1" file=".py" time="78.293" timestamp="2024-10-17T13:06:12" failures="0" errors="1" skipped="0">
+	<testcase classname="resuEntregasVentas" name="test_Report_deliverySales" time="78.293" timestamp="2024-10-17T13:06:12" file="ResuEntVentV2.py" line="18">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#pr_id_9-table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(3)&quot;}
+  (Session info: chrome=130.0.6723.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73CD4E1F5+2972373]
+	(No symbol) [0x00007FF73C9E55F0]
+	(No symbol) [0x00007FF73C8857FA]
+	(No symbol) [0x00007FF73C8D5A3E]
+	(No symbol) [0x00007FF73C8D5D2C]
+	(No symbol) [0x00007FF73C91EAB7]
+	(No symbol) [0x00007FF73C8FBABF]
+	(No symbol) [0x00007FF73C91B8CC]
+	(No symbol) [0x00007FF73C8FB823]
+	(No symbol) [0x00007FF73C8C75E8]
+	(No symbol) [0x00007FF73C8C8751]
+	GetHandleVerifier [0x00007FF73CD747BD+3129501]
+	GetHandleVerifier [0x00007FF73CDC4D00+3458528]
+	GetHandleVerifier [0x00007FF73CDBB05D+3418429]
+	GetHandleVerifier [0x00007FF73CB4687B+844123]
+	(No symbol) [0x00007FF73C9F0AFF]
+	(No symbol) [0x00007FF73C9EC6D4]
+	(No symbol) [0x00007FF73C9EC86D]
+	(No symbol) [0x00007FF73C9DBD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ResuEntVentV2.py", line 66, in test_Report_deliverySales
+    validate_character_numeric_element_selector(self.driver, value_third_column)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1168, in validate_character_numeric_element_selector
+    elemento = driver.find_element(By.CSS_SELECTOR, css_selector)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#pr_id_9-table > tbody > tr:nth-child(1) > td:nth-child(3)"}
+  (Session info: chrome=130.0.6723.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73CD4E1F5+2972373]
+	(No symbol) [0x00007FF73C9E55F0]
+	(No symbol) [0x00007FF73C8857FA]
+	(No symbol) [0x00007FF73C8D5A3E]
+	(No symbol) [0x00007FF73C8D5D2C]
+	(No symbol) [0x00007FF73C91EAB7]
+	(No symbol) [0x00007FF73C8FBABF]
+	(No symbol) [0x00007FF73C91B8CC]
+	(No symbol) [0x00007FF73C8FB823]
+	(No symbol) [0x00007FF73C8C75E8]
+	(No symbol) [0x00007FF73C8C8751]
+	GetHandleVerifier [0x00007FF73CD747BD+3129501]
+	GetHandleVerifier [0x00007FF73CDC4D00+3458528]
+	GetHandleVerifier [0x00007FF73CDBB05D+3418429]
+	GetHandleVerifier [0x00007FF73CB4687B+844123]
+	(No symbol) [0x00007FF73C9F0AFF]
+	(No symbol) [0x00007FF73C9EC6D4]
+	(No symbol) [0x00007FF73C9EC86D]
+	(No symbol) [0x00007FF73C9DBD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  Resumen de Entregas y Ventas
+El texto encontrado es  Especie/Cosecha
+El valor es un string. Valor: MAIZ 2223
+El texto encontrado es  Entregas (Kg.)
+El valor es un carácter numérico. Valor: 7641784
+El texto encontrado es  Retiros (Kg.)
+]]></system-out>
+	</testcase>
+</testsuite>

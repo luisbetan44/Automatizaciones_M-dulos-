@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="dashboard_granos-20241015110846" tests="1" file=".py" time="198.612" timestamp="2024-10-15T11:12:05" failures="0" errors="0" skipped="0">
+	<testcase classname="dashboard_granos" name="test_dashboard_grain" time="198.612" timestamp="2024-10-15T11:12:05" file="Dashboar.py" line="23">
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

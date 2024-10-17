@@ -1,83 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EntregasPendApli.entregas_pend_Aplicadas-failed" tests="2" file="EntregasPendApli.py" time="50.989" timestamp="2024-10-09T15:40:29" failures="0" errors="2" skipped="0">
-	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="0.000" timestamp="0001-01-01T00:00:00" file="EntregasPendApli.py" line="22">
-		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasPendApli.py", line 46, in test_delivery_earrings
-    find_elements(self.driver, selct_filter )
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
-    select_nex_button = WebDriverWait(driver, 10).until(
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
-    value = method(self._driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
-    element = visibility_of(target)(driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
-    return _element_if_visible(element)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
-    return element if element.is_displayed() == visibility else False
-AttributeError: 'NoneType' object has no attribute 'is_displayed'
-]]></error>
-		<system-out><![CDATA[El texto no fue encontrado MIS ENTREGAS
-]]></system-out>
-	</testcase>
-	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="50.989" timestamp="2024-10-09T15:40:29" file="EntregasPendApli.py" line="22">
-		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Stacktrace:
-	GetHandleVerifier [0x00007FF642E1B675+29573]
-	(No symbol) [0x00007FF642D904A0]
-	(No symbol) [0x00007FF642C4B6EA]
-	(No symbol) [0x00007FF642C1FCD5]
-	(No symbol) [0x00007FF642CCEF67]
-	(No symbol) [0x00007FF642CD64F8]
-	(No symbol) [0x00007FF642CC72C0]
-	(No symbol) [0x00007FF642C912DF]
-	(No symbol) [0x00007FF642C92441]
-	GetHandleVerifier [0x00007FF64314C5BD+3375821]
-	GetHandleVerifier [0x00007FF6431979B7+3684039]
-	GetHandleVerifier [0x00007FF64318CDDB+3640043]
-	GetHandleVerifier [0x00007FF642EDB7F6+816390]
-	(No symbol) [0x00007FF642D9B7AF]
-	(No symbol) [0x00007FF642D975D4]
-	(No symbol) [0x00007FF642D97770]
-	(No symbol) [0x00007FF642D865CF]
-	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
-	RtlUserThreadStart [0x00007FFFD420AF08+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasPendApli.py", line 226, in tearDown
-    self.driver.close()
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
-    self.execute(Command.CLOSE)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=129.0.6668.90)
-Stacktrace:
-	GetHandleVerifier [0x00007FF642E1B675+29573]
-	(No symbol) [0x00007FF642D904A0]
-	(No symbol) [0x00007FF642C4B6EA]
-	(No symbol) [0x00007FF642C1FCD5]
-	(No symbol) [0x00007FF642CCEF67]
-	(No symbol) [0x00007FF642CD64F8]
-	(No symbol) [0x00007FF642CC72C0]
-	(No symbol) [0x00007FF642C912DF]
-	(No symbol) [0x00007FF642C92441]
-	GetHandleVerifier [0x00007FF64314C5BD+3375821]
-	GetHandleVerifier [0x00007FF6431979B7+3684039]
-	GetHandleVerifier [0x00007FF64318CDDB+3640043]
-	GetHandleVerifier [0x00007FF642EDB7F6+816390]
-	(No symbol) [0x00007FF642D9B7AF]
-	(No symbol) [0x00007FF642D975D4]
-	(No symbol) [0x00007FF642D97770]
-	(No symbol) [0x00007FF642D865CF]
-	BaseThreadInitThunk [0x00007FFFD2F3257D+29]
-	RtlUserThreadStart [0x00007FFFD420AF08+40]
-
-]]></error>
-		<system-out><![CDATA[El texto no fue encontrado MIS ENTREGAS
+<testsuite name="EntregasPendApli.entregas_pend_Aplicadas-failed" tests="1" file="EntregasPendApli.py" time="82.097" timestamp="2024-10-17T16:33:09" failures="0" errors="0" skipped="0">
+	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="82.097" timestamp="2024-10-17T16:33:09" file="EntregasPendApli.py" line="23">
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El valor es un carácter numérico. Valor: 431,36
+El valor es un carácter numérico. Valor: 417,68
+El valor es un string. Valor: Entrega TK 0001 00121693
+El valor es un string. Valor: 31,32 Tn
+El valor es un string. Valor: De Maiz
+El valor es un string. Valor: DATOS DE LA ENTREGA
+El valor es un string. Valor: 26/07/2022
+El valor es un string. Valor: 21/22
+El valor es un string. Valor: DON EMIDIO SA
+El valor es un string. Valor: 19970 CAMPO RASSETTO (Don Emidio S.A.)
+El texto es visible para el usuario
+El texto fue validado correctamente: ANÁLISIS
+El valor es un string. Valor: 15.8%
+El valor es un string. Valor: 31.320,00
 ]]></system-out>
 	</testcase>
 </testsuite>

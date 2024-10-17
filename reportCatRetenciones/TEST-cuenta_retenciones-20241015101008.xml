@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_retenciones-20241015101008" tests="1" file=".py" time="34.476" timestamp="2024-10-15T10:10:43" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_retenciones" name="test_ctacte_historica" time="34.476" timestamp="2024-10-15T10:10:43" file="Retenciones.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Retenciones
+El valor es un string. Valor: 30/09/2024
+El valor es un carácter numérico. Valor: 3302-00169189
+El valor es un string. Valor: 11403 - Sellado 1116C Sta. Fe
+El valor es un string. Valor: Sellado Sta. Fe
+El valor es un string. Valor: LC 3302 00169189
+El valor es un carácter numérico. Valor: -5.495,57
+El valor es un carácter numérico. Valor: 0,30 %
+El valor es un carácter numérico. Valor: -16,49
+]]></system-out>
+	</testcase>
+</testsuite>

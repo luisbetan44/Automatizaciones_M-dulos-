@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Onboarding_test_tenant-20241015104647" tests="1" file=".py" time="439.936" timestamp="2024-10-15T10:54:07" failures="0" errors="1" skipped="0">
+	<testcase classname="Onboarding_test_tenant" name="test_tenat_onboarding" time="439.936" timestamp="2024-10-15T10:54:07" file="Onboarding.py" line="28">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-tax-status/div/div[1]/div[1]/div/div/p&quot;}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF705EBB095+29557]
+	(No symbol) [0x00007FF705E2FA50]
+	(No symbol) [0x00007FF705CEB56A]
+	(No symbol) [0x00007FF705D3F695]
+	(No symbol) [0x00007FF705D3F8EC]
+	(No symbol) [0x00007FF705D8B777]
+	(No symbol) [0x00007FF705D671CF]
+	(No symbol) [0x00007FF705D8851C]
+	(No symbol) [0x00007FF705D66F33]
+	(No symbol) [0x00007FF705D3116F]
+	(No symbol) [0x00007FF705D322D1]
+	GetHandleVerifier [0x00007FF7061EC96D+3378253]
+	GetHandleVerifier [0x00007FF706238497+3688311]
+	GetHandleVerifier [0x00007FF70622D1CB+3642539]
+	GetHandleVerifier [0x00007FF705F7A6B6+813462]
+	(No symbol) [0x00007FF705E3AB5F]
+	(No symbol) [0x00007FF705E36B74]
+	(No symbol) [0x00007FF705E36D10]
+	(No symbol) [0x00007FF705E25C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Onboarding.py", line 167, in test_tenat_onboarding
+    validate_text_visible(self.driver, element_3, text_expected3)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1177, in validate_text_visible
+    element = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-tax-status/div/div[1]/div[1]/div/div/p"}
+  (Session info: chrome=129.0.6668.100); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF705EBB095+29557]
+	(No symbol) [0x00007FF705E2FA50]
+	(No symbol) [0x00007FF705CEB56A]
+	(No symbol) [0x00007FF705D3F695]
+	(No symbol) [0x00007FF705D3F8EC]
+	(No symbol) [0x00007FF705D8B777]
+	(No symbol) [0x00007FF705D671CF]
+	(No symbol) [0x00007FF705D8851C]
+	(No symbol) [0x00007FF705D66F33]
+	(No symbol) [0x00007FF705D3116F]
+	(No symbol) [0x00007FF705D322D1]
+	GetHandleVerifier [0x00007FF7061EC96D+3378253]
+	GetHandleVerifier [0x00007FF706238497+3688311]
+	GetHandleVerifier [0x00007FF70622D1CB+3642539]
+	GetHandleVerifier [0x00007FF705F7A6B6+813462]
+	(No symbol) [0x00007FF705E3AB5F]
+	(No symbol) [0x00007FF705E36B74]
+	(No symbol) [0x00007FF705E36D10]
+	(No symbol) [0x00007FF705E25C1F]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: DOCUMENTACIÓN
+El texto es visible para el usuario
+El texto fue validado correctamente: Para poder continuar al siguiente paso, será obligatorio completar los campos que se muestran a continuación.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+Error presente. Intentando con otro CUIT.
+CUIT válido insertado: 20-99268801-8
+Archivo 'C:/Users/luist/OneDrive/Escritorio/Facturas/Contratos-1023-JUAN DEMO.xls' cargado con éxito después de hacer clic en el chevron!
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-documentation-process/div/div/aw-wizard/div/app-account-type/div/div[3]/app-checks/div/input' seleccionado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

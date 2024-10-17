@@ -17,6 +17,7 @@ from CtaCtoDtalCertificados import detalle_cto_certificados
 from CtaCtoDtalEntVta import detalle_ctro_entregaVentas
 from CtaCtoDtalFijaciones import detalle_ctro_fijaciones
 from CtaCtoDtalLiquidaciones import detalle_cto_liquidaciones
+from Retenciones import cuenta_retenciones
 from ctacte_histoAcobrar import cuenta_ctacte_histAcobrar
 from Cuentacontrato import contrato_tenant
 from Dashboar import dashboard_granos
@@ -82,10 +83,10 @@ def ejecutar_suite():
     test_suite.addTest(unittest.makeSuite(cuenta_ctacte_histAcobrar))
     test_suite.addTest(unittest.makeSuite(cuenta_ctacte_histAvencer))
     test_suite.addTest(unittest.makeSuite(cuenta_ctacte_histVencido))
+    test_suite.addTest(unittest.makeSuite(cuenta_retenciones))
     test_suite.addTest(unittest.makeSuite(comprobantectacte))
     test_suite.addTest(unittest.makeSuite(comprobanteContrato))
     test_suite.addTest(unittest.makeSuite(comprobanteEntregas))
-    
     test_suite.addTest(unittest.makeSuite(comprobanteVentas))
     test_suite.addTest(unittest.makeSuite(reportPendFacturar))
     test_suite.addTest(unittest.makeSuite(reportEntregasVentas))

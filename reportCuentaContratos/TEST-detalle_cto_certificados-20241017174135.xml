@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_certificados-20241017174135" tests="1" file=".py" time="30.103" timestamp="2024-10-17T17:42:05" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_cto_certificados" name="test_detail_certificates" time="30.103" timestamp="2024-10-17T17:42:05" file="CtaCtoDtalCertificados.py" line="22">
+		<error type="WebDriverException" message="Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=130.0.6723.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF654F0E1F5+2972373]
+	(No symbol) [0x00007FF654BA55F0]
+	(No symbol) [0x00007FF654A45629]
+	(No symbol) [0x00007FF654A3387B]
+	(No symbol) [0x00007FF654A3151E]
+	(No symbol) [0x00007FF654A31FCF]
+	(No symbol) [0x00007FF654A408BE]
+	(No symbol) [0x00007FF654A53C04]
+	(No symbol) [0x00007FF654ADB9F2]
+	(No symbol) [0x00007FF654ABB823]
+	(No symbol) [0x00007FF654A875E8]
+	(No symbol) [0x00007FF654A88751]
+	GetHandleVerifier [0x00007FF654F347BD+3129501]
+	GetHandleVerifier [0x00007FF654F84D00+3458528]
+	GetHandleVerifier [0x00007FF654F7B05D+3418429]
+	GetHandleVerifier [0x00007FF654D0687B+844123]
+	(No symbol) [0x00007FF654BB0AFF]
+	(No symbol) [0x00007FF654BAC6D4]
+	(No symbol) [0x00007FF654BAC86D]
+	(No symbol) [0x00007FF654B9BD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalCertificados.py", line 42, in test_detail_certificates
+    find_elements(self.driver,select_filter )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: target frame detached
+  (failed to check if window was closed: disconnected: Unable to receive message from renderer)
+  (Session info: chrome=130.0.6723.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF654F0E1F5+2972373]
+	(No symbol) [0x00007FF654BA55F0]
+	(No symbol) [0x00007FF654A45629]
+	(No symbol) [0x00007FF654A3387B]
+	(No symbol) [0x00007FF654A3151E]
+	(No symbol) [0x00007FF654A31FCF]
+	(No symbol) [0x00007FF654A408BE]
+	(No symbol) [0x00007FF654A53C04]
+	(No symbol) [0x00007FF654ADB9F2]
+	(No symbol) [0x00007FF654ABB823]
+	(No symbol) [0x00007FF654A875E8]
+	(No symbol) [0x00007FF654A88751]
+	GetHandleVerifier [0x00007FF654F347BD+3129501]
+	GetHandleVerifier [0x00007FF654F84D00+3458528]
+	GetHandleVerifier [0x00007FF654F7B05D+3418429]
+	GetHandleVerifier [0x00007FF654D0687B+844123]
+	(No symbol) [0x00007FF654BB0AFF]
+	(No symbol) [0x00007FF654BAC6D4]
+	(No symbol) [0x00007FF654BAC86D]
+	(No symbol) [0x00007FF654B9BD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>

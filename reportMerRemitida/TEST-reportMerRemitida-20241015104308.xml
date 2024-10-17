@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="reportMerRemitida-20241015104308" tests="1" file=".py" time="45.243" timestamp="2024-10-15T10:43:53" failures="0" errors="0" skipped="0">
+	<testcase classname="reportMerRemitida" name="test_Report_MerFacturada" time="45.243" timestamp="2024-10-15T10:43:53" file="ReportMerRemitida.py" line="19">
+		<system-out><![CDATA[El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: 575.692,71
+El texto encontrado es  Mercadería Remitida
+El texto encontrado es  Fecha
+El valor es un string. Valor: 22/08/2024
+El texto encontrado es  Comprobante
+El valor es un string. Valor: REMBAL 0063 00038363
+El texto encontrado es  Artículo
+El valor es un string. Valor: Premezcla Creci Feed Nutricion Superior x 25 kgs
+El texto encontrado es  Comp. Origen
+El valor es un string. Valor: PEDBAL 0001 00039677
+El texto encontrado es  Cantidad
+El valor es un carácter numérico. Valor: 2.175,00
+El texto encontrado es  Moneda
+El valor es un carácter alfabético. Valor: USD
+El texto encontrado es  Precio
+El valor es un string. Valor: 0,43
+]]></system-out>
+	</testcase>
+</testsuite>

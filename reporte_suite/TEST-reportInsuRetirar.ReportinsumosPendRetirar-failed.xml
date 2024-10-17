@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="reportInsuRetirar.ReportinsumosPendRetirar-failed" tests="1" file="reportInsuRetirar.py" time="52.688" timestamp="2024-10-09T16:03:19" failures="0" errors="0" skipped="0">
-	<testcase classname="reportInsuRetirar.ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="52.688" timestamp="2024-10-09T16:03:19" file="reportInsuRetirar.py" line="17">
+<testsuite name="reportInsuRetirar.ReportinsumosPendRetirar-failed" tests="1" file="reportInsuRetirar.py" time="49.826" timestamp="2024-10-17T16:54:57" failures="0" errors="0" skipped="0">
+	<testcase classname="reportInsuRetirar.ReportinsumosPendRetirar" name="test_Report_suppliesWithdrawal" time="49.826" timestamp="2024-10-17T16:54:57" file="reportInsuRetirar.py" line="17">
 		<system-out><![CDATA[El texto encontrado es  Insumos Pendientes de Retirar
 El texto no fue encontrado Comprobante
 El texto encontrado '02/07/2024' no coincide con el esperado ''

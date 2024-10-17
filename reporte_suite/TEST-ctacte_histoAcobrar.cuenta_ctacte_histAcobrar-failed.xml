@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar-failed" tests="1" file="ctacte_histoAcobrar.py" time="126.834" timestamp="2024-10-09T15:51:47" failures="0" errors="0" skipped="0">
-	<testcase classname="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="126.834" timestamp="2024-10-09T15:51:47" file="ctacte_histoAcobrar.py" line="17">
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-¡Elemento encontrado y clickeado 7 veces con éxito!
-¡Elemento encontrado y clickeado 3 veces con éxito!
-Tiempo de espera agotado. El texto por xpaht no está presente.
-El valor es un carácter numérico. Valor: -300,75
-El valor es un carácter numérico. Valor: 0,00
+<testsuite name="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar-failed" tests="1" file="ctacte_histoAcobrar.py" time="58.881" timestamp="2024-10-17T16:41:55" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="58.881" timestamp="2024-10-17T16:41:55" file="ctacte_histoAcobrar.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
+El valor es un carácter numérico. Valor: 2.122.059.104,40
+El valor es un carácter numérico. Valor: 87.831,48
 El texto encontrado es  CUENTA CORRIENTE
-El texto no fue encontrado Movimiento LC 3302 11350773
-El texto no fue encontrado + ARS 19.640,53
-El texto no fue encontrado Liq.1116C SOJA 2223 100 Kgs. 100,00%
+El valor es un string. Valor: Movimiento IC 3302 11350776
+El valor es un string. Valor: + ARS 9.008,51
+El valor es un string. Valor: IVA CBU Liq.1116C SOJA 2324 24000 Kgs.
 ]]></system-out>
 	</testcase>
 </testsuite>
