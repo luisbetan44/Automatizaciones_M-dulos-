@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EntregasVentasV2-20241021112612" tests="1" file=".py" time="67.037" timestamp="2024-10-21T11:27:19" failures="0" errors="1" skipped="0">
+	<testcase classname="EntregasVentasV2" name="test_Report_deliverySales" time="67.037" timestamp="2024-10-21T11:27:19" file="EntVentaV2.py" line="18">
+		<error type="InvalidSelectorException" message="Message: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;The result of the xpath expression \&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-grains/div/div[2]/app-tab-deliveries-and-sales/app-deliveries-and-sales/div[2]/div[3]/app-rpt-deliv-and-sale-sales-list/div/div/h2/button/text()\&quot; is: [object Text]. It should be an element.&quot;}
+  (Session info: chrome=130.0.6723.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FD06E1F5+2972373]
+	(No symbol) [0x00007FF6FCD055F0]
+	(No symbol) [0x00007FF6FCBA57FA]
+	(No symbol) [0x00007FF6FCBAC2CC]
+	(No symbol) [0x00007FF6FCBAE5E7]
+	(No symbol) [0x00007FF6FCBAE6A0]
+	(No symbol) [0x00007FF6FCBF54EA]
+	(No symbol) [0x00007FF6FCBF5D2C]
+	(No symbol) [0x00007FF6FCC3EAB7]
+	(No symbol) [0x00007FF6FCC1BABF]
+	(No symbol) [0x00007FF6FCC3B8CC]
+	(No symbol) [0x00007FF6FCC1B823]
+	(No symbol) [0x00007FF6FCBE75E8]
+	(No symbol) [0x00007FF6FCBE8751]
+	GetHandleVerifier [0x00007FF6FD0947BD+3129501]
+	GetHandleVerifier [0x00007FF6FD0E4D00+3458528]
+	GetHandleVerifier [0x00007FF6FD0DB05D+3418429]
+	GetHandleVerifier [0x00007FF6FCE6687B+844123]
+	(No symbol) [0x00007FF6FCD10AFF]
+	(No symbol) [0x00007FF6FCD0C6D4]
+	(No symbol) [0x00007FF6FCD0C86D]
+	(No symbol) [0x00007FF6FCCFBD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntVentaV2.py", line 241, in test_Report_deliverySales
+    validate_text(self.driver,title_sales, title_sales_expected )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1000, in validate_text
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"The result of the xpath expression \"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-grains/div/div[2]/app-tab-deliveries-and-sales/app-deliveries-and-sales/div[2]/div[3]/app-rpt-deliv-and-sale-sales-list/div/div/h2/button/text()\" is: [object Text]. It should be an element."}
+  (Session info: chrome=130.0.6723.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6FD06E1F5+2972373]
+	(No symbol) [0x00007FF6FCD055F0]
+	(No symbol) [0x00007FF6FCBA57FA]
+	(No symbol) [0x00007FF6FCBAC2CC]
+	(No symbol) [0x00007FF6FCBAE5E7]
+	(No symbol) [0x00007FF6FCBAE6A0]
+	(No symbol) [0x00007FF6FCBF54EA]
+	(No symbol) [0x00007FF6FCBF5D2C]
+	(No symbol) [0x00007FF6FCC3EAB7]
+	(No symbol) [0x00007FF6FCC1BABF]
+	(No symbol) [0x00007FF6FCC3B8CC]
+	(No symbol) [0x00007FF6FCC1B823]
+	(No symbol) [0x00007FF6FCBE75E8]
+	(No symbol) [0x00007FF6FCBE8751]
+	GetHandleVerifier [0x00007FF6FD0947BD+3129501]
+	GetHandleVerifier [0x00007FF6FD0E4D00+3458528]
+	GetHandleVerifier [0x00007FF6FD0DB05D+3418429]
+	GetHandleVerifier [0x00007FF6FCE6687B+844123]
+	(No symbol) [0x00007FF6FCD10AFF]
+	(No symbol) [0x00007FF6FCD0C6D4]
+	(No symbol) [0x00007FF6FCD0C86D]
+	(No symbol) [0x00007FF6FCCFBD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto no fue encontrado  Entregas 
+El texto encontrado es  Kilos Vendidos
+El valor es un string. Valor: 6.518.600,00
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 5.078.380,00
+El texto encontrado es  Kilos Entregados
+El valor es un carácter numérico. Valor: 11.947.550,00
+El texto encontrado es  Otros Movimientos
+El valor es un carácter numérico. Valor: -34.258,00
+El texto encontrado es  Saldo
+El valor es un carácter numérico. Valor: 5.394.692,00
+El texto encontrado es  Fecha
+El valor es un string. Valor: 02/05/2024
+El texto encontrado es  Comprobante
+El valor es un carácter numérico. Valor: TK 0029 00007376
+El texto encontrado es  Brutos
+El valor es un carácter numérico. Valor: 30.440
+El texto encontrado es  Humedad
+El valor es un carácter numérico. Valor: 13,5
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Zarandeo
+El valor es un carácter numérico. Valor: 0
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Volátil
+El valor es un carácter numérico. Valor: 0,3
+El valor es un carácter numérico. Valor: 91
+El texto encontrado es  Netos
+El valor es un carácter numérico. Valor: 30.349
+El texto encontrado es  Planta
+El valor es un string. Valor: Zenon Pereyra
+El texto encontrado es  Factor
+El valor es un carácter numérico. Valor: 100
+El texto encontrado es  Grado
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  N1116A
+El valor es un carácter numérico. Valor: 18069496
+El texto encontrado es  RM/CP
+El valor es un carácter numérico. Valor: 10115759716
+El texto encontrado es  Acarreo
+El valor es un carácter alfabético. Valor: Sí
+El texto encontrado es  Empresa de Transporte
+El valor es un string. Valor: 71632 KAPOBEL, HERIBERTO
+]]></system-out>
+	</testcase>
+</testsuite>

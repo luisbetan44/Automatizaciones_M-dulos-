@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EntregasVentasV2-20241021130637" tests="1" file=".py" time="97.444" timestamp="2024-10-21T13:08:15" failures="0" errors="0" skipped="0">
+	<testcase classname="EntregasVentasV2" name="test_Report_deliverySales" time="97.444" timestamp="2024-10-21T13:08:15" file="EntVentaV2.py" line="18">
+		<system-out><![CDATA[El texto no fue encontrado  Entregas 
+El texto encontrado es  Kilos Vendidos
+El valor es un string. Valor: 6.518.600,00
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 5.078.380,00
+El texto encontrado es  Kilos Entregados
+El valor es un carácter numérico. Valor: 11.947.550,00
+El texto encontrado es  Otros Movimientos
+El valor es un carácter numérico. Valor: -34.258,00
+El texto encontrado es  Saldo
+El valor es un carácter numérico. Valor: 5.394.692,00
+El texto encontrado es  Fecha
+El valor es un string. Valor: 02/05/2024
+El texto encontrado es  Comprobante
+El valor es un carácter numérico. Valor: TK 0029 00007376
+El texto encontrado es  Brutos
+El valor es un carácter numérico. Valor: 30.440
+El texto encontrado es  Humedad
+El valor es un carácter numérico. Valor: 13,5
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Zarandeo
+El valor es un carácter numérico. Valor: 0
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Volátil
+El valor es un carácter numérico. Valor: 0,3
+El valor es un carácter numérico. Valor: 91
+El texto encontrado es  Netos
+El valor es un carácter numérico. Valor: 30.349
+El texto encontrado es  Planta
+El valor es un string. Valor: Zenon Pereyra
+El texto encontrado es  Factor
+El valor es un carácter numérico. Valor: 100
+El texto encontrado es  Grado
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  N1116A
+El valor es un carácter numérico. Valor: 18069496
+El texto encontrado es  RM/CP
+El valor es un carácter numérico. Valor: 10115759716
+El texto encontrado es  Acarreo
+El valor es un carácter alfabético. Valor: Sí
+El texto encontrado es  Empresa de Transporte
+El valor es un string. Valor: 71632 KAPOBEL, HERIBERTO
+El texto encontrado es  Ventas
+El texto encontrado es  Fecha
+El valor es un string. Valor: 09/09/2024
+El texto encontrado es  Comprobante
+El valor es un string. Valor: VT 0001 00129942
+El texto encontrado es  Puerto/Destino
+El valor es un string. Valor: 03 Playa S. Miguel (T6 y M. Pampa)
+El texto encontrado es  Entrega desde
+El valor es un string. Valor: 09/09/2024
+El texto encontrado es  Entrega hasta
+El valor es un string. Valor: 30/09/2024
+El texto encontrado es  Kilos Totales
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Sin Fijar TC
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Liquidados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Precios
+El valor es un carácter numérico. Valor: 7.000,00
+El texto encontrado es  Moneda
+El valor es un carácter alfabético. Valor: P
+El texto encontrado es  Ventas a Fijar
+El texto encontrado es  Fecha
+El valor es un string. Valor: 19/04/2024
+El texto encontrado es  Comprobante
+El valor es un string. Valor: VF 0001 00127012
+El texto encontrado es  Puerto/Destino
+El valor es un string. Valor: 03 Playa S. Miguel (T6 y M. Pampa)
+El texto encontrado es  Entrega desde
+El valor es un string. Valor: 19/04/2024
+El texto encontrado es  Entrega hasta
+El valor es un string. Valor: 17/05/2024
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 6.812.638
+El texto encontrado es  Kilos Totales
+El valor es un carácter numérico. Valor: 6.812.638
+El texto encontrado es  Entregados
+El valor es un carácter numérico. Valor: 6.812.638
+El texto encontrado es  Pendientes
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Otros Movimientos
+El texto encontrado es  Fecha
+El valor es un string. Valor: 
+El texto encontrado es  Comprobante
+El valor es un string. Valor: PA 3320 18793767
+El texto no fue encontrado Comprobante Origen
+El valor es un string. Valor: ESTANCIA MARIA CRISTINA S.A.
+El texto encontrado es  Entradas
+El valor es un string. Valor: LA 3320 17825388 22/04/2024
+El texto encontrado es  Salidas
+El valor es un string. Valor: -34.258
+El texto encontrado es  Observaciones
+El valor es un carácter numérico. Valor: Transferencia a ESTANCIA MARIA CRISTINA S.A. ( 2
+]]></system-out>
+	</testcase>
+</testsuite>

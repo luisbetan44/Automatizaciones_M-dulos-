@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SerFacturadosV2-20241021134404" tests="1" file=".py" time="41.780" timestamp="2024-10-21T13:44:46" failures="0" errors="0" skipped="0">
+	<testcase classname="SerFacturadosV2" name="test_Report_deliverySales" time="41.780" timestamp="2024-10-21T13:44:46" file="SerFactV2.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Gastos Tickets
+El texto encontrado es  Fecha
+El valor es un string. Valor: 23/04/2024
+El texto encontrado es  Comprobante
+El valor es un carácter numérico. Valor: FASCER 1118 00079009
+El texto encontrado es  Acarreo/Flete
+El valor es un carácter numérico. Valor: 2775286
+El texto encontrado es  Imp. Secada
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Imp. Percepción
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Imp. Otros
+El valor es un carácter numérico. Valor: 1.460.292,43
+El texto encontrado es  Imp. Total
+El valor es un carácter numérico. Valor: 4.235.578,43
+]]></system-out>
+	</testcase>
+</testsuite>

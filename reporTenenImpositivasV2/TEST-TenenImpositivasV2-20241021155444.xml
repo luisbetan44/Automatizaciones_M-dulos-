@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TenenImpositivasV2-20241021155444" tests="1" file=".py" time="28.778" timestamp="2024-10-21T15:55:13" failures="0" errors="1" skipped="0">
+	<testcase classname="TenenImpositivasV2" name="test_Report_deliverySales" time="28.778" timestamp="2024-10-21T15:55:13" file="TenenImposiV2.py" line="18">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;span _ngcontent-sjb-c179=&quot;&quot;&gt;...&lt;/span&gt; is not clickable at point (1471, 200). Other element would receive the click: &lt;app-button _ngcontent-sjb-c396=&quot;&quot; buttonname=&quot;Generar&quot; _nghost-sjb-c179=&quot;&quot;&gt;...&lt;/app-button&gt;
+  (Session info: chrome=130.0.6723.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74B64E1F5+2972373]
+	(No symbol) [0x00007FF74B2E55F0]
+	(No symbol) [0x00007FF74B1857FA]
+	(No symbol) [0x00007FF74B1DD6CE]
+	(No symbol) [0x00007FF74B1DB16C]
+	(No symbol) [0x00007FF74B1D8628]
+	(No symbol) [0x00007FF74B1D783C]
+	(No symbol) [0x00007FF74B1C992E]
+	(No symbol) [0x00007FF74B1FBA7A]
+	(No symbol) [0x00007FF74B1C9266]
+	(No symbol) [0x00007FF74B1FBC90]
+	(No symbol) [0x00007FF74B21B8CC]
+	(No symbol) [0x00007FF74B1FB823]
+	(No symbol) [0x00007FF74B1C75E8]
+	(No symbol) [0x00007FF74B1C8751]
+	GetHandleVerifier [0x00007FF74B6747BD+3129501]
+	GetHandleVerifier [0x00007FF74B6C4D00+3458528]
+	GetHandleVerifier [0x00007FF74B6BB05D+3418429]
+	GetHandleVerifier [0x00007FF74B44687B+844123]
+	(No symbol) [0x00007FF74B2F0AFF]
+	(No symbol) [0x00007FF74B2EC6D4]
+	(No symbol) [0x00007FF74B2EC86D]
+	(No symbol) [0x00007FF74B2DBD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\TenenImposiV2.py", line 42, in test_Report_deliverySales
+    find_elements(self.driver, select_button_generate)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <span _ngcontent-sjb-c179="">...</span> is not clickable at point (1471, 200). Other element would receive the click: <app-button _ngcontent-sjb-c396="" buttonname="Generar" _nghost-sjb-c179="">...</app-button>
+  (Session info: chrome=130.0.6723.58)
+Stacktrace:
+	GetHandleVerifier [0x00007FF74B64E1F5+2972373]
+	(No symbol) [0x00007FF74B2E55F0]
+	(No symbol) [0x00007FF74B1857FA]
+	(No symbol) [0x00007FF74B1DD6CE]
+	(No symbol) [0x00007FF74B1DB16C]
+	(No symbol) [0x00007FF74B1D8628]
+	(No symbol) [0x00007FF74B1D783C]
+	(No symbol) [0x00007FF74B1C992E]
+	(No symbol) [0x00007FF74B1FBA7A]
+	(No symbol) [0x00007FF74B1C9266]
+	(No symbol) [0x00007FF74B1FBC90]
+	(No symbol) [0x00007FF74B21B8CC]
+	(No symbol) [0x00007FF74B1FB823]
+	(No symbol) [0x00007FF74B1C75E8]
+	(No symbol) [0x00007FF74B1C8751]
+	GetHandleVerifier [0x00007FF74B6747BD+3129501]
+	GetHandleVerifier [0x00007FF74B6C4D00+3458528]
+	GetHandleVerifier [0x00007FF74B6BB05D+3418429]
+	GetHandleVerifier [0x00007FF74B44687B+844123]
+	(No symbol) [0x00007FF74B2F0AFF]
+	(No symbol) [0x00007FF74B2EC6D4]
+	(No symbol) [0x00007FF74B2EC86D]
+	(No symbol) [0x00007FF74B2DBD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>
