@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="TenenImpositivasV2-20241021170830" tests="1" file=".py" time="34.320" timestamp="2024-10-21T17:09:04" failures="0" errors="0" skipped="0">
+	<testcase classname="TenenImpositivasV2" name="test_tax_holdings" time="34.320" timestamp="2024-10-21T17:09:04" file="TenenImposiV2.py" line="19">
+		<system-out><![CDATA[El texto encontrado es  Saldo ARS
+El valor es un carácter numérico. Valor: -259.816.880,43
+El texto encontrado es  Saldo USD
+El valor es un carácter numérico. Valor: 3.978.290,26
+El texto encontrado es  Saldo Contable
+El valor es un carácter numérico. Valor: 1.471.129.081,86
+El texto encontrado es  Producto
+El valor es un carácter alfabético. Valor: MAIZ
+El texto encontrado es  Campaña
+El valor es un string. Valor: 2223
+El texto encontrado es  Kg. Netos
+El valor es un carácter numérico. Valor: 575.194
+El texto encontrado es  Kg. Pendientes Cert.
+El valor es un carácter numérico. Valor: 0
+]]></system-out>
+	</testcase>
+</testsuite>

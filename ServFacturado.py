@@ -2,31 +2,33 @@ import time
 import unittest
 from selenium.webdriver.common.by import By
 import xmlrunner
-from Elements import calendar_todate_retro, find_elements, find_elements_id, select_option_click, validate_character_numeric_element, validate_text
+from Elements import calendar_todate_retro, find_elements, find_elements_id, select_option_click, validate_character_numeric_element,  validate_text
 from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
-class SerFacturadosV2(unittest.TestCase):
-    def setUp(self):
+
+class ServFacturadoV2(unittest.TestCase):
+   def setUp(self):
         self.start_session = StartSession()
         self.driver = self.start_session.driver
 
         # Inicializar la clase LoginHelper
         self.login_helper = LoginHelper(self.driver)
 
-    def services_billed(self):
+   def test_billed_services(self):
         # Utilizar métodos de LoginHelper para el inicio de sesión
         self.login_helper.login("admingd@silohub.ag", "G@viglio123")
         self.login_helper.select_tenant()
         self.login_helper.search_and_select_account("1023")
+        time.sleep(3)
 
-
-        # ingresar al menú de cuentas 
+        
+       
+       # ingresar al menú de cuentas 
 
         select_menu_Account = "/html/body/app-root/app-layout/app-vertical/div/app-sidebar/div[1]/div[3]/div[1]/ngx-simplebar/div[1]/div[2]/div/div/div/ul/li[5]/a/span"
         find_elements(self.driver,select_menu_Account)
-
 
         # ingresar al submenú de granos
 
@@ -140,20 +142,23 @@ class SerFacturadosV2(unittest.TestCase):
         value_seventh_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-grains/div/div[3]/app-tab-billed-services/app-billed-services/div[3]/p-table/div/div/table/tbody/tr[1]/td[7]"
         validate_character_numeric_element(self.driver,value_seventh_column)
 
-       
 
 
+        
 
-
-    def tearDown(self):
-        self.driver.quit()
+      
+     
+        
+   def tearDown(self):
+        self.driver.close()
 
 
 
 
 
 if __name__ == "__main__":
-  test_suite = unittest.TestLoader().loadTestsFromTestCase(SerFacturadosV2)
-  runner = xmlrunner.XMLTestRunner(output='SerFacturadosV2')
+  test_suite = unittest.TestLoader().loadTestsFromTestCase(ServFacturadoV2)
+  runner = xmlrunner.XMLTestRunner(output='reportServFacturadoV2t')
   runner.run(test_suite)
         
+   
