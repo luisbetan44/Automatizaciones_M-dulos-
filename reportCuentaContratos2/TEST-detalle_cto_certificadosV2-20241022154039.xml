@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_certificadosV2-20241022154039" tests="1" file=".py" time="156.758" timestamp="2024-10-22T15:43:15" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_cto_certificadosV2" name="test_detail_certificates" time="156.758" timestamp="2024-10-22T15:43:15" file="CtaCtoDtalCertificado2.py" line="22">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[1]/div[1]/div/span&quot;}
+  (Session info: chrome=130.0.6723.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6229EE1F5+2972373]
+	(No symbol) [0x00007FF6226855F0]
+	(No symbol) [0x00007FF6225257FA]
+	(No symbol) [0x00007FF622575A3E]
+	(No symbol) [0x00007FF622575D2C]
+	(No symbol) [0x00007FF6225BEAB7]
+	(No symbol) [0x00007FF62259BABF]
+	(No symbol) [0x00007FF6225BB8CC]
+	(No symbol) [0x00007FF62259B823]
+	(No symbol) [0x00007FF6225675E8]
+	(No symbol) [0x00007FF622568751]
+	GetHandleVerifier [0x00007FF622A147BD+3129501]
+	GetHandleVerifier [0x00007FF622A64D00+3458528]
+	GetHandleVerifier [0x00007FF622A5B05D+3418429]
+	GetHandleVerifier [0x00007FF6227E687B+844123]
+	(No symbol) [0x00007FF622690AFF]
+	(No symbol) [0x00007FF62268C6D4]
+	(No symbol) [0x00007FF62268C86D]
+	(No symbol) [0x00007FF62267BD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalCertificado2.py", line 115, in test_detail_certificates
+    validate_text_visible(self.driver, element1, number_expected)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1177, in validate_text_visible
+    element = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/div/div[1]/div[1]/div/span"}
+  (Session info: chrome=130.0.6723.58); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6229EE1F5+2972373]
+	(No symbol) [0x00007FF6226855F0]
+	(No symbol) [0x00007FF6225257FA]
+	(No symbol) [0x00007FF622575A3E]
+	(No symbol) [0x00007FF622575D2C]
+	(No symbol) [0x00007FF6225BEAB7]
+	(No symbol) [0x00007FF62259BABF]
+	(No symbol) [0x00007FF6225BB8CC]
+	(No symbol) [0x00007FF62259B823]
+	(No symbol) [0x00007FF6225675E8]
+	(No symbol) [0x00007FF622568751]
+	GetHandleVerifier [0x00007FF622A147BD+3129501]
+	GetHandleVerifier [0x00007FF622A64D00+3458528]
+	GetHandleVerifier [0x00007FF622A5B05D+3418429]
+	GetHandleVerifier [0x00007FF6227E687B+844123]
+	(No symbol) [0x00007FF622690AFF]
+	(No symbol) [0x00007FF62268C6D4]
+	(No symbol) [0x00007FF62268C86D]
+	(No symbol) [0x00007FF62267BD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+Tiempo de espera agotado. El texto por texto no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

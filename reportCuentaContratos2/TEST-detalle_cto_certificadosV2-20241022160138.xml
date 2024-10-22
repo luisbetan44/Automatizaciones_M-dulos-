@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_certificadosV2-20241022160138" tests="1" file=".py" time="82.825" timestamp="2024-10-22T16:03:01" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_cto_certificadosV2" name="test_detail_certificates" time="82.825" timestamp="2024-10-22T16:03:01" file="CtaCtoDtalCertificado2.py" line="22">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF72805E1F5+2972373]
+	(No symbol) [0x00007FF727CF55F0]
+	(No symbol) [0x00007FF727B957FA]
+	(No symbol) [0x00007FF727BE5A3E]
+	(No symbol) [0x00007FF727BE5D2C]
+	(No symbol) [0x00007FF727C2EAB7]
+	(No symbol) [0x00007FF727C0BABF]
+	(No symbol) [0x00007FF727C2B8CC]
+	(No symbol) [0x00007FF727C0B823]
+	(No symbol) [0x00007FF727BD75E8]
+	(No symbol) [0x00007FF727BD8751]
+	GetHandleVerifier [0x00007FF7280847BD+3129501]
+	GetHandleVerifier [0x00007FF7280D4D00+3458528]
+	GetHandleVerifier [0x00007FF7280CB05D+3418429]
+	GetHandleVerifier [0x00007FF727E5687B+844123]
+	(No symbol) [0x00007FF727D00AFF]
+	(No symbol) [0x00007FF727CFC6D4]
+	(No symbol) [0x00007FF727CFC86D]
+	(No symbol) [0x00007FF727CEBD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalCertificado2.py", line 26, in test_detail_certificates
+    self.login_helper.search_and_select_account("1023")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\loginhelper.py", line 24, in search_and_select_account
+    input_element = find_element_by_id(self.driver, "search-options")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF72805E1F5+2972373]
+	(No symbol) [0x00007FF727CF55F0]
+	(No symbol) [0x00007FF727B957FA]
+	(No symbol) [0x00007FF727BE5A3E]
+	(No symbol) [0x00007FF727BE5D2C]
+	(No symbol) [0x00007FF727C2EAB7]
+	(No symbol) [0x00007FF727C0BABF]
+	(No symbol) [0x00007FF727C2B8CC]
+	(No symbol) [0x00007FF727C0B823]
+	(No symbol) [0x00007FF727BD75E8]
+	(No symbol) [0x00007FF727BD8751]
+	GetHandleVerifier [0x00007FF7280847BD+3129501]
+	GetHandleVerifier [0x00007FF7280D4D00+3458528]
+	GetHandleVerifier [0x00007FF7280CB05D+3418429]
+	GetHandleVerifier [0x00007FF727E5687B+844123]
+	(No symbol) [0x00007FF727D00AFF]
+	(No symbol) [0x00007FF727CFC6D4]
+	(No symbol) [0x00007FF727CFC86D]
+	(No symbol) [0x00007FF727CEBD79]
+	BaseThreadInitThunk [0x00007FF92EF0257D+29]
+	RtlUserThreadStart [0x00007FF93006AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>

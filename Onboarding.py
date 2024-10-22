@@ -8,7 +8,7 @@ from selenium.webdriver.common.by import By
 from faker import Faker
 import xmlrunner
 from selenium.common.exceptions import StaleElementReferenceException
-from Elements import click_checkbox_xpaht, find_elements, find_elements_id,  upload_file_after_click, upload_file_after_click_selector, validate_text_visible
+from Elements import click_checkbox_xpaht, find_elements, find_elements_id,  upload_file_after_click, validate_text_visible
 from GeneradorCuit import CUITGenerator
 from LoginSample import LoginSample
 from startSession import StartSession 

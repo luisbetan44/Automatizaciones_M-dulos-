@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_certificadosV2-20241022155250" tests="1" file=".py" time="73.288" timestamp="2024-10-22T15:54:03" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_cto_certificadosV2" name="test_detail_certificates" time="73.288" timestamp="2024-10-22T15:54:03" file="CtaCtoDtalCertificado2.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalCertificado2.py", line 46, in test_detail_certificates
+    find_elements(self.driver,select_filter )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

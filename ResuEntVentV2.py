@@ -2,7 +2,7 @@ import time
 import unittest
 from selenium.webdriver.common.by import By
 import xmlrunner
-from Elements import find_elements, find_elements_id, validate_character_numeric_element, validate_character_numeric_element_selector, validate_text
+from Elements import find_elements, find_elements_id, validate_character_numeric_element, validate_text
 from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession

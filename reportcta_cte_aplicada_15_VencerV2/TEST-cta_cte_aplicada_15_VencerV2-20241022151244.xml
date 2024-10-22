@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_aplicada_15_VencerV2-20241022151244" tests="1" file=".py" time="58.258" timestamp="2024-10-22T15:13:42" failures="0" errors="0" skipped="0">
+	<testcase classname="cta_cte_aplicada_15_VencerV2" name="test_ctacte_aplicada" time="58.258" timestamp="2024-10-22T15:13:42" file="ctacte_apli15diasV2.PY" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -161.144.387,97
+El valor es un carácter numérico. Valor: -161.144.387,97
+El valor es un carácter numérico. Valor: 0,00
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento FC 1118 00082270
+El valor es un string. Valor: - ARS 1.781.239,37
+El valor es un string. Valor: GASTOS COMER. S/ 60550 KGRS. Trig Cosecha 2324-E
+]]></system-out>
+	</testcase>
+</testsuite>

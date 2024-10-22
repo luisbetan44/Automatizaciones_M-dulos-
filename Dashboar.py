@@ -89,8 +89,7 @@ class dashboard_granos(unittest.TestCase):
         find_elements(self.driver,select_button_accept)
         time.sleep(2)
 
-       
-
+        
 
 
     def tearDown(self):
