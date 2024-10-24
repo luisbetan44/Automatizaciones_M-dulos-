@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ResuEntVentV2.resuEntregasVentas-failed" tests="1" file="ResuEntVentV2.py" time="74.897" timestamp="2024-10-24T15:00:16" failures="0" errors="0" skipped="0">
+	<testcase classname="ResuEntVentV2.resuEntregasVentas" name="test_Report_deliverySales" time="74.897" timestamp="2024-10-24T15:00:16" file="ResuEntVentV2.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Resumen de Entregas y Ventas
+El texto encontrado es  Especie/Cosecha
+El valor es un string. Valor: MAIZ 2223
+El texto encontrado es  Entregas (Kg.)
+El valor es un carácter numérico. Valor: 7641784
+El texto encontrado es  Retiros (Kg.)
+El valor es un carácter numérico. Valor: -231440
+El texto encontrado es  Transf. (Kg.)
+El valor es un carácter numérico. Valor: -195979
+El texto encontrado es  Ventas (Kg.)
+El valor es un carácter numérico. Valor: 7045779
+El texto encontrado es  Saldo (Kg.)
+El valor es un carácter numérico. Valor: 168586
+El texto encontrado es  Pend. Liq. (Kg.)
+El valor es un carácter numérico. Valor: 168
+El texto encontrado es  Precio Ponderado
+El valor es un carácter numérico. Valor: 2256.82
+El texto encontrado es  Saldo (Kg.)
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Pend. Liq. (Kg.)
+El valor es un carácter numérico. Valor: 0
+]]></system-out>
+	</testcase>
+</testsuite>

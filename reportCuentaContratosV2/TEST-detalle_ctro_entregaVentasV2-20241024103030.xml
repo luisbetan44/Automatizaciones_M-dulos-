@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_entregaVentasV2-20241024103030" tests="1" file=".py" time="95.842" timestamp="2024-10-24T10:32:06" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_entregaVentasV2" name="test_detail_deriverySales" time="95.842" timestamp="2024-10-24T10:32:06" file="CtaCtoDtaEntVent2.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtaEntVent2.py", line 109, in test_detail_deriverySales
+    validate_text_visible(self.driver, element1, number_expected)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1178, in validate_text_visible
+    is_visible = element.is_displayed()
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

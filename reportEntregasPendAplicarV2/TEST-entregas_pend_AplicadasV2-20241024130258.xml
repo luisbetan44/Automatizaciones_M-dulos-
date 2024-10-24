@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="entregas_pend_AplicadasV2-20241024130258" tests="1" file=".py" time="74.848" timestamp="2024-10-24T13:04:13" failures="0" errors="1" skipped="0">
+	<testcase classname="entregas_pend_AplicadasV2" name="test_delivery_earrings" time="74.848" timestamp="2024-10-24T13:04:13" file="EntregasPendApliV2.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;td _ngcontent-hat-c344=&quot;&quot; class=&quot;text-nowrap align-middle f-size-12 fw-bold cursor-pointer ellipsis-cell&quot;&gt;...&lt;/td&gt; is not clickable at point (368, 565). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-backdrop-show&quot; style=&quot;overflow-y: auto;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A75F3AB5+28005]
+	(No symbol) [0x00007FF6A75583B0]
+	(No symbol) [0x00007FF6A73F580A]
+	(No symbol) [0x00007FF6A744D6CE]
+	(No symbol) [0x00007FF6A744B16C]
+	(No symbol) [0x00007FF6A7448628]
+	(No symbol) [0x00007FF6A744785D]
+	(No symbol) [0x00007FF6A743990E]
+	(No symbol) [0x00007FF6A746BA3A]
+	(No symbol) [0x00007FF6A7439246]
+	(No symbol) [0x00007FF6A746BC50]
+	(No symbol) [0x00007FF6A748B8B3]
+	(No symbol) [0x00007FF6A746B7E3]
+	(No symbol) [0x00007FF6A74375C8]
+	(No symbol) [0x00007FF6A7438731]
+	GetHandleVerifier [0x00007FF6A78E643D+3118829]
+	GetHandleVerifier [0x00007FF6A7936C90+3448640]
+	GetHandleVerifier [0x00007FF6A792CF0D+3408317]
+	GetHandleVerifier [0x00007FF6A76BA40B+841403]
+	(No symbol) [0x00007FF6A756340F]
+	(No symbol) [0x00007FF6A755F484]
+	(No symbol) [0x00007FF6A755F61D]
+	(No symbol) [0x00007FF6A754EB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasPendApliV2.py", line 157, in test_delivery_earrings
+    find_elements(self.driver, insert_movemenst )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <td _ngcontent-hat-c344="" class="text-nowrap align-middle f-size-12 fw-bold cursor-pointer ellipsis-cell">...</td> is not clickable at point (368, 565). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A75F3AB5+28005]
+	(No symbol) [0x00007FF6A75583B0]
+	(No symbol) [0x00007FF6A73F580A]
+	(No symbol) [0x00007FF6A744D6CE]
+	(No symbol) [0x00007FF6A744B16C]
+	(No symbol) [0x00007FF6A7448628]
+	(No symbol) [0x00007FF6A744785D]
+	(No symbol) [0x00007FF6A743990E]
+	(No symbol) [0x00007FF6A746BA3A]
+	(No symbol) [0x00007FF6A7439246]
+	(No symbol) [0x00007FF6A746BC50]
+	(No symbol) [0x00007FF6A748B8B3]
+	(No symbol) [0x00007FF6A746B7E3]
+	(No symbol) [0x00007FF6A74375C8]
+	(No symbol) [0x00007FF6A7438731]
+	GetHandleVerifier [0x00007FF6A78E643D+3118829]
+	GetHandleVerifier [0x00007FF6A7936C90+3448640]
+	GetHandleVerifier [0x00007FF6A792CF0D+3408317]
+	GetHandleVerifier [0x00007FF6A76BA40B+841403]
+	(No symbol) [0x00007FF6A756340F]
+	(No symbol) [0x00007FF6A755F484]
+	(No symbol) [0x00007FF6A755F61D]
+	(No symbol) [0x00007FF6A754EB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El valor es un carácter numérico. Valor: 431,36
+El valor es un carácter numérico. Valor: 417,68
+]]></system-out>
+	</testcase>
+</testsuite>

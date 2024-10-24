@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ServFacturado.ServFacturadoV2-failed" tests="1" file="ServFacturado.py" time="42.780" timestamp="2024-10-24T15:02:19" failures="0" errors="0" skipped="0">
+	<testcase classname="ServFacturado.ServFacturadoV2" name="test_billed_services" time="42.780" timestamp="2024-10-24T15:02:19" file="ServFacturado.py" line="19">
+		<system-out><![CDATA[El texto encontrado es  Gastos Tickets
+El texto encontrado es  Fecha
+El valor es un string. Valor: 24/04/2024
+El texto encontrado es  Comprobante
+El valor es un carácter numérico. Valor: FASCER 1118 00079051
+El texto encontrado es  Acarreo/Flete
+El valor es un carácter numérico. Valor: 4307614.5
+El texto encontrado es  Imp. Secada
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Imp. Percepción
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Imp. Otros
+El valor es un carácter numérico. Valor: 2.914.513,56
+El texto encontrado es  Imp. Total
+El valor es un carácter numérico. Valor: 7.222.128,06
+]]></system-out>
+	</testcase>
+</testsuite>

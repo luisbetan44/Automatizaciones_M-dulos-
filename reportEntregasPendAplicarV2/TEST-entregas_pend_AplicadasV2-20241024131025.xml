@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="entregas_pend_AplicadasV2-20241024131025" tests="1" file=".py" time="82.067" timestamp="2024-10-24T13:11:47" failures="0" errors="0" skipped="0">
+	<testcase classname="entregas_pend_AplicadasV2" name="test_delivery_earrings" time="82.067" timestamp="2024-10-24T13:11:47" file="EntregasPendApliV2.py" line="23">
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El valor es un carácter numérico. Valor: 431,36
+El valor es un carácter numérico. Valor: 417,68
+El valor es un string. Valor: Entrega TK 0001 00121693
+El valor es un string. Valor: 31,32 Tn
+El valor es un string. Valor: De Maiz
+El valor es un string. Valor: DATOS DE LA ENTREGA
+El valor es un string. Valor: 26/07/2022
+El valor es un string. Valor: 21/22
+El valor es un string. Valor: DON EMIDIO SA
+El valor es un string. Valor: 19970 CAMPO RASSETTO (Don Emidio S.A.)
+El texto es visible para el usuario
+El texto fue validado correctamente: ANÁLISIS
+El valor es un string. Valor: 15.8%
+El valor es un string. Valor: 31.320,00
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CtaCtoDtaFijaV2.detalle_ctro_fijacionesV2-failed" tests="1" file="CtaCtoDtaFijaV2.py" time="84.845" timestamp="2024-10-24T15:05:11" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCtoDtaFijaV2.detalle_ctro_fijacionesV2" name="test_detail_fixings" time="84.845" timestamp="2024-10-24T15:05:11" file="CtaCtoDtaFijaV2.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario: 'De 500,00 Tn Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+El texto es visible para el usuario
+El texto fue validado correctamente: Producto
+El texto es visible para el usuario
+El texto fue validado correctamente: Maiz
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 20/04/2021
+El texto es visible para el usuario
+El texto fue validado correctamente: Comprobante
+El valor es un carácter numérico. Valor: VN 0001 00108169
+El texto es visible para el usuario: 'Tn Fijados'
+El valor es un carácter numérico. Valor: 500,00
+El texto es visible para el usuario
+El texto fue validado correctamente: Precio
+El valor es un carácter numérico. Valor: 180,00
+El texto es visible para el usuario
+El texto fue validado correctamente: Moneda
+El texto es visible para el usuario
+El texto fue validado correctamente: USD
+]]></system-out>
+	</testcase>
+</testsuite>

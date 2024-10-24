@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EntregasFactV2.entregas_facturadosV2-failed" tests="1" file="EntregasFactV2.py" time="93.174" timestamp="2024-10-24T15:12:09" failures="0" errors="0" skipped="0">
+	<testcase classname="EntregasFactV2.entregas_facturadosV2" name="test_delivery_applied" time="93.174" timestamp="2024-10-24T15:12:09" file="EntregasFactV2.py" line="23">
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+El valor es un carácter numérico. Valor: 2.899,34
+El valor es un carácter numérico. Valor: 2.878,90
+El valor es un string. Valor: Entrega TK 0004 00133145
+El valor es un string. Valor: 31,42 Tn
+El valor es un string. Valor: De Soja
+El valor es un string. Valor: DATOS DE LA ENTREGA
+El valor es un string. Valor: 03/07/2024
+El valor es un string. Valor: 23/24
+El valor es un string. Valor: JUAN DEMO
+El valor es un string. Valor: 1162 La Selva
+El texto es visible para el usuario
+El texto fue validado correctamente: ANÁLISIS
+El valor es un string. Valor: 0,00%
+]]></system-out>
+	</testcase>
+</testsuite>

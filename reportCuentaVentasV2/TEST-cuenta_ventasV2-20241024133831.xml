@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ventasV2-20241024133831" tests="2" file=".py" time="67.911" timestamp="2024-10-24T13:39:39" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_ventasV2" name="test_cuenta_ventas" time="0.000" timestamp="0001-01-01T00:00:00" file="VentaV2.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'text'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\VentaV2.py", line 122, in test_cuenta_ventas
+    validate_character_string_element(self.driver, validate_product)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 31, in validate_character_string_element
+    valor = elemento.text.strip()  # Elimina posibles espacios en blanco al inicio o al final
+AttributeError: 'NoneType' object has no attribute 'text'
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+]]></system-out>
+	</testcase>
+	<testcase classname="cuenta_ventasV2" name="test_cuenta_ventas" time="67.911" timestamp="2024-10-24T13:39:39" file="VentaV2.py" line="23">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x00007FF605823AB5+28005]
+	(No symbol) [0x00007FF6057883B0]
+	(No symbol) [0x00007FF60562580A]
+	(No symbol) [0x00007FF605613BD7]
+	(No symbol) [0x00007FF60561151E]
+	(No symbol) [0x00007FF605611FCF]
+	(No symbol) [0x00007FF605625E23]
+	(No symbol) [0x00007FF6055FF55D]
+	(No symbol) [0x00007FF6056A9CE9]
+	(No symbol) [0x00007FF60569BA00]
+	(No symbol) [0x00007FF6056675C8]
+	(No symbol) [0x00007FF605668731]
+	GetHandleVerifier [0x00007FF605B1643D+3118829]
+	GetHandleVerifier [0x00007FF605B66C90+3448640]
+	GetHandleVerifier [0x00007FF605B5CF0D+3408317]
+	GetHandleVerifier [0x00007FF6058EA40B+841403]
+	(No symbol) [0x00007FF60579340F]
+	(No symbol) [0x00007FF60578F484]
+	(No symbol) [0x00007FF60578F61D]
+	(No symbol) [0x00007FF60577EB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\VentaV2.py", line 170, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x00007FF605823AB5+28005]
+	(No symbol) [0x00007FF6057883B0]
+	(No symbol) [0x00007FF60562580A]
+	(No symbol) [0x00007FF605613BD7]
+	(No symbol) [0x00007FF60561151E]
+	(No symbol) [0x00007FF605611FCF]
+	(No symbol) [0x00007FF605625E23]
+	(No symbol) [0x00007FF6055FF55D]
+	(No symbol) [0x00007FF6056A9CE9]
+	(No symbol) [0x00007FF60569BA00]
+	(No symbol) [0x00007FF6056675C8]
+	(No symbol) [0x00007FF605668731]
+	GetHandleVerifier [0x00007FF605B1643D+3118829]
+	GetHandleVerifier [0x00007FF605B66C90+3448640]
+	GetHandleVerifier [0x00007FF605B5CF0D+3408317]
+	GetHandleVerifier [0x00007FF6058EA40B+841403]
+	(No symbol) [0x00007FF60579340F]
+	(No symbol) [0x00007FF60578F484]
+	(No symbol) [0x00007FF60578F61D]
+	(No symbol) [0x00007FF60577EB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_entregaVentasV2-20241024103220" tests="1" file=".py" time="50.349" timestamp="2024-10-24T10:33:11" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_entregaVentasV2" name="test_detail_deriverySales" time="50.349" timestamp="2024-10-24T10:33:11" file="CtaCtoDtaEntVent2.py" line="22">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element is not clickable at point (506, 709)
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A7C73AB5+28005]
+	(No symbol) [0x00007FF6A7BD83B0]
+	(No symbol) [0x00007FF6A7A7580A]
+	(No symbol) [0x00007FF6A7ACD6CE]
+	(No symbol) [0x00007FF6A7ACB16C]
+	(No symbol) [0x00007FF6A7AC8628]
+	(No symbol) [0x00007FF6A7AC785D]
+	(No symbol) [0x00007FF6A7AB990E]
+	(No symbol) [0x00007FF6A7AEBA3A]
+	(No symbol) [0x00007FF6A7AB9246]
+	(No symbol) [0x00007FF6A7AEBC50]
+	(No symbol) [0x00007FF6A7B0B8B3]
+	(No symbol) [0x00007FF6A7AEB7E3]
+	(No symbol) [0x00007FF6A7AB75C8]
+	(No symbol) [0x00007FF6A7AB8731]
+	GetHandleVerifier [0x00007FF6A7F6643D+3118829]
+	GetHandleVerifier [0x00007FF6A7FB6C90+3448640]
+	GetHandleVerifier [0x00007FF6A7FACF0D+3408317]
+	GetHandleVerifier [0x00007FF6A7D3A40B+841403]
+	(No symbol) [0x00007FF6A7BE340F]
+	(No symbol) [0x00007FF6A7BDF484]
+	(No symbol) [0x00007FF6A7BDF61D]
+	(No symbol) [0x00007FF6A7BCEB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtaEntVent2.py", line 102, in test_detail_deriverySales
+    find_elements(self.driver, selet_list_contract )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (506, 709)
+  (Session info: chrome=130.0.6723.59)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6A7C73AB5+28005]
+	(No symbol) [0x00007FF6A7BD83B0]
+	(No symbol) [0x00007FF6A7A7580A]
+	(No symbol) [0x00007FF6A7ACD6CE]
+	(No symbol) [0x00007FF6A7ACB16C]
+	(No symbol) [0x00007FF6A7AC8628]
+	(No symbol) [0x00007FF6A7AC785D]
+	(No symbol) [0x00007FF6A7AB990E]
+	(No symbol) [0x00007FF6A7AEBA3A]
+	(No symbol) [0x00007FF6A7AB9246]
+	(No symbol) [0x00007FF6A7AEBC50]
+	(No symbol) [0x00007FF6A7B0B8B3]
+	(No symbol) [0x00007FF6A7AEB7E3]
+	(No symbol) [0x00007FF6A7AB75C8]
+	(No symbol) [0x00007FF6A7AB8731]
+	GetHandleVerifier [0x00007FF6A7F6643D+3118829]
+	GetHandleVerifier [0x00007FF6A7FB6C90+3448640]
+	GetHandleVerifier [0x00007FF6A7FACF0D+3408317]
+	GetHandleVerifier [0x00007FF6A7D3A40B+841403]
+	(No symbol) [0x00007FF6A7BE340F]
+	(No symbol) [0x00007FF6A7BDF484]
+	(No symbol) [0x00007FF6A7BDF61D]
+	(No symbol) [0x00007FF6A7BCEB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+]]></system-out>
+	</testcase>
+</testsuite>
