@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_pesiFechaVevcimientoV2-20241028161919" tests="1" file=".py" time="60.237" timestamp="2024-10-28T16:20:20" failures="0" errors="0" skipped="0">
+	<testcase classname="cta_cte_pesiFechaVevcimientoV2" name="test_ctacte_Date_expiration" time="60.237" timestamp="2024-10-28T16:20:20" file="ctacte_PesiFechaVenciV2.PY" line="18">
+		<system-out><![CDATA[El texto encontrado es  CUENTA PESIFICADA
+El valor es un carácter numérico. Valor: -341.409.357,05
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento FC 1118 00082385
+El valor es un string. Valor: + ARS 21.034.772,38
+El valor es un string. Valor: GASTOS COMER. S/ 748640 KGRS. Maíz Cosecha 2324-
+]]></system-out>
+	</testcase>
+</testsuite>

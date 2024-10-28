@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer-failed" tests="1" file="CtaCte_HistoAvenver.py" time="57.626" timestamp="2024-10-17T16:42:54" failures="0" errors="0" skipped="0">
-	<testcase classname="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer" name="test_ctacte_historica" time="57.626" timestamp="2024-10-17T16:42:54" file="CtaCte_HistoAvenver.py" line="18">
+<testsuite name="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer-failed" tests="1" file="CtaCte_HistoAvenver.py" time="59.339" timestamp="2024-10-28T12:54:29" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCte_HistoAvenver.cuenta_ctacte_histAvencer" name="test_ctacte_historica" time="59.339" timestamp="2024-10-28T12:54:29" file="CtaCte_HistoAvenver.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
 El texto encontrado es  CUENTA CORRIENTE
 El valor es un string. Valor: Movimiento IC 3302 11350776

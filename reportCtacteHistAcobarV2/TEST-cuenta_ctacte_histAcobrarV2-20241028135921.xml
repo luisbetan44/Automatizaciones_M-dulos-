@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histAcobrarV2-20241028135921" tests="1" file=".py" time="59.080" timestamp="2024-10-28T14:00:20" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ctacte_histAcobrarV2" name="test_ctacte_historica" time="59.080" timestamp="2024-10-28T14:00:20" file="ctacte_HistAcobrarV2.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
+El valor es un carácter numérico. Valor: 2.122.059.104,40
+El valor es un carácter numérico. Valor: 87.831,48
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento IC 3302 11350776
+El valor es un string. Valor: + ARS 9.008,51
+El valor es un string. Valor: IVA CBU Liq.1116C SOJA 2324 24000 Kgs.
+]]></system-out>
+	</testcase>
+</testsuite>

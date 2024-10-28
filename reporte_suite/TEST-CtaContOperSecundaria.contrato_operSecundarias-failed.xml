@@ -1,68 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaContOperSecundaria.contrato_operSecundarias-failed" tests="1" file="CtaContOperSecundaria.py" time="27.436" timestamp="2024-10-17T16:30:12" failures="0" errors="1" skipped="0">
-	<testcase classname="CtaContOperSecundaria.contrato_operSecundarias" name="test_contratc_oparSecondary" time="27.436" timestamp="2024-10-17T16:30:12" file="CtaContOperSecundaria.py" line="22">
-		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=130.0.6723.58)
-Stacktrace:
-	GetHandleVerifier [0x00007FF76563E1F5+2972373]
-	(No symbol) [0x00007FF7652D55F0]
-	(No symbol) [0x00007FF7651757FA]
-	(No symbol) [0x00007FF76514FA85]
-	(No symbol) [0x00007FF7651F2B17]
-	(No symbol) [0x00007FF76520B1D1]
-	(No symbol) [0x00007FF7651EB823]
-	(No symbol) [0x00007FF7651B75E8]
-	(No symbol) [0x00007FF7651B8751]
-	GetHandleVerifier [0x00007FF7656647BD+3129501]
-	GetHandleVerifier [0x00007FF7656B4D00+3458528]
-	GetHandleVerifier [0x00007FF7656AB05D+3418429]
-	GetHandleVerifier [0x00007FF76543687B+844123]
-	(No symbol) [0x00007FF7652E0AFF]
-	(No symbol) [0x00007FF7652DC6D4]
-	(No symbol) [0x00007FF7652DC86D]
-	(No symbol) [0x00007FF7652CBD79]
-	BaseThreadInitThunk [0x00007FF92EF0257D+29]
-	RtlUserThreadStart [0x00007FF93006AF08+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaContOperSecundaria.py", line 42, in test_contratc_oparSecondary
-    find_elements(self.driver,select_filter )
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
-    select_nex_button = WebDriverWait(driver, 10).until(
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
-    value = method(self._driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
-    target = driver.find_element(*target)  # grab element at locator
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
-    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=130.0.6723.58)
-Stacktrace:
-	GetHandleVerifier [0x00007FF76563E1F5+2972373]
-	(No symbol) [0x00007FF7652D55F0]
-	(No symbol) [0x00007FF7651757FA]
-	(No symbol) [0x00007FF76514FA85]
-	(No symbol) [0x00007FF7651F2B17]
-	(No symbol) [0x00007FF76520B1D1]
-	(No symbol) [0x00007FF7651EB823]
-	(No symbol) [0x00007FF7651B75E8]
-	(No symbol) [0x00007FF7651B8751]
-	GetHandleVerifier [0x00007FF7656647BD+3129501]
-	GetHandleVerifier [0x00007FF7656B4D00+3458528]
-	GetHandleVerifier [0x00007FF7656AB05D+3418429]
-	GetHandleVerifier [0x00007FF76543687B+844123]
-	(No symbol) [0x00007FF7652E0AFF]
-	(No symbol) [0x00007FF7652DC6D4]
-	(No symbol) [0x00007FF7652DC86D]
-	(No symbol) [0x00007FF7652CBD79]
-	BaseThreadInitThunk [0x00007FF92EF0257D+29]
-	RtlUserThreadStart [0x00007FF93006AF08+40]
-
-]]></error>
+<testsuite name="CtaContOperSecundaria.contrato_operSecundarias-failed" tests="1" file="CtaContOperSecundaria.py" time="69.666" timestamp="2024-10-28T12:41:51" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaContOperSecundaria.contrato_operSecundarias" name="test_contratc_oparSecondary" time="69.666" timestamp="2024-10-28T12:41:51" file="CtaContOperSecundaria.py" line="22">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 2 veces con éxito!
+¡Elemento encontrado y clickeado 10 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 2070
+El texto es visible para el usuario
+El texto fue validado correctamente: De Soja
+El texto es visible para el usuario
+El texto fue validado correctamente: 2122
+El texto es visible para el usuario: '1,00 Kg'
+]]></system-out>
 	</testcase>
 </testsuite>

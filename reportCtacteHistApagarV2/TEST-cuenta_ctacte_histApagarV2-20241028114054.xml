@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histApagarV2-20241028114054" tests="1" file=".py" time="178.880" timestamp="2024-10-28T11:43:53" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_ctacte_histApagarV2" name="test_ctacte_historica" time="178.880" timestamp="2024-10-28T11:43:53" file="ctacte_HistoAcobrarV2.py" line="18">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF67D2B3AB5+28005]
+	(No symbol) [0x00007FF67D2183B0]
+	(No symbol) [0x00007FF67D0B580A]
+	(No symbol) [0x00007FF67D105A3E]
+	(No symbol) [0x00007FF67D105D2C]
+	(No symbol) [0x00007FF67D14EA97]
+	(No symbol) [0x00007FF67D12BA7F]
+	(No symbol) [0x00007FF67D14B8B3]
+	(No symbol) [0x00007FF67D12B7E3]
+	(No symbol) [0x00007FF67D0F75C8]
+	(No symbol) [0x00007FF67D0F8731]
+	GetHandleVerifier [0x00007FF67D5A643D+3118829]
+	GetHandleVerifier [0x00007FF67D5F6C90+3448640]
+	GetHandleVerifier [0x00007FF67D5ECF0D+3408317]
+	GetHandleVerifier [0x00007FF67D37A40B+841403]
+	(No symbol) [0x00007FF67D22340F]
+	(No symbol) [0x00007FF67D21F484]
+	(No symbol) [0x00007FF67D21F61D]
+	(No symbol) [0x00007FF67D20EB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_HistoAcobrarV2.py", line 59, in test_ctacte_historica
+    calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1485, in calendar_todate_retro
+    input_fecha = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF67D2B3AB5+28005]
+	(No symbol) [0x00007FF67D2183B0]
+	(No symbol) [0x00007FF67D0B580A]
+	(No symbol) [0x00007FF67D105A3E]
+	(No symbol) [0x00007FF67D105D2C]
+	(No symbol) [0x00007FF67D14EA97]
+	(No symbol) [0x00007FF67D12BA7F]
+	(No symbol) [0x00007FF67D14B8B3]
+	(No symbol) [0x00007FF67D12B7E3]
+	(No symbol) [0x00007FF67D0F75C8]
+	(No symbol) [0x00007FF67D0F8731]
+	GetHandleVerifier [0x00007FF67D5A643D+3118829]
+	GetHandleVerifier [0x00007FF67D5F6C90+3448640]
+	GetHandleVerifier [0x00007FF67D5ECF0D+3408317]
+	GetHandleVerifier [0x00007FF67D37A40B+841403]
+	(No symbol) [0x00007FF67D22340F]
+	(No symbol) [0x00007FF67D21F484]
+	(No symbol) [0x00007FF67D21F61D]
+	(No symbol) [0x00007FF67D20EB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Home.HomeTenant-failed" tests="1" file="Home.py" time="22.727" timestamp="2024-10-17T16:11:02" failures="0" errors="0" skipped="0">
-	<testcase classname="Home.HomeTenant" name="test_start_tenant" time="22.727" timestamp="2024-10-17T16:11:02" file="Home.py" line="19">
+<testsuite name="Home.HomeTenant-failed" tests="1" file="Home.py" time="21.181" timestamp="2024-10-28T12:23:21" failures="0" errors="0" skipped="0">
+	<testcase classname="Home.HomeTenant" name="test_start_tenant" time="21.181" timestamp="2024-10-28T12:23:21" file="Home.py" line="19">
 		<system-out><![CDATA[El texto encontrado es  Buen día JUAN DEMO!
 El texto no fue encontrado Vencido a hoy
 El texto no fue encontrado ars
-El valor es un carácter numérico. Valor: -222.077.246,57
+El valor es un carácter numérico. Valor: -312.848.454,62
 El texto no fue encontrado Vencido a hoy
 El texto no fue encontrado usd
 El valor es un carácter numérico. Valor: -25.945,58
 El texto no fue encontrado A Vencer
 El texto no fue encontrado ars
-El valor es un carácter numérico. Valor: -286.131.590,64
+El valor es un carácter numérico. Valor: -195.360.382,59
 El texto no fue encontrado A Vencer
 El texto no fue encontrado usd
 El valor es un carácter numérico. Valor: -857.807,28

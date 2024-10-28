@@ -1,71 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReportMerFacturada.reportMerFacturada-failed" tests="2" file="ReportMerFacturada.py" time="263.097" timestamp="2024-10-17T16:59:22" failures="0" errors="2" skipped="0">
-	<testcase classname="ReportMerFacturada.reportMerFacturada" name="test_Report_MerFacturada" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportMerFacturada.py" line="17">
-		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=130.0.6723.58)
+<testsuite name="ReportMerFacturada.reportMerFacturada-failed" tests="1" file="ReportMerFacturada.py" time="325.999" timestamp="2024-10-28T13:10:33" failures="0" errors="1" skipped="0">
+	<testcase classname="ReportMerFacturada.reportMerFacturada" name="test_Report_MerFacturada" time="325.999" timestamp="2024-10-28T13:10:33" file="ReportMerFacturada.py" line="17">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#layout-wrapper &gt; div &gt; div &gt; div &gt; app-remitted-merchandise &gt; app-responsive-table &gt; div &gt; div.table-responsive &gt; table &gt; tbody &gt; tr:nth-child(1) &gt; td:nth-child(5) &gt; span &gt; div &gt; span&quot;}
+  (Session info: chrome=130.0.6723.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Stacktrace:
-	GetHandleVerifier [0x00007FF76563E1F5+2972373]
-	(No symbol) [0x00007FF7652D55F0]
-	(No symbol) [0x00007FF7651757FA]
-	(No symbol) [0x00007FF76514FA85]
-	(No symbol) [0x00007FF7651F2B17]
-	(No symbol) [0x00007FF76520B1D1]
-	(No symbol) [0x00007FF7651EB823]
-	(No symbol) [0x00007FF7651B75E8]
-	(No symbol) [0x00007FF7651B8751]
-	GetHandleVerifier [0x00007FF7656647BD+3129501]
-	GetHandleVerifier [0x00007FF7656B4D00+3458528]
-	GetHandleVerifier [0x00007FF7656AB05D+3418429]
-	GetHandleVerifier [0x00007FF76543687B+844123]
-	(No symbol) [0x00007FF7652E0AFF]
-	(No symbol) [0x00007FF7652DC6D4]
-	(No symbol) [0x00007FF7652DC86D]
-	(No symbol) [0x00007FF7652CBD79]
-	BaseThreadInitThunk [0x00007FF92EF0257D+29]
-	RtlUserThreadStart [0x00007FF93006AF08+40]
+	GetHandleVerifier [0x00007FF66AAC3AB5+28005]
+	(No symbol) [0x00007FF66AA283B0]
+	(No symbol) [0x00007FF66A8C580A]
+	(No symbol) [0x00007FF66A915A3E]
+	(No symbol) [0x00007FF66A915D2C]
+	(No symbol) [0x00007FF66A95EA97]
+	(No symbol) [0x00007FF66A93BA7F]
+	(No symbol) [0x00007FF66A95B8B3]
+	(No symbol) [0x00007FF66A93B7E3]
+	(No symbol) [0x00007FF66A9075C8]
+	(No symbol) [0x00007FF66A908731]
+	GetHandleVerifier [0x00007FF66ADB643D+3118829]
+	GetHandleVerifier [0x00007FF66AE06C90+3448640]
+	GetHandleVerifier [0x00007FF66ADFCF0D+3408317]
+	GetHandleVerifier [0x00007FF66AB8A40B+841403]
+	(No symbol) [0x00007FF66AA3340F]
+	(No symbol) [0x00007FF66AA2F484]
+	(No symbol) [0x00007FF66AA2F61D]
+	(No symbol) [0x00007FF66AA1EB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
 "><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportMerFacturada.py", line 104, in test_Report_MerFacturada
-    validate_text(self.driver,quarter_column,quarter_column_expected )
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1000, in validate_text
-    elemento = WebDriverWait(driver, 10).until(
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
-    value = method(self._driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
-    return driver.find_element(*locator)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportMerFacturada.py", line 107, in test_Report_MerFacturada
+    validate_character_numeric_element_selector(self.driver,departures)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1168, in validate_character_numeric_element_selector
+    elemento = driver.find_element(By.CSS_SELECTOR, css_selector)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
     return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
     self.error_handler.check_response(response)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=130.0.6723.58)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"css selector","selector":"#layout-wrapper > div > div > div > app-remitted-merchandise > app-responsive-table > div > div.table-responsive > table > tbody > tr:nth-child(1) > td:nth-child(5) > span > div > span"}
+  (Session info: chrome=130.0.6723.70); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
 Stacktrace:
-	GetHandleVerifier [0x00007FF76563E1F5+2972373]
-	(No symbol) [0x00007FF7652D55F0]
-	(No symbol) [0x00007FF7651757FA]
-	(No symbol) [0x00007FF76514FA85]
-	(No symbol) [0x00007FF7651F2B17]
-	(No symbol) [0x00007FF76520B1D1]
-	(No symbol) [0x00007FF7651EB823]
-	(No symbol) [0x00007FF7651B75E8]
-	(No symbol) [0x00007FF7651B8751]
-	GetHandleVerifier [0x00007FF7656647BD+3129501]
-	GetHandleVerifier [0x00007FF7656B4D00+3458528]
-	GetHandleVerifier [0x00007FF7656AB05D+3418429]
-	GetHandleVerifier [0x00007FF76543687B+844123]
-	(No symbol) [0x00007FF7652E0AFF]
-	(No symbol) [0x00007FF7652DC6D4]
-	(No symbol) [0x00007FF7652DC86D]
-	(No symbol) [0x00007FF7652CBD79]
-	BaseThreadInitThunk [0x00007FF92EF0257D+29]
-	RtlUserThreadStart [0x00007FF93006AF08+40]
+	GetHandleVerifier [0x00007FF66AAC3AB5+28005]
+	(No symbol) [0x00007FF66AA283B0]
+	(No symbol) [0x00007FF66A8C580A]
+	(No symbol) [0x00007FF66A915A3E]
+	(No symbol) [0x00007FF66A915D2C]
+	(No symbol) [0x00007FF66A95EA97]
+	(No symbol) [0x00007FF66A93BA7F]
+	(No symbol) [0x00007FF66A95B8B3]
+	(No symbol) [0x00007FF66A93B7E3]
+	(No symbol) [0x00007FF66A9075C8]
+	(No symbol) [0x00007FF66A908731]
+	GetHandleVerifier [0x00007FF66ADB643D+3118829]
+	GetHandleVerifier [0x00007FF66AE06C90+3448640]
+	GetHandleVerifier [0x00007FF66ADFCF0D+3408317]
+	GetHandleVerifier [0x00007FF66AB8A40B+841403]
+	(No symbol) [0x00007FF66AA3340F]
+	(No symbol) [0x00007FF66AA2F484]
+	(No symbol) [0x00007FF66AA2F61D]
+	(No symbol) [0x00007FF66AA1EB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
 
 ]]></error>
 		<system-out><![CDATA[El valor es un carácter numérico. Valor: 69.198.342,30
-El valor es un carácter numérico. Valor: 883.271,16
+El valor es un carácter numérico. Valor: 870.790,52
 Tiempo de espera agotado. El texto por xpaht no está presente.
 Tiempo de espera agotado. El texto por xpaht no está presente.
 Tiempo de espera agotado. El texto por texto no está presente.
@@ -73,79 +71,7 @@ Tiempo de espera agotado. El texto por xpaht no está presente.
 Tiempo de espera agotado. El texto por texto no está presente.
 Tiempo de espera agotado. El texto por xpaht no está presente.
 Tiempo de espera agotado. El texto por texto no está presente.
-]]></system-out>
-	</testcase>
-	<testcase classname="ReportMerFacturada.reportMerFacturada" name="test_Report_MerFacturada" time="263.097" timestamp="2024-10-17T16:59:22" file="ReportMerFacturada.py" line="17">
-		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=130.0.6723.58)
-Stacktrace:
-	GetHandleVerifier [0x00007FF76563E1F5+2972373]
-	(No symbol) [0x00007FF7652D55F0]
-	(No symbol) [0x00007FF7651757FA]
-	(No symbol) [0x00007FF765160B06]
-	(No symbol) [0x00007FF765161FCF]
-	(No symbol) [0x00007FF765175E13]
-	(No symbol) [0x00007FF76514F55D]
-	(No symbol) [0x00007FF7651F9D19]
-	(No symbol) [0x00007FF7651EBA40]
-	(No symbol) [0x00007FF7651B75E8]
-	(No symbol) [0x00007FF7651B8751]
-	GetHandleVerifier [0x00007FF7656647BD+3129501]
-	GetHandleVerifier [0x00007FF7656B4D00+3458528]
-	GetHandleVerifier [0x00007FF7656AB05D+3418429]
-	GetHandleVerifier [0x00007FF76543687B+844123]
-	(No symbol) [0x00007FF7652E0AFF]
-	(No symbol) [0x00007FF7652DC6D4]
-	(No symbol) [0x00007FF7652DC86D]
-	(No symbol) [0x00007FF7652CBD79]
-	BaseThreadInitThunk [0x00007FF92EF0257D+29]
-	RtlUserThreadStart [0x00007FF93006AF08+40]
-"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportMerFacturada.py", line 157, in tearDown
-    self.driver.close()
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
-    self.execute(Command.CLOSE)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
-    self.error_handler.check_response(response)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
-    raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=130.0.6723.58)
-Stacktrace:
-	GetHandleVerifier [0x00007FF76563E1F5+2972373]
-	(No symbol) [0x00007FF7652D55F0]
-	(No symbol) [0x00007FF7651757FA]
-	(No symbol) [0x00007FF765160B06]
-	(No symbol) [0x00007FF765161FCF]
-	(No symbol) [0x00007FF765175E13]
-	(No symbol) [0x00007FF76514F55D]
-	(No symbol) [0x00007FF7651F9D19]
-	(No symbol) [0x00007FF7651EBA40]
-	(No symbol) [0x00007FF7651B75E8]
-	(No symbol) [0x00007FF7651B8751]
-	GetHandleVerifier [0x00007FF7656647BD+3129501]
-	GetHandleVerifier [0x00007FF7656B4D00+3458528]
-	GetHandleVerifier [0x00007FF7656AB05D+3418429]
-	GetHandleVerifier [0x00007FF76543687B+844123]
-	(No symbol) [0x00007FF7652E0AFF]
-	(No symbol) [0x00007FF7652DC6D4]
-	(No symbol) [0x00007FF7652DC86D]
-	(No symbol) [0x00007FF7652CBD79]
-	BaseThreadInitThunk [0x00007FF92EF0257D+29]
-	RtlUserThreadStart [0x00007FF93006AF08+40]
-
-]]></error>
-		<system-out><![CDATA[El valor es un carácter numérico. Valor: 69.198.342,30
-El valor es un carácter numérico. Valor: 883.271,16
 Tiempo de espera agotado. El texto por xpaht no está presente.
-Tiempo de espera agotado. El texto por xpaht no está presente.
-Tiempo de espera agotado. El texto por texto no está presente.
-Tiempo de espera agotado. El texto por xpaht no está presente.
-Tiempo de espera agotado. El texto por texto no está presente.
-Tiempo de espera agotado. El texto por xpaht no está presente.
-Tiempo de espera agotado. El texto por texto no está presente.
 ]]></system-out>
 	</testcase>
 </testsuite>

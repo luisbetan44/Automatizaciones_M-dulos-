@@ -1,7 +1,7 @@
 import time
 import unittest
 import xmlrunner
-from Elements import calendar_todate_retro, find_elements, find_elements_id, validate_character_numeric_element, validate_text, validate_text_by_strt
+from Elements import calendar_todate_retro, find_elements, find_elements_id, validate_character_numeric_element, validate_text
 from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession

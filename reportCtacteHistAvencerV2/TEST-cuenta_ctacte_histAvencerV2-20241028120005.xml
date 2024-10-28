@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_ctacte_histAvencerV2-20241028120005" tests="1" file=".py" time="56.250" timestamp="2024-10-28T12:01:02" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_ctacte_histAvencerV2" name="test_ctacte_historica" time="56.250" timestamp="2024-10-28T12:01:02" file="ctacte_HistAvencerV2.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento IC 3302 11350776
+El valor es un string. Valor: + ARS 9.008,51
+El valor es un string. Valor: IVA CBU Liq.1116C SOJA 2324 24000 Kgs.
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="comproEntregas.comprobanteEntregas-failed" tests="1" file="comproEntregas.py" time="52.969" timestamp="2024-10-17T16:48:08" failures="0" errors="0" skipped="0">
-	<testcase classname="comproEntregas.comprobanteEntregas" name="test_vouchers_delivery" time="52.969" timestamp="2024-10-17T16:48:08" file="comproEntregas.py" line="15">
+<testsuite name="comproEntregas.comprobanteEntregas-failed" tests="1" file="comproEntregas.py" time="49.517" timestamp="2024-10-28T12:59:45" failures="0" errors="0" skipped="0">
+	<testcase classname="comproEntregas.comprobanteEntregas" name="test_vouchers_delivery" time="49.517" timestamp="2024-10-28T12:59:45" file="comproEntregas.py" line="15">
 		<system-out><![CDATA[El texto encontrado es  COMPROBANTES
 ¡Elemento encontrado y clickeado 10 veces con éxito!
 ¡Elemento encontrado y clickeado 1 veces con éxito!
 El texto encontrado es  Mis Comprobantes
 El texto no fue encontrado TK 0001 00127175
 El texto no fue encontrado TK 0001 00127180
-El texto no fue encontrado El comprobante seleccionado no se encuentra para su descarga
+El texto encontrado es  El comprobante seleccionado no se encuentra para su descarga
 ]]></system-out>
 	</testcase>
 </testsuite>

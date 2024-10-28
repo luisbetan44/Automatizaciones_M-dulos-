@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_ApliAvencer.cta_cte_apliAvencer-failed" tests="1" file="ctacte_ApliAvencer.py" time="56.407" timestamp="2024-10-17T16:37:56" failures="0" errors="0" skipped="0">
-	<testcase classname="ctacte_ApliAvencer.cta_cte_apliAvencer" name="test_ctacte_apliAvencer" time="56.407" timestamp="2024-10-17T16:37:56" file="ctacte_ApliAvencer.py" line="18">
+<testsuite name="ctacte_ApliAvencer.cta_cte_apliAvencer-failed" tests="1" file="ctacte_ApliAvencer.py" time="61.949" timestamp="2024-10-28T12:49:30" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_ApliAvencer.cta_cte_apliAvencer" name="test_ctacte_apliAvencer" time="61.949" timestamp="2024-10-28T12:49:30" file="ctacte_ApliAvencer.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
-El valor es un carácter numérico. Valor: -456.290.278,00
-El valor es un carácter numérico. Valor: -285.253.864,87
+El valor es un carácter numérico. Valor: -360.270.795,31
+El valor es un carácter numérico. Valor: -189.234.382,18
 El valor es un carácter numérico. Valor: -821.106,16
 El texto encontrado es  CUENTA CORRIENTE
-El valor es un string. Valor: Movimiento FC 1118 00082270
-El valor es un string. Valor: - ARS 1.781.239,37
-El valor es un string. Valor: GASTOS COMER. S/ 60550 KGRS. Trig Cosecha 2324-E
+El valor es un string. Valor: Movimiento FC 1118 00082718
+El valor es un string. Valor: - ARS 2.975.549,24
+El valor es un string. Valor: GASTOS COMER. S/ 93500 KGRS. Maíz Cosecha 2324-E
 ]]></system-out>
 	</testcase>
 </testsuite>

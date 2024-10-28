@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="HomeEntRecientes.HomeEntRecientesTenant-failed" tests="1" file="HomeEntRecientes.py" time="24.028" timestamp="2024-10-17T16:11:28" failures="0" errors="0" skipped="0">
-	<testcase classname="HomeEntRecientes.HomeEntRecientesTenant" name="test_start_tenant" time="24.028" timestamp="2024-10-17T16:11:28" file="HomeEntRecientes.py" line="18">
+<testsuite name="HomeEntRecientes.HomeEntRecientesTenant-failed" tests="1" file="HomeEntRecientes.py" time="23.630" timestamp="2024-10-28T12:23:47" failures="0" errors="0" skipped="0">
+	<testcase classname="HomeEntRecientes.HomeEntRecientesTenant" name="test_start_tenant" time="23.630" timestamp="2024-10-28T12:23:47" file="HomeEntRecientes.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Buen día JUAN DEMO!
 El texto encontrado es  Entregas y Ventas Recientes
 La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/trigo.svg
@@ -8,7 +8,7 @@ El valor es un carácter numérico. Valor: 10118416631
 El valor es un carácter numérico. Valor: 28,24
 El texto encontrado es  Ventas Recientes
 La imagen es visible para el usuario. URL: https://pwa-portal-staging.silohub.ag/assets/images/grains/soja.svg
-El valor es un carácter numérico. Valor: 0,10
+El valor es un carácter numérico. Valor: 0,02
 El valor es un carácter numérico. Valor: 100.000,00
 ]]></system-out>
 	</testcase>

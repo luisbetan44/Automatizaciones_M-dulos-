@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar-failed" tests="1" file="ctacte_histoAcobrar.py" time="58.881" timestamp="2024-10-17T16:41:55" failures="0" errors="0" skipped="0">
-	<testcase classname="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="58.881" timestamp="2024-10-17T16:41:55" file="ctacte_histoAcobrar.py" line="18">
+<testsuite name="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar-failed" tests="1" file="ctacte_histoAcobrar.py" time="57.708" timestamp="2024-10-28T12:53:28" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_histoAcobrar.cuenta_ctacte_histAcobrar" name="test_ctacte_historica" time="57.708" timestamp="2024-10-28T12:53:28" file="ctacte_histoAcobrar.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
 El valor es un carácter numérico. Valor: 2.122.059.104,40
 El valor es un carácter numérico. Valor: 87.831,48

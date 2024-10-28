@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_apliAcobrar.cta_cte_apliAcobrar-failed" tests="1" file="ctacte_apliAcobrar.py" time="56.210" timestamp="2024-10-17T16:36:00" failures="0" errors="0" skipped="0">
-	<testcase classname="ctacte_apliAcobrar.cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="56.210" timestamp="2024-10-17T16:36:00" file="ctacte_apliAcobrar.py" line="18">
+<testsuite name="ctacte_apliAcobrar.cta_cte_apliAcobrar-failed" tests="1" file="ctacte_apliAcobrar.py" time="54.668" timestamp="2024-10-28T12:47:29" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_apliAcobrar.cta_cte_apliAcobrar" name="test_ctacte_aplicada" time="54.668" timestamp="2024-10-28T12:47:29" file="ctacte_apliAcobrar.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
 El valor es un carácter numérico. Valor: 683.907.064,57
 El valor es un carácter numérico. Valor: 683.175.535,80

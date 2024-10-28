@@ -1,25 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReportEntreVentas.reportEntregasVentas-failed" tests="1" file="ReportEntreVentas.py" time="177.619" timestamp="2024-10-17T16:54:03" failures="0" errors="1" skipped="0">
-	<testcase classname="ReportEntreVentas.reportEntregasVentas" name="test_Report_deliverySales" time="177.619" timestamp="2024-10-17T16:54:03" file="ReportEntreVentas.py" line="17">
-		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportEntreVentas.py", line 55, in test_Report_deliverySales
-    find_elements(self.driver, apply_filter_button)
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
-    select_nex_button = WebDriverWait(driver, 10).until(
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
-    value = method(self._driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
-    element = visibility_of(target)(driver)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
-    return _element_if_visible(element)
-  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
-    return element if element.is_displayed() == visibility else False
-AttributeError: 'NoneType' object has no attribute 'is_displayed'
-]]></error>
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+<testsuite name="ReportEntreVentas.reportEntregasVentas-failed" tests="1" file="ReportEntreVentas.py" time="90.522" timestamp="2024-10-28T13:04:04" failures="0" errors="0" skipped="0">
+	<testcase classname="ReportEntreVentas.reportEntregasVentas" name="test_Report_deliverySales" time="90.522" timestamp="2024-10-28T13:04:04" file="ReportEntreVentas.py" line="17">
+		<system-out><![CDATA[El texto encontrado es  Entregas y Ventas
+El texto encontrado es  Soja
+El texto no fue encontrado 23/24
+El texto encontrado es  Kilos Entregados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Otros Movimientos
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Kilos Vendidos
+El valor es un carácter numérico. Valor: 2.466.682
+El texto encontrado es  Kilos Solicitados
+El valor es un carácter numérico. Valor: 0
+El texto encontrado es  Kilos a Fijar
+El valor es un carácter numérico. Valor: 1.556.918
+El texto encontrado es  Saldo
+El valor es un carácter numérico. Valor: -2.466.682
+El texto encontrado es  Saldo Comercial
+El valor es un carácter numérico. Valor: -4.023.600
 ]]></system-out>
 	</testcase>
 </testsuite>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ctacte_histórica.cuenta_ctacte_historica-failed" tests="1" file="ctacte_histórica.py" time="58.541" timestamp="2024-10-17T16:39:53" failures="0" errors="0" skipped="0">
-	<testcase classname="ctacte_histórica.cuenta_ctacte_historica" name="test_ctacte_historica" time="58.541" timestamp="2024-10-17T16:39:53" file="ctacte_histórica.py" line="18">
+<testsuite name="ctacte_histórica.cuenta_ctacte_historica-failed" tests="1" file="ctacte_histórica.py" time="57.921" timestamp="2024-10-28T12:51:27" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_histórica.cuenta_ctacte_historica" name="test_ctacte_historica" time="57.921" timestamp="2024-10-28T12:51:27" file="ctacte_histórica.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
 El valor es un carácter numérico. Valor: 37.929.046,55
 El valor es un carácter numérico. Valor: 391.090,75

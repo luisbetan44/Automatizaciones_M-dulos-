@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EntregasPendApli.entregas_pend_Aplicadas-failed" tests="1" file="EntregasPendApli.py" time="82.097" timestamp="2024-10-17T16:33:09" failures="0" errors="0" skipped="0">
-	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="82.097" timestamp="2024-10-17T16:33:09" file="EntregasPendApli.py" line="23">
+<testsuite name="EntregasPendApli.entregas_pend_Aplicadas-failed" tests="1" file="EntregasPendApli.py" time="80.642" timestamp="2024-10-28T12:44:44" failures="0" errors="0" skipped="0">
+	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="80.642" timestamp="2024-10-28T12:44:44" file="EntregasPendApli.py" line="23">
 		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
 ¡Elemento encontrado y clickeado 2 veces con éxito!
 ¡Elemento encontrado y clickeado 3 veces con éxito!
-El valor es un carácter numérico. Valor: 431,36
-El valor es un carácter numérico. Valor: 417,68
+El valor es un carácter numérico. Valor: 431.360,00
+El valor es un carácter numérico. Valor: 417.677,00
 El valor es un string. Valor: Entrega TK 0001 00121693
-El valor es un string. Valor: 31,32 Tn
+El valor es un string. Valor: 31.320,00 Kg
 El valor es un string. Valor: De Maiz
 El valor es un string. Valor: DATOS DE LA ENTREGA
 El valor es un string. Valor: 26/07/2022

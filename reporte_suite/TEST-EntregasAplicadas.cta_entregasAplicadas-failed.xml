@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EntregasAplicadas.cta_entregasAplicadas-failed" tests="1" file="EntregasAplicadas.py" time="88.037" timestamp="2024-10-17T16:31:44" failures="0" errors="0" skipped="0">
-	<testcase classname="EntregasAplicadas.cta_entregasAplicadas" name="test_delivery_applied" time="88.037" timestamp="2024-10-17T16:31:44" file="EntregasAplicadas.py" line="23">
+<testsuite name="EntregasAplicadas.cta_entregasAplicadas-failed" tests="1" file="EntregasAplicadas.py" time="86.495" timestamp="2024-10-28T12:43:21" failures="0" errors="0" skipped="0">
+	<testcase classname="EntregasAplicadas.cta_entregasAplicadas" name="test_delivery_applied" time="86.495" timestamp="2024-10-28T12:43:21" file="EntregasAplicadas.py" line="23">
 		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
-El valor es un carácter numérico. Valor: 3.826,04
-El valor es un carácter numérico. Valor: 3.803,03
+El valor es un carácter numérico. Valor: 2.899.340,00
+El valor es un carácter numérico. Valor: 2.878.897,00
 El valor es un string. Valor: Entrega TK 0004 00133145
-El valor es un string. Valor: 31,42 Tn
+El valor es un string. Valor: 31.420,00 Kg
 El valor es un string. Valor: De Soja
 El valor es un string. Valor: DATOS DE LA ENTREGA
 El valor es un string. Valor: 03/07/2024

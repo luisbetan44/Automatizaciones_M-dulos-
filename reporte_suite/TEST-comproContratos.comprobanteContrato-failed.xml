@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="comproContratos.comprobanteContrato-failed" tests="1" file="comproContratos.py" time="109.934" timestamp="2024-10-17T16:47:13" failures="0" errors="0" skipped="0">
-	<testcase classname="comproContratos.comprobanteContrato" name="test_comprobante_contrato" time="109.934" timestamp="2024-10-17T16:47:13" file="comproContratos.py" line="22">
+<testsuite name="comproContratos.comprobanteContrato-failed" tests="1" file="comproContratos.py" time="110.271" timestamp="2024-10-28T12:58:53" failures="0" errors="0" skipped="0">
+	<testcase classname="comproContratos.comprobanteContrato" name="test_comprobante_contrato" time="110.271" timestamp="2024-10-28T12:58:53" file="comproContratos.py" line="22">
 		<system-out><![CDATA[El texto encontrado es  COMPROBANTES
 ¡Elemento encontrado y clickeado 10 veces con éxito!
 ¡Elemento encontrado y clickeado 1 veces con éxito!

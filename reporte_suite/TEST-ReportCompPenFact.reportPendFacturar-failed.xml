@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReportCompPenFact.reportPendFacturar-failed" tests="1" file="ReportCompPenFact.py" time="58.759" timestamp="2024-10-17T16:51:03" failures="0" errors="0" skipped="0">
-	<testcase classname="ReportCompPenFact.reportPendFacturar" name="test_Report_PendFacturar" time="58.759" timestamp="2024-10-17T16:51:03" file="ReportCompPenFact.py" line="18">
+<testsuite name="ReportCompPenFact.reportPendFacturar-failed" tests="1" file="ReportCompPenFact.py" time="51.364" timestamp="2024-10-28T13:02:32" failures="0" errors="0" skipped="0">
+	<testcase classname="ReportCompPenFact.reportPendFacturar" name="test_Report_PendFacturar" time="51.364" timestamp="2024-10-28T13:02:32" file="ReportCompPenFact.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Comprobantes Pendientes de Facturar
 El texto no fue encontrado Comprobante
 El valor es un string. Valor: 30/08/2024

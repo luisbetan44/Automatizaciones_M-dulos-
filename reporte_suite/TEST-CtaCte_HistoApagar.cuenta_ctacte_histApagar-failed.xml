@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="CtaCte_HistoApagar.cuenta_ctacte_histApagar-failed" tests="1" file="CtaCte_HistoApagar.py" time="58.747" timestamp="2024-10-17T16:40:53" failures="0" errors="0" skipped="0">
-	<testcase classname="CtaCte_HistoApagar.cuenta_ctacte_histApagar" name="test_ctacte_historica" time="58.747" timestamp="2024-10-17T16:40:53" file="CtaCte_HistoApagar.py" line="18">
+<testsuite name="CtaCte_HistoApagar.cuenta_ctacte_histApagar-failed" tests="1" file="CtaCte_HistoApagar.py" time="58.078" timestamp="2024-10-28T12:52:28" failures="0" errors="0" skipped="0">
+	<testcase classname="CtaCte_HistoApagar.cuenta_ctacte_histApagar" name="test_ctacte_historica" time="58.078" timestamp="2024-10-28T12:52:28" file="CtaCte_HistoApagar.py" line="18">
 		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente
 El valor es un carácter numérico. Valor: -2.201.588.892,50
 El valor es un carácter numérico. Valor: -87.831,48

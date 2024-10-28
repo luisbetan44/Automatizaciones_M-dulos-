@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cta_cte_pesiFechaVevcimientoV2-20241028155505" tests="1" file=".py" time="73.159" timestamp="2024-10-28T15:56:18" failures="0" errors="1" skipped="0">
+	<testcase classname="cta_cte_pesiFechaVevcimientoV2" name="test_ctacte_Date_expiration" time="73.159" timestamp="2024-10-28T15:56:18" file="ctacte_PesiFechaVenciV2.PY" line="18">
+		<error type="NoSuchElementException" message="Message: Unable to locate element: /html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-pesified-list/app-header-for-responsive-table/div/div/div[1]/div/div/app-totalizer/div/div/div[2]/div[2]/span[1]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/&lt;/&lt;@chrome://remote/content/shared/DOM.sys.mjs:136:16
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ctacte_PesiFechaVenciV2.PY", line 69, in test_ctacte_Date_expiration
+    validate_character_numeric_element(self.driver, balance_ars)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1159, in validate_character_numeric_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: Unable to locate element: /html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-pesified-list/app-header-for-responsive-table/div/div/div[1]/div/div/app-totalizer/div/div/div[2]/div[2]/span[1]; For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8
+WebDriverError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:193:5
+NoSuchElementError@chrome://remote/content/shared/webdriver/Errors.sys.mjs:511:5
+dom.find/</<@chrome://remote/content/shared/DOM.sys.mjs:136:16
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  CUENTA PESIFICADA
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -2,7 +2,7 @@
 import unittest
 import xmlrunner
 import time
-from Elements import calendar_todate_retro, find_and_click_element, find_elements, validate_chain_text_xpaht, validate_character_numeric_element, validate_text, validate_text_by_text, validate_text_visible, validate_text_visible_selector
+from Elements import calendar_todate_retro, find_elements, validate_character_numeric_element, validate_text, validate_text_visible
 from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession

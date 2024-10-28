@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ConfigSucursales.config_Sucursales-failed" tests="1" file="ConfigSucursales.py" time="60.543" timestamp="2024-10-17T17:04:44" failures="0" errors="0" skipped="0">
-	<testcase classname="ConfigSucursales.config_Sucursales" name="test_settings_branch_offices" time="60.543" timestamp="2024-10-17T17:04:44" file="ConfigSucursales.py" line="19">
+<testsuite name="ConfigSucursales.config_Sucursales-failed" tests="1" file="ConfigSucursales.py" time="56.810" timestamp="2024-10-28T13:14:19" failures="0" errors="0" skipped="0">
+	<testcase classname="ConfigSucursales.config_Sucursales" name="test_settings_branch_offices" time="56.810" timestamp="2024-10-28T13:14:19" file="ConfigSucursales.py" line="19">
 		<system-out><![CDATA[El texto encontrado es  SUCURSALES
 El texto encontrado es  Nombre Sucursal
 El texto no fue encontrado Angellica - Casa Central
