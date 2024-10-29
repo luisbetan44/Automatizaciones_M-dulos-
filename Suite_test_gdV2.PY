@@ -20,10 +20,21 @@ from ResuEntVentV2 import resuEntregasVentas
 from ServFacturado import ServFacturadoV2
 from TenenImposiV2 import TenenImpositivasV2
 from VentaV2 import cuenta_ventasV2
+from ctacte_apliAcobrar import cta_cte_apliAcobrar
+from ctacte_apliApagar2 import cta_cte_apliApagarV2
+from ctacte_apliAvencer2 import cta_cte_apliAvencerV2
+from ctacte_apliVencida2 import cta_cte_apliVencidoV2
+from ctacte_aplicada15diasV import cta_cte_aplicada_15_Vencer
 
 
 def ejecutar_suite():
     test_suite = unittest.TestSuite()
+    test_suite.addTest(unittest.makeSuite(cta_cte_apliAcobrar))
+    test_suite.addTest(unittest.makeSuite(cta_cte_apliApagarV2))
+    test_suite.addTest(unittest.makeSuite(cta_cte_apliAvencerV2))
+    test_suite.addTest(unittest.makeSuite(cta_cte_apliVencidoV2))
+    test_suite.addTest(unittest.makeSuite(cta_cte_aplicada_15_Vencer))
+    test_suite.addTest(unittest.makeSuite())
     test_suite.addTest(unittest.makeSuite(resuEntregasVentas))
     test_suite.addTest(unittest.makeSuite(EntregasVentasV2))
     test_suite.addTest(unittest.makeSuite(ServFacturadoV2))

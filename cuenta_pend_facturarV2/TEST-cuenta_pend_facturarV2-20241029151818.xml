@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_facturarV2-20241029151818" tests="2" file=".py" time="38.103" timestamp="2024-10-29T15:18:56" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_pend_facturarV2" name="test_pend_facturarV2" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportPendFactV2.py" line="20">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'text'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendFactV2.py", line 54, in test_pend_facturarV2
+    validate_character_numeric_element(self.driver,totes_value_ARS)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1160, in validate_character_numeric_element
+    valor = elemento.text
+AttributeError: 'NoneType' object has no attribute 'text'
+]]></error>
+	</testcase>
+	<testcase classname="cuenta_pend_facturarV2" name="test_pend_facturarV2" time="38.103" timestamp="2024-10-29T15:18:56" file="ReportPendFactV2.py" line="20">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF799C53AB5+28005]
+	(No symbol) [0x00007FF799BB83B0]
+	(No symbol) [0x00007FF799A5580A]
+	(No symbol) [0x00007FF799A43BD7]
+	(No symbol) [0x00007FF799A4151E]
+	(No symbol) [0x00007FF799A41FCF]
+	(No symbol) [0x00007FF799A55E23]
+	(No symbol) [0x00007FF799A2F55D]
+	(No symbol) [0x00007FF799AD9CE9]
+	(No symbol) [0x00007FF799ACBA00]
+	(No symbol) [0x00007FF799A975C8]
+	(No symbol) [0x00007FF799A98731]
+	GetHandleVerifier [0x00007FF799F4643D+3118829]
+	GetHandleVerifier [0x00007FF799F96C90+3448640]
+	GetHandleVerifier [0x00007FF799F8CF0D+3408317]
+	GetHandleVerifier [0x00007FF799D1A40B+841403]
+	(No symbol) [0x00007FF799BC340F]
+	(No symbol) [0x00007FF799BBF484]
+	(No symbol) [0x00007FF799BBF61D]
+	(No symbol) [0x00007FF799BAEB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendFactV2.py", line 196, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF799C53AB5+28005]
+	(No symbol) [0x00007FF799BB83B0]
+	(No symbol) [0x00007FF799A5580A]
+	(No symbol) [0x00007FF799A43BD7]
+	(No symbol) [0x00007FF799A4151E]
+	(No symbol) [0x00007FF799A41FCF]
+	(No symbol) [0x00007FF799A55E23]
+	(No symbol) [0x00007FF799A2F55D]
+	(No symbol) [0x00007FF799AD9CE9]
+	(No symbol) [0x00007FF799ACBA00]
+	(No symbol) [0x00007FF799A975C8]
+	(No symbol) [0x00007FF799A98731]
+	GetHandleVerifier [0x00007FF799F4643D+3118829]
+	GetHandleVerifier [0x00007FF799F96C90+3448640]
+	GetHandleVerifier [0x00007FF799F8CF0D+3408317]
+	GetHandleVerifier [0x00007FF799D1A40B+841403]
+	(No symbol) [0x00007FF799BC340F]
+	(No symbol) [0x00007FF799BBF484]
+	(No symbol) [0x00007FF799BBF61D]
+	(No symbol) [0x00007FF799BAEB79]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>

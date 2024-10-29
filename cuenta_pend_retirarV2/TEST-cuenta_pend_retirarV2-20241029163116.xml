@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_retirarV2-20241029163116" tests="1" file=".py" time="54.658" timestamp="2024-10-29T16:32:10" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="54.658" timestamp="2024-10-29T16:32:10" file="ReportPendRetiV2.py" line="20">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF717133AF5+28005]
+	(No symbol) [0x00007FF7170983F0]
+	(No symbol) [0x00007FF716F3580A]
+	(No symbol) [0x00007FF716F85A3E]
+	(No symbol) [0x00007FF716F85D2C]
+	(No symbol) [0x00007FF716FCEA97]
+	(No symbol) [0x00007FF716FABA7F]
+	(No symbol) [0x00007FF716FCB8B3]
+	(No symbol) [0x00007FF716FAB7E3]
+	(No symbol) [0x00007FF716F775C8]
+	(No symbol) [0x00007FF716F78731]
+	GetHandleVerifier [0x00007FF71742646D+3118813]
+	GetHandleVerifier [0x00007FF717476CC0+3448624]
+	GetHandleVerifier [0x00007FF71746CF3D+3408301]
+	GetHandleVerifier [0x00007FF7171FA44B+841403]
+	(No symbol) [0x00007FF7170A344F]
+	(No symbol) [0x00007FF71709F4C4]
+	(No symbol) [0x00007FF71709F65D]
+	(No symbol) [0x00007FF71708EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 48, in test_pend_retirarV2
+    calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1491, in calendar_todate_retro
+    popup_calendario = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF717133AF5+28005]
+	(No symbol) [0x00007FF7170983F0]
+	(No symbol) [0x00007FF716F3580A]
+	(No symbol) [0x00007FF716F85A3E]
+	(No symbol) [0x00007FF716F85D2C]
+	(No symbol) [0x00007FF716FCEA97]
+	(No symbol) [0x00007FF716FABA7F]
+	(No symbol) [0x00007FF716FCB8B3]
+	(No symbol) [0x00007FF716FAB7E3]
+	(No symbol) [0x00007FF716F775C8]
+	(No symbol) [0x00007FF716F78731]
+	GetHandleVerifier [0x00007FF71742646D+3118813]
+	GetHandleVerifier [0x00007FF717476CC0+3448624]
+	GetHandleVerifier [0x00007FF71746CF3D+3408301]
+	GetHandleVerifier [0x00007FF7171FA44B+841403]
+	(No symbol) [0x00007FF7170A344F]
+	(No symbol) [0x00007FF71709F4C4]
+	(No symbol) [0x00007FF71709F65D]
+	(No symbol) [0x00007FF71708EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>

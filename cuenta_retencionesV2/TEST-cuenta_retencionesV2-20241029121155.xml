@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_retencionesV2-20241029121155" tests="1" file=".py" time="46.436" timestamp="2024-10-29T12:12:41" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_retencionesV2" name="test_ctacte_historica" time="46.436" timestamp="2024-10-29T12:12:41" file="retencionesV2.py" line="21">
+		<system-out><![CDATA[El texto encontrado es  Retenciones
+El texto encontrado es  Fecha
+El valor es un string. Valor: 30/09/2024
+El texto encontrado es  Certificado
+El valor es un carácter numérico. Valor: 3302-00169189
+El texto encontrado es  Régimen
+El valor es un string. Valor: 22 - Gan Cereales Art. 10 inc. a). Est 2  Op. Prim
+El texto encontrado es  Impuesto
+El valor es un string. Valor: Imp. a las Ganancias - Cereales
+El texto encontrado es  Comprobante
+El valor es un string. Valor: LC 3302 00169189
+El texto encontrado es  Suj. Ret. (ARS)
+El valor es un carácter numérico. Valor: -306.600,00
+El texto encontrado es  Alícuota
+El valor es un carácter numérico. Valor: -3.284,00
+El texto encontrado es  Ret. (ARS)
+El valor es un string. Valor: -3.284,00
+]]></system-out>
+	</testcase>
+</testsuite>

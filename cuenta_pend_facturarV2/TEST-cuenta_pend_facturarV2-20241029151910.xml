@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_facturarV2-20241029151910" tests="1" file=".py" time="80.734" timestamp="2024-10-29T15:20:31" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_pend_facturarV2" name="test_pend_facturarV2" time="80.734" timestamp="2024-10-29T15:20:31" file="ReportPendFactV2.py" line="20">
+		<system-out><![CDATA[El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: 600.180,21
+El texto encontrado es  Comprobantes Pendientes de Facturar
+Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un string. Valor: 30/08/2024
+El texto encontrado es  Comprobante
+El valor es un carácter numérico. Valor: PED 0051 00017659
+El texto encontrado es  Artículo
+El valor es un string. Valor: 110002 - Aceite mineral Novaoil x 20 lts NOVA SA.
+El texto encontrado es  Cantidad
+El valor es un carácter numérico. Valor: 300
+El texto encontrado es  Cant. Pend.
+El valor es un carácter numérico. Valor: 300
+El texto encontrado es  Moneda
+El valor es un carácter alfabético. Valor: USD
+El texto encontrado es  Precio
+El valor es un carácter numérico. Valor: 2.000,00
+El texto encontrado es  Total USD
+El valor es un carácter numérico. Valor: 600.000,00
+El texto no fue encontrado  Total ARS 
+El valor es un carácter numérico. Valor: 0
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_retirarV2-20241029170953" tests="2" file=".py" time="49.922" timestamp="2024-10-29T17:10:43" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportPendRetiV2.py" line="20">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 48, in test_pend_retirarV2
+    calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1485, in calendar_todate_retro
+    input_fecha = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+	</testcase>
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="49.922" timestamp="2024-10-29T17:10:43" file="ReportPendRetiV2.py" line="20">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6987F3AF5+28005]
+	(No symbol) [0x00007FF6987583F0]
+	(No symbol) [0x00007FF6985F580A]
+	(No symbol) [0x00007FF6985CFA85]
+	(No symbol) [0x00007FF698672AD7]
+	(No symbol) [0x00007FF698679D48]
+	(No symbol) [0x00007FF69866BA00]
+	(No symbol) [0x00007FF6986375C8]
+	(No symbol) [0x00007FF698638731]
+	GetHandleVerifier [0x00007FF698AE646D+3118813]
+	GetHandleVerifier [0x00007FF698B36CC0+3448624]
+	GetHandleVerifier [0x00007FF698B2CF3D+3408301]
+	GetHandleVerifier [0x00007FF6988BA44B+841403]
+	(No symbol) [0x00007FF69876344F]
+	(No symbol) [0x00007FF69875F4C4]
+	(No symbol) [0x00007FF69875F65D]
+	(No symbol) [0x00007FF69874EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 200, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.70)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6987F3AF5+28005]
+	(No symbol) [0x00007FF6987583F0]
+	(No symbol) [0x00007FF6985F580A]
+	(No symbol) [0x00007FF6985CFA85]
+	(No symbol) [0x00007FF698672AD7]
+	(No symbol) [0x00007FF698679D48]
+	(No symbol) [0x00007FF69866BA00]
+	(No symbol) [0x00007FF6986375C8]
+	(No symbol) [0x00007FF698638731]
+	GetHandleVerifier [0x00007FF698AE646D+3118813]
+	GetHandleVerifier [0x00007FF698B36CC0+3448624]
+	GetHandleVerifier [0x00007FF698B2CF3D+3408301]
+	GetHandleVerifier [0x00007FF6988BA44B+841403]
+	(No symbol) [0x00007FF69876344F]
+	(No symbol) [0x00007FF69875F4C4]
+	(No symbol) [0x00007FF69875F65D]
+	(No symbol) [0x00007FF69874EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>

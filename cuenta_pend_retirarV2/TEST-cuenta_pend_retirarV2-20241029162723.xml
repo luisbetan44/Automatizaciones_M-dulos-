@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_retirarV2-20241029162723" tests="1" file=".py" time="34.999" timestamp="2024-10-29T16:27:58" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="34.999" timestamp="2024-10-29T16:27:58" file="ReportPendRetiV2.py" line="20">
+		<error type="TimeoutException" message="Message: 
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 48, in test_pend_retirarV2
+    calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1491, in calendar_todate_retro
+    popup_calendario = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+
+]]></error>
+	</testcase>
+</testsuite>
