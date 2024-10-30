@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobanteContratoV2-20241030175040" tests="2" file=".py" time="54.754" timestamp="2024-10-30T17:51:35" failures="0" errors="2" skipped="0">
+	<testcase classname="comprobanteContratoV2" name="test_comprobante_contrato" time="0.000" timestamp="0001-01-01T00:00:00" file="ComproContractV2.py" line="22">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ComproContractV2.py", line 49, in test_comprobante_contrato
+    find_elements(self.driver, select_filter_button1)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto no fue encontrado COMPROBANTES
+]]></system-out>
+	</testcase>
+	<testcase classname="comprobanteContratoV2" name="test_comprobante_contrato" time="54.754" timestamp="2024-10-30T17:51:35" file="ComproContractV2.py" line="22">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.91)
+Stacktrace:
+	GetHandleVerifier [0x00007FF625F83AF5+28005]
+	(No symbol) [0x00007FF625EE83F0]
+	(No symbol) [0x00007FF625D8580A]
+	(No symbol) [0x00007FF625D5FA85]
+	(No symbol) [0x00007FF625E02AD7]
+	(No symbol) [0x00007FF625E09D48]
+	(No symbol) [0x00007FF625DFBA00]
+	(No symbol) [0x00007FF625DC75C8]
+	(No symbol) [0x00007FF625DC8731]
+	GetHandleVerifier [0x00007FF62627646D+3118813]
+	GetHandleVerifier [0x00007FF6262C6CC0+3448624]
+	GetHandleVerifier [0x00007FF6262BCF3D+3408301]
+	GetHandleVerifier [0x00007FF62604A44B+841403]
+	(No symbol) [0x00007FF625EF344F]
+	(No symbol) [0x00007FF625EEF4C4]
+	(No symbol) [0x00007FF625EEF65D]
+	(No symbol) [0x00007FF625EDEBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ComproContractV2.py", line 143, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.91)
+Stacktrace:
+	GetHandleVerifier [0x00007FF625F83AF5+28005]
+	(No symbol) [0x00007FF625EE83F0]
+	(No symbol) [0x00007FF625D8580A]
+	(No symbol) [0x00007FF625D5FA85]
+	(No symbol) [0x00007FF625E02AD7]
+	(No symbol) [0x00007FF625E09D48]
+	(No symbol) [0x00007FF625DFBA00]
+	(No symbol) [0x00007FF625DC75C8]
+	(No symbol) [0x00007FF625DC8731]
+	GetHandleVerifier [0x00007FF62627646D+3118813]
+	GetHandleVerifier [0x00007FF6262C6CC0+3448624]
+	GetHandleVerifier [0x00007FF6262BCF3D+3408301]
+	GetHandleVerifier [0x00007FF62604A44B+841403]
+	(No symbol) [0x00007FF625EF344F]
+	(No symbol) [0x00007FF625EEF4C4]
+	(No symbol) [0x00007FF625EEF65D]
+	(No symbol) [0x00007FF625EDEBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto no fue encontrado COMPROBANTES
+]]></system-out>
+	</testcase>
+</testsuite>

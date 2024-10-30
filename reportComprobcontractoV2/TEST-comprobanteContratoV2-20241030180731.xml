@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobanteContratoV2-20241030180731" tests="1" file=".py" time="108.700" timestamp="2024-10-30T18:09:20" failures="0" errors="0" skipped="0">
+	<testcase classname="comprobanteContratoV2" name="test_comprobante_contrato" time="108.700" timestamp="2024-10-30T18:09:20" file="ComproContractV2.py" line="23">
+		<system-out><![CDATA[El texto encontrado es  Mis Comprobantes
+¡Elemento encontrado y clickeado 10 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El valor es un string. Valor: VN 0001 00125520
+El valor es un string. Valor: VN 0001 00125540
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>
