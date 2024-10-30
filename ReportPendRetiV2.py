@@ -3,8 +3,8 @@ import unittest
 
 import xmlrunner
 
-from Elements import calendar_todate_retro, find_elements, find_elements_id,validate_character_numeric_element, validate_text
-from Elements2 import validate_character_string_element
+from Elements import calendar_todate_retro, find_and_click_element, find_elements, find_elements_css_selector, find_elements_id,validate_character_numeric_element, validate_text
+from Elements2 import calendar_todate_retro_selector, validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
 
@@ -38,37 +38,44 @@ class cuenta_pend_retirarV2(unittest.TestCase):
 
         
         
+        # aplicar filtro de fecha del 30/04/2024 al 30/10/2024 
 
-    
-        
-        # aplicar filtro de fecha actual a seis meses para atras 
+        select_calendar = '//*[@id="current-pending_withdrawal"]/app-tab-pending-withdrawal/app-supplies-pending/div/div[1]/app-date-picker/div/input[2]'
+        find_elements(self.driver, select_calendar)
 
-        select_calendar = '//*[@id="current-pending_withdrawal"]/app-tab-pending-withdrawal/app-supplies-pending/div[1]/div[1]/app-date-picker/div/input[2]'
-        popup_xpath = "//span[contains(@class, 'flatpickr-day') and @aria-current='date']"
-        select_chevron = "//span[@class='flatpickr-prev-month']"
-        popup_xpath2 = "//span[contains(@class, 'flatpickr-day') and @aria-current='date']"
-        click_chevron = 6
-        calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
+        arrow_filter2 = "/html/body/div[2]/div[1]/span[1]"
+        amount_click2 = 6
+        find_and_click_element(self.driver, arrow_filter2, amount_click2)
+
+        select_date1 = "/html/body/div[2]/div[2]/div/div[2]/div/span[30]"
+        find_elements(self.driver, select_date1 )
+
+        arrow_filter3 = "/html/body/div[2]/div[1]/span[2]"
+        amount_click3 = 6
+        find_and_click_element(self.driver, arrow_filter3, amount_click3)
+
+        select_date2 = "/html/body/div[2]/div[2]/div/div[2]/div/span[31]"
+        find_elements(self.driver, select_date2 )
         time.sleep(2)
 
 
-        apply_button_filter = "//span[text()= 'Generar']"
+        apply_button_filter = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/div/div[3]/div/div[2]/app-button/button"
         find_elements(self.driver,  apply_button_filter)
         time.sleep(2)
 
         ## validar totalizadores 
 
 
-        totes_value_ARS = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/div[2]/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+        totes_value_ARS = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/div[2]/app-header-for-responsive-table/div/div/div[1]/div/div[1]/app-totalizer/div/div/div[2]/div[2]/span[1]"
         validate_character_numeric_element(self.driver,totes_value_ARS)
 
-        totes_value_USD = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/div[2]/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
+        totes_value_USD = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/div[2]/app-header-for-responsive-table/div/div/div[1]/div/div[2]/app-totalizer/div/div/div[2]/div[2]/span[1]"
         validate_character_numeric_element(self.driver,totes_value_USD)
 
         ## validar titulo de pantalla cuenta corriente aplicada 
 
-        title_account = "//div[text()= ' Comprobantes Pendientes de Facturar ']  "
-        title_account_expected = "Comprobantes Pendientes de Facturar"
+        title_account = "//div[text()= ' Insumos Pendientes de Retirar ']  "
+        title_account_expected = "Insumos Pendientes de Retirar"
         validate_text(self.driver,title_account,title_account_expected )
 
 
@@ -78,14 +85,14 @@ class cuenta_pend_retirarV2(unittest.TestCase):
         first_column_expected = "Fecha"
         validate_text(self.driver, first_column, first_column_expected )
 
-        value_first_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/div/span"
+        value_first_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/div/span"
         validate_character_string_element(self.driver, value_first_column)
 
         second_column = "//th[text()= ' Comprobante '] "
         second_column_expected = "Comprobante"
         validate_text(self.driver, second_column, second_column_expected )
 
-        value_second_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[2]/span/div/span"
+        value_second_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[2]/span/div/span"
         validate_character_numeric_element(self.driver,value_second_column)
         
 
@@ -94,7 +101,7 @@ class cuenta_pend_retirarV2(unittest.TestCase):
         validate_text(self.driver, third_column, third_column_expected )
         
 
-        value_third_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[3]/span/div/span"
+        value_third_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[3]/span/div/span"
         validate_character_string_element(self.driver, value_third_column)
    
 
@@ -103,7 +110,7 @@ class cuenta_pend_retirarV2(unittest.TestCase):
         validate_text(self.driver,  fourth_column, fourth_column_expected )
        
 
-        value_fourth_column1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[4]/span/div/span"
+        value_fourth_column1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[4]/span/div/span"
         validate_character_numeric_element(self.driver,value_fourth_column1)
 
         
@@ -114,7 +121,7 @@ class cuenta_pend_retirarV2(unittest.TestCase):
         validate_text(self.driver,  fifth_column, fifth_column_expected )
        
 
-        value_fifth_column1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[5]/span/div/span"
+        value_fifth_column1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[5]/span/div/span"
         validate_character_numeric_element(self.driver,value_fifth_column1)
 
         
@@ -125,7 +132,7 @@ class cuenta_pend_retirarV2(unittest.TestCase):
         validate_text(self.driver,  sixth_column, sixth_column_expected )
         
 
-        value_sixth_column1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[6]/span/div/span"
+        value_sixth_column1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[6]/span/div/span"
         validate_character_string_element(self.driver,value_sixth_column1)
 
         
@@ -136,7 +143,7 @@ class cuenta_pend_retirarV2(unittest.TestCase):
         validate_text(self.driver,  seventh_column, seventh_column_expected )
         
 
-        value_seventh_column = "//html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[7]/span/div/span"
+        value_seventh_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[7]/span/div/span"
         validate_character_numeric_element(self.driver,value_seventh_column)
        
 
@@ -145,7 +152,7 @@ class cuenta_pend_retirarV2(unittest.TestCase):
         validate_text(self.driver,  eighth_column, eighth_column_expected )
        
 
-        value_eighth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[8]/span/div/span"
+        value_eighth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[8]/span/div/span"
         validate_character_numeric_element(self.driver,value_eighth_column)
 
         ninth_column = "//th[text()= ' Total ARS ']  "
@@ -153,42 +160,42 @@ class cuenta_pend_retirarV2(unittest.TestCase):
         validate_text(self.driver,  ninth_column, ninth_column_expected )
        
 
-        value_ninth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[9]/span/div/span"
+        value_ninth_column = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/td[9]/span/div/span"
         validate_character_numeric_element(self.driver,value_ninth_column)
 
 
         ## Seleccionar y descargar movimientos del listado 
 
-        movements_list_1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/th/input"
+        movements_list_1 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[1]/th/input"
         find_elements(self.driver, movements_list_1)
 
-        movements_list_2 =  "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[2]/th/input"
+        movements_list_2 =  "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[2]/th/input"
         find_elements(self.driver, movements_list_2)
 
-        movements_list_3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[3]/th/input"
+        movements_list_3 = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/app-responsive-table/div/div/table/tbody/tr[3]/th/input"
         find_elements(self.driver, movements_list_3)
         time.sleep(2)
 
         
        ## seleccionar botón descargar  
 
-        select_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/div[1]/div[3]/div/div[1]/app-download-button/div/button[2]"
+        select_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/div[1]/div[3]/div/div[1]/app-download-button/div/button[2]"
         find_elements(self.driver,   select_button)
         time.sleep(2)
 
         ## descargar Excel 
 
-        download_document_Excel = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/div[1]/div[3]/div/div[1]/app-download-button/div/ul/li[1]/a"
+        download_document_Excel = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/div[1]/div[3]/div/div[1]/app-download-button/div/ul/li[1]/a"
         find_elements(self.driver, download_document_Excel)
         time.sleep(3)
 
-        select_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/div[1]/div[3]/div/div[1]/app-download-button/div/button[2]"
+        select_button = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/div[1]/div[3]/div/div[1]/app-download-button/div/button[2]"
         find_elements(self.driver,   select_button)
         time.sleep(2)
 
         ## descargar PDF 
 
-        download_document_PDF = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/div[1]/div[3]/div/div[1]/app-download-button/div/ul/li[2]/a"
+        download_document_PDF = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[2]/app-tab-pending-withdrawal/app-supplies-pending/div[1]/div[3]/div/div[1]/app-download-button/div/ul/li[2]/a"
         find_elements(self.driver, download_document_PDF)
         time.sleep(3)
 
@@ -196,7 +203,7 @@ class cuenta_pend_retirarV2(unittest.TestCase):
     
 
 
-        go_out_list = "//a[text()= 'Reportes']  "
+        go_out_list = "//a[text()= 'Cuenta']  "
         find_elements(self.driver, go_out_list)
         time.sleep(3)
 

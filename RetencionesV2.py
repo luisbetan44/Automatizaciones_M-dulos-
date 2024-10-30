@@ -41,9 +41,9 @@ class cuenta_retencionesV2(unittest.TestCase):
         # aplicar filtro de fecha actual a seis meses para atras 
 
         select_calendar = "/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-current-account/div/div/div/app-current-account-with-holdings-list/div/div[1]/app-date-picker/div/input[2]"
-        popup_xpath = "//div[contains(@class, 'flatpickr-calendar')]"
+        popup_xpath = "//span[contains(@class, 'flatpickr-day today')]   "
         select_chevron = "//span[@class='flatpickr-prev-month']"
-        popup_xpath2 = "//div[contains(@class, 'flatpickr-calendar')]"
+        popup_xpath2 = "//span[contains(@class, 'flatpickr-day today')]  "
         click_chevron = 6
         calendar_todate_retro(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
         time.sleep(2)

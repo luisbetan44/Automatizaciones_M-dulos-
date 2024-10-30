@@ -146,6 +146,6 @@ class cta_cte_pesiFechaVevcimientoV2(unittest.TestCase):
 
 if __name__ == "__main__":
   test_suite = unittest.TestLoader().loadTestsFromTestCase(cta_cte_pesiFechaVevcimientoV2)
-  runner = xmlrunner.XMLTestRunner(output='reportCtacteApliApagarV2')
+  runner = xmlrunner.XMLTestRunner(output='reportCtactepesiFechaVevcimientoV2')
   runner.run(test_suite)
 

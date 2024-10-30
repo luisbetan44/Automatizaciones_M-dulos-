@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_retirarV2-20241030120633" tests="1" file=".py" time="120.772" timestamp="2024-10-30T12:08:34" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="120.772" timestamp="2024-10-30T12:08:34" file="ReportPendRetiV2.py" line="20">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/div/span&quot;}
+  (Session info: chrome=130.0.6723.91); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73CF23AF5+28005]
+	(No symbol) [0x00007FF73CE883F0]
+	(No symbol) [0x00007FF73CD2580A]
+	(No symbol) [0x00007FF73CD75A3E]
+	(No symbol) [0x00007FF73CD75D2C]
+	(No symbol) [0x00007FF73CDBEA97]
+	(No symbol) [0x00007FF73CD9BA7F]
+	(No symbol) [0x00007FF73CDBB8B3]
+	(No symbol) [0x00007FF73CD9B7E3]
+	(No symbol) [0x00007FF73CD675C8]
+	(No symbol) [0x00007FF73CD68731]
+	GetHandleVerifier [0x00007FF73D21646D+3118813]
+	GetHandleVerifier [0x00007FF73D266CC0+3448624]
+	GetHandleVerifier [0x00007FF73D25CF3D+3408301]
+	GetHandleVerifier [0x00007FF73CFEA44B+841403]
+	(No symbol) [0x00007FF73CE9344F]
+	(No symbol) [0x00007FF73CE8F4C4]
+	(No symbol) [0x00007FF73CE8F65D]
+	(No symbol) [0x00007FF73CE7EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 89, in test_pend_retirarV2
+    validate_character_string_element(self.driver, value_first_column)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 32, in validate_character_string_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-supplies/div/div[1]/app-tab-pending-billing/app-pendient/app-responsive-table/div/div/table/tbody/tr[1]/td[1]/span/div/span"}
+  (Session info: chrome=130.0.6723.91); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF73CF23AF5+28005]
+	(No symbol) [0x00007FF73CE883F0]
+	(No symbol) [0x00007FF73CD2580A]
+	(No symbol) [0x00007FF73CD75A3E]
+	(No symbol) [0x00007FF73CD75D2C]
+	(No symbol) [0x00007FF73CDBEA97]
+	(No symbol) [0x00007FF73CD9BA7F]
+	(No symbol) [0x00007FF73CDBB8B3]
+	(No symbol) [0x00007FF73CD9B7E3]
+	(No symbol) [0x00007FF73CD675C8]
+	(No symbol) [0x00007FF73CD68731]
+	GetHandleVerifier [0x00007FF73D21646D+3118813]
+	GetHandleVerifier [0x00007FF73D266CC0+3448624]
+	GetHandleVerifier [0x00007FF73D25CF3D+3408301]
+	GetHandleVerifier [0x00007FF73CFEA44B+841403]
+	(No symbol) [0x00007FF73CE9344F]
+	(No symbol) [0x00007FF73CE8F4C4]
+	(No symbol) [0x00007FF73CE8F65D]
+	(No symbol) [0x00007FF73CE7EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: 847.552,10
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

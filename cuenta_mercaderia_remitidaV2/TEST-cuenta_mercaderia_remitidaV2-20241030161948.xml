@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_mercaderia_remitidaV2-20241030161948" tests="1" file=".py" time="108.042" timestamp="2024-10-30T16:21:36" failures="0" errors="0" skipped="0">
+	<testcase classname="cuenta_mercaderia_remitidaV2" name="test_mercaderia_remitidaV2" time="108.042" timestamp="2024-10-30T16:21:36" file="ReportMerRemitV2.py" line="18">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Input encontrado y enviado con éxito!
+El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: 72.219,15
+El texto encontrado es  Mercadería Remitida
+Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un string. Valor: 22/08/2024
+El texto encontrado es  Comprobante
+El valor es un carácter numérico. Valor: REMBAL 0063 00038363
+El texto encontrado es  Artículo
+El valor es un string. Valor: Premezcla Creci Feed Nutricion Superior x 25 kgs
+El texto encontrado es  Comp. Origen
+El valor es un carácter numérico. Valor: PEDBAL 0001 00039677
+El texto encontrado es  Moneda
+El valor es un carácter alfabético. Valor: USD
+El texto encontrado es  Precio
+El valor es un carácter numérico. Valor: 0,43
+El texto encontrado es  Total Neto USD
+El valor es un carácter numérico. Valor: 930,25
+El texto encontrado es  Total Neto ARS
+El valor no es un carácter numérico. Valor: -
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

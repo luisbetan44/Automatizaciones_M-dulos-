@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_retirarV2-20241030095945" tests="2" file=".py" time="49.348" timestamp="2024-10-30T10:00:34" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportPendRetiV2.py" line="20">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 59, in test_pend_retirarV2
+    find_elements_css_selector(self.driver,popup_xpath2)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 29, in find_elements_css_selector
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+]]></system-out>
+	</testcase>
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="49.348" timestamp="2024-10-30T10:00:34" file="ReportPendRetiV2.py" line="20">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.91)
+Stacktrace:
+	GetHandleVerifier [0x00007FF766823AF5+28005]
+	(No symbol) [0x00007FF7667883F0]
+	(No symbol) [0x00007FF76662580A]
+	(No symbol) [0x00007FF7665FFA85]
+	(No symbol) [0x00007FF7666A2AD7]
+	(No symbol) [0x00007FF7666A9D48]
+	(No symbol) [0x00007FF76669BA00]
+	(No symbol) [0x00007FF7666675C8]
+	(No symbol) [0x00007FF766668731]
+	GetHandleVerifier [0x00007FF766B1646D+3118813]
+	GetHandleVerifier [0x00007FF766B66CC0+3448624]
+	GetHandleVerifier [0x00007FF766B5CF3D+3408301]
+	GetHandleVerifier [0x00007FF7668EA44B+841403]
+	(No symbol) [0x00007FF76679344F]
+	(No symbol) [0x00007FF76678F4C4]
+	(No symbol) [0x00007FF76678F65D]
+	(No symbol) [0x00007FF76677EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 211, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.91)
+Stacktrace:
+	GetHandleVerifier [0x00007FF766823AF5+28005]
+	(No symbol) [0x00007FF7667883F0]
+	(No symbol) [0x00007FF76662580A]
+	(No symbol) [0x00007FF7665FFA85]
+	(No symbol) [0x00007FF7666A2AD7]
+	(No symbol) [0x00007FF7666A9D48]
+	(No symbol) [0x00007FF76669BA00]
+	(No symbol) [0x00007FF7666675C8]
+	(No symbol) [0x00007FF766668731]
+	GetHandleVerifier [0x00007FF766B1646D+3118813]
+	GetHandleVerifier [0x00007FF766B66CC0+3448624]
+	GetHandleVerifier [0x00007FF766B5CF3D+3408301]
+	GetHandleVerifier [0x00007FF7668EA44B+841403]
+	(No symbol) [0x00007FF76679344F]
+	(No symbol) [0x00007FF76678F4C4]
+	(No symbol) [0x00007FF76678F65D]
+	(No symbol) [0x00007FF76677EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

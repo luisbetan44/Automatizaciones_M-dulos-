@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_mercaderia_remitidaV2-20241030161502" tests="1" file=".py" time="60.841" timestamp="2024-10-30T16:16:02" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_mercaderia_remitidaV2" name="test_mercaderia_remitidaV2" time="60.841" timestamp="2024-10-30T16:16:02" file="ReportMerRemitV2.py" line="18">
+		<error type="InvalidSelectorException" message="Message: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;Unable to locate an element with the xpath expression //th[text()= ' Moneda '  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//th[text()= ' Moneda ' ' is not a valid XPath expression.&quot;}
+  (Session info: chrome=130.0.6723.91); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF65AF33AF5+28005]
+	(No symbol) [0x00007FF65AE983F0]
+	(No symbol) [0x00007FF65AD3580A]
+	(No symbol) [0x00007FF65AD3C2CC]
+	(No symbol) [0x00007FF65AD3E5E7]
+	(No symbol) [0x00007FF65AD3E6A0]
+	(No symbol) [0x00007FF65AD854EA]
+	(No symbol) [0x00007FF65AD85D2C]
+	(No symbol) [0x00007FF65ADCEA97]
+	(No symbol) [0x00007FF65ADABA7F]
+	(No symbol) [0x00007FF65ADCB8B3]
+	(No symbol) [0x00007FF65ADAB7E3]
+	(No symbol) [0x00007FF65AD775C8]
+	(No symbol) [0x00007FF65AD78731]
+	GetHandleVerifier [0x00007FF65B22646D+3118813]
+	GetHandleVerifier [0x00007FF65B276CC0+3448624]
+	GetHandleVerifier [0x00007FF65B26CF3D+3408301]
+	GetHandleVerifier [0x00007FF65AFFA44B+841403]
+	(No symbol) [0x00007FF65AEA344F]
+	(No symbol) [0x00007FF65AE9F4C4]
+	(No symbol) [0x00007FF65AE9F65D]
+	(No symbol) [0x00007FF65AE8EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportMerRemitV2.py", line 124, in test_mercaderia_remitidaV2
+    validate_text(self.driver,  fifth_column, fifth_column_expected )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1000, in validate_text
+    elemento = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"Unable to locate an element with the xpath expression //th[text()= ' Moneda '  because of the following error:\nSyntaxError: Failed to execute 'evaluate' on 'Document': The string '//th[text()= ' Moneda ' ' is not a valid XPath expression."}
+  (Session info: chrome=130.0.6723.91); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF65AF33AF5+28005]
+	(No symbol) [0x00007FF65AE983F0]
+	(No symbol) [0x00007FF65AD3580A]
+	(No symbol) [0x00007FF65AD3C2CC]
+	(No symbol) [0x00007FF65AD3E5E7]
+	(No symbol) [0x00007FF65AD3E6A0]
+	(No symbol) [0x00007FF65AD854EA]
+	(No symbol) [0x00007FF65AD85D2C]
+	(No symbol) [0x00007FF65ADCEA97]
+	(No symbol) [0x00007FF65ADABA7F]
+	(No symbol) [0x00007FF65ADCB8B3]
+	(No symbol) [0x00007FF65ADAB7E3]
+	(No symbol) [0x00007FF65AD775C8]
+	(No symbol) [0x00007FF65AD78731]
+	GetHandleVerifier [0x00007FF65B22646D+3118813]
+	GetHandleVerifier [0x00007FF65B276CC0+3448624]
+	GetHandleVerifier [0x00007FF65B26CF3D+3408301]
+	GetHandleVerifier [0x00007FF65AFFA44B+841403]
+	(No symbol) [0x00007FF65AEA344F]
+	(No symbol) [0x00007FF65AE9F4C4]
+	(No symbol) [0x00007FF65AE9F65D]
+	(No symbol) [0x00007FF65AE8EBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Elemento encontrado y clickeado 6 veces con éxito!
+¡Input encontrado y enviado con éxito!
+El valor es un carácter numérico. Valor: 0,00
+El valor es un carácter numérico. Valor: 72.219,15
+El texto encontrado es  Mercadería Remitida
+Tiempo de espera agotado. El texto por xpaht no está presente.
+El valor es un string. Valor: 22/08/2024
+El texto encontrado es  Comprobante
+El valor es un carácter numérico. Valor: REMBAL 0063 00038363
+El texto encontrado es  Artículo
+El valor es un string. Valor: Premezcla Creci Feed Nutricion Superior x 25 kgs
+El texto encontrado es  Comp. Origen
+El valor es un carácter numérico. Valor: PEDBAL 0001 00039677
+]]></system-out>
+	</testcase>
+</testsuite>

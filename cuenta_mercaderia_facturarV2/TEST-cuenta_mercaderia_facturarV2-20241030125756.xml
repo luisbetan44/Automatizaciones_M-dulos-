@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_mercaderia_facturarV2-20241030125756" tests="2" file=".py" time="48.824" timestamp="2024-10-30T12:58:45" failures="0" errors="2" skipped="0">
+	<testcase classname="cuenta_mercaderia_facturarV2" name="test_mercaderia_facturarV2" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportMerFactV2.py" line="20">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.91)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F5BA3AF5+28005]
+	(No symbol) [0x00007FF7F5B083F0]
+	(No symbol) [0x00007FF7F59A580A]
+	(No symbol) [0x00007FF7F597FA85]
+	(No symbol) [0x00007FF7F5A22AD7]
+	(No symbol) [0x00007FF7F5A3B1B1]
+	(No symbol) [0x00007FF7F5A1B7E3]
+	(No symbol) [0x00007FF7F59E75C8]
+	(No symbol) [0x00007FF7F59E8731]
+	GetHandleVerifier [0x00007FF7F5E9646D+3118813]
+	GetHandleVerifier [0x00007FF7F5EE6CC0+3448624]
+	GetHandleVerifier [0x00007FF7F5EDCF3D+3408301]
+	GetHandleVerifier [0x00007FF7F5C6A44B+841403]
+	(No symbol) [0x00007FF7F5B1344F]
+	(No symbol) [0x00007FF7F5B0F4C4]
+	(No symbol) [0x00007FF7F5B0F65D]
+	(No symbol) [0x00007FF7F5AFEBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportMerFactV2.py", line 64, in test_mercaderia_facturarV2
+    find_elements(self.driver,  apply_button_filter)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.91)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F5BA3AF5+28005]
+	(No symbol) [0x00007FF7F5B083F0]
+	(No symbol) [0x00007FF7F59A580A]
+	(No symbol) [0x00007FF7F597FA85]
+	(No symbol) [0x00007FF7F5A22AD7]
+	(No symbol) [0x00007FF7F5A3B1B1]
+	(No symbol) [0x00007FF7F5A1B7E3]
+	(No symbol) [0x00007FF7F59E75C8]
+	(No symbol) [0x00007FF7F59E8731]
+	GetHandleVerifier [0x00007FF7F5E9646D+3118813]
+	GetHandleVerifier [0x00007FF7F5EE6CC0+3448624]
+	GetHandleVerifier [0x00007FF7F5EDCF3D+3408301]
+	GetHandleVerifier [0x00007FF7F5C6A44B+841403]
+	(No symbol) [0x00007FF7F5B1344F]
+	(No symbol) [0x00007FF7F5B0F4C4]
+	(No symbol) [0x00007FF7F5B0F65D]
+	(No symbol) [0x00007FF7F5AFEBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 6 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+	<testcase classname="cuenta_mercaderia_facturarV2" name="test_mercaderia_facturarV2" time="48.824" timestamp="2024-10-30T12:58:45" file="ReportMerFactV2.py" line="20">
+		<error type="WebDriverException" message="Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.91)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F5BA3AF5+28005]
+	(No symbol) [0x00007FF7F5B083F0]
+	(No symbol) [0x00007FF7F59A580A]
+	(No symbol) [0x00007FF7F5990B06]
+	(No symbol) [0x00007FF7F5991FCF]
+	(No symbol) [0x00007FF7F59A5E23]
+	(No symbol) [0x00007FF7F597F55D]
+	(No symbol) [0x00007FF7F5A29CE9]
+	(No symbol) [0x00007FF7F5A1BA00]
+	(No symbol) [0x00007FF7F59E75C8]
+	(No symbol) [0x00007FF7F59E8731]
+	GetHandleVerifier [0x00007FF7F5E9646D+3118813]
+	GetHandleVerifier [0x00007FF7F5EE6CC0+3448624]
+	GetHandleVerifier [0x00007FF7F5EDCF3D+3408301]
+	GetHandleVerifier [0x00007FF7F5C6A44B+841403]
+	(No symbol) [0x00007FF7F5B1344F]
+	(No symbol) [0x00007FF7F5B0F4C4]
+	(No symbol) [0x00007FF7F5B0F65D]
+	(No symbol) [0x00007FF7F5AFEBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportMerFactV2.py", line 209, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.91)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7F5BA3AF5+28005]
+	(No symbol) [0x00007FF7F5B083F0]
+	(No symbol) [0x00007FF7F59A580A]
+	(No symbol) [0x00007FF7F5990B06]
+	(No symbol) [0x00007FF7F5991FCF]
+	(No symbol) [0x00007FF7F59A5E23]
+	(No symbol) [0x00007FF7F597F55D]
+	(No symbol) [0x00007FF7F5A29CE9]
+	(No symbol) [0x00007FF7F5A1BA00]
+	(No symbol) [0x00007FF7F59E75C8]
+	(No symbol) [0x00007FF7F59E8731]
+	GetHandleVerifier [0x00007FF7F5E9646D+3118813]
+	GetHandleVerifier [0x00007FF7F5EE6CC0+3448624]
+	GetHandleVerifier [0x00007FF7F5EDCF3D+3408301]
+	GetHandleVerifier [0x00007FF7F5C6A44B+841403]
+	(No symbol) [0x00007FF7F5B1344F]
+	(No symbol) [0x00007FF7F5B0F4C4]
+	(No symbol) [0x00007FF7F5B0F65D]
+	(No symbol) [0x00007FF7F5AFEBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 6 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+¡Elemento encontrado y clickeado 6 veces con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

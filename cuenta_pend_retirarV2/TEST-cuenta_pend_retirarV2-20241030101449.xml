@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_retirarV2-20241030101449" tests="1" file=".py" time="32.849" timestamp="2024-10-30T10:15:22" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="32.849" timestamp="2024-10-30T10:15:22" file="ReportPendRetiV2.py" line="20">
+		<error type="AttributeError" message="type object 'datetime.datetime' has no attribute 'datetime'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 51, in test_pend_retirarV2
+    calendar_todate_retro_selector(self.driver,select_calendar, popup_selector ,select_chevron, click_chevron, popup_selector2)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 66, in calendar_todate_retro_selector
+    dia_actual = datetime.datetime.now().day
+AttributeError: type object 'datetime.datetime' has no attribute 'datetime'
+]]></error>
+	</testcase>
+</testsuite>

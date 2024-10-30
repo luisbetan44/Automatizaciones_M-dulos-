@@ -20,11 +20,18 @@ from ResuEntVentV2 import resuEntregasVentas
 from ServFacturado import ServFacturadoV2
 from TenenImposiV2 import TenenImpositivasV2
 from VentaV2 import cuenta_ventasV2
+from ctacte_HistAcobrarV2 import cuenta_ctacte_histAcobrarV2
+from ctacte_HistApagarV2 import cuenta_ctacte_histApagarV2
+from ctacte_HistAvencerV2 import cuenta_ctacte_histAvencerV2
+from ctacte_HistVencidoV2 import cuenta_ctacte_histVencidoV2
+from ctacte_PesiFechaComproV2 import cta_cte_pesiFechaComproV2
 from ctacte_apliAcobrar import cta_cte_apliAcobrar
 from ctacte_apliApagar2 import cta_cte_apliApagarV2
 from ctacte_apliAvencer2 import cta_cte_apliAvencerV2
 from ctacte_apliVencida2 import cta_cte_apliVencidoV2
 from ctacte_aplicada15diasV import cta_cte_aplicada_15_Vencer
+from ctacte_pesifechavenci import cta_cte_pesiFechaVevcimiento
+from RetencionesV2 import cuenta_retencionesV2
 
 
 def ejecutar_suite():
@@ -34,7 +41,13 @@ def ejecutar_suite():
     test_suite.addTest(unittest.makeSuite(cta_cte_apliAvencerV2))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliVencidoV2))
     test_suite.addTest(unittest.makeSuite(cta_cte_aplicada_15_Vencer))
-    test_suite.addTest(unittest.makeSuite())
+    test_suite.addTest(unittest.makeSuite(cta_cte_pesiFechaComproV2))
+    test_suite.addTest(unittest.makeSuite(cta_cte_pesiFechaVevcimiento))
+    test_suite.addTest(unittest.makeSuite(cuenta_ctacte_histAcobrarV2))
+    test_suite.addTest(unittest.makeSuite(cuenta_ctacte_histApagarV2))
+    test_suite.addTest(unittest.makeSuite(cuenta_ctacte_histAvencerV2))
+    test_suite.addTest(unittest.makeSuite(cuenta_ctacte_histVencidoV2))
+    test_suite.addTest(unittest.makeSuite(cuenta_retencionesV2))
     test_suite.addTest(unittest.makeSuite(resuEntregasVentas))
     test_suite.addTest(unittest.makeSuite(EntregasVentasV2))
     test_suite.addTest(unittest.makeSuite(ServFacturadoV2))

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="cuenta_pend_retirarV2-20241030114028" tests="1" file=".py" time="24.290" timestamp="2024-10-30T11:40:52" failures="0" errors="1" skipped="0">
+	<testcase classname="cuenta_pend_retirarV2" name="test_pend_retirarV2" time="24.290" timestamp="2024-10-30T11:40:52" file="ReportPendRetiV2.py" line="20">
+		<error type="InvalidSelectorException" message="Message: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=130.0.6723.91); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF65FC83AF5+28005]
+	(No symbol) [0x00007FF65FBE83F0]
+	(No symbol) [0x00007FF65FA8580A]
+	(No symbol) [0x00007FF65FA8C2CC]
+	(No symbol) [0x00007FF65FA8E5E7]
+	(No symbol) [0x00007FF65FA8E6A0]
+	(No symbol) [0x00007FF65FAD54EA]
+	(No symbol) [0x00007FF65FAD5D2C]
+	(No symbol) [0x00007FF65FB1EA97]
+	(No symbol) [0x00007FF65FAFBA7F]
+	(No symbol) [0x00007FF65FB1B8B3]
+	(No symbol) [0x00007FF65FAFB7E3]
+	(No symbol) [0x00007FF65FAC75C8]
+	(No symbol) [0x00007FF65FAC8731]
+	GetHandleVerifier [0x00007FF65FF7646D+3118813]
+	GetHandleVerifier [0x00007FF65FFC6CC0+3448624]
+	GetHandleVerifier [0x00007FF65FFBCF3D+3408301]
+	GetHandleVerifier [0x00007FF65FD4A44B+841403]
+	(No symbol) [0x00007FF65FBF344F]
+	(No symbol) [0x00007FF65FBEF4C4]
+	(No symbol) [0x00007FF65FBEF65D]
+	(No symbol) [0x00007FF65FBDEBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 48, in test_pend_retirarV2
+    calendar_todate_retro_selector(self.driver, select_calendar, popup_xpath, select_chevron, popup_xpath2, clicks=click_chevron)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 55, in calendar_todate_retro_selector
+    input_fecha = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.InvalidSelectorException: Message: invalid selector
+from javascript error: {"status":32,"value":"An invalid or illegal selector was specified"}
+  (Session info: chrome=130.0.6723.91); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF65FC83AF5+28005]
+	(No symbol) [0x00007FF65FBE83F0]
+	(No symbol) [0x00007FF65FA8580A]
+	(No symbol) [0x00007FF65FA8C2CC]
+	(No symbol) [0x00007FF65FA8E5E7]
+	(No symbol) [0x00007FF65FA8E6A0]
+	(No symbol) [0x00007FF65FAD54EA]
+	(No symbol) [0x00007FF65FAD5D2C]
+	(No symbol) [0x00007FF65FB1EA97]
+	(No symbol) [0x00007FF65FAFBA7F]
+	(No symbol) [0x00007FF65FB1B8B3]
+	(No symbol) [0x00007FF65FAFB7E3]
+	(No symbol) [0x00007FF65FAC75C8]
+	(No symbol) [0x00007FF65FAC8731]
+	GetHandleVerifier [0x00007FF65FF7646D+3118813]
+	GetHandleVerifier [0x00007FF65FFC6CC0+3448624]
+	GetHandleVerifier [0x00007FF65FFBCF3D+3408301]
+	GetHandleVerifier [0x00007FF65FD4A44B+841403]
+	(No symbol) [0x00007FF65FBF344F]
+	(No symbol) [0x00007FF65FBEF4C4]
+	(No symbol) [0x00007FF65FBEF65D]
+	(No symbol) [0x00007FF65FBDEBB9]
+	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
+	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>
