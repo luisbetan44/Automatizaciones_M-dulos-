@@ -16,6 +16,13 @@ from EntregasApliV2 import entregas_AplicadasV2
 from EntregasFactV2 import entregas_facturadosV2
 from EntregasPendApliV2 import entregas_pend_AplicadasV2
 from EntregasPendFactV2 import entregas_Pend_FacturarV2
+from HomeEntVentReciV2 import HomeEntVentRecientesV2
+from HomeResuNegoV2 import HomeResNegocioTenantV2
+from HomeSaldoCuetHoyV2 import HomeSaldoCuentHoyV2
+from ReportMerFactV2 import cuenta_mercaderia_facturarV2
+from ReportMerRemitV2 import cuenta_mercaderia_remitidaV2
+from ReportPendFactV2 import cuenta_pend_facturarV2
+from ReportPendRetiV2 import cuenta_pend_retirarV2
 from ResuEntVentV2 import resuEntregasVentas
 from ServFacturado import ServFacturadoV2
 from TenenImposiV2 import TenenImpositivasV2
@@ -36,6 +43,9 @@ from RetencionesV2 import cuenta_retencionesV2
 
 def ejecutar_suite():
     test_suite = unittest.TestSuite()
+    test_suite.addTest(unittest.makeSuite(HomeSaldoCuentHoyV2))
+    test_suite.addTest(unittest.makeSuite(HomeResNegocioTenantV2))
+    test_suite.addTest(unittest.makeSuite(HomeEntVentRecientesV2))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliAcobrar))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliApagarV2))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliAvencerV2))
@@ -61,6 +71,15 @@ def ejecutar_suite():
     test_suite.addTest(unittest.makeSuite(entregas_Pend_FacturarV2))
     test_suite.addTest(unittest.makeSuite(cuenta_ventasV2))
     test_suite.addTest(unittest.makeSuite(TenenImpositivasV2))
+    test_suite.addTest(unittest.makeSuite(cuenta_pend_facturarV2))
+    test_suite.addTest(unittest.makeSuite(cuenta_pend_retirarV2))
+    test_suite.addTest(unittest.makeSuite(cuenta_mercaderia_facturarV2))
+    test_suite.addTest(unittest.makeSuite(cuenta_mercaderia_remitidaV2))
+    test_suite.addTest(unittest.makeSuite())
+    test_suite.addTest(unittest.makeSuite())
+    test_suite.addTest(unittest.makeSuite())
+    test_suite.addTest(unittest.makeSuite())
+    
     
     
     # Configuración para generar informes XML solo de los tests fallidos
