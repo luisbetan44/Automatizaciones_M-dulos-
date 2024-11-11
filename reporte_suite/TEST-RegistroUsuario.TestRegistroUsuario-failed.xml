@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RegistroUsuario.TestRegistroUsuario-failed" tests="1" file="RegistroUsuario.py" time="210.023" timestamp="2024-10-28T12:21:59" failures="0" errors="0" skipped="0">
-	<testcase classname="RegistroUsuario.TestRegistroUsuario" name="test_register_user" time="210.023" timestamp="2024-10-28T12:21:59" file="RegistroUsuario.py" line="18">
-		<system-out><![CDATA[Email generado: _93wqumen@yopmail.com
+<testsuite name="RegistroUsuario.TestRegistroUsuario-failed" tests="1" file="RegistroUsuario.py" time="216.536" timestamp="2024-11-06T14:17:49" failures="0" errors="0" skipped="0">
+	<testcase classname="RegistroUsuario.TestRegistroUsuario" name="test_register_user" time="216.536" timestamp="2024-11-06T14:17:49" file="RegistroUsuario.py" line="18">
+		<system-out><![CDATA[Email generado: _atpv4v3v@yopmail.com
 El texto encontrado es  Crear usuario
-Elemento desplazado, cantidad limpiada y nuevo valor '_93wqumen@yopmail.com' ingresado con éxito!
+Elemento desplazado, cantidad limpiada y nuevo valor '_atpv4v3v@yopmail.com' ingresado con éxito!
 Tiempo de espera agotado. El texto por texto no está presente.
-Elemento desplazado, cantidad limpiada y nuevo valor '_93wqumen@yopmail.com' ingresado con éxito!
+Elemento desplazado, cantidad limpiada y nuevo valor '_atpv4v3v@yopmail.com' ingresado con éxito!
 Tiempo de espera agotado. El texto por xpaht no está presente.
-Elemento desplazado, cantidad limpiada y nuevo valor '_93wqumen@yopmail.com' ingresado con éxito!
+Elemento desplazado, cantidad limpiada y nuevo valor '_atpv4v3v@yopmail.com' ingresado con éxito!
 El texto encontrado es  Email del usuario validado correctamente.
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 El texto encontrado es  Cuenta Pendiente de Vincular

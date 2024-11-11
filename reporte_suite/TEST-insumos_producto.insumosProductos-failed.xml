@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="insumos_producto.insumosProductos-failed" tests="2" file="insumos_producto.py" time="72.534" timestamp="2024-10-28T12:27:01" failures="0" errors="2" skipped="0">
+<testsuite name="insumos_producto.insumosProductos-failed" tests="2" file="insumos_producto.py" time="68.238" timestamp="2024-11-06T14:23:10" failures="0" errors="2" skipped="0">
 	<testcase classname="insumos_producto.insumosProductos" name="test_supplies_products" time="0.000" timestamp="0001-01-01T00:00:00" file="insumos_producto.py" line="19">
 		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
   File "c:\Users\luist\repos\Automatizaciones_M-dulos-\insumos_producto.py", line 71, in test_supplies_products
@@ -22,33 +22,30 @@ AttributeError: 'NoneType' object has no attribute 'is_displayed'
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
-	<testcase classname="insumos_producto.insumosProductos" name="test_supplies_products" time="72.534" timestamp="2024-10-28T12:27:01" file="insumos_producto.py" line="19">
-		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=130.0.6723.70)
+	<testcase classname="insumos_producto.insumosProductos" name="test_supplies_products" time="68.238" timestamp="2024-11-06T14:23:10" file="insumos_producto.py" line="19">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.116)
 Stacktrace:
-	GetHandleVerifier [0x00007FF66AAC3AB5+28005]
-	(No symbol) [0x00007FF66AA283B0]
-	(No symbol) [0x00007FF66A8C580A]
-	(No symbol) [0x00007FF66A8B3BD7]
-	(No symbol) [0x00007FF66A8B151E]
-	(No symbol) [0x00007FF66A8B1FCF]
-	(No symbol) [0x00007FF66A8C5E23]
-	(No symbol) [0x00007FF66A89F55D]
-	(No symbol) [0x00007FF66A949CE9]
-	(No symbol) [0x00007FF66A93BA00]
-	(No symbol) [0x00007FF66A9075C8]
-	(No symbol) [0x00007FF66A908731]
-	GetHandleVerifier [0x00007FF66ADB643D+3118829]
-	GetHandleVerifier [0x00007FF66AE06C90+3448640]
-	GetHandleVerifier [0x00007FF66ADFCF0D+3408317]
-	GetHandleVerifier [0x00007FF66AB8A40B+841403]
-	(No symbol) [0x00007FF66AA3340F]
-	(No symbol) [0x00007FF66AA2F484]
-	(No symbol) [0x00007FF66AA2F61D]
-	(No symbol) [0x00007FF66AA1EB79]
-	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
-	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C65FA85]
+	(No symbol) [0x00007FF60C702AD7]
+	(No symbol) [0x00007FF60C709D48]
+	(No symbol) [0x00007FF60C6FBA00]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
 "><![CDATA[Traceback (most recent call last):
   File "c:\Users\luist\repos\Automatizaciones_M-dulos-\insumos_producto.py", line 212, in tearDown
     self.driver.close()
@@ -58,32 +55,29 @@ Stacktrace:
     self.error_handler.check_response(response)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: chrome=130.0.6723.70)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.116)
 Stacktrace:
-	GetHandleVerifier [0x00007FF66AAC3AB5+28005]
-	(No symbol) [0x00007FF66AA283B0]
-	(No symbol) [0x00007FF66A8C580A]
-	(No symbol) [0x00007FF66A8B3BD7]
-	(No symbol) [0x00007FF66A8B151E]
-	(No symbol) [0x00007FF66A8B1FCF]
-	(No symbol) [0x00007FF66A8C5E23]
-	(No symbol) [0x00007FF66A89F55D]
-	(No symbol) [0x00007FF66A949CE9]
-	(No symbol) [0x00007FF66A93BA00]
-	(No symbol) [0x00007FF66A9075C8]
-	(No symbol) [0x00007FF66A908731]
-	GetHandleVerifier [0x00007FF66ADB643D+3118829]
-	GetHandleVerifier [0x00007FF66AE06C90+3448640]
-	GetHandleVerifier [0x00007FF66ADFCF0D+3408317]
-	GetHandleVerifier [0x00007FF66AB8A40B+841403]
-	(No symbol) [0x00007FF66AA3340F]
-	(No symbol) [0x00007FF66AA2F484]
-	(No symbol) [0x00007FF66AA2F61D]
-	(No symbol) [0x00007FF66AA1EB79]
-	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
-	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C65FA85]
+	(No symbol) [0x00007FF60C702AD7]
+	(No symbol) [0x00007FF60C709D48]
+	(No symbol) [0x00007FF60C6FBA00]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
 
 ]]></error>
 		<system-out><![CDATA[El texto encontrado es  PRODUCTOS

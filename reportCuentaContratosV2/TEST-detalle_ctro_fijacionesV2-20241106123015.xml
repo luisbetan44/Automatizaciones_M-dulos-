@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_fijacionesV2-20241106123015" tests="1" file=".py" time="1149.326" timestamp="2024-11-06T12:49:25" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_fijacionesV2" name="test_detail_fixings" time="1149.326" timestamp="2024-11-06T12:49:25" file="CtaCtoDtaFijaV2.py" line="22">
+		<error type="WebDriverException" message="Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF75B123B05+28005]
+	(No symbol) [0x00007FF75B088400]
+	(No symbol) [0x00007FF75AF2580A]
+	(No symbol) [0x00007FF75AF13BD7]
+	(No symbol) [0x00007FF75AF138DA]
+	(No symbol) [0x00007FF75AF1151E]
+	(No symbol) [0x00007FF75AF11FCF]
+	(No symbol) [0x00007FF75AF2BBB9]
+	(No symbol) [0x00007FF75AF2E5E7]
+	(No symbol) [0x00007FF75AF2E6A0]
+	(No symbol) [0x00007FF75AF754EA]
+	(No symbol) [0x00007FF75AF75D2C]
+	(No symbol) [0x00007FF75AFBEA97]
+	(No symbol) [0x00007FF75AF9BA7F]
+	(No symbol) [0x00007FF75AFBB8B3]
+	(No symbol) [0x00007FF75AF9B7E3]
+	(No symbol) [0x00007FF75AF675C8]
+	(No symbol) [0x00007FF75AF68731]
+	GetHandleVerifier [0x00007FF75B41647D+3118813]
+	GetHandleVerifier [0x00007FF75B466CD0+3448624]
+	GetHandleVerifier [0x00007FF75B45CF4D+3408301]
+	GetHandleVerifier [0x00007FF75B1EA45B+841403]
+	(No symbol) [0x00007FF75B09345F]
+	(No symbol) [0x00007FF75B08F4D4]
+	(No symbol) [0x00007FF75B08F66D]
+	(No symbol) [0x00007FF75B07EBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtaFijaV2.py", line 64, in test_detail_fixings
+    find_elements_id(self.driver, select_compliments )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 44, in find_elements_id
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 363, in _predicate
+    target = driver.find_element(*target)  # grab element at locator
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.WebDriverException: Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF75B123B05+28005]
+	(No symbol) [0x00007FF75B088400]
+	(No symbol) [0x00007FF75AF2580A]
+	(No symbol) [0x00007FF75AF13BD7]
+	(No symbol) [0x00007FF75AF138DA]
+	(No symbol) [0x00007FF75AF1151E]
+	(No symbol) [0x00007FF75AF11FCF]
+	(No symbol) [0x00007FF75AF2BBB9]
+	(No symbol) [0x00007FF75AF2E5E7]
+	(No symbol) [0x00007FF75AF2E6A0]
+	(No symbol) [0x00007FF75AF754EA]
+	(No symbol) [0x00007FF75AF75D2C]
+	(No symbol) [0x00007FF75AFBEA97]
+	(No symbol) [0x00007FF75AF9BA7F]
+	(No symbol) [0x00007FF75AFBB8B3]
+	(No symbol) [0x00007FF75AF9B7E3]
+	(No symbol) [0x00007FF75AF675C8]
+	(No symbol) [0x00007FF75AF68731]
+	GetHandleVerifier [0x00007FF75B41647D+3118813]
+	GetHandleVerifier [0x00007FF75B466CD0+3448624]
+	GetHandleVerifier [0x00007FF75B45CF4D+3408301]
+	GetHandleVerifier [0x00007FF75B1EA45B+841403]
+	(No symbol) [0x00007FF75B09345F]
+	(No symbol) [0x00007FF75B08F4D4]
+	(No symbol) [0x00007FF75B08F66D]
+	(No symbol) [0x00007FF75B07EBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+]]></system-out>
+	</testcase>
+</testsuite>

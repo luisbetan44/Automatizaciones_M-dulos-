@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_fijacionesV2-20241107094943" tests="1" file=".py" time="94.227" timestamp="2024-11-07T09:51:17" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_fijacionesV2" name="test_detail_fixings" time="94.227" timestamp="2024-11-07T09:51:17" file="CtaCtoDtaFijaV2.py" line="22">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[2]/app-contract-sales/app-sales-shared/div/span&quot;}
+  (Session info: chrome=130.0.6723.116); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6523838A5+3004357]
+	(No symbol) [0x00007FF652019970]
+	(No symbol) [0x00007FF651EC582A]
+	(No symbol) [0x00007FF651F15B8E]
+	(No symbol) [0x00007FF651F15E7C]
+	(No symbol) [0x00007FF651F5EC27]
+	(No symbol) [0x00007FF651F3BC1F]
+	(No symbol) [0x00007FF651F5BA4C]
+	(No symbol) [0x00007FF651F3B983]
+	(No symbol) [0x00007FF651F07628]
+	(No symbol) [0x00007FF651F08791]
+	GetHandleVerifier [0x00007FF6523AA00D+3161901]
+	GetHandleVerifier [0x00007FF6523FE060+3506048]
+	GetHandleVerifier [0x00007FF6523F400D+3465005]
+	GetHandleVerifier [0x00007FF652170EEB+830987]
+	(No symbol) [0x00007FF65202467F]
+	(No symbol) [0x00007FF6520209D4]
+	(No symbol) [0x00007FF652020B6D]
+	(No symbol) [0x00007FF652010149]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtaFijaV2.py", line 143, in test_detail_fixings
+    validate_text_visible(self.driver, element3, text_expected)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1177, in validate_text_visible
+    element = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[2]/app-contract-sales/app-sales-shared/div/span"}
+  (Session info: chrome=130.0.6723.116); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF6523838A5+3004357]
+	(No symbol) [0x00007FF652019970]
+	(No symbol) [0x00007FF651EC582A]
+	(No symbol) [0x00007FF651F15B8E]
+	(No symbol) [0x00007FF651F15E7C]
+	(No symbol) [0x00007FF651F5EC27]
+	(No symbol) [0x00007FF651F3BC1F]
+	(No symbol) [0x00007FF651F5BA4C]
+	(No symbol) [0x00007FF651F3B983]
+	(No symbol) [0x00007FF651F07628]
+	(No symbol) [0x00007FF651F08791]
+	GetHandleVerifier [0x00007FF6523AA00D+3161901]
+	GetHandleVerifier [0x00007FF6523FE060+3506048]
+	GetHandleVerifier [0x00007FF6523F400D+3465005]
+	GetHandleVerifier [0x00007FF652170EEB+830987]
+	(No symbol) [0x00007FF65202467F]
+	(No symbol) [0x00007FF6520209D4]
+	(No symbol) [0x00007FF652020B6D]
+	(No symbol) [0x00007FF652010149]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 3 veces con éxito!
+¡Elemento encontrado y clickeado 8 veces con éxito!
+¡Elemento encontrado y clickeado 3 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 108169
+El texto es visible para el usuario
+El texto fue validado correctamente: De Maiz
+El texto es visible para el usuario: 'De 500,00 Tn Pactados'
+]]></system-out>
+	</testcase>
+</testsuite>

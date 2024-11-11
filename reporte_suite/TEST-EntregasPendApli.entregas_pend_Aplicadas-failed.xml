@@ -1,23 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EntregasPendApli.entregas_pend_Aplicadas-failed" tests="1" file="EntregasPendApli.py" time="80.642" timestamp="2024-10-28T12:44:44" failures="0" errors="0" skipped="0">
-	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="80.642" timestamp="2024-10-28T12:44:44" file="EntregasPendApli.py" line="23">
-		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
-¡Elemento encontrado y clickeado 2 veces con éxito!
-¡Elemento encontrado y clickeado 3 veces con éxito!
-El valor es un carácter numérico. Valor: 431.360,00
-El valor es un carácter numérico. Valor: 417.677,00
-El valor es un string. Valor: Entrega TK 0001 00121693
-El valor es un string. Valor: 31.320,00 Kg
-El valor es un string. Valor: De Maiz
-El valor es un string. Valor: DATOS DE LA ENTREGA
-El valor es un string. Valor: 26/07/2022
-El valor es un string. Valor: 21/22
-El valor es un string. Valor: DON EMIDIO SA
-El valor es un string. Valor: 19970 CAMPO RASSETTO (Don Emidio S.A.)
-El texto es visible para el usuario
-El texto fue validado correctamente: ANÁLISIS
-El valor es un string. Valor: 15.8%
-El valor es un string. Valor: 31.320,00
+<testsuite name="EntregasPendApli.entregas_pend_Aplicadas-failed" tests="2" file="EntregasPendApli.py" time="33.970" timestamp="2024-11-06T13:58:12" failures="0" errors="2" skipped="0">
+	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="0.000" timestamp="0001-01-01T00:00:00" file="EntregasPendApli.py" line="23">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'is_displayed'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasPendApli.py", line 47, in test_delivery_earrings
+    find_elements(self.driver, selct_filter )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 19, in find_elements
+    select_nex_button = WebDriverWait(driver, 10).until(
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 364, in _predicate
+    element = visibility_of(target)(driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 173, in _predicate
+    return _element_if_visible(element)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 179, in _element_if_visible
+    return element if element.is_displayed() == visibility else False
+AttributeError: 'NoneType' object has no attribute 'is_displayed'
+]]></error>
+		<system-out><![CDATA[El texto no fue encontrado MIS ENTREGAS
+]]></system-out>
+	</testcase>
+	<testcase classname="EntregasPendApli.entregas_pend_Aplicadas" name="test_delivery_earrings" time="33.970" timestamp="2024-11-06T13:58:12" file="EntregasPendApli.py" line="23">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C65FA85]
+	(No symbol) [0x00007FF60C702AD7]
+	(No symbol) [0x00007FF60C709D48]
+	(No symbol) [0x00007FF60C6FBA00]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasPendApli.py", line 219, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C65FA85]
+	(No symbol) [0x00007FF60C702AD7]
+	(No symbol) [0x00007FF60C709D48]
+	(No symbol) [0x00007FF60C6FBA00]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto no fue encontrado MIS ENTREGAS
 ]]></system-out>
 	</testcase>
 </testsuite>

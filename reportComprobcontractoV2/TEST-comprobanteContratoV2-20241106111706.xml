@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="comprobanteContratoV2-20241106111706" tests="1" file=".py" time="54.475" timestamp="2024-11-06T11:18:00" failures="0" errors="0" skipped="0">
+	<testcase classname="comprobanteContratoV2" name="test_comprobante_contrato" time="54.475" timestamp="2024-11-06T11:18:00" file="ComproContractV2.py" line="23">
+		<system-out><![CDATA[El texto encontrado es  Mis Comprobantes
+¡Elemento encontrado y clickeado 11 veces con éxito!
+¡Elemento encontrado y clickeado 1 veces con éxito!
+El valor es un string. Valor: VN 0001 00125520
+El valor es un string. Valor: VN 0001 00125540
+]]></system-out>
+	</testcase>
+</testsuite>

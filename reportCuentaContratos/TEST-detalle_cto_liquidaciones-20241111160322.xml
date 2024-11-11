@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_liquidaciones-20241111160322" tests="1" file=".py" time="54.329" timestamp="2024-11-11T16:04:16" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_cto_liquidaciones" name="test_detail_liquidations" time="54.329" timestamp="2024-11-11T16:04:16" file="CtaCtoDtalLiquidaciones.py" line="27">
+		<error type="NameError" message="name 'find_elements_located' is not defined"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalLiquidaciones.py", line 109, in test_detail_liquidations
+    find_elements_located(self.driver, select_files_excel )
+NameError: name 'find_elements_located' is not defined
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+]]></system-out>
+	</testcase>
+</testsuite>

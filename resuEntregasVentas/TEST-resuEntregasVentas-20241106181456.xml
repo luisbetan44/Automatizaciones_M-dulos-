@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="resuEntregasVentas-20241106181456" tests="1" file=".py" time="93.198" timestamp="2024-11-06T18:16:29" failures="0" errors="1" skipped="0">
+	<testcase classname="resuEntregasVentas" name="test_Report_deliverySales" time="93.198" timestamp="2024-11-06T18:16:29" file="ResuEntVentV2.py" line="18">
+		<error type="AttributeError" message="'NoneType' object has no attribute 'text'"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ResuEntVentV2.py", line 50, in test_Report_deliverySales
+    validate_character_string_element(self.driver, value_first_column)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements2.py", line 33, in validate_character_string_element
+    valor = elemento.text.strip()  # Elimina posibles espacios en blanco al inicio o al final
+AttributeError: 'NoneType' object has no attribute 'text'
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+]]></system-out>
+	</testcase>
+</testsuite>

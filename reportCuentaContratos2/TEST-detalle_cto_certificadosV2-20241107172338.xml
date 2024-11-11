@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_certificadosV2-20241107172338" tests="1" file=".py" time="71.104" timestamp="2024-11-07T17:24:49" failures="0" errors="0" skipped="0">
+	<testcase classname="detalle_cto_certificadosV2" name="test_detail_certificates" time="71.104" timestamp="2024-11-07T17:24:49" file="CtaCtoDtalCertificado2 copy.py" line="25">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 124536
+El texto es visible para el usuario
+El texto fue validado correctamente: De Trigo
+El texto es visible para el usuario: 'De 439.853,00 Kg Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Listado de Certificados
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 17/11/2023
+El texto es visible para el usuario
+El texto fue validado correctamente: Comprobante
+El valor es un carácter numérico. Valor: LA 3320 17117258
+El texto es visible para el usuario
+El texto fue validado correctamente: Tn Totales
+El valor es un carácter numérico. Valor: 92.614
+El texto es visible para el usuario
+El texto fue validado correctamente: Tn Aplicadas
+El valor es un carácter numérico. Valor: 91.114
+El texto es visible para el usuario
+El texto fue validado correctamente: Planta
+El valor es un carácter numérico. Valor: 1
+Checkbox con XPAHT '/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-detail-contract/app-contract-detail-tabs/div/div[3]/app-contract-certificates/app-responsive-table/div/div/table/tbody/tr[1]/th/input' seleccionado con éxito!
+]]></system-out>
+	</testcase>
+</testsuite>

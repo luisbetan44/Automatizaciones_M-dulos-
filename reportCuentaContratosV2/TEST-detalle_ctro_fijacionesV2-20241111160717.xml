@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_fijacionesV2-20241111160717" tests="1" file=".py" time="50.143" timestamp="2024-11-11T16:08:07" failures="0" errors="1" skipped="0">
+	<testcase classname="detalle_ctro_fijacionesV2" name="test_detail_fixings" time="50.143" timestamp="2024-11-11T16:08:07" file="CtaCtoDtaFijaV2.py" line="28">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;input _ngcontent-yoi-c252=&quot;&quot; type=&quot;checkbox&quot; class=&quot;form-check-input ms-2&quot;&gt; is not clickable at point (300, 408). Other element would receive the click: &lt;ngb-offcanvas-backdrop class=&quot;offcanvas-backdrop fade show&quot;&gt;&lt;/ngb-offcanvas-backdrop&gt;
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77D8138A5+3004357]
+	(No symbol) [0x00007FF77D4A9970]
+	(No symbol) [0x00007FF77D35582A]
+	(No symbol) [0x00007FF77D3AD80E]
+	(No symbol) [0x00007FF77D3AB2AC]
+	(No symbol) [0x00007FF77D3A8778]
+	(No symbol) [0x00007FF77D3A798C]
+	(No symbol) [0x00007FF77D39996E]
+	(No symbol) [0x00007FF77D3CBBDA]
+	(No symbol) [0x00007FF77D3992A6]
+	(No symbol) [0x00007FF77D3CBDF0]
+	(No symbol) [0x00007FF77D3EBA4C]
+	(No symbol) [0x00007FF77D3CB983]
+	(No symbol) [0x00007FF77D397628]
+	(No symbol) [0x00007FF77D398791]
+	GetHandleVerifier [0x00007FF77D83A00D+3161901]
+	GetHandleVerifier [0x00007FF77D88E060+3506048]
+	GetHandleVerifier [0x00007FF77D88400D+3465005]
+	GetHandleVerifier [0x00007FF77D600EEB+830987]
+	(No symbol) [0x00007FF77D4B467F]
+	(No symbol) [0x00007FF77D4B09D4]
+	(No symbol) [0x00007FF77D4B0B6D]
+	(No symbol) [0x00007FF77D4A0149]
+	BaseThreadInitThunk [0x00007FF8B598257D+29]
+	RtlUserThreadStart [0x00007FF8B73AAF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtaFijaV2.py", line 102, in test_detail_fixings
+    find_elements(self.driver, select_moviments )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <input _ngcontent-yoi-c252="" type="checkbox" class="form-check-input ms-2"> is not clickable at point (300, 408). Other element would receive the click: <ngb-offcanvas-backdrop class="offcanvas-backdrop fade show"></ngb-offcanvas-backdrop>
+  (Session info: chrome=130.0.6723.117)
+Stacktrace:
+	GetHandleVerifier [0x00007FF77D8138A5+3004357]
+	(No symbol) [0x00007FF77D4A9970]
+	(No symbol) [0x00007FF77D35582A]
+	(No symbol) [0x00007FF77D3AD80E]
+	(No symbol) [0x00007FF77D3AB2AC]
+	(No symbol) [0x00007FF77D3A8778]
+	(No symbol) [0x00007FF77D3A798C]
+	(No symbol) [0x00007FF77D39996E]
+	(No symbol) [0x00007FF77D3CBBDA]
+	(No symbol) [0x00007FF77D3992A6]
+	(No symbol) [0x00007FF77D3CBDF0]
+	(No symbol) [0x00007FF77D3EBA4C]
+	(No symbol) [0x00007FF77D3CB983]
+	(No symbol) [0x00007FF77D397628]
+	(No symbol) [0x00007FF77D398791]
+	GetHandleVerifier [0x00007FF77D83A00D+3161901]
+	GetHandleVerifier [0x00007FF77D88E060+3506048]
+	GetHandleVerifier [0x00007FF77D88400D+3465005]
+	GetHandleVerifier [0x00007FF77D600EEB+830987]
+	(No symbol) [0x00007FF77D4B467F]
+	(No symbol) [0x00007FF77D4B09D4]
+	(No symbol) [0x00007FF77D4B0B6D]
+	(No symbol) [0x00007FF77D4A0149]
+	BaseThreadInitThunk [0x00007FF8B598257D+29]
+	RtlUserThreadStart [0x00007FF8B73AAF08+40]
+
+]]></error>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+]]></system-out>
+	</testcase>
+</testsuite>

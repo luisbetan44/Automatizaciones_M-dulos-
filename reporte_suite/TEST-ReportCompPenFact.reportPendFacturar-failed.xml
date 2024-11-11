@@ -1,28 +1,129 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="ReportCompPenFact.reportPendFacturar-failed" tests="1" file="ReportCompPenFact.py" time="51.364" timestamp="2024-10-28T13:02:32" failures="0" errors="0" skipped="0">
-	<testcase classname="ReportCompPenFact.reportPendFacturar" name="test_Report_PendFacturar" time="51.364" timestamp="2024-10-28T13:02:32" file="ReportCompPenFact.py" line="18">
-		<system-out><![CDATA[El texto encontrado es  Comprobantes Pendientes de Facturar
-El texto no fue encontrado Comprobante
-El valor es un string. Valor: 30/08/2024
-El texto no fue encontrado Artículo
-El valor es un string. Valor: PED 0051 00017659
-El texto no fue encontrado Cantidad
-El valor es un carácter numérico. Valor: 110002 - Aceite mineral Novaoil x 20 lts NOVA SA.
-El texto no fue encontrado Cant. Pend.
-El valor es un carácter numérico. Valor: 300
-El texto no fue encontrado Moneda
-El texto no fue encontrado USD
-El texto no fue encontrado Precio
-El valor no es un carácter numérico. Valor: USD
-El texto no fue encontrado Total USD
-El valor es un carácter numérico. Valor: 2.000,00
-El texto no fue encontrado Total ARS
-El valor es un carácter numérico. Valor: 600.000,00
-El texto encontrado es  DATOS DEL COMPROBANTE PENDIENTE DE FACTURAR
-El texto encontrado es  FECHA
-El valor es un carácter numérico. Valor: 30/08/2024
-El texto encontrado es  ARTÍCULO
-El valor es un string. Valor: 110002 - Aceite mineral Novaoil x 20 lts NOVA SA.
-]]></system-out>
+<testsuite name="ReportCompPenFact.reportPendFacturar-failed" tests="2" file="ReportCompPenFact.py" time="3.454" timestamp="2024-11-06T14:02:06" failures="0" errors="2" skipped="0">
+	<testcase classname="ReportCompPenFact.reportPendFacturar" name="test_Report_PendFacturar" time="0.000" timestamp="0001-01-01T00:00:00" file="ReportCompPenFact.py" line="18">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C65FA85]
+	(No symbol) [0x00007FF60C702AD7]
+	(No symbol) [0x00007FF60C71B1B1]
+	(No symbol) [0x00007FF60C6FB7E3]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportCompPenFact.py", line 20, in test_Report_PendFacturar
+    self.login_helper.login("admingd@silohub.ag", "G@viglio123")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\loginhelper.py", line 9, in login
+    user = find_element_by_id(self.driver, "email")  # asegúrate de pasar self.driver
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\findElements.py", line 10, in find_element_by_id
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.ID, id)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 96, in until
+    value = method(self._driver)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 84, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C65FA85]
+	(No symbol) [0x00007FF60C702AD7]
+	(No symbol) [0x00007FF60C71B1B1]
+	(No symbol) [0x00007FF60C6FB7E3]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+
+]]></error>
+	</testcase>
+	<testcase classname="ReportCompPenFact.reportPendFacturar" name="test_Report_PendFacturar" time="3.454" timestamp="2024-11-06T14:02:06" file="ReportCompPenFact.py" line="18">
+		<error type="NoSuchWindowException" message="Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C65FA85]
+	(No symbol) [0x00007FF60C702AD7]
+	(No symbol) [0x00007FF60C709D48]
+	(No symbol) [0x00007FF60C6FBA00]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportCompPenFact.py", line 196, in tearDown
+    self.driver.close()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 465, in close
+    self.execute(Command.CLOSE)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C65FA85]
+	(No symbol) [0x00007FF60C702AD7]
+	(No symbol) [0x00007FF60C709D48]
+	(No symbol) [0x00007FF60C6FBA00]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+
+]]></error>
 	</testcase>
 </testsuite>

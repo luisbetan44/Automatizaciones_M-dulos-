@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ctacte_apliVencida2.cta_cte_apliVencidoV2-failed" tests="1" file="ctacte_apliVencida2.py" time="55.124" timestamp="2024-11-06T14:34:33" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_apliVencida2.cta_cte_apliVencidoV2" name="test_ctacte_aplivencido" time="55.124" timestamp="2024-11-06T14:34:33" file="ctacte_apliVencida2.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -157.624.953,51
+El valor es un carácter numérico. Valor: -125.630.662,66
+El valor es un carácter numérico. Valor: -25.945,58
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento ND 1052 00127093
+El valor es un string. Valor: - ARS 321.472,80
+El valor es un string. Valor: CTG: 10116938416 / 10216968474-
+]]></system-out>
+	</testcase>
+</testsuite>

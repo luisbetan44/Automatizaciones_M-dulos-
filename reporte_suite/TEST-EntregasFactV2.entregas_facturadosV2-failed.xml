@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="EntregasFactV2.entregas_facturadosV2-failed" tests="1" file="EntregasFactV2.py" time="113.627" timestamp="2024-11-06T14:57:18" failures="0" errors="1" skipped="0">
+	<testcase classname="EntregasFactV2.entregas_facturadosV2" name="test_delivery_applied" time="113.627" timestamp="2024-11-06T14:57:18" file="EntregasFactV2.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;td _ngcontent-vik-c344=&quot;&quot; class=&quot;text-nowrap align-middle f-size-12 fw-bold cursor-pointer ellipsis-cell&quot;&gt;...&lt;/td&gt; is not clickable at point (362, 565). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-backdrop-show&quot; style=&quot;overflow-y: auto;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73B703B05+28005]
+	(No symbol) [0x00007FF73B668400]
+	(No symbol) [0x00007FF73B50580A]
+	(No symbol) [0x00007FF73B55D6CE]
+	(No symbol) [0x00007FF73B55B16C]
+	(No symbol) [0x00007FF73B558628]
+	(No symbol) [0x00007FF73B55785D]
+	(No symbol) [0x00007FF73B54990E]
+	(No symbol) [0x00007FF73B57BA3A]
+	(No symbol) [0x00007FF73B549246]
+	(No symbol) [0x00007FF73B57BC50]
+	(No symbol) [0x00007FF73B59B8B3]
+	(No symbol) [0x00007FF73B57B7E3]
+	(No symbol) [0x00007FF73B5475C8]
+	(No symbol) [0x00007FF73B548731]
+	GetHandleVerifier [0x00007FF73B9F647D+3118813]
+	GetHandleVerifier [0x00007FF73BA46CD0+3448624]
+	GetHandleVerifier [0x00007FF73BA3CF4D+3408301]
+	GetHandleVerifier [0x00007FF73B7CA45B+841403]
+	(No symbol) [0x00007FF73B67345F]
+	(No symbol) [0x00007FF73B66F4D4]
+	(No symbol) [0x00007FF73B66F66D]
+	(No symbol) [0x00007FF73B65EBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\EntregasFactV2.py", line 146, in test_delivery_applied
+    find_elements(self.driver, insert_movemenst )
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
+    select_nex_button.click()
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
+    self._execute(Command.CLICK_ELEMENT)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 395, in _execute
+    return self._parent.execute(command, params)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <td _ngcontent-vik-c344="" class="text-nowrap align-middle f-size-12 fw-bold cursor-pointer ellipsis-cell">...</td> is not clickable at point (362, 565). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
+  (Session info: chrome=130.0.6723.116)
+Stacktrace:
+	GetHandleVerifier [0x00007FF73B703B05+28005]
+	(No symbol) [0x00007FF73B668400]
+	(No symbol) [0x00007FF73B50580A]
+	(No symbol) [0x00007FF73B55D6CE]
+	(No symbol) [0x00007FF73B55B16C]
+	(No symbol) [0x00007FF73B558628]
+	(No symbol) [0x00007FF73B55785D]
+	(No symbol) [0x00007FF73B54990E]
+	(No symbol) [0x00007FF73B57BA3A]
+	(No symbol) [0x00007FF73B549246]
+	(No symbol) [0x00007FF73B57BC50]
+	(No symbol) [0x00007FF73B59B8B3]
+	(No symbol) [0x00007FF73B57B7E3]
+	(No symbol) [0x00007FF73B5475C8]
+	(No symbol) [0x00007FF73B548731]
+	GetHandleVerifier [0x00007FF73B9F647D+3118813]
+	GetHandleVerifier [0x00007FF73BA46CD0+3448624]
+	GetHandleVerifier [0x00007FF73BA3CF4D+3408301]
+	GetHandleVerifier [0x00007FF73B7CA45B+841403]
+	(No symbol) [0x00007FF73B67345F]
+	(No symbol) [0x00007FF73B66F4D4]
+	(No symbol) [0x00007FF73B66F66D]
+	(No symbol) [0x00007FF73B65EBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+
+]]></error>
+		<system-out><![CDATA[El texto encontrado es  MIS ENTREGAS
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
+El valor es un carácter numérico. Valor: 4.253.102,00
+El valor es un carácter numérico. Valor: 4.226.506,00
+]]></system-out>
+	</testcase>
+</testsuite>

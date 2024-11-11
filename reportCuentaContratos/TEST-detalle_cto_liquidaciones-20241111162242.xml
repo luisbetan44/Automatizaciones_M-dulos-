@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_liquidaciones-20241111162242" tests="1" file=".py" time="68.986" timestamp="2024-11-11T16:23:51" failures="1" errors="0" skipped="0">
+	<testcase classname="detalle_cto_liquidaciones" name="test_detail_liquidations" time="68.986" timestamp="2024-11-11T16:23:51" file="CtaCtoDtalLiquidaciones.py" line="27">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalLiquidaciones.py", line 131, in test_detail_liquidations
+    validate_text_visible(self.driver, element1, number_expected)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1186, in validate_text_visible
+    assert text_obtained == text_expected
+AssertionError
+]]></failure>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+]]></system-out>
+	</testcase>
+</testsuite>

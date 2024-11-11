@@ -1,4 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="MisIntenciones.mis_intenciones-failed" tests="1" file="MisIntenciones.py" time="72.243" timestamp="2024-10-28T12:32:31" failures="0" errors="0" skipped="0">
-	<testcase classname="MisIntenciones.mis_intenciones" name="test_my_intentions" time="72.243" timestamp="2024-10-28T12:32:31" file="MisIntenciones.py" line="22"/>
+<testsuite name="MisIntenciones.mis_intenciones-failed" tests="1" file="MisIntenciones.py" time="74.596" timestamp="2024-11-06T14:28:15" failures="0" errors="0" skipped="0">
+	<testcase classname="MisIntenciones.mis_intenciones" name="test_my_intentions" time="74.596" timestamp="2024-11-06T14:28:15" file="MisIntenciones.py" line="22"/>
 </testsuite>

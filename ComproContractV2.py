@@ -1,10 +1,15 @@
 import unittest
 import xmlrunner
 import time
-from Elements import displace_element, find_and_click_element, find_elements, find_elements_css_selector, find_elements_id,validate_text
+from Elements import  find_and_click_element, find_elements,validate_text
 from Elements2 import validate_character_string_element
 from loginhelper import LoginHelper
 from startSession import StartSession
+from Constantes import Constantes
+
+
+
+range_date_back =  Constantes.DATE_RANGE_CONTRACT_BACKWARDS
 
 
 
@@ -62,7 +67,7 @@ class comprobanteContratoV2(unittest.TestCase):
         time.sleep(2)
 
         select_arrow_filter1 = "/html/body/div/div[1]/span[1]"
-        amount_click1 = 10 
+        amount_click1 = range_date_back 
         find_and_click_element(self.driver, select_arrow_filter1, amount_click1)
         time.sleep(2)
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Profile_User.Perfil_Usuario-failed" tests="1" file="Profile_User.py" time="56.452" timestamp="2024-10-28T12:22:55" failures="0" errors="0" skipped="0">
-	<testcase classname="Profile_User.Perfil_Usuario" name="test_Profile_User" time="56.452" timestamp="2024-10-28T12:22:55" file="Profile_User.py" line="21">
+<testsuite name="Profile_User.Perfil_Usuario-failed" tests="1" file="Profile_User.py" time="56.267" timestamp="2024-11-06T14:18:45" failures="0" errors="0" skipped="0">
+	<testcase classname="Profile_User.Perfil_Usuario" name="test_Profile_User" time="56.267" timestamp="2024-11-06T14:18:45" file="Profile_User.py" line="21">
 		<system-out><![CDATA[El texto encontrado es  MIS DATOS
 El texto encontrado es  Datos personales
 ¡Input encontrado y enviado con éxito!

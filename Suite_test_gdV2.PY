@@ -7,18 +7,32 @@ import smtplib
 import unittest
 import xmlrunner
 
+from ComproContractV2 import comprobanteContratoV2
+from ComproCtaCteV2 import comprobanteCtaCteV2
+from ComproEntregasV2 import comprobanteEntregasV2
+from ComproVentasV2 import comprobanteVentasV2
+from ConfISolicitudes import confi_Solicitudes
+from ConfiClientes import confi_registro_cliente
+from ConfigSucursales import config_Sucursales
 from CtaCtoDtaEntVent2 import detalle_ctro_entregaVentasV2
 from CtaCtoDtaFijaV2 import detalle_ctro_fijacionesV2
 from CtaCtoDtaLiquiV2 import detalle_cto_liquidacionesV2
 from CtaCtoDtalCertificado2 import detalle_cto_certificadosV2
+from Dashboar import dashboard_granos
 from EntVentaV2 import EntregasVentasV2
 from EntregasApliV2 import entregas_AplicadasV2
 from EntregasFactV2 import entregas_facturadosV2
 from EntregasPendApliV2 import entregas_pend_AplicadasV2
 from EntregasPendFactV2 import entregas_Pend_FacturarV2
+from GranosContratos import granos_contratos
 from HomeEntVentReciV2 import HomeEntVentRecientesV2
 from HomeResuNegoV2 import HomeResNegocioTenantV2
 from HomeSaldoCuetHoyV2 import HomeSaldoCuentHoyV2
+from MisIntenciones import mis_intenciones
+from Onboarding import Onboarding_test_tenant
+from Precio_Fijacion import precio_granos_fijaciones
+from Profile_User import Perfil_Usuario
+from RegistroUsuario import TestRegistroUsuario
 from ReportMerFactV2 import cuenta_mercaderia_facturarV2
 from ReportMerRemitV2 import cuenta_mercaderia_remitidaV2
 from ReportPendFactV2 import cuenta_pend_facturarV2
@@ -39,13 +53,23 @@ from ctacte_apliVencida2 import cta_cte_apliVencidoV2
 from ctacte_aplicada15diasV import cta_cte_aplicada_15_Vencer
 from ctacte_pesifechavenci import cta_cte_pesiFechaVevcimiento
 from RetencionesV2 import cuenta_retencionesV2
+from finanzasPagos import finanzaspagos
+from insumos_producto import insumosProductos
+from logistOperPrimarias import logistOperPrimarias
 
 
 def ejecutar_suite():
     test_suite = unittest.TestSuite()
+    test_suite.addTest(unittest.makeSuite(TestRegistroUsuario))
+    test_suite.addTest(unittest.makeSuite(Perfil_Usuario))
     test_suite.addTest(unittest.makeSuite(HomeSaldoCuentHoyV2))
     test_suite.addTest(unittest.makeSuite(HomeResNegocioTenantV2))
     test_suite.addTest(unittest.makeSuite(HomeEntVentRecientesV2))
+    test_suite.addTest(unittest.makeSuite(granos_contratos))
+    test_suite.addTest(unittest.makeSuite(insumosProductos))
+    test_suite.addTest(unittest.makeSuite(precio_granos_fijaciones))
+    test_suite.addTest(unittest.makeSuite(dashboard_granos))
+    test_suite.addTest(unittest.makeSuite(mis_intenciones))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliAcobrar))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliApagarV2))
     test_suite.addTest(unittest.makeSuite(cta_cte_apliAvencerV2))
@@ -75,15 +99,21 @@ def ejecutar_suite():
     test_suite.addTest(unittest.makeSuite(cuenta_pend_retirarV2))
     test_suite.addTest(unittest.makeSuite(cuenta_mercaderia_facturarV2))
     test_suite.addTest(unittest.makeSuite(cuenta_mercaderia_remitidaV2))
-    test_suite.addTest(unittest.makeSuite())
-    test_suite.addTest(unittest.makeSuite())
-    test_suite.addTest(unittest.makeSuite())
-    test_suite.addTest(unittest.makeSuite())
+    test_suite.addTest(unittest.makeSuite(comprobanteCtaCteV2))
+    test_suite.addTest(unittest.makeSuite(comprobanteContratoV2))
+    test_suite.addTest(unittest.makeSuite(comprobanteEntregasV2))
+    test_suite.addTest(unittest.makeSuite(comprobanteVentasV2))
+    test_suite.addTest(unittest.makeSuite(finanzaspagos))
+    test_suite.addTest(unittest.makeSuite(logistOperPrimarias))
+    test_suite.addTest(unittest.makeSuite(confi_registro_cliente))
+    test_suite.addTest(unittest.makeSuite(config_Sucursales))
+    test_suite.addTest(unittest.makeSuite(confi_Solicitudes))
+    test_suite.addTest(unittest.makeSuite(Onboarding_test_tenant))
     
     
     
-    # Configuración para generar informes XML solo de los tests fallidos
-    output_folder = 'reporte_suitev2'
+   # Configuración para generar informes XML solo de los tests fallidos
+    output_folder = 'reporte_suite'
     os.makedirs(output_folder, exist_ok=True)
 
     runner = xmlrunner.XMLTestRunner(output=output_folder, outsuffix='failed', failfast=False)

@@ -1,16 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="indicaInsumosHome.IndicaInsumosHome-failed" tests="1" file="indicaInsumosHome.py" time="26.141" timestamp="2024-10-28T12:24:15" failures="0" errors="0" skipped="0">
-	<testcase classname="indicaInsumosHome.IndicaInsumosHome" name="test__indicators_home" time="26.141" timestamp="2024-10-28T12:24:15" file="indicaInsumosHome.py" line="18">
-		<system-out><![CDATA[El texto no coincide con los valores esperados. Texto actual: 'Indicadores de Insumos (correspondiente a los últimos 12 meses)'
-El texto encontrado es  Insumos Pendientes de Retirar
-El texto es visible para el usuario: 'Fertilizante'
-El valor es un carácter numérico. Valor: Cant: 220.483,00
-El texto encontrado es  Mercadería Remitida
-El texto es visible para el usuario: 'Fertilizantes'
-El valor es un carácter numérico. Valor: Cant: 1.738.730,00
-El texto encontrado es  Mercadería Facturada
-El texto es visible para el usuario: 'Fertilizantes'
-El valor es un carácter numérico. Valor: Cant: 1.579.190,00
+<testsuite name="indicaInsumosHome.IndicaInsumosHome-failed" tests="1" file="indicaInsumosHome.py" time="156.642" timestamp="2024-11-06T13:25:21" failures="0" errors="1" skipped="0">
+	<testcase classname="indicaInsumosHome.IndicaInsumosHome" name="test__indicators_home" time="156.642" timestamp="2024-11-06T13:25:21" file="indicaInsumosHome.py" line="18">
+		<error type="NoSuchElementException" message="Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[1]/app-supplies-indicator/div/div[3]/div[1]/div[3]&quot;}
+  (Session info: chrome=130.0.6723.116); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C6D5A3E]
+	(No symbol) [0x00007FF60C6D5D2C]
+	(No symbol) [0x00007FF60C71EA97]
+	(No symbol) [0x00007FF60C6FBA7F]
+	(No symbol) [0x00007FF60C71B8B3]
+	(No symbol) [0x00007FF60C6FB7E3]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\indicaInsumosHome.py", line 49, in test__indicators_home
+    validate_character_numeric_element(self.driver,product_quantity1)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1159, in validate_character_numeric_element
+    elemento = driver.find_element(By.XPATH, xpath)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 748, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 354, in execute
+    self.error_handler.check_response(response)
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
+    raise exception_class(message, screen, stacktrace)
+selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-layout/app-vertical/div/div/div/div/app-home-switch/app-home/div/div[4]/app-supplies-goods-indicators/div[2]/swiper/div/div[1]/div[1]/app-supplies-indicator/div/div[3]/div[1]/div[3]"}
+  (Session info: chrome=130.0.6723.116); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF60C883B05+28005]
+	(No symbol) [0x00007FF60C7E8400]
+	(No symbol) [0x00007FF60C68580A]
+	(No symbol) [0x00007FF60C6D5A3E]
+	(No symbol) [0x00007FF60C6D5D2C]
+	(No symbol) [0x00007FF60C71EA97]
+	(No symbol) [0x00007FF60C6FBA7F]
+	(No symbol) [0x00007FF60C71B8B3]
+	(No symbol) [0x00007FF60C6FB7E3]
+	(No symbol) [0x00007FF60C6C75C8]
+	(No symbol) [0x00007FF60C6C8731]
+	GetHandleVerifier [0x00007FF60CB7647D+3118813]
+	GetHandleVerifier [0x00007FF60CBC6CD0+3448624]
+	GetHandleVerifier [0x00007FF60CBBCF4D+3408301]
+	GetHandleVerifier [0x00007FF60C94A45B+841403]
+	(No symbol) [0x00007FF60C7F345F]
+	(No symbol) [0x00007FF60C7EF4D4]
+	(No symbol) [0x00007FF60C7EF66D]
+	(No symbol) [0x00007FF60C7DEBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+
+]]></error>
+		<system-out><![CDATA[Tiempo de espera agotado. El elemento no se ha vuelto visible.
+Tiempo de espera agotado. El texto por xpaht no está presente.
+Tiempo de espera agotado. El elemento no se ha vuelto visible.
 ]]></system-out>
 	</testcase>
 </testsuite>

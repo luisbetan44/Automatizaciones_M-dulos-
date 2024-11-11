@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_fijacionesV2-20241107164200" tests="1" file=".py" time="61.586" timestamp="2024-11-07T16:43:02" failures="1" errors="0" skipped="0">
+	<testcase classname="detalle_ctro_fijacionesV2" name="test_detail_fixings" time="61.586" timestamp="2024-11-07T16:43:02" file="CtaCtoDtaFijaV2.py" line="28">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtaFijaV2.py", line 154, in test_detail_fixings
+    validate_text_visible(self.driver, element5, text_expected)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1186, in validate_text_visible
+    assert text_obtained == text_expected
+AssertionError
+]]></failure>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 124536
+El texto es visible para el usuario
+El texto fue validado correctamente: De Trigo
+El texto es visible para el usuario: 'De 439.853,00 Kg Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+El texto es visible para el usuario
+El texto fue validado correctamente: Producto
+El texto es visible para el usuario
+]]></system-out>
+	</testcase>
+</testsuite>

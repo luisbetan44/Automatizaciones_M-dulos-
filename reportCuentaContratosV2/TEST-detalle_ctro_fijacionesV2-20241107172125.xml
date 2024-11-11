@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_ctro_fijacionesV2-20241107172125" tests="1" file=".py" time="88.857" timestamp="2024-11-07T17:22:54" failures="0" errors="0" skipped="0">
+	<testcase classname="detalle_ctro_fijacionesV2" name="test_detail_fixings" time="88.857" timestamp="2024-11-07T17:22:54" file="CtaCtoDtaFijaV2.py" line="28">
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 124536
+El texto es visible para el usuario
+El texto fue validado correctamente: De Trigo
+El texto es visible para el usuario: 'De 439.853,00 Kg Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Mis Ventas
+El texto es visible para el usuario
+El texto fue validado correctamente: Producto
+El texto es visible para el usuario
+El texto fue validado correctamente: Trigo
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+El texto fue validado correctamente: 24/01/2024
+El texto es visible para el usuario
+El texto fue validado correctamente: Comprobante
+El valor es un carácter numérico. Valor: F 0001 00124536
+El texto es visible para el usuario: 'Kg Fijados'
+El valor es un carácter numérico. Valor: 175.306,00
+El texto es visible para el usuario
+El texto fue validado correctamente: Precio
+El valor es un carácter numérico. Valor: 184.50
+El texto es visible para el usuario
+El texto fue validado correctamente: Moneda
+El texto es visible para el usuario
+El texto fue validado correctamente: En Pesos
+]]></system-out>
+	</testcase>
+</testsuite>

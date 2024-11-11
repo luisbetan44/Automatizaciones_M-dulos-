@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="detalle_cto_certificadosV2-20241107165830" tests="1" file=".py" time="64.007" timestamp="2024-11-07T16:59:34" failures="1" errors="0" skipped="0">
+	<testcase classname="detalle_cto_certificadosV2" name="test_detail_certificates" time="64.007" timestamp="2024-11-07T16:59:34" file="CtaCtoDtalCertificado2 copy.py" line="25">
+		<failure type="AssertionError" message=""><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\CtaCtoDtalCertificado2 copy.py", line 154, in test_detail_certificates
+    validate_text_visible(self.driver,date_delivery, strt_expected)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 1186, in validate_text_visible
+    assert text_obtained == text_expected
+AssertionError
+]]></failure>
+		<system-out><![CDATA[¡Elemento encontrado y clickeado 1 veces con éxito!
+El texto encontrado es  Estado De Mis Contratos
+El texto es visible para el usuario
+El texto fue validado correctamente: Contrato 124536
+El texto es visible para el usuario
+El texto fue validado correctamente: De Trigo
+El texto es visible para el usuario: 'De 439.853,00 Kg Pactados'
+El texto es visible para el usuario
+El texto fue validado correctamente: Listado de Certificados
+El texto es visible para el usuario
+El texto fue validado correctamente: Fecha
+El texto es visible para el usuario
+]]></system-out>
+	</testcase>
+</testsuite>

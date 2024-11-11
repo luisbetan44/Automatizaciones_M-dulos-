@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ctacte_apliAvencer2.cta_cte_apliAvencerV2-failed" tests="1" file="ctacte_apliAvencer2.py" time="57.117" timestamp="2024-11-06T14:33:36" failures="0" errors="0" skipped="0">
+	<testcase classname="ctacte_apliAvencer2.cta_cte_apliAvencerV2" name="test_ctacte_apliAvencer" time="57.117" timestamp="2024-11-06T14:33:36" file="ctacte_apliAvencer2.py" line="18">
+		<system-out><![CDATA[El texto encontrado es  Cuenta Corriente Aplicada
+El valor es un carácter numérico. Valor: -1.159.570.375,05
+El valor es un carácter numérico. Valor: -124.109.476,90
+El valor es un carácter numérico. Valor: -821.222,37
+El texto encontrado es  CUENTA CORRIENTE
+El valor es un string. Valor: Movimiento FC 1118 00083138
+El valor es un string. Valor: - ARS 1.204.208,94
+El valor es un string. Valor: GASTOS COMER. S/ 28260 KGRS. Maíz Cosecha 2324-E
+]]></system-out>
+	</testcase>
+</testsuite>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="GranosContratos.granos_contratos-failed" tests="1" file="GranosContratos.py" time="87.440" timestamp="2024-10-28T12:25:46" failures="0" errors="0" skipped="0">
-	<testcase classname="GranosContratos.granos_contratos" name="test_granos_contratos" time="87.440" timestamp="2024-10-28T12:25:46" file="GranosContratos.py" line="23">
+<testsuite name="GranosContratos.granos_contratos-failed" tests="1" file="GranosContratos.py" time="106.317" timestamp="2024-11-06T14:22:00" failures="0" errors="0" skipped="0">
+	<testcase classname="GranosContratos.granos_contratos" name="test_granos_contratos" time="106.317" timestamp="2024-11-06T14:22:00" file="GranosContratos.py" line="23">
 		<system-out><![CDATA[El texto encontrado es  CONTRATOS
 ¡Cuenta encontrada y seleccionada 1023  con éxito!
 ¡Input encontrado y enviado con éxito!
@@ -11,7 +11,7 @@ El clic en el chevron fue interceptado por otro elemento en la página.
 ¡Elemento encontrado y clickeado 6 veces con éxito!
 ¡Elemento encontrado y clickeado 1 veces con éxito!
 Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-El texto no fue encontrado Confirmación de venta generada con éxito.
+El texto encontrado es  Confirmación de venta generada con éxito.
 ]]></system-out>
 	</testcase>
 </testsuite>

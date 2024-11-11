@@ -1,7 +1,4 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Dashboar.dashboard_granos-failed" tests="1" file="Dashboar.py" time="103.416" timestamp="2024-10-28T12:31:17" failures="0" errors="0" skipped="0">
-	<testcase classname="Dashboar.dashboard_granos" name="test_dashboard_grain" time="103.416" timestamp="2024-10-28T12:31:17" file="Dashboar.py" line="23">
-		<system-out><![CDATA[Tiempo de espera agotado. El elemento no está presente o no es clickeable.
-]]></system-out>
-	</testcase>
+<testsuite name="Dashboar.dashboard_granos-failed" tests="1" file="Dashboar.py" time="71.865" timestamp="2024-11-06T14:26:58" failures="0" errors="0" skipped="0">
+	<testcase classname="Dashboar.dashboard_granos" name="test_dashboard_grain" time="71.865" timestamp="2024-11-06T14:26:58" file="Dashboar.py" line="23"/>
 </testsuite>

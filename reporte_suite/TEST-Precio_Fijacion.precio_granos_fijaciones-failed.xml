@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="Precio_Fijacion.precio_granos_fijaciones-failed" tests="1" file="Precio_Fijacion.py" time="147.629" timestamp="2024-10-28T12:29:31" failures="0" errors="0" skipped="0">
-	<testcase classname="Precio_Fijacion.precio_granos_fijaciones" name="test_price_fixings" time="147.629" timestamp="2024-10-28T12:29:31" file="Precio_Fijacion.py" line="21">
+<testsuite name="Precio_Fijacion.precio_granos_fijaciones-failed" tests="1" file="Precio_Fijacion.py" time="151.482" timestamp="2024-11-06T14:25:44" failures="0" errors="0" skipped="0">
+	<testcase classname="Precio_Fijacion.precio_granos_fijaciones" name="test_price_fixings" time="151.482" timestamp="2024-11-06T14:25:44" file="Precio_Fijacion.py" line="21">
 		<system-out><![CDATA[El texto encontrado es  MERCADOS
 No se encontraron más movimientos para borrar.
 Se hizo clic en un icono de borrar.

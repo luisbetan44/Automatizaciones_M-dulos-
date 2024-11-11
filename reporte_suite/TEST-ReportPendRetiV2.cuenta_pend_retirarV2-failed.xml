@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="ReportPendRetiV2.cuenta_pend_retirarV2-failed" tests="1" file="ReportPendRetiV2.py" time="45.255" timestamp="2024-11-06T15:05:35" failures="0" errors="1" skipped="0">
+	<testcase classname="ReportPendRetiV2.cuenta_pend_retirarV2" name="test_pend_retirarV2" time="45.255" timestamp="2024-11-06T15:05:35" file="ReportPendRetiV2.py" line="20">
+		<error type="TimeoutException" message="Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF73B703B05+28005]
+	(No symbol) [0x00007FF73B668400]
+	(No symbol) [0x00007FF73B50580A]
+	(No symbol) [0x00007FF73B555A3E]
+	(No symbol) [0x00007FF73B555D2C]
+	(No symbol) [0x00007FF73B59EA97]
+	(No symbol) [0x00007FF73B57BA7F]
+	(No symbol) [0x00007FF73B59B8B3]
+	(No symbol) [0x00007FF73B57B7E3]
+	(No symbol) [0x00007FF73B5475C8]
+	(No symbol) [0x00007FF73B548731]
+	GetHandleVerifier [0x00007FF73B9F647D+3118813]
+	GetHandleVerifier [0x00007FF73BA46CD0+3448624]
+	GetHandleVerifier [0x00007FF73BA3CF4D+3408301]
+	GetHandleVerifier [0x00007FF73B7CA45B+841403]
+	(No symbol) [0x00007FF73B67345F]
+	(No symbol) [0x00007FF73B66F4D4]
+	(No symbol) [0x00007FF73B66F66D]
+	(No symbol) [0x00007FF73B65EBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+"><![CDATA[Traceback (most recent call last):
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\ReportPendRetiV2.py", line 24, in test_pend_retirarV2
+    self.login_helper.search_and_select_account("1023")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\loginhelper.py", line 27, in search_and_select_account
+    element_to_click = find_element_by_css_selector(self.driver, "#search-dropdown > app-accounts-list > ngx-simplebar > div.simplebar-wrapper > div.simplebar-mask > div > div > div > div > div.dropdown-sub-item.accounts-numbers")
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\findElements.py", line 17, in find_element_by_css_selector
+    return WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.CSS_SELECTOR, css_selector)))
+  File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 105, in until
+    raise TimeoutException(message, screen, stacktrace)
+selenium.common.exceptions.TimeoutException: Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF73B703B05+28005]
+	(No symbol) [0x00007FF73B668400]
+	(No symbol) [0x00007FF73B50580A]
+	(No symbol) [0x00007FF73B555A3E]
+	(No symbol) [0x00007FF73B555D2C]
+	(No symbol) [0x00007FF73B59EA97]
+	(No symbol) [0x00007FF73B57BA7F]
+	(No symbol) [0x00007FF73B59B8B3]
+	(No symbol) [0x00007FF73B57B7E3]
+	(No symbol) [0x00007FF73B5475C8]
+	(No symbol) [0x00007FF73B548731]
+	GetHandleVerifier [0x00007FF73B9F647D+3118813]
+	GetHandleVerifier [0x00007FF73BA46CD0+3448624]
+	GetHandleVerifier [0x00007FF73BA3CF4D+3408301]
+	GetHandleVerifier [0x00007FF73B7CA45B+841403]
+	(No symbol) [0x00007FF73B67345F]
+	(No symbol) [0x00007FF73B66F4D4]
+	(No symbol) [0x00007FF73B66F66D]
+	(No symbol) [0x00007FF73B65EBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
+
+]]></error>
+	</testcase>
+</testsuite>

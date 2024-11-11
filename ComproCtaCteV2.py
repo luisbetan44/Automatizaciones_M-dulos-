@@ -59,7 +59,7 @@ class comprobanteCtaCteV2(unittest.TestCase):
         time.sleep(2)
 
         select_arrow_filter1 = "/html/body/div/div[1]/span[1]"
-        amount_click1 = 10 
+        amount_click1 = 11 
         find_and_click_element(self.driver, select_arrow_filter1, amount_click1)
         time.sleep(2)
 

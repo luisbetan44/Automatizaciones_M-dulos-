@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="finanzasPagos.finanzaspagos-failed" tests="1" file="finanzasPagos.py" time="50.776" timestamp="2024-10-28T13:11:26" failures="0" errors="1" skipped="0">
-	<testcase classname="finanzasPagos.finanzaspagos" name="test_finance_payment" time="50.776" timestamp="2024-10-28T13:11:26" file="finanzasPagos.py" line="23">
-		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;button _ngcontent-jpy-c179=&quot;&quot; type=&quot;button&quot; class=&quot;btn waves-effect waves-light fw-bold d-flex justify-content-center shadow-none button btn-primary w-100&quot;&gt;...&lt;/button&gt; is not clickable at point (1391, 356). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-backdrop-hide&quot; style=&quot;overflow-y: hidden;&quot;&gt;...&lt;/div&gt;
-  (Session info: chrome=130.0.6723.70)
+<testsuite name="finanzasPagos.finanzaspagos-failed" tests="1" file="finanzasPagos.py" time="98.824" timestamp="2024-11-06T15:13:51" failures="0" errors="1" skipped="0">
+	<testcase classname="finanzasPagos.finanzaspagos" name="test_finance_payment" time="98.824" timestamp="2024-11-06T15:13:51" file="finanzasPagos.py" line="23">
+		<error type="ElementClickInterceptedException" message="Message: element click intercepted: Element &lt;a _ngcontent-hpa-c187=&quot;&quot; class=&quot;nav-link cursor-pointer&quot; data-parent=&quot;7&quot; aria-expanded=&quot;false&quot;&gt;...&lt;/a&gt; is not clickable at point (138, 487). Other element would receive the click: &lt;div class=&quot;swal2-container swal2-center swal2-backdrop-show&quot; style=&quot;overflow-y: auto;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=130.0.6723.116)
 Stacktrace:
-	GetHandleVerifier [0x00007FF66AAC3AB5+28005]
-	(No symbol) [0x00007FF66AA283B0]
-	(No symbol) [0x00007FF66A8C580A]
-	(No symbol) [0x00007FF66A91D6CE]
-	(No symbol) [0x00007FF66A91B16C]
-	(No symbol) [0x00007FF66A918628]
-	(No symbol) [0x00007FF66A91785D]
-	(No symbol) [0x00007FF66A90990E]
-	(No symbol) [0x00007FF66A93BA3A]
-	(No symbol) [0x00007FF66A909246]
-	(No symbol) [0x00007FF66A93BC50]
-	(No symbol) [0x00007FF66A95B8B3]
-	(No symbol) [0x00007FF66A93B7E3]
-	(No symbol) [0x00007FF66A9075C8]
-	(No symbol) [0x00007FF66A908731]
-	GetHandleVerifier [0x00007FF66ADB643D+3118829]
-	GetHandleVerifier [0x00007FF66AE06C90+3448640]
-	GetHandleVerifier [0x00007FF66ADFCF0D+3408317]
-	GetHandleVerifier [0x00007FF66AB8A40B+841403]
-	(No symbol) [0x00007FF66AA3340F]
-	(No symbol) [0x00007FF66AA2F484]
-	(No symbol) [0x00007FF66AA2F61D]
-	(No symbol) [0x00007FF66AA1EB79]
-	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
-	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+	GetHandleVerifier [0x00007FF73B703B05+28005]
+	(No symbol) [0x00007FF73B668400]
+	(No symbol) [0x00007FF73B50580A]
+	(No symbol) [0x00007FF73B55D6CE]
+	(No symbol) [0x00007FF73B55B16C]
+	(No symbol) [0x00007FF73B558628]
+	(No symbol) [0x00007FF73B55785D]
+	(No symbol) [0x00007FF73B54990E]
+	(No symbol) [0x00007FF73B57BA3A]
+	(No symbol) [0x00007FF73B549246]
+	(No symbol) [0x00007FF73B57BC50]
+	(No symbol) [0x00007FF73B59B8B3]
+	(No symbol) [0x00007FF73B57B7E3]
+	(No symbol) [0x00007FF73B5475C8]
+	(No symbol) [0x00007FF73B548731]
+	GetHandleVerifier [0x00007FF73B9F647D+3118813]
+	GetHandleVerifier [0x00007FF73BA46CD0+3448624]
+	GetHandleVerifier [0x00007FF73BA3CF4D+3408301]
+	GetHandleVerifier [0x00007FF73B7CA45B+841403]
+	(No symbol) [0x00007FF73B67345F]
+	(No symbol) [0x00007FF73B66F4D4]
+	(No symbol) [0x00007FF73B66F66D]
+	(No symbol) [0x00007FF73B65EBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
 "><![CDATA[Traceback (most recent call last):
-  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\finanzasPagos.py", line 84, in test_finance_payment
-    find_elements(self.driver, select_button_add)
+  File "c:\Users\luist\repos\Automatizaciones_M-dulos-\finanzasPagos.py", line 114, in test_finance_payment
+    find_elements(self.driver, select_menu_requests)
   File "c:\Users\luist\repos\Automatizaciones_M-dulos-\Elements.py", line 22, in find_elements
     select_nex_button.click()
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webelement.py", line 94, in click
@@ -42,38 +42,39 @@ Stacktrace:
     self.error_handler.check_response(response)
   File "C:\Users\luist\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\errorhandler.py", line 229, in check_response
     raise exception_class(message, screen, stacktrace)
-selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <button _ngcontent-jpy-c179="" type="button" class="btn waves-effect waves-light fw-bold d-flex justify-content-center shadow-none button btn-primary w-100">...</button> is not clickable at point (1391, 356). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-hide" style="overflow-y: hidden;">...</div>
-  (Session info: chrome=130.0.6723.70)
+selenium.common.exceptions.ElementClickInterceptedException: Message: element click intercepted: Element <a _ngcontent-hpa-c187="" class="nav-link cursor-pointer" data-parent="7" aria-expanded="false">...</a> is not clickable at point (138, 487). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
+  (Session info: chrome=130.0.6723.116)
 Stacktrace:
-	GetHandleVerifier [0x00007FF66AAC3AB5+28005]
-	(No symbol) [0x00007FF66AA283B0]
-	(No symbol) [0x00007FF66A8C580A]
-	(No symbol) [0x00007FF66A91D6CE]
-	(No symbol) [0x00007FF66A91B16C]
-	(No symbol) [0x00007FF66A918628]
-	(No symbol) [0x00007FF66A91785D]
-	(No symbol) [0x00007FF66A90990E]
-	(No symbol) [0x00007FF66A93BA3A]
-	(No symbol) [0x00007FF66A909246]
-	(No symbol) [0x00007FF66A93BC50]
-	(No symbol) [0x00007FF66A95B8B3]
-	(No symbol) [0x00007FF66A93B7E3]
-	(No symbol) [0x00007FF66A9075C8]
-	(No symbol) [0x00007FF66A908731]
-	GetHandleVerifier [0x00007FF66ADB643D+3118829]
-	GetHandleVerifier [0x00007FF66AE06C90+3448640]
-	GetHandleVerifier [0x00007FF66ADFCF0D+3408317]
-	GetHandleVerifier [0x00007FF66AB8A40B+841403]
-	(No symbol) [0x00007FF66AA3340F]
-	(No symbol) [0x00007FF66AA2F484]
-	(No symbol) [0x00007FF66AA2F61D]
-	(No symbol) [0x00007FF66AA1EB79]
-	BaseThreadInitThunk [0x00007FF8AAC1257D+29]
-	RtlUserThreadStart [0x00007FF8ABB0AF08+40]
+	GetHandleVerifier [0x00007FF73B703B05+28005]
+	(No symbol) [0x00007FF73B668400]
+	(No symbol) [0x00007FF73B50580A]
+	(No symbol) [0x00007FF73B55D6CE]
+	(No symbol) [0x00007FF73B55B16C]
+	(No symbol) [0x00007FF73B558628]
+	(No symbol) [0x00007FF73B55785D]
+	(No symbol) [0x00007FF73B54990E]
+	(No symbol) [0x00007FF73B57BA3A]
+	(No symbol) [0x00007FF73B549246]
+	(No symbol) [0x00007FF73B57BC50]
+	(No symbol) [0x00007FF73B59B8B3]
+	(No symbol) [0x00007FF73B57B7E3]
+	(No symbol) [0x00007FF73B5475C8]
+	(No symbol) [0x00007FF73B548731]
+	GetHandleVerifier [0x00007FF73B9F647D+3118813]
+	GetHandleVerifier [0x00007FF73BA46CD0+3448624]
+	GetHandleVerifier [0x00007FF73BA3CF4D+3408301]
+	GetHandleVerifier [0x00007FF73B7CA45B+841403]
+	(No symbol) [0x00007FF73B67345F]
+	(No symbol) [0x00007FF73B66F4D4]
+	(No symbol) [0x00007FF73B66F66D]
+	(No symbol) [0x00007FF73B65EBC9]
+	BaseThreadInitThunk [0x00007FFF3E62257D+29]
+	RtlUserThreadStart [0x00007FFF4022AF08+40]
 
 ]]></error>
 		<system-out><![CDATA[El texto encontrado es  Listado de Comprobantes
 ¡Input encontrado y enviado con éxito!
+Tiempo de espera agotado. El elemento no está presente o no es clickeable.
 ]]></system-out>
 	</testcase>
 </testsuite>
